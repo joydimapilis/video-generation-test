@@ -1,0 +1,118 @@
+{
+  "review_id": "cero_model_review",
+  "sample_id": "cero-4301722d3a",
+  "review_method": "manual contact-sheet review of generated outputs",
+  "scores_scale": "1-10",
+  "runs": [
+    {
+      "run_id": "cero-4301722d3a-pattern__wan_2_1_t2v",
+      "prompt_adherence": 7,
+      "temporal_coherence": 5,
+      "motion_quality": 5,
+      "subject_fidelity": 5,
+      "artifact_control": 4,
+      "commercial_usefulness": 4,
+      "pattern_reusability": 7,
+      "notes": "Captured the green pack, phone UI, city/product proof language, and collage structure, but looked more like a rough animatic. UI/text and layout consistency were weak."
+    },
+    {
+      "run_id": "cero-4301722d3a-pattern__kling_3_pro_t2v",
+      "prompt_adherence": 8,
+      "temporal_coherence": 8,
+      "motion_quality": 8,
+      "subject_fidelity": 7,
+      "artifact_control": 7,
+      "commercial_usefulness": 7,
+      "pattern_reusability": 8,
+      "notes": "Best overall result. Clean cinematic city launch, readable product/app transformation, and convincing checkout proof. Fictional app text still needs controlled overlay work before final production."
+    },
+    {
+      "run_id": "cero-4301722d3a-pattern__kling_2_6_pro_i2v",
+      "prompt_adherence": 7,
+      "temporal_coherence": 7,
+      "motion_quality": 8,
+      "subject_fidelity": 8,
+      "artifact_control": 6,
+      "commercial_usefulness": 6,
+      "pattern_reusability": 7,
+      "notes": "Strongest continuity from the source keyframe and good neon reward motion, but less successful as a multi-beat montage. Better suited for single-shot product launch moments."
+    },
+    {
+      "run_id": "cero-4301722d3a-pattern__full_montage__wan_2_1_t2v",
+      "prompt_adherence": 5,
+      "temporal_coherence": 5,
+      "motion_quality": 5,
+      "subject_fidelity": 4,
+      "artifact_control": 4,
+      "commercial_usefulness": 4,
+      "pattern_reusability": 6,
+      "notes": "Variant drifted into a presenter/product-pack ad with fake app text. Less faithful to the Cero montage than the longer primary prompt, but usable as cheap broad social-ad ideation."
+    },
+    {
+      "run_id": "cero-4301722d3a-pattern__full_montage__kling_3_pro_t2v",
+      "prompt_adherence": 7,
+      "temporal_coherence": 8,
+      "motion_quality": 8,
+      "subject_fidelity": 6,
+      "artifact_control": 7,
+      "commercial_usefulness": 7,
+      "pattern_reusability": 7,
+      "notes": "Coherent premium product/payment sequence, but it lost the city-launch beat and turned the pack identity into a lime/card motif. Useful commercially, not the closest recreation."
+    },
+    {
+      "run_id": "cero-4301722d3a-pattern__single_shot_launch__kling_2_6_pro_i2v",
+      "prompt_adherence": 9,
+      "temporal_coherence": 9,
+      "motion_quality": 9,
+      "subject_fidelity": 9,
+      "artifact_control": 8,
+      "commercial_usefulness": 8,
+      "pattern_reusability": 9,
+      "notes": "Excellent opening-hook result. Preserved the reference composition, neon pack, city perspective, and upward motion with controlled particles. Current default for launch-hook shots."
+    },
+    {
+      "run_id": "cero-4301722d3a-pattern__single_shot_launch__wan_2_1_t2v",
+      "prompt_adherence": 7,
+      "temporal_coherence": 7,
+      "motion_quality": 8,
+      "subject_fidelity": 5,
+      "artifact_control": 6,
+      "commercial_usefulness": 6,
+      "pattern_reusability": 8,
+      "notes": "Visually strong alternate direction, but shifted into a night sci-fi pack launch. Good for exploratory mood variations, weak for faithful brand-style recreation."
+    },
+    {
+      "run_id": "cero-4301722d3a-pattern__checkout_proof__kling_2_6_pro_i2v",
+      "prompt_adherence": 9,
+      "temporal_coherence": 9,
+      "motion_quality": 8,
+      "subject_fidelity": 9,
+      "artifact_control": 8,
+      "commercial_usefulness": 9,
+      "pattern_reusability": 9,
+      "notes": "Cleanest proof shot. Strong reference continuity, natural checkout setting, stable phone framing, and clear payment interaction. Needs deterministic UI overlay replacement."
+    },
+    {
+      "run_id": "cero-4301722d3a-pattern__checkout_proof__wan_2_1_t2v",
+      "prompt_adherence": 6,
+      "temporal_coherence": 7,
+      "motion_quality": 7,
+      "subject_fidelity": 4,
+      "artifact_control": 6,
+      "commercial_usefulness": 6,
+      "pattern_reusability": 7,
+      "notes": "Decent generic contactless-payment shot, but it lost the rewards-app identity and neon-lime brand language. Useful as a cheap generic checkout baseline."
+    },
+    {
+      "run_id": "cero-4301722d3a-pattern__full_montage__krea_wan_14b_t2v",
+      "prompt_adherence": 5,
+      "temporal_coherence": 7,
+      "motion_quality": 6,
+      "subject_fidelity": 6,
+      "artifact_control": 7,
+      "commercial_usefulness": 6,
+      "pattern_reusability": 6,
+      "notes": "Coherent low-cost product/app scene with clean lime styling, but it ignored the multi-beat montage and stayed in one tabletop setup. Useful for cheap static product-app explorations, not montage reconstruction."
+    }
+  ]
+}

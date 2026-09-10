@@ -1,0 +1,62 @@
+{
+  "sample_id": "cero-4301722d3a",
+  "source_path": "data/samples/Cero.mp4",
+  "inspection_method": "manual keyframe review",
+  "sample_specific_facts": {
+    "visible_brand_or_product": "neon-lime rewards pack and mobile rewards app",
+    "visible_moments": [
+      "small neon-lime object thrown upward between city buildings",
+      "phone lock screen showing a completed voucher or reward at 100%",
+      "point-of-sale checkout with phone tapped near a payment terminal",
+      "minimal white product insert with serif typography reading like a campaign claim",
+      "floating product/reward burst with money, a green vehicle, ball, and pack graphics",
+      "phone app dashboard showing a score value and reward modules",
+      "grocery or retail checkout with phone/payment interaction"
+    ],
+    "dominant_colors": ["neon lime", "white", "black", "natural retail tones"],
+    "orientation": "16:9"
+  },
+  "reusable_pattern": {
+    "pattern_name": "Reward Pack To App Proof Montage",
+    "shot_family": "product app reward montage",
+    "recommended_mode": "text-to-video",
+    "secondary_tools": ["image-to-video for product fidelity", "HyperFrames for typography, UI inserts, and final edit assembly"],
+    "structure": [
+      "Start with a surreal physical product or brand token in the real world",
+      "Cut to a phone UI proving progress, points, or reward completion",
+      "Show a real-world transaction where the phone creates value",
+      "Insert a minimal white typographic claim card or product-pack beauty shot",
+      "Use a floating reward burst to visualize upside or winnings",
+      "Return to app UI and retail proof to make the benefit feel practical"
+    ],
+    "style_axes": [
+      "premium fintech/product launch polish",
+      "neon accent color against restrained white/black layouts",
+      "mix of surreal product motion and grounded real-world proof",
+      "fast but readable commercial montage",
+      "phone UI as evidence rather than decoration"
+    ],
+    "camera_and_motion": [
+      "upward look between city buildings for launch energy",
+      "locked-off or handheld checkout closeups for proof",
+      "center-framed phone UI closeups",
+      "floating product elements radiating outward on white",
+      "clean cuts between real footage and graphic inserts"
+    ],
+    "negative_constraints": [
+      "no fake unreadable app text except abstract numbers or simple labels",
+      "no brand-name copying unless assets are supplied",
+      "no confusing payment action",
+      "no overcomplicated scene with too many props",
+      "no distorted phone screen"
+    ]
+  },
+  "prompt_defaults": {
+    "subject": "a neon-lime rewards pack for a mobile loyalty app",
+    "setting": "a modern city and everyday retail checkout locations",
+    "primary_action": "the pack launches upward, transforms into a phone reward notification, then proves value through tap-to-pay checkout and a floating burst of reward icons",
+    "camera_move": "mix of upward city POV, close handheld checkout proof shots, centered phone UI closeups, and clean product insert cuts",
+    "lighting": "natural daylight for real-world shots, crisp white studio light for graphic product inserts",
+    "mood": "premium, energetic, trustworthy fintech launch"
+  }
+}

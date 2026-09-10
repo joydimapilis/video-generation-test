@@ -1,0 +1,183 @@
+[
+  {
+    "default_slots": {
+      "aspect_ratio": "16:9",
+      "camera_move": "mix of upward city POV, close handheld checkout proof shots, centered phone UI closeups, and clean product insert cuts",
+      "duration_seconds": 5,
+      "lighting": "natural daylight for real-world shots, crisp white studio light for graphic product inserts",
+      "mood": "premium, energetic, trustworthy fintech launch",
+      "primary_action": "the pack launches upward, transforms into a phone reward notification, then proves value through tap-to-pay checkout and a floating burst of reward icons",
+      "setting": "a modern city and everyday retail checkout locations",
+      "subject": "a neon-lime rewards pack for a mobile loyalty app"
+    },
+    "model_notes": {
+      "hyperframes": "Use for deterministic typography, overlays, captions, edits, and final assembly.",
+      "image-to-video": "Use when product, character, or brand consistency matters.",
+      "text-to-video": "Use when the subject can be invented from the brief."
+    },
+    "pattern_id": "cero-4301722d3a-pattern",
+    "pattern_name": "Reward Pack To App Proof Montage",
+    "prompt_template": "Create a {duration_seconds}-second {aspect_ratio} commercial video of {subject} in {setting}. {primary_action}. Camera and edit language: {camera_move}. Lighting: {lighting}. Mood: {mood}. Reusable structure: Start with a surreal physical product or brand token in the real world; Cut to a phone UI proving progress, points, or reward completion; Show a real-world transaction where the phone creates value; Insert a minimal white typographic claim card or product-pack beauty shot; Use a floating reward burst to visualize upside or winnings; Return to app UI and retail proof to make the benefit feel practical. Style axes: premium fintech/product launch polish, neon accent color against restrained white/black layouts, mix of surreal product motion and grounded real-world proof, fast but readable commercial montage, phone UI as evidence rather than decoration. Camera references: upward look between city buildings for launch energy; locked-off or handheld checkout closeups for proof; center-framed phone UI closeups; floating product elements radiating outward on white; clean cuts between real footage and graphic inserts. Avoid: no fake unreadable app text except abstract numbers or simple labels, no brand-name copying unless assets are supplied, no confusing payment action, no overcomplicated scene with too many props, no distorted phone screen.",
+    "prompt_variants": [
+      {
+        "best_for": [
+          "premium text-to-video",
+          "first-pass model comparison"
+        ],
+        "prompt": "Create a 5-second 16:9 product app reward montage commercial for a neon-lime rewards pack for a mobile loyalty app. Show a fast readable sequence: physical launch in the real world, phone reward proof, checkout interaction, clean product insert, floating reward burst, final app proof. Use natural daylight for real-world shots, crisp white studio light for graphic product inserts. Mood: premium, energetic, trustworthy fintech launch. Keep UI text minimal and legible.",
+        "purpose": "Recreate the reusable multi-beat structure from the reference.",
+        "variant_id": "full_montage"
+      },
+      {
+        "best_for": [
+          "image-to-video",
+          "product fidelity tests",
+          "opening shot generation"
+        ],
+        "prompt": "Animate a neon-lime rewards pack for a mobile loyalty app launching upward between tall city buildings, leaving subtle neon-lime reward particles behind it. Keep the camera looking upward, the product centered, and the movement smooth enough to become an opening shot.",
+        "purpose": "Isolate the strongest visual hook as one controllable shot.",
+        "variant_id": "single_shot_launch"
+      },
+      {
+        "best_for": [
+          "image-to-video",
+          "retail proof shots",
+          "commercial cutaways"
+        ],
+        "prompt": "Create a close retail checkout shot where a hand presents a smartphone with a clean mobile rewards screen beside a payment terminal. The interaction should feel practical, trustworthy, and commercially polished. Avoid unreadable UI text and distorted phone edges.",
+        "purpose": "Turn the abstract reward idea into grounded product proof.",
+        "variant_id": "checkout_proof"
+      },
+      {
+        "best_for": [
+          "HyperFrames",
+          "controlled typography",
+          "app UI replacement",
+          "score counters"
+        ],
+        "prompt": "Use generated footage only for background/action plates. Replace app screens, progress numbers, reward claims, and end cards with deterministic HTML/CSS overlays rendered in HyperFrames so the final ad has legible text and repeatable brand/UI control.",
+        "purpose": "Deterministic final assembly guidance rather than a generative-video prompt.",
+        "variant_id": "hyperframes_overlay_plan"
+      }
+    ],
+    "recommended_mode": "text-to-video",
+    "shot_family": "product app reward montage",
+    "source_sample_id": "cero-4301722d3a",
+    "status": "draft_from_heuristic_analysis",
+    "style_axes": [
+      "premium fintech/product launch polish",
+      "neon accent color against restrained white/black layouts",
+      "mix of surreal product motion and grounded real-world proof",
+      "fast but readable commercial montage",
+      "phone UI as evidence rather than decoration"
+    ]
+  },
+  {
+    "default_slots": {
+      "aspect_ratio": "16:9",
+      "camera_move": "mascot scale reveal followed by a continuous workspace zoom-out and return",
+      "duration_seconds": 32.533333,
+      "lighting": "flat graphic color without lighting simulation",
+      "mood": "clear, playful opening and calm useful product demonstration",
+      "primary_action": "a user delegates a request, assistants connect tools, work in parallel, and return completed outcomes",
+      "setting": "a near-white 16:9 canvas with a minimalist chat workspace",
+      "subject": "Grok Bot and a color-coded team of specialist assistants"
+    },
+    "model_notes": {
+      "hyperframes": "Use for deterministic typography, overlays, captions, edits, and final assembly.",
+      "image-to-video": "Use when product, character, or brand consistency matters.",
+      "text-to-video": "Use when the subject can be invented from the brief."
+    },
+    "pattern_id": "motion-5-motion-plans-the-video-scene-by-scene-before-building-it.-e3855e68b8-pattern",
+    "pattern_name": "Character-led SaaS delegation demo",
+    "prompt_template": "Create a {duration_seconds}-second {aspect_ratio} commercial video of {subject} in {setting}. {primary_action}. Camera and edit language: {camera_move}. Lighting: {lighting}. Mood: {mood}. Reusable structure: Introduce a simple two-eye mascot; Multiply into a color-coded specialist team; Resolve into a brand wordmark; Show one concrete user request; Reveal tool connections in a stagger; Expand the same workspace into parallel task lanes; Collapse to completed outcomes; Hold the closing brand lockup. Style axes: white canvas and black type, flat character silhouettes, restrained app window shadows, generous negative space, legible purposeful UI. Camera references: scale and rotate the mascot before a stable brand hold; retain the same UI identity through a continuous zoom-out and return; reveal task rows sequentially; give key copy at least two seconds to read. Avoid: no photographic scenes, no decorative gradients, no distorted letters, no extra eyes, no invented numerical claims beyond the reference, no unrelated checkout or city scenes.",
+    "prompt_variants": [
+      {
+        "best_for": [
+          "image-to-video",
+          "text-to-video",
+          "mascot opening"
+        ],
+        "prompt": "A 5-second 16:9 flat 2D motion graphic on a clean near-white background. A centered solid black circular mascot has exactly two vertical white pill-shaped eyes, no mouth, no limbs. It tilts 15 degrees and smoothly scales down. Three simple cyan, golden-yellow and mint-green two-eye silhouettes arrive one after another and settle into a small vertical team stack at center. Crisp vector-like edges, flat colors, fixed camera, generous empty space. Preserve exactly two eyes on every character. No text, no gradients, no shadows, no realistic objects. Finish on a stable stack.",
+        "purpose": "Test shape identity, controlled motion and character multiplication without typography.",
+        "variant_id": "mascot_team_hook"
+      },
+      {
+        "best_for": [
+          "HyperFrames",
+          "readable UI",
+          "full-length final assembly"
+        ],
+        "prompt": "Build a 32.53-second 16:9 SaaS demo. 0-8s: animate a two-eye brand mascot into a color-coded team, then announce the product. 8-11s: settle the source brand mark beside the editable brand name. 11-17s: reveal an app window, a concrete user request and a short acknowledgement. 17-21s: stagger the connected-tool labels and a delegation response. 21-27s: transform the same app into a four-panel specialist workspace; reveal task progress independently. 27-30s: return to the main panel and check off verified results. 30-32.53s: hold the brand lockup. Use HTML text, explicit timeline beats and flat source-inspired graphics; never synthesize UI text as video pixels. Replace brand, request, tools, lanes and results from the new use case.",
+        "purpose": "Reusable deterministic plan with replaceable brand, user request, tools, specialists and verified outcomes.",
+        "variant_id": "hyperframes_workflow_demo"
+      }
+    ],
+    "recommended_mode": "image-to-video",
+    "shot_family": "readable UI workflow motion graphic",
+    "source_sample_id": "motion-5-motion-plans-the-video-scene-by-scene-before-building-it.-e3855e68b8",
+    "status": "draft_from_heuristic_analysis",
+    "style_axes": [
+      "white canvas and black type",
+      "flat character silhouettes",
+      "restrained app window shadows",
+      "generous negative space",
+      "legible purposeful UI"
+    ]
+  },
+  {
+    "default_slots": {
+      "aspect_ratio": "16:9",
+      "camera_move": "macro-to-wide light trail, precise path follow, count-up and stable closing lockup",
+      "duration_seconds": 27.833333,
+      "lighting": "emissive orange line head against near-black, flat typography on solid fields",
+      "mood": "direct, energetic, confident",
+      "primary_action": "an orange trail connects posting, reach, bank setup, an increasing balance and a payout proof card",
+      "setting": "a graphic canvas alternating near-black, orange-red, and white",
+      "subject": "Content Rewards creator payouts"
+    },
+    "model_notes": {
+      "hyperframes": "Use for deterministic typography, overlays, captions, edits, and final assembly.",
+      "image-to-video": "Use when product, character, or brand consistency matters.",
+      "text-to-video": "Use when the subject can be invented from the brief."
+    },
+    "pattern_id": "motion-content-rewards-launch-video-2782df6e63-pattern",
+    "pattern_name": "Light-trail journey to earnings proof",
+    "prompt_template": "Create a {duration_seconds}-second {aspect_ratio} commercial video of {subject} in {setting}. {primary_action}. Camera and edit language: {camera_move}. Lighting: {lighting}. Mood: {mood}. Reusable structure: Introduce an emissive trail in extreme closeup; Pull back and route it through three short action statements; Resolve the trail into the setup action; Switch to a saturated brand-color band for account setup and earnings; Count up a balance with fixed digit geometry; Press the payout action; Follow the same trail into a source-backed proof card; Resolve to a clean, stable brand end frame. Style axes: near-black, orange-red, and white scene contrast, single continuous guiding line, large bold neutral sans, emissive line head, fixed-format tabular monetary counter, restrained proof card. Camera references: macro-to-wide opening; left-to-right line draw; continuous path tip tracking; controlled scale on the monetary value; short pointer press; upward type reveals; brand hold through the final frame. Avoid: no unreadable generated text, no invented earnings or testimonial claims, no unrelated photographic scenes, no gratuitous particles, no multiple competing light trails, no number layout jitter.",
+    "prompt_variants": [
+      {
+        "best_for": [
+          "image-to-video",
+          "text-to-video",
+          "opening motion plate"
+        ],
+        "prompt": "Create a 5-second 16:9 abstract motion graphic. On a uniform near-black background, one bright orange-red horizontal line ends in a small warm glowing tip. Begin close on the thick line and its tip, then smoothly pull the camera back until the stroke is thin and surrounded by generous negative space. The glowing tip moves steadily from left to right, leaving one crisp orange line with a single gentle upward curve. Maintain a clean unbroken stroke and a warm white-orange tip with restrained light bloom. Finish with the thin line across the middle of the frame. No text, no logos, no objects, no particles, no branching lines, no fireworks, no lens flares, no floor.",
+        "purpose": "Test continuous thin path geometry, controlled pullback and glow preservation without typography.",
+        "variant_id": "emissive_trail_hook"
+      },
+      {
+        "best_for": [
+          "HyperFrames",
+          "path animation",
+          "monetary counters",
+          "complete final video"
+        ],
+        "prompt": "Build a 27.83-second 16:9 launch video. 0-3s: macro-to-wide orange emissive trail on near-black. 3-7s: guide that trail through three short action labels. 7-9s: resolve to the payout setup action. 9-11s: saturated brand-color account-connection screen. 11-16s: a fixed-width tabular balance counts upward with the caption Available to pay out. 16-18s: pointer presses the payout action. 18-22s: white canvas, same orange trail lands on a payout card with source-supplied proof. 22-24s: brief brand-and-proof handoff. 24-27.83s: supplied icon, brand title, call to action and URL hold. All text, counters, geometric paths and buttons are deterministic. For another use case, replace the brand, labels, setup step, proof values and CTA; require evidence for every numerical claim.",
+        "purpose": "Recreate a complete action-to-proof narrative with replaceable brand, action labels, setup instruction, verified figures and CTA.",
+        "variant_id": "hyperframes_earnings_journey"
+      }
+    ],
+    "recommended_mode": "image-to-video",
+    "shot_family": "kinetic creator monetization launch",
+    "source_sample_id": "motion-content-rewards-launch-video-2782df6e63",
+    "status": "draft_from_heuristic_analysis",
+    "style_axes": [
+      "near-black, orange-red, and white scene contrast",
+      "single continuous guiding line",
+      "large bold neutral sans",
+      "emissive line head",
+      "fixed-format tabular monetary counter",
+      "restrained proof card"
+    ]
+  }
+]

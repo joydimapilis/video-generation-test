@@ -1,0 +1,13 @@
+<!doctype html><html lang="en" data-resolution="landscape"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=1920, height=1080"><script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:RewardsArial;src:url('assets/Arial.ttf')}@font-face{font-family:RewardsArial;src:url('assets/Arial-Bold.ttf');font-weight:700}
+*{box-sizing:border-box;margin:0;padding:0}html,body,#rewards-root{width:1920px;height:1080px;overflow:hidden;font-family:RewardsArial,Arial,sans-serif;letter-spacing:0;background:#080d0a;color:#fafafa}.clip{position:absolute;inset:0;width:1920px;height:1080px}
+</style></head><body>
+<div id="rewards-root" data-composition-id="content-rewards" data-duration="27.833333" data-width="1920" data-height="1080" data-fps="30">
+<div class="clip" id="journey-host" data-composition-id="journey" data-composition-src="compositions/journey.html" data-start="0" data-duration="9" data-width="1920" data-height="1080" data-track-index="0"></div>
+<div class="clip" id="earnings-host" data-composition-id="earnings" data-composition-src="compositions/earnings.html" data-start="9" data-duration="7" data-width="1920" data-height="1080" data-track-index="1"></div>
+<div class="clip" id="payout-host" data-composition-id="payout" data-composition-src="compositions/payout.html" data-start="16" data-duration="8" data-width="1920" data-height="1080" data-track-index="2"></div>
+<div class="clip" id="closing-host" data-composition-id="rewards-close" data-composition-src="compositions/closing.html" data-start="24" data-duration="3.833333" data-width="1920" data-height="1080" data-track-index="3"></div>
+<audio id="rewards-audio" src="assets/reference-audio.m4a" data-start="0" data-duration="27.833333" data-volume="1" data-track-index="10"></audio>
+</div><script>window.__timelines=window.__timelines||{};window.__timelines['content-rewards']=gsap.timeline({paused:true});</script></body></html>

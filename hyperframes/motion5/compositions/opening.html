@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"></head><body><template>
+<style>
+#opening-root{position:absolute;inset:0;width:1920px;height:1080px;background:#fafafa;overflow:hidden}
+#opening-generated{position:absolute;inset:0;width:1920px;height:1080px;object-fit:cover}
+#opening-hero{position:absolute;left:660px;top:240px;width:600px;height:600px;mix-blend-mode:multiply;opacity:0}
+#opening-team{position:absolute;left:880px;top:290px;width:160px;height:580px}
+.character{position:absolute;width:160px;height:156px;display:block}
+.character::before,.character::after{content:"";position:absolute;top:52px;width:20px;height:43px;background:#fafafa;border-radius:12px}
+.character::before{left:49px}.character::after{left:93px;top:46px}
+#opening-mint{top:0;background:#12d6a0;border-radius:46% 54% 38% 48%}
+#opening-blue{top:132px;background:#229de5;border-radius:54% 45% 46% 48%}
+#opening-yellow{top:268px;background:#edb600;border-radius:38% 44% 40% 32%}
+#opening-black{position:absolute;top:408px;width:160px;height:160px;mix-blend-mode:multiply}
+#opening-announcement{position:absolute;top:160px;left:200px;width:1520px;text-align:center;font-size:68px;font-weight:400}
+#opening-wordmark{position:absolute;left:700px;top:466px;width:780px;font-size:116px;line-height:150px;white-space:nowrap}
+</style>
+<div data-hf-id="hf-lt5m" id="opening-root" data-composition-id="opening" data-width="1920" data-height="1080" data-duration="11">
+<video data-hf-id="hf-kgtq" id="opening-generated" class="clip" src="assets/kling-intro.mp4" data-start="0" data-duration="5" data-track-index="0" muted playsinline></video>
+<img data-hf-id="hf-mi3i" id="opening-hero" src="assets/brand.png" alt="Grok Bot mascot">
+<div data-hf-id="hf-1pdf" id="opening-team"><div data-hf-id="hf-777q" id="opening-mint" class="character"></div><div data-hf-id="hf-5bfm" id="opening-blue" class="character"></div><div data-hf-id="hf-rl1u" id="opening-yellow" class="character"></div><img data-hf-id="hf-brju" id="opening-black" src="assets/brand.png" alt=""></div>
+<h1 data-hf-id="hf-nmgt" id="opening-announcement">Grok Bot, now on more plans</h1><div data-hf-id="hf-ck7t" id="opening-wordmark">Grok Bot</div>
+</div>
+<script>(()=>{
+const tl=gsap.timeline({paused:true});
+tl.to('#opening-generated',{opacity:0,duration:0.4},4.6);
+tl.fromTo('#opening-team',{opacity:0,scale:0.8},{opacity:1,scale:1,duration:0.5,ease:'power3.out'},4.6);
+tl.fromTo('#opening-announcement',{y:34,opacity:0},{y:0,opacity:1,duration:0.6,ease:'power3.out'},4.65);
+tl.to('#opening-team',{rotation:5,duration:0.45,ease:'sine.inOut'},5.5);
+tl.to('#opening-team',{rotation:0,duration:0.55,ease:'sine.inOut'},5.95);
+tl.to('#opening-announcement',{opacity:0,y:-20,duration:0.35},7.1);
+tl.to('#opening-team',{scale:0,rotation:-30,duration:0.55,ease:'power3.in'},7.15);
+tl.set('#opening-hero',{x:0,y:0,scale:0.32,rotation:-40,opacity:1},7.65);
+tl.to('#opening-hero',{rotation:0,duration:0.55,ease:'power3.out'},7.65);
+tl.to('#opening-hero',{x:-365,scale:0.21,duration:0.6,ease:'power3.inOut'},8.45);
+tl.fromTo('#opening-wordmark',{x:40,opacity:0},{x:0,opacity:1,duration:0.55,ease:'power3.out'},8.65);
+tl.to(['#opening-wordmark','#opening-hero'],{opacity:0,duration:0.35},10.6);
+window.__timelines.opening=tl;
+})();</script></template></body></html>

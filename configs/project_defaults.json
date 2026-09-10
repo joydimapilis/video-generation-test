@@ -1,0 +1,19 @@
+{
+  "samples_dir": "data/samples",
+  "artifacts_dir": "artifacts",
+  "prompt_library_dir": "prompt_library",
+  "default_use_case": "short-form product, marketing, and social video clips",
+  "budget": {
+    "default_max_estimated_cost_usd": 2.0,
+    "live_runs_require_flag": true,
+    "prefer_dry_run_until_review": true
+  },
+  "analysis": {
+    "keyframe_interval_seconds": 2,
+    "max_keyframes_per_video": 8
+  },
+  "review": {
+    "formats": ["markdown", "json"],
+    "primary_report": "artifacts/reports/latest.md"
+  }
+}

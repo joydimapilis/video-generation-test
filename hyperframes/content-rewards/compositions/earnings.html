@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template>
+<style>
+#earnings-root{position:absolute;inset:0;width:1920px;height:1080px;background:#ff4818;color:#fff;overflow:hidden}
+.earnings-eyebrow{position:absolute;left:260px;top:235px;width:1400px;text-align:center;font-size:28px;font-weight:700}
+#earnings-connect{position:absolute;left:160px;top:398px;width:1600px;text-align:center;font-size:140px;font-weight:700;line-height:175px}
+#earnings-whop{position:absolute;left:860px;top:625px;width:200px;height:72px;border:2px solid #fff;border-radius:36px;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:700;gap:15px}
+#earnings-whop i{width:24px;height:24px;border:2px solid #fff;border-radius:50%;position:relative}#earnings-whop i::after{content:"";position:absolute;left:6px;top:3px;width:7px;height:11px;border-right:2px solid white;border-bottom:2px solid white;transform:rotate(40deg)}
+#earnings-balance{position:absolute;left:250px;top:345px;width:1420px;height:315px;display:flex;justify-content:center;align-items:center;font-variant-numeric:tabular-nums;font-weight:700;transform-origin:center}
+#earnings-currency{font-size:118px;align-self:flex-start;padding-top:50px;margin-right:24px}#earnings-value{font-size:240px;line-height:280px;width:830px;text-align:right}#earnings-cents{font-size:130px;line-height:170px;align-self:flex-end;margin-bottom:22px;width:210px}
+#earnings-caption{position:absolute;left:260px;top:680px;width:1400px;text-align:center;font-size:46px}
+#earnings-actions{position:absolute;left:440px;top:845px;width:1040px;display:flex;gap:24px;justify-content:center}
+.earnings-action{height:72px;padding:12px 30px;border-radius:36px;background:#fff;color:#c42b04;font-size:34px;font-weight:700;display:flex;align-items:center}
+</style>
+<div id="earnings-root" data-composition-id="earnings" data-duration="7" data-width="1920" data-height="1080">
+<div id="earnings-step1" class="earnings-eyebrow">01 / SETUP PAYOUTS</div><div id="earnings-connect">Connect your bank.</div><div id="earnings-whop">Whop<i></i></div>
+<div id="earnings-step2" class="earnings-eyebrow">02 / START EARNING</div>
+<div id="earnings-balance"><span id="earnings-currency">$</span><span id="earnings-value">0</span><span id="earnings-cents">.00</span></div>
+<div id="earnings-caption">Available to pay out</div>
+<div id="earnings-actions"><div class="earnings-action">Post.</div><div class="earnings-action">Go viral.</div><div class="earnings-action">Get paid.</div></div>
+</div>
+<script>(()=>{
+const tl=gsap.timeline({paused:true});
+tl.fromTo('#earnings-step1',{opacity:0,y:15},{opacity:1,y:0,duration:0.35},0.1);
+tl.fromTo('#earnings-connect',{opacity:0,y:45,scale:0.94},{opacity:1,y:0,scale:1,duration:0.65,ease:'power3.out'},0.05);
+tl.fromTo('#earnings-whop',{opacity:0,scale:0.85},{opacity:1,scale:1,duration:0.45,ease:'power3.out'},0.65);
+tl.to(['#earnings-step1','#earnings-connect','#earnings-whop'],{opacity:0,y:-20,duration:0.25},1.9);
+tl.fromTo('#earnings-step2',{opacity:0},{opacity:1,duration:0.3},2.2);
+tl.fromTo('#earnings-balance',{opacity:0,scale:0.68},{opacity:1,scale:1,duration:3.1,ease:'power2.out'},2.25);
+const amount={cents:0};const whole=document.getElementById('earnings-value');const fraction=document.getElementById('earnings-cents');
+// Fixed-width tabular digits from number-wheel; explicit formatted cents avoid layout shifts.
+tl.to(amount,{cents:198916,duration:3.15,ease:'power2.inOut',onUpdate:()=>{const total=Math.round(amount.cents);whole.textContent=Math.floor(total/100).toLocaleString('en-US');fraction.textContent='.'+String(total%100).padStart(2,'0');}},2.25);
+tl.fromTo('#earnings-caption',{opacity:0,y:20},{opacity:1,y:0,duration:0.4},2.45);
+tl.fromTo('.earnings-action',{opacity:0,y:20,scale:0.92},{opacity:1,y:0,scale:1,duration:0.35,stagger:0.35,ease:'power3.out'},5.25);
+window.__timelines.earnings=tl;
+})();</script></template></body></html>

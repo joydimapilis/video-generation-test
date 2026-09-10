@@ -1,0 +1,18 @@
+{
+  "duration_seconds": 32.533333,
+  "final_delivery_path": "artifacts/final_outcome/motion5/motion5-final.mp4",
+  "fps": 30,
+  "output_id": "motion5_final",
+  "output_path": "artifacts/outputs/motion5_final.mp4",
+  "preview_url": "http://localhost:3021/#project/motion5",
+  "purpose": "Full-length reference-inspired recreation: Fal mascot opening and deterministic UI workflow.",
+  "quality_notes": "Agent inspected scene snapshots and final contact sheet. All readable UI and end lockup are rebuilt. Original supplied soundtrack and cropped source mascot reused. No human approval score assigned.",
+  "recommended_use": "Review the complete Motion-5 outcome; replace brand, request, tools, lane labels and results for other use cases.",
+  "resolution": "1920x1080",
+  "source_plates": [
+    "artifacts/outputs/motion-5-motion-plans-the-video-scene-by-scene-before-building-it.-e3855e68b8-pattern__mascot_team_hook__kling_2_6_pro_i2v.mp4"
+  ],
+  "source_project": "hyperframes/motion5",
+  "source_sample_id": "motion-5-motion-plans-the-video-scene-by-scene-before-building-it.-e3855e68b8",
+  "tool": "HyperFrames + Kling 2.6 Pro"
+}

@@ -1,0 +1,11 @@
+{
+  "duration": 10,
+  "assertions": [
+    { "kind": "appearsBy", "selector": "#launch-headline", "bySec": 1 },
+    { "kind": "appearsBy", "selector": "#phone-ui", "bySec": 6.2 },
+    { "kind": "appearsBy", "selector": "#terminal-badge", "bySec": 6.8 },
+    { "kind": "staysInFrame", "selector": "#phone-ui" },
+    { "kind": "staysInFrame", "selector": "#terminal-badge" },
+    { "kind": "keepsMoving", "withinSelector": "#root", "maxStaticSec": 2.5 }
+  ]
+}

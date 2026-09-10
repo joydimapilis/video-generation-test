@@ -1,0 +1,44 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template>
+<style>
+#payout-root{position:absolute;inset:0;width:1920px;height:1080px;background:#080d0a;overflow:hidden}
+#payout-button{position:absolute;left:650px;top:420px;width:620px;height:240px;display:flex;align-items:center;justify-content:center;border:3px solid #ce421a;border-radius:120px;color:#ffb02e;font-size:124px;font-weight:700}
+#payout-pointer{position:absolute;left:1220px;top:690px;width:74px;height:94px}
+#payout-paper{position:absolute;inset:0;background:#fafafa;color:#080d0a}
+#payout-routing{position:absolute;inset:0;width:1920px;height:1080px}#payout-routing path{fill:none;stroke:#ff4818;stroke-width:8;stroke-linecap:round}
+#payout-card{position:absolute;left:985px;top:355px;width:710px;height:390px;background:#fff;border:2px solid #eee;border-radius:8px;box-shadow:0 18px 36px #0000000c;padding:40px 44px}
+#payout-label{position:absolute;left:985px;top:275px;width:710px;text-align:center;color:#666;font-size:28px;font-weight:700}
+#payout-card header{display:flex;justify-content:space-between;font-size:27px;color:#555;align-items:center}#payout-card strong{color:#111;font-size:30px}#payout-verified{font-size:24px;display:flex;align-items:center;gap:12px}.verified-tick{display:block;width:26px;height:26px;border-radius:50%;background:#d53b10;position:relative}.verified-tick::after{content:"";position:absolute;left:8px;top:5px;width:7px;height:11px;border-bottom:3px solid #fff;border-right:3px solid #fff;transform:rotate(40deg)}
+#payout-amount{font-size:126px;line-height:155px;color:#df370d;font-weight:700;margin-top:27px;font-variant-numeric:tabular-nums}
+#payout-quote{font-size:29px;line-height:42px;margin-top:5px;white-space:nowrap}
+#payout-lockup{position:absolute;left:365px;top:440px;width:1190px;height:200px;display:flex;align-items:center;gap:55px}
+#payout-brand{font-size:50px;border:2px solid #111;border-radius:46px;padding:18px 32px;white-space:nowrap}
+#payout-proof-short{font-size:64px;font-weight:700;white-space:nowrap}#payout-proof-short span{color:#df370d}
+</style>
+<div id="payout-root" data-composition-id="payout" data-duration="8" data-width="1920" data-height="1080">
+<div id="payout-button">Get Paid</div>
+<svg id="payout-pointer" viewBox="0 0 74 94" aria-label="Pointer pressing Get Paid"><path d="M10 5 L10 73 L27 56 L43 87 L55 80 L39 50 L65 50 Z" fill="white" stroke="#111" stroke-width="3"/></svg>
+<div id="payout-paper">
+<svg id="payout-routing" viewBox="0 0 1920 1080" aria-label="Payout trail outlining the evidence card"><defs><filter id="payout-bloom" x="-400%" y="-400%" width="900%" height="900%"><feGaussianBlur stdDeviation="13"/></filter></defs><path id="payout-line" d="M 0 565 C 360 565 530 510 790 525 L 965 525 L 965 375 Q 965 335 1005 335 L 1685 335 Q 1720 335 1720 375 L 1720 730 Q 1720 765 1685 765 L 1005 765 Q 965 765 965 730 L 965 525"/><g id="payout-tip"><circle r="22" fill="#ff7030" filter="url(#payout-bloom)"/><circle r="7" fill="#ffd0a0"/></g></svg>
+<div id="payout-label">PAYOUT</div>
+<section id="payout-card"><header><strong>OTTO</strong><div id="payout-verified">VERIFIED<i class="verified-tick"></i></div></header><div id="payout-amount">$4,000</div><p id="payout-quote">A 20-second video made me $4,000</p></section>
+<div id="payout-lockup"><div id="payout-brand">Content Rewards</div><div id="payout-proof-short">Otto <span>$4,000</span></div></div>
+</div>
+</div>
+<script>(()=>{
+const tl=gsap.timeline({paused:true});
+tl.fromTo('#payout-button',{scale:0.86,opacity:0},{scale:1,opacity:1,duration:0.55,ease:'power3.out'},0);
+tl.fromTo('#payout-pointer',{x:160,y:120,opacity:0},{x:-30,y:-100,opacity:1,duration:0.6,ease:'power3.out'},0.6);
+tl.to('#payout-button',{scale:0.94,duration:0.12,ease:'power2.in'},1.25);tl.to('#payout-button',{scale:1,duration:0.22,ease:'power2.out'},1.37);
+tl.fromTo('#payout-paper',{opacity:0},{opacity:1,duration:0.15},1.8);
+const line=document.getElementById('payout-line');const tip=document.getElementById('payout-tip');const length=line.getTotalLength();const state={p:0};
+const draw=()=>{line.style.strokeDasharray=String(length);line.style.strokeDashoffset=String(length*(1-state.p));const point=line.getPointAtLength(length*state.p);tip.setAttribute('transform',`translate(${point.x} ${point.y})`);};draw();
+tl.to(state,{p:1,duration:2.6,ease:'power2.inOut',onUpdate:draw},1.9);
+tl.fromTo(['#payout-label','#payout-card'],{opacity:0,y:20},{opacity:1,y:0,duration:0.5,ease:'power3.out'},2.8);
+tl.fromTo('#payout-amount',{opacity:0,y:16,scale:0.92},{opacity:1,y:0,scale:1,duration:0.5,ease:'power3.out'},3.7);
+tl.fromTo('#payout-quote',{opacity:0,y:15},{opacity:1,y:0,duration:0.35},4.15);
+tl.to('#payout-tip',{opacity:0,duration:0.3},4.5);
+tl.to(['#payout-card','#payout-label','#payout-routing'],{opacity:0,y:-35,duration:0.4},5.85);
+tl.fromTo('#payout-lockup',{opacity:0,y:50},{opacity:1,y:0,duration:0.55,ease:'power3.out'},6.25);
+tl.to('#payout-lockup',{opacity:0,y:-30,duration:0.3},7.6);
+window.__timelines.payout=tl;
+})();</script></template></body></html>

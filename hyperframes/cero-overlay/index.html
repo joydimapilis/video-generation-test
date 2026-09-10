@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>Cero Overlay Prototype</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #070807;
+        color: #f8faf7;
+      }
+      body {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #070807;
+      }
+      .clip {
+        position: absolute;
+        inset: 0;
+      }
+      video.clip {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .grade {
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(90deg, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.02) 48%, rgba(0, 0, 0, 0.42)),
+          radial-gradient(circle at 78% 38%, rgba(190, 255, 35, 0.2), transparent 28%);
+        pointer-events: none;
+      }
+      .brand-lockup {
+        position: absolute;
+        left: 88px;
+        top: 74px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        font-weight: 760;
+        font-size: 34px;
+        letter-spacing: 0;
+      }
+      .mark {
+        width: 54px;
+        height: 54px;
+        border-radius: 8px;
+        background: #c8ff2f;
+        color: #111608;
+        display: grid;
+        place-items: center;
+        font-weight: 900;
+      }
+      .claim {
+        position: absolute;
+        left: 88px;
+        bottom: 94px;
+        width: 710px;
+      }
+      .claim h1 {
+        font-size: 74px;
+        line-height: 0.96;
+        letter-spacing: 0;
+        max-width: 700px;
+      }
+      .claim p {
+        margin-top: 26px;
+        width: 560px;
+        font-size: 28px;
+        line-height: 1.22;
+        color: #dfe8d7;
+      }
+      .phone-panel {
+        position: absolute;
+        right: 108px;
+        top: 164px;
+        width: 430px;
+        min-height: 720px;
+        border-radius: 58px;
+        border: 12px solid #101310;
+        background: #f8faf7;
+        color: #121611;
+        box-shadow: 0 36px 100px rgba(0, 0, 0, 0.42);
+        padding: 54px 36px 40px;
+      }
+      .phone-panel::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 154px;
+        width: 122px;
+        height: 32px;
+        border-radius: 999px;
+        background: #101310;
+      }
+      .app-eyebrow {
+        margin-top: 34px;
+        color: #5f6959;
+        font-size: 23px;
+        font-weight: 650;
+      }
+      .score {
+        margin-top: 42px;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: conic-gradient(#c8ff2f 0deg 284deg, #e3e8dc 284deg 360deg);
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .score-inner {
+        width: 202px;
+        height: 202px;
+        border-radius: 50%;
+        background: #f8faf7;
+        display: grid;
+        place-items: center;
+        font-size: 64px;
+        font-weight: 820;
+      }
+      .reward-row {
+        margin-top: 42px;
+        display: grid;
+        gap: 18px;
+      }
+      .reward-pill {
+        min-height: 72px;
+        border-radius: 18px;
+        background: #eef3e8;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 22px;
+        font-size: 24px;
+        font-weight: 720;
+      }
+      .reward-pill strong {
+        color: #597800;
+      }
+      .terminal-badge {
+        position: absolute;
+        right: 610px;
+        bottom: 120px;
+        width: 360px;
+        border-radius: 8px;
+        background: #c8ff2f;
+        color: #101310;
+        padding: 24px 30px;
+        font-size: 26px;
+        line-height: 1.12;
+        font-weight: 780;
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+      }
+      .tiny {
+        margin-top: 12px;
+        color: rgba(16, 19, 16, 0.72);
+        font-size: 17px;
+        font-weight: 650;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-199x" id="root" data-composition-id="main" data-start="0" data-duration="10" data-width="1920" data-height="1080">
+      <video data-hf-id="hf-mxht" id="launch-plate" class="clip" data-start="0" data-duration="5" data-track-index="0" src="assets/launch_kling_i2v.mp4" muted playsinline></video>
+      <video data-hf-id="hf-bq7y" id="checkout-plate" class="clip" data-start="5" data-duration="5" data-track-index="0" src="assets/checkout_kling_i2v.mp4" muted playsinline></video>
+      <section data-hf-id="hf-e6v1" id="launch-overlay" class="clip" data-start="0" data-duration="5" data-track-index="2">
+        <div data-hf-id="hf-jezh" class="grade"></div>
+        <div data-hf-id="hf-umee" class="brand-lockup">
+          <div data-hf-id="hf-kfhk" class="mark">C</div>
+          <div data-hf-id="hf-98vf">Cero Rewards</div>
+        </div>
+        <div data-hf-id="hf-b3s4" class="claim">
+          <h1 data-hf-id="hf-ywp8" id="launch-headline">Rewards that lift off instantly</h1>
+          <p data-hf-id="hf-4lqe" id="launch-copy">Turn one small pack into app progress, checkout value, and a clear reason to come back.</p>
+        </div>
+      </section>
+      <section data-hf-id="hf-chbj" id="checkout-overlay" class="clip" data-start="5" data-duration="5" data-track-index="2">
+        <div data-hf-id="hf-obsh" class="grade"></div>
+        <div data-hf-id="hf-9g16" class="brand-lockup">
+          <div data-hf-id="hf-bucg" class="mark">C</div>
+          <div data-hf-id="hf-f30r">Cero Rewards</div>
+        </div>
+        <div data-hf-id="hf-nnd8" id="phone-ui" class="phone-panel">
+          <div data-hf-id="hf-9sdf" class="app-eyebrow">Today's reward score</div>
+          <div data-hf-id="hf-a672" class="score">
+            <div data-hf-id="hf-dir5" class="score-inner">275</div>
+          </div>
+          <div data-hf-id="hf-xl7a" class="reward-row">
+            <div data-hf-id="hf-hq5f" class="reward-pill"><span data-hf-id="hf-ph2a">Checkout boost</span><strong data-hf-id="hf-797o">+15%</strong></div>
+            <div data-hf-id="hf-w883" class="reward-pill"><span data-hf-id="hf-qupx">Pack opened</span><strong data-hf-id="hf-qcjo">100%</strong></div>
+            <div data-hf-id="hf-vtx2" class="reward-pill"><span data-hf-id="hf-me2b">Next reward</span><strong data-hf-id="hf-9mn7">$10</strong></div>
+          </div>
+        </div>
+        <div data-hf-id="hf-4bl4" id="terminal-badge" class="terminal-badge">
+          Pay with points at checkout
+          <div data-hf-id="hf-emyj" class="tiny">Generated plate plus deterministic UI overlay</div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#launch-headline", { y: 34, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.7, ease: "power3.out" }, 0.25);
+      tl.fromTo("#launch-copy", { y: 24, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.7, ease: "power3.out" }, 0.55);
+      tl.fromTo("#launch-overlay .grade", { autoAlpha: 0.72 }, { autoAlpha: 0.94, duration: 1.3, ease: "sine.inOut", yoyo: true, repeat: 2 }, 1.1);
+      tl.fromTo("#checkout-overlay .brand-lockup", { y: -18, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.5, ease: "power2.out" }, 5.1);
+      tl.fromTo("#phone-ui", { x: 70, autoAlpha: 0 }, { x: 0, autoAlpha: 1, duration: 0.75, ease: "power3.out" }, 5.25);
+      tl.fromTo("#terminal-badge", { y: 42, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.6, ease: "power3.out" }, 6.0);
+      tl.to("#phone-ui", { y: -8, duration: 1.8, ease: "sine.inOut", yoyo: true, repeat: 1 }, 7.0);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

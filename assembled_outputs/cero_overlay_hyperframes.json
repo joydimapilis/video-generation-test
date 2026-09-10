@@ -1,0 +1,18 @@
+{
+  "output_id": "cero_overlay_hyperframes",
+  "tool": "HyperFrames",
+  "source_project": "hyperframes/cero-overlay",
+  "output_path": "artifacts/outputs/cero_overlay_hyperframes.mp4",
+  "preview_url": "http://localhost:3017/#project/cero-overlay",
+  "duration_seconds": 10,
+  "resolution": "1920x1080",
+  "fps": 30,
+  "quality_score": 86,
+  "source_plates": [
+    "artifacts/outputs/cero-4301722d3a-pattern__single_shot_launch__kling_2_6_pro_i2v.mp4",
+    "artifacts/outputs/cero-4301722d3a-pattern__checkout_proof__kling_2_6_pro_i2v.mp4"
+  ],
+  "purpose": "Deterministically combine the best generated launch and checkout proof plates with readable brand, reward, and phone UI overlays.",
+  "quality_notes": "Strong first assembled prototype. Fixes generated UI/text weakness through deterministic overlays. Launch headline is conservative in size but readable; checkout proof overlay is the strongest section.",
+  "recommended_use": "Use this as the current best review artifact for the Cero-derived reward app workflow."
+}

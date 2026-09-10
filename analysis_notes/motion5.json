@@ -1,0 +1,43 @@
+{
+  "sample_id": "motion-5-motion-plans-the-video-scene-by-scene-before-building-it.-e3855e68b8",
+  "inspection_method": "agent_visual_review_of_16_frame_contact_sheet_and_detailed_UI_frames",
+  "sample_specific_facts": {
+    "visible_brand_or_product": "Grok Bot",
+    "orientation": "16:9",
+    "dominant_colors": ["near-white", "black", "cyan", "yellow", "mint"],
+    "visible_moments": ["0-4s: oversized two-eye mascot and colorful character cascade", "4-8s: small vertical team stack with product announcement", "8-11s: rotated mascot settles into Grok Bot wordmark", "11-17s: chat window receives a real task and acknowledges it", "17-21s: connected tools appear and work is delegated", "21-27s: camera widens to parallel specialist panels", "27-30s: camera returns to completion checklist", "30-32.5s: clean Grok Bot end lockup"]
+  },
+  "reusable_pattern": {
+    "pattern_name": "Character-led SaaS delegation demo",
+    "shot_family": "readable UI workflow motion graphic",
+    "recommended_mode": "image-to-video",
+    "secondary_tools": ["HyperFrames"],
+    "structure": ["Introduce a simple two-eye mascot", "Multiply into a color-coded specialist team", "Resolve into a brand wordmark", "Show one concrete user request", "Reveal tool connections in a stagger", "Expand the same workspace into parallel task lanes", "Collapse to completed outcomes", "Hold the closing brand lockup"],
+    "style_axes": ["white canvas and black type", "flat character silhouettes", "restrained app window shadows", "generous negative space", "legible purposeful UI"],
+    "camera_and_motion": ["scale and rotate the mascot before a stable brand hold", "retain the same UI identity through a continuous zoom-out and return", "reveal task rows sequentially", "give key copy at least two seconds to read"],
+    "negative_constraints": ["no photographic scenes", "no decorative gradients", "no distorted letters", "no extra eyes", "no invented numerical claims beyond the reference", "no unrelated checkout or city scenes"]
+  },
+  "prompt_defaults": {
+    "subject": "Grok Bot and a color-coded team of specialist assistants",
+    "setting": "a near-white 16:9 canvas with a minimalist chat workspace",
+    "primary_action": "a user delegates a request, assistants connect tools, work in parallel, and return completed outcomes",
+    "camera_move": "mascot scale reveal followed by a continuous workspace zoom-out and return",
+    "lighting": "flat graphic color without lighting simulation",
+    "mood": "clear, playful opening and calm useful product demonstration",
+    "duration_seconds": 32.533333
+  },
+  "prompt_variants": [
+    {
+      "variant_id": "mascot_team_hook",
+      "purpose": "Test shape identity, controlled motion and character multiplication without typography.",
+      "best_for": ["image-to-video", "text-to-video", "mascot opening"],
+      "prompt": "A 5-second 16:9 flat 2D motion graphic on a clean near-white background. A centered solid black circular mascot has exactly two vertical white pill-shaped eyes, no mouth, no limbs. It tilts 15 degrees and smoothly scales down. Three simple cyan, golden-yellow and mint-green two-eye silhouettes arrive one after another and settle into a small vertical team stack at center. Crisp vector-like edges, flat colors, fixed camera, generous empty space. Preserve exactly two eyes on every character. No text, no gradients, no shadows, no realistic objects. Finish on a stable stack."
+    },
+    {
+      "variant_id": "hyperframes_workflow_demo",
+      "purpose": "Reusable deterministic plan with replaceable brand, user request, tools, specialists and verified outcomes.",
+      "best_for": ["HyperFrames", "readable UI", "full-length final assembly"],
+      "prompt": "Build a 32.53-second 16:9 SaaS demo. 0-8s: animate a two-eye brand mascot into a color-coded team, then announce the product. 8-11s: settle the source brand mark beside the editable brand name. 11-17s: reveal an app window, a concrete user request and a short acknowledgement. 17-21s: stagger the connected-tool labels and a delegation response. 21-27s: transform the same app into a four-panel specialist workspace; reveal task progress independently. 27-30s: return to the main panel and check off verified results. 30-32.53s: hold the brand lockup. Use HTML text, explicit timeline beats and flat source-inspired graphics; never synthesize UI text as video pixels. Replace brand, request, tools, lanes and results from the new use case."
+    }
+  ]
+}

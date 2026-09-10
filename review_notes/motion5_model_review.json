@@ -1,0 +1,27 @@
+{
+  "review_method": "Provisional agent visual assessment of five evenly spaced generated frames per 5-second clip, compared with the reference contact sheet. One trial per model; not a general model ranking.",
+  "runs": [
+    {
+      "run_id": "motion-5-motion-plans-the-video-scene-by-scene-before-building-it.-e3855e68b8-pattern__mascot_team_hook__kling_2_6_pro_i2v",
+      "prompt_adherence": 8,
+      "temporal_coherence": 8,
+      "motion_quality": 7,
+      "subject_fidelity": 9,
+      "artifact_control": 8,
+      "commercial_usefulness": 8,
+      "pattern_reusability": 9,
+      "notes": "Selected opening: preserves source two-eye black mascot, white field and flat graphic look. Colored characters arrive and settle. Deviations: black character remains large behind colored stack rather than shrinking into an equal team; mint shifts toward muted green. Use as an opening plate, then deterministic typography and team spacing. One I2V run; reference-image conditioning differs from WAN T2V."
+    },
+    {
+      "run_id": "motion-5-motion-plans-the-video-scene-by-scene-before-building-it.-e3855e68b8-pattern__mascot_team_hook__wan_2_1_t2v",
+      "prompt_adherence": 8,
+      "temporal_coherence": 7,
+      "motion_quality": 7,
+      "subject_fidelity": 6,
+      "artifact_control": 7,
+      "commercial_usefulness": 6,
+      "pattern_reusability": 8,
+      "notes": "Good cheap structural exploration: achieves small, ordered colored stack. Black mascot compresses into a thin disc and the model adds a ground plane/shadow, reducing fidelity to the flat reference. Lower-resolution output. Keep as alternate evidence, not the final opening."
+    }
+  ]
+}

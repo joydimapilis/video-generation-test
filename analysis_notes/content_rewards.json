@@ -1,0 +1,43 @@
+{
+  "sample_id": "motion-content-rewards-launch-video-2782df6e63",
+  "inspection_method": "agent visual review of two-second reference contact sheet and full-resolution payout, closing and light-trail frames",
+  "sample_specific_facts": {
+    "visible_brand_or_product": "Content Rewards",
+    "orientation": "16:9",
+    "dominant_colors": ["near-black", "orange-red", "white", "warm gold"],
+    "visible_moments": ["0-3s: glowing orange trail pulls back from a macro view", "3-7s: trail routes through Post, Go viral, Get paid copy", "7-9s: Setup Payouts button", "9-11s: orange screen with Connect your bank and Whop badge", "11-16s: available balance counts upward", "16-18s: Get Paid button and pointer interaction", "18-22s: orange trail draws a payout evidence card for Otto, $4,000", "22-24s: Content Rewards name and scrolling creator results", "24-27.84s: star icon, CONTENT REWARDS, Start Earning Today, contentrewards.com"]
+  },
+  "reusable_pattern": {
+    "pattern_name": "Light-trail journey to earnings proof",
+    "shot_family": "kinetic creator monetization launch",
+    "recommended_mode": "image-to-video",
+    "secondary_tools": ["HyperFrames for path geometry, counters, text and final assembly"],
+    "structure": ["Introduce an emissive trail in extreme closeup", "Pull back and route it through three short action statements", "Resolve the trail into the setup action", "Switch to a saturated brand-color band for account setup and earnings", "Count up a balance with fixed digit geometry", "Press the payout action", "Follow the same trail into a source-backed proof card", "Resolve to a clean, stable brand end frame"],
+    "style_axes": ["near-black, orange-red, and white scene contrast", "single continuous guiding line", "large bold neutral sans", "emissive line head", "fixed-format tabular monetary counter", "restrained proof card"],
+    "camera_and_motion": ["macro-to-wide opening", "left-to-right line draw", "continuous path tip tracking", "controlled scale on the monetary value", "short pointer press", "upward type reveals", "brand hold through the final frame"],
+    "negative_constraints": ["no unreadable generated text", "no invented earnings or testimonial claims", "no unrelated photographic scenes", "no gratuitous particles", "no multiple competing light trails", "no number layout jitter"]
+  },
+  "prompt_defaults": {
+    "subject": "Content Rewards creator payouts",
+    "setting": "a graphic canvas alternating near-black, orange-red, and white",
+    "primary_action": "an orange trail connects posting, reach, bank setup, an increasing balance and a payout proof card",
+    "camera_move": "macro-to-wide light trail, precise path follow, count-up and stable closing lockup",
+    "lighting": "emissive orange line head against near-black, flat typography on solid fields",
+    "mood": "direct, energetic, confident",
+    "duration_seconds": 27.833333
+  },
+  "prompt_variants": [
+    {
+      "variant_id": "emissive_trail_hook",
+      "purpose": "Test continuous thin path geometry, controlled pullback and glow preservation without typography.",
+      "best_for": ["image-to-video", "text-to-video", "opening motion plate"],
+      "prompt": "Create a 5-second 16:9 abstract motion graphic. On a uniform near-black background, one bright orange-red horizontal line ends in a small warm glowing tip. Begin close on the thick line and its tip, then smoothly pull the camera back until the stroke is thin and surrounded by generous negative space. The glowing tip moves steadily from left to right, leaving one crisp orange line with a single gentle upward curve. Maintain a clean unbroken stroke and a warm white-orange tip with restrained light bloom. Finish with the thin line across the middle of the frame. No text, no logos, no objects, no particles, no branching lines, no fireworks, no lens flares, no floor."
+    },
+    {
+      "variant_id": "hyperframes_earnings_journey",
+      "purpose": "Recreate a complete action-to-proof narrative with replaceable brand, action labels, setup instruction, verified figures and CTA.",
+      "best_for": ["HyperFrames", "path animation", "monetary counters", "complete final video"],
+      "prompt": "Build a 27.83-second 16:9 launch video. 0-3s: macro-to-wide orange emissive trail on near-black. 3-7s: guide that trail through three short action labels. 7-9s: resolve to the payout setup action. 9-11s: saturated brand-color account-connection screen. 11-16s: a fixed-width tabular balance counts upward with the caption Available to pay out. 16-18s: pointer presses the payout action. 18-22s: white canvas, same orange trail lands on a payout card with source-supplied proof. 22-24s: brief brand-and-proof handoff. 24-27.83s: supplied icon, brand title, call to action and URL hold. All text, counters, geometric paths and buttons are deterministic. For another use case, replace the brand, labels, setup step, proof values and CTA; require evidence for every numerical claim."
+    }
+  ]
+}

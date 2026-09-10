@@ -1,0 +1,111 @@
+[
+  {
+    "id": "krea_wan_14b_t2v",
+    "provider": "fal",
+    "endpoint": "fal-ai/krea-wan-14b/text-to-video",
+    "mode": "text-to-video",
+    "license": "commercial",
+    "default_duration_seconds": 5,
+    "estimated_cost_usd": 0.125,
+    "cost_basis": "$0.025 per output video second at 16 fps",
+    "strengths": ["low-cost commercial text-to-video", "fast exploration", "simple prompt smoke tests"],
+    "risks": ["not yet benchmarked locally", "lower controllability unknown for montage/UI prompts"],
+    "required_inputs": ["prompt"],
+    "default_input": {},
+    "source_url": "https://fal.ai/models/fal-ai/krea-wan-14b/text-to-video"
+  },
+  {
+    "id": "wan_2_1_t2v",
+    "provider": "fal",
+    "endpoint": "fal-ai/wan-t2v",
+    "mode": "text-to-video",
+    "license": "commercial",
+    "default_duration_seconds": 5,
+    "estimated_cost_usd": 0.20,
+    "cost_basis": "480p video generation; Fal page also lists 720p at higher cost",
+    "strengths": ["cheap broad exploration", "motion diversity", "social/marketing concepts"],
+    "risks": ["lower fidelity than premium models", "may need prompt expansion"],
+    "required_inputs": ["prompt"],
+    "default_input": {
+      "resolution": "480p",
+      "aspect_ratio": "9:16",
+      "enable_prompt_expansion": true,
+      "turbo_mode": false
+    },
+    "source_url": "https://fal.ai/models/fal-ai/wan-t2v"
+  },
+  {
+    "id": "kling_3_pro_t2v",
+    "provider": "fal",
+    "endpoint": "fal-ai/kling-video/v3/pro/text-to-video",
+    "mode": "text-to-video",
+    "license": "commercial",
+    "default_duration_seconds": 5,
+    "estimated_cost_usd": 0.56,
+    "cost_basis": "$0.112/second audio off",
+    "strengths": ["premium cinematic visuals", "fluid motion", "multi-shot support", "native audio option"],
+    "risks": ["higher cost", "slower finalist model"],
+    "required_inputs": ["prompt"],
+    "default_input": {
+      "duration": 5,
+      "generate_audio": false
+    },
+    "source_url": "https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video"
+  },
+  {
+    "id": "kling_2_6_pro_i2v",
+    "provider": "fal",
+    "endpoint": "fal-ai/kling-video/v2.6/pro/image-to-video",
+    "mode": "image-to-video",
+    "license": "commercial",
+    "default_duration_seconds": 5,
+    "estimated_cost_usd": 0.35,
+    "cost_basis": "$0.07/second audio off",
+    "strengths": ["image fidelity", "cinematic motion", "native audio option", "product/character consistency"],
+    "risks": ["needs source image", "premium cost when audio is enabled"],
+    "required_inputs": ["prompt", "image_url"],
+    "default_input": {
+      "duration": 5,
+      "generate_audio": false
+    },
+    "source_url": "https://fal.ai/models/fal-ai/kling-video/v2.6/pro/image-to-video"
+  },
+  {
+    "id": "ltx_i2v",
+    "provider": "fal",
+    "endpoint": "fal-ai/ltx-video/image-to-video",
+    "mode": "image-to-video",
+    "license": "research-only",
+    "default_duration_seconds": 5,
+    "estimated_cost_usd": 0.02,
+    "cost_basis": "$0.02 per video generation",
+    "strengths": ["very cheap iteration", "storyboard prototyping", "fast image-to-video tests"],
+    "risks": ["research-only", "not for commercial final output"],
+    "required_inputs": ["prompt", "image_url"],
+    "default_input": {
+      "num_inference_steps": 30,
+      "guidance_scale": 3
+    },
+    "source_url": "https://fal.ai/models/fal-ai/ltx-video/image-to-video"
+  },
+  {
+    "id": "wan_effects",
+    "provider": "fal",
+    "endpoint": "fal-ai/wan-effects",
+    "mode": "image-effect-to-video",
+    "license": "commercial",
+    "default_duration_seconds": 5,
+    "estimated_cost_usd": 0.35,
+    "cost_basis": "$0.35 per video generation",
+    "strengths": ["repeatable preset transformations", "social effects", "predictable batch effects"],
+    "risks": ["less open-ended", "requires selecting from effect library"],
+    "required_inputs": ["subject", "image_url", "effect_type"],
+    "default_input": {
+      "effect_type": "squish",
+      "frames_per_second": 16,
+      "num_frames": 81,
+      "aspect_ratio": "9:16"
+    },
+    "source_url": "https://fal.ai/models/fal-ai/wan-effects"
+  }
+]
