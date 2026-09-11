@@ -1,0 +1,24 @@
+{
+  "output_id": "orrin_library_loop_2_final",
+  "output_path": "artifacts/final_outcome/orrin/orrin-final.mp4",
+  "duration_seconds": 30,
+  "resolution": "1920x1080",
+  "assembly_tool": "HyperFrames 0.8.34",
+  "source_runs": [
+    "array_kling_v1",
+    "hands_kling_v2",
+    "hero_kling_v2",
+    "hero_veo_v1",
+    "ridge_veo_v1",
+    "weave_kling_v1"
+  ],
+  "reference_library_manifest": "artifacts/library-loop-2/references/manifest.json",
+  "scorecard": "docs/ORRIN_SCORECARD.md",
+  "verification": "artifacts/final_outcome/orrin/verification.json",
+  "cost": {
+    "estimated_usd": 5.17,
+    "reserved_usd": 5.99,
+    "cap_usd": 10.0,
+    "invoice_verified": false
+  }
+}

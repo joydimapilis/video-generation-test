@@ -1,0 +1,28 @@
+{
+  "output_id": "keel_library_loop_3_final",
+  "output_path": "artifacts/final_outcome/keel/keel-final.mp4",
+  "duration_seconds": 38.0,
+  "resolution": "1920x1080",
+  "assembly_tool": "HyperFrames 0.8.34",
+  "source_runs": [
+    "rush_hands_v2",
+    "rush_servers_v1",
+    "rush_street_v1",
+    "rush_transit_v1",
+    "shop_hands_v1",
+    "shop_keel_v1",
+    "shop_wide_v1",
+    "water_deep_v1",
+    "water_descend_v1",
+    "water_surface_v1"
+  ],
+  "reference_library_manifest": "artifacts/library-loop-3/references/manifest.json",
+  "scorecard": "docs/KEEL_SCORECARD.md",
+  "verification": "artifacts/final_outcome/keel/verification.json",
+  "cost": {
+    "estimated_usd": 6.84,
+    "reserved_usd": 7.89,
+    "cap_usd": 10.0,
+    "invoice_verified": false
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "experiment": "rota",
+  "concept": "The Sunday Problem / a customer testimonial for ROTA",
+  "genre": "single-voice customer testimonial case study with burned-in transcript captions",
+  "library_references": [
+    "Chowdeck-Chowdeck-Raises-9M-Series-A",
+    "Tarun-Amasa-Its-official-Weve-raised-14m",
+    "Cluely-Introducing-Cluely-for-Customer-Support"
+  ],
+  "cap_cents": 1000,
+  "why_this_use_case": "Interview is the one use case on the shortlist with measured plates and no delivered film. Loop one scored interview_veo_v1 at 8.5/10 and recorded an explicit open caution - speaker identity across a longer exchange remains untested - which four films later is still open. The Chowdeck reference is the commercial form of exactly that: one recurring speaker across several setups, burned-in transcript captions on every frame, a brand mark, and product b-roll between the lines.",
+  "why_this_routing": "Dialogue goes to Veo 3.1 Fast with audio, the only tested model that produced clean speech with no burned-in subtitles. It bills $0.15/s at 1080p, the same as 720p, so this loop takes the free resolution upgrade loop one did not know about. Identity across the exchange is handled the way loop four handled it: one hero plate, then image-to-video from a single frame of it. Whether that survives with audio and lip-sync is the open question, so it is probed with one paid shot before the rest are bought. Faceless hands go to Kling; silent b-roll goes to Veo at the silent rate.",
+  "speaker": "a woman in her forties with warm olive skin and greying dark hair tied back, wearing a flour-dusted charcoal apron over a cream shirt",
+  "setting": "seated in her bakery, a warm wood-and-tile wall behind her, out-of-focus shelves of bread and a window of morning light to one side",
+  "runs": [
+    {
+      "id": "talk_hero_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 120,
+      "use_case": "interview",
+      "role": "hero_reference_and_line_1",
+      "line": "We're a bakery. Six people, two ovens, and a lot of very early mornings.",
+      "version": 1,
+      "hypothesis": "Does double duty: it is the opening testimonial line and it supplies the single frame every later line is generated from. Eight seconds for a fourteen-word line, because loop one measured delivery running short of the requested length in every trial.",
+      "input": {
+        "prompt": "A documentary customer testimonial interview, filmed as clean camera footage. A woman in her forties with warm olive skin and greying dark hair tied back, wearing a flour-dusted charcoal apron over a cream shirt, sits in her bakery facing slightly off-axis to camera, a warm wood-and-tile wall behind her with out-of-focus shelves of bread and a window of soft morning light to one side. Eye-level medium close-up, static camera, shallow depth of field, warm natural light. She speaks directly and warmly, as if answering an off-camera question. AUDIO: she says in natural British English, unhurried, with a small pause after the first sentence: \"We're a bakery. Six people, two ovens, and a lot of very early mornings.\" She finishes speaking with roughly a second to spare and holds a relaxed, thoughtful expression. One small hand gesture only. Quiet room tone, no music. Clean photographic frame with no captions, subtitles, titles, logos or graphical text of any kind.",
+        "negative_prompt": "subtitles, captions, burned-in text, text, letters, numbers, logos, watermark, title cards, other people, music, static portrait, camera shake, cartoon, animation",
+        "duration": "8s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": true,
+        "auto_fix": false,
+        "seed": 88
+      }
+    },
+    {
+      "id": "broll_room_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "role": "b_roll",
+      "version": 1,
+      "input": {
+        "prompt": "The interior of a small artisan bakery before opening, early morning. Low golden light comes through a front window across a worn wooden counter, flour dust hanging in the beam, wire racks of cooling loaves along one wall. Nobody is in frame. The camera pushes in slowly and steadily in one continuous move. Warm amber and deep brown, high contrast, shallow depth of field, fine cinematic grain. Clean camera footage with no captions, titles, signage, price labels or graphical text of any kind. No people, no readable words anywhere.",
+        "negative_prompt": "text, letters, numbers, signage, chalkboard writing, price labels, logos, watermark, subtitles, captions, people, hands, cold colour, night",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 88
+      }
+    },
+    {
+      "id": "broll_dough_v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/text-to-video",
+      "estimate_cents": 68,
+      "use_case": "industrial_human",
+      "role": "b_roll",
+      "version": 1,
+      "hypothesis": "Faceless hands have been Kling's measured strength across three loops, and this shot carries no identity risk.",
+      "input": {
+        "prompt": "Close-up of two flour-dusted hands shaping a round of bread dough on a wooden bench, turning and tucking it with practised movements, flour puffing slightly with each press. The camera holds steady in a tight three-quarter view so no face is ever in frame. Warm low side light, deep brown and cream, shallow depth of field, fine cinematic grain. No faces, no text, no markings, no logos.",
+        "negative_prompt": "blur, distort, low quality, text, letters, numbers, logos, watermark, subtitles, captions, faces, extra fingers, deformed hands, machinery, cold colour",
+        "duration": "6",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "shot_type": "customize",
+        "cfg_scale": 0.5
+      }
+    },
+    {
+      "id": "broll_rota_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "role": "b_roll",
+      "version": 1,
+      "hypothesis": "The story's problem object. Every legible word is denied because generated text has failed in all four loops; the authored layer will supply anything that has to be read.",
+      "input": {
+        "prompt": "A worn paper wall chart pinned to a bakery wall beside a shelf, ruled into a grid of empty boxes, covered in pencil marks, crossings-out and smudged eraser marks, with a stub of pencil hanging on a string beside it. The grid squares are filled with illegible scribbled pencil strokes rather than any readable writing. The camera drifts slowly sideways across it in one continuous move. Warm morning light raking across the paper texture, shallow depth of field, fine cinematic grain. No people, no hands, no readable words, letters or numbers anywhere.",
+        "negative_prompt": "readable text, letters, words, numbers, dates, names, logos, watermark, subtitles, captions, people, hands, clean chart, printed text, cold colour",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 88
+      }
+    },
+    {
+      "id": "broll_oven_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "role": "b_roll",
+      "version": 1,
+      "input": {
+        "prompt": "A baker's peel slides a row of dark-crusted sourdough loaves out of a stone oven mouth, steam lifting off the crusts into warm light. Framed tight on the oven mouth and the loaves so no face is visible, only the wooden peel entering from the side. The camera holds steady. Deep orange oven glow against dark brick, high contrast, shallow depth of field, fine cinematic grain. No text, no logos, no readable words anywhere.",
+        "negative_prompt": "text, letters, numbers, logos, watermark, subtitles, captions, faces, people in frame, cold colour, modern industrial oven",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 88
+      }
+    }
+  ]
+}

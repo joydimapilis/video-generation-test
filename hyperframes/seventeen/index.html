@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      *{margin:0;padding:0;box-sizing:border-box}
+      html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#0a0c0f}
+      body{font-family:SeventeenSans,Arial,sans-serif}
+      @font-face{font-family:SeventeenSans;src:url('assets/SeventeenSans.ttf')}
+      @font-face{font-family:SeventeenSans;src:url('assets/SeventeenSans-Bold.ttf');font-weight:700}
+      :root{--night:#0a0c0f;--paper:#f4f2ed;--ink:#14181d;--muted:#5f686f;--accent:#2f6df0;--flat:#848c94}
+      #root{width:1920px;height:1080px;overflow:hidden;position:relative;background:var(--night)}
+      .inner{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden}
+      .clip{position:absolute;inset:0;width:1920px;height:1080px;object-fit:cover}
+
+      .screen{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:var(--paper)}
+      .screen-night{background:var(--night)}
+      .chrome-bar{position:absolute;top:0;left:0;right:0;height:1px;background:var(--muted);font-style:normal}
+      .chrome-label{position:absolute;top:22px;left:72px;font-size:22px;color:var(--muted)}
+
+      .metric-block{position:absolute;left:0;right:0;text-align:center}
+      .metric-label{font-size:30px;color:var(--muted);letter-spacing:.16em}
+      .metric-number{font-size:240px;font-weight:700;line-height:1;margin-top:14px;
+        font-variant-numeric:tabular-nums}
+      .metric-sub{font-size:26px;color:var(--muted);margin-top:36px}
+      .metric-week{font-size:26px;color:var(--accent);margin-top:16px;opacity:0}
+      .sparkline-wrap{position:absolute;width:1100px;height:120px}
+
+      .a-title{font-size:128px;font-weight:700;color:var(--ink);line-height:1;text-align:center}
+      .a-meta{font-size:28px;color:var(--muted);text-align:center;margin-top:26px}
+      .a-live-row{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:22px}
+      .a-dot{display:block;width:10px;height:10px;border-radius:50%;background:var(--accent);
+        font-style:normal}
+      #a-live-label{font-size:26px;color:var(--muted)}
+
+      .ship-count{position:absolute;top:22px;right:72px;font-size:28px;color:var(--muted);
+        font-variant-numeric:tabular-nums}
+      .ship-list{position:absolute;top:78px;left:72px;width:1200px;height:704px}
+      .ship-row{position:absolute;left:0;right:0;height:44px;display:flex;align-items:center}
+      .ship-version{font-size:30px;color:var(--ink);width:160px;font-variant-numeric:tabular-nums}
+      .ship-status{font-size:26px;color:var(--muted);flex:1;text-align:center}
+      .ship-zero{font-size:30px;color:var(--flat);width:80px;text-align:right;
+        font-variant-numeric:tabular-nums}
+
+      #f-mark{position:absolute;left:0;right:0;top:392px;text-align:center;font-size:132px;
+        font-weight:700;color:#fff;line-height:1}
+      #f-dot{color:var(--accent)}
+      #f-rule{position:absolute;left:50%;top:566px;width:280px;margin-left:-140px;height:1px;
+        background:var(--accent);font-style:normal}
+      #f-tag{position:absolute;left:0;right:0;top:614px;text-align:center;font-size:40px;color:#fff}
+
+      #cap{position:absolute;bottom:150px;left:96px;right:auto;z-index:40;font-weight:700;
+        font-size:64px;line-height:1.28;color:#fff;
+        text-shadow:0 2px 12px rgba(0,0,0,.55),0 1px 3px rgba(0,0,0,.65);max-width:1400px}
+      #footer{position:absolute;right:64px;bottom:48px;z-index:100;font-size:19px;color:#c9ced3;
+        background:rgba(10,12,15,.9);padding:8px 14px}
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-root" id="root" data-composition-id="seventeen" data-start="0" data-duration="42.0" data-width="1920" data-height="1080">
+      <div data-hf-id="hf-wc01" id="w-c01" class="inner">
+        <video data-hf-id="hf-vc01" id="v-c01" class="clip" src="assets/hero.mp4"
+          data-start="0.00" data-media-start="0.3" data-duration="3.40"
+          data-track-index="0" muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wc04" id="w-c04" class="inner">
+        <video data-hf-id="hf-vc04" id="v-c04" class="clip" src="assets/hands.mp4"
+          data-start="9.60" data-media-start="3.0" data-duration="1.60"
+          data-track-index="3" muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wc05" id="w-c05" class="inner">
+        <video data-hf-id="hf-vc05" id="v-c05" class="clip" src="assets/lookup.mp4"
+          data-start="11.20" data-media-start="2.2" data-duration="2.80"
+          data-track-index="4" muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wc06" id="w-c06" class="inner">
+        <video data-hf-id="hf-vc06" id="v-c06" class="clip" src="assets/rain.mp4"
+          data-start="14.00" data-media-start="1.0" data-duration="2.00"
+          data-track-index="5" muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wc07" id="w-c07" class="inner">
+        <video data-hf-id="hf-vc07" id="v-c07" class="clip" src="assets/coffee.mp4"
+          data-start="16.00" data-media-start="1.2" data-duration="1.80"
+          data-track-index="6" muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wc08" id="w-c08" class="inner">
+        <video data-hf-id="hf-vc08" id="v-c08" class="clip" src="assets/desk.mp4"
+          data-start="17.80" data-media-start="1.0" data-duration="1.80"
+          data-track-index="7" muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wc11" id="w-c11" class="inner">
+        <video data-hf-id="hf-vc11" id="v-c11" class="clip" src="assets/react.mp4"
+          data-start="27.20" data-media-start="1.4" data-duration="4.20"
+          data-track-index="10" muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wc13" id="w-c13" class="inner">
+        <video data-hf-id="hf-vc13" id="v-c13" class="clip" src="assets/exhale.mp4"
+          data-start="34.80" data-media-start="1.8" data-duration="3.40"
+          data-track-index="12" muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wc14" id="w-c14" class="inner">
+        <video data-hf-id="hf-vc14" id="v-c14" class="clip" src="assets/city.mp4"
+          data-start="38.20" data-media-start="1.6" data-duration="1.80"
+          data-track-index="13" data-layout-allow-overflow muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-scra" id="screen-a" class="screen clip"
+        data-start="3.4" data-duration="2.6" data-track-index="1">
+        <i data-hf-id="hf-acb" id="a-chrome" class="chrome-bar"></i>
+        <div data-hf-id="hf-acl" id="a-chrome-label" class="chrome-label">tuesday.app</div>
+        <div data-hf-id="hf-abody" id="a-body" class="metric-block" style="top:380px">
+          <div data-hf-id="hf-atitle" id="a-title" class="a-title">SHIPPED</div>
+          <div data-hf-id="hf-ameta" id="a-meta" class="a-meta">v1.0 &middot; 2:14 AM</div>
+          <div data-hf-id="hf-alive" id="a-live" class="a-live-row">
+            <i data-hf-id="hf-adot" id="a-dot" class="a-dot"></i>
+            <span data-hf-id="hf-alivelabel" id="a-live-label">live</span>
+          </div>
+        </div>
+      </div>
+      <div data-hf-id="hf-scrb" id="screen-b" class="screen clip"
+        data-start="6.0" data-duration="3.6" data-track-index="2">
+        <i data-hf-id="hf-bcb" id="b-chrome" class="chrome-bar"></i>
+        <div data-hf-id="hf-bcl" id="b-chrome-label" class="chrome-label">tuesday.app</div>
+        <div data-hf-id="hf-bbody" id="b-body" class="metric-block" style="top:300px">
+          <div data-hf-id="hf-blabel" id="b-label" class="metric-label">ACTIVE USERS</div>
+          <div data-hf-id="hf-bnum" id="b-number" class="metric-number"
+            style="color:var(--flat)">0</div>
+          <div data-hf-id="hf-bsub" id="b-sub" class="metric-sub">LAST 7 DAYS</div>
+        </div>
+        <div data-hf-id="hf-bsparkwrap" id="b-sparkwrap" class="sparkline-wrap"
+          style="left:410px;top:860px">
+          <svg data-hf-id="hf-bspark" id="b-spark" class="sparkline"
+            width="1100" height="120" viewBox="0 0 1100 120">
+            <polyline data-hf-id="hf-bsparkline" id="b-sparkline"
+              points="0,60 1100,60" pathLength="1000"
+              fill="none" stroke="var(--flat)" stroke-width="2"
+              style="stroke-dasharray:1000;stroke-dashoffset:1000"/>
+          </svg>
+        </div>
+      </div>
+      <div data-hf-id="hf-scrd" id="screen-d" class="screen clip"
+        data-start="24.0" data-duration="3.2" data-track-index="9">
+        <i data-hf-id="hf-dcb" id="d-chrome" class="chrome-bar"></i>
+        <div data-hf-id="hf-dcl" id="d-chrome-label" class="chrome-label">tuesday.app</div>
+        <div data-hf-id="hf-dbody" id="d-body" class="metric-block" style="top:300px">
+          <div data-hf-id="hf-dlabel" id="d-label" class="metric-label">ACTIVE USERS</div>
+          <div data-hf-id="hf-dnum" id="d-number" class="metric-number"
+            style="color:var(--flat)">0</div>
+          <div data-hf-id="hf-dsub" id="d-sub" class="metric-sub">LAST 7 DAYS</div>
+        </div>
+        <div data-hf-id="hf-dsparkwrap" id="d-sparkwrap" class="sparkline-wrap"
+          style="left:410px;top:860px">
+          <svg data-hf-id="hf-dspark" id="d-spark" class="sparkline"
+            width="1100" height="120" viewBox="0 0 1100 120">
+            <polyline data-hf-id="hf-dsparkline" id="d-sparkline"
+              points="0,60 1020,60 1020,40 1100,40" pathLength="1000"
+              fill="none" stroke="var(--flat)" stroke-width="2"
+              style="stroke-dasharray:1000;stroke-dashoffset:1000"/>
+          </svg>
+        </div>
+      </div>
+      <div data-hf-id="hf-scre" id="screen-e" class="screen clip"
+        data-start="31.4" data-duration="3.4" data-track-index="11">
+        <i data-hf-id="hf-ecb" id="e-chrome" class="chrome-bar"></i>
+        <div data-hf-id="hf-ecl" id="e-chrome-label" class="chrome-label">tuesday.app</div>
+        <div data-hf-id="hf-ebody" id="e-body" class="metric-block" style="top:300px">
+          <div data-hf-id="hf-elabel" id="e-label" class="metric-label">ACTIVE USERS</div>
+          <div data-hf-id="hf-enum" id="e-number" class="metric-number"
+            style="color:var(--accent)">1</div>
+          <div data-hf-id="hf-esub" id="e-sub" class="metric-sub">LAST 7 DAYS</div>
+          <div data-hf-id="hf-eweek" id="e-week" class="metric-week">+11 THIS WEEK</div>
+        </div>
+        <div data-hf-id="hf-esparkwrap" id="e-sparkwrap" class="sparkline-wrap"
+          style="left:410px;top:860px">
+          <svg data-hf-id="hf-espark" id="e-spark" class="sparkline"
+            width="1100" height="120" viewBox="0 0 1100 120">
+            <polyline data-hf-id="hf-esparkline" id="e-sparkline"
+              points="0,60 733,60 1100,10" pathLength="1000"
+              fill="none" stroke="var(--flat)" stroke-width="2"
+              style="stroke-dasharray:1000;stroke-dashoffset:1000"/>
+          </svg>
+        </div>
+      </div>
+      <div data-hf-id="hf-scrc" id="screen-c" class="screen clip"
+        data-start="19.6" data-duration="4.4" data-track-index="8">
+        <i data-hf-id="hf-ccb" id="c-chrome" class="chrome-bar"></i>
+        <div data-hf-id="hf-ccl" id="c-chrome-label" class="chrome-label">tuesday.app</div>
+        <div data-hf-id="hf-crelcount" id="c-relcount" class="ship-count">0 RELEASES</div>
+        <div data-hf-id="hf-clist" id="c-list" class="ship-list">
+          <div data-hf-id="hf-crow0" id="c-row0" class="ship-row" style="top:0px">
+            <span data-hf-id="hf-crowv0" id="c-row0-v" class="ship-version">v1.1</span>
+            <span data-hf-id="hf-crows0" id="c-row0-s" class="ship-status">shipped</span>
+            <span data-hf-id="hf-crowz0" id="c-row0-z" class="ship-zero">0</span>
+          </div>
+          <div data-hf-id="hf-crow1" id="c-row1" class="ship-row" style="top:44px">
+            <span data-hf-id="hf-crowv1" id="c-row1-v" class="ship-version">v1.2</span>
+            <span data-hf-id="hf-crows1" id="c-row1-s" class="ship-status">shipped</span>
+            <span data-hf-id="hf-crowz1" id="c-row1-z" class="ship-zero">0</span>
+          </div>
+          <div data-hf-id="hf-crow2" id="c-row2" class="ship-row" style="top:88px">
+            <span data-hf-id="hf-crowv2" id="c-row2-v" class="ship-version">v1.3</span>
+            <span data-hf-id="hf-crows2" id="c-row2-s" class="ship-status">shipped</span>
+            <span data-hf-id="hf-crowz2" id="c-row2-z" class="ship-zero">0</span>
+          </div>
+          <div data-hf-id="hf-crow3" id="c-row3" class="ship-row" style="top:132px">
+            <span data-hf-id="hf-crowv3" id="c-row3-v" class="ship-version">v1.4</span>
+            <span data-hf-id="hf-crows3" id="c-row3-s" class="ship-status">shipped</span>
+            <span data-hf-id="hf-crowz3" id="c-row3-z" class="ship-zero">0</span>
+          </div>
+          <div data-hf-id="hf-crow4" id="c-row4" class="ship-row" style="top:176px">
+            <span data-hf-id="hf-crowv4" id="c-row4-v" class="ship-version">v1.5</span>
+            <span data-hf-id="hf-crows4" id="c-row4-s" class="ship-status">shipped</span>
+            <span data-hf-id="hf-crowz4" id="c-row4-z" class="ship-zero">0</span>
+          </div>
+          <div data-hf-id="hf-crow5" id="c-row5" class="ship-row" style="top:220px">
+            <span data-hf-id="hf-crowv5" id="c-row5-v" class="ship-version">v1.6</span>
+            <span data-hf-id="hf-crows5" id="c-row5-s" class="ship-status">shipped</span>
+            <span data-hf-id="hf-crowz5" id="c-row5-z" class="ship-zero">0</span>
+          </div>
+          <div data-hf-id="hf-crow6" id="c-row6" class="ship-row" style="top:264px">
+            <span data-hf-id="hf-crowv6" id="c-row6-v" class="ship-version">v1.7</span>
+            <span data-hf-id="hf-crows6" id="c-row6-s" class="ship-status">shipped</span>
+            <span data-hf-id="hf-crowz6" id="c-row6-z" class="ship-zero">0</span>
+          </div>
+          <div data-hf-id="hf-crow7" id="c-row7" class="ship-row" style="top:308px">
+            <span data-hf-id="hf-crowv7" id="c-row7-v" class="ship-version">v1.8</span>
+            <span data-hf-id="hf-crows7" id="c-row7-s" class="ship-status">shipped</span>
+            <span data-hf-id="hf-crowz7" id="c-row7-z" class="ship-zero">0</span>
+          </div>
+          <div data-hf-id="hf-crow8" id="c-row8" class="ship-row" style="top:352px">
+            <span data-hf-id="hf-crowv8" id="c-row8-v" class="ship-version">v1.9</span>
+            <span data-hf-id="hf-crows8" id="c-row8-s" class="ship-status">shipped</span>
+            <span data-hf-id="hf-crowz8" id="c-row8-z" class="ship-zero">0</span>
+          </div>
+          <div data-hf-id="hf-crow9" id="c-row9" class="ship-row" style="top:396px">
+            <span data-hf-id="hf-crowv9" id="c-row9-v" class="ship-version">v1.10</span>
+            <span data-hf-id="hf-crows9" id="c-row9-s" class="ship-status">shipped</span>
+            <span data-hf-id="hf-crowz9" id="c-row9-z" class="ship-zero">0</span>
+          </div>
+          <div data-hf-id="hf-crow10" id="c-row10" class="ship-row" style="top:440px">
+            <span data-hf-id="hf-crowv10" id="c-row10-v" class="ship-version">v1.11</span>
+            <span data-hf-id="hf-crows10" id="c-row10-s" class="ship-status">shipped</span>
+            <span data-hf-id="hf-crowz10" id="c-row10-z" class="ship-zero">0</span>
+          </div>
+          <div data-hf-id="hf-crow11" id="c-row11" class="ship-row" style="top:484px">
+            <span data-hf-id="hf-crowv11" id="c-row11-v" class="ship-version">v1.12</span>
+            <span data-hf-id="hf-crows11" id="c-row11-s" class="ship-status">shipped</span>
+            <span data-hf-id="hf-crowz11" id="c-row11-z" class="ship-zero">0</span>
+          </div>
+          <div data-hf-id="hf-crow12" id="c-row12" class="ship-row" style="top:528px">
+            <span data-hf-id="hf-crowv12" id="c-row12-v" class="ship-version">v1.13</span>
+            <span data-hf-id="hf-crows12" id="c-row12-s" class="ship-status">shipped</span>
+            <span data-hf-id="hf-crowz12" id="c-row12-z" class="ship-zero">0</span>
+          </div>
+          <div data-hf-id="hf-crow13" id="c-row13" class="ship-row" style="top:572px">
+            <span data-hf-id="hf-crowv13" id="c-row13-v" class="ship-version">v1.14</span>
+            <span data-hf-id="hf-crows13" id="c-row13-s" class="ship-status">shipped</span>
+            <span data-hf-id="hf-crowz13" id="c-row13-z" class="ship-zero">0</span>
+          </div>
+          <div data-hf-id="hf-crow14" id="c-row14" class="ship-row" style="top:616px">
+            <span data-hf-id="hf-crowv14" id="c-row14-v" class="ship-version">v1.15</span>
+            <span data-hf-id="hf-crows14" id="c-row14-s" class="ship-status">shipped</span>
+            <span data-hf-id="hf-crowz14" id="c-row14-z" class="ship-zero">0</span>
+          </div>
+          <div data-hf-id="hf-crow15" id="c-row15" class="ship-row" style="top:660px">
+            <span data-hf-id="hf-crowv15" id="c-row15-v" class="ship-version">v1.16</span>
+            <span data-hf-id="hf-crows15" id="c-row15-s" class="ship-status">shipped</span>
+            <span data-hf-id="hf-crowz15" id="c-row15-z" class="ship-zero">0</span>
+          </div>
+        </div>
+      </div>
+      <div data-hf-id="hf-scrf" id="screen-f" class="screen clip screen-night"
+        data-start="40.0" data-duration="2.0" data-track-index="14">
+        <div data-hf-id="hf-fmark" id="f-mark">tuesday<span data-hf-id="hf-fdot" id="f-dot">.</span></div>
+        <i data-hf-id="hf-frule" id="f-rule"></i>
+        <div data-hf-id="hf-ftag" id="f-tag">Ship it anyway.</div>
+      </div>
+
+      <div data-hf-id="hf-cap" id="cap"></div>
+      <div data-hf-id="hf-foot" id="footer">ORIGINAL CONCEPT / AI-GENERATED FILM</div>
+
+      <audio data-hf-id="hf-avo" id="a-vo" src="assets/voice.wav" data-start="0" data-duration="42.0" data-volume="1" data-track-index="60"></audio>
+      <audio data-hf-id="hf-amu" id="a-score" src="assets/score.wav" data-start="0" data-duration="42.0" data-volume="0.88" data-track-index="61" data-automation='{"version": 1, "lanes": [{"target": "volume", "points": [{"t": 0.0, "v": 0.0}, {"t": 0.5, "v": 1.0}, {"t": 0.75, "v": 0.55}, {"t": 3.05, "v": 0.55}, {"t": 3.3, "v": 1.0}, {"t": 6.3, "v": 1.0}, {"t": 6.55, "v": 0.55}, {"t": 7.87, "v": 0.55}, {"t": 8.12, "v": 1.0}, {"t": 11.2, "v": 1.0}, {"t": 11.45, "v": 0.55}, {"t": 13.81, "v": 0.55}, {"t": 14.06, "v": 1.0}, {"t": 19.7, "v": 1.0}, {"t": 19.95, "v": 0.55}, {"t": 22.05, "v": 0.55}, {"t": 22.3, "v": 1.0}, {"t": 24.1, "v": 1.0}, {"t": 24.35, "v": 0.55}, {"t": 26.41, "v": 0.55}, {"t": 26.66, "v": 1.0}, {"t": 31.5, "v": 1.0}, {"t": 31.75, "v": 0.55}, {"t": 33.3, "v": 0.55}, {"t": 33.55, "v": 1.0}, {"t": 35.1, "v": 1.0}, {"t": 35.35, "v": 0.55}, {"t": 37.71, "v": 0.55}, {"t": 37.96, "v": 1.0}, {"t": 38.0, "v": 1.0}, {"t": 42.0, "v": 0.0}]}]}'></audio>
+      <audio data-hf-id="hf-ax0" id="a-sfx0" src="assets/key-press.mp3" data-start="3.4" data-duration="0.4" data-volume="0.18" data-track-index="70"></audio>
+      <audio data-hf-id="hf-ax1" id="a-sfx1" src="assets/key-press.mp3" data-start="24.0" data-duration="0.4" data-volume="0.14" data-track-index="71"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      var tl = gsap.timeline({ paused: true });
+      tl.set('#v-c14',{scale:1.36},38.20);
+      tl.fromTo('#screen-a',{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0 0 0)',duration:0.18,ease:'power2.out'},3.40);
+      tl.to('#a-dot',{scale:1.6,duration:.18,ease:'power2.out'},3.90);
+      tl.to('#a-dot',{scale:1,duration:.24,ease:'power2.inOut'},4.08);
+      tl.fromTo('#screen-b',{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0 0 0)',duration:0.18,ease:'power2.out'},6.00);
+      tl.fromTo('#b-sparkline',{strokeDashoffset:1000},{strokeDashoffset:0,duration:1.6,ease:'none'},6.00);
+      tl.fromTo('#screen-d',{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0 0 0)',duration:0.18,ease:'power2.out'},24.00);
+      tl.fromTo('#d-sparkline',{strokeDashoffset:1000},{strokeDashoffset:0,duration:0.9199999999999993,ease:'none'},24.00);
+      var dLast=null;tl.to({t:0},{t:1,duration:3.2,ease:'none',onUpdate:function(){var now=this.targets()[0].t*3.2+24.0;var swapped=now>=24.70;if(swapped===dLast){return;}dLast=swapped;var el=document.getElementById('d-number');el.textContent=swapped?'1':'0';el.style.color=swapped?'var(--accent)':'var(--flat)';}},24.00);
+      tl.fromTo('#d-number',{scale:1},{scale:1.08,duration:.11,ease:'power2.out'},24.70);
+      tl.to('#d-number',{scale:1,duration:.11,ease:'power2.in'},24.81);
+      tl.fromTo('#screen-e',{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0 0 0)',duration:0.18,ease:'power2.out'},31.40);
+      tl.fromTo('#e-sparkline',{strokeDashoffset:1000},{strokeDashoffset:0,duration:1.6,ease:'none'},31.40);
+      var eTick={n:1};tl.to(eTick,{n:12,duration:1.6,ease:'none',onUpdate:function(){document.getElementById('e-number').textContent=Math.round(eTick.n);}},31.40);
+      tl.fromTo('#e-week',{opacity:0,y:10},{opacity:1,y:0,duration:.32,ease:'power2.out'},33.40);
+      tl.fromTo('#c-row0',{opacity:0,x:-24},{opacity:1,x:0,duration:.14,ease:'power2.out'},19.60);
+      tl.fromTo('#c-row1',{opacity:0,x:-24},{opacity:1,x:0,duration:.14,ease:'power2.out'},19.76);
+      tl.fromTo('#c-row2',{opacity:0,x:-24},{opacity:1,x:0,duration:.14,ease:'power2.out'},19.93);
+      tl.fromTo('#c-row3',{opacity:0,x:-24},{opacity:1,x:0,duration:.14,ease:'power2.out'},20.09);
+      tl.fromTo('#c-row4',{opacity:0,x:-24},{opacity:1,x:0,duration:.14,ease:'power2.out'},20.25);
+      tl.fromTo('#c-row5',{opacity:0,x:-24},{opacity:1,x:0,duration:.14,ease:'power2.out'},20.41);
+      tl.fromTo('#c-row6',{opacity:0,x:-24},{opacity:1,x:0,duration:.14,ease:'power2.out'},20.58);
+      tl.fromTo('#c-row7',{opacity:0,x:-24},{opacity:1,x:0,duration:.14,ease:'power2.out'},20.74);
+      tl.fromTo('#c-row8',{opacity:0,x:-24},{opacity:1,x:0,duration:.14,ease:'power2.out'},20.90);
+      tl.fromTo('#c-row9',{opacity:0,x:-24},{opacity:1,x:0,duration:.14,ease:'power2.out'},21.06);
+      tl.fromTo('#c-row10',{opacity:0,x:-24},{opacity:1,x:0,duration:.14,ease:'power2.out'},21.23);
+      tl.fromTo('#c-row11',{opacity:0,x:-24},{opacity:1,x:0,duration:.14,ease:'power2.out'},21.39);
+      tl.fromTo('#c-row12',{opacity:0,x:-24},{opacity:1,x:0,duration:.14,ease:'power2.out'},21.55);
+      tl.fromTo('#c-row13',{opacity:0,x:-24},{opacity:1,x:0,duration:.14,ease:'power2.out'},21.71);
+      tl.fromTo('#c-row14',{opacity:0,x:-24},{opacity:1,x:0,duration:.14,ease:'power2.out'},21.88);
+      tl.fromTo('#c-row15',{opacity:0,x:-24},{opacity:1,x:0,duration:.14,ease:'power2.out'},22.04);
+      tl.fromTo('#screen-c',{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0 0 0)',duration:0.18,ease:'power2.out'},19.60);
+      var C_ROW_TIMES=[19.6, 19.763, 19.925, 20.088, 20.25, 20.413, 20.575, 20.738, 20.9, 21.062, 21.225, 21.388, 21.55, 21.713, 21.875, 22.038],cRelLast=null;tl.to({t:0},{t:1,duration:4.4,ease:'none',onUpdate:function(){var now=this.targets()[0].t*4.4+19.6;var count=0;for(var i=0;i<C_ROW_TIMES.length;i++){if(now>=C_ROW_TIMES[i]){count=i+1;}}if(count===cRelLast){return;}cRelLast=count;document.getElementById('c-relcount').textContent=count+' RELEASES';}},19.60);
+      tl.fromTo('#screen-f',{opacity:0},{opacity:1,duration:.5,ease:'power2.inOut'},40.00);
+      var CAPS=[{"at": 0.8, "end": 3.2, "text": "Ada shipped her first app on a Tuesday.", "align": "left"}, {"at": 11.5, "end": 14.001, "text": "So she shipped another one. And another.", "align": "left"}, {"at": 35.4, "end": 37.901, "text": "It isn't a rocket ship. It's a start.", "align": "center"}],capLast=null;
+      tl.to({t:0},{t:1,duration:42.0,ease:'none',onUpdate:function(){var now=this.targets()[0].t*42.0;var active=null;for(var i=0;i<CAPS.length;i++){if(now>=CAPS[i].at&&now<CAPS[i].end){active=CAPS[i];}}var key=active?active.text+active.align:'';if(key===capLast){return;}capLast=key;var el=document.getElementById('cap');if(!active){el.textContent='';return;}el.textContent=active.text;if(active.align==='center'){el.style.left='0';el.style.right='0';el.style.textAlign='center';}else{el.style.left='96px';el.style.right='auto';el.style.textAlign='left';}}},0);
+      window.__timelines['seventeen'] = tl;
+    </script>
+  </body>
+</html>

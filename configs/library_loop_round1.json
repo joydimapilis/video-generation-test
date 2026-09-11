@@ -1,0 +1,49 @@
+{
+  "task": "library-loop-2026-09-11",
+  "limit_usd": 10,
+  "pricing_checked": "2026-09-11",
+  "runs": [
+    {
+      "id": "ugc_veo_v1", "endpoint": "fal-ai/veo3.1/fast", "estimate_cents": 90,
+      "use_case": "ugc", "pattern": "human_problem_hook", "version": 1,
+      "pricing_source": "https://fal.ai/models/fal-ai/veo3.1",
+      "input": {"prompt": "A natural creator-led technology ad. A fictional adult woman in her early thirties with short dark curly hair, wearing a plain forest-green shirt, sits at a white desk in a bright home studio. Medium close-up, eye-level camera, soft window daylight, realistic skin, candid relaxed delivery. She looks directly into camera and says clearly in English: \"Great ideas shouldn't disappear after a meeting.\" Her hands rest naturally on the desk, then one small open-palm gesture. One uninterrupted take. No captions, no text, no logos, no music. Only her clean voice and quiet room tone.", "duration": "6s", "resolution": "720p", "aspect_ratio": "16:9", "generate_audio": true, "auto_fix": false, "seed": 42}
+    },
+    {
+      "id": "ugc_grok_v1", "endpoint": "xai/grok-imagine-video/v1.5/text-to-video", "estimate_cents": 85,
+      "use_case": "ugc", "pattern": "human_problem_hook", "version": 1,
+      "pricing_source": "https://fal.ai/models/xai/grok-imagine-video/v1.5/text-to-video",
+      "input": {"prompt": "A natural creator-led technology ad. A fictional adult woman in her early thirties with short dark curly hair, wearing a plain forest-green shirt, sits at a white desk in a bright home studio. Medium close-up, eye-level camera, soft window daylight, realistic skin, candid relaxed delivery. She looks directly into camera and says clearly in English: \"Great ideas shouldn't disappear after a meeting.\" Her hands rest naturally on the desk, then one small open-palm gesture. One uninterrupted take. No captions, no text, no logos, no music. Only her clean voice and quiet room tone.", "duration": 6, "resolution": "720p", "aspect_ratio": "16:9"}
+    },
+    {
+      "id": "ugc_ltx_v1", "endpoint": "fal-ai/ltx-2.3/text-to-video", "estimate_cents": 48,
+      "use_case": "ugc", "pattern": "human_problem_hook", "version": 1,
+      "pricing_source": "https://fal.ai/models/fal-ai/ltx-2.3/text-to-video",
+      "input": {"prompt": "A natural creator-led technology ad. A fictional adult woman in her early thirties with short dark curly hair, wearing a plain forest-green shirt, sits at a white desk in a bright home studio. Medium close-up, eye-level camera, soft window daylight, realistic skin, candid relaxed delivery. She looks directly into camera and says clearly in English: \"Great ideas shouldn't disappear after a meeting.\" Her hands rest naturally on the desk, then one small open-palm gesture. One uninterrupted take. No captions, no text, no logos, no music. Only her clean voice and quiet room tone.", "duration": 6, "resolution": "1080p", "aspect_ratio": "16:9", "generate_audio": true, "fps": 24}
+    },
+    {
+      "id": "hero_kling_v1", "endpoint": "fal-ai/kling-video/v3/pro/text-to-video", "estimate_cents": 45,
+      "use_case": "product_ad", "pattern": "macro_to_product_reveal", "version": 1,
+      "pricing_source": "https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video",
+      "input": {"prompt": "Premium industrial design commercial, one continuous four-second shot. A small palm-sized matte ivory circular voice recorder, exactly one thin dark circular button centered on its top and one tiny lime-green status light, sits on a polished dark charcoal tabletop. No screen, no text, no branding. Start with an extreme macro of the clean circular button, then smoothly pull the camera back to reveal the entire stationary circular recorder in a three-quarter view. Precise symmetrical manufactured geometry, fine ceramic texture, controlled white studio strip lights, crisp silhouette, subtle reflection, physically plausible. End with the recorder on the RIGHT half of the frame and clean empty charcoal negative space on the LEFT for typography. No other objects or people. Calm cinematic commercial, no explosion, no particles.", "duration": "4", "aspect_ratio": "16:9", "generate_audio": false}
+    },
+    {
+      "id": "hero_seedance25_v1", "endpoint": "bytedance/seedance-2.5/text-to-video", "estimate_cents": 190,
+      "use_case": "product_ad", "pattern": "macro_to_product_reveal", "version": 1,
+      "pricing_source": "https://fal.ai/models/bytedance/seedance-2.5/text-to-video",
+      "input": {"prompt": "Premium industrial design commercial, one continuous four-second shot. A small palm-sized matte ivory circular voice recorder, exactly one thin dark circular button centered on its top and one tiny lime-green status light, sits on a polished dark charcoal tabletop. No screen, no text, no branding. Start with an extreme macro of the clean circular button, then smoothly pull the camera back to reveal the entire stationary circular recorder in a three-quarter view. Precise symmetrical manufactured geometry, fine ceramic texture, controlled white studio strip lights, crisp silhouette, subtle reflection, physically plausible. End with the recorder on the RIGHT half of the frame and clean empty charcoal negative space on the LEFT for typography. No other objects or people. Calm cinematic commercial, no explosion, no particles.", "duration": "4", "resolution": "720p", "aspect_ratio": "16:9", "generate_audio": false, "end_user_id": "amarillo-library-loop"}
+    },
+    {
+      "id": "interview_ltx_v1", "endpoint": "fal-ai/ltx-2.3/text-to-video", "estimate_cents": 48,
+      "use_case": "interview", "pattern": "two_person_question_answer", "version": 1,
+      "pricing_source": "https://fal.ai/models/fal-ai/ltx-2.3/text-to-video",
+      "input": {"prompt": "A six-second interview in a bright modern office. Two fictional adults in their thirties seated at a white table, medium-wide static two-shot. The female interviewer on the LEFT in a plain dark green shirt asks: \"What happens after the meeting?\" The male founder on the RIGHT in a plain gray shirt replies: \"Ideas become action.\" Each speaker moves their own lips only during their own line. Natural English voices, conversational turn-taking, brief pause between lines, no overlapping speech. Both people and their hands remain anatomically consistent. Clean documentary photography, soft daylight. No subtitles, no logos, no background music.", "duration": 6, "resolution": "1080p", "aspect_ratio": "16:9", "generate_audio": true, "fps": 24}
+    },
+    {
+      "id": "ui_kling_v1", "endpoint": "fal-ai/kling-video/v3/pro/text-to-video", "estimate_cents": 56,
+      "use_case": "product_demo", "pattern": "voice_to_action_ui", "version": 1,
+      "pricing_source": "https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video",
+      "input": {"prompt": "Five-second polished motion-design screen recording of a fictional desktop app called CUE. White canvas with dark charcoal text and lime-green accent. Exact heading: \"Launch plan\". Initially show a horizontal audio waveform. The waveform cleanly transforms into three aligned task rows, with exact labels \"Write the brief\", \"Build the page\", \"Share the launch\". A black cursor clicks a small circular checkbox on the first row; it becomes a lime-green checkmark. Clean orthographic flat interface, crisp perfectly readable typography, no 3D perspective, no extra panels, no camera movement. Hold the completed three-row list for the final second. No people, no hands, no music.", "duration": "5", "aspect_ratio": "16:9", "generate_audio": false}
+    }
+  ]
+}

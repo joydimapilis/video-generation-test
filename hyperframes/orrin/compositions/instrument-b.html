@@ -1,0 +1,51 @@
+<template>
+<style>
+@font-face{font-family:OrrinSans;src:url('assets/OrrinSans.ttf')}
+@font-face{font-family:OrrinSans;src:url('assets/OrrinSans-Bold.ttf');font-weight:700}
+@font-face{font-family:OrrinMono;src:url('assets/OrrinMono.ttf')}
+#orr-insb{width:1920px;height:1080px;position:relative;overflow:hidden;background:#07080a;color:#e9ecea}
+#orr-insb-video{position:absolute;inset:0;width:1920px;height:1080px;object-fit:cover}
+.orr-anno{position:absolute;opacity:0}
+.orr-anno .lead{position:absolute;top:14px;height:1px;background:#ff9b2f;transform-origin:left center}
+.orr-anno .dot{position:absolute;top:10px;width:10px;height:10px;border-radius:50%;background:#ff9b2f;opacity:0}
+.orr-anno .txt{font-family:OrrinMono,monospace;font-size:26px;letter-spacing:.08em;line-height:1.55;white-space:pre}
+.orr-anno .txt b{color:#79817f;font-weight:400}
+#orr-anno-1{left:170px;top:250px}
+#orr-anno-1 .lead{left:322px;width:498px}
+#orr-anno-1 .dot{left:816px}
+#orr-anno-2{left:170px;top:400px}
+#orr-anno-2 .lead{left:360px;width:470px}
+#orr-anno-2 .dot{left:826px}
+#orr-insb-mark{position:absolute;left:170px;top:604px;font-family:OrrinSans,Arial,sans-serif;font-weight:700;font-size:150px;letter-spacing:-.03em;line-height:1;opacity:0}
+#orr-insb-mark i{color:#ff9b2f;font-style:normal}
+#orr-insb-kicker{position:absolute;left:176px;top:780px;font-family:OrrinMono,monospace;font-size:26px;letter-spacing:.16em;color:#79817f;opacity:0}
+</style>
+<div data-hf-id="hf-isb0" id="orr-insb" data-composition-id="orr-insb" data-duration="4" data-width="1920" data-height="1080">
+  <video data-hf-id="hf-isb1" id="orr-insb-video" class="clip" src="assets/hero-reveal.mp4" data-start="0" data-media-start="2" data-duration="4" data-track-index="0" muted playsinline></video>
+  <div data-hf-id="hf-isb2" class="orr-anno" id="orr-anno-1">
+    <i data-hf-id="hf-isb3" class="lead"></i><i data-hf-id="hf-isb4" class="dot"></i>
+    <div data-hf-id="hf-isb5" class="txt">AMBER RING 4 W<br><b data-hf-id="hf-isb6">STATUS / ALWAYS ON</b></div>
+  </div>
+  <div data-hf-id="hf-isb7" class="orr-anno" id="orr-anno-2">
+    <i data-hf-id="hf-isb8" class="lead"></i><i data-hf-id="hf-isb9" class="dot"></i>
+    <div data-hf-id="hf-isba" class="txt">HEX BODY 68 MM<br><b data-hf-id="hf-isbb">ANODIZED ALUMINIUM</b></div>
+  </div>
+  <div data-hf-id="hf-isbc" id="orr-insb-mark">ORRIN<i data-hf-id="hf-isbd">.</i></div>
+  <div data-hf-id="hf-isbe" id="orr-insb-kicker">OPTICAL SENSOR NODE</div>
+</div>
+<script>
+var insbTl=gsap.timeline({paused:true});
+['#orr-anno-1','#orr-anno-2'].forEach(function(id,index){
+  var at=.2+index*.46;
+  insbTl.set(id,{opacity:1},at);
+  insbTl.fromTo(id+' .lead',{scaleX:0},{scaleX:1,duration:.32,ease:'power2.out'},at);
+  insbTl.to(id+' .dot',{opacity:1,duration:.01},at+.32);
+  insbTl.fromTo(id+' .txt',{opacity:0,x:-12},{opacity:1,x:0,duration:.22,ease:'power2.out'},at+.28);
+});
+insbTl.set('#orr-insb-mark',{opacity:1,y:56},1.5);
+insbTl.to('#orr-insb-mark',{y:0,duration:.32,ease:'power4.out'},1.5);
+insbTl.fromTo('#orr-insb-kicker',{opacity:0,x:-12},{opacity:1,x:0,duration:.26,ease:'power2.out'},2.0);
+insbTl.to('.orr-anno, #orr-insb-mark, #orr-insb-kicker',{opacity:0,duration:.22,ease:'power2.in'},3.64);
+window.__timelines['orr-insb']=insbTl;
+</script>
+</template>

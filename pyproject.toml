@@ -8,6 +8,7 @@ dependencies = []
 [project.optional-dependencies]
 fal = ["fal-client>=0.7.0"]
 dev = ["pytest>=8.0.0"]
+video-review = ["numpy>=2.0,<3", "faster-whisper>=1.2,<2", "fonttools>=4.50,<5", "brotli>=1.1,<2"]
 
 [project.scripts]
 amarillo = "amarillo.cli:main"

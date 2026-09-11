@@ -1,0 +1,51 @@
+{
+  "experiment": "rota",
+  "round": 3,
+  "goal": "The probe answered the open question - Veo image-to-video produces lip-synced dialogue from a still while preserving the speaker, the setting, the wardrobe and even the lavalier mic on her apron strap. Buy the remaining two lines the same way.",
+  "probe_result": "talk_b_v1 transcribed word-perfect (speech 0.00-6.26s of an 8s clip), the speaker is unmistakably the same woman in the same bakery, and the mouth shapes vary correctly across the line. She also picks up a pencil unprompted, matching the content of the line she is speaking.",
+  "reference_frame": "artifacts/library-loop-5/reference_frames/f5.8.jpg",
+  "runs": [
+    {
+      "id": "talk_c_v1",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 90,
+      "use_case": "interview",
+      "role": "line_3",
+      "line": "Someone's got an exam. Someone's kid is sick. Start again.",
+      "version": 1,
+      "hypothesis": "Ten words at the probe's measured rate of roughly 0.45s per word is about 4.5 seconds, so six seconds leaves a comfortable tail without buying silence.",
+      "input": {
+        "prompt": "The same woman continues her documentary testimonial interview, seated exactly where she is, the camera static at eye level. She lists the interruptions on her fingers with a tired, amused familiarity, as if she has had this conversation many times. AUDIO: she says in natural British English, with a small beat between each sentence: \"Someone's got an exam. Someone's kid is sick. Start again.\" She finishes with about a second to spare and lets out a short breath of a laugh. Quiet room tone, no music. Clean photographic frame with no captions, subtitles, titles or graphical text of any kind.",
+        "negative_prompt": "subtitles, captions, burned-in text, text, letters, numbers, logos, watermark, other people, music, camera shake, cut to another shot, different person, changing clothes, standing up",
+        "image_url": "local:artifacts/library-loop-5/reference_frames/f5.8.jpg",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "auto",
+        "generate_audio": true,
+        "auto_fix": false,
+        "seed": 88
+      }
+    },
+    {
+      "id": "talk_d_v1",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 120,
+      "use_case": "interview",
+      "role": "line_4_payoff",
+      "line": "Now it takes about nine minutes. I got my Sundays back.",
+      "version": 1,
+      "hypothesis": "The payoff line, bought at eight seconds rather than six so she has room to land it and settle rather than being cut off on the last word. The claim is deliberately small; the performance has to be warm, not triumphant.",
+      "input": {
+        "prompt": "The same woman finishes her documentary testimonial, seated exactly where she is, the camera static at eye level. AUDIO: she says in natural British English, plainly and warmly, with a clear pause between the two sentences: \"Now it takes about nine minutes. I got my Sundays back.\" On the second sentence she gives a small shrug and a quiet, genuine smile, understating it rather than selling it. She finishes with about a second and a half to spare and holds the smile, looking slightly off camera at the interviewer. Quiet room tone, no music. Clean photographic frame with no captions, subtitles, titles or graphical text of any kind.",
+        "negative_prompt": "subtitles, captions, burned-in text, text, letters, numbers, logos, watermark, other people, music, camera shake, cut to another shot, different person, changing clothes, standing up, exaggerated celebration, laughing loudly",
+        "image_url": "local:artifacts/library-loop-5/reference_frames/f5.8.jpg",
+        "duration": "8s",
+        "resolution": "1080p",
+        "aspect_ratio": "auto",
+        "generate_audio": true,
+        "auto_fix": false,
+        "seed": 88
+      }
+    }
+  ]
+}

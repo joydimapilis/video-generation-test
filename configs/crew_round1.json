@@ -1,0 +1,101 @@
+{
+  "experiment": "crew",
+  "concept": "The Sunday Problem, revised / a customer testimonial for Crew",
+  "genre": "single-voice customer testimonial case study with burned-in transcript captions",
+  "revision_of": "artifacts/final_outcome/rota/rota-final.mp4",
+  "cap_cents": 1000,
+  "brief": "Keep Mara's bakery story and the testimonial style, but make the product and its value clear: the problem she had, what she uses now, how it helps her manage the weekly staff schedule, and the result. Drop the word 'rota' - it is British jargon for a staff schedule and it was also the product name, so the product is renamed Crew and the script says 'staff schedule' in plain words.",
+  "why_only_four_new_shots": "This is a revision, not a new film. Two of the four original dialogue takes say nothing that changed - line 1 sets up the bakery, line 3 lists the interruptions - so they are reused verbatim, along with all four b-roll plates. Only the lines whose words change are re-bought. Reusing them also guarantees continuity: every new line is generated from the same reference frame the originals came from, so it is the same woman throughout.",
+  "reference_frame": "artifacts/library-loop-5/reference_frames/f5.8.jpg",
+  "reused_plates": {
+    "talk_hero_v1": "line 1, unchanged wording",
+    "talk_c_v1": "line 3, unchanged wording",
+    "broll_dough_v1": "b-roll", "broll_rota_v1": "b-roll, the paper staff schedule",
+    "broll_room_v1": "b-roll", "broll_oven_v1": "b-roll"
+  },
+  "length_rule": "Shot duration is matched to the line using 0.48 seconds per word, the rate measured across the four verified takes of the previous loop. The previous loop's only failure came from over-buying time: given three spare seconds the model padded by restarting the clause. Every line below sits between 0.7 and 1.8 seconds of spare room, the band the successful takes occupied.",
+  "runs": [
+    {
+      "id": "line2_schedule_v1",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 120,
+      "use_case": "interview",
+      "role": "line_2_problem",
+      "line": "Every Sunday night I'd sit down with a pencil and rebuild the staff schedule.",
+      "version": 1,
+      "input": {
+        "prompt": "The same woman continues her documentary testimonial interview, seated exactly where she is, the camera static at eye level. She gathers her thought, then speaks with a small rueful smile at the memory. AUDIO: she says this line once, straight through, in natural British English, unhurried, never repeating or restarting any part of it: \"Every Sunday night I'd sit down with a pencil and rebuild the staff schedule.\" She finishes with about a second to spare and settles. One small hand gesture only. Quiet room tone, no music. Clean photographic frame with no captions, subtitles, titles or graphical text of any kind.",
+        "negative_prompt": "repeating a phrase, restarting the sentence, stuttering, duplicated words, trailing off, mumbling, subtitles, captions, burned-in text, text, letters, numbers, logos, watermark, other people, music, camera shake, cut to another shot, different person, changing clothes, standing up",
+        "image_url": "local:artifacts/library-loop-5/reference_frames/f5.8.jpg",
+        "duration": "8s",
+        "resolution": "1080p",
+        "aspect_ratio": "auto",
+        "generate_audio": true,
+        "auto_fix": false,
+        "seed": 91
+      }
+    },
+    {
+      "id": "line4_product_v1",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 90,
+      "use_case": "interview",
+      "role": "line_4_what_she_uses",
+      "line": "We use Crew now. Everyone puts their availability on their phone.",
+      "version": 1,
+      "hypothesis": "The line that names the product. It has to sound like a person describing their week, not an endorsement, so the delivery note asks for matter-of-fact rather than enthusiastic.",
+      "input": {
+        "prompt": "The same woman continues her documentary testimonial interview, seated exactly where she is, the camera static at eye level. AUDIO: she says this line once, straight through, in natural British English, matter-of-fact and unhurried, the way someone describes their ordinary working week rather than recommending something, never repeating or restarting any part of it: \"We use Crew now. Everyone puts their availability on their phone.\" She gives a small shrug on the second sentence, finishes with about a second to spare, and settles. Quiet room tone, no music. Clean photographic frame with no captions, subtitles, titles or graphical text of any kind.",
+        "negative_prompt": "repeating a phrase, restarting the sentence, stuttering, duplicated words, trailing off, mumbling, enthusiastic sales delivery, overacting, subtitles, captions, burned-in text, text, letters, numbers, logos, watermark, other people, music, camera shake, cut to another shot, different person, changing clothes, standing up, holding a phone",
+        "image_url": "local:artifacts/library-loop-5/reference_frames/f5.8.jpg",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "auto",
+        "generate_audio": true,
+        "auto_fix": false,
+        "seed": 92
+      }
+    },
+    {
+      "id": "line5_how_v1",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 90,
+      "use_case": "interview",
+      "role": "line_5_how_it_helps",
+      "line": "It builds the schedule around that, and everyone sees it update.",
+      "version": 1,
+      "input": {
+        "prompt": "The same woman continues her documentary testimonial interview, seated exactly where she is, the camera static at eye level. AUDIO: she says this line once, straight through, in natural British English, plainly and unhurried, explaining how it works rather than praising it, never repeating or restarting any part of it: \"It builds the schedule around that, and everyone sees it update.\" She finishes with about a second to spare and holds a relaxed expression. One small hand gesture only. Quiet room tone, no music. Clean photographic frame with no captions, subtitles, titles or graphical text of any kind.",
+        "negative_prompt": "repeating a phrase, restarting the sentence, stuttering, duplicated words, trailing off, mumbling, enthusiastic sales delivery, overacting, subtitles, captions, burned-in text, text, letters, numbers, logos, watermark, other people, music, camera shake, cut to another shot, different person, changing clothes, standing up",
+        "image_url": "local:artifacts/library-loop-5/reference_frames/f5.8.jpg",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "auto",
+        "generate_audio": true,
+        "auto_fix": false,
+        "seed": 93
+      }
+    },
+    {
+      "id": "line6_result_v1",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 120,
+      "use_case": "interview",
+      "role": "line_6_payoff",
+      "line": "Now the whole schedule takes about nine minutes. I got my Sundays back.",
+      "version": 1,
+      "hypothesis": "The payoff, and the line the previous loop had to re-buy. Thirteen words in an eight-second shot leaves 1.8s spare - inside the band the successful takes occupied, and well clear of the three spare seconds that caused the stutter.",
+      "input": {
+        "prompt": "The same woman finishes her documentary testimonial, seated exactly where she is, the camera static at eye level. AUDIO: she says this line once, straight through, in natural British English, plainly and warmly, with a clear pause between the two sentences, never repeating or restarting any part of it: \"Now the whole schedule takes about nine minutes. I got my Sundays back.\" On the second sentence she gives a small shrug and a quiet, genuine smile, understating it rather than selling it. She finishes with about a second and a half to spare and holds the smile, looking slightly off camera at the interviewer. Quiet room tone, no music. Clean photographic frame with no captions, subtitles, titles or graphical text of any kind.",
+        "negative_prompt": "repeating a phrase, restarting the sentence, stuttering, duplicated words, trailing off, mumbling, subtitles, captions, burned-in text, text, letters, numbers, logos, watermark, other people, music, camera shake, cut to another shot, different person, changing clothes, standing up, exaggerated celebration, laughing loudly",
+        "image_url": "local:artifacts/library-loop-5/reference_frames/f5.8.jpg",
+        "duration": "8s",
+        "resolution": "1080p",
+        "aspect_ratio": "auto",
+        "generate_audio": true,
+        "auto_fix": false,
+        "seed": 94
+      }
+    }
+  ]
+}

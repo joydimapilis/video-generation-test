@@ -1,0 +1,10 @@
+[
+  {"term": "Anthropic-Claude-Plans-First-AI-Drive-on-Mars", "genre": "satirical_announcement"},
+  {"term": "Google-Gemini-31-Pro-be-like", "genre": "meme_short"},
+  {"term": "Clova-How-I-Found-My-Startup-Idea", "genre": "founder_story"},
+  {"term": "Emergent-Labs-We-raised-23M", "genre": "values_led_funding"},
+  {"term": "Bitmor-We-build-a-habit", "genre": "consumer_fintech_lifestyle"},
+  {"term": "Cluely-Introducing-Cluelys-Official-Mascot", "genre": "mascot_character"},
+  {"term": "Anthropic-Project-Vend", "genre": "documentary_experiment"},
+  {"term": "Giggles-Introducing-Giggles", "genre": "consumer_app_lifestyle"}
+]

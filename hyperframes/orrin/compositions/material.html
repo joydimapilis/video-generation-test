@@ -1,0 +1,35 @@
+<template>
+<style>
+@font-face{font-family:OrrinSans;src:url('assets/OrrinSans.ttf')}
+@font-face{font-family:OrrinSans;src:url('assets/OrrinSans-Bold.ttf');font-weight:700}
+@font-face{font-family:OrrinMono;src:url('assets/OrrinMono.ttf')}
+#orr-material{width:1920px;height:1080px;position:relative;overflow:hidden;background:#07080a;color:#e9ecea}
+#orr-material-plate{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden}
+#orr-material-video{position:absolute;inset:0;width:1920px;height:1080px;object-fit:cover}
+#orr-material-anno{position:absolute;left:170px;top:296px;opacity:0}
+#orr-material-anno .dot{position:absolute;left:790px;top:10px;width:10px;height:10px;border-radius:50%;background:#ff9b2f;opacity:0}
+#orr-material-anno .lead{position:absolute;left:470px;top:14px;height:1px;background:#ff9b2f;width:326px;transform-origin:left center}
+#orr-material-anno .txt{font-family:OrrinMono,monospace;font-size:26px;letter-spacing:.08em;line-height:1.6;color:#e9ecea;white-space:pre}
+#orr-material-anno .txt b{color:#b4b9b7;font-weight:400}
+</style>
+<div data-hf-id="hf-mat0" id="orr-material" data-composition-id="orr-material" data-duration="4" data-width="1920" data-height="1080">
+  <div data-hf-id="hf-mat1" id="orr-material-plate">
+    <video data-hf-id="hf-mat2" id="orr-material-video" class="clip" data-layout-allow-overflow src="assets/weave.mp4" data-start="0" data-duration="4" data-track-index="0" muted playsinline></video>
+  </div>
+  <div data-hf-id="hf-mat3" id="orr-material-anno">
+    <i data-hf-id="hf-mat4" class="lead"></i><i data-hf-id="hf-mat5" class="dot"></i>
+    <div data-hf-id="hf-mat6" class="txt">2&times;2 TWILL CARBON<br><b data-hf-id="hf-mat7">PREPREG / 0.28 MM</b></div>
+  </div>
+</div>
+<script>
+var matTl=gsap.timeline({paused:true});
+// The generated plate is nearly static; the push supplies the movement.
+matTl.fromTo('#orr-material-video',{scale:1.0,xPercent:0},{scale:1.13,xPercent:-2,duration:4,ease:'none'},0);
+matTl.set('#orr-material-anno',{opacity:1},1.05);
+matTl.fromTo('#orr-material-anno .lead',{scaleX:0},{scaleX:1,duration:.34,ease:'power2.out'},1.05);
+matTl.to('#orr-material-anno .dot',{opacity:1,duration:.01},1.39);
+matTl.fromTo('#orr-material-anno .txt',{opacity:0,x:-10},{opacity:1,x:0,duration:.24,ease:'power2.out'},1.39);
+matTl.to('#orr-material-anno',{opacity:0,duration:.2,ease:'power2.in'},3.7);
+window.__timelines['orr-material']=matTl;
+</script>
+</template>

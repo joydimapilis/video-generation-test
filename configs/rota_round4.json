@@ -1,0 +1,32 @@
+{
+  "experiment": "rota",
+  "round": 4,
+  "goal": "Repair the payoff line. It is the most important line in the film and the only one the model got wrong.",
+  "observed_failure": {
+    "talk_d_v1": "Transcribed as 'Now it takes about nine minutes, now it takes about, I've got my thundays.' The model restarted the clause mid-line, dropped the word 'back', and slurred 'Sundays'. Speech ended at 4.58s of an 8s shot, leaving a 3.4s tail."
+  },
+  "hypothesis": "Loop one measured delivery running SHORT of the requested length, so this loop bought 8s for a roughly 5s line. That inverted the problem: given three spare seconds the model padded by restarting the sentence. talk_c_v1 - ten words in a 6s shot, speech ending at 5.16s - was word-perfect. So the fix is less room, not more, plus an explicit instruction against repetition and a different seed.",
+  "runs": [
+    {
+      "id": "talk_d_v2",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 90,
+      "use_case": "interview",
+      "role": "line_4_payoff",
+      "line": "Now it takes about nine minutes. I got my Sundays back.",
+      "version": 2,
+      "parent": "talk_d_v1",
+      "input": {
+        "prompt": "The same woman finishes her documentary testimonial, seated exactly where she is, the camera static at eye level. AUDIO: she says this line once, straight through, in natural British English, plainly and warmly: \"Now it takes about nine minutes. I got my Sundays back.\" She says each sentence exactly once and never repeats or restarts any part of the line. On the second sentence she gives a small shrug and a quiet, genuine smile, understating it rather than selling it. She finishes speaking with about a second to spare and holds the smile, looking slightly off camera at the interviewer. Quiet room tone, no music. Clean photographic frame with no captions, subtitles, titles or graphical text of any kind.",
+        "negative_prompt": "repeating a phrase, restarting the sentence, stuttering, duplicated words, trailing off, mumbling, subtitles, captions, burned-in text, text, letters, numbers, logos, watermark, other people, music, camera shake, cut to another shot, different person, changing clothes, standing up, exaggerated celebration",
+        "image_url": "local:artifacts/library-loop-5/reference_frames/f5.8.jpg",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "auto",
+        "generate_audio": true,
+        "auto_fix": false,
+        "seed": 89
+      }
+    }
+  ]
+}

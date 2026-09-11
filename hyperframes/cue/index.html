@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #171a19;
+      }
+      body {
+        font-family: CueSans, Arial, sans-serif;
+      }
+      code,
+      pre,
+      .monospace {
+        font-family: "JetBrains Mono", monospace;
+      }
+      @font-face{font-family:CueSans;src:url('assets/Arial.ttf')}
+      @font-face{font-family:CueSans;src:url('assets/Arial-Bold.ttf');font-weight:700}
+      *{letter-spacing:0}
+      #root,.clip{width:1920px;height:1080px;overflow:hidden}
+      .clip{position:absolute;inset:0}
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-jrv3" id="root" data-composition-id="cue" data-start="0" data-duration="30" data-width="1920" data-height="1080">
+      <div data-hf-id="hf-9jbs" id="cue-hook-host" class="clip" data-composition-id="cue-hook" data-composition-src="compositions/hook.html" data-start="0" data-duration="6" data-width="1920" data-height="1080" data-track-index="0"></div>
+      <div data-hf-id="hf-131m" id="cue-hero-host" class="clip" data-composition-id="cue-hero" data-composition-src="compositions/hero.html" data-start="6" data-duration="4" data-width="1920" data-height="1080" data-track-index="1"></div>
+      <div data-hf-id="hf-rutz" id="cue-demo-host" class="clip" data-composition-id="cue-demo" data-composition-src="compositions/demo.html" data-start="10" data-duration="13" data-width="1920" data-height="1080" data-track-index="2"></div>
+      <div data-hf-id="hf-5s9e" id="cue-close-host" class="clip" data-composition-id="cue-close" data-composition-src="compositions/close.html" data-start="23" data-duration="7" data-width="1920" data-height="1080" data-track-index="3"></div>
+      <audio data-hf-id="hf-jlen" id="cue-voice" src="assets/voice.m4a" data-start="0" data-duration="6" data-volume="1" data-track-index="10"></audio>
+      <audio data-hf-id="hf-7xtv" id="cue-score" src="assets/score.wav" data-start="0" data-duration="30" data-volume="0.9" data-track-index="11"></audio>
+      <audio data-hf-id="hf-93km" id="cue-whoosh" src="assets/whoosh-short.mp3" data-start="9.85" data-duration="0.5" data-volume="0.13" data-track-index="12"></audio>
+      <audio data-hf-id="hf-efdd" id="cue-click" src="assets/click-soft.mp3" data-start="18.4" data-duration="0.4" data-volume="0.4" data-track-index="13"></audio>
+      <audio data-hf-id="hf-0gqy" id="cue-done" src="assets/chime.mp3" data-start="19.2" data-duration="1" data-volume="0.14" data-track-index="14"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["cue"] = tl;
+    </script>
+  </body>
+</html>

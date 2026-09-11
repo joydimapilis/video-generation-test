@@ -32,3 +32,18 @@ hyperframes/**/.media/
 # Local media/assets that don't need to be in Git
 hyperframes/**/assets/*.m4a
 hyperframes/**/assets/*.ttf
+
+# Synthesized audio is regenerated deterministically by scripts/prepare_*_assets.py
+# from a fixed seed, so committing ~55MB of WAV would bloat history for no gain.
+hyperframes/**/assets/*.wav
+hyperframes/**/assets/vo/*.wav
+
+# Bundled SFX are Pixabay-licensed and are re-staged from the media-use skill by
+# the prepare_*_assets.py scripts, so assets/ stays entirely regenerable.
+hyperframes/**/assets/*.mp3
+
+# Generated diagnostics and OS cruft
+hyperframes/**/.hyperframes/
+hyperframes/**/.waveform-cache/
+.DS_Store
+**/.DS_Store

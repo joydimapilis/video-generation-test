@@ -1,0 +1,27 @@
+<template>
+<style>
+@font-face{font-family:OrrinSans;src:url('assets/OrrinSans.ttf')}
+@font-face{font-family:OrrinSans;src:url('assets/OrrinSans-Bold.ttf');font-weight:700}
+@font-face{font-family:OrrinMono;src:url('assets/OrrinMono.ttf')}
+#orr-cls{width:1920px;height:1080px;position:relative;overflow:hidden;background:#07080a;color:#e9ecea}
+#orr-cls-glow{position:absolute;left:50%;top:50%;width:1500px;height:1500px;margin:-750px 0 0 -750px;border-radius:50%;background:radial-gradient(circle,rgba(255,155,47,.13) 0%,rgba(255,155,47,0) 62%);opacity:0}
+#orr-cls-mark{position:absolute;left:0;right:0;top:404px;text-align:center;font-family:OrrinSans,Arial,sans-serif;font-weight:700;font-size:186px;letter-spacing:-.03em;line-height:1;opacity:0}
+#orr-cls-mark i{color:#ff9b2f;font-style:normal}
+#orr-cls-rule{position:absolute;left:50%;top:628px;width:420px;margin-left:-210px;height:1px;background:#ff9b2f}
+#orr-cls-tag{position:absolute;left:0;right:0;top:676px;text-align:center;font-family:OrrinMono,monospace;font-size:34px;letter-spacing:.14em;color:#e9ecea;opacity:0}
+</style>
+<div data-hf-id="hf-cls0" id="orr-cls" data-composition-id="orr-cls" data-duration="4" data-width="1920" data-height="1080">
+  <div data-hf-id="hf-cls1" id="orr-cls-glow" data-layout-allow-overflow></div>
+  <div data-hf-id="hf-cls2" id="orr-cls-mark">ORRIN<i data-hf-id="hf-cls3">.</i></div>
+  <i data-hf-id="hf-cls4" id="orr-cls-rule"></i>
+  <div data-hf-id="hf-cls5" id="orr-cls-tag">BUILT TO SEE IN THE DARK</div>
+</div>
+<script>
+var clsTl=gsap.timeline({paused:true});
+clsTl.fromTo('#orr-cls-glow',{opacity:0},{opacity:1,duration:1.1,ease:'power2.out'},.1);
+clsTl.fromTo('#orr-cls-mark',{opacity:0,y:40},{opacity:1,y:0,duration:.34,ease:'power4.out'},.28);
+clsTl.fromTo('#orr-cls-rule',{scaleX:0},{scaleX:1,duration:.44,ease:'power2.out'},.74);
+clsTl.fromTo('#orr-cls-tag',{opacity:0,y:14},{opacity:1,y:0,duration:.3,ease:'power2.out'},1.0);
+window.__timelines['orr-cls']=clsTl;
+</script>
+</template>

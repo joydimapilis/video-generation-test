@@ -1,0 +1,165 @@
+{
+  "score_volume": 0.55,
+  "music_automation": {
+    "version": 1,
+    "lanes": [
+      {
+        "target": "volume",
+        "points": [
+          {
+            "t": 0.0,
+            "v": 0.0
+          },
+          {
+            "t": 0.4,
+            "v": 1.0
+          },
+          {
+            "t": 0.65,
+            "v": 0.42
+          },
+          {
+            "t": 7.0,
+            "v": 0.42
+          },
+          {
+            "t": 7.25,
+            "v": 1.0
+          },
+          {
+            "t": 9.25,
+            "v": 1.0
+          },
+          {
+            "t": 9.5,
+            "v": 0.42
+          },
+          {
+            "t": 21.05,
+            "v": 0.42
+          },
+          {
+            "t": 21.3,
+            "v": 1.0
+          },
+          {
+            "t": 22.7,
+            "v": 1.0
+          },
+          {
+            "t": 22.95,
+            "v": 0.42
+          },
+          {
+            "t": 38.25,
+            "v": 0.42
+          },
+          {
+            "t": 38.5,
+            "v": 1.0
+          },
+          {
+            "t": 42.4,
+            "v": 1.0
+          },
+          {
+            "t": 44.4,
+            "v": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "dialogue_tracks": [
+    {
+      "track": "A1",
+      "role": "hero",
+      "src": "hero.mp4",
+      "data_start": 0.0,
+      "media_start": 0.0,
+      "duration": 7.3
+    },
+    {
+      "track": "A2",
+      "role": "line2",
+      "src": "line2.mp4",
+      "data_start": 9.3,
+      "media_start": 1.1,
+      "duration": 6.4
+    },
+    {
+      "track": "A3",
+      "role": "linec",
+      "src": "linec.mp4",
+      "data_start": 15.7,
+      "media_start": 0.0,
+      "duration": 5.6
+    },
+    {
+      "track": "A4",
+      "role": "line4",
+      "src": "line4.mp4",
+      "data_start": 23.0,
+      "media_start": 0.0,
+      "duration": 5.2
+    },
+    {
+      "track": "A5",
+      "role": "line5",
+      "src": "line5.mp4",
+      "data_start": 28.2,
+      "media_start": 0.0,
+      "duration": 4.2
+    },
+    {
+      "track": "A6",
+      "role": "line6",
+      "src": "line6.mp4",
+      "data_start": 32.4,
+      "media_start": 0.0,
+      "duration": 6.0
+    }
+  ],
+  "caption_schedule": [
+    {
+      "in": 0.0,
+      "out": 3.9,
+      "text": "We're a bakery. Six people, two ovens,"
+    },
+    {
+      "in": 4.02,
+      "out": 6.95,
+      "text": "and a lot of very early mornings."
+    },
+    {
+      "in": 9.55,
+      "out": 15.55,
+      "text": "Every Sunday night I'd sit down with a pencil and rebuild the staff schedule."
+    },
+    {
+      "in": 15.7,
+      "out": 21.0,
+      "text": "Someone's got an exam. Someone's kid is sick. Start again."
+    },
+    {
+      "in": 23.0,
+      "out": 28.0,
+      "text": "We use Crew now. Everyone puts their availability on their phone."
+    },
+    {
+      "in": 28.2,
+      "out": 32.1,
+      "text": "It builds the schedule around that, and everyone sees it update."
+    },
+    {
+      "in": 32.4,
+      "out": 35.0,
+      "text": "Now the whole schedule takes about nine minutes."
+    },
+    {
+      "in": 36.66,
+      "out": 38.2,
+      "text": "I got my Sundays back."
+    }
+  ]
+}

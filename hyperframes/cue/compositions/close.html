@@ -1,0 +1,35 @@
+<template>
+<style>
+#cue-close{width:1920px;height:1080px;position:relative;overflow:hidden;background:#d8fa67;color:#171a19}
+#cue-close-benefit{position:absolute;left:110px;top:260px;font-size:124px;font-weight:700;line-height:1.18}
+#cue-close-benefit div{opacity:0}
+#cue-close-tag{position:absolute;left:112px;bottom:110px;font-size:33px}
+#cue-close-fill{position:absolute;inset:0;background:#171a19;transform-origin:right;opacity:0}
+#cue-close-lockup{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#f5f7f3;opacity:0}
+#cue-close-word{display:flex;align-items:baseline;font-size:270px;line-height:1.04;font-weight:700}
+#cue-close-word span{display:block;opacity:0}
+#cue-close-word .period{color:#d8fa67}
+#cue-close-slogan{font-size:55px;margin-top:34px;opacity:0}
+#cue-close-caption{position:absolute;bottom:64px;left:96px;right:96px;text-align:center;font-size:27px;color:#c8d1c6;opacity:0}
+</style>
+<div data-hf-id="hf-am16" id="cue-close" data-composition-id="cue-close" data-duration="7" data-width="1920" data-height="1080">
+<div data-hf-id="hf-59tf" id="cue-close-benefit"><div data-hf-id="hf-779a">Less remembering.</div><div data-hf-id="hf-p3kk">More doing.</div></div>
+<div data-hf-id="hf-0qv9" id="cue-close-tag">Your next step starts with an idea.</div>
+<div data-hf-id="hf-hhel" id="cue-close-fill"></div>
+<div data-hf-id="hf-4ba8" id="cue-close-lockup"><div data-hf-id="hf-sij6" id="cue-close-word"><span data-hf-id="hf-ypd2">c</span><span data-hf-id="hf-rjuk">u</span><span data-hf-id="hf-xwr0">e</span><span data-hf-id="hf-1nr0" class="period">.</span></div><div data-hf-id="hf-xm5q" id="cue-close-slogan">Make room for the idea.</div></div>
+<div data-hf-id="hf-obed" id="cue-close-caption">ORIGINAL PRODUCT CONCEPT / AI-GENERATED FILM</div>
+</div>
+<script>
+var closeTl=gsap.timeline({paused:true});
+closeTl.set('#cue-close-benefit div',{opacity:1,y:70},.1);
+closeTl.to('#cue-close-benefit div',{y:0,duration:.32,stagger:.18,ease:'power4.out'},.1);
+closeTl.set('#cue-close-fill',{opacity:1},2.6);
+closeTl.fromTo('#cue-close-fill',{scaleX:0},{scaleX:1,duration:.5,ease:'power3.inOut'},2.6);
+closeTl.set('#cue-close-benefit, #cue-close-tag',{opacity:0},3.1);
+closeTl.set('#cue-close-lockup',{opacity:1},3.1);
+closeTl.fromTo('#cue-close-word span',{y:65,opacity:0},{y:0,opacity:1,duration:.65,stagger:.08,ease:'expo.out'},3.15);
+closeTl.fromTo('#cue-close-slogan',{y:24,opacity:0},{y:0,opacity:1,duration:.55,ease:'power3.out'},3.85);
+closeTl.to('#cue-close-caption',{opacity:1,duration:.4},4.1);
+window.__timelines['cue-close']=closeTl;
+</script>
+</template>

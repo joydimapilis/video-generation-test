@@ -1,0 +1,49 @@
+{
+  "experiment": "orrin",
+  "round": 2,
+  "goal": "Repair object identity. Round 1 produced three different finishes for one object: black bead-blasted (hero_veo_v1), warm bronze with a side port (hero_kling_v1) and bright silver steel (hands_kling_v1). A launch film has to show one product.",
+  "observed_failures": {
+    "hero_kling_v1": "Best geometry of any plate - a genuinely flat hexagonal slab with a convincing coated lens - but the body is warm bronze, there is an unrequested port on the side wall, and a bright light strip sits in the background.",
+    "hands_kling_v1": "Correct action and correct withdraw, but the module is polished silver steel, which cannot be intercut with a black one."
+  },
+  "runs": [
+    {
+      "id": "hero_kling_v2",
+      "endpoint": "fal-ai/kling-video/v3/pro/text-to-video",
+      "estimate_cents": 68,
+      "use_case": "product_hero",
+      "pattern": "macro_to_product_reveal",
+      "version": 2,
+      "parent": "hero_kling_v1",
+      "hypothesis": "Naming the wrong outcomes explicitly repaired hero_kling_v1 in the first loop. Stating the colour three ways, denying the side port and denying the background lamp should keep v1's superior geometry while fixing all three defects.",
+      "input": {
+        "prompt": "One slow continuous camera pullback on a single precision instrument: a flat hexagonal slab of matte BLACK anodized aluminium about the size of a hockey puck, charcoal black in colour, bead-blasted, absolutely not silver, not chrome, not bronze and not bare metal. It has exactly one circular glass lens centred on its top face and exactly one thin amber light ring glowing around that lens. Every side wall of the object is completely plain: no ports, no holes, no screws, no seams, no markings and no writing anywhere. Start tight on the lens, pull back to a full three-quarter view, ending with the object filling the right half of the frame. The object stays completely stationary on a black seamless surface. One hard key light from the upper right and a cold rim light from behind, against a plain black background with no lamps, light strips, softboxes or reflections visible. Hold the final composition.",
+        "negative_prompt": "blur, distort, low quality, text, letters, numbers, logos, watermark, silver, chrome, bare metal, bronze, brass, gold body, polished steel, bright metal, ports, holes, screws, side buttons, light strip, softbox, lamp in frame, multiple objects, hands, people",
+        "duration": "6",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "shot_type": "customize",
+        "cfg_scale": 0.5
+      }
+    },
+    {
+      "id": "hands_kling_v2",
+      "endpoint": "fal-ai/kling-video/v3/pro/text-to-video",
+      "estimate_cents": 56,
+      "use_case": "industrial_human",
+      "pattern": "gloved_hands_placement",
+      "version": 2,
+      "parent": "hands_kling_v1",
+      "hypothesis": "v1 got the whole gesture right on the first try, so only the finish needs correcting. Same shot wording, colour stated three ways and every bright-metal synonym pushed into the negative prompt.",
+      "input": {
+        "prompt": "A dark precision workshop lit by one overhead work lamp. Two gloved hands in black nitrile gloves lower a single flat hexagonal instrument made of matte BLACK anodized aluminium, charcoal black in colour, bead-blasted, absolutely not silver, not chrome and not bare steel, with exactly one circular glass lens and exactly one thin amber light ring on its top face, down onto a matte black steel bench, then withdraw out of frame and leave the instrument alone in shot. The camera holds steady in a close three-quarter view. Shallow depth of field, deep shadows, cold industrial light, fine cinematic grain. No faces, no text, no markings, no logos.",
+        "negative_prompt": "blur, distort, low quality, text, letters, numbers, logos, watermark, silver, chrome, bare metal, polished steel, bright metal, brushed aluminium, faces, extra fingers, deformed hands, multiple objects",
+        "duration": "5",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "shot_type": "customize",
+        "cfg_scale": 0.5
+      }
+    }
+  ]
+}

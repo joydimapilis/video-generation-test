@@ -1,0 +1,157 @@
+{
+  "experiment": "seventeen",
+  "concept": "Seventeen / a founder origin story for TUESDAY",
+  "genre": "third-person documentary founder origin story with kinetic captions",
+  "library_references": [
+    "Clova-How-I-Found-My-Startup-Idea-Public-Launch",
+    "Emergent-Labs-We-raised-23M-Series-A-but-heres-what-we-truly-celebrate",
+    "Giggles-Introducing-Giggles-Make-Money-While-Scrolling"
+  ],
+  "cap_cents": 1000,
+  "why_this_genre": "The first three films had no characters: ORRIN and KEEL showed only hands, and Cue used one static talking head as a hook. The Clova reference is a character with an arc, narrated about in the third person over documentary b-roll and big kinetic captions. It is the only inspected genre where a person carries the story.",
+  "why_this_routing": "Character consistency across shots is the known weakness of text-to-video and was flagged as untested in both earlier loops. The fix is structural, not a prompt trick: shoot one hero character frame with text-to-video, then drive every other character shot from that exact frame with image-to-video, which costs the same $0.10/s at 1080p. Shots where identity does not read - hands, backs, wides, still lifes - stay on cheaper text-to-video.",
+  "craft_targets": [
+    "A character the viewer can follow, which none of the three previous films attempted.",
+    "Authored UI carries the plot beats, not just the branding: the dashboards and counters ARE the story, which plays to the one capability measured as strongest across all three loops.",
+    "Kinetic captions positioned around the frame, against KEEL's fixed bottom-centre bar.",
+    "Over-coverage again: buy ten plates for a film that needs about seven."
+  ],
+  "character": "a woman in her late twenties with deep brown skin, closely cropped natural black hair, small silver stud earrings, wearing a faded olive-green sweatshirt",
+  "runs": [
+    {
+      "id": "hero_night_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "character",
+      "act": 1,
+      "role": "hero_reference",
+      "version": 1,
+      "hypothesis": "This plate does double duty: it is the opening shot and it supplies the single reference frame that every later character shot is generated from, so the woman only has to be invented once.",
+      "input": {
+        "prompt": "A small dark apartment at night, one lamp off in the corner. A woman in her late twenties with deep brown skin, closely cropped natural black hair, small silver stud earrings, wearing a faded olive-green sweatshirt, sits at a cheap wooden desk lit only by the cold light of her laptop screen. She is framed in a medium shot from slightly off to the side, three-quarters toward camera, her face clearly lit by the screen. She reaches forward and presses one key, then sits back and watches. The camera holds nearly still with the faintest drift in. Shallow depth of field, cold screen light against warm shadow, fine cinematic grain. Clean camera footage with no captions, titles, interface text or graphical text of any kind. No readable words anywhere, and the laptop screen content is not visible.",
+        "negative_prompt": "text, letters, numbers, user interface, screen content, visible monitor image, logos, watermark, subtitles, captions, other people, bright room, daylight",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 71
+      }
+    },
+    {
+      "id": "hands_laptop_v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/text-to-video",
+      "estimate_cents": 68,
+      "use_case": "industrial_human",
+      "act": 1,
+      "role": "b_roll",
+      "version": 1,
+      "hypothesis": "Faceless hands are Kling's measured strength and carry no identity risk, so this beat needs no reference conditioning.",
+      "input": {
+        "prompt": "Close-up of two hands in the dark slowly closing a laptop lid until the screen light narrows to a thin line and goes out, leaving the frame almost black. Cold blue screen light raking across the knuckles from below, deep shadow everywhere else. The camera holds steady, framed tight so no face and no screen content is ever visible. Shallow depth of field, fine cinematic grain. No text, no letters on the keys, no logos, no markings.",
+        "negative_prompt": "blur, distort, low quality, text, letters, numbers, key legends, screen content, logos, watermark, subtitles, captions, faces, extra fingers, deformed hands, bright room, warm colour",
+        "duration": "6",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "shot_type": "customize",
+        "cfg_scale": 0.5
+      }
+    },
+    {
+      "id": "window_rain_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "act": 2,
+      "role": "b_roll",
+      "version": 1,
+      "input": {
+        "prompt": "Rain running down a dark window at night, the city beyond thrown completely out of focus into soft points of amber and white light. The camera holds still while a single drop tracks down the glass. Cold blue-grey, very shallow depth of field, high contrast, fine cinematic grain. Clean camera footage with no captions, titles, signage or graphical text of any kind. No people, no readable words anywhere.",
+        "negative_prompt": "text, letters, numbers, signage, shop signs, logos, watermark, subtitles, captions, people, sharp background, daylight",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 71
+      }
+    },
+    {
+      "id": "desk_empty_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "act": 2,
+      "role": "b_roll",
+      "version": 1,
+      "input": {
+        "prompt": "An empty cheap wooden desk in a small apartment in cold early morning light, a closed laptop, a mug, and dust turning slowly in a shaft of light from a window out of frame. Nobody is present. The camera pushes in very slowly in one continuous move. Desaturated blue-grey light, quiet and still, shallow depth of field, fine cinematic grain. Clean camera footage with no captions, titles or graphical text of any kind. No people, no readable words anywhere.",
+        "negative_prompt": "text, letters, numbers, logos, watermark, subtitles, captions, people, hands, bright colour, clutter, open laptop screen",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 71
+      }
+    },
+    {
+      "id": "coffee_dawn_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "act": 2,
+      "role": "b_roll",
+      "version": 1,
+      "input": {
+        "prompt": "Macro close-up of a chipped ceramic mug of black coffee beside the edge of a keyboard, one last thread of steam lifting and dying in cold dawn light from a window. The camera drifts very slowly sideways in one continuous move. Muted blue-grey with one warm highlight on the rim of the mug, very shallow depth of field, fine cinematic grain. Clean camera footage with no captions, titles or graphical text. No people, no logos, no readable words anywhere.",
+        "negative_prompt": "text, letters, numbers, logos, branding on mug, watermark, subtitles, captions, people, hands, bright colour",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 71
+      }
+    },
+    {
+      "id": "street_walk_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "act": 3,
+      "role": "b_roll",
+      "version": 1,
+      "hypothesis": "A back view at distance carries the character beat without carrying identity, so it is safe on plain text-to-video.",
+      "input": {
+        "prompt": "A wide shot down an empty residential street in low golden morning light. A lone figure in a faded olive-green sweatshirt walks away from the camera into the light, small in the frame, seen only from behind so no face is ever visible. Long shadows across the road, warm haze in the air. The camera holds steady. Cinematic, high contrast, fine cinematic grain. Clean camera footage with no captions, titles, signage or graphical text of any kind. No other people, no vehicles, no readable words anywhere.",
+        "negative_prompt": "text, letters, numbers, signage, logos, watermark, subtitles, captions, face, front view, other people, vehicles, night, cold colour",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 71
+      }
+    },
+    {
+      "id": "city_dawn_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "act": 3,
+      "role": "b_roll",
+      "version": 1,
+      "input": {
+        "prompt": "A wide rooftop view of a city at first light, low sun breaking between buildings, mist still sitting in the streets below. The camera drifts slowly upward in one continuous move. Warm gold against cool blue shadow, high contrast, anamorphic feel, fine cinematic grain. Clean camera footage with no captions, titles, signage, billboards or graphical text of any kind. No people, no readable words anywhere.",
+        "negative_prompt": "text, letters, numbers, signage, billboards, logos, watermark, subtitles, captions, people, night, rain",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 71
+      }
+    }
+  ]
+}

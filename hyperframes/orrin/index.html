@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      *{margin:0;padding:0;box-sizing:border-box}
+      html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#07080a}
+      body{font-family:OrrinSans,Arial,sans-serif}
+      @font-face{font-family:OrrinSans;src:url('assets/OrrinSans.ttf')}
+      @font-face{font-family:OrrinSans;src:url('assets/OrrinSans-Bold.ttf');font-weight:700}
+      @font-face{font-family:OrrinMono;src:url('assets/OrrinMono.ttf')}
+      #root,.clip{width:1920px;height:1080px;overflow:hidden}
+      .clip{position:absolute;inset:0}
+      #orr-frame{position:absolute;inset:64px;border:1px solid rgba(35,40,44,.85);pointer-events:none;z-index:40}
+      #orr-index{position:absolute;left:88px;top:88px;z-index:41;font-family:OrrinMono,monospace;font-size:24px;letter-spacing:.16em;color:#c9cecc;background:rgba(7,8,10,.92);padding:9px 15px}
+      #orr-runfoot{position:absolute;right:96px;bottom:88px;z-index:41;font-family:OrrinMono,monospace;font-size:20px;letter-spacing:.16em;color:#c9cecc;background:rgba(7,8,10,.92);padding:9px 15px}
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-root" id="root" data-composition-id="orrin" data-start="0" data-duration="30" data-width="1920" data-height="1080">
+      <div data-hf-id="hf-f1" id="orr-material-host" class="clip" data-composition-id="orr-material" data-composition-src="compositions/material.html" data-start="0" data-duration="4" data-width="1920" data-height="1080" data-track-index="0"></div>
+      <div data-hf-id="hf-f2" id="orr-insa-host" class="clip" data-composition-id="orr-insa" data-composition-src="compositions/instrument-a.html" data-start="4" data-duration="4" data-width="1920" data-height="1080" data-track-index="1"></div>
+      <div data-hf-id="hf-f3" id="orr-insb-host" class="clip" data-composition-id="orr-insb" data-composition-src="compositions/instrument-b.html" data-start="8" data-duration="4" data-width="1920" data-height="1080" data-track-index="2"></div>
+      <div data-hf-id="hf-f4" id="orr-asm-host" class="clip" data-composition-id="orr-asm" data-composition-src="compositions/assembly.html" data-start="12" data-duration="4" data-width="1920" data-height="1080" data-track-index="3"></div>
+      <div data-hf-id="hf-f5" id="orr-dep-host" class="clip" data-composition-id="orr-dep" data-composition-src="compositions/deployment.html" data-start="16" data-duration="6" data-width="1920" data-height="1080" data-track-index="4"></div>
+      <div data-hf-id="hf-f6" id="orr-scl-host" class="clip" data-composition-id="orr-scl" data-composition-src="compositions/scale.html" data-start="22" data-duration="4" data-width="1920" data-height="1080" data-track-index="5"></div>
+      <div data-hf-id="hf-f7" id="orr-cls-host" class="clip" data-composition-id="orr-cls" data-composition-src="compositions/close.html" data-start="26" data-duration="4" data-width="1920" data-height="1080" data-track-index="6"></div>
+
+      <div data-hf-id="hf-frm" id="orr-frame"></div>
+      <div data-hf-id="hf-idx" id="orr-index">01 / MATERIAL</div>
+      <div data-hf-id="hf-rft" id="orr-runfoot">ORIGINAL CONCEPT / AI-GENERATED FILM</div>
+
+      <audio data-hf-id="hf-a1" id="orr-score" src="assets/score.wav" data-start="0" data-duration="30" data-volume="0.95" data-track-index="10"></audio>
+      <audio data-hf-id="hf-a2" id="orr-hit1" src="assets/impact-bass-1.mp3" data-start="4" data-duration="1.2" data-volume="0.3" data-track-index="11"></audio>
+      <audio data-hf-id="hf-a8" id="orr-hit1b" src="assets/impact-bass-2.mp3" data-start="8" data-duration="1.2" data-volume="0.2" data-track-index="17"></audio>
+      <audio data-hf-id="hf-a3" id="orr-hit2" src="assets/impact-bass-2.mp3" data-start="12" data-duration="1.2" data-volume="0.24" data-track-index="12"></audio>
+      <audio data-hf-id="hf-a4" id="orr-whoosh" src="assets/whoosh-cinematic.mp3" data-start="15.7" data-duration="1.4" data-volume="0.17" data-track-index="13"></audio>
+      <audio data-hf-id="hf-a5" id="orr-hit3" src="assets/impact-bass-1.mp3" data-start="22" data-duration="1.2" data-volume="0.27" data-track-index="14"></audio>
+      <audio data-hf-id="hf-a6" id="orr-riser" src="assets/riser.mp3" data-start="24.2" data-duration="2" data-volume="0.13" data-track-index="15"></audio>
+      <audio data-hf-id="hf-a7" id="orr-hit4" src="assets/impact-bass-2.mp3" data-start="26" data-duration="1.6" data-volume="0.34" data-track-index="16"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      var tl = gsap.timeline({ paused: true });
+      var SECTIONS = [
+        { at: 0, label: '01 / MATERIAL' },
+        { at: 4, label: '02 / INSTRUMENT' },
+        { at: 12, label: '03 / ASSEMBLY' },
+        { at: 16, label: '04 / DEPLOYMENT' },
+        { at: 22, label: '05 / SCALE' },
+        { at: 26, label: '06 / ORRIN' }
+      ];
+      var clock = { t: 0 }, lastLabel = null;
+      tl.to(clock, { t: 30, duration: 30, ease: 'none', onUpdate: function () {
+        var label = SECTIONS[0].label;
+        for (var i = 0; i < SECTIONS.length; i++) {
+          if (clock.t >= SECTIONS[i].at) { label = SECTIONS[i].label; }
+        }
+        if (label === lastLabel) { return; }
+        lastLabel = label;
+        document.getElementById('orr-index').textContent = label;
+      } }, 0);
+      // The safe-area rule and footer belong to the film, not to any one scene,
+      // so they hold for the full runtime and only release at the very end.
+      tl.to('#orr-frame', { opacity: 0, duration: 0.5, ease: 'power2.in' }, 26.4);
+      window.__timelines['orrin'] = tl;
+    </script>
+  </body>
+</html>

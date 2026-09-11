@@ -1,0 +1,323 @@
+{
+  "version": 1,
+  "status": "planned_not_executed",
+  "source_manifest": "artifacts/library-loop/references/manifest.json",
+  "scorecard": "artifacts/library-loop/scorecard.json",
+  "patterns": "prompt_library/library_loop_patterns.json",
+  "routing_evidence": "review_notes/library_loop.json",
+  "note": "Concepts written after the measured loop. Prompts instantiate tested templates and apply the repairs learned in round 2. No scene here has been generated; every cost is an estimate from published per-second pricing, not an invoice.",
+  "rates_usd_per_second": {
+    "veo_3_1_fast": 0.15,
+    "grok_imagine_1_5": 0.14,
+    "ltx_2_3_pro": 0.08,
+    "kling_3_0_pro": 0.112,
+    "seedance_2_5": 0.473,
+    "hyperframes": 0.0,
+    "veo_3_1_fast_silent": 0.1,
+    "kokoro_local_tts": 0.0
+  },
+  "endpoints": {
+    "veo_3_1_fast": "fal-ai/veo3.1/fast/text-to-video",
+    "grok_imagine_1_5": "xai/grok-imagine-video/v1.5/text-to-video",
+    "ltx_2_3_pro": "fal-ai/ltx-2.3/text-to-video",
+    "kling_3_0_pro": "fal-ai/kling-video/v3/pro/text-to-video",
+    "seedance_2_5": "bytedance/seedance-2.5/text-to-video",
+    "hyperframes": "local render",
+    "veo_3_1_fast_silent": "fal-ai/veo3.1/fast (generate_audio: false)",
+    "kokoro_local_tts": "npx hyperframes tts (local Kokoro-82M, offline)"
+  },
+  "routing_rules": [
+    {
+      "shot_type": "Human speaks one short line to camera",
+      "tool": "veo_3_1_fast",
+      "fallback": "grok_imagine_1_5",
+      "budget_draft": "ltx_2_3_pro",
+      "evidence": "ugc_veo_v2 scored 8.75/10, the highest measured run; ugc_grok_v1 8.0 at $0.85; ugc_ltx_v1 7.38 at $0.48.",
+      "caution": "Measured delivery ran short of the requested length in every trial. Budget roughly 1.3x the spoken duration and re-check the transcript."
+    },
+    {
+      "shot_type": "Two people alternating short questions and answers",
+      "tool": "veo_3_1_fast",
+      "budget_draft": "ltx_2_3_pro",
+      "evidence": "interview_veo_v1 8.5/10 with no burned-in subtitles; interview_ltx_v1 5.25 failed on garbled subtitles until the round-2 rewrite reached 7.88.",
+      "caution": "Two lines only were tested. Longer exchanges, named speakers and precise lip-sync remain untested."
+    },
+    {
+      "shot_type": "Product beauty move on invented hardware",
+      "tool": "kling_3_0_pro",
+      "premium_alternative": "seedance_2_5",
+      "evidence": "hero_kling_v2 8.38/10 at $0.45; hero_seedance25_v1 8.0 at $1.90 for a 4s cap.",
+      "caution": "Text-to-video does not hold identity between shots. Use reference-conditioned generation for a real product; untested here."
+    },
+    {
+      "shot_type": "Exact interface, spelling, cursor or state change",
+      "tool": "hyperframes",
+      "evidence": "ui_kling_v1 scored 3.75/10 with misspelled labels, invented sidebars and the wrong row clicked. The HyperFrames demo passed 0 lint/runtime/layout findings and all 40 contrast checks.",
+      "caution": "An authored concept UI is a design, not proof that software works. Screen-record real software for real claims."
+    },
+    {
+      "shot_type": "Typography, counters, captions, contrast flip, final edit",
+      "tool": "hyperframes",
+      "evidence": "Deterministic and seek-safe; $0 generation cost; used for the Cue demo and close.",
+      "caution": "Authoring time is the real cost. Zero API spend is not zero effort."
+    },
+    {
+      "shot_type": "Cheap exploration before committing spend",
+      "tool": "ltx_2_3_pro",
+      "evidence": "$0.08/s at 1080p, the lowest measured rate of the tested generative set.",
+      "caution": "Sampled detail was softer than the 720p Veo output despite the higher resolution."
+    },
+    {
+      "shot_type": "Cinematic landscape or environment, no people",
+      "tool": "veo_3_1_fast_silent",
+      "budget_draft": "ltx_2_3_pro",
+      "evidence": "ridge_veo_v1 9.25/10 against ridge_ltx_v1 7.0/10 on byte-identical prompts; Veo cost $0.12 more.",
+      "caution": "One trial per model. LTX held the composition, it just lit it badly."
+    },
+    {
+      "shot_type": "Human presence without a face - hands, gestures, tools",
+      "tool": "kling_3_0_pro",
+      "fallback": "veo_3_1_fast_silent",
+      "evidence": "hands_kling_v2 8.25/10 after one colour repair, against four attempts to get one usable talking head in the first loop.",
+      "caution": "Gloves and fingers still soften mid-shot. Cut before the softening, and end on the object rather than the hand."
+    },
+    {
+      "shot_type": "Pure material or texture macro",
+      "tool": "kling_3_0_pro",
+      "evidence": "weave_kling_v1 7.75/10; nothing for the model to miscount.",
+      "caution": "Delivered far less camera movement than requested. Budget an authored push."
+    },
+    {
+      "shot_type": "Narration or voiceover, no on-camera speaker",
+      "tool": "kokoro_local_tts",
+      "evidence": "Seven KEEL lines synthesized offline at zero cost with measured durations of 1.5-3.2s each, which then drove every cut, caption and music duck in the film.",
+      "caution": "No direction over emphasis or pause. Write lines short enough that the read cannot go wrong, and time the edit from the measured output rather than an estimate."
+    },
+    {
+      "shot_type": "Any montage where shot quality varies",
+      "tool": "veo_3_1_fast_silent",
+      "evidence": "KEEL bought 60s of plates for a 38s film for about $1.80 more than a minimal buy, and dropped rush_hands_v1 outright rather than defending it.",
+      "caution": "Only worth it at the silent rate. At $0.15/s with audio the same over-coverage costs nearly three dollars more."
+    }
+  ],
+  "concepts": [
+    {
+      "id": "launchroom",
+      "title": "Launchroom / From brief to launch",
+      "use_case": "product_demo",
+      "duration_seconds": 30,
+      "library_references": [
+        "Motion-5",
+        "SupersonikAI"
+      ],
+      "premise": "A one-line brief becomes a scene-by-scene plan, then a finished page. The interface carries the whole argument; a single human line opens it.",
+      "why_this_routing": "The observed references are almost entirely screen work. Generative UI failed the exact-text test at 3.75/10, so everything legible is authored and only the hook is bought.",
+      "scenes": [
+        {
+          "index": 1,
+          "time": "0-5",
+          "role": "ugc",
+          "tool": "veo_3_1_fast",
+          "pattern_id": "human_problem_hook",
+          "seconds_billed": 5,
+          "prompt": "One uninterrupted creator-led ad. A woman in her early thirties with short dark hair at a plain studio desk, wearing a charcoal crewneck. Eye-level medium close-up and natural daylight. Says in measured English: \"I can describe the video I want. Building it is the part that takes all week.\" Allow 4 seconds for the line. One subtle gesture, relaxed expression, quiet room tone, no baked-in text or music.",
+          "acceptance": "Local transcript matches the line; delivery reaches at least 3.5s; no burned-in captions."
+        },
+        {
+          "index": 2,
+          "time": "5-12",
+          "role": "product_demo",
+          "tool": "hyperframes",
+          "pattern_id": "voice_to_action_ui",
+          "seconds_billed": 0,
+          "prompt": "Author the exact Launchroom interface. A single typed brief line lands in the composer, then stagger-reveal four scene cards with exact titles: Hook, Problem, Product, Close. Each card shows its own duration. Use dynamic-content-sequencing so the cards resolve in semantic order, not all at once.",
+          "acceptance": "Zero layout and contrast findings; every card label spelled exactly; card durations sum to the stated total."
+        },
+        {
+          "index": 3,
+          "time": "12-22",
+          "role": "product_demo",
+          "tool": "hyperframes",
+          "pattern_id": "voice_to_action_ui",
+          "seconds_billed": 0,
+          "prompt": "Cursor drags the Problem card above Hook; the timeline re-flows and the durations recompute visibly. Then click Build once. A progress bar fills and resolves to a finished frame preview. One visible action only, one deterministic state change, readable hold on the result.",
+          "acceptance": "Exactly one click; the recomputed durations are arithmetically correct on screen; result holds at least 1.5s."
+        },
+        {
+          "index": 4,
+          "time": "22-30",
+          "role": "motion_typography",
+          "tool": "hyperframes",
+          "pattern_id": "three_beat_close",
+          "seconds_billed": 0,
+          "prompt": "Three-beat headline cadence in the brand face: Plan it. Build it. Ship it. Then a contrast flip to the dark brand card and a logo-brand-close. Footer identifies the piece as an original concept.",
+          "acceptance": "No text overflow or overlap; contrast checks pass on both the light and dark states."
+        }
+      ]
+    },
+    {
+      "id": "after_the_call",
+      "title": "After the call / Decisions become work",
+      "use_case": "interview",
+      "duration_seconds": 35,
+      "library_references": [
+        "Tarun Amasa announcement",
+        "Cluely customer support"
+      ],
+      "premise": "Two founders, seated, trade one short question and one short answer about what happens to decisions after a meeting. Cuts to the artifact that proves the point.",
+      "why_this_routing": "The reference cuts between talking heads and an actual spreadsheet. Veo held a clean two-shot without subtitle corruption; any legible data is routed away from the generator.",
+      "scenes": [
+        {
+          "index": 1,
+          "time": "0-8",
+          "role": "interview",
+          "tool": "veo_3_1_fast",
+          "pattern_id": "two_person_question_answer",
+          "seconds_billed": 8,
+          "prompt": "Raw unedited two-shot camera footage of an interviewer on the left and a guest on the right in a plain office with a window behind them. Clean photographic frame with no graphic overlays and no subtitles. AUDIO: the left speaker asks \"So what actually happens after the call ends?\"; the right speaker listens, then answers \"Everyone agrees, and then nobody writes it down.\" One speaker at a time. Natural mouth movement; quiet room tone.",
+          "acceptance": "Both lines transcribe correctly; no burned-in subtitles; one speaker moves at a time."
+        },
+        {
+          "index": 2,
+          "time": "8-16",
+          "role": "product_demo",
+          "tool": "hyperframes",
+          "pattern_id": "voice_to_action_ui",
+          "seconds_billed": 0,
+          "prompt": "Authored cutaway: a meeting transcript pane on the left, an empty action list on the right. Three decisions highlight in the transcript and travel across as exact task rows with owners and dates. Hold the filled list.",
+          "acceptance": "Transcript text and task text match exactly; no orphaned or clipped rows."
+        },
+        {
+          "index": 3,
+          "time": "16-26",
+          "role": "interview",
+          "tool": "veo_3_1_fast",
+          "pattern_id": "two_person_question_answer",
+          "seconds_billed": 10,
+          "prompt": "Raw unedited two-shot camera footage, same plain office and same seating, continuing the conversation. No graphic overlays and no subtitles. AUDIO: the left speaker asks \"And when it is written down?\"; the right speaker answers \"Then the week starts on Monday instead of Thursday.\" One speaker at a time; natural pause before the answer.",
+          "acceptance": "Identity drift between scene 1 and 3 is checked on sampled frames and disclosed; re-shoot as one longer take if drift is visible."
+        },
+        {
+          "index": 4,
+          "time": "26-35",
+          "role": "motion_typography",
+          "tool": "hyperframes",
+          "pattern_id": "three_beat_close",
+          "seconds_billed": 0,
+          "prompt": "Pull the answer forward as a typographic card, then a three-beat close: Decide. Capture. Start. Contrast flip to the brand card with the concept footer.",
+          "acceptance": "Quoted line matches the generated audio word for word."
+        }
+      ],
+      "known_risk": "Two seated generations cannot be assumed to depict the same two people. Either accept one continuous take or treat the second exchange as a separate scene with different framing."
+    },
+    {
+      "id": "pocket_ship_it",
+      "title": "Pocket / Ship it before you forget it",
+      "use_case": "ugc_ad",
+      "duration_seconds": 25,
+      "library_references": [
+        "Pocket introduction",
+        "Cluely customer support"
+      ],
+      "premise": "A creator admits the idea-to-nothing problem, the hardware appears, one capture happens, and the close lands on a single benefit.",
+      "why_this_routing": "This is the hybrid shape that already rendered successfully as Cue, reused with a different hook, a different device and a shorter run. Each role goes to its measured best performer.",
+      "scenes": [
+        {
+          "index": 1,
+          "time": "0-5",
+          "role": "ugc",
+          "tool": "veo_3_1_fast",
+          "pattern_id": "human_problem_hook",
+          "seconds_billed": 5,
+          "prompt": "One uninterrupted creator-led ad. A man in his late twenties walking slowly on a quiet residential street at golden hour, wearing a plain oatmeal sweater. Eye-level medium close-up, handheld but steady. Says in measured English: \"My best ideas happen on this walk. None of them survive it.\" Allow 4 seconds for the line. One subtle gesture, quiet outdoor room tone, no baked-in text or music.",
+          "acceptance": "Transcript matches; face stable across sampled frames; walking motion does not smear the background."
+        },
+        {
+          "index": 2,
+          "time": "5-9",
+          "role": "product_hero",
+          "tool": "kling_3_0_pro",
+          "pattern_id": "macro_to_product_reveal",
+          "seconds_billed": 4,
+          "prompt": "One camera pullback on a small matte aluminium recorder the size of a poker chip, featuring exactly one recessed black button on its top face and no other markings. Start on this button, pull back to a full three-quarter product view. Object remains stationary on a dark slate surface. End with the right third of the frame entirely clear for typography. Hold the final composition. Plain unbranded surfaces, no extra parts, no writing.",
+          "acceptance": "Exactly one button, no extra lights or seams, right third clear, object does not tilt."
+        },
+        {
+          "index": 3,
+          "time": "9-19",
+          "role": "product_demo",
+          "tool": "hyperframes",
+          "pattern_id": "voice_to_action_ui",
+          "seconds_billed": 0,
+          "prompt": "Authored phone-shaped panel. A press indicator, a waveform, then the transcript resolves to one exact line: \"Pitch the walking app to Dana.\" Stagger-reveal a single reminder row with a time. One cursor tap sets it. Hold the confirmed state.",
+          "acceptance": "Exact sentence spelled correctly; exactly one tap; confirmed state holds."
+        },
+        {
+          "index": 4,
+          "time": "19-25",
+          "role": "motion_typography",
+          "tool": "hyperframes",
+          "pattern_id": "three_beat_close",
+          "seconds_billed": 0,
+          "prompt": "Benefit line in the brand face, then the contrast flip and logo-brand-close: Say it once. Keep it forever. Concept footer stays legible over the dark card.",
+          "acceptance": "Benefit line clears the frame before the closing transition covers it; contrast passes."
+        }
+      ]
+    },
+    {
+      "id": "signal_three_verbs",
+      "title": "Signal / Three verbs, one flip",
+      "use_case": "video_ad",
+      "duration_seconds": 20,
+      "library_references": [
+        "Content Rewards reveal"
+      ],
+      "premise": "No dialogue. A product move, three verbs, a dark-to-light flip, and a call to action. The cheapest shape in the slate.",
+      "why_this_routing": "Removing speech removes the model's weakest measured axis. All copy is authored, so the only paid shot is the beauty move Kling already handled at 8.38/10.",
+      "scenes": [
+        {
+          "index": 1,
+          "time": "0-4",
+          "role": "product_hero",
+          "tool": "kling_3_0_pro",
+          "pattern_id": "macro_to_product_reveal",
+          "seconds_billed": 4,
+          "prompt": "One slow orbit around a matte ceramic desk object shaped like a shallow cylinder, featuring exactly one thin brass ring around its base and no other detail. Start tight on the ring, orbit to a three-quarter view. Object remains stationary against a deep charcoal seamless background. End with the left half of the frame entirely clear for typography. Hold the final composition. Plain unbranded surfaces, no extra parts, no writing.",
+          "acceptance": "One ring only, no invented logos, left half clear, no tilt or drift."
+        },
+        {
+          "index": 2,
+          "time": "4-8",
+          "role": "product_hero",
+          "tool": "kling_3_0_pro",
+          "pattern_id": "macro_to_product_reveal",
+          "seconds_billed": 4,
+          "prompt": "One camera push from a wide desk view toward the same shallow ceramic cylinder with exactly one thin brass ring, on the same deep charcoal seamless background. Object remains stationary. End centred with the lower third entirely clear for typography. Hold the final composition. Plain unbranded surfaces, no extra parts, no writing.",
+          "acceptance": "Shape and ring read as the same object as scene 1 on sampled frames; disclose any drift."
+        },
+        {
+          "index": 3,
+          "time": "8-16",
+          "role": "motion_typography",
+          "tool": "hyperframes",
+          "pattern_id": "three_beat_close",
+          "seconds_billed": 0,
+          "prompt": "Waterfall-entry three-beat cadence over the held product frames: Capture. Clarify. Commit. Each verb holds long enough to read, then hands off before the next enters.",
+          "acceptance": "Each verb holds at least 1.2s; no two verbs on screen at once."
+        },
+        {
+          "index": 4,
+          "time": "16-20",
+          "role": "motion_typography",
+          "tool": "hyperframes",
+          "pattern_id": "three_beat_close",
+          "seconds_billed": 0,
+          "prompt": "Contrast flip from dark to the bright brand card, single call to action, logo-brand-close, concept footer.",
+          "acceptance": "Contrast passes on the bright card; footer legible at 1080p."
+        }
+      ],
+      "known_risk": "Two separately generated shots of the same invented object will not match exactly. Treat scene 2 as a different angle of a similar object or generate one longer take and cut it."
+    }
+  ],
+  "rate_note": "Veo 3.1 Fast bills $0.15/s with audio and $0.10/s with `generate_audio: false`, and 1080p costs the same as 720p. Measured in the second loop, so any silent shot should route to the silent rate. Source: https://fal.ai/models/fal-ai/veo3.1/fast KEEL added a third finding: buying roughly 1.6x the footage a film needs is the cheapest quality lever measured so far, because it converts editing from \"use what arrived\" into \"drop what is weak\"."
+}

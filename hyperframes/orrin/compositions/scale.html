@@ -1,0 +1,38 @@
+<template>
+<style>
+@font-face{font-family:OrrinSans;src:url('assets/OrrinSans.ttf')}
+@font-face{font-family:OrrinSans;src:url('assets/OrrinSans-Bold.ttf');font-weight:700}
+@font-face{font-family:OrrinMono;src:url('assets/OrrinMono.ttf')}
+#orr-scl{width:1920px;height:1080px;position:relative;overflow:hidden;background:#07080a;color:#e9ecea}
+#orr-scl-plate{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden}
+#orr-scl-video{position:absolute;inset:0;width:1920px;height:1080px;object-fit:cover}
+#orr-scl-scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,8,10,.82) 0%,rgba(7,8,10,.3) 40%,rgba(7,8,10,0) 62%)}
+#orr-scl-count{position:absolute;left:96px;top:376px;font-family:OrrinSans,Arial,sans-serif;font-weight:700;font-size:210px;letter-spacing:-.03em;line-height:1;opacity:0;font-variant-numeric:tabular-nums}
+#orr-scl-label{position:absolute;left:102px;top:620px;font-family:OrrinMono,monospace;font-size:28px;letter-spacing:.14em;color:#ff9b2f;opacity:0}
+#orr-scl-sub{position:absolute;left:102px;top:672px;font-family:OrrinMono,monospace;font-size:25px;letter-spacing:.08em;color:#79817f;opacity:0}
+</style>
+<div data-hf-id="hf-scl0" id="orr-scl" data-composition-id="orr-scl" data-duration="4" data-width="1920" data-height="1080">
+  <div data-hf-id="hf-scl1" id="orr-scl-plate">
+    <video data-hf-id="hf-scl2" id="orr-scl-video" class="clip" data-layout-allow-overflow src="assets/array.mp4" data-start="0" data-media-start="0.6" data-duration="4" data-track-index="0" muted playsinline></video>
+  </div>
+  <div data-hf-id="hf-scl3" id="orr-scl-scrim"></div>
+  <div data-hf-id="hf-scl4" id="orr-scl-count">0</div>
+  <div data-hf-id="hf-scl5" id="orr-scl-label">UNITS ONLINE</div>
+  <div data-hf-id="hf-scl6" id="orr-scl-sub">FIRST PRODUCTION RUN</div>
+</div>
+<script>
+var sclTl=gsap.timeline({paused:true});
+// The plate is letterboxed by the model; a small scale crops the bars away.
+sclTl.set('#orr-scl-video',{scale:1.16},0);
+sclTl.to('#orr-scl-video',{scale:1.08,duration:4,ease:'none'},0);
+sclTl.fromTo('#orr-scl-count',{opacity:0,y:34},{opacity:1,y:0,duration:.26,ease:'power3.out'},.45);
+var units={v:0};
+sclTl.to(units,{v:2048,duration:2.1,ease:'power2.out',onUpdate:function(){
+  document.getElementById('orr-scl-count').textContent=Math.round(units.v).toLocaleString('en-US');
+}},.45);
+sclTl.fromTo('#orr-scl-label',{opacity:0,x:-14},{opacity:1,x:0,duration:.24,ease:'power2.out'},2.5);
+sclTl.fromTo('#orr-scl-sub',{opacity:0,x:-14},{opacity:1,x:0,duration:.24,ease:'power2.out'},2.72);
+sclTl.to('#orr-scl-count, #orr-scl-label, #orr-scl-sub',{opacity:0,duration:.22,ease:'power2.in'},3.66);
+window.__timelines['orr-scl']=sclTl;
+</script>
+</template>

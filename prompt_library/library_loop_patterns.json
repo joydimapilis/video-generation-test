@@ -1,0 +1,371 @@
+{
+  "version": 1,
+  "source_manifest": "artifacts/library-loop/references/manifest.json",
+  "review": "review_notes/library_loop.json",
+  "patterns": [
+    {
+      "id": "human_problem_hook",
+      "sources": [
+        "Pocket introduction",
+        "Cluely customer support"
+      ],
+      "slots": [
+        "fictional_presenter",
+        "setting",
+        "brand_color",
+        "problem_line",
+        "delivery_seconds"
+      ],
+      "template": "One uninterrupted creator-led ad. {fictional_presenter} in {setting}, wearing {brand_color}. Eye-level medium close-up and natural daylight. Says in measured English: {problem_line}. Allow {delivery_seconds} seconds for the line. One subtle gesture, relaxed expression, quiet room tone, no baked-in text or music.",
+      "invariants": [
+        "one short problem",
+        "direct eye contact",
+        "single take",
+        "text added in renderer"
+      ],
+      "tested_runs": [
+        "ugc_veo_v1",
+        "ugc_veo_v2",
+        "ugc_grok_v1",
+        "ugc_ltx_v1"
+      ],
+      "preferred": "ugc_veo_v2",
+      "transfer_note": "Adapt speech length and shot duration together; verify actual transcription and framing after every generation."
+    },
+    {
+      "id": "macro_to_product_reveal",
+      "sources": [
+        "Pocket introduction",
+        "Content Rewards reveal"
+      ],
+      "slots": [
+        "product",
+        "material",
+        "one_key_feature",
+        "background",
+        "copy_safe_region"
+      ],
+      "template": "One camera pullback on {product}, made of {material}, featuring exactly {one_key_feature}. Start on this feature, pull back to a full three-quarter product view. Object remains stationary against {background}. End with {copy_safe_region} entirely clear for typography. Hold the final composition. Plain unbranded surfaces, no extra parts, no writing.",
+      "invariants": [
+        "one camera move",
+        "explicit physical feature count",
+        "negative space",
+        "held endpoint"
+      ],
+      "tested_runs": [
+        "hero_kling_v1",
+        "hero_kling_v2",
+        "hero_seedance25_v1",
+        "hero_veo_v1"
+      ],
+      "preferred": "hero_kling_v2",
+      "transfer_note": "Simplifying geometry repaired feature count and framing. Text-only generation does not guarantee identity between shots.",
+      "identity_rule": "State the finish three ways and deny the wrong ones by name: 'matte BLACK anodized, charcoal black, absolutely not silver, not chrome, not bronze'. Both colour defects in the second loop were repaired in one retry with this wording; neither responded to the positive description alone."
+    },
+    {
+      "id": "voice_to_action_ui",
+      "sources": [
+        "Motion-5",
+        "SupersonikAI",
+        "Content Rewards"
+      ],
+      "slots": [
+        "brand",
+        "input_text",
+        "task_rows",
+        "first_action",
+        "result_label"
+      ],
+      "template": "Author exact {brand} interface. Capture {input_text}, show it as a waveform and transcript, then stagger-reveal {task_rows}. Execute {first_action} with a visible cursor and deterministic state change. Hold {result_label}. Use short three-beat headline cadence and a contrasting brand close.",
+      "invariants": [
+        "exact copy",
+        "one visible action",
+        "semantic order",
+        "readable hold"
+      ],
+      "tested_runs": [
+        "ui_kling_v1"
+      ],
+      "preferred_tool": "HyperFrames",
+      "implementation": "hyperframes/cue/compositions/demo.html",
+      "transfer_note": "Use actual screen captures for real software claims; generative pixels failed spelling and click target in this test."
+    },
+    {
+      "id": "two_person_question_answer",
+      "sources": [
+        "Tarun Amasa announcement"
+      ],
+      "slots": [
+        "interviewer",
+        "guest",
+        "question",
+        "answer",
+        "setting"
+      ],
+      "template": "Raw unedited two-shot camera footage of {interviewer} on left and {guest} on right in {setting}. Clean photographic frame with no graphic overlays. AUDIO: left speaker asks {question}; right speaker listens, then answers {answer}. One speaker at a time. Natural mouth movement; quiet room tone.",
+      "invariants": [
+        "explicit speaker sides",
+        "one turn each",
+        "separate picture and audio instructions"
+      ],
+      "tested_runs": [
+        "interview_ltx_v1",
+        "interview_ltx_v2",
+        "interview_veo_v1"
+      ],
+      "preferred": "interview_veo_v1",
+      "transfer_note": "Prompt repair removed LTX subtitles once; do not assume reliability beyond a short two-line exchange."
+    },
+    {
+      "id": "three_beat_close",
+      "sources": [
+        "Content Rewards reveal",
+        "SupersonikAI"
+      ],
+      "slots": [
+        "verb_one",
+        "verb_two",
+        "verb_three",
+        "benefit_line",
+        "brand",
+        "tagline"
+      ],
+      "template": "Waterfall-entry three-beat cadence: {verb_one} {verb_two} {verb_three}. Each beat holds long enough to read and clears before the next enters. Then {benefit_line} on a full-bleed accent card, a contrast flip to the dark brand card, and a logo-brand-close on {brand} with {tagline}. Footer identifies the piece as an original concept.",
+      "invariants": [
+        "three short verbs",
+        "one beat on screen at a time",
+        "dark-to-light or light-to-dark flip",
+        "legible footer"
+      ],
+      "tested_runs": [],
+      "preferred_tool": "HyperFrames",
+      "implementation": "hyperframes/cue/compositions/close.html",
+      "transfer_note": "Rendered and contrast-checked in the Cue close; no generative model was asked to produce this copy because sampled text generation failed spelling in ui_kling_v1."
+    },
+    {
+      "id": "macro_texture_drift",
+      "sources": [
+        "Airbound tail-sitter announcement"
+      ],
+      "slots": [
+        "material",
+        "surface",
+        "light_direction",
+        "drift_direction"
+      ],
+      "template": "Extreme macro of {material} lying flat on {surface}, lit by one hard raking light from {light_direction} so the surface catches a cold specular highlight. The camera drifts slowly and steadily {drift_direction} in one continuous move. Nothing else enters the frame. Deep black background, very high contrast, shallow depth of field, fine cinematic grain. No text, no markings, no hands, no people.",
+      "invariants": [
+        "no geometry to get wrong",
+        "one hard raking light",
+        "one continuous move",
+        "empty frame otherwise"
+      ],
+      "tested_runs": [
+        "weave_kling_v1"
+      ],
+      "preferred": "weave_kling_v1",
+      "transfer_note": "The lowest-risk shot available from a text-to-video model: no object, no counts, nothing to miscount. Expect less camera movement than you ask for and plan an authored push to supply it."
+    },
+    {
+      "id": "gloved_hands_placement",
+      "sources": [
+        "Airbound tail-sitter announcement",
+        "1X NEO home robot"
+      ],
+      "slots": [
+        "object_spec",
+        "surface",
+        "light",
+        "action"
+      ],
+      "template": "A dark precision workshop lit by {light}. Two gloved hands in black nitrile gloves {action} {object_spec} onto {surface}, then withdraw out of frame and leave the object alone in shot. The camera holds steady in a close three-quarter view. Shallow depth of field, deep shadows, cold industrial light, fine cinematic grain. No faces, no text, no markings, no logos.",
+      "invariants": [
+        "no face anywhere",
+        "no speech",
+        "hands exit frame",
+        "object left alone as the out-point"
+      ],
+      "tested_runs": [
+        "hands_kling_v1",
+        "hands_kling_v2"
+      ],
+      "preferred": "hands_kling_v2",
+      "transfer_note": "Human presence without the face is far more reliable than a talking head: one repair here against four attempts for one usable presenter in the first loop. Ending on the object alone gives the editor a clean cut point for free."
+    },
+    {
+      "id": "field_deployment_push",
+      "sources": [
+        "Airbound tail-sitter announcement",
+        "Beyond Reach Labs deployable arrays"
+      ],
+      "slots": [
+        "time_of_day",
+        "terrain",
+        "sky",
+        "object_spec",
+        "mount",
+        "foreground_motion"
+      ],
+      "template": "{time_of_day} on {terrain} under {sky}. {object_spec} sits mounted on {mount} in the left of frame. {foreground_motion}. The camera pushes slowly and steadily forward past the object toward the distance beyond. Cinematic, high contrast, natural light only, anamorphic feel. No text, no people, no buildings, no roads.",
+      "invariants": [
+        "natural light only",
+        "object placed off-centre",
+        "one continuous push",
+        "living foreground element"
+      ],
+      "tested_runs": [
+        "ridge_veo_v1",
+        "ridge_ltx_v1"
+      ],
+      "preferred": "ridge_veo_v1",
+      "transfer_note": "Veo won this head-to-head on identical text: same elements, far better light and depth, for $0.12 more. A moving foreground element (grass in wind) is what sells the shot as photographed rather than rendered."
+    },
+    {
+      "id": "repeated_unit_array",
+      "sources": [
+        "Airbound tail-sitter announcement"
+      ],
+      "slots": [
+        "object_spec",
+        "surface",
+        "arrangement",
+        "light"
+      ],
+      "template": "Slow steady camera push along a row of identical {object_spec} laid out in {arrangement} on {surface}, every unit lit identically and receding into darkness. {light}. Shallow depth of field, high contrast, fine cinematic grain. No text, no markings, no hands, no people.",
+      "invariants": [
+        "identical units",
+        "even spacing",
+        "recession into darkness",
+        "one continuous push"
+      ],
+      "tested_runs": [
+        "array_kling_v1"
+      ],
+      "preferred": "array_kling_v1",
+      "transfer_note": "Written into the plan as a likely failure and it was not: Kling returned a usable grid on the first attempt. Spacing still wanders, so never use this shot where the count has to be readable - pair it with an authored number instead. One trial only."
+    },
+    {
+      "id": "narrated_manifesto_arc",
+      "sources": [
+        "Aurus-Built-with-Intention",
+        "Beyond-Reach-Labs"
+      ],
+      "slots": [
+        "tension_world",
+        "turn_world",
+        "answer_world",
+        "three_beat_problem",
+        "turn_line",
+        "answer_line",
+        "brand",
+        "tagline"
+      ],
+      "template": "Three acts against one spoken argument, no product until the close. ACT 1 {tension_world}, cut fast and cold, narration states {three_beat_problem}. TURN: a full dip through black into {turn_world}, narration states {turn_line}, cuts slow to roughly 4s. ACT 3 {answer_world}, warm, held, narration states {answer_line}. Close on {brand} and {tagline}. Burned-in captions carry every spoken line.",
+      "invariants": [
+        "no product shown until the close",
+        "cut rate changes with the act",
+        "one temperature per act",
+        "captions authored, never generated"
+      ],
+      "tested_runs": [
+        "rush_street_v1",
+        "rush_transit_v1",
+        "rush_servers_v1",
+        "rush_hands_v2",
+        "water_surface_v1",
+        "water_descend_v1",
+        "water_deep_v1",
+        "shop_wide_v1",
+        "shop_hands_v1",
+        "shop_keel_v1"
+      ],
+      "preferred_tool": "Veo 3.1 Fast silent for plates, HyperFrames for edit and captions",
+      "implementation": "hyperframes/keel/index.html",
+      "transfer_note": "The structure is the deliverable, not the imagery. It works because the argument is made three times - by cut rate, by colour temperature, and by the narration - so a viewer who mutes it still gets it. Costs roughly $6 of plates at Veo's silent rate."
+    },
+    {
+      "id": "accelerating_montage_beat",
+      "sources": [
+        "Aurus-Built-with-Intention"
+      ],
+      "slots": [
+        "subject",
+        "camera_direction",
+        "light_colour",
+        "texture"
+      ],
+      "template": "{subject}. The camera {camera_direction} steadily in one continuous move, never stopping. {light_colour} light, {texture}, heavy contrast, shallow depth of field, fine cinematic grain. Clean camera footage with no captions, titles, signage or graphical text of any kind. No readable words anywhere.",
+      "invariants": [
+        "one continuous move per plate",
+        "all plates in the act share screen direction",
+        "no shot cut longer than the one before it"
+      ],
+      "tested_runs": [
+        "rush_street_v1",
+        "rush_transit_v1",
+        "rush_servers_v1",
+        "rush_hands_v2"
+      ],
+      "preferred": "rush_servers_v1",
+      "transfer_note": "Matching screen direction across the act is what lets whip-slide handoffs read as motivated rather than as an effect. Interiors comply with text suppression; street scenes with plausible real-world signage do not."
+    },
+    {
+      "id": "descent_turn",
+      "sources": [
+        "Aurus-Built-with-Intention",
+        "Beyond-Reach-Labs"
+      ],
+      "slots": [
+        "surface_state",
+        "descent_subject",
+        "depth_state",
+        "light_behaviour"
+      ],
+      "template": "A three-shot descent that carries a film's turn. First {surface_state} at eye level. Then {descent_subject}, the camera descending slowly and steadily in one continuous move as {light_behaviour}. Finally {depth_state}, almost black, camera drifting. Desaturated and cold throughout, fine cinematic grain. Clean camera footage with no captions or graphical text. Nothing else is in frame.",
+      "invariants": [
+        "three shots, progressively darker",
+        "one continuous move each",
+        "empty frames by design",
+        "narration carries the darkest shot"
+      ],
+      "tested_runs": [
+        "water_surface_v1",
+        "water_descend_v1",
+        "water_deep_v1"
+      ],
+      "preferred": "water_descend_v1",
+      "transfer_note": "The near-black final shot cannot hold four seconds alone; schedule narration or a caption across it. Pair with a full dip to black on the way in - it is the only empty frame the film gets and it earns the slowdown."
+    },
+    {
+      "id": "warm_craft_hold",
+      "sources": [
+        "Aurus-Built-with-Intention",
+        "1X-NEO-The-Home-Robot"
+      ],
+      "slots": [
+        "workspace",
+        "material_subject",
+        "light_source",
+        "camera_move"
+      ],
+      "template": "{workspace}. {material_subject} fills the frame, lit by {light_source} so the material and its grain read against deep shadow. The camera {camera_move} slowly and steadily in one continuous move. Warm amber and deep brown, strong falloff, high contrast, fine cinematic grain. Clean camera footage with no captions, titles or graphical text. No people unless the shot is a hands shot.",
+      "invariants": [
+        "warm key against near-black",
+        "one continuous move",
+        "material visible at grain level",
+        "held endpoint"
+      ],
+      "tested_runs": [
+        "shop_wide_v1",
+        "shop_hands_v1",
+        "shop_keel_v1"
+      ],
+      "preferred": "shop_wide_v1",
+      "transfer_note": "Check every returned plate for baked-in letterbox before designing the frame around it; the boat-shed plate arrived with 92px bars nothing asked for. Specify the camera move, not just the subject, when a shot has to match-cut against one from another act."
+    }
+  ],
+  "sources_round2": "artifacts/library-loop-2/references/manifest.json",
+  "review_round2": "review_notes/orrin.json",
+  "sources_round3": "artifacts/library-loop-3/references/manifest.json",
+  "review_round3": "review_notes/keel.json"
+}

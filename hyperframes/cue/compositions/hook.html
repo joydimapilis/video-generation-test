@@ -1,0 +1,19 @@
+<template>
+<style>
+#cue-hook{width:1920px;height:1080px;position:relative;overflow:hidden;background:#f5f7f3}
+#cue-hook-video{width:1920px;height:1080px;object-fit:cover;position:absolute;inset:0}
+#cue-hook-brand{position:absolute;left:96px;top:70px;font-size:64px;font-weight:700;color:#171a19;background:#f5f7f3;padding:12px 24px;border-radius:4px}
+#cue-hook-line{position:absolute;bottom:80px;left:320px;width:1280px;text-align:center;font-size:40px;line-height:1.4;color:#f5f7f3;background:#171a19;padding:14px 28px;opacity:0;border-radius:4px}
+</style>
+<div data-hf-id="hf-w36h" id="cue-hook" data-composition-id="cue-hook" data-duration="6" data-width="1920" data-height="1080">
+<video data-hf-id="hf-rspb" id="cue-hook-video" class="clip" src="assets/hook.mp4" data-start="0" data-duration="6" data-track-index="0" muted playsinline></video>
+<div data-hf-id="hf-55s9" id="cue-hook-brand">cue.</div>
+<div data-hf-id="hf-axyf" id="cue-hook-line">Great ideas shouldn't disappear after a meeting.</div>
+</div>
+<script>
+var hookTl=gsap.timeline({paused:true});
+hookTl.fromTo('#cue-hook-line',{opacity:0,y:12},{opacity:1,y:0,duration:.25,ease:'power2.out'},.45);
+hookTl.to('#cue-hook-line',{opacity:0,duration:.18},5.5);
+window.__timelines['cue-hook']=hookTl;
+</script>
+</template>

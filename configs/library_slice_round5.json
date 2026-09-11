@@ -1,0 +1,8 @@
+[
+  {"term": "Cluely-Introducing-Cluely-for-Customer", "genre": "customer_support_dialogue"},
+  {"term": "Tarun-Amasa", "genre": "two_person_interview"},
+  {"term": "Bland-Bland-emerges-from-stealth", "genre": "founder_to_camera_funding"},
+  {"term": "Cartesia-Cartesia-Raises-64M", "genre": "founder_interview_funding"},
+  {"term": "Chowdeck-Chowdeck-Raises", "genre": "market_story_interview"},
+  {"term": "Fern-Fern-Realtime-AI-Meeting", "genre": "product_with_people"}
+]

@@ -1,0 +1,24 @@
+{
+  "output_id": "cue_library_loop_final",
+  "output_path": "artifacts/final_outcome/cue/cue-final.mp4",
+  "duration_seconds": 30,
+  "resolution": "1920x1080",
+  "assembly_tool": "HyperFrames 0.8.34",
+  "source_runs": [
+    "ugc_veo_v2",
+    "hero_kling_v2"
+  ],
+  "reference_library_manifest": "artifacts/library-loop/references/manifest.json",
+  "pattern_ids": [
+    "human_problem_hook",
+    "macro_to_product_reveal",
+    "voice_to_action_ui"
+  ],
+  "verification": "artifacts/final_outcome/cue/verification.json",
+  "cost": {
+    "estimated_usd": 8.35,
+    "reserved_usd": 9.66,
+    "cap_usd": 10,
+    "invoice_verified": false
+  }
+}

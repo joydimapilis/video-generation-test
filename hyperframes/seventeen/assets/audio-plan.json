@@ -1,0 +1,195 @@
+{
+  "score_volume": 0.88,
+  "music_automation": {
+    "version": 1,
+    "lanes": [
+      {
+        "target": "volume",
+        "points": [
+          {
+            "t": 0.0,
+            "v": 0.0
+          },
+          {
+            "t": 0.5,
+            "v": 1.0
+          },
+          {
+            "t": 0.75,
+            "v": 0.55
+          },
+          {
+            "t": 3.05,
+            "v": 0.55
+          },
+          {
+            "t": 3.3,
+            "v": 1.0
+          },
+          {
+            "t": 6.3,
+            "v": 1.0
+          },
+          {
+            "t": 6.55,
+            "v": 0.55
+          },
+          {
+            "t": 7.87,
+            "v": 0.55
+          },
+          {
+            "t": 8.12,
+            "v": 1.0
+          },
+          {
+            "t": 11.2,
+            "v": 1.0
+          },
+          {
+            "t": 11.45,
+            "v": 0.55
+          },
+          {
+            "t": 13.81,
+            "v": 0.55
+          },
+          {
+            "t": 14.06,
+            "v": 1.0
+          },
+          {
+            "t": 19.7,
+            "v": 1.0
+          },
+          {
+            "t": 19.95,
+            "v": 0.55
+          },
+          {
+            "t": 22.05,
+            "v": 0.55
+          },
+          {
+            "t": 22.3,
+            "v": 1.0
+          },
+          {
+            "t": 24.1,
+            "v": 1.0
+          },
+          {
+            "t": 24.35,
+            "v": 0.55
+          },
+          {
+            "t": 26.41,
+            "v": 0.55
+          },
+          {
+            "t": 26.66,
+            "v": 1.0
+          },
+          {
+            "t": 31.5,
+            "v": 1.0
+          },
+          {
+            "t": 31.75,
+            "v": 0.55
+          },
+          {
+            "t": 33.3,
+            "v": 0.55
+          },
+          {
+            "t": 33.55,
+            "v": 1.0
+          },
+          {
+            "t": 35.1,
+            "v": 1.0
+          },
+          {
+            "t": 35.35,
+            "v": 0.55
+          },
+          {
+            "t": 37.71,
+            "v": 0.55
+          },
+          {
+            "t": 37.96,
+            "v": 1.0
+          },
+          {
+            "t": 38.0,
+            "v": 1.0
+          },
+          {
+            "t": 42.0,
+            "v": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "sfx_cues": [
+    {
+      "src": "key-press.mp3",
+      "at": 3.4,
+      "duration": 0.4,
+      "volume": 0.18
+    },
+    {
+      "src": "key-press.mp3",
+      "at": 24.0,
+      "duration": 0.4,
+      "volume": 0.14
+    }
+  ],
+  "vo_schedule": [
+    {
+      "file": "l01.wav",
+      "start": 0.8,
+      "duration": 2.197,
+      "text": "Ada shipped her first app on a Tuesday."
+    },
+    {
+      "file": "l02.wav",
+      "start": 6.6,
+      "duration": 1.216,
+      "text": "Nobody came."
+    },
+    {
+      "file": "l03.wav",
+      "start": 11.5,
+      "duration": 2.261,
+      "text": "So she shipped another one. And another."
+    },
+    {
+      "file": "l04.wav",
+      "start": 20.0,
+      "duration": 2.005,
+      "text": "Sixteen times, nobody came."
+    },
+    {
+      "file": "l05.wav",
+      "start": 24.4,
+      "duration": 1.963,
+      "text": "On the seventeenth, someone did."
+    },
+    {
+      "file": "l06.wav",
+      "start": 31.8,
+      "duration": 1.451,
+      "text": "Then eleven more."
+    },
+    {
+      "file": "l07.wav",
+      "start": 35.4,
+      "duration": 2.261,
+      "text": "It isn't a rocket ship. It's a start."
+    }
+  ]
+}

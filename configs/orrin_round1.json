@@ -1,0 +1,146 @@
+{
+  "experiment": "orrin",
+  "concept": "ORRIN / Built to see in the dark",
+  "genre": "dark industrial precision-hardware launch film",
+  "library_references": [
+    "Airbound-Airbound-Raises-8M-Seed-for-Tail-Sitter-Drone",
+    "Apollyon-Dynamics-Test-Launches-Jet-Powered-UAV",
+    "Aurus-Built-with-Intention"
+  ],
+  "cap_cents": 1000,
+  "design_rules": [
+    "No dialogue anywhere, so the weakest measured axis is never exercised.",
+    "Every legible glyph is authored in HyperFrames; generated frames carry no text.",
+    "One object specification repeated verbatim in every prompt: hexagonal dark anodized slab, exactly one circular glass lens, exactly one thin amber ring, no other markings.",
+    "Explicit feature counts and a held endpoint, the repair that moved hero_kling_v1 to v2 in the first loop."
+  ],
+  "runs": [
+    {
+      "id": "weave_kling_v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/text-to-video",
+      "estimate_cents": 45,
+      "use_case": "material_macro",
+      "pattern": "macro_texture_drift",
+      "version": 1,
+      "hypothesis": "Pure texture with one continuous move is the lowest-risk possible shot for a text-to-video model: no geometry to get wrong, no counts to violate.",
+      "input": {
+        "prompt": "Extreme macro of a woven carbon fibre sheet lying flat on a matte black surface, lit by one hard raking light from the left so each strand of the weave catches a cold specular highlight. The camera drifts slowly and steadily to the right across the weave in one continuous move. Nothing else enters the frame. Deep black background, very high contrast, shallow depth of field, fine cinematic grain. No text, no markings, no hands, no people.",
+        "negative_prompt": "blur, distort, low quality, text, letters, numbers, logos, watermark, subtitles, captions, hands, people, cuts",
+        "duration": "4",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "shot_type": "customize",
+        "cfg_scale": 0.5
+      }
+    },
+    {
+      "id": "hero_kling_v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/text-to-video",
+      "estimate_cents": 68,
+      "use_case": "product_hero",
+      "pattern": "macro_to_product_reveal",
+      "version": 1,
+      "hypothesis": "Kling won product beauty in the first loop at 8.38/10. The same explicit-feature-count wording should transfer to a harder object on black seamless.",
+      "input": {
+        "prompt": "One slow continuous camera pullback on a single precision instrument: a hexagonal slab of dark anodized aluminium about the size of a hockey puck, bead-blasted matte finish, with exactly one circular glass lens centred on its top face and exactly one thin amber light ring glowing around that lens. No other markings, buttons, ports, seams or writing anywhere on the object. Start tight on the lens, pull back to a full three-quarter view. The object remains completely stationary on a black seamless surface. One hard key light from the upper right and a cold rim light from behind. End with the left third of the frame entirely clear for typography. Hold the final composition.",
+        "negative_prompt": "blur, distort, low quality, text, letters, numbers, logos, watermark, extra buttons, extra lights, multiple objects, hands, people",
+        "duration": "6",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "shot_type": "customize",
+        "cfg_scale": 0.5
+      }
+    },
+    {
+      "id": "hero_veo_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "product_hero",
+      "pattern": "macro_to_product_reveal",
+      "version": 1,
+      "hypothesis": "Veo is N/T for product beauty and, with generate_audio off, costs $0.10/s at 1080p: cheaper and higher resolution than Kling. Identical prompt, so the comparison is fair.",
+      "input": {
+        "prompt": "One slow continuous camera pullback on a single precision instrument: a hexagonal slab of dark anodized aluminium about the size of a hockey puck, bead-blasted matte finish, with exactly one circular glass lens centred on its top face and exactly one thin amber light ring glowing around that lens. No other markings, buttons, ports, seams or writing anywhere on the object. Start tight on the lens, pull back to a full three-quarter view. The object remains completely stationary on a black seamless surface. One hard key light from the upper right and a cold rim light from behind. End with the left third of the frame entirely clear for typography. Hold the final composition.",
+        "negative_prompt": "text, letters, numbers, logos, watermark, extra buttons, extra lights, multiple objects, hands, people, camera shake",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 42
+      }
+    },
+    {
+      "id": "hands_kling_v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/text-to-video",
+      "estimate_cents": 56,
+      "use_case": "industrial_human",
+      "pattern": "gloved_hands_placement",
+      "version": 1,
+      "hypothesis": "Every human test so far was a talking head. Gloved hands with no face and no speech should be far more reliable and gives the film its human beat.",
+      "input": {
+        "prompt": "A dark precision workshop lit by one overhead work lamp. Two gloved hands in black nitrile gloves lower a single hexagonal dark anodized aluminium instrument, with exactly one circular glass lens and exactly one thin amber light ring on its top face, down onto a matte black steel bench, then withdraw out of frame. The camera holds steady in a close three-quarter view. Shallow depth of field, deep shadows, cold industrial light, fine cinematic grain. No faces, no text, no markings, no logos.",
+        "negative_prompt": "blur, distort, low quality, text, letters, numbers, logos, watermark, faces, extra fingers, deformed hands, multiple objects",
+        "duration": "5",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "shot_type": "customize",
+        "cfg_scale": 0.5
+      }
+    },
+    {
+      "id": "ridge_veo_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "pattern": "field_deployment_push",
+      "version": 1,
+      "hypothesis": "Landscape and environment are N/T for every model tested. Veo at 1080p without audio is the cheapest way to fill that cell.",
+      "input": {
+        "prompt": "Dusk on a bare rocky ridge under a deep blue sky, the last orange light low on the horizon. A single hexagonal dark anodized instrument with exactly one circular glass lens and exactly one thin amber light ring sits mounted on a low black tripod in the left of frame, its amber ring glowing steadily. Dry grass moves in the wind. The camera pushes slowly and steadily forward past the instrument toward the darkening valley beyond. Cinematic, high contrast, natural light only, anamorphic feel. No text, no people, no buildings, no roads.",
+        "negative_prompt": "text, letters, numbers, logos, watermark, people, buildings, roads, vehicles, camera shake",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 42
+      }
+    },
+    {
+      "id": "ridge_ltx_v1",
+      "endpoint": "fal-ai/ltx-2.3/text-to-video",
+      "estimate_cents": 48,
+      "use_case": "environment",
+      "pattern": "field_deployment_push",
+      "version": 1,
+      "hypothesis": "LTX is the cheapest tested endpoint at $0.08/s. If it matches Veo on landscape, environment shots should route to LTX and free budget for hero shots.",
+      "input": {
+        "prompt": "Dusk on a bare rocky ridge under a deep blue sky, the last orange light low on the horizon. A single hexagonal dark anodized instrument with exactly one circular glass lens and exactly one thin amber light ring sits mounted on a low black tripod in the left of frame, its amber ring glowing steadily. Dry grass moves in the wind. The camera pushes slowly and steadily forward past the instrument toward the darkening valley beyond. Cinematic, high contrast, natural light only, anamorphic feel. Clean camera footage with no captions, titles or graphical text of any kind. No people, no buildings, no roads.",
+        "duration": 6,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "fps": 24
+      }
+    },
+    {
+      "id": "array_kling_v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/text-to-video",
+      "estimate_cents": 56,
+      "use_case": "product_hero",
+      "pattern": "repeated_unit_array",
+      "version": 1,
+      "hypothesis": "The reference genre ends on a manufactured array. Repeated identical units are a known generative weak point, so this is deliberately a test as much as a shot; the authored close can cover it if it fails.",
+      "input": {
+        "prompt": "Slow steady camera push along a row of identical hexagonal dark anodized instruments laid out in a precise even grid on a matte black surface, each with exactly one circular glass lens and exactly one thin amber light ring, every ring glowing at the same steady brightness. Perfect alignment and even spacing, the grid receding into darkness. One hard overhead light. Shallow depth of field, high contrast, fine cinematic grain. No text, no markings, no hands, no people.",
+        "negative_prompt": "blur, distort, low quality, text, letters, numbers, logos, watermark, uneven spacing, mismatched objects, hands, people",
+        "duration": "5",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "shot_type": "customize",
+        "cfg_scale": 0.5
+      }
+    }
+  ]
+}

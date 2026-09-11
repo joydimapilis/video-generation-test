@@ -1,0 +1,74 @@
+<template>
+<style>
+#cue-demo{width:1920px;height:1080px;position:relative;overflow:hidden;background:#f5f7f3;color:#171a19}
+#cue-demo-head{position:absolute;left:96px;top:64px;font-size:108px;line-height:1.1;font-weight:700}
+#cue-demo-meta{position:absolute;right:96px;top:90px;font-size:30px;color:#254d3b}
+#cue-demo-window{position:absolute;left:260px;top:270px;width:1400px;height:650px;background:#fff;border:2px solid #c8d1c6;border-radius:8px;overflow:hidden}
+#cue-demo-bar{height:106px;border-bottom:2px solid #dce2d9;display:flex;align-items:center;justify-content:space-between;padding:0 54px;font-size:30px}
+#cue-demo-bar b{font-size:42px}
+#cue-demo-record{position:absolute;top:154px;left:60px;font-size:28px;display:flex;gap:14px;align-items:center}
+#cue-demo-record i{display:block;width:16px;height:16px;background:#eb735d;border-radius:50%}
+#cue-demo-wave{position:absolute;left:60px;right:60px;top:220px;height:110px;display:flex;align-items:center;justify-content:center;gap:9px}
+#cue-demo-wave i{width:12px;height:92px;background:#254d3b;border-radius:4px;display:block}
+#cue-demo-transcript{position:absolute;left:60px;top:380px;right:60px;text-align:center;font-size:40px;line-height:1.4}
+#cue-demo-transcript span{display:inline-block;opacity:0;margin-right:8px}
+#cue-demo-rows{position:absolute;left:58px;right:58px;top:142px}
+.cue-task{height:124px;border-bottom:2px solid #dce2d9;display:grid;grid-template-columns:62px 1fr 180px 120px;gap:18px;align-items:center;opacity:0}
+.cue-task .check{width:40px;height:40px;border:2px solid #879681;border-radius:50%;position:relative;display:block}
+.cue-task .name{font-size:42px;font-weight:700}
+.cue-task .owner{font-size:29px;color:#254d3b}
+.cue-task .day{font-size:29px;color:#465444;text-align:right}
+#cue-demo-checkmark{position:absolute;left:8px;top:4px;width:19px;height:24px;border-right:4px solid #171a19;border-bottom:4px solid #171a19;opacity:0}
+#cue-demo-pointer{position:absolute;left:0;top:0;width:42px;height:56px;opacity:0;z-index:5}
+#cue-demo-pointer svg{width:42px;height:56px;filter:drop-shadow(0 2px 2px #999)}
+#cue-demo-result{position:absolute;left:60px;right:60px;bottom:28px;height:60px;display:flex;align-items:center;justify-content:space-between;border-top:2px solid #dce2d9;padding-top:20px;opacity:0;font-size:28px;color:#254d3b}
+#cue-demo-result b{color:#171a19}
+#cue-demo-step{position:absolute;left:96px;bottom:64px;font-size:28px;color:#465444}
+#cue-demo-progress{position:absolute;left:96px;bottom:42px;height:4px;width:1728px;background:#dce2d9}
+#cue-demo-progress i{display:block;height:4px;width:1728px;transform-origin:left;background:#254d3b}
+</style>
+<div data-hf-id="hf-x5q3" id="cue-demo" data-composition-id="cue-demo" data-duration="13" data-width="1920" data-height="1080">
+<div data-hf-id="hf-6f8h" id="cue-demo-head">Say it.</div><div data-hf-id="hf-z6ty" id="cue-demo-meta">ONE IDEA. A CLEAR NEXT STEP.</div>
+<div data-hf-id="hf-0bub" id="cue-demo-window">
+<div data-hf-id="hf-ld02" id="cue-demo-bar"><b data-hf-id="hf-68wa">cue.</b><span data-hf-id="hf-ppdx">Launch plan</span><span data-hf-id="hf-f8wa">Today</span></div>
+<div data-hf-id="hf-au1c" id="cue-demo-record"><i data-hf-id="hf-wt6k"></i><span data-hf-id="hf-ld7w">Idea captured</span></div>
+<div data-hf-id="hf-esc8" id="cue-demo-wave"></div>
+<div data-hf-id="hf-vl79" id="cue-demo-transcript"><span data-hf-id="hf-mv4v">Write the brief.</span><span data-hf-id="hf-sm4r">Build the page.</span><span data-hf-id="hf-gm0g">Share the launch.</span></div>
+<div data-hf-id="hf-7ip8" id="cue-demo-rows">
+<div data-hf-id="hf-99i1" class="cue-task" id="cue-task-one"><i data-hf-id="hf-jxel" class="check" id="cue-demo-checkbox"><i data-hf-id="hf-lgly" id="cue-demo-checkmark"></i></i><div data-hf-id="hf-t10r" class="name">Write the brief</div><div data-hf-id="hf-lags" class="owner">You</div><div data-hf-id="hf-kfzz" class="day">Today</div></div>
+<div data-hf-id="hf-nepr" class="cue-task" id="cue-task-two"><i data-hf-id="hf-yqa4" class="check"></i><div data-hf-id="hf-6nt3" class="name">Build the page</div><div data-hf-id="hf-514f" class="owner">Design</div><div data-hf-id="hf-6o5h" class="day">Thu</div></div>
+<div data-hf-id="hf-xp5p" class="cue-task" id="cue-task-three"><i data-hf-id="hf-cb6s" class="check"></i><div data-hf-id="hf-s0vy" class="name">Share the launch</div><div data-hf-id="hf-5uek" class="owner">Team</div><div data-hf-id="hf-wz4l" class="day">Fri</div></div>
+</div>
+<div data-hf-id="hf-8glk" id="cue-demo-result"><b data-hf-id="hf-75m5">First step, done.</b><span data-hf-id="hf-sj53">1 of 3 complete</span></div>
+<div data-hf-id="hf-r3z6" id="cue-demo-pointer"><svg data-hf-id="hf-ddwm" viewBox="0 0 24 32" fill="#171a19" stroke="#fff" stroke-width="1.4"><path data-hf-id="hf-nt6j" d="M3 2L21 20L13 21L18 29L13 31L9 23L3 28Z" /></svg></div>
+</div>
+<div data-hf-id="hf-wp55" id="cue-demo-step">01 / CAPTURE</div><div data-hf-id="hf-hia6" id="cue-demo-progress"><i data-hf-id="hf-zeb8"></i></div>
+</div>
+<script>
+var demoTl=gsap.timeline({paused:true});
+var waveRoot=document.getElementById('cue-demo-wave');
+for(var i=0;i<60;i++){var bar=document.createElement('i');bar.style.height=(18+Math.abs(Math.sin(i*.83))*70)+'px';waveRoot.appendChild(bar);}
+demoTl.fromTo('#cue-demo-window',{y:80,opacity:0},{y:0,opacity:1,duration:.6,ease:'power3.out'},0);
+demoTl.fromTo('#cue-demo-wave i',{scaleY:.25},{scaleY:1,duration:.24,stagger:.016,yoyo:true,repeat:7,ease:'sine.inOut'},.2);
+demoTl.fromTo('#cue-demo-transcript span',{y:20,opacity:0},{y:0,opacity:1,duration:.35,stagger:.65,ease:'power3.out'},.7);
+demoTl.to('#cue-demo-wave, #cue-demo-record, #cue-demo-transcript',{opacity:0,y:-20,duration:.3},3.45);
+demoTl.fromTo('.cue-task',{opacity:0,y:54},{opacity:1,y:0,duration:.5,stagger:.16,ease:'power3.out'},3.85);
+demoTl.fromTo('#cue-demo-pointer',{opacity:0,x:1110,y:530},{opacity:1,x:74,y:166,duration:1.0,ease:'power2.inOut'},7.15);
+demoTl.to('#cue-demo-pointer',{scale:.82,duration:.1,yoyo:true,repeat:1},8.3);
+demoTl.to('#cue-demo-checkbox',{backgroundColor:'#d8fa67',borderColor:'#d8fa67',duration:.15},8.4);
+demoTl.set('#cue-demo-checkmark',{rotation:40,opacity:1},8.45);
+demoTl.to('#cue-task-one .name',{color:'#465444',duration:.2},8.5);
+demoTl.to('#cue-demo-pointer',{x:1100,y:520,opacity:0,duration:.65,ease:'power2.in'},8.8);
+demoTl.fromTo('#cue-demo-result',{opacity:0,y:12},{opacity:1,y:0,duration:.35},9.2);
+demoTl.fromTo('#cue-demo-progress i',{scaleX:0},{scaleX:1,duration:12.8,ease:'none'},0);
+var demoState={time:0},lastStage=-1;
+demoTl.to(demoState,{time:13,duration:13,ease:'none',onUpdate:function(){
+ var stage=demoState.time<3.6?0:demoState.time<7?1:2;
+ if(stage===lastStage)return;
+ lastStage=stage;
+ document.getElementById('cue-demo-head').textContent=['Say it.','Shape it.','Start it.'][stage];
+ document.getElementById('cue-demo-step').textContent=['01 / CAPTURE','02 / ORGANIZE','03 / TAKE ACTION'][stage];
+}},0);
+window.__timelines['cue-demo']=demoTl;
+</script>
+</template>

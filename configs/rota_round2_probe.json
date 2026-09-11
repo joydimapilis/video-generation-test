@@ -1,0 +1,30 @@
+{
+  "experiment": "rota",
+  "round": "2-probe",
+  "goal": "One paid shot to answer the loop's open question before buying the rest: does Veo image-to-video produce lip-synced dialogue from a still frame, preserving the speaker, or does reference conditioning only survive when the shot is silent?",
+  "reference_frame": "artifacts/library-loop-5/reference_frames/f5.8.jpg",
+  "reference_source": "talk_hero_v1 at t=5.8s - the only candidate frame where her mouth is closed and her hands are at rest, so a new line can begin naturally rather than cutting into a held vowel or a mid-air gesture.",
+  "decision_rule": "If the transcript matches the written line and the speaker is visibly the same woman, buy the remaining two lines the same way. If speech is absent, garbled, or the face drifts, fall back to three more text-to-video shots with the identity spec repeated, accept the drift, and record it.",
+  "runs": [
+    {
+      "id": "talk_b_v1",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 120,
+      "use_case": "interview",
+      "role": "line_2_probe",
+      "line": "Every Sunday night, I'd sit down with a pencil and rebuild the whole week.",
+      "version": 1,
+      "input": {
+        "prompt": "The same woman continues her documentary testimonial interview, seated exactly where she is, the camera static at eye level. She gathers her thought for a moment, then speaks directly and warmly to the off-camera interviewer, with a small rueful smile at the memory. AUDIO: she says in natural British English, unhurried, with a slight emphasis on the word pencil: \"Every Sunday night, I'd sit down with a pencil and rebuild the whole week.\" She finishes with roughly a second to spare and settles into a relaxed expression. One small hand gesture only. Quiet room tone, no music. Clean photographic frame with no captions, subtitles, titles or graphical text of any kind.",
+        "negative_prompt": "subtitles, captions, burned-in text, text, letters, numbers, logos, watermark, other people, music, camera shake, cut to another shot, different person, changing clothes, standing up",
+        "image_url": "local:artifacts/library-loop-5/reference_frames/f5.8.jpg",
+        "duration": "8s",
+        "resolution": "1080p",
+        "aspect_ratio": "auto",
+        "generate_audio": true,
+        "auto_fix": false,
+        "seed": 88
+      }
+    }
+  ]
+}

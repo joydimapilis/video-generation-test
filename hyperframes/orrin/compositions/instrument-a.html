@@ -1,0 +1,32 @@
+<template>
+<style>
+@font-face{font-family:OrrinSans;src:url('assets/OrrinSans.ttf')}
+@font-face{font-family:OrrinSans;src:url('assets/OrrinSans-Bold.ttf');font-weight:700}
+@font-face{font-family:OrrinMono;src:url('assets/OrrinMono.ttf')}
+#orr-insa{width:1920px;height:1080px;position:relative;overflow:hidden;background:#07080a;color:#e9ecea}
+#orr-insa-video{position:absolute;inset:0;width:1920px;height:1080px;object-fit:cover}
+#orr-insa-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,8,10,.8) 0%,rgba(7,8,10,.22) 26%,rgba(7,8,10,0) 44%)}
+#orr-insa-anno{position:absolute;left:170px;top:210px;opacity:0}
+#orr-insa-anno .lead{position:absolute;left:470px;top:14px;height:1px;width:262px;background:#ff9b2f;transform-origin:left center}
+#orr-insa-anno .dot{position:absolute;left:726px;top:10px;width:10px;height:10px;border-radius:50%;background:#ff9b2f;opacity:0}
+#orr-insa-anno .txt{font-family:OrrinMono,monospace;font-size:26px;letter-spacing:.08em;line-height:1.55;white-space:pre}
+#orr-insa-anno .txt b{color:#79817f;font-weight:400}
+</style>
+<div data-hf-id="hf-isa0" id="orr-insa" data-composition-id="orr-insa" data-duration="4" data-width="1920" data-height="1080">
+  <video data-hf-id="hf-isa1" id="orr-insa-video" class="clip" src="assets/hero-macro.mp4" data-start="0" data-media-start="1.8" data-duration="4" data-track-index="0" muted playsinline></video>
+  <div data-hf-id="hf-isa2" id="orr-insa-scrim"></div>
+  <div data-hf-id="hf-isa3" id="orr-insa-anno">
+    <i data-hf-id="hf-isa4" class="lead"></i><i data-hf-id="hf-isa5" class="dot"></i>
+    <div data-hf-id="hf-isa6" class="txt">APERTURE f/1.4<br><b data-hf-id="hf-isa7">SEVEN-ELEMENT COATED GLASS</b></div>
+  </div>
+</div>
+<script>
+var insaTl=gsap.timeline({paused:true});
+insaTl.set('#orr-insa-anno',{opacity:1},.85);
+insaTl.fromTo('#orr-insa-anno .lead',{scaleX:0},{scaleX:1,duration:.38,ease:'power2.out'},.85);
+insaTl.to('#orr-insa-anno .dot',{opacity:1,duration:.01},1.23);
+insaTl.fromTo('#orr-insa-anno .txt',{opacity:0,x:-12},{opacity:1,x:0,duration:.24,ease:'power2.out'},1.18);
+insaTl.to('#orr-insa-anno',{opacity:0,duration:.22,ease:'power2.in'},3.64);
+window.__timelines['orr-insa']=insaTl;
+</script>
+</template>

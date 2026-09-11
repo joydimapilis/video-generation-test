@@ -1,0 +1,26 @@
+{
+  "output_id": "rota_library_loop_5_final",
+  "output_path": "artifacts/final_outcome/rota/rota-final.mp4",
+  "duration_seconds": 36.6,
+  "resolution": "1920x1080",
+  "assembly_tool": "HyperFrames 0.8.34",
+  "source_runs": [
+    "broll_dough_v1",
+    "broll_oven_v1",
+    "broll_room_v1",
+    "broll_rota_v1",
+    "talk_b_v1",
+    "talk_c_v1",
+    "talk_d_v2",
+    "talk_hero_v1"
+  ],
+  "reference_library_manifest": "artifacts/library-loop-5/references/manifest.json",
+  "scorecard": "docs/ROTA_SCORECARD.md",
+  "verification": "artifacts/final_outcome/rota/verification.json",
+  "cost": {
+    "estimated_usd": 7.88,
+    "reserved_usd": 9.08,
+    "cap_usd": 10.0,
+    "invoice_verified": false
+  }
+}

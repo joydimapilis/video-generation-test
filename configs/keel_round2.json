@@ -1,0 +1,30 @@
+{
+  "experiment": "keel",
+  "round": 2,
+  "goal": "Repair the one weak plate. rush_hands_v1 is the only act-one shot at human scale, and it is meant to rhyme with the act-three plane shot across the film's turn: same framing, same lateral track, opposite temperature. It cannot do that job as shot.",
+  "observed_failures": {
+    "rush_hands_v1": "A laptop lid with a readable browser window sits in the top of frame despite an explicit instruction that no screen content be visible, and the room reads flat grey rather than unlit-with-cyan. The framing is also head-on, so it cannot match-cut against the act-three plane shot, which tracks laterally."
+  },
+  "runs": [
+    {
+      "id": "rush_hands_v2",
+      "endpoint": "fal-ai/kling-video/v3/pro/text-to-video",
+      "estimate_cents": 68,
+      "use_case": "industrial_human",
+      "act": 1,
+      "pattern": "gloved_hands_placement",
+      "version": 2,
+      "parent": "rush_hands_v1",
+      "hypothesis": "Denying the screen by every name it can take, and framing so tight that no screen could fit, should remove it. Switching the camera to a lateral track makes this shot and shop_hands_v1 a matched pair either side of the turn.",
+      "input": {
+        "prompt": "Extreme close-up from a low side angle of two bare hands typing very fast on a dark mechanical keyboard, framed so tight that only the hands and the keys fill the frame. No screen, no monitor, no laptop lid, no desk and no room visible beyond the hands. Lit only by hard cold cyan light raking in from the left. The camera tracks slowly and steadily alongside the hands in one continuous move. Near-black background, deep shadows, shallow depth of field, fine cinematic grain. The keys are completely blank with no letters or markings of any kind. No text, no logos, no faces.",
+        "negative_prompt": "blur, distort, low quality, screen, monitor, display, laptop, laptop lid, browser, window, user interface, desk, room, text, letters, numbers, key legends, logos, watermark, subtitles, captions, faces, warm colour, bright room, daylight, extra fingers, deformed hands",
+        "duration": "6",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "shot_type": "customize",
+        "cfg_scale": 0.5
+      }
+    }
+  ]
+}

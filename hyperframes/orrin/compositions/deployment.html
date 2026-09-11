@@ -1,0 +1,46 @@
+<template>
+<style>
+@font-face{font-family:OrrinSans;src:url('assets/OrrinSans.ttf')}
+@font-face{font-family:OrrinSans;src:url('assets/OrrinSans-Bold.ttf');font-weight:700}
+@font-face{font-family:OrrinMono;src:url('assets/OrrinMono.ttf')}
+#orr-dep{width:1920px;height:1080px;position:relative;overflow:hidden;background:#07080a;color:#e9ecea}
+#orr-dep-video{position:absolute;inset:0;width:1920px;height:1080px;object-fit:cover}
+#orr-dep-scrim{position:absolute;inset:0;background:linear-gradient(0deg,rgba(7,8,10,.78) 0%,rgba(7,8,10,.1) 34%,rgba(7,8,10,0) 55%)}
+#orr-dep-tel{position:absolute;right:96px;top:250px;width:466px;padding:4px 22px 10px;background:rgba(7,8,10,.9);font-family:OrrinMono,monospace;font-size:25px;letter-spacing:.08em;text-align:right;opacity:0}
+#orr-dep-tel .brk{height:1px;background:#23282c;transform-origin:right center}
+#orr-dep-tel .tel{display:flex;justify-content:space-between;padding:12px 0}
+#orr-dep-tel .tel span{color:#aab0ad}
+#orr-dep-tel .tel b{font-weight:400}
+#orr-dep-live{color:#ff9b2f}
+#orr-dep-head{position:absolute;left:96px;bottom:170px;font-family:OrrinSans,Arial,sans-serif;font-weight:700;font-size:112px;letter-spacing:-.02em;line-height:1;opacity:0}
+</style>
+<div data-hf-id="hf-dep0" id="orr-dep" data-composition-id="orr-dep" data-duration="6" data-width="1920" data-height="1080">
+  <video data-hf-id="hf-dep1" id="orr-dep-video" class="clip" src="assets/ridge.mp4" data-start="0" data-duration="6" data-track-index="0" muted playsinline></video>
+  <div data-hf-id="hf-dep2" id="orr-dep-scrim"></div>
+  <div data-hf-id="hf-dep3" id="orr-dep-tel">
+    <i data-hf-id="hf-dep4" class="brk"></i>
+    <div data-hf-id="hf-dep5" class="tel"><span data-hf-id="hf-dep6">NODE</span><b data-hf-id="hf-dep7">OR-0412</b></div>
+    <div data-hf-id="hf-dep8" class="tel"><span data-hf-id="hf-dep9">ELEVATION</span><b data-hf-id="hf-depa">1 642 M</b></div>
+    <div data-hf-id="hf-depb" class="tel"><span data-hf-id="hf-depc">AMBIENT</span><b data-hf-id="hf-depd" id="orr-dep-lux">0.00 LUX</b></div>
+    <div data-hf-id="hf-depe" class="tel"><span data-hf-id="hf-depf">STATUS</span><b data-hf-id="hf-depg" id="orr-dep-live">SEEING</b></div>
+    <i data-hf-id="hf-deph" class="brk"></i>
+  </div>
+  <div data-hf-id="hf-depi" id="orr-dep-head">Where the light ends.</div>
+</div>
+<script>
+var depTl=gsap.timeline({paused:true});
+depTl.set('#orr-dep-tel',{opacity:1},.55);
+depTl.fromTo('#orr-dep-tel .brk',{scaleX:0},{scaleX:1,duration:.32,stagger:.06,ease:'power2.out'},.55);
+depTl.fromTo('#orr-dep-tel .tel',{opacity:0,x:16},{opacity:1,x:0,duration:.24,stagger:.13,ease:'power2.out'},.75);
+// Light falls as dusk deepens. Formatted from the tween value, so any seek
+// resolves to the same string without accumulating state.
+var lux={v:4.6};
+depTl.to(lux,{v:0.02,duration:2.6,ease:'power2.in',onUpdate:function(){
+  document.getElementById('orr-dep-lux').textContent=lux.v.toFixed(2)+' LUX';
+}},1.5);
+depTl.set('#orr-dep-head',{opacity:1,y:58},2.9);
+depTl.to('#orr-dep-head',{y:0,duration:.3,ease:'power4.out'},2.9);
+depTl.to('#orr-dep-tel, #orr-dep-head',{opacity:0,duration:.22,ease:'power2.in'},5.3);
+window.__timelines['orr-dep']=depTl;
+</script>
+</template>

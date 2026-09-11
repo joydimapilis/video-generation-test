@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      *{margin:0;padding:0;box-sizing:border-box}
+      html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#05070a}
+      body{font-family:KeelSans,Arial,sans-serif}
+      @font-face{font-family:KeelSerif;src:url('assets/KeelSerif.ttf')}
+      @font-face{font-family:KeelSerif;src:url('assets/KeelSerif-Bold.ttf');font-weight:700}
+      @font-face{font-family:KeelSans;src:url('assets/KeelSans.ttf')}
+      @font-face{font-family:KeelSans;src:url('assets/KeelSans-Bold.ttf');font-weight:700}
+      #root{width:1920px;height:1080px;overflow:hidden;position:relative}
+      .inner{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden}
+      .clip{position:absolute;inset:0;width:1920px;height:1080px;object-fit:cover}
+      #flash{position:absolute;inset:0;z-index:30;background:#9fe8ff;opacity:0;pointer-events:none}
+      #blackout{position:absolute;inset:0;z-index:31;background:#05070a;opacity:0;pointer-events:none}
+      #capscrim{position:absolute;left:0;right:0;bottom:0;height:340px;z-index:32;pointer-events:none;
+        background:linear-gradient(0deg,rgba(5,7,10,.86) 0%,rgba(5,7,10,.42) 46%,rgba(5,7,10,0) 100%)}
+      #cap{position:absolute;left:240px;right:240px;bottom:148px;z-index:33;text-align:center;
+        font-family:KeelSans,Arial,sans-serif;font-size:44px;line-height:1.35;color:#f2efe9;opacity:0}
+      #footer{position:absolute;right:72px;bottom:64px;z-index:36;font-family:KeelSans,Arial,sans-serif;
+        font-size:19px;letter-spacing:.18em;color:#cfcbc3;background:rgba(5,7,10,.9);padding:8px 14px}
+      #close{position:absolute;inset:0;z-index:35;background:#05070a;opacity:0}
+      #close-glow{position:absolute;left:50%;top:50%;width:1600px;height:1600px;margin:-800px 0 0 -800px;
+        background:radial-gradient(circle,rgba(200,162,92,.11) 0%,rgba(200,162,92,0) 60%)}
+      #close-mark{position:absolute;left:0;right:0;top:392px;text-align:center;font-family:KeelSerif,Georgia,serif;
+        font-weight:700;font-size:172px;letter-spacing:.02em;line-height:1;color:#f2efe9;opacity:0}
+      #close-rule{position:absolute;left:50%;top:606px;width:360px;margin-left:-180px;height:1px;background:#c8a25c}
+      #close-tag{position:absolute;left:0;right:0;top:654px;text-align:center;font-family:KeelSerif,Georgia,serif;
+        font-size:46px;letter-spacing:.01em;color:#f2efe9;opacity:0}
+      #close-kick{position:absolute;left:0;right:0;top:744px;text-align:center;font-family:KeelSans,Arial,sans-serif;
+        font-size:21px;letter-spacing:.24em;color:#8d8880;opacity:0}
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-root" id="root" data-composition-id="keel" data-start="0" data-duration="38.0" data-width="1920" data-height="1080">
+      <div data-hf-id="hf-wa1" id="w-a1" class="inner">
+        <video data-hf-id="hf-va1" id="v-a1" class="clip" src="assets/street.mp4"
+          data-start="0.00" data-media-start="0.6" data-duration="1.60"
+          data-track-index="0" data-layout-allow-overflow muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wa2" id="w-a2" class="inner">
+        <video data-hf-id="hf-va2" id="v-a2" class="clip" src="assets/transit.mp4"
+          data-start="1.60" data-media-start="0.4" data-duration="1.30"
+          data-track-index="1" data-layout-allow-overflow muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wa3" id="w-a3" class="inner">
+        <video data-hf-id="hf-va3" id="v-a3" class="clip" src="assets/servers.mp4"
+          data-start="2.90" data-media-start="0.3" data-duration="1.20"
+          data-track-index="2" data-layout-allow-overflow muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wa4" id="w-a4" class="inner">
+        <video data-hf-id="hf-va4" id="v-a4" class="clip" src="assets/typing.mp4"
+          data-start="4.10" data-media-start="0.8" data-duration="1.20"
+          data-track-index="3" data-layout-allow-overflow muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wa5" id="w-a5" class="inner">
+        <video data-hf-id="hf-va5" id="v-a5" class="clip" src="assets/street.mp4"
+          data-start="5.30" data-media-start="3.2" data-duration="0.90"
+          data-track-index="4" data-layout-allow-overflow muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wa6" id="w-a6" class="inner">
+        <video data-hf-id="hf-va6" id="v-a6" class="clip" src="assets/transit.mp4"
+          data-start="6.20" data-media-start="3.0" data-duration="0.90"
+          data-track-index="5" data-layout-allow-overflow muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wa7" id="w-a7" class="inner">
+        <video data-hf-id="hf-va7" id="v-a7" class="clip" src="assets/servers.mp4"
+          data-start="7.10" data-media-start="3.4" data-duration="0.75"
+          data-track-index="6" data-layout-allow-overflow muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wa8" id="w-a8" class="inner">
+        <video data-hf-id="hf-va8" id="v-a8" class="clip" src="assets/typing.mp4"
+          data-start="7.85" data-media-start="4.2" data-duration="0.45"
+          data-track-index="7" data-layout-allow-overflow muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wb1" id="w-b1" class="inner">
+        <video data-hf-id="hf-vb1" id="v-b1" class="clip" src="assets/surface.mp4"
+          data-start="8.55" data-media-start="0.5" data-duration="4.05"
+          data-track-index="8" data-layout-allow-overflow muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wb2" id="w-b2" class="inner">
+        <video data-hf-id="hf-vb2" id="v-b2" class="clip" src="assets/descend.mp4"
+          data-start="12.20" data-media-start="0.4" data-duration="4.20"
+          data-track-index="9" data-layout-allow-overflow muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wb3" id="w-b3" class="inner">
+        <video data-hf-id="hf-vb3" id="v-b3" class="clip" src="assets/deep.mp4"
+          data-start="16.00" data-media-start="0.6" data-duration="4.20"
+          data-track-index="10" data-layout-allow-overflow muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wc1" id="w-c1" class="inner">
+        <video data-hf-id="hf-vc1" id="v-c1" class="clip" src="assets/shed.mp4"
+          data-start="19.80" data-media-start="0.6" data-duration="4.20"
+          data-track-index="11" data-layout-allow-overflow muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wc2" id="w-c2" class="inner">
+        <video data-hf-id="hf-vc2" id="v-c2" class="clip" src="assets/plane.mp4"
+          data-start="23.60" data-media-start="0.5" data-duration="4.80"
+          data-track-index="12" data-layout-allow-overflow muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wc3" id="w-c3" class="inner">
+        <video data-hf-id="hf-vc3" id="v-c3" class="clip" src="assets/keel.mp4"
+          data-start="28.00" data-media-start="0.4" data-duration="4.80"
+          data-track-index="13" data-layout-allow-overflow muted playsinline></video>
+      </div>
+
+      <div data-hf-id="hf-flash" id="flash"></div>
+      <div data-hf-id="hf-black" id="blackout"></div>
+      <div data-hf-id="hf-scrim" id="capscrim"></div>
+      <div data-hf-id="hf-cap" id="cap"></div>
+      <div data-hf-id="hf-foot" id="footer">ORIGINAL CONCEPT / AI-GENERATED FILM</div>
+
+      <div data-hf-id="hf-close" id="close">
+        <div data-hf-id="hf-cg" id="close-glow" data-layout-allow-overflow></div>
+        <div data-hf-id="hf-cm" id="close-mark">KEEL</div>
+        <i data-hf-id="hf-cr" id="close-rule"></i>
+        <div data-hf-id="hf-ct" id="close-tag">Built below the waterline.</div>
+        <div data-hf-id="hf-ck" id="close-kick">LONG-HORIZON INFRASTRUCTURE</div>
+      </div>
+
+      <audio data-hf-id="hf-avo" id="a-vo" src="assets/voice.wav" data-start="0" data-duration="38.0" data-volume="1" data-track-index="60"></audio>
+      <audio data-hf-id="hf-amu" id="a-score" src="assets/score.wav" data-start="0" data-duration="38.0" data-volume="0.88" data-track-index="61" data-automation='{"version": 1, "lanes": [{"target": "volume", "points": [{"t": 0.0, "v": 0.0}, {"t": 0.5, "v": 1.0}, {"t": 0.75, "v": 0.55}, {"t": 7.64, "v": 0.55}, {"t": 7.89, "v": 1.0}, {"t": 8.7, "v": 1.0}, {"t": 8.95, "v": 0.55}, {"t": 12.25, "v": 0.55}, {"t": 12.5, "v": 1.0}, {"t": 16.0, "v": 1.0}, {"t": 16.25, "v": 0.55}, {"t": 19.23, "v": 0.55}, {"t": 19.48, "v": 1.0}, {"t": 20.3, "v": 1.0}, {"t": 20.55, "v": 0.55}, {"t": 22.78, "v": 0.55}, {"t": 23.03, "v": 1.0}, {"t": 26.2, "v": 1.0}, {"t": 26.45, "v": 0.55}, {"t": 28.09, "v": 0.55}, {"t": 28.34, "v": 1.0}, {"t": 34.0, "v": 1.0}, {"t": 38.0, "v": 0.0}]}]}'></audio>
+      <audio data-hf-id="hf-ax0" id="a-sfx0" src="assets/whoosh-short.mp3" data-start="1.6" data-duration="0.57" data-volume="0.16" data-track-index="70"></audio>
+      <audio data-hf-id="hf-ax1" id="a-sfx1" src="assets/whoosh-short.mp3" data-start="4.1" data-duration="0.57" data-volume="0.16" data-track-index="71"></audio>
+      <audio data-hf-id="hf-ax2" id="a-sfx2" src="assets/impact-bass-1.mp3" data-start="8.05" data-duration="2.11" data-volume="0.34" data-track-index="72"></audio>
+      <audio data-hf-id="hf-ax3" id="a-sfx3" src="assets/whoosh-cinematic.mp3" data-start="19.3" data-duration="2.4" data-volume="0.13" data-track-index="73"></audio>
+      <audio data-hf-id="hf-ax4" id="a-sfx4" src="assets/riser.mp3" data-start="30.6" data-duration="1.8" data-volume="0.1" data-track-index="74"></audio>
+      <audio data-hf-id="hf-ax5" id="a-sfx5" src="assets/impact-bass-1.mp3" data-start="32.4" data-duration="2.11" data-volume="0.22" data-track-index="75"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      var tl = gsap.timeline({ paused: true });
+      tl.fromTo('#w-a1',{xPercent:7,scale:1.06},{xPercent:0,scale:1,duration:.16,ease:'power3.out'},0.00);
+      tl.fromTo('#w-a2',{xPercent:-7,scale:1.06},{xPercent:0,scale:1,duration:.16,ease:'power3.out'},1.60);
+      tl.fromTo('#w-a3',{xPercent:7,scale:1.06},{xPercent:0,scale:1,duration:.16,ease:'power3.out'},2.90);
+      tl.fromTo('#w-a4',{xPercent:-7,scale:1.06},{xPercent:0,scale:1,duration:.16,ease:'power3.out'},4.10);
+      tl.fromTo('#w-a5',{xPercent:7,scale:1.06},{xPercent:0,scale:1,duration:.16,ease:'power3.out'},5.30);
+      tl.fromTo('#w-a6',{xPercent:-7,scale:1.06},{xPercent:0,scale:1,duration:.16,ease:'power3.out'},6.20);
+      tl.fromTo('#w-a7',{xPercent:7,scale:1.06},{xPercent:0,scale:1,duration:.16,ease:'power3.out'},7.10);
+      tl.fromTo('#w-a8',{xPercent:-7,scale:1.06},{xPercent:0,scale:1,duration:.16,ease:'power3.out'},7.85);
+      tl.fromTo('#w-b1',{opacity:0},{opacity:1,duration:0.001,ease:'power1.inOut'},8.55);
+      tl.fromTo('#w-b2',{opacity:0},{opacity:1,duration:0.4,ease:'power1.inOut'},12.20);
+      tl.fromTo('#w-b3',{opacity:0},{opacity:1,duration:0.4,ease:'power1.inOut'},16.00);
+      tl.set('#v-c1',{scale:1.21},19.80);
+      tl.fromTo('#w-c1',{opacity:0},{opacity:1,duration:0.4,ease:'power1.inOut'},19.80);
+      tl.fromTo('#w-c2',{opacity:0},{opacity:1,duration:0.4,ease:'power1.inOut'},23.60);
+      tl.fromTo('#w-c3',{opacity:0},{opacity:1,duration:0.4,ease:'power1.inOut'},28.00);
+      tl.fromTo('#flash',{opacity:.26},{opacity:0,duration:.09,ease:'power2.in'},2.90);
+      tl.fromTo('#flash',{opacity:.26},{opacity:0,duration:.09,ease:'power2.in'},5.30);
+      tl.fromTo('#flash',{opacity:.26},{opacity:0,duration:.09,ease:'power2.in'},7.10);
+      tl.fromTo('#cap',{opacity:0,y:12},{opacity:1,y:0,duration:.2,ease:'power2.out'},0.70);
+      tl.to('#cap',{opacity:0,duration:.2,ease:'power2.in'},2.50);
+      tl.fromTo('#cap',{opacity:0,y:12},{opacity:1,y:0,duration:.2,ease:'power2.out'},2.70);
+      tl.to('#cap',{opacity:0,duration:.2,ease:'power2.in'},5.60);
+      tl.fromTo('#cap',{opacity:0,y:12},{opacity:1,y:0,duration:.2,ease:'power2.out'},5.80);
+      tl.to('#cap',{opacity:0,duration:.2,ease:'power2.in'},7.83);
+      tl.fromTo('#cap',{opacity:0,y:12},{opacity:1,y:0,duration:.2,ease:'power2.out'},8.90);
+      tl.to('#cap',{opacity:0,duration:.2,ease:'power2.in'},12.44);
+      tl.fromTo('#cap',{opacity:0,y:12},{opacity:1,y:0,duration:.2,ease:'power2.out'},16.20);
+      tl.to('#cap',{opacity:0,duration:.2,ease:'power2.in'},19.42);
+      tl.fromTo('#cap',{opacity:0,y:12},{opacity:1,y:0,duration:.2,ease:'power2.out'},20.50);
+      tl.to('#cap',{opacity:0,duration:.2,ease:'power2.in'},22.97);
+      tl.fromTo('#cap',{opacity:0,y:12},{opacity:1,y:0,duration:.2,ease:'power2.out'},26.40);
+      tl.to('#cap',{opacity:0,duration:.2,ease:'power2.in'},28.28);
+      var CAPS=[{"at": 0.8, "text": "Everything gets faster."}, {"at": 2.8, "text": "Faster to launch. Faster to scale."}, {"at": 5.9, "text": "Faster to forget."}, {"at": 9.0, "text": "But nothing that lasts is built at the surface."}, {"at": 16.3, "text": "It's built underneath. Slow. Quiet."}, {"at": 20.6, "text": "Where nobody is watching."}, {"at": 26.5, "text": "That's where we work."}],capState={t:0},capLast=null;
+      tl.to(capState,{t:38.0,duration:38.0,ease:'none',onUpdate:function(){var text='';for(var i=0;i<CAPS.length;i++){if(capState.t>=CAPS[i].at-0.34){text=CAPS[i].text;}}if(text===capLast){return;}capLast=text;document.getElementById('cap').textContent=text;}},0);
+      tl.fromTo('#blackout',{opacity:0},{opacity:1,duration:.2,ease:'power2.in'},8.05);
+      tl.to('#blackout',{opacity:0,duration:.32,ease:'power2.out'},8.5);
+      tl.fromTo('#close',{opacity:0},{opacity:1,duration:.42,ease:'power2.inOut'},32.40);
+      tl.fromTo('#close-mark',{opacity:0,y:26},{opacity:1,y:0,duration:.5,ease:'power4.out'},32.90);
+      tl.fromTo('#close-rule',{scaleX:0},{scaleX:1,duration:.55,ease:'power2.out'},33.50);
+      tl.fromTo('#close-tag',{opacity:0,y:12},{opacity:1,y:0,duration:.42,ease:'power2.out'},33.95);
+      tl.fromTo('#close-kick',{opacity:0},{opacity:1,duration:.4,ease:'power2.out'},34.60);
+      window.__timelines['keel'] = tl;
+    </script>
+  </body>
+</html>

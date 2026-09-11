@@ -1,0 +1,75 @@
+{
+  "experiment": "seventeen",
+  "round": 2,
+  "goal": "Three character beats driven from one reference frame. Image-to-video continues the scene it is given, so rather than scattering the character across locations it cannot reach, the film becomes a chamber piece: one desk, one night, three emotional states. Time passes through the authored UI and the b-roll instead.",
+  "reference_frame": "artifacts/library-loop-4/reference_frames/f3.6.jpg",
+  "reference_source": "hero_night_v1 at t=3.6s - the frame where her face is best defined and her hands are still engaged, so motion continues naturally.",
+  "dropped_from_round1": {
+    "street_walk_v1": "The lone figure reads as a man in dark clothing, not a woman in an olive sweatshirt, and the plate carries 131px of baked-in letterbox. The film does not need an outdoor character beat; dropping it is cheaper than repairing it."
+  },
+  "runs": [
+    {
+      "id": "char_lookup_v1",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 60,
+      "use_case": "character",
+      "act": 1,
+      "role": "character_beat",
+      "version": 1,
+      "hypothesis": "Identity is guaranteed by construction because the shot starts on the same frame. The only question is whether Veo can carry a small, quiet performance rather than a gesture.",
+      "input": {
+        "prompt": "She finishes typing, and her hands come to rest. She sits back slowly in the chair and lifts her eyes away from the screen to look at nothing in particular, the cold screen light falling off her face as she moves back. Her expression is tired and quiet, not sad and not performed. She breathes once. The camera holds almost still. Nothing else in the room moves. No text, no captions, no interface visible.",
+        "negative_prompt": "text, letters, numbers, captions, subtitles, user interface, screen content, logos, watermark, other people, talking, speaking, exaggerated expression, crying, smiling, camera shake, cut to another shot",
+        "image_url": "local:artifacts/library-loop-4/reference_frames/f3.6.jpg",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "auto",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 71
+      }
+    },
+    {
+      "id": "char_react_v1",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 60,
+      "use_case": "character",
+      "act": 3,
+      "role": "character_beat",
+      "version": 1,
+      "hypothesis": "The payoff shot. A small disbelieving smile is a harder performance than a big reaction and is the one the film actually needs.",
+      "input": {
+        "prompt": "Her eyes flick back to the screen and stop. She goes completely still for a moment, then leans in very slightly, reading again to be sure. A small disbelieving smile starts at one corner of her mouth and spreads, and she lets out a short breath of a laugh. She does not move much. The camera holds almost still. No text, no captions, no interface visible.",
+        "negative_prompt": "text, letters, numbers, captions, subtitles, user interface, screen content, logos, watermark, other people, talking, speaking, cheering, jumping, arms raised, exaggerated expression, camera shake, cut to another shot",
+        "image_url": "local:artifacts/library-loop-4/reference_frames/f3.6.jpg",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "auto",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 71
+      }
+    },
+    {
+      "id": "char_exhale_v1",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 60,
+      "use_case": "character",
+      "act": 4,
+      "role": "character_beat",
+      "version": 1,
+      "hypothesis": "The resolution beat. Needs to land as relief rather than triumph, which is the tone the whole film depends on.",
+      "input": {
+        "prompt": "She sits back fully into the chair and lets her shoulders drop. She closes her eyes for a second and exhales, and a quiet settled smile stays on her face as she opens them again and looks down at the keyboard. Calm, private, relieved. The camera holds almost still. No text, no captions, no interface visible.",
+        "negative_prompt": "text, letters, numbers, captions, subtitles, user interface, screen content, logos, watermark, other people, talking, speaking, crying, exaggerated expression, camera shake, cut to another shot",
+        "image_url": "local:artifacts/library-loop-4/reference_frames/f3.6.jpg",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "auto",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 71
+      }
+    }
+  ]
+}

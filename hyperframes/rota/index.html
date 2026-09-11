@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      *{margin:0;padding:0;box-sizing:border-box}
+      html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#000}
+      body{font-family:RotaSans,Arial,sans-serif}
+      @font-face{font-family:RotaSerif;src:url('assets/RotaSerif.woff2') format('woff2')}
+      @font-face{font-family:RotaSans;src:url('assets/RotaSans.ttf')}
+      @font-face{font-family:RotaSans;src:url('assets/RotaSans-Bold.ttf');font-weight:700}
+      :root{--crumb:#f3ede3;--crust:#3a2a1d;--proof:#1f5b3f;--paper:#ffffff;
+        --shadow:rgba(24,16,10,.55);--footer-text:#c9ced3;--footer-bg:rgba(10,12,15,.9)}
+      #root{width:1920px;height:1080px;overflow:hidden;position:relative;background:#000}
+      .inner{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden}
+      .clip{position:absolute;inset:0;width:1920px;height:1080px}
+      video.clip{object-fit:cover}
+
+      .screen{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:var(--crumb)}
+
+      #close-block{position:absolute;left:0;right:0;top:412px;text-align:center}
+      #close-wrap{display:inline-block;text-align:center}
+      #close-word{font-family:RotaSerif,serif;font-size:140px;color:var(--crust);line-height:1}
+      #close-rule{display:block;width:100%;height:2px;background:var(--proof);margin-top:14px;
+        font-style:normal}
+      #close-tag{margin-top:40px;font-size:32px;color:var(--crust)}
+
+      #brand-mark{font-family:RotaSerif,serif;font-size:34px;color:var(--paper);opacity:.62;
+        padding:64px 0 0 96px;z-index:30;pointer-events:none}
+
+      #lower-third{z-index:35;pointer-events:none}
+      #lt-plate{position:absolute;left:96px;bottom:260px;background:var(--crumb);
+        padding:24px 32px;min-width:420px}
+      #lt-name{font-family:RotaSans,Arial,sans-serif;font-weight:700;font-size:40px;color:var(--crust)}
+      #lt-role{font-family:RotaSans,Arial,sans-serif;font-size:27px;color:var(--crust);
+        opacity:.7;margin-top:6px}
+
+      #cap{position:absolute;bottom:120px;left:0;right:0;margin:0 auto;max-width:1480px;
+        text-align:center;z-index:40;font-family:RotaSans,Arial,sans-serif;font-weight:700;
+        font-size:46px;line-height:1.3;color:var(--paper);
+        text-shadow:0 2px 10px var(--shadow),0 1px 3px var(--shadow)}
+
+      #footer{position:absolute;right:64px;bottom:48px;z-index:100;font-size:19px;
+        color:var(--footer-text);background:var(--footer-bg);padding:8px 14px}
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-root" id="root" data-composition-id="rota" data-start="0" data-duration="36.6" data-width="1920" data-height="1080">
+      <div data-hf-id="hf-w1" id="w-c1" class="inner">
+        <video data-hf-id="hf-v1" id="v-c1" class="clip" src="assets/hero.mp4"
+          data-start="0.00" data-media-start="0.0" data-duration="7.40"
+          data-track-index="0" muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-w2" id="w-c2" class="inner">
+        <video data-hf-id="hf-v2" id="v-c2" class="clip" src="assets/dough.mp4"
+          data-start="7.40" data-media-start="1.0" data-duration="2.20"
+          data-track-index="1" muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-w3" id="w-c3" class="inner">
+        <video data-hf-id="hf-v3" id="v-c3" class="clip" src="assets/lineb.mp4"
+          data-start="9.60" data-media-start="0.0" data-duration="3.80"
+          data-track-index="2" muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-w4" id="w-c4" class="inner">
+        <video data-hf-id="hf-v4" id="v-c4" class="clip" src="assets/rota.mp4"
+          data-start="13.40" data-media-start="0.6" data-duration="3.20"
+          data-track-index="3" muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-w5" id="w-c5" class="inner">
+        <video data-hf-id="hf-v5" id="v-c5" class="clip" src="assets/linec.mp4"
+          data-start="16.60" data-media-start="0.0" data-duration="5.80"
+          data-track-index="4" muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-w6" id="w-c6" class="inner">
+        <video data-hf-id="hf-v6" id="v-c6" class="clip" src="assets/room.mp4"
+          data-start="22.40" data-media-start="1.2" data-duration="2.20"
+          data-track-index="5" muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-w7" id="w-c7" class="inner">
+        <video data-hf-id="hf-v7" id="v-c7" class="clip" src="assets/lined.mp4"
+          data-start="24.60" data-media-start="0.0" data-duration="6.00"
+          data-track-index="6" muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-w8" id="w-c8" class="inner">
+        <video data-hf-id="hf-v8" id="v-c8" class="clip" src="assets/oven.mp4"
+          data-start="30.60" data-media-start="1.8" data-duration="2.00"
+          data-track-index="7" muted playsinline></video>
+      </div>
+      <div data-hf-id="hf-wclose" id="screen-close" class="screen clip"
+        data-start="32.6" data-duration="4.0" data-track-index="8">
+        <div data-hf-id="hf-closeblock" id="close-block">
+          <div data-hf-id="hf-closewrap" id="close-wrap">
+            <div data-hf-id="hf-closeword" id="close-word">rota</div>
+            <i data-hf-id="hf-closerule" id="close-rule"></i>
+          </div>
+          <div data-hf-id="hf-closetag" id="close-tag">Shift scheduling for small teams.</div>
+        </div>
+      </div>
+      <div data-hf-id="hf-brand" id="brand-mark" class="clip"
+        data-start="0" data-duration="32.60" data-track-index="20">rota</div>
+      <div data-hf-id="hf-lt" id="lower-third" class="clip"
+        data-start="1.2" data-duration="4.0" data-track-index="21">
+        <div data-hf-id="hf-ltplate" id="lt-plate">
+          <div data-hf-id="hf-ltname" id="lt-name">Mara Osman</div>
+          <div data-hf-id="hf-ltrole" id="lt-role">Owner, Second Shift Bakery</div>
+        </div>
+      </div>
+
+      <div data-hf-id="hf-cap" id="cap"></div>
+      <div data-hf-id="hf-foot" id="footer">ORIGINAL CONCEPT / AI-GENERATED FILM</div>
+
+      <audio data-hf-id="hf-aa1" id="a-a1" src="assets/hero.mp4" data-start="0.0" data-media-start="0.0" data-duration="7.4" data-volume="1" data-track-index="30"></audio>
+      <audio data-hf-id="hf-aa2" id="a-a2" src="assets/lineb.mp4" data-start="9.6" data-media-start="0.0" data-duration="7.0" data-volume="1" data-track-index="31"></audio>
+      <audio data-hf-id="hf-aa3" id="a-a3" src="assets/linec.mp4" data-start="16.6" data-media-start="0.0" data-duration="5.8" data-volume="1" data-track-index="32"></audio>
+      <audio data-hf-id="hf-aa4" id="a-a4" src="assets/lined.mp4" data-start="24.6" data-media-start="0.0" data-duration="6.0" data-volume="1" data-track-index="33"></audio>
+      <audio data-hf-id="hf-ascore" id="a-score" src="assets/score.wav" data-start="0" data-duration="36.6" data-volume="0.55" data-track-index="40" data-automation='{"version": 1, "lanes": [{"target": "volume", "points": [{"t": 0.0, "v": 0.0}, {"t": 0.4, "v": 1.0}, {"t": 0.65, "v": 0.42}, {"t": 7.0, "v": 0.42}, {"t": 7.25, "v": 1.0}, {"t": 9.3, "v": 1.0}, {"t": 9.55, "v": 0.42}, {"t": 21.95, "v": 0.42}, {"t": 22.2, "v": 1.0}, {"t": 24.3, "v": 1.0}, {"t": 24.55, "v": 0.42}, {"t": 29.85, "v": 0.42}, {"t": 30.1, "v": 1.0}, {"t": 34.6, "v": 1.0}, {"t": 36.6, "v": 0.0}]}]}'></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      var tl = gsap.timeline({ paused: true });
+      tl.fromTo('#screen-close',{opacity:0},{opacity:1,duration:0.5,ease:'power2.inOut'},32.60);
+      tl.fromTo('#lt-plate',{y:18,opacity:0},{y:0,opacity:1,duration:0.3,ease:'power2.out'},1.20);
+      tl.to('#lt-plate',{y:18,opacity:0,duration:0.3,ease:'power2.in'},4.90);
+      var CAPS=[{"in": 0.0, "out": 3.9, "text": "We're a bakery. Six people, two ovens,"}, {"in": 4.02, "out": 6.95, "text": "and a lot of very early mornings."}, {"in": 9.6, "out": 15.98, "text": "Every Sunday night, I'd sit down with a pencil and rebuild the whole week."}, {"in": 16.6, "out": 21.9, "text": "Someone's got an exam. Someone's kid is sick. Start again."}, {"in": 24.6, "out": 26.55, "text": "Now it takes about nine minutes."}, {"in": 27.92, "out": 29.8, "text": "I got my Sundays back."}],capLast=null;
+      tl.to({t:0},{t:1,duration:36.6,ease:'none',onUpdate:function(){var now=this.targets()[0].t*36.6;var active=null;for(var i=0;i<CAPS.length;i++){if(now>=CAPS[i]['in']&&now<CAPS[i].out){active=CAPS[i];}}var key=active?active.text:'';if(key===capLast){return;}capLast=key;document.getElementById('cap').textContent=key;}},0);
+      window.__timelines['rota'] = tl;
+    </script>
+  </body>
+</html>

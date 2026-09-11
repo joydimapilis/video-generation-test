@@ -1,0 +1,26 @@
+{
+  "reviewer": "coding agent",
+  "method": "Subjective 0-10 scores from eight evenly sampled frames per output and local Whisper transcripts; no human audience testing, calibrated perceptual model, or independent audio listening. Temporal stability is sampled, not exhaustive.",
+  "criteria": ["prompt_adherence", "sampled_stability", "composition", "edit_readiness"],
+  "runs": {
+    "ugc_veo_v1": {"scores": [8,9,9,8], "note": "Clean face, hand and framing. Correct transcript; line ends at 2.8s, leaving a posed smile for roughly half the clip. Useful short hook but not the intended six-second performance."},
+    "ugc_veo_v2": {"scores": [8.5,9,9,8.5], "note": "Correct transcript extends to 3.9s vs 2.8s. More reflective expression, stable frame and skin detail. Timing still not exact and uses more than one hand gesture. Selected for final human hook."},
+    "ugc_grok_v1": {"scores": [8,8,8,8], "note": "Correct transcript, restrained clean scene. Line finishes at 2.72s; gaze shifts off lens and hand movement is more expansive than requested. Good economical alternative to Veo in this one sample."},
+    "ugc_ltx_v1": {"scores": [7.5,7.5,7,7.5], "note": "Correct spoken line, finishes at 4.24s. More cluttered bookshelves and larger gestures; slightly softer sampled detail despite 1080p. Low-cost UGC roughs remain useful."},
+    "hero_kling_v1": {"scores": [5.5,8,7,6.5], "note": "Convincing camera pullback but pale button instead of dark, several side LEDs instead of one, centered final composition. Inaccurate hardware specification, not selected."},
+    "hero_kling_v2": {"scores": [8.5,8.5,8,8.5], "note": "Black button, one visible top LED, clean plain side and improved right-side negative space. Starts wider than the requested macro and retains small markings on button. Selected; original concept geometry, not faithful to a real manufactured device."},
+    "hero_seedance25_v1": {"scores": [7.5,8,8.5,8], "note": "Attractive fine material and coherent macro pullback, dark button and one top light. Device tilts slightly instead of remaining planted, with softer rounded shape. Strong appearance but much higher cost on this small shot; not proof of overall model inferiority."},
+    "interview_ltx_v1": {"scores": [4,7.5,6.5,3], "note": "Both requested spoken lines transcribe correctly, but garbled yellow subtitles are burned in despite no-subtitles instruction. Reject as a clean interview plate."},
+    "interview_ltx_v2": {"scores": [8,8,7.5,8], "note": "Rewording as raw camera footage removes burned-in subtitles. Correct transcript with both lines, plausible speaker staging. More subdued exposure and stiff interaction than Veo. Successful repair in one trial, not guaranteed reproducibility."},
+    "interview_veo_v1": {"scores": [8.5,8.5,8.5,8.5], "note": "Both lines transcribe correctly, no visible subtitle insertion, clean brighter presentation and plausible turns. Tiny sample: long exchanges, speaker identity and precise lip-sync remain untested."},
+    "ui_kling_v1": {"scores": [2,5,6,2], "note": "Captures broad waveform-to-tasks idea but heading and task labels are misspelled, adds unsolicited sidebars and checks the third rather than first row. Reject for exact product demos. Route text and interactions to HyperFrames."}
+  },
+  "routing": {
+    "ugc": {"primary": "Veo 3.1 Fast", "selected_run": "ugc_veo_v2", "fallback": "Grok Imagine 1.5", "budget_draft": "LTX 2.3 Pro"},
+    "product_hero": {"primary": "Kling 3.0 Pro", "selected_run": "hero_kling_v2", "premium_alternative": "Seedance 2.5", "caution": "Use reference-conditioned generation for real product identity; not tested here."},
+    "product_demo": {"primary": "HyperFrames", "rejected_run": "ui_kling_v1", "caution": "An authored concept demo is not evidence of a working application."},
+    "interview": {"primary": "Veo 3.1 Fast", "selected_run": "interview_veo_v1", "budget_draft": "interview_ltx_v2", "caution": "Two short lines only. Use real consenting people for authentic testimonials."},
+    "motion_typography": {"primary": "HyperFrames", "caution": "Exact copy and timing from code, not generative photorealism."},
+    "hybrid_ad": {"primary": "Veo hook + Kling product + HyperFrames UI/edit", "caution": "Role selection from this experiment, not a universal model ranking."}
+  }
+}

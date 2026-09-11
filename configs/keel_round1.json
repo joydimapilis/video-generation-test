@@ -1,0 +1,214 @@
+{
+  "experiment": "keel",
+  "concept": "KEEL / Built below the waterline",
+  "genre": "narrated brand manifesto sizzle with burned-in captions",
+  "library_references": [
+    "Aurus-Built-with-Intention",
+    "Beyond-Reach-Labs-Deployable-solar-arrays",
+    "ElevenLabs-Raises-500M-at-11B-Valuation"
+  ],
+  "cap_cents": 1000,
+  "why_this_genre": "Cue was a product ad and ORRIN was a product film. The Aurus reference is neither: a narrated manifesto that never shows a product, cuts a montage of unrelated worlds against a spoken argument, and resolves on a logo. It is the only genre in the inspected library that is carried by voice and rhythm rather than by an object.",
+  "craft_targets": [
+    "Pacing: a deliberate rhythm change. Act one cuts at 1.2-1.8s, act two slows to 3-4s, act three holds. Both previous films ran one flat 4-6s cadence.",
+    "Transitions: designed handoffs instead of hard cuts only - whip pans on matched screen direction in act one, a dip through black into water, warm dissolves in act three.",
+    "Coverage: buy roughly 60 seconds of footage for a 38-second film so weak shots can simply be dropped. Both previous films bought exactly what they needed and had to use it.",
+    "Colour arc: cold cyan -> deep teal -> warm amber, so the argument's turn is visible before it is heard."
+  ],
+  "design_rules": [
+    "No dialogue in any plate; the narration is a separate local TTS track.",
+    "Every legible glyph is authored in HyperFrames.",
+    "Act one shots all move left-to-right so whip-pan handoffs are motivated.",
+    "Routing follows the measured loops: Veo 3.1 Fast with audio off for environment and landscape, Kling 3.0 Pro for faceless hands."
+  ],
+  "runs": [
+    {
+      "id": "rush_street_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "act": 1,
+      "pattern": "accelerating_montage_beat",
+      "version": 1,
+      "input": {
+        "prompt": "Night city street from a low angle, long-exposure streaks of white and red vehicle light tearing across the frame. The camera pans steadily left to right in one continuous move, never stopping. Cold cyan and steel blue colour, wet asphalt reflecting the streaks, heavy contrast, anamorphic lens flare, fine cinematic grain. Clean camera footage with no captions, titles, signage or graphical text of any kind. No readable words anywhere.",
+        "negative_prompt": "text, letters, numbers, signage, shop signs, licence plates, logos, watermark, subtitles, captions, warm colour, daylight, static camera",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 11
+      }
+    },
+    {
+      "id": "rush_transit_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "act": 1,
+      "pattern": "accelerating_montage_beat",
+      "version": 1,
+      "input": {
+        "prompt": "A crowded underground transit concourse, commuters moving quickly in both directions, most figures motion-blurred. The camera tracks steadily left to right past them in one continuous move. Cold fluorescent and cyan light, hard shadows, high contrast, shallow depth of field, fine cinematic grain. Faces are indistinct and nobody looks at the camera. Clean camera footage with no captions, titles, signage, station names or graphical text of any kind. No readable words anywhere.",
+        "negative_prompt": "text, letters, numbers, signage, station signs, advertising, logos, watermark, subtitles, captions, warm colour, static camera, person looking at camera",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 11
+      }
+    },
+    {
+      "id": "rush_servers_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "act": 1,
+      "pattern": "accelerating_montage_beat",
+      "version": 1,
+      "input": {
+        "prompt": "A narrow aisle between two tall racks of networking equipment, hundreds of small status lights blinking in cold cyan and white. The camera dollies fast and steadily forward down the aisle in one continuous move. Deep blue-black shadows, harsh specular highlights on metal, shallow depth of field, fine cinematic grain. Clean camera footage with no captions, titles, labels, port markings or graphical text of any kind. No readable words anywhere.",
+        "negative_prompt": "text, letters, numbers, labels, port markings, logos, watermark, subtitles, captions, warm colour, people, static camera",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 11
+      }
+    },
+    {
+      "id": "rush_hands_v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/text-to-video",
+      "estimate_cents": 68,
+      "use_case": "industrial_human",
+      "act": 1,
+      "pattern": "gloved_hands_placement",
+      "version": 1,
+      "input": {
+        "prompt": "Extreme close-up of two bare hands typing very fast on a dark laptop keyboard in an otherwise unlit room, lit only by cold cyan screen light from above. The camera holds steady, framed tight on the hands so no face and no screen content is ever visible. Hard contrast, deep black shadows, shallow depth of field, fine cinematic grain. No text, no letters on the keys, no logos, no markings.",
+        "negative_prompt": "blur, distort, low quality, text, letters, numbers, key legends, logos, watermark, subtitles, captions, faces, screen content, monitor visible, extra fingers, deformed hands, warm colour",
+        "duration": "6",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "shot_type": "customize",
+        "cfg_scale": 0.5
+      }
+    },
+    {
+      "id": "water_surface_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "act": 2,
+      "pattern": "descent_turn",
+      "version": 1,
+      "input": {
+        "prompt": "Camera at eye level just above a cold grey-green open sea, choppy water filling the lower two thirds, an overcast horizon above. The camera drifts slowly forward toward the water in one continuous move as small waves pass. Desaturated steel blue and green, flat overcast light, no sun, fine cinematic grain. Clean camera footage with no captions, titles or graphical text of any kind. No boats, no land, no people.",
+        "negative_prompt": "text, letters, numbers, logos, watermark, subtitles, captions, boats, ships, land, people, birds, sunshine, warm colour",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 21
+      }
+    },
+    {
+      "id": "water_descend_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "act": 2,
+      "pattern": "descent_turn",
+      "version": 1,
+      "input": {
+        "prompt": "Underwater, just beneath the surface, looking down into open ocean. Shafts of pale daylight cut down through the water and fade into deep blue below. The camera descends slowly and steadily downward in one continuous move, the light dimming as it goes. Suspended particles drift through the beams. Deep teal and navy, high contrast, fine cinematic grain. Clean camera footage with no captions, titles or graphical text of any kind. No divers, no fish, no equipment.",
+        "negative_prompt": "text, letters, numbers, logos, watermark, subtitles, captions, divers, people, fish, coral, boats, equipment, bright colour",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 21
+      }
+    },
+    {
+      "id": "water_deep_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "act": 2,
+      "pattern": "descent_turn",
+      "version": 1,
+      "input": {
+        "prompt": "Deep underwater in near darkness, one faint shaft of light far above barely reaching the frame. Fine suspended particles drift slowly through the water. The camera drifts very slowly forward in one continuous move through the dark. Almost black, deep navy and teal, extremely low key, fine cinematic grain. Clean camera footage with no captions, titles or graphical text of any kind. Nothing else is in the water.",
+        "negative_prompt": "text, letters, numbers, logos, watermark, subtitles, captions, divers, people, fish, coral, creatures, wreck, bright light, warm colour",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 21
+      }
+    },
+    {
+      "id": "shop_wide_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "act": 3,
+      "pattern": "warm_craft_hold",
+      "version": 1,
+      "input": {
+        "prompt": "Interior of a wooden boat shed at dawn. The bare timber frame of a large hull under construction fills the right of frame, and low golden light comes through a tall open doorway on the left, with sawdust hanging in the beams. The camera pushes forward slowly and steadily in one continuous move. Warm amber and deep brown, strong visible light shafts, high contrast, fine cinematic grain. Clean camera footage with no captions, titles, signage or graphical text of any kind. No people.",
+        "negative_prompt": "text, letters, numbers, signage, logos, watermark, subtitles, captions, people, modern machinery, cold colour, finished boat, water",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 31
+      }
+    },
+    {
+      "id": "shop_hands_v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/text-to-video",
+      "estimate_cents": 68,
+      "use_case": "industrial_human",
+      "act": 3,
+      "pattern": "gloved_hands_placement",
+      "version": 1,
+      "input": {
+        "prompt": "Close-up of two bare weathered hands pushing a wooden hand plane along a long curved oak timber, a single continuous curl of wood shaving peeling up from the blade. The camera tracks steadily alongside the plane in one continuous move. Warm low golden side light, sawdust in the air, deep brown and amber, shallow depth of field, fine cinematic grain. No faces, no text, no markings, no logos, no machinery.",
+        "negative_prompt": "blur, distort, low quality, text, letters, numbers, logos, watermark, subtitles, captions, faces, extra fingers, deformed hands, power tools, machinery, cold colour",
+        "duration": "6",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "shot_type": "customize",
+        "cfg_scale": 0.5
+      }
+    },
+    {
+      "id": "shop_keel_v1",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 60,
+      "use_case": "environment",
+      "act": 3,
+      "pattern": "warm_craft_hold",
+      "version": 1,
+      "input": {
+        "prompt": "A long curved wooden keel timber resting on trestles in a dark boat shed, lit by one warm work lamp from the side so the grain and the curve read against near-black. The camera tracks slowly and steadily along the length of the timber in one continuous move, ending held on the curve. Deep black background, warm amber key light, strong falloff, high contrast, fine cinematic grain. Clean camera footage with no captions, titles or graphical text of any kind. No people, no tools, no machinery.",
+        "negative_prompt": "text, letters, numbers, logos, watermark, subtitles, captions, people, hands, tools, machinery, daylight, cold colour, clutter",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 31
+      }
+    }
+  ]
+}

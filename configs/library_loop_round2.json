@@ -1,0 +1,33 @@
+{
+  "task": "library-loop-2026-09-11",
+  "limit_usd": 10,
+  "runs": [
+    {
+      "id": "ugc_veo_v2", "endpoint": "fal-ai/veo3.1/fast", "estimate_cents": 90,
+      "use_case": "ugc", "pattern": "human_problem_hook", "version": 2,
+      "parent": "ugc_veo_v1",
+      "hypothesis": "v1 rushed the line into 2.8 seconds then held a posed smile. Slower delivery and a bounded timing instruction should use the shot more purposefully.",
+      "input": {"prompt": "One six-second uninterrupted creator-led technology ad, a candid documentary take, NOT a glossy sales presentation. Fictional adult woman, early thirties, short dark curly hair, plain forest-green cotton shirt, sitting at a clean white desk in a bright studio. Natural skin texture. Eye-level medium close-up, static camera. First half second: she meets the lens, thoughtful. From 0.5 to 4.8 seconds she says in natural measured English, with a small reflective pause after ideas: \"Great ideas shouldn't disappear after a meeting.\" Emphasize disappear, without overacting. She makes just ONE small open-palm gesture, then rests her hands. Final second: relaxed attentive expression, not a held sales smile. Her face and hair stay identical throughout. Frame is clean camera footage without captions, titles or graphical text. Quiet room tone and clear voice only; no music.", "duration": "6s", "resolution": "720p", "aspect_ratio": "16:9", "generate_audio": true, "auto_fix": false, "seed": 42}
+    },
+    {
+      "id": "hero_kling_v2", "endpoint": "fal-ai/kling-video/v3/pro/text-to-video", "estimate_cents": 45,
+      "use_case": "product_ad", "pattern": "macro_to_product_reveal", "version": 2,
+      "parent": "hero_kling_v1",
+      "hypothesis": "v1 ends centered, adds multiple green lights and a pale button. Simplify geometry and specify a held right-third end composition; compare usefulness rather than claiming same identity.",
+      "input": {"prompt": "Four-second premium product commercial, one camera pullback, no cuts. A compact circular matte ivory ceramic voice recorder with ONE flat BLACK circular button in the middle of its top face. ONE tiny green status LED directly beneath the black button on the same top face. Entire side wall is perfectly plain uninterrupted ivory, no lights on the side, no screen, no ports or lettering. The recorder is stationary on a smooth dark charcoal studio surface. Start close enough to see the BLACK button and ivory ceramic texture. Over the first 2.8 seconds dolly backward and slightly left. End on a clean three-quarter product shot: the recorder occupies the RIGHT THIRD of the image, with the LEFT HALF entirely empty charcoal for a title. Hold this end composition for 1.2 seconds. Soft broad white studio lighting, clean smooth background, elegant true circular geometry, subtle realistic shadow. Exactly one device. No people, no text, no particles.", "duration": "4", "aspect_ratio": "16:9", "generate_audio": false, "negative_prompt": "extra status lights, multiple buttons, logo, text, white button, centered final composition, objects on left, distortion"}
+    },
+    {
+      "id": "interview_ltx_v2", "endpoint": "fal-ai/ltx-2.3/text-to-video", "estimate_cents": 48,
+      "use_case": "interview", "pattern": "two_person_question_answer", "version": 2,
+      "parent": "interview_ltx_v1",
+      "hypothesis": "v1 transcribed correctly but inserted garbled yellow subtitles against instructions. Replace interview trope with unedited clean camera footage and separate the audio directions.",
+      "input": {"prompt": "Raw unedited camera footage, six seconds. A woman on the left and a man on the right, both fictional adults aged thirty, sit across a white table in a bright office. She wears a dark green shirt; he wears a gray shirt. Locked-off medium two-shot with both faces visible and natural hands. Picture is ONLY a photographic scene: clean uninterrupted table surface fills the bottom third, with absolutely no writing, subtitle overlay, caption, graphics or title anywhere in the image. AUDIO: The woman asks naturally in English, What happens after the meeting? The man listens silently, then answers in English, Ideas become action. Both speak only their own sentence. One speaker at a time. Warm conversational tone. Natural mouth movement aligned to each voice. Quiet office room tone. No music. Finish with both looking at one another, mouths closed.", "duration": 6, "resolution": "1080p", "aspect_ratio": "16:9", "generate_audio": true, "fps": 24}
+    },
+    {
+      "id": "interview_veo_v1", "endpoint": "fal-ai/veo3.1/fast", "estimate_cents": 90,
+      "use_case": "interview", "pattern": "two_person_question_answer", "version": 1,
+      "hypothesis": "Matched initial LTX interview prompt to test whether the higher-cost dialogue candidate avoids inserted subtitles.",
+      "input": {"prompt": "A six-second interview in a bright modern office. Two fictional adults in their thirties seated at a white table, medium-wide static two-shot. The female interviewer on the LEFT in a plain dark green shirt asks: \"What happens after the meeting?\" The male founder on the RIGHT in a plain gray shirt replies: \"Ideas become action.\" Each speaker moves their own lips only during their own line. Natural English voices, conversational turn-taking, brief pause between lines, no overlapping speech. Both people and their hands remain anatomically consistent. Clean documentary photography, soft daylight. No subtitles, no logos, no background music.", "duration": "6s", "resolution": "720p", "aspect_ratio": "16:9", "generate_audio": true, "auto_fix": false, "seed": 42}
+    }
+  ]
+}

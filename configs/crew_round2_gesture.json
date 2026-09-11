@@ -1,0 +1,30 @@
+{
+  "experiment": "crew",
+  "round": "2-gesture-fix",
+  "goal": "Replace line 3. The reused take has Mara raising a single extended middle finger, held for roughly three seconds, while the other fingers stay curled. In a customer testimonial that is disqualifying.",
+  "root_cause": "The original prompt for this line asked her to 'list the interruptions on her fingers'. The model rendered the count-of-one with the wrong finger. The plate was then reused into the revision without the gesture being re-examined - it had even been praised in the previous review notes as a good finger-count performance.",
+  "fix": "Remove finger-counting from the direction entirely. The line does not need it: the performance beat is the tired amusement in her voice, not an enumeration. Hands are held still and low, and every raised-finger gesture is denied by name in the negative prompt.",
+  "runs": [
+    {
+      "id": "line3_pain_v2",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 90,
+      "use_case": "interview",
+      "role": "line_3_the_pain",
+      "line": "Someone's got an exam. Someone's kid is sick. Start again.",
+      "version": 2,
+      "parent": "talk_c_v1",
+      "input": {
+        "prompt": "The same woman continues her documentary testimonial interview, seated exactly where she is, the camera static at eye level. Both of her hands stay completely still and low, resting in her lap below the bottom of frame. She does not gesture, does not point, does not count on her fingers and does not raise a hand at any time. The performance is entirely in her face and voice: a tired, amused familiarity, as if she has had this conversation many times. AUDIO: she says this line once, straight through, in natural British English, with a small beat between each sentence, never repeating or restarting any part of it: \"Someone's got an exam. Someone's kid is sick. Start again.\" She finishes with about a second to spare and lets out a short breath of a laugh. Quiet room tone, no music. Clean photographic frame with no captions, subtitles, titles or graphical text of any kind.",
+        "negative_prompt": "middle finger, rude gesture, offensive gesture, obscene gesture, extended finger, raised finger, pointing, index finger raised, counting on fingers, finger counting, hand raised, hands in frame, gesturing, repeating a phrase, restarting the sentence, stuttering, duplicated words, subtitles, captions, burned-in text, text, letters, numbers, logos, watermark, other people, music, camera shake, cut to another shot, different person, changing clothes, standing up",
+        "image_url": "local:artifacts/library-loop-5/reference_frames/f5.8.jpg",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "auto",
+        "generate_audio": true,
+        "auto_fix": false,
+        "seed": 95
+      }
+    }
+  ]
+}
