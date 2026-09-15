@@ -1,45 +1,156 @@
 {
-  "reviewer": "agent",
-  "concept": "The Sunday Problem, revised / a customer testimonial for Crew",
-  "subtitle": "A revision loop rather than a new film: four lines re-bought, six plates reused, and the product's value made explicit. $4.20 instead of a whole new production.",
-  "method": "Every re-generated line was transcribed with local Whisper and compared word by word against the written script before being cut in. Shot durations were set arithmetically from 0.48 seconds per word - the rate measured across the four verified takes of the previous loop - rather than estimated. Identity across old and new takes was checked on stacked contact sheets. No human audience testing.",
-  "criteria": ["prompt_adherence", "sampled_stability", "composition", "edit_readiness"],
-  "runs": {
-    "line2_schedule_v1": {
-      "scores": [9, 9, 9, 9],
-      "note": "The problem line, rewritten to say 'staff schedule' in plain words instead of the trade jargon 'rota'. Word-perfect, no repeats, speech 1.40-7.18s of an 8s shot. The 1.4s lead-in before she starts is trimmed with media-start rather than wasted. Selected."
-    },
-    "line4_product_v1": {
-      "scores": [9, 9, 9, 9],
-      "note": "The line that names the product, and the one most at risk of sounding like an advert. Asking for matter-of-fact delivery - 'the way someone describes their ordinary working week rather than recommending something' - produced exactly that. Word-perfect, speech 0.00-4.80s of 6s. Selected."
-    },
-    "line5_how_v1": {
-      "scores": [9, 9, 9, 9],
-      "note": "The mechanic line. Word-perfect and delivered faster than estimated - 3.68s against a predicted 5.3s - which left more room than intended but caused no padding. Selected."
-    },
-    "line6_result_v1": {
-      "scores": [9, 9, 9, 9],
-      "note": "The payoff, rewritten so 'nine minutes' finally has a stated subject: the whole schedule. Both sentences once, straight through, word-perfect, with a 1.8s beat between them that the edit keeps. This is the line the previous loop had to re-buy after the model stuttered; the corrected length rule produced it right first time. Selected."
-    }
+ "reviewer": "agent",
+ "concept": "The Sunday Problem, revised / a customer testimonial for Crew",
+ "subtitle": "A revision loop rather than a new film. Four lines re-bought for their words, one for an offensive gesture, and four more clips spent on a controlled test of whether a shot contract and a real exit frame make generated people and generated cuts better. $8.48 of the $10 cap, no new production.",
+ "method": "Every re-generated line was transcribed with local Whisper and compared word by word against the written script before being cut in. Shot durations were set arithmetically from 0.48 seconds per word - the rate measured across the four verified takes of the previous loop - rather than estimated. Identity across old and new takes was checked on stacked contact sheets. The realism and continuity runs hold model, seed, reference, duration, resolution and audio settings fixed and vary exactly one factor each; cut seams are measured as mean absolute pixel change at the boundary against the median change between adjacent frames on either side, on the full frame and on a head crop. That diagnostic locates seams and cannot measure naturalness - a frozen face scores low too - so every join was also watched in motion. No human audience testing.",
+ "criteria": [
+  "prompt_adherence",
+  "sampled_stability",
+  "composition",
+  "edit_readiness"
+ ],
+ "runs": {
+  "line2_schedule_v1": {
+   "scores": [
+    9,
+    9,
+    9,
+    9
+   ],
+   "note": "The problem line, rewritten to say 'staff schedule' in plain words instead of the trade jargon 'rota'. Word-perfect, no repeats, speech 1.40-7.18s of an 8s shot. The 1.4s lead-in before she starts is trimmed with media-start rather than wasted. Selected."
   },
-  "head_to_head": {
-    "the_length_rule_corrected": {
-      "prompt": "four lines, each with shot duration set from the measured 0.48s-per-word rate",
-      "winner": "duration_matched_to_line",
-      "finding": "The previous loop's only failure came from over-buying time: given three spare seconds on a five-second line, the model padded by restarting the clause. Loop one's rule - buy about 1.3x the spoken length - caused it. Sizing every line here to land between 0.7 and 1.8 seconds of spare room produced four clean takes out of four, with no repair round at all. The correction is now a number, not a hunch."
-    }
+  "line4_product_v1": {
+   "scores": [
+    9,
+    9,
+    9,
+    9
+   ],
+   "note": "The line that names the product, and the one most at risk of sounding like an advert. Asking for matter-of-fact delivery - 'the way someone describes their ordinary working week rather than recommending something' - produced exactly that. Word-perfect, speech 0.00-4.80s of 6s. Carried the first cut of the film; superseded in the revision by `realism_line4_v2`, which is the same line at the same seed with the compiled shot contract instead of this prose prompt."
   },
-  "routing": {
-    "changed_dialogue_lines": {"primary": "Veo 3.1 Fast image-to-video, audio on", "selected_run": "line6_result_v1", "caution": "Generate from the SAME reference frame the original takes used, or the revision will not intercut with the footage it is meant to join."},
-    "unchanged_dialogue_lines": {"primary": "reuse", "caution": "The cheapest shot is the one already bought. Two of six lines needed no new words, so they were not re-bought."},
-    "product_mechanic_on_screen": {"primary": "HyperFrames", "caution": "Six loops of evidence that no generative model spells reliably. These screens carry names, days and a filled grid, so they could not be generated at any price."}
+  "line5_how_v1": {
+   "scores": [
+    9,
+    9,
+    9,
+    9
+   ],
+   "note": "The mechanic line. Word-perfect and delivered faster than estimated - 3.68s against a predicted 5.3s - which left more room than intended but caused no padding. Carried the first cut; superseded in the revision by `realism_line5_chained`, which is the same line generated from the previous shot's exit frame rather than the shared anchor."
   },
-  "findings": [
-    "**Revise by delta, not by remake.** Only four of ten plates changed words, so only four were re-bought. $4.20 against the $7.88 the original cut cost. Because every new line was generated from the same reference frame as the originals, the reused and regenerated takes intercut invisibly.",
-    "**The corrected length rule held.** Sizing each shot from the measured 0.48s-per-word rate produced four usable takes with no repair round, against the previous loop's one-in-four failure. Loop one's 1.3x guidance is now formally superseded.",
-    "**Authored screens are how a testimonial explains a product.** The spoken lines say what she uses and roughly how; the two screens show the actual mechanic - availability in, schedule out, everyone notified. That work is free, deterministic and spells correctly, and it is the only part of the film that could not have been generated.",
-    "**An authored screen must survive being checked.** The first build of the schedule grid put Aisha on Thursday and Tomas on Friday, contradicting the availability screen shown seconds earlier. Nothing in the render pipeline can catch that - it is internally consistent HTML - and it was caught only by reading the two screens against each other. Invented data still has to be true to itself.",
-    "**Jargon is a clarity bug.** The product was called ROTA, which is British trade jargon for a staff schedule. Renaming it Crew and saying 'staff schedule' in the script cost nothing and removed the single biggest comprehension barrier in the film."
-  ],
-  "changed_this_loop": "The arc is now explicit where it was previously implied: problem, what she uses, how it helps, result. Two authored product screens carry the mechanic, the product is named on screen and in speech, and 'nine minutes' finally has a stated subject. The testimonial register is unchanged - no superlatives, no statistics beyond her own estimate, and the two product lines are mechanical rather than enthusiastic."
+  "line6_result_v1": {
+   "scores": [
+    9,
+    9,
+    9,
+    9
+   ],
+   "note": "The payoff, rewritten so 'nine minutes' finally has a stated subject: the whole schedule. Both sentences once, straight through, word-perfect, with a 1.8s beat between them that the edit keeps. This is the line the previous loop had to re-buy after the model stuttered; the corrected length rule produced it right first time. Selected."
+  },
+  "line3_pain_v2": {
+   "scores": [
+    9,
+    9,
+    9,
+    9
+   ],
+   "note": "The complaint line, re-bought because the original take answered an unprompted instruction with an offensive hand gesture. Word-perfect, speech 0.00-5.34s of 6s, and the hands stay out of it. A reminder that a clean transcript is not a clean take: nothing in the speech gate would have caught the gesture, and only watching it did. Selected."
+  },
+  "realism_line4_v2": {
+   "scores": [
+    9,
+    8,
+    8,
+    8
+   ],
+   "note": "The same line as `line4_product_v1`, same model, same seed 92, same anchor frame - only the prompt changed, to the compiled shot contract with its identity-preservation, micro-behaviour and anti-retouching direction. Word-perfect, speech 0.00-5.06s of 6s. The face reads older and more textured than the baseline take: a deeper nasolabial fold, visible skin structure under the side light, and a mid-thought expression instead of a held pleasant one. That is the direction asked for and it is less obviously generated. It also came at a cost the prompt did not intend - the model reframed tighter than the anchor, so this take no longer matches the wide framing of the seven reused plates. Selected, but every shot next to it is a cutaway."
+  },
+  "realism_line5_chained": {
+   "scores": [
+    7,
+    9,
+    9,
+    9
+   ],
+   "note": "The continuity test. Identical to `realism_line5_control` in model, seed 93, prompt, duration and resolution; the only difference is that its input image is the reviewed 5.125s exit frame of `realism_line4_v2` rather than the shared anchor. It inherits the outgoing shot's tighter framing, and the head region at the cut moves 1.19x a normal frame of motion against the original pair's 5.27x. It is the only join in the film that is genuinely continuous. Two costs, both real: it substituted one word - 'everyone sees an update' for 'everyone sees it update', so the caption was changed to match what she actually says - and conditioning on a decoded video frame carried that frame's encoding artifacts forward, leaving it visibly crunchier around the hair and background than the control. Selected."
+  },
+  "realism_line5_control": {
+   "scores": [
+    9,
+    9,
+    8,
+    6
+   ],
+   "note": "The control, and the run that makes the result mean anything. Same improved prompt, same seed, same outgoing shot as the chained take; only the input reference differs. Word-perfect where the chained take was not. But cut against `realism_line4_v2` it reverts to the wide anchor framing, and the seam measures 7.35x in the head region - worse than the 5.27x of the two original takes it was meant to improve on. Better wording made the cut worse. Not used in the film; bought to be discarded, and worth the $0.90."
+  },
+  "realism_dough_v2": {
+   "scores": [
+    7,
+    9,
+    8,
+    9
+   ],
+   "note": "The hands insert, re-prompted from a repeated kneading instruction into one causal chain - palms settle, weight leans forward, dough compresses, fingers stay curved as the palms release, dough partly rebounds - with the forces named and floating contact ruled out. The clearest realism win of the loop: tendons, veins, knuckle creases and short nails are all present, and the dough visibly takes the weight instead of deforming on its own. Two reservations. The take ignores 'no second kneading cycle' and starts another press at about 4.5s, so the edit uses only 2.5-4.5s. And it is lighter and cooler than the warm bakery grade around it - better anatomy in slightly the wrong colour, ungraded. Selected."
+  }
+ },
+ "head_to_head": {
+  "the_length_rule_corrected": {
+   "prompt": "four lines, each with shot duration set from the measured 0.48s-per-word rate",
+   "winner": "duration_matched_to_line",
+   "finding": "The previous loop's only failure came from over-buying time: given three spare seconds on a five-second line, the model padded by restarting the clause. Loop one's rule - buy about 1.3x the spoken length - caused it. Sizing every line here to land between 0.7 and 1.8 seconds of spare room produced four clean takes out of four, with no repair round at all. The correction is now a number, not a hunch."
+  },
+  "shot_contract_versus_prose_prompt": {
+   "prompt": "line 4, Veo 3.1 Fast, seed 92, shared anchor frame, 6s 1080p; prompt varied",
+   "winner": "shot_contract",
+   "finding": "Compiling the prompt from a ten-field shot contract - identity stated as preservation, behaviour described instead of emotion named, hands given a resting state, secondary motion tied to a cause, and the AI-face signature listed in the negatives - produced a face with more skin structure and a less posed expression than the baseline prompt at the same seed. It is one take judged by one reviewer, not an audience preference. It also reframed tighter than the anchor it was given, which is a continuity cost the contract was supposed to prevent: 'the original headroom and lens perspective' is a phrase, and the model treated it as one."
+  },
+  "exit_frame_versus_shared_anchor": {
+   "prompt": "line 5, Veo 3.1 Fast, seed 93, identical improved prompt; input image varied",
+   "winner": "previous_exit_frame",
+   "finding": "This is the loop's real result, and the control is what makes it one. Three joins, measured as boundary pixel change over the median adjacent-frame change: the two original takes cut together at 6.76x on the full frame and 5.27x on the head; the same improved prompt from the shared anchor got worse, 11.00x and 7.35x; the improved prompt started from the outgoing clip's reviewed exit frame closed to 2.38x and 1.19x. In the head region the cut becomes about as disruptive as one ordinary frame of her own movement. Prompt wording alone did not close the seam and would have widened it - only the image did. The cost is one substituted word and the input frame's compression artifacts carried into the new take."
+  }
+ },
+ "routing": {
+  "changed_dialogue_lines": {
+   "primary": "Veo 3.1 Fast image-to-video, audio on",
+   "selected_run": "line6_result_v1",
+   "caution": "Generate from the SAME reference frame the original takes used, or the revision will not intercut with the footage it is meant to join - unless the shot is deliberately joined to its predecessor's exit frame instead, in which case everything it cuts against must move with it."
+  },
+  "unchanged_dialogue_lines": {
+   "primary": "reuse",
+   "caution": "The cheapest shot is the one already bought. Two of six lines needed no new words, so they were not re-bought."
+  },
+  "product_mechanic_on_screen": {
+   "primary": "HyperFrames",
+   "caution": "Six loops of evidence that no generative model spells reliably. These screens carry names, days and a filled grid, so they could not be generated at any price."
+  },
+  "recurring_person_any_shot": {
+   "primary": "Veo 3.1 Fast image-to-video, compiled shot contract, audio on",
+   "selected_run": "realism_line4_v2",
+   "caution": "Route refuses to compile without a reviewed identity reference. Expect the model to reframe: ask for framing in the contract, then check the take against the plates it must sit beside, because a phrase about headroom is not a lens."
+  },
+  "a_cut_that_must_feel_continuous": {
+   "primary": "Veo 3.1 Fast image-to-video, conditioned on the previous clip exit frame",
+   "selected_run": "realism_line5_chained",
+   "caution": "Choose the frame by eye, not by taking the last encoded one - pick a settled pose after speech ends and reject open-mouth tails - and cut the outgoing clip at exactly the timestamp the frame came from. The frame is a decoded video frame, so its artifacts propagate; budget a little prompt adherence for it."
+  },
+  "hands_and_physical_contact": {
+   "primary": "Kling 3 Pro text-to-video, single preparation-contact-release chain",
+   "selected_run": "realism_dough_v2",
+   "caution": "Name the forces and the body parts carrying them. Negative instructions about repetition are unreliable - this take started a second cycle anyway - so buy enough length to trim, and grade the result to the surrounding footage."
+  }
+ },
+ "findings": [
+  "**Revise by delta, not by remake.** Only four of ten plates changed words, so only four were re-bought. $4.20 against the $7.88 the original cut cost. Because every new line was generated from the same reference frame as the originals, the reused and regenerated takes intercut invisibly.",
+  "**The corrected length rule held.** Sizing each shot from the measured 0.48s-per-word rate produced four usable takes with no repair round, against the previous loop's one-in-four failure. Loop one's 1.3x guidance is now formally superseded.",
+  "**Authored screens are how a testimonial explains a product.** The spoken lines say what she uses and roughly how; the two screens show the actual mechanic - availability in, schedule out, everyone notified. That work is free, deterministic and spells correctly, and it is the only part of the film that could not have been generated.",
+  "**An authored screen must survive being checked.** The first build of the schedule grid put Aisha on Thursday and Tomas on Friday, contradicting the availability screen shown seconds earlier. Nothing in the render pipeline can catch that - it is internally consistent HTML - and it was caught only by reading the two screens against each other. Invented data still has to be true to itself.",
+  "**Jargon is a clarity bug.** The product was called ROTA, which is British trade jargon for a staff schedule. Renaming it Crew and saying 'staff schedule' in the script cost nothing and removed the single biggest comprehension barrier in the film.",
+  "**Continuity is conditioned, not described.** The same improved prompt from the shared anchor made the cut worse than the baseline; the same prompt from the outgoing clip's exit frame dropped the head-region seam from 5.27x to 1.19x a normal frame of motion. The control cost $0.90 and is the only reason that sentence can be said at all. Prompt text asking two shots to match is a hope; handing the second shot the first one's last frame is a mechanism.",
+  "**Choose the handoff frame by eye.** Nine candidates were pulled between 4.80s and 5.90s and the last encoded frame was not the right one. 5.125s was taken because the lips had just closed after speech and the eyes were open; the 5.4-5.9s open-mouth tail would have started the next shot mid-vowel. The tooling now refuses to build unless a human approved a single named frame and recorded why.",
+  "**Better prompts can make an edit worse.** The shot contract improved the face and the hands, and simultaneously reframed the interview tighter than the seven plates it has to live beside. A realism gain measured on one shot is not a gain on the film. Judge a prompt change at the cut, not in the clip.",
+  "**Negative instructions are not constraints.** 'No second kneading cycle' was ignored; the take starts another press at 4.5s. It cost nothing because the shot was bought long enough to trim. Buy the length that lets the edit fix what the prompt cannot.",
+  "**A clean transcript is not a clean take.** The line re-bought as `line3_pain_v2` was word-perfect the first time and still unusable, because the model volunteered an offensive hand gesture. Every automatic gate in this system reads pixels or words. Somebody still has to watch it."
+ ],
+ "changed_this_loop": "The arc is explicit where it was previously implied: problem, what she uses, how it helps, result. Two authored product screens carry the mechanic, the product is named on screen and in speech, and 'nine minutes' finally has a stated subject.\n\nThe second half of the loop rebuilt how shots are asked for. A shot now declares the state it enters on and the state it exits on across ten fields, and a join marked continuous is rejected if any of them differ. Dialogue prompts direct observable behaviour - refocusing eyes, irregular blinking, breath in the shoulders, hands resting low - instead of naming emotions, and the negative list now names the AI-face signature directly. Most importantly, continuity stopped being asserted in prose and started being conditioned: the reviewed exit frame of one clip is uploaded as the input image of the next. Full write-up in docs/CREW_REALISM_REPORT.md.",
+ "caveat": "One trial per condition. Seeds are repeated deliberately inside the controlled pairs and never across models. No confidence intervals."
 }

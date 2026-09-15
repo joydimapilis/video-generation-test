@@ -1,0 +1,11 @@
+# Local media and diagnostics; preserve editable source and provenance.
+assets/*.ttf
+assets/*.mp4
+assets/*.wav
+assets/voice/
+.hyperframes/
+.media/
+.thumbnails/
+.waveform-cache/
+snapshots/
+renders/

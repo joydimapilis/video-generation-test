@@ -1,0 +1,196 @@
+{
+  "duration": 49.0,
+  "video_cuts": [
+    [
+      1,
+      "hero",
+      0,
+      7.3,
+      0
+    ],
+    [
+      2,
+      "dough",
+      7.3,
+      2,
+      2.5
+    ],
+    [
+      3,
+      "line2",
+      9.3,
+      3.3,
+      1.1
+    ],
+    [
+      4,
+      "paper",
+      12.6,
+      3.1,
+      0.6
+    ],
+    [
+      5,
+      "linec",
+      15.7,
+      5.6,
+      0
+    ],
+    [
+      6,
+      "room",
+      21.3,
+      1.7,
+      1.2
+    ],
+    [
+      7,
+      "line4",
+      23,
+      5.125,
+      0
+    ],
+    [
+      13,
+      "line5",
+      28.125,
+      2,
+      0
+    ],
+    [
+      10,
+      "line6",
+      37,
+      6,
+      0
+    ],
+    [
+      11,
+      "oven",
+      43,
+      2.5,
+      1.8
+    ]
+  ],
+  "screen_a": [
+    30.125,
+    2.625
+  ],
+  "screen_b": [
+    32.75,
+    4.25
+  ],
+  "close": [
+    45,
+    4
+  ],
+  "brand_windows": [
+    [
+      0,
+      30.125
+    ],
+    [
+      43,
+      2
+    ]
+  ],
+  "continuous_join": {
+    "source": "artifacts/library-loop-6/outputs/realism_line4_v2.mp4",
+    "source_sha256": "39dcf4af3423c63f0eb24a70fd2bcfb6ef5dc1f283e948c1aa745d2783754ea9",
+    "source_duration": 6.016,
+    "selected_at": 5.125,
+    "previous_cut_end": 5.125,
+    "reference": "artifacts/library-loop-6/realism/selected/exit-5.125.png",
+    "reference_sha256": "c1dd6c4a5d34a508275c78c089164277c5e5c35519a0c8de06af269cf910c5fb",
+    "reviewed": true,
+    "review_reason": "Near-closed lips just after recognized speech ends at 5.06; open eyes, intact face and apron; reject 5.4-5.9 open-mouth tail. Small residual head motion remains, so review both sides of the generated join.",
+    "limitation": "Source timestamp seeks to a decoded frame; inspect the rendered joint, not just this still."
+  },
+  "shot_handoffs": [
+    {
+      "from": "hero",
+      "to": "dough",
+      "kind": "cutaway",
+      "entry": "hands already weighted on dough",
+      "exit": "hands release, dough remains on bench",
+      "reason": "causal tactile insert, not asserted to be the speaker hands"
+    },
+    {
+      "from": "dough",
+      "to": "line2",
+      "kind": "cutaway",
+      "entry": "same anchor interview setup",
+      "exit": "sentence continues across paper cutaway"
+    },
+    {
+      "from": "line2",
+      "to": "paper",
+      "kind": "cutaway",
+      "entry": "schedule texture and pencil marks",
+      "exit": "same warm room, intentional detail change"
+    },
+    {
+      "from": "paper",
+      "to": "linec",
+      "kind": "cutaway",
+      "entry": "restored interview composition",
+      "exit": "end of complaint; no finger counting"
+    },
+    {
+      "from": "linec",
+      "to": "room",
+      "kind": "cutaway",
+      "entry": "bakery environment",
+      "exit": "warm interior context"
+    },
+    {
+      "from": "room",
+      "to": "line4",
+      "kind": "cutaway",
+      "entry": "original identity anchor",
+      "exit": "selected source frame at 5.125 seconds"
+    },
+    {
+      "from": "line4",
+      "to": "line5",
+      "kind": "continuous",
+      "entry": "actual preceding exit image",
+      "exit": "dialogue continues beneath availability screen"
+    },
+    {
+      "from": "line5",
+      "to": "screen_a",
+      "kind": "cutaway",
+      "entry": "authored availability, same narrator sound bridge",
+      "exit": "completed available staff list"
+    },
+    {
+      "from": "screen_a",
+      "to": "screen_b",
+      "kind": "intentional_cut",
+      "entry": "same palette, grid and type scale",
+      "exit": "schedule populated, availability constraints retained"
+    },
+    {
+      "from": "screen_b",
+      "to": "line6",
+      "kind": "cutaway",
+      "entry": "common identity anchor",
+      "exit": "quiet smile after payoff"
+    },
+    {
+      "from": "line6",
+      "to": "oven",
+      "kind": "cutaway",
+      "entry": "warm light and bread motif",
+      "exit": "bread clear of oven"
+    },
+    {
+      "from": "oven",
+      "to": "close",
+      "kind": "intentional_cut",
+      "entry": "existing half-second fade to brand",
+      "exit": "legible brand hold"
+    }
+  ]
+}

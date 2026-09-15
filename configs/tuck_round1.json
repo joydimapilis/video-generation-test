@@ -1,0 +1,28 @@
+{
+  "experiment": "tuck-product-launch-2026-09-15",
+  "budget_root": "artifacts/library-loop-12",
+  "pricing_checked": "2026-09-15",
+  "pricing_sources": [
+    "https://fal.ai/models/minimax/h3-max/text-to-video"
+  ],
+  "cost_basis": "Normal post-Sept14 H3 Max 768P rate $0.08/s: one 10s take $0.80; runner adds 15% reserve. No expired promotional pricing.",
+  "runs": [
+    {
+      "id": "tuck_receipt_h3max_v1",
+      "endpoint": "minimax/h3-max/text-to-video",
+      "estimate_cents": 80,
+      "use_case": "industrial_human",
+      "audio_requested": false,
+      "version": 1,
+      "hypothesis": "Prior Trace hand screening supports H3 Max for a tightly framed, simple hand action. One new continuous take supplies early paperwork and late relaxed withdrawal, retaining the same hand and desk across a UI cutaway.",
+      "input": {
+        "prompt": "A single continuous ten-second premium technology commercial shot, locked straight-down overhead camera. Matte warm charcoal desktop fills the frame. A small portion of a graphite laptop keyboard is visible at the far upper right edge; no screen is visible. Three small off-white thermal paper receipts rest on the right half of the desk, with soft indistinct gray printed lines, no legible words. The left forty percent of the frame is empty charcoal desk for editorial negative space. A natural adult right hand with medium warm skin and a simple dark olive sleeve enters from the lower right. At the start, the index finger and thumb gently slide the top receipt a few centimeters toward the center-right and lay it flat. The other fingers stay relaxed. The hand rests beside the paper for a quiet beat. Near the end, the hand withdraws slowly out of frame to the lower right, leaving the receipts still. One simple slide and one withdrawal, no picking up, no folding, no typing. Warm low afternoon window light from the left reveals real skin texture, ordinary fingernails, fine paper fibers and gentle shadows. Natural photographic detail, restrained amber highlights, neutral dark surface. Crisp hand and paper, moderate depth of field. No face, no body, no second hand, no camera move, no cuts, no text overlays, no logos, no talking.",
+        "duration": 10,
+        "aspect_ratio": "16:9",
+        "resolution": "768P",
+        "seed": 91512,
+        "prompt_expansion_mode": "fast"
+      }
+    }
+  ]
+}

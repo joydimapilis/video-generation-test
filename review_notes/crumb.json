@@ -1,0 +1,281 @@
+{
+  "concept": "Crumb: three newly generated bakery-preorder samples",
+  "subtitle": "12 new generations, three fresh edits, one shared $10 ledger. No earlier generated video enters these edits.",
+  "criteria": [
+    "prompt_adherence",
+    "sampled_stability",
+    "composition",
+    "edit_readiness"
+  ],
+  "method": "Agent subjective visual review of eight chronological frames per take, selected full-resolution stills, actual decoded product joint measurements, local Whisper base.en transcripts and full video decode. No independent audio listening, exhaustive motion review, lip-sync measurement or audience test. Hand dynamics, subtle eye movement and voice identity remain unmeasured. Scores are screening judgments, not calibrated quality metrics.",
+  "caveat": "One take per condition. Same prompts across models, different sampled identities, resolution and seed semantics. Revisions hold endpoint seed and speech fixed but change prompt and scene/identity. Paired product tests share exact references. Compare within use case only.",
+  "runs": {
+    "crumb_ugc_h3_v1": {
+      "scores": [
+        8,
+        8,
+        8,
+        7.5
+      ],
+      "decision": "provisional",
+      "note": "Correct two-sentence script, stable kitchen/bag and resting hands in samples. Broad eyebrow and head-angle changes; 1.44s transcript gap slows pacing. Face is comparatively smooth. New T2V identity; no cross-shot test.",
+      "detailed_scores": {
+        "human_realism": 7.5,
+        "face_realism": 7.5,
+        "prompt_adherence": 8,
+        "consistency": 8,
+        "camera_movement": 8.5,
+        "context_clarity": 9,
+        "identity_consistency": 8
+      }
+    },
+    "crumb_ugc_h3max_v1": {
+      "scores": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "decision": "provisional",
+      "note": "Correct script; coherent overlapping forearms and visible fingers in sampled frames. Comfortable close phone framing; roughly 1.42s gap between clauses. Face still quite smooth and bright-eyed. No clear realism improvement over Veo established.",
+      "detailed_scores": {
+        "human_realism": 7.5,
+        "face_realism": 7.5,
+        "prompt_adherence": 8,
+        "consistency": 8,
+        "camera_movement": 8.5,
+        "context_clarity": 9,
+        "identity_consistency": 8
+      }
+    },
+    "crumb_ugc_veo_v1": {
+      "scores": [
+        8,
+        8.5,
+        8.5,
+        8.5
+      ],
+      "decision": "accept",
+      "note": "Selected for stronger visible facial texture and credible domestic lighting in samples. Correct script; forearms mostly rest. Bag glance becomes a larger head turn and starts before final words; 1.8s transcript gap remains. Do not equate selected take with perfect micro-expression or lip-sync accuracy.",
+      "detailed_scores": {
+        "human_realism": 8.5,
+        "face_realism": 8.5,
+        "prompt_adherence": 8,
+        "consistency": 8.5,
+        "camera_movement": 8.5,
+        "context_clarity": 9,
+        "identity_consistency": 8
+      }
+    },
+    "crumb_interview_h3_v1": {
+      "scores": [
+        3,
+        7.5,
+        7.5,
+        2
+      ],
+      "decision": "reject",
+      "note": "Local transcript contains extra instruction-like speech after the intended line: delivery is steady and unmodulated. Sampled performance is expressive. Reject rather than cut around a prompt-leak failure without listening. The returned expanded prompt is retained in the ledger.",
+      "detailed_scores": {
+        "human_realism": 6.5,
+        "face_realism": 6.5,
+        "prompt_adherence": 3,
+        "consistency": 7.5,
+        "camera_movement": 8.5,
+        "identity_consistency": 8,
+        "context_clarity": 9
+      }
+    },
+    "crumb_interview_h3max_v1": {
+      "scores": [
+        6,
+        7.5,
+        7.5,
+        5
+      ],
+      "decision": "reject",
+      "note": "Correct intended words but exaggerated cheek texture and repeated closed-eye expressions conflict with restrained interview direction. No hands visible, so hand motion untested. Prompt mentions pores/lines; revised condition removes that emphasis.",
+      "detailed_scores": {
+        "human_realism": 6,
+        "face_realism": 6,
+        "prompt_adherence": 6,
+        "consistency": 7.5,
+        "camera_movement": 8.5,
+        "identity_consistency": 8,
+        "context_clarity": 9
+      }
+    },
+    "crumb_interview_veo_v1": {
+      "scores": [
+        6.5,
+        8,
+        8,
+        5.5
+      ],
+      "decision": "reject",
+      "note": "Correct intended line transcribes; skin lines look exaggerated, eyebrow and mouth expressions conspicuous. Unrequested partial interviewer visible on frame right. New revision removes texture list and changes to broad low-contrast daylight.",
+      "detailed_scores": {
+        "human_realism": 6.5,
+        "face_realism": 6.5,
+        "prompt_adherence": 6.5,
+        "consistency": 8,
+        "camera_movement": 8.5,
+        "identity_consistency": 8,
+        "context_clarity": 9
+      }
+    },
+    "crumb_interview_h3max_v2": {
+      "scores": [
+        8,
+        8.5,
+        8.5,
+        8.5
+      ],
+      "decision": "accept",
+      "note": "Revised prompt yields a much more ordinary face than its first condition, preserved apron and stable bench/window in samples. Speech completes at 5.84s, lips settle by reviewed 6.2s. Eyebrow activity and smooth skin remain. Selected as an affordable calm interview candidate and source of the new return reference; this is a new identity, not proof of causal improvement.",
+      "detailed_scores": {
+        "human_realism": 8,
+        "face_realism": 8,
+        "prompt_adherence": 8,
+        "consistency": 8.5,
+        "camera_movement": 8.5,
+        "identity_consistency": 8,
+        "context_clarity": 9
+      }
+    },
+    "crumb_interview_veo_v2": {
+      "scores": [
+        7.5,
+        8.5,
+        8.5,
+        8
+      ],
+      "decision": "provisional",
+      "note": "More ordinary skin and a coherent bakery after simplified prompt; intended line completes at 5.16s. An unrequested rising hand appears late, despite hands-below-frame direction. Strong alternative for face detail, but retained as comparison rather than chosen for this settled pose.",
+      "detailed_scores": {
+        "human_realism": 8.5,
+        "face_realism": 8.5,
+        "prompt_adherence": 7.5,
+        "consistency": 8.5,
+        "camera_movement": 8.5,
+        "identity_consistency": 8,
+        "context_clarity": 9
+      }
+    },
+    "crumb_pastry_kling_v1": {
+      "scores": [
+        8.5,
+        9,
+        9,
+        9
+      ],
+      "decision": "accept",
+      "note": "Fresh coherent croissant, parchment and plate. Push-in is stronger than the requested few centimeters, but remains one camera direction with stable food. Reviewed 4.5s exit supplies both continuation conditions. Natural food texture; not a real product fidelity benchmark.",
+      "detailed_scores": {
+        "human_realism": null,
+        "face_realism": null,
+        "prompt_adherence": 8.5,
+        "consistency": 9,
+        "camera_movement": 8.5,
+        "product_accuracy": 9,
+        "cinematic_quality": 8.5
+      }
+    },
+    "crumb_continuation_h3max": {
+      "scores": [
+        8.5,
+        9,
+        8.5,
+        8
+      ],
+      "decision": "provisional",
+      "note": "Stable pastry and tile layout in samples. Actual previous-frame to entry RGB MAE 4.59/255, with a slight crop/appearance change. Cheap alternative, but Kling gives the closer boundary in this run. Static hold only; not moving-object continuity.",
+      "detailed_scores": {
+        "human_realism": null,
+        "face_realism": null,
+        "prompt_adherence": 8.5,
+        "consistency": 9,
+        "camera_movement": 8.5,
+        "product_accuracy": 9,
+        "cinematic_quality": 8.5,
+        "entry_exit_continuity": 8,
+        "transition_quality": 8
+      }
+    },
+    "crumb_continuation_kling": {
+      "scores": [
+        9,
+        9,
+        9,
+        9.5
+      ],
+      "decision": "accept",
+      "note": "Selected new continuation. Shared first/last references preserve pastry geometry, plate, parchment, light and framing. Actual boundary MAE 1.34/255; first-to-middle 1.43/255. Same prompt as H3 Max, but resolution and model internals differ. No claim that all transitions improve this much.",
+      "detailed_scores": {
+        "human_realism": null,
+        "face_realism": null,
+        "prompt_adherence": 9,
+        "consistency": 9,
+        "camera_movement": 8.5,
+        "product_accuracy": 9,
+        "cinematic_quality": 8.5,
+        "entry_exit_continuity": 9.5,
+        "transition_quality": 9.5
+      }
+    },
+    "crumb_baker_return_h3max": {
+      "scores": [
+        8.5,
+        8.5,
+        8.5,
+        8.5
+      ],
+      "decision": "accept",
+      "note": "New short closing line transcribes correctly (0.90\u20132.02s). Sampled face, hairstyle, apron, counter and window remain recognizable against the fresh 6.2s reference. Lips settle into a slight smile. Selected first 3s after the UI cutaway. Voice identity and lip sync remain unmeasured.",
+      "detailed_scores": {
+        "human_realism": 8,
+        "face_realism": 8,
+        "prompt_adherence": 8.5,
+        "consistency": 8.5,
+        "camera_movement": 8.5,
+        "identity_consistency": 8.5,
+        "context_clarity": 9
+      }
+    }
+  },
+  "changed_this_loop": "New fictional Crumb concept and original scripts; current H3 Max screening; simpler human performance prompt revision; actual pastry exit-frame continuation comparison; new identity-conditioned baker return; three exact authored UI films.",
+  "routing": {
+    "ugc": {
+      "primary": "Veo 3.1 Fast T2V",
+      "selected_run": "crumb_ugc_veo_v1",
+      "caution": "Selected for this shot; long spoken pause remains."
+    },
+    "interview": {
+      "primary": "H3 Max simplified T2V + fresh-reference I2V return",
+      "selected_run": "crumb_interview_h3max_v2 + crumb_baker_return_h3max",
+      "caution": "Visual continuity sampled; voice identity and lip sync not measured."
+    },
+    "product": {
+      "primary": "Kling 3.0 Pro",
+      "selected_run": "crumb_pastry_kling_v1",
+      "caution": "Simple stationary food and one camera direction."
+    },
+    "product_continuation": {
+      "primary": "Kling 3.0 Pro paired endpoints",
+      "selected_run": "crumb_continuation_kling",
+      "caution": "Near-static test only."
+    },
+    "exact_ui": {
+      "primary": "HyperFrames 0.8.35",
+      "caution": "Authored illustrative UI, not a recording of a deployed Crumb service."
+    }
+  },
+  "findings": [
+    "Texture adjectives can be overinterpreted: removing them improved ordinary appearance in both revised baker takes in this small screen.",
+    "Base H3 interview leaked instruction-like speech into the local transcript; retain rejection and do not repeat unchanged.",
+    "H3 Max costs less in the current launch promotion; both price and faster return are separate from realism.",
+    "A shared exit frame gave Kling a closer product boundary than H3 Max here.",
+    "Exact text, numeric list totals and preorder states are authored and checked in HyperFrames.",
+    "Faces remain untreated; sampled similarity is not proof that viewers cannot detect generated people."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "experiment": "trace-product-film-2026-09-15",
+  "budget_root": "artifacts/library-loop-10",
+  "pricing_checked": "2026-09-15",
+  "pricing_sources": ["https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video", "https://fal.ai/models/minimax/h3-max/text-to-video"],
+  "cost_basis": "Kling Pro silent $0.112/s: 5s=$0.56. H3 Max 768P normal rate from Sept 15 $0.08/s: 5s=$0.40. Expired $0.02/s promotion is deliberately not used. Shared $10 cap; runner adds 15% reserve.",
+  "runs": [
+    {
+      "id": "trace_hands_kling_v1", "endpoint": "fal-ai/kling-video/v3/pro/text-to-video", "estimate_cents": 56,
+      "use_case": "industrial_human", "audio_requested": false, "version": 1,
+      "hypothesis": "Prior faceless device-hand routing favored Kling. Test a single simple trackpad action with a locked camera; no generated readable UI.",
+      "input": {"prompt": "One continuous five-second cinematic close-up at desk height. A real-looking adult right hand rests naturally on the large trackpad of an unbranded dark graphite laptop. The index finger presses the trackpad once, gently, then rests. Other fingers stay relaxed and still. Wrist enters from frame right. Laptop keyboard runs diagonally toward the upper left; screen is entirely out of frame. Matte midnight-blue desk, soft cool window light from camera left, pale blue reflected edge on the laptop. Natural skin, ordinary nails, quiet concentration expressed only through the hand. Locked camera, 50mm lens, moderate depth of field keeping fingers and trackpad crisp, subtle photographic grain. A restrained premium technology commercial. No typing, no second hand, no face, no camera movement, no cuts, no text, no logos.", "duration": "5", "aspect_ratio": "16:9", "generate_audio": false}
+    },
+    {
+      "id": "trace_hands_h3max_v1", "endpoint": "minimax/h3-max/text-to-video", "estimate_cents": 40,
+      "use_case": "industrial_human", "audio_requested": false, "version": 1,
+      "hypothesis": "Small matched-prompt screen against Kling for hand contact and device geometry. Native sound will not be used. One seed per model cannot establish general superiority.",
+      "input": {"prompt": "One continuous five-second cinematic close-up at desk height. A real-looking adult right hand rests naturally on the large trackpad of an unbranded dark graphite laptop. The index finger presses the trackpad once, gently, then rests. Other fingers stay relaxed and still. Wrist enters from frame right. Laptop keyboard runs diagonally toward the upper left; screen is entirely out of frame. Matte midnight-blue desk, soft cool window light from camera left, pale blue reflected edge on the laptop. Natural skin, ordinary nails, quiet concentration expressed only through the hand. Locked camera, 50mm lens, moderate depth of field keeping fingers and trackpad crisp, subtle photographic grain. A restrained premium technology commercial. No typing, no second hand, no face, no camera movement, no cuts, no text, no logos.", "duration": 5, "aspect_ratio": "16:9", "resolution": "768P", "seed": 915, "prompt_expansion_mode": "fast"}
+    }
+  ]
+}

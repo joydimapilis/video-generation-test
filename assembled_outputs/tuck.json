@@ -1,0 +1,31 @@
+{
+  "name": "tuck",
+  "product": "Fictional AI expense report tool",
+  "project": "videos/tuck",
+  "duration": 30,
+  "output": "artifacts/final_outcome/tuck/tuck.mp4",
+  "source_runs": [
+    "tuck_receipt_h3max_v2"
+  ],
+  "budget_root": "artifacts/library-loop-12",
+  "scenes": [
+    {
+      "role": "physical_hook_and_reveal",
+      "start": 0,
+      "duration": 8,
+      "engine": "H3 Max + HyperFrames"
+    },
+    {
+      "role": "extract_review_report",
+      "start": 8,
+      "duration": 14,
+      "engine": "HyperFrames"
+    },
+    {
+      "role": "human_callback_and_cta",
+      "start": 22,
+      "duration": 8,
+      "engine": "H3 Max + HyperFrames"
+    }
+  ]
+}

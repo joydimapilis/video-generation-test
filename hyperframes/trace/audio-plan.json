@@ -1,0 +1,50 @@
+{
+  "duration": 33,
+  "voice": "Kokoro-82M af_heart speed 1.03, local",
+  "schedule": [
+    {
+      "file": "01.wav",
+      "start": 0.3,
+      "duration": 2.176,
+      "text": "A bug report shouldn't start a guessing game."
+    },
+    {
+      "file": "02.wav",
+      "start": 3.5,
+      "duration": 3.050666666666667,
+      "text": "Meet Trace. Browser bug reports, with the context."
+    },
+    {
+      "file": "03.wav",
+      "start": 9.55,
+      "duration": 1.4506666666666668,
+      "text": "Record the problem once."
+    },
+    {
+      "file": "04.wav",
+      "start": 13.1,
+      "duration": 3.9466666666666668,
+      "text": "Trace keeps the steps, the screenshot, and the browser details together."
+    },
+    {
+      "file": "05.wav",
+      "start": 19.4,
+      "duration": 2.3893333333333335,
+      "text": "Share one report your developer can reproduce."
+    },
+    {
+      "file": "06.wav",
+      "start": 24.0,
+      "duration": 3.2,
+      "text": "Fewer follow-up questions. A clearer place to start."
+    },
+    {
+      "file": "07.wav",
+      "start": 29.0,
+      "duration": 1.7493333333333334,
+      "text": "Trace. Capture your next bug."
+    }
+  ],
+  "score": "Original deterministic 108 BPM synth, seed915",
+  "predicted_peak": 0.6691690800429544
+}

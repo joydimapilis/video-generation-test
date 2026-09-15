@@ -1,0 +1,356 @@
+{
+  "tts_provider": "kokoro",
+  "voice_id": "af_heart",
+  "bgm": null,
+  "bgm_pending": false,
+  "bgm_provider": null,
+  "bgm_pid": null,
+  "bgm_log": null,
+  "bgm_mode": null,
+  "bgm_target_duration_s": null,
+  "bgm_seed_duration_s": null,
+  "bgm_loop_count": null,
+  "voices": [
+    {
+      "id": "01",
+      "path": "assets/voice/01.wav",
+      "duration_s": 6.123,
+      "words": [
+        {
+          "id": "w0",
+          "text": "One",
+          "start": 0.05,
+          "end": 0.29
+        },
+        {
+          "id": "w1",
+          "text": "small",
+          "start": 0.29,
+          "end": 0.78
+        },
+        {
+          "id": "w2",
+          "text": "receipt,",
+          "start": 0.78,
+          "end": 1.54
+        },
+        {
+          "id": "w3",
+          "text": "one",
+          "start": 1.58,
+          "end": 1.81
+        },
+        {
+          "id": "w4",
+          "text": "more",
+          "start": 1.81,
+          "end": 2.17
+        },
+        {
+          "id": "w5",
+          "text": "thing",
+          "start": 2.17,
+          "end": 2.62
+        },
+        {
+          "id": "w6",
+          "text": "to",
+          "start": 2.62,
+          "end": 2.65
+        },
+        {
+          "id": "w7",
+          "text": "do.",
+          "start": 3,
+          "end": 3.04
+        },
+        {
+          "id": "w8",
+          "text": "Tuck",
+          "start": 3.09,
+          "end": 3.29
+        },
+        {
+          "id": "w9",
+          "text": "turns",
+          "start": 3.29,
+          "end": 3.61
+        },
+        {
+          "id": "w10",
+          "text": "receipts",
+          "start": 3.61,
+          "end": 4.13
+        },
+        {
+          "id": "w11",
+          "text": "into",
+          "start": 4.13,
+          "end": 4.24
+        },
+        {
+          "id": "w12",
+          "text": "ready",
+          "start": 4.62,
+          "end": 4.71
+        },
+        {
+          "id": "w13",
+          "text": "to",
+          "start": 4.71,
+          "end": 4.84
+        },
+        {
+          "id": "w14",
+          "text": "send",
+          "start": 4.84,
+          "end": 5.02
+        },
+        {
+          "id": "w15",
+          "text": "expense",
+          "start": 5.12,
+          "end": 5.54
+        },
+        {
+          "id": "w16",
+          "text": "reports.",
+          "start": 5.54,
+          "end": 6.24
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "path": "assets/voice/02.wav",
+      "duration_s": 9.451,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Drop",
+          "start": 0.04,
+          "end": 0.33
+        },
+        {
+          "id": "w1",
+          "text": "in",
+          "start": 0.4,
+          "end": 0.51
+        },
+        {
+          "id": "w2",
+          "text": "your",
+          "start": 0.51,
+          "end": 0.72
+        },
+        {
+          "id": "w3",
+          "text": "receipts,",
+          "start": 0.82,
+          "end": 1.73
+        },
+        {
+          "id": "w4",
+          "text": "extract",
+          "start": 1.74,
+          "end": 2.33
+        },
+        {
+          "id": "w5",
+          "text": "the",
+          "start": 2.33,
+          "end": 2.57
+        },
+        {
+          "id": "w6",
+          "text": "details,",
+          "start": 2.58,
+          "end": 3.22
+        },
+        {
+          "id": "w7",
+          "text": "merchant",
+          "start": 3.25,
+          "end": 3.73
+        },
+        {
+          "id": "w8",
+          "text": "date,",
+          "start": 3.73,
+          "end": 4.02
+        },
+        {
+          "id": "w9",
+          "text": "amount,",
+          "start": 4.12,
+          "end": 4.53
+        },
+        {
+          "id": "w10",
+          "text": "ready",
+          "start": 4.65,
+          "end": 4.89
+        },
+        {
+          "id": "w11",
+          "text": "to",
+          "start": 4.89,
+          "end": 5
+        },
+        {
+          "id": "w12",
+          "text": "review,",
+          "start": 5,
+          "end": 5.51
+        },
+        {
+          "id": "w13",
+          "text": "check",
+          "start": 5.61,
+          "end": 5.77
+        },
+        {
+          "id": "w14",
+          "text": "it",
+          "start": 5.82,
+          "end": 5.92
+        },
+        {
+          "id": "w15",
+          "text": "once,",
+          "start": 5.92,
+          "end": 6.35
+        },
+        {
+          "id": "w16",
+          "text": "create",
+          "start": 6.35,
+          "end": 6.77
+        },
+        {
+          "id": "w17",
+          "text": "your",
+          "start": 6.77,
+          "end": 6.98
+        },
+        {
+          "id": "w18",
+          "text": "report,",
+          "start": 7.38,
+          "end": 7.66
+        },
+        {
+          "id": "w19",
+          "text": "the",
+          "start": 7.66,
+          "end": 7.88
+        },
+        {
+          "id": "w20",
+          "text": "receipts",
+          "start": 7.88,
+          "end": 8.47
+        },
+        {
+          "id": "w21",
+          "text": "stay",
+          "start": 8.47,
+          "end": 8.59
+        },
+        {
+          "id": "w22",
+          "text": "attached.",
+          "start": 9.03,
+          "end": 9.4
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "path": "assets/voice/03.wav",
+      "duration_s": 4.309,
+      "words": [
+        {
+          "id": "w0",
+          "text": "That's",
+          "start": 0.07,
+          "end": 0.3
+        },
+        {
+          "id": "w1",
+          "text": "the",
+          "start": 0.3,
+          "end": 0.45
+        },
+        {
+          "id": "w2",
+          "text": "paperwork",
+          "start": 0.45,
+          "end": 0.9
+        },
+        {
+          "id": "w3",
+          "text": "done.",
+          "start": 0.9,
+          "end": 1.19
+        },
+        {
+          "id": "w4",
+          "text": "Now",
+          "start": 1.3,
+          "end": 1.48
+        },
+        {
+          "id": "w5",
+          "text": "back",
+          "start": 1.48,
+          "end": 1.76
+        },
+        {
+          "id": "w6",
+          "text": "to",
+          "start": 1.86,
+          "end": 1.89
+        },
+        {
+          "id": "w7",
+          "text": "your",
+          "start": 1.92,
+          "end": 2.19
+        },
+        {
+          "id": "w8",
+          "text": "day.",
+          "start": 2.19,
+          "end": 2.68
+        },
+        {
+          "id": "w9",
+          "text": "Tuck.",
+          "start": 2.74,
+          "end": 3.04
+        },
+        {
+          "id": "w10",
+          "text": "Receipts",
+          "start": 3.3,
+          "end": 3.68
+        },
+        {
+          "id": "w11",
+          "text": "to",
+          "start": 3.69,
+          "end": 3.78
+        },
+        {
+          "id": "w12",
+          "text": "ready.",
+          "start": 3.78,
+          "end": 4.19
+        }
+      ]
+    }
+  ],
+  "sfx": [],
+  "total_duration_s": 19.883
+}

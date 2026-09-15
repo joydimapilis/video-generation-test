@@ -1,0 +1,30 @@
+{
+  "output_id": "crew_library_loop_6_realism_revision",
+  "output_path": "artifacts/final_outcome/crew-improved/crew-improved-final.mp4",
+  "comparison_path": "artifacts/final_outcome/crew-improved/crew-before-after.mp4",
+  "duration_seconds": 49.0,
+  "resolution": "1920x1080",
+  "assembly_tool": "HyperFrames 0.8.35",
+  "source_runs": [
+    "broll_oven_v1",
+    "broll_room_v1",
+    "broll_rota_v1",
+    "line2_schedule_v1",
+    "line3_pain_v2",
+    "line6_result_v1",
+    "realism_dough_v2",
+    "realism_line4_v2",
+    "realism_line5_chained",
+    "talk_hero_v1"
+  ],
+  "supersedes": "crew_library_loop_6_final",
+  "scorecard": "docs/CREW_SCORECARD.md",
+  "report": "docs/CREW_REALISM_REPORT.md",
+  "verification": "artifacts/final_outcome/crew-improved/verification.json",
+  "cost": {
+    "estimated_usd": 8.48,
+    "reserved_usd": 9.79,
+    "cap_usd": 10.0,
+    "invoice_verified": false
+  }
+}

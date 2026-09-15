@@ -1,0 +1,44 @@
+{
+  "experiment": "library-loop-12",
+  "status": "Applied and sampled in Tuck",
+  "patterns": [
+    {
+      "name": "blank reverse, exact digital front",
+      "recipe": "Show the unprinted back of a physical paper item in generated footage. Put all meaningful labels, dates and amounts in authored UI.",
+      "evidence": "tuck_receipt_h3max_v1 rejected for text; v2 selected",
+      "limit": "Still judge physical proportions; the v2 paper is wider than the requested receipt strip."
+    },
+    {
+      "name": "single-take human callback",
+      "recipe": "Generate a simple action and later withdrawal in one continuous take. Use distinct source ranges around the product walkthrough. Preserve lighting, wardrobe and camera.",
+      "evidence": "videos/tuck/sources.json; encoded source-timing checks",
+      "limit": "Not evidence for independent multi-shot identity consistency."
+    },
+    {
+      "name": "flat hand, small action",
+      "recipe": "Rest the palm, keep fingers loosely together, slide a light object a short distance, then withdraw. Avoid a sequence of grasping, lifting, rotating and placing.",
+      "evidence": "Targeted H3 Max v2; eight-frame sampled review",
+      "limit": "No calibrated hand-motion test."
+    },
+    {
+      "name": "physical shape becomes product surface",
+      "recipe": "Align a blank authored plane with the physical paper, rotate it flat and expand it. Keep it opaque, then introduce exact UI after it settles.",
+      "evidence": "01-receipt and encoded transition sheet",
+      "limit": "An editorial shape match, not tracked compositing onto a moving real screen."
+    },
+    {
+      "name": "finished work beside human exit",
+      "recipe": "Keep the completed report readable in one region while a small return shot shows the hand leave. Hold the final result through the CTA.",
+      "evidence": "03-ready, final encoded hold",
+      "limit": "Final four seconds of source panel are an explicit freeze."
+    }
+  ],
+  "avoid": [
+    "Prominent generated receipt glyphs",
+    "Unnaturally pinched hands",
+    "A cursor covering numbers being reviewed",
+    "No response after a primary action",
+    "Claiming a new matching shot when it is a later source range",
+    "Treating a mocked report as actual reimbursement approval"
+  ]
+}

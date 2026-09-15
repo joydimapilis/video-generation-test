@@ -1,0 +1,37 @@
+[
+  {
+    "source": "hyperframes/crew/assets/CrewSans.ttf",
+    "staged": "hyperframes/cue-object-study/assets/CrewSans.ttf",
+    "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+  },
+  {
+    "source": "hyperframes/crew/assets/CrewSans-Bold.ttf",
+    "staged": "hyperframes/cue-object-study/assets/CrewSans-Bold.ttf",
+    "sha256": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0"
+  },
+  {
+    "source": "hyperframes/crew/assets/CrewSerif.woff2",
+    "staged": "hyperframes/cue-object-study/assets/CrewSerif.woff2",
+    "sha256": "471e321ec7ce908c94dba06848d9088b5d55232d50e962826b3b534e0817b4b1"
+  },
+  {
+    "source": "hyperframes/crew/assets/gsap.min.js",
+    "staged": "hyperframes/cue-object-study/assets/gsap.min.js",
+    "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+  },
+  {
+    "source": "artifacts/library-loop-8/outputs/product_h3_pullback.mp4",
+    "staged": "hyperframes/cue-object-study/assets/product.mp4",
+    "sha256": "bee8fa9e4b108bb02a4e2b488b3a8c3dd8a1926b5a3730ab6c48e69cc90dd283"
+  },
+  {
+    "source": "artifacts/library-loop-8/outputs/product_kling_paired.mp4",
+    "staged": "hyperframes/cue-object-study/assets/continuation.mp4",
+    "sha256": "ec085195712c0ca2a73083a7051023bdd449e56604b12de760c2e85047753ded"
+  },
+  {
+    "staged": "hyperframes/cue-object-study/assets/score.wav",
+    "source": "original deterministic synthesis in scripts/build_round8_samples.py",
+    "music_starts_after_dialogue": false
+  }
+]

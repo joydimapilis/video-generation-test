@@ -241,7 +241,7 @@ def predict_mix_peak(assets, envelope, score_volume, dialogue_tracks):
         start_i = int(row['data_start'] * SR)
         size = min(len(clip), span - start_i)
         if size > 0:
-            summed[start_i:start_i + size] += clip[:size]
+            summed[start_i:start_i + size] += clip[:size] * row.get('volume', 1)
 
     return float(np.max(np.abs(summed)))
 

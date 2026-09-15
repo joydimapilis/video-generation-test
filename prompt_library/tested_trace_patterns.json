@@ -1,0 +1,11 @@
+{
+  "experiment": "library-loop-10",
+  "status": "sampled and applied in Trace",
+  "patterns": [
+    {"name":"product-first bug-report story","recipe":"Name/category from the opening; one concrete failure; capture action; observable steps and context; share result; CTA.","evidence":"hyperframes/trace/index.html; actual film snapshots","limit":"Illustrative fictional UI, not a usability or audience test."},
+    {"name":"single-surface workflow continuity","recipe":"Keep one browser stage alive while explicit states replace its content; land the camera before reading; hide old text before showing replacements.","evidence":"UI scene 9.5–27; check.json; cursor-targets.json","limit":"This does not validate an underlying real application."},
+    {"name":"simple overhead device action","recipe":"One relaxed hand, one small downward tap, settled palm, tight crop excluding screen, locked camera, soft cool light.","evidence":"configs/trace_round2.json; trace_hands_h3max_v2","limit":"Prompt and seed both changed; multiple fingers still move slightly. Do not generalize to complex hand tasks."},
+    {"name":"geometry-verified cursor","recipe":"Measure the button rectangle and rendered cursor tip at the click time. Confirm tip is inside the rectangle and inspect an actual full-frame snapshot.","evidence":"scripts/verify_trace_geometry.cjs; cursor-targets.json","limit":"Onion markers alone can be misleading when the diagnostic applies fit transforms."}
+  ],
+  "avoid": ["Generated UI glyphs", "Small product reveal only at the end", "Repeated interviews for a software workflow", "Treating expired launch prices as current", "Recording a workflow only after its claimed steps already occurred"]
+}

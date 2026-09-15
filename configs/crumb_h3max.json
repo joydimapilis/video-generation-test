@@ -1,0 +1,47 @@
+{
+  "experiment": "crumb-fresh-samples-2026-09-12",
+  "budget_root": "artifacts/library-loop-9",
+  "pricing_checked": "2026-09-12",
+  "pricing_sources": [
+    "https://fal.ai/models/minimax/h3-max/text-to-video"
+  ],
+  "cost_basis": "Launch price 768P $0.02/s through September 14 2026. 6s x two = $0.24. Same shared round9 budget.",
+  "runs": [
+    {
+      "id": "crumb_ugc_h3max_v1",
+      "endpoint": "minimax/h3-max/text-to-video",
+      "estimate_cents": 12,
+      "use_case": "ugc",
+      "audio_requested": true,
+      "version": 1,
+      "line": "I preorder my croissants on Crumb. Breakfast is waiting for me.",
+      "hypothesis": "Newly researched H3 Max post-training claims better acting control. Screen against identical base H3 prompt; no identity reference, so different people are expected.",
+      "input": {
+        "prompt": "One six-second candid phone-camera take, landscape. A fictional woman aged 36 with medium-brown skin, a short uneven dark bob, small freckles and visible under-eye texture, wearing a washed brick-red cotton shirt, sits at a modest cream kitchen table. A plain folded brown bakery bag rests on the table at screen right. Window daylight from camera left, neutral exposure, ordinary phone optics, static eye-level medium close-up. She looks into the lens and says conversationally in English: \"I preorder my croissants on Crumb. Breakfast is waiting for me.\" Her forearms rest on the table; one small glance toward the bag after the last word, then a quiet closed-mouth smile. Natural blink, subtle cheek motion, fine flyaway hairs. No beauty filter, no exaggerated eyebrow lift, no pointing, no product handling, no camera move, no cut, no text or logos. Voice and soft room tone only.",
+        "aspect_ratio": "16:9",
+        "seed": 912,
+        "duration": 6,
+        "resolution": "768P",
+        "prompt_expansion_mode": "fast"
+      }
+    },
+    {
+      "id": "crumb_interview_h3max_v1",
+      "endpoint": "minimax/h3-max/text-to-video",
+      "estimate_cents": 12,
+      "use_case": "interview",
+      "audio_requested": true,
+      "version": 1,
+      "line": "Crumb puts our bakery preorders in one list. We bake what is booked.",
+      "hypothesis": "Newly researched H3 Max post-training claims better acting control. Screen against identical base H3 prompt; no identity reference, so different people are expected.",
+      "input": {
+        "prompt": "One six-second observational bakery interview. A fictional woman baker aged 48, olive skin with uneven pores and smile lines, dark hair loosely tied back with gray strands, in a flour-dusted indigo apron over an oatmeal shirt, sits beside a wooden workbench in a small cream-tiled bakery. Window daylight from camera left, camera locked at eye level, chest-up, hands resting below frame. Her gaze rests on a single interviewer just camera-right. Matter-of-fact, reflective voice in English, beginning promptly: \"Crumb puts our bakery preorders in one list. We bake what is booked.\" After speaking she closes her lips and quietly listens, shoulders settled. Tiny natural eye movements and occasional blink; expression is attentive, no performed enthusiasm. Ordinary documentary lens and unretouched facial texture. No shrugging, head bobbing, broad smiles, music, text, logos or cuts.",
+        "aspect_ratio": "16:9",
+        "seed": 912,
+        "duration": 6,
+        "resolution": "768P",
+        "prompt_expansion_mode": "fast"
+      }
+    }
+  ]
+}

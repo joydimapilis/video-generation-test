@@ -1,0 +1,51 @@
+{
+  "duration": 30,
+  "voice": "Kokoro af_heart, 1.01; new local take",
+  "schedule": [
+    {
+      "frame": 1,
+      "source": "assets/voice/01-raw.wav",
+      "raw_duration": 6.1226666666666665,
+      "lead_s": 0.3,
+      "inserted_pauses": [
+        {
+          "raw_time": 3.0405,
+          "pause_s": 0.8
+        }
+      ],
+      "duration_s": 8
+    },
+    {
+      "frame": 2,
+      "source": "assets/voice/02-raw.wav",
+      "raw_duration": 9.450666666666667,
+      "lead_s": 0.3,
+      "inserted_pauses": [
+        {
+          "raw_time": 5.5865,
+          "pause_s": 1.5
+        },
+        {
+          "raw_time": 6.3525,
+          "pause_s": 0.55
+        }
+      ],
+      "duration_s": 14
+    },
+    {
+      "frame": 3,
+      "source": "assets/voice/03-raw.wav",
+      "raw_duration": 4.309333333333333,
+      "lead_s": 0.3,
+      "inserted_pauses": [
+        {
+          "raw_time": 2.7155,
+          "pause_s": 0.9
+        }
+      ],
+      "duration_s": 8
+    }
+  ],
+  "score": "Original 96 BPM warm electric-piano synthesis, seed91512; click/paper accents",
+  "generation_api_cost": 0
+}

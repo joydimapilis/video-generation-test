@@ -1,0 +1,55 @@
+[
+  {
+    "source": "hyperframes/crew/assets/CrewSans.ttf",
+    "staged": "hyperframes/crumb-baker/assets/sans.ttf",
+    "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+  },
+  {
+    "source": "hyperframes/crew/assets/CrewSans-Bold.ttf",
+    "staged": "hyperframes/crumb-baker/assets/bold.ttf",
+    "sha256": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0"
+  },
+  {
+    "source": "hyperframes/crew/assets/CrewSerif.woff2",
+    "staged": "hyperframes/crumb-baker/assets/serif.woff2",
+    "sha256": "471e321ec7ce908c94dba06848d9088b5d55232d50e962826b3b534e0817b4b1"
+  },
+  {
+    "source": "hyperframes/crew/assets/gsap.min.js",
+    "staged": "hyperframes/crumb-baker/assets/gsap.min.js",
+    "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+  },
+  {
+    "source": "artifacts/library-loop-9/outputs/crumb_interview_h3max_v2.mp4",
+    "staged": "hyperframes/crumb-baker/assets/person.mp4",
+    "sha256": "4dd9ea5bda5932352199ae3483fde8709696d394b912d5d6080fc5cc5f60e83d"
+  },
+  {
+    "staged": "hyperframes/crumb-baker/assets/voice.wav",
+    "source": "artifacts/library-loop-9/outputs/crumb_interview_h3max_v2.mp4",
+    "source_sha256": "4dd9ea5bda5932352199ae3483fde8709696d394b912d5d6080fc5cc5f60e83d",
+    "derived_sha256": "ec5c988e9bd23dccc16adfb0e86fb2fab83aa3162377b48447df84cd8b692251",
+    "operation": "FFmpeg decoded stereo PCM at 48kHz, linear gain only; WAV preserves source start alignment",
+    "linear_gain": 1.0,
+    "source_peak": 0.22509998083114624
+  },
+  {
+    "source": "artifacts/library-loop-9/outputs/crumb_baker_return_h3max.mp4",
+    "staged": "hyperframes/crumb-baker/assets/return.mp4",
+    "sha256": "ac396473d9132ef0f87d051cc40a3afa0b275a27e535499fe29767fac8ad9c44"
+  },
+  {
+    "staged": "hyperframes/crumb-baker/assets/return.wav",
+    "source": "artifacts/library-loop-9/outputs/crumb_baker_return_h3max.mp4",
+    "source_sha256": "ac396473d9132ef0f87d051cc40a3afa0b275a27e535499fe29767fac8ad9c44",
+    "derived_sha256": "0ad51230b64d99da66d5bf2155022aa7127828014c0ed07f504c4f624cbdf482",
+    "operation": "FFmpeg decoded stereo PCM at 48kHz, linear gain only; WAV preserves source start alignment",
+    "linear_gain": 1.0,
+    "source_peak": 0.20935067534446716
+  },
+  {
+    "source": "original round9 deterministic music synthesis",
+    "staged": "hyperframes/crumb-baker/assets/music.wav",
+    "start": 6.25
+  }
+]

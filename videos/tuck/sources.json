@@ -1,0 +1,24 @@
+[
+  {
+    "path": "assets/receipt-source.mp4",
+    "source": "artifacts/library-loop-12/outputs/tuck_receipt_h3max_v2.mp4",
+    "sha256": "7af8f71818a036eb76718277f5177ea23ac9b3eeb83dd4cd43a99529d0c8cf62"
+  },
+  {
+    "path": "assets/opening.mp4",
+    "source": "assets/receipt-source.mp4",
+    "source_start": 0.5,
+    "duration": 5.5,
+    "transform": "fps24; scale height1080; crop1090x1080 at x550 y0",
+    "display_start": 0
+  },
+  {
+    "path": "assets/return.mp4",
+    "source": "assets/receipt-source.mp4",
+    "source_start": 6,
+    "source_duration": 4,
+    "duration": 8,
+    "transform": "fps24; scale height1080; crop870x1080 at x700 y0; clone final frame for4s",
+    "display_start": 22
+  }
+]

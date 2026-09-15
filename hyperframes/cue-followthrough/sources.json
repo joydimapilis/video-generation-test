@@ -1,0 +1,46 @@
+[
+  {
+    "source": "hyperframes/crew/assets/CrewSans.ttf",
+    "staged": "hyperframes/cue-followthrough/assets/CrewSans.ttf",
+    "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+  },
+  {
+    "source": "hyperframes/crew/assets/CrewSans-Bold.ttf",
+    "staged": "hyperframes/cue-followthrough/assets/CrewSans-Bold.ttf",
+    "sha256": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0"
+  },
+  {
+    "source": "hyperframes/crew/assets/CrewSerif.woff2",
+    "staged": "hyperframes/cue-followthrough/assets/CrewSerif.woff2",
+    "sha256": "471e321ec7ce908c94dba06848d9088b5d55232d50e962826b3b534e0817b4b1"
+  },
+  {
+    "source": "hyperframes/crew/assets/gsap.min.js",
+    "staged": "hyperframes/cue-followthrough/assets/gsap.min.js",
+    "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+  },
+  {
+    "source": "artifacts/library-loop-8/outputs/ugc_h3_one_action.mp4",
+    "staged": "hyperframes/cue-followthrough/assets/hook.mp4",
+    "sha256": "a0ac7ac9f4ad917d6ac0fb45b860530228a09d23c6c60dd1bd78280c988fa512"
+  },
+  {
+    "staged": "hyperframes/cue-followthrough/assets/voice.wav",
+    "source": "artifacts/library-loop-8/outputs/ugc_h3_one_action.mp4",
+    "source_sha256": "a0ac7ac9f4ad917d6ac0fb45b860530228a09d23c6c60dd1bd78280c988fa512",
+    "derived_sha256": "89f0ee7822c29bcea8f805e05e8dcf0ee9ded89d1ccdfe202332cb4f42656c4d",
+    "operation": "FFmpeg decoded stereo PCM at 48kHz, linear gain only; WAV preserves source start alignment",
+    "linear_gain": 0.8580326822522442,
+    "source_peak": 0.9323654174804688
+  },
+  {
+    "source": "artifacts/library-loop-8/outputs/product_h3_pullback.mp4",
+    "staged": "hyperframes/cue-followthrough/assets/product.mp4",
+    "sha256": "bee8fa9e4b108bb02a4e2b488b3a8c3dd8a1926b5a3730ab6c48e69cc90dd283"
+  },
+  {
+    "staged": "hyperframes/cue-followthrough/assets/score.wav",
+    "source": "original deterministic synthesis in scripts/build_round8_samples.py",
+    "music_starts_after_dialogue": true
+  }
+]

@@ -4,10 +4,24 @@ from datetime import datetime, timezone
 from pathlib import Path
 from time import perf_counter
 from typing import Any
+from decimal import Decimal, ROUND_CEILING
+import hashlib
+import json
 
 from urllib.request import urlretrieve
 
 from .io import append_jsonl, ensure_dir, read_json, read_jsonl, write_json
+from .references import resolve_local_images
+from .budget import BudgetLedger
+
+
+def money_cents(value):
+    if isinstance(value, bool):
+        raise ValueError('Invalid cost')
+    amount = Decimal(str(value))
+    if not amount.is_finite() or amount <= 0:
+        raise ValueError('Cost must be positive and finite')
+    return int((amount * 100).to_integral_value(rounding=ROUND_CEILING))
 
 
 def run_plan(
@@ -18,17 +32,44 @@ def run_plan(
     skip_completed: bool = True,
 ) -> list[dict[str, Any]]:
     plan = read_json(run_plan_path)
-    total = float(plan.get("total_estimated_cost_usd", 0))
+    limit = money_cents(max_estimated_cost)
+    if Decimal(str(max_estimated_cost)) > 10:
+        raise ValueError('The maximum live experiment cap is $10')
+    total = sum(money_cents(r['estimated_cost_usd']) for r in plan.get('runs', [])) / 100
     if total > max_estimated_cost:
         raise SystemExit(
             f"Run plan estimates ${total:.2f}, above allowed ${max_estimated_cost:.2f}."
         )
     records: list[dict[str, Any]] = []
     completed_run_ids = existing_completed_run_ids(results_path) if skip_completed else set()
+    ledger = None
+    historical_ids = set()
+    if live:
+        ledger = BudgetLedger(results_path.with_suffix('.budget.json'), limit)
+        # Import historical attempts individually, including failures. This is
+        # idempotent even if interrupted halfway through migration.
+        for index, old in enumerate(read_jsonl(results_path)):
+            if old.get('status') == 'dry_run':
+                continue
+            token = hashlib.sha256(json.dumps(old, sort_keys=True).encode()).hexdigest()
+            run_id = old.get('run_id')
+            historical_ids.add(run_id)
+            # Current calls already have reservations; do not charge them twice.
+            if run_id in ledger.read()['runs']:
+                continue
+            ledger.reserve(f'historical-{index}-{token}', money_cents(old['estimated_cost_usd']), old)
     for run in plan.get("runs", []):
         if run["run_id"] in completed_run_ids:
             continue
+        if live and run['run_id'] in historical_ids and run['run_id'] not in ledger.read()['runs']:
+            # Imported history has no recoverable queue ID. A failed/unknown old
+            # call is still a paid attempt, never an implicit retry.
+            continue
+        if ledger is not None and not ledger.reserve(run['run_id'], money_cents(run['estimated_cost_usd']), run):
+            continue
         record = run_one(run, live=live)
+        if ledger is not None:
+            ledger.update(run['run_id'], status=record['status'])
         append_jsonl(results_path, record)
         records.append(record)
     write_json(results_path.with_suffix(".summary.json"), summarize(read_jsonl(results_path)))
@@ -55,7 +96,10 @@ def run_one(run: dict[str, Any], live: bool) -> dict[str, Any]:
         import fal_client  # type: ignore
     except ImportError:
         return failure_record(run, started, "Install fal support with: python3 -m pip install -e '.[fal]'")
-    input_payload = dict(run["input"])
+    try:
+        input_payload = resolve_local_images(run["input"], fal_client.upload_file)
+    except Exception as exc:
+        return failure_record(run, started, f"Image reference resolution failed: {exc}")
     upload_error = fill_uploaded_image_url(input_payload, fal_client)
     if upload_error:
         return failure_record(run, started, upload_error)

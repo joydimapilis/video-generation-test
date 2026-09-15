@@ -1,0 +1,17 @@
+[
+  {
+    "source": "artifacts/library-loop-6/outputs/realism_line4_v2.mp4",
+    "asset": "hyperframes/interview-models/assets/veo.mp4",
+    "sha256": "39dcf4af3423c63f0eb24a70fd2bcfb6ef5dc1f283e948c1aa745d2783754ea9"
+  },
+  {
+    "source": "artifacts/library-loop-7/outputs/interview_kling3_contract.mp4",
+    "asset": "hyperframes/interview-models/assets/kling-contract.mp4",
+    "sha256": "97538b1e1b88b7fdf1a7a94ab1bbc2324899fbfc40fd7b815ab94b793fee4838"
+  },
+  {
+    "source": "artifacts/library-loop-7/outputs/interview_kling3_restrained.mp4",
+    "asset": "hyperframes/interview-models/assets/kling-restrained.mp4",
+    "sha256": "f922823980d640d92d15adb4ab89dbdd2ead1e597adca5f04338216549521bc6"
+  }
+]

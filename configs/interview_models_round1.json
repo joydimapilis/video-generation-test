@@ -1,0 +1,102 @@
+{
+  "experiment": "interview-model-routing-2026-09-12",
+  "budget_root": "artifacts/library-loop-7",
+  "runs": [
+    {
+      "id": "interview_kling3_contract",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 101,
+      "input": {
+        "prompt": "Continue the supplied camera frame as one documentary interview take. SUBJECT: the reference bakery owner, greying dark hair tied back; cream long-sleeve shirt, flour-dusted charcoal apron, brown straps, lavalier unchanged. Preserve the visible face, age, hairline, nose, asymmetry and skin texture of the reference; do not beautify or add new facial marks. Fine lines and uneven skin reflect the existing side light. SET: same wood and tile bakery, bread shelves and window on screen right. LIGHT: unchanged warm morning daylight from screen right, stable exposure and white balance. CAMERA: eye-level medium close-up with the original headroom and lens perspective; locked tripod, no zoom, no pan. ENTRY: seated center-left; travel stationary; shoulders relaxed, head upright, mouth closed, gaze slightly camera-right; props microphone clipped to the same apron strap; hands empty below frame. PERFORMANCE: eyes attend to the same interviewer just camera-right, with tiny refocusing movements and unforced irregular blinking. Quiet breath moves the shoulders; one slight head inclination accompanies the thought, then settles. Hands rest low in her lap, not rigid; no finger-counting or presenting objects. Sleeve folds respond only to body movement; stray hairs remain settled in still air. Understated conversational delivery, not a broad smile or theatrical eyebrow lift. AUDIO: say exactly once in natural British English: \"We use Crew now. Everyone puts their availability on their phone.\" Begin promptly, complete the thought without restarting, then let the lips close naturally for a brief listening pause. Quiet bakery room tone, no music. EXIT: shoulders relaxed, head upright, mouth closed, gaze slightly camera-right; seated center-left; travel stationary; props microphone clipped to the same apron strap; hands empty below frame. Same light, set and camera throughout. No cuts, subtitles, titles, logos or graphic overlays.",
+        "duration": "6",
+        "generate_audio": true,
+        "start_image_url": "local:artifacts/library-loop-5/reference_frames/f5.8.jpg",
+        "negative_prompt": "repeating a phrase, restarting the sentence, stuttering, duplicated words, trailing off, mumbling, enthusiastic sales delivery, overacting, subtitles, captions, burned-in text, text, letters, numbers, logos, watermark, other people, music, camera shake, cut to another shot, different person, changing clothes, standing up, holding a phone, beauty retouching, waxy skin, exaggerated eyebrows, finger counting, floating hair"
+      },
+      "use_case": "interview",
+      "version": 1,
+      "line": "We use Crew now. Everyone puts their availability on their phone.",
+      "hypothesis": "Test native speech and facial realism with the same shot contract and identity anchor as the existing Veo take. Endpoint-native resolution and seed support differ; one trial, not a controlled model ranking.",
+      "reference_baseline": "artifacts/library-loop-6/outputs/realism_line4_v2.mp4",
+      "shot_plan": {
+        "entry": {
+          "identity": "the reference bakery owner, greying dark hair tied back",
+          "wardrobe": "cream long-sleeve shirt, flour-dusted charcoal apron, brown straps, lavalier unchanged",
+          "environment": "same wood and tile bakery, bread shelves and window on screen right",
+          "lighting": "unchanged warm morning daylight from screen right, stable exposure and white balance",
+          "framing": "eye-level medium close-up with the original headroom and lens perspective",
+          "camera": "locked tripod, no zoom, no pan",
+          "screen_position": "seated center-left",
+          "travel_direction": "stationary",
+          "pose": "shoulders relaxed, head upright, mouth closed, gaze slightly camera-right",
+          "prop_state": "microphone clipped to the same apron strap; hands empty below frame"
+        },
+        "exit": {
+          "identity": "the reference bakery owner, greying dark hair tied back",
+          "wardrobe": "cream long-sleeve shirt, flour-dusted charcoal apron, brown straps, lavalier unchanged",
+          "environment": "same wood and tile bakery, bread shelves and window on screen right",
+          "lighting": "unchanged warm morning daylight from screen right, stable exposure and white balance",
+          "framing": "eye-level medium close-up with the original headroom and lens perspective",
+          "camera": "locked tripod, no zoom, no pan",
+          "screen_position": "seated center-left",
+          "travel_direction": "stationary",
+          "pose": "shoulders relaxed, head upright, mouth closed, gaze slightly camera-right",
+          "prop_state": "microphone clipped to the same apron strap; hands empty below frame"
+        },
+        "exit_is_requested_not_verified": true
+      }
+    },
+    {
+      "id": "interview_seedance25_contract",
+      "endpoint": "bytedance/seedance-2.5/image-to-video",
+      "estimate_cents": 284,
+      "input": {
+        "prompt": "Continue the supplied camera frame as one documentary interview take. SUBJECT: the reference bakery owner, greying dark hair tied back; cream long-sleeve shirt, flour-dusted charcoal apron, brown straps, lavalier unchanged. Preserve the visible face, age, hairline, nose, asymmetry and skin texture of the reference; do not beautify or add new facial marks. Fine lines and uneven skin reflect the existing side light. SET: same wood and tile bakery, bread shelves and window on screen right. LIGHT: unchanged warm morning daylight from screen right, stable exposure and white balance. CAMERA: eye-level medium close-up with the original headroom and lens perspective; locked tripod, no zoom, no pan. ENTRY: seated center-left; travel stationary; shoulders relaxed, head upright, mouth closed, gaze slightly camera-right; props microphone clipped to the same apron strap; hands empty below frame. PERFORMANCE: eyes attend to the same interviewer just camera-right, with tiny refocusing movements and unforced irregular blinking. Quiet breath moves the shoulders; one slight head inclination accompanies the thought, then settles. Hands rest low in her lap, not rigid; no finger-counting or presenting objects. Sleeve folds respond only to body movement; stray hairs remain settled in still air. Understated conversational delivery, not a broad smile or theatrical eyebrow lift. AUDIO: say exactly once in natural British English: \"We use Crew now. Everyone puts their availability on their phone.\" Begin promptly, complete the thought without restarting, then let the lips close naturally for a brief listening pause. Quiet bakery room tone, no music. EXIT: shoulders relaxed, head upright, mouth closed, gaze slightly camera-right; seated center-left; travel stationary; props microphone clipped to the same apron strap; hands empty below frame. Same light, set and camera throughout. No cuts, subtitles, titles, logos or graphic overlays.",
+        "duration": "6",
+        "generate_audio": true,
+        "image_url": "local:artifacts/library-loop-5/reference_frames/f5.8.jpg",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "seed": 92
+      },
+      "use_case": "interview",
+      "version": 1,
+      "line": "We use Crew now. Everyone puts their availability on their phone.",
+      "hypothesis": "Test native speech and facial realism with the same shot contract and identity anchor as the existing Veo take. Endpoint-native resolution and seed support differ; one trial, not a controlled model ranking.",
+      "reference_baseline": "artifacts/library-loop-6/outputs/realism_line4_v2.mp4",
+      "shot_plan": {
+        "entry": {
+          "identity": "the reference bakery owner, greying dark hair tied back",
+          "wardrobe": "cream long-sleeve shirt, flour-dusted charcoal apron, brown straps, lavalier unchanged",
+          "environment": "same wood and tile bakery, bread shelves and window on screen right",
+          "lighting": "unchanged warm morning daylight from screen right, stable exposure and white balance",
+          "framing": "eye-level medium close-up with the original headroom and lens perspective",
+          "camera": "locked tripod, no zoom, no pan",
+          "screen_position": "seated center-left",
+          "travel_direction": "stationary",
+          "pose": "shoulders relaxed, head upright, mouth closed, gaze slightly camera-right",
+          "prop_state": "microphone clipped to the same apron strap; hands empty below frame"
+        },
+        "exit": {
+          "identity": "the reference bakery owner, greying dark hair tied back",
+          "wardrobe": "cream long-sleeve shirt, flour-dusted charcoal apron, brown straps, lavalier unchanged",
+          "environment": "same wood and tile bakery, bread shelves and window on screen right",
+          "lighting": "unchanged warm morning daylight from screen right, stable exposure and white balance",
+          "framing": "eye-level medium close-up with the original headroom and lens perspective",
+          "camera": "locked tripod, no zoom, no pan",
+          "screen_position": "seated center-left",
+          "travel_direction": "stationary",
+          "pose": "shoulders relaxed, head upright, mouth closed, gaze slightly camera-right",
+          "prop_state": "microphone clipped to the same apron strap; hands empty below frame"
+        },
+        "exit_is_requested_not_verified": true
+      }
+    }
+  ],
+  "pricing_checked": "2026-09-12",
+  "pricing_sources": [
+    "https://fal.ai/models/fal-ai/kling-video/v3/pro/image-to-video",
+    "https://fal.ai/models/bytedance/seedance-2.5/image-to-video"
+  ],
+  "cost_basis": "Kling 6s * $0.168 audio on, rounded up; Seedance 6s * $0.473 at 720p 16:9, rounded up. Ledger adds 15%. Veo baseline reused at no new charge."
+}

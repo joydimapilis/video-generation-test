@@ -1,0 +1,307 @@
+{
+  "tts_provider": "kokoro",
+  "voice_id": "am_michael",
+  "bgm": null,
+  "bgm_pending": false,
+  "bgm_provider": null,
+  "bgm_pid": null,
+  "bgm_log": null,
+  "bgm_mode": null,
+  "bgm_target_duration_s": null,
+  "bgm_seed_duration_s": null,
+  "bgm_loop_count": null,
+  "voices": [
+    {
+      "id": "01",
+      "path": "assets/voice/01.wav",
+      "duration_s": 7.957,
+      "words": []
+    },
+    {
+      "id": "02",
+      "path": "assets/voice/02.wav",
+      "duration_s": 9.173,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Drop",
+          "start": 0.09,
+          "end": 0.31
+        },
+        {
+          "id": "w1",
+          "text": "in",
+          "start": 0.39,
+          "end": 0.49
+        },
+        {
+          "id": "w2",
+          "text": "your",
+          "start": 0.49,
+          "end": 0.82
+        },
+        {
+          "id": "w3",
+          "text": "notes.",
+          "start": 0.82,
+          "end": 1.5
+        },
+        {
+          "id": "w4",
+          "text": "Fold",
+          "start": 1.59,
+          "end": 1.79
+        },
+        {
+          "id": "w5",
+          "text": "finds",
+          "start": 1.79,
+          "end": 2.15
+        },
+        {
+          "id": "w6",
+          "text": "the",
+          "start": 2.15,
+          "end": 2.37
+        },
+        {
+          "id": "w7",
+          "text": "audience,",
+          "start": 2.37,
+          "end": 3.12
+        },
+        {
+          "id": "w8",
+          "text": "the",
+          "start": 3.17,
+          "end": 3.33
+        },
+        {
+          "id": "w9",
+          "text": "message,",
+          "start": 3.33,
+          "end": 3.95
+        },
+        {
+          "id": "w10",
+          "text": "and",
+          "start": 3.96,
+          "end": 4.15
+        },
+        {
+          "id": "w11",
+          "text": "what",
+          "start": 4.15,
+          "end": 4.4
+        },
+        {
+          "id": "w12",
+          "text": "to",
+          "start": 4.4,
+          "end": 4.51
+        },
+        {
+          "id": "w13",
+          "text": "make.",
+          "start": 4.53,
+          "end": 4.98
+        },
+        {
+          "id": "w14",
+          "text": "Want",
+          "start": 5.07,
+          "end": 5.25
+        },
+        {
+          "id": "w15",
+          "text": "a",
+          "start": 5.25,
+          "end": 5.29
+        },
+        {
+          "id": "w16",
+          "text": "different",
+          "start": 5.37,
+          "end": 5.88
+        },
+        {
+          "id": "w17",
+          "text": "feel?",
+          "start": 6.03,
+          "end": 6.42
+        },
+        {
+          "id": "w18",
+          "text": "Change",
+          "start": 6.5,
+          "end": 6.89
+        },
+        {
+          "id": "w19",
+          "text": "the",
+          "start": 6.89,
+          "end": 7.13
+        },
+        {
+          "id": "w20",
+          "text": "tone.",
+          "start": 7.13,
+          "end": 7.6
+        },
+        {
+          "id": "w21",
+          "text": "The",
+          "start": 7.79,
+          "end": 7.9
+        },
+        {
+          "id": "w22",
+          "text": "brief",
+          "start": 7.9,
+          "end": 8.22
+        },
+        {
+          "id": "w23",
+          "text": "changes",
+          "start": 8.22,
+          "end": 8.6
+        },
+        {
+          "id": "w24",
+          "text": "with",
+          "start": 8.74,
+          "end": 8.88
+        },
+        {
+          "id": "w25",
+          "text": "it.",
+          "start": 9.08,
+          "end": 9.3
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "path": "assets/voice/03.wav",
+      "duration_s": 7.147,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Now",
+          "start": 0.05,
+          "end": 0.2
+        },
+        {
+          "id": "w1",
+          "text": "those",
+          "start": 0.2,
+          "end": 0.54
+        },
+        {
+          "id": "w2",
+          "text": "scattered",
+          "start": 0.54,
+          "end": 1.15
+        },
+        {
+          "id": "w3",
+          "text": "thoughts",
+          "start": 1.15,
+          "end": 1.68
+        },
+        {
+          "id": "w4",
+          "text": "have",
+          "start": 1.7,
+          "end": 1.94
+        },
+        {
+          "id": "w5",
+          "text": "a",
+          "start": 2.01,
+          "end": 2.02
+        },
+        {
+          "id": "w6",
+          "text": "direction,",
+          "start": 2.02,
+          "end": 2.79
+        },
+        {
+          "id": "w7",
+          "text": "one",
+          "start": 2.79,
+          "end": 2.97
+        },
+        {
+          "id": "w8",
+          "text": "brief",
+          "start": 2.97,
+          "end": 3.2
+        },
+        {
+          "id": "w9",
+          "text": "your",
+          "start": 3.32,
+          "end": 3.52
+        },
+        {
+          "id": "w10",
+          "text": "team",
+          "start": 3.56,
+          "end": 3.78
+        },
+        {
+          "id": "w11",
+          "text": "can",
+          "start": 3.81,
+          "end": 3.99
+        },
+        {
+          "id": "w12",
+          "text": "build",
+          "start": 3.99,
+          "end": 4.29
+        },
+        {
+          "id": "w13",
+          "text": "from,",
+          "start": 4.31,
+          "end": 4.64
+        },
+        {
+          "id": "w14",
+          "text": "fold,",
+          "start": 5.11,
+          "end": 5.76
+        },
+        {
+          "id": "w15",
+          "text": "shape",
+          "start": 5.81,
+          "end": 6.1
+        },
+        {
+          "id": "w16",
+          "text": "your",
+          "start": 6.14,
+          "end": 6.39
+        },
+        {
+          "id": "w17",
+          "text": "next",
+          "start": 6.47,
+          "end": 6.75
+        },
+        {
+          "id": "w18",
+          "text": "idea.",
+          "start": 6.89,
+          "end": 7.09
+        }
+      ]
+    }
+  ],
+  "sfx": [],
+  "total_duration_s": 24.277
+}

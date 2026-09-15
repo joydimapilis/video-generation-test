@@ -1,0 +1,42 @@
+[
+  [
+    0,
+    6,
+    "before-person",
+    "after-person",
+    "Original prompt",
+    "Revised prompt",
+    "01 / Human performance",
+    "Same reference, seed and model. Full takes; no retouching."
+  ],
+  [
+    6,
+    6,
+    "before-hands",
+    "after-hands",
+    "Original action",
+    "Revised action",
+    "02 / Hands and physical contact",
+    "Full takes. The final film uses only the first press-and-release."
+  ],
+  [
+    12,
+    4,
+    "before-join",
+    "after-join",
+    "Original shared anchor",
+    "Previous exit frame",
+    "03 / Shot continuity",
+    "One second before and after each cut, repeated twice."
+  ],
+  [
+    16,
+    4,
+    "control-join",
+    "after-join",
+    "Shared-anchor control",
+    "Previous exit frame",
+    "04 / Reference-only control",
+    "Same improved prompt, seed and outgoing shot; different input reference."
+  ]
+]

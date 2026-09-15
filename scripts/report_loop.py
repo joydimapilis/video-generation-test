@@ -15,24 +15,28 @@ def collect(root, review, chosen):
     ledger = json.loads((root / 'budget.json').read_text())
     rows = []
     for identifier, result in ledger['runs'].items():
-        note = review['runs'][identifier]
-        evidence = json.loads((root / 'evidence' / f'{identifier}.json').read_text())
-        video = next(s for s in evidence['probe']['streams'] if s['codec_type'] == 'video')
+        note = review['runs'].get(identifier, {})
+        evidence_path = root / 'evidence' / f'{identifier}.json'
+        evidence = json.loads(evidence_path.read_text()) if evidence_path.exists() else {}
+        video = next((s for s in evidence.get('probe', {}).get('streams', []) if s['codec_type'] == 'video'), {})
+        legacy_scores = note.get('scores', [])
         rows.append({
             'id': identifier,
             'endpoint': result['payload']['endpoint'],
             'use_case': result['payload']['use_case'],
             'version': result['payload'].get('version', 1),
             'status': result['status'],
-            'score_10': round(sum(note['scores']) / len(note['scores']), 2),
-            'scores': dict(zip(review['criteria'], note['scores'])),
-            'review': note['note'],
+            'score_10': round(sum(legacy_scores) / len(legacy_scores), 2) if legacy_scores else None,
+            'scores': {**dict(zip(review['criteria'], legacy_scores)), **note.get('detailed_scores', {})},
+            'review': note.get('note', 'No qualitative review; no score assigned.'),
+            'decision': note.get('decision', 'provisional' if legacy_scores else 'review_required'),
+            'review_method': review['method'],
             'estimate_usd': result['estimate_cents'] / 100,
             'reserved_usd': result['reserved_cents'] / 100,
             'elapsed_seconds': result.get('elapsed_seconds'),
-            'resolution': f"{video['width']}x{video['height']}",
-            'duration': float(evidence['probe']['format']['duration']),
-            'decode_ok': evidence['full_decode_ok'],
+            'resolution': f"{video['width']}x{video['height']}" if video else None,
+            'duration': float(evidence['probe']['format']['duration']) if evidence else None,
+            'decode_ok': evidence.get('full_decode_ok'),
             'selected': identifier in chosen,
             'output': result.get('output_path'),
             'evidence': str(root / 'evidence' / f'{identifier}.json'),
@@ -72,13 +76,28 @@ def main():
     lines = [f"# {review['concept']}", '', review.get('subtitle', ''), '',
              review['method'], '',
              'Scores average four equally weighted criteria. Compare within use case only.',
-             'One trial per model per shot, no repeat seeds, no confidence intervals.', '',
+             # Loops that run deliberate controls repeat a seed on purpose, so the
+             # sampling caveat has to come from the review like every other claim.
+             review.get('caveat',
+                        'One trial per model per shot, no repeat seeds, no confidence intervals.'),
+             '',
              '| Run | Role | v | Score / 10 | Dimensions | Estimate | Seconds | Used |',
              '| --- | --- | ---: | ---: | --- | ---: | ---: | :-: |']
     for r in rows:
-        lines.append(f"| `{r['id']}` | {r['use_case']} | {r['version']} | {r['score_10']} | "
-                     f"{r['resolution']} | ${r['estimate_usd']:.2f} | {r['elapsed_seconds']} | "
+        lines.append(f"| `{r['id']}` | {r['use_case']} | {r['version']} | {r['score_10'] if r['score_10'] is not None else 'N/T'} | "
+                     f"{r['resolution'] or 'N/T'} | ${r['estimate_usd']:.2f} | {r['elapsed_seconds'] if r['elapsed_seconds'] is not None else 'N/T'} | "
                      f"{'yes' if r['selected'] else '-'} |")
+
+    if any(note.get('detailed_scores') for note in review['runs'].values()):
+        from amarillo.learning import DIMENSIONS
+        lines += ['', '## Detailed criteria', '',
+                  'N/T means not tested, not zero. These are subjective sampled-frame scores; '
+                  'a single-shot identity score does not establish consistency across shots.', '',
+                  '| Criterion | ' + ' | '.join(r['id'] for r in rows) + ' |',
+                  '| --- | ' + ' | '.join(['---:'] * len(rows)) + ' |']
+        for dimension in DIMENSIONS:
+            values = [str(r['scores'].get(dimension)) if r['scores'].get(dimension) is not None else 'N/T' for r in rows]
+            lines.append('| ' + dimension.replace('_', ' ') + ' | ' + ' | '.join(values) + ' |')
 
     if review.get('changed_this_loop'):
         lines += ['', '## What Changed This Loop', '', review['changed_this_loop'], '']
@@ -108,7 +127,8 @@ def main():
     lines += ['## Budget', '',
               f'Estimated generation total: ${estimate:.2f}. Conservative reserved total: '
               f'${reserved:.2f}. Hard cap: ${cap:.2f}.',
-              f'{len(rows)} paid requests, all completed, no failures and no automatic retries.',
+              f"{len(rows)} reserved requests; {sum(r['status'] == 'completed' for r in rows)} completed; "
+              f"{sum(r['status'] in {'failed_reserved', 'submission_unknown'} for r in rows)} failed or uncertain. No automatic retries.",
               f'This loop has its own ledger at `{args.root}/budget.json`; it is the persistent '
               'cost record and deleting it defeats the cap guard. Provider invoice not queried.', '']
 

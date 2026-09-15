@@ -1,0 +1,28 @@
+{
+  "bgm": {
+    "path": "assets/score.wav",
+    "volume": 1
+  },
+  "bgm_pending": false,
+  "voices": [
+    {
+      "frame": 1,
+      "path": "assets/voice/01.wav",
+      "duration_s": 9,
+      "words": []
+    },
+    {
+      "frame": 2,
+      "path": "assets/voice/02.wav",
+      "duration_s": 12,
+      "words": []
+    },
+    {
+      "frame": 3,
+      "path": "assets/voice/03.wav",
+      "duration_s": 10,
+      "words": []
+    }
+  ],
+  "sfx": []
+}

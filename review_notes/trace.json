@@ -1,0 +1,93 @@
+{
+  "concept": "Trace \u2014 a new browser bug-reporting product film",
+  "subtitle": "Three fresh generated hand takes, newly authored UI, script, voice and score. One 33-second film; no interview scenes.",
+  "criteria": [
+    "prompt_adherence",
+    "sampled_stability",
+    "composition",
+    "edit_readiness"
+  ],
+  "method": "Agent visual screening of eight chronological frames per generated take, full-resolution selected stills, full source decode, actual composition snapshots and measured cursor-target geometry. Scores are subjective screening judgments. No independent listening, calibrated hand-motion metric, exhaustive motion review, or audience test.",
+  "caveat": "One take per condition. Round one holds prompt text constant across models but not seed semantics or resolution. H3 Max v2 changes prompt, seed and framing together, so improvement cannot be attributed to one variable. No general model superiority established.",
+  "runs": {
+    "trace_hands_kling_v1": {
+      "scores": [
+        7,
+        8,
+        7.5,
+        7
+      ],
+      "decision": "reject",
+      "note": "Good visible skin texture and coherent laptop in samples. The gray environment misses the intended midnight-blue palette; curled finger poses and the visible screen edge make this less suitable for the restrained one-click insert. Rejected for this edit, not for all hand scenes.",
+      "detailed_scores": {
+        "human_realism": 8,
+        "prompt_adherence": 7,
+        "consistency": 8,
+        "camera_movement": 8
+      }
+    },
+    "trace_hands_h3max_v1": {
+      "scores": [
+        7.5,
+        8,
+        8.5,
+        8
+      ],
+      "decision": "provisional",
+      "note": "Cool palette and tighter device framing fit Trace better. Hand/device remain coherent in samples, but multiple fingers lift and the screen edge remains. Targeted overhead revision requested; source not used in final.",
+      "detailed_scores": {
+        "human_realism": 8,
+        "prompt_adherence": 7.5,
+        "consistency": 8,
+        "camera_movement": 8.5
+      }
+    },
+    "trace_hands_h3max_v2": {
+      "scores": [
+        8,
+        8.5,
+        8.5,
+        8.5
+      ],
+      "decision": "accept",
+      "note": "Selected source seconds 1\u20134 for a three-second insert. Tighter overhead framing supports the tap; cool desk and skin shading fit the UI palette. Several fingers still change pose slightly; do not claim perfect isolated-index adherence. The final centered crop excludes the tiny screen edge. Returned 1344x768 footage is placed in a 1060x800 region; this is not native 1080p generated footage.",
+      "detailed_scores": {
+        "human_realism": 8,
+        "prompt_adherence": 8,
+        "consistency": 8.5,
+        "camera_movement": 8.5
+      }
+    }
+  },
+  "head_to_head": {
+    "cool_device_insert": {
+      "winner": "H3 Max v1 for this edit, then revised to v2",
+      "finding": "Matched round-one prompt gives H3 Max a closer palette and framing fit. Kling remains credible for other hand/device work. This is a narrow creative-fit screen, not a replacement for the broader routing history."
+    }
+  },
+  "routing": {
+    "exact_ui_text": {
+      "primary": "HyperFrames 0.8.40",
+      "caution": "Deterministic authored UI. Click geometry and visible state order must still be verified."
+    },
+    "cool_single_hand_insert": {
+      "primary": "H3 Max for this selected take",
+      "selected_run": "trace_hands_h3max_v2",
+      "caution": "One short sample; complex manipulation, identities and faces not tested."
+    },
+    "narration": {
+      "primary": "Local Kokoro af_heart",
+      "caution": "No on-camera speech or lip-sync claims."
+    }
+  },
+  "findings": [
+    "Make the product name and category visible from the beginning; demonstrate one concrete failure and its report.",
+    "Use one browser element across workflow states to preserve position and prevent scene-to-scene UI drift.",
+    "First UI revision moved Record's cursor onto its real target, filled the form after recording began, and separated payment and order-button boxes.",
+    "An onion-path diagnostic placed fitted markers away from the real button locations; measured DOM geometry and actual full-frame snapshots established all three clicks landed correctly. Do not treat marker overlays as rendered interaction proof.",
+    "H3 Max's $0.02/s launch promotion expired September 14. This run uses the September 15 normal 768P rate of $0.08/s.",
+    "No generated facial performance needed: 30 of 33 seconds contain authored product/UI or typography. Human insert totals three seconds; zero interview seconds.",
+    "Encoded transition review caught one-frame hand bleed and an empty CTA boundary. Opaque demo backing, an overlapping final wipe and timed retirement of old text fixed both without new API calls."
+  ],
+  "changed_this_loop": "Created a new software concept and exact UI workflow rather than extending Crumb. Compared two fresh hand takes, generated a targeted third take, revised UI chronology and pointer coordinates, and assembled a new 33-second edit. Voice and music are newly created locally. No previous generated video is used."
+}

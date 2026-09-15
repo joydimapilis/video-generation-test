@@ -1,0 +1,64 @@
+{
+  "experiment": "three-samples-h3-continuity-2026-09-12",
+  "budget_root": "artifacts/library-loop-8",
+  "pricing_checked": "2026-09-12",
+  "pricing_sources": [
+    "https://fal.ai/models/minimax/h3/image-to-video"
+  ],
+  "cost_basis": "Each 6-second native 768P H3 request: 6 x $0.06 = $0.36. 15% reservation rounds to $0.42 each. All rounds share one $10 ledger. Existing generated references and local HyperFrames cost no new generation fees.",
+  "runs": [
+    {
+      "id": "interview_h3_concise",
+      "endpoint": "minimax/h3/image-to-video",
+      "estimate_cents": 36,
+      "use_case": "interview",
+      "audio_requested": true,
+      "version": 1,
+      "hypothesis": "Same concise interview prompt and generated identity reference as Kling v2; screen native H3 for speech, skin and settled blocking. Resolution and model seeds differ. Provider expansion is recorded if returned.",
+      "input": {
+        "prompt": "One locked-camera documentary interview take from the supplied frame, same woman, face, hair, apron, background and warm window light. Preserve the reference skin texture without retouching. She remains seated with settled shoulders, hands resting in her lap below frame. Her eyes stay on one interviewer just camera-right; an occasional natural blink and small mouth movements accompany speech. Understated matter-of-fact delivery. Begin speaking immediately, without a preparatory smile or breath: \"we use CREW now. everyone puts their availability on their phone.\" Finish the sentence once, then close her lips and listen quietly. No shoulder shrug, no sideways glance, no head sway, no exaggerated eyebrows, no zoom, no cut, no music, no captions, no logos.",
+        "image_url": "local:artifacts/library-loop-5/reference_frames/f5.8.jpg",
+        "duration": 6,
+        "resolution": "768P",
+        "seed": 812,
+        "prompt_expansion_mode": "fast"
+      },
+      "line": "We use Crew now. Everyone puts their availability on their phone."
+    },
+    {
+      "id": "ugc_h3_one_action",
+      "endpoint": "minimax/h3/image-to-video",
+      "estimate_cents": 36,
+      "use_case": "ugc",
+      "audio_requested": true,
+      "version": 1,
+      "hypothesis": "Test one motivated hand gesture rather than multiple micro-expression instructions. New line; old Veo frame supplies identity, not a controlled speech baseline.",
+      "input": {
+        "prompt": "One candid creator take from this starting frame. Same woman, dark curly hair, forest-green shirt, white desk and soft window light. Preserve her natural facial asymmetry and existing skin texture. She looks into the camera and says in relaxed English: \"I remember the idea. I forget what I promised to do.\" She briefly opens her right hand palm-up above the desk on the second sentence, then rests it back on the desk. Shoulders stay relaxed; eyes attend to the camera with an occasional blink. Small rueful expression, conversational rather than sales delivery. Cloth moves with the forearm. Locked phone camera. Finish once, lips close, hands resting, same framing and light. Quiet room tone without music; no captions, logos, cut or beauty retouching.",
+        "image_url": "local:artifacts/library-loop-8/references/ugc_veo_v2.png",
+        "duration": 6,
+        "resolution": "768P",
+        "seed": 812,
+        "prompt_expansion_mode": "fast"
+      },
+      "line": "I remember the idea. I forget what I promised to do."
+    },
+    {
+      "id": "product_h3_pullback",
+      "endpoint": "minimax/h3/image-to-video",
+      "estimate_cents": 36,
+      "use_case": "product_ad",
+      "audio_requested": true,
+      "version": 1,
+      "hypothesis": "Test whether a supplied object frame plus one camera action protects geometry and creates a usable settled exit for the next shot.",
+      "input": {
+        "prompt": "One continuous product shot from the supplied macro frame. Preserve this exact ivory circular recorder, its single black circular top button, tiny green light, low cylindrical sidewall and matte ceramic surface. The recorder stays stationary on the charcoal table. Slowly pull the camera straight back to reveal the whole recorder, finishing with it on the right half and empty charcoal space at left. Stable soft light from upper left, unchanged exposure and color, physically coherent reflection. Camera eases to a complete stop by five seconds and holds the final composition for one second. No object rotation, new buttons, labels, text, people or scene cuts. Quiet studio room tone, no music or speech.",
+        "image_url": "local:artifacts/library-loop-8/references/hero_kling_v2.png",
+        "duration": 6,
+        "resolution": "768P",
+        "seed": 812,
+        "prompt_expansion_mode": "fast"
+      }
+    }
+  ]
+}

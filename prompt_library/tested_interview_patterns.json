@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "provisional_single_take_evidence",
+  "patterns": [
+    {
+      "id": "image_conditioned_restrained_interview",
+      "use_cases": ["interview", "testimonial"],
+      "endpoint_tested": "fal-ai/kling-video/v3/pro/image-to-video",
+      "source_run": "library-loop-7/interview_kling3_restrained",
+      "template": "One locked-camera documentary interview take from the supplied frame, same {subject}, face, hair, {wardrobe}, background and {lighting}. Preserve the reference skin texture without retouching. The subject remains seated with settled shoulders, hands resting in their lap below frame. Eyes stay on one interviewer {gaze_direction}; an occasional natural blink and small mouth movements accompany speech. Understated matter-of-fact delivery. Begin speaking immediately: \"{product_named_dialogue}\". Finish the sentence once, then close the lips and listen quietly. No shoulder shrug, sideways glance, head sway, exaggerated eyebrows, zoom, cuts, music, captions or logos.",
+      "required_inputs": ["reviewed_identity_image", "product_named_dialogue"],
+      "finding": "One Kling revision started speech at 0.00s versus 1.26s and showed more settled sampled shoulders/gaze.",
+      "limits": ["Unseeded trial; prompt effect is confounded with randomness", "Speech ended at 3.48s, leaving a long pause", "Raised eyebrows and smooth skin remain", "Hands are not visible, so hand realism is untested", "Use a measured trim point; never assume generated timing matches the prompt"],
+      "do_not_repeat": "Do not add more micro-actions to repair overacting without a specific hypothesis.",
+      "full_video_contract": ["Identify the product early", "State the problem", "Show how this product helps", "Explain the resulting change", "Give a reason to care"],
+      "evidence": "artifacts/library-loop-7/evidence/interview_kling3_restrained.json"
+    },
+    {
+      "id": "reference_boundary_continuation",
+      "use_cases": ["continuous_interview_join"],
+      "source_runs": ["library-loop-6/realism_line5_control", "library-loop-6/realism_line5_chained"],
+      "method": "Choose a settled decoded exit frame after speech, record source/time/hash, condition the next shot on that image, and cut the outgoing take at the same timestamp.",
+      "finding": "Prior Crew pilot head-region seam diagnostic improved from 7.35x for the shared-anchor control to 1.19x with the exit frame.",
+      "limits": ["Pixel change is a seam diagnostic, not a realism measure", "One tested join", "Compression artifacts can propagate", "Check transcript because words may change"],
+      "evidence": "artifacts/library-loop-6/realism/diagnostics.json"
+    }
+  ]
+}

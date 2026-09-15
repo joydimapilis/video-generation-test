@@ -1,0 +1,34 @@
+[
+  {
+    "asset": "assets/hands.mp4",
+    "source": "artifacts/library-loop-10/outputs/trace_hands_h3max_v2.mp4",
+    "sha256": "220eb0f7875c27fe69b8c35219fe07489221ccbc7a88d4db2e786121200a7080",
+    "endpoint": "minimax/h3-max/text-to-video",
+    "run": "trace_hands_h3max_v2",
+    "timeline_start": 6.5,
+    "source_start": 1,
+    "duration": 3,
+    "native_audio_used": false
+  },
+  {
+    "asset": "assets/voice.wav",
+    "source": "scripts/prepare_trace_assets.py",
+    "asset_sha256": "0c6267f28d072bfe8b242637490210414372ffba3ebdb67128406093b925ba48",
+    "created_for": "Trace, 2026-09-15",
+    "generation_cost_usd": 0
+  },
+  {
+    "asset": "assets/score.wav",
+    "source": "scripts/prepare_trace_assets.py",
+    "asset_sha256": "88b81194ab36ef995705ee9e154dd8277e0985db0f9d3f480f0e90f4a446b62f",
+    "created_for": "Trace, 2026-09-15",
+    "generation_cost_usd": 0
+  },
+  {
+    "asset": "assets/clicks.wav",
+    "source": "scripts/prepare_trace_assets.py",
+    "asset_sha256": "adb96b7fd141f79f6720a529fe24b5696ab7f081c6d131dc9f1f5a679be5127a",
+    "created_for": "Trace, 2026-09-15",
+    "generation_cost_usd": 0
+  }
+]

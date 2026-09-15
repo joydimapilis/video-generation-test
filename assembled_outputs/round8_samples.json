@@ -1,0 +1,23 @@
+{
+  "ugc": {
+    "path": "artifacts/library-loop-8/outputs/ugc_h3_one_action.mp4",
+    "in": 0,
+    "out": 5.5
+  },
+  "product": {
+    "path": "artifacts/library-loop-8/outputs/product_h3_pullback.mp4",
+    "in": 0,
+    "out": 5.541666666666667
+  },
+  "continuation": {
+    "path": "artifacts/library-loop-8/outputs/product_kling_paired.mp4",
+    "in": 0,
+    "out": 5
+  },
+  "interview": {
+    "path": "artifacts/library-loop-6/outputs/realism_line4_v2.mp4",
+    "in": 0,
+    "out": 5.5
+  },
+  "status": "reviewed by agent: sampled frames, local transcripts and decoded boundary metrics; subjective review, final user review pending"
+}

@@ -1,0 +1,34 @@
+{
+  "experiment": "crumb-fresh-samples-2026-09-12",
+  "budget_root": "artifacts/library-loop-9",
+  "pricing_checked": "2026-09-12",
+  "pricing_sources": [
+    "https://fal.ai/models/minimax/h3/text-to-video",
+    "https://fal.ai/models/fal-ai/veo3.1/fast",
+    "https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video",
+    "https://fal.ai/models/minimax/h3-max/text-to-video",
+    "https://fal.ai/models/minimax/h3-max/image-to-video",
+    "https://fal.ai/models/fal-ai/kling-video/v3/pro/image-to-video"
+  ],
+  "cost_basis": "H3 Max 5s x $0.02 = $0.10; same shared $10 ledger. New closing shot tests visual identity continuity after a UI cutaway.",
+  "runs": [
+    {
+      "id": "crumb_baker_return_h3max",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "estimate_cents": 10,
+      "use_case": "interview",
+      "audio_requested": true,
+      "version": 3,
+      "line": "Now I can get back to baking.",
+      "hypothesis": "Test across-shot identity using only the reviewed exit of the fresh revised H3 Max baker. Short new closing line, same camera and room. Voice identity is not conditioned and remains unmeasured.",
+      "input": {
+        "prompt": "Same baker, face, hair, apron, shirt, bench, window light and locked camera as the supplied frame. Continue her calm conversation with the same off-camera colleague. In a relaxed conversational voice she says once: \"Now I can get back to baking.\" She finishes, closes her lips and listens with a slight smile. One natural blink, shoulders relaxed, hands below frame. No change of shot, no camera move, no new people, no music or text.",
+        "image_url": "local:artifacts/library-loop-9/baker-exit/exit-6.200.png",
+        "duration": 5,
+        "resolution": "768P",
+        "seed": 912,
+        "prompt_expansion_mode": "fast"
+      }
+    }
+  ]
+}

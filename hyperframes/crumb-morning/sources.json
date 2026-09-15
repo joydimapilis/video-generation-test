@@ -1,0 +1,37 @@
+[
+  {
+    "source": "hyperframes/crew/assets/CrewSans.ttf",
+    "staged": "hyperframes/crumb-morning/assets/sans.ttf",
+    "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+  },
+  {
+    "source": "hyperframes/crew/assets/CrewSans-Bold.ttf",
+    "staged": "hyperframes/crumb-morning/assets/bold.ttf",
+    "sha256": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0"
+  },
+  {
+    "source": "hyperframes/crew/assets/CrewSerif.woff2",
+    "staged": "hyperframes/crumb-morning/assets/serif.woff2",
+    "sha256": "471e321ec7ce908c94dba06848d9088b5d55232d50e962826b3b534e0817b4b1"
+  },
+  {
+    "source": "hyperframes/crew/assets/gsap.min.js",
+    "staged": "hyperframes/crumb-morning/assets/gsap.min.js",
+    "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+  },
+  {
+    "source": "artifacts/library-loop-9/outputs/crumb_pastry_kling_v1.mp4",
+    "staged": "hyperframes/crumb-morning/assets/pastry.mp4",
+    "sha256": "493f316d90067593015086d0644138e2ecb268e2b4bd3ddd71a2b3fec44fad43"
+  },
+  {
+    "source": "artifacts/library-loop-9/outputs/crumb_continuation_kling.mp4",
+    "staged": "hyperframes/crumb-morning/assets/continued.mp4",
+    "sha256": "26e08f1bcc8dbc0467020c64b182c8143a55b9c8b9a8cc92f6d0dfc2a65319e3"
+  },
+  {
+    "source": "original round9 deterministic music synthesis",
+    "staged": "hyperframes/crumb-morning/assets/music.wav",
+    "start": 0
+  }
+]

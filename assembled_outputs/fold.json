@@ -1,0 +1,34 @@
+{
+  "name": "fold",
+  "product": "Fictional AI creative-brief builder",
+  "project": "videos/fold",
+  "duration": 31,
+  "output": "artifacts/final_outcome/fold/fold.mp4",
+  "source_runs": [],
+  "budget_root": "artifacts/library-loop-11",
+  "estimated_generation_cost_usd": 0,
+  "scenes": [
+    {
+      "role": "hook_and_reveal",
+      "start": 0,
+      "duration": 9,
+      "engine": "HyperFrames",
+      "source": "compositions/frames/01-everywhere.html"
+    },
+    {
+      "role": "organize_and_refine",
+      "start": 9,
+      "duration": 12,
+      "engine": "HyperFrames",
+      "source": "compositions/frames/02-direction.html"
+    },
+    {
+      "role": "completed_transformation_and_cta",
+      "start": 21,
+      "duration": 10,
+      "engine": "HyperFrames",
+      "source": "compositions/frames/03-started.html"
+    }
+  ],
+  "continuity": "Shared blank window at 9s and finished brief at 21s; transitions animate inside adjacent scenes."
+}

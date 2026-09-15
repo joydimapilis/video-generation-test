@@ -1,0 +1,1 @@
+Original tuck-mark.svg: amber paper/check symbol for fictional Tuck, authored locally. New generated hand footage is root-mounted media; no library footage reused. New receipt examples and report UI will be authored as exact HTML.

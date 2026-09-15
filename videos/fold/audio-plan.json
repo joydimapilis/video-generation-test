@@ -1,0 +1,29 @@
+{
+  "duration": 31,
+  "voice": "Kokoro am_michael, speed 1.02, local",
+  "schedule": [
+    {
+      "frame": 1,
+      "raw_duration": 7.957333333333334,
+      "lead_s": 0.3,
+      "slot_s": 9,
+      "source": "assets/voice/01-raw.wav"
+    },
+    {
+      "frame": 2,
+      "raw_duration": 9.173333333333334,
+      "lead_s": 0.3,
+      "slot_s": 12,
+      "source": "assets/voice/02-raw.wav"
+    },
+    {
+      "frame": 3,
+      "raw_duration": 7.1466666666666665,
+      "lead_s": 0.3,
+      "slot_s": 10,
+      "source": "assets/voice/03-raw.wav"
+    }
+  ],
+  "score": "Original 120 BPM major-sixth wood-tone score; seed 91511",
+  "generation_cost_usd": 0
+}

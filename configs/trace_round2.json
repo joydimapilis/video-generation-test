@@ -1,0 +1,29 @@
+{
+  "experiment": "trace-product-film-2026-09-15",
+  "budget_root": "artifacts/library-loop-10",
+  "pricing_checked": "2026-09-15",
+  "pricing_sources": [
+    "https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video",
+    "https://fal.ai/models/minimax/h3-max/text-to-video"
+  ],
+  "cost_basis": "Kling Pro silent $0.112/s: 5s=$0.56. H3 Max 768P normal rate from Sept 15 $0.08/s: 5s=$0.40. Expired $0.02/s promotion is deliberately not used. Shared $10 cap; runner adds 15% reserve. Targeted H3 Max v2 adds $0.40; total estimated $1.36.",
+  "runs": [
+    {
+      "id": "trace_hands_h3max_v2",
+      "endpoint": "minimax/h3-max/text-to-video",
+      "estimate_cents": 40,
+      "use_case": "industrial_human",
+      "audio_requested": false,
+      "version": 2,
+      "hypothesis": "V1 held the cool palette but framed the screen edge and moved several fingers. Tight overhead framing and one short tap should reduce pose ambiguity and generated UI intrusion.",
+      "input": {
+        "prompt": "A five-second overhead macro shot of a relaxed adult right hand resting on a graphite laptop trackpad. Only the trackpad, the lower edge of the keyboard, the hand and a matte midnight-blue desk are in frame. The laptop screen is outside the crop. One simple action: the index fingertip makes a small downward tap on the trackpad, then returns to its original relaxed resting position. The palm and the other fingers remain settled. Wrist enters from frame right. Soft cool daylight from camera left, clean pale-blue metal reflections, natural hand skin and ordinary nails. Locked camera, crisp photographic focus, quiet premium technology commercial. Continuous take, no cuts, no typing, no extra hands, no text, no logos.",
+        "duration": 5,
+        "aspect_ratio": "16:9",
+        "resolution": "768P",
+        "seed": 916,
+        "prompt_expansion_mode": "fast"
+      }
+    }
+  ]
+}

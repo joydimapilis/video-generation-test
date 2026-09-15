@@ -1,0 +1,52 @@
+{
+  "experiment": "three-samples-h3-continuity-2026-09-12",
+  "budget_root": "artifacts/library-loop-8",
+  "pricing_checked": "2026-09-12",
+  "pricing_sources": [
+    "https://fal.ai/models/minimax/h3/image-to-video",
+    "https://fal.ai/models/fal-ai/kling-video/v3/pro/image-to-video"
+  ],
+  "cost_basis": "H3: 5*$0.06=$0.30; Kling without audio: 5*$0.112=$0.56. Shared round-8 ledger; 15% headroom. Native audio may exist for H3 but none is requested for this silent product use case.",
+  "runs": [
+    {
+      "id": "product_h3_paired",
+      "endpoint": "minimax/h3/image-to-video",
+      "estimate_cents": 30,
+      "use_case": "product_continuation",
+      "audio_requested": false,
+      "version": 2,
+      "hypothesis": "Use reviewed exit frame as both endpoints for a settled product continuation; compare H3 and Kling on shape, color, frame seams and middle-frame drift. Repeated image is intentional; subtle light only.",
+      "previous_run": "product_h3_pullback",
+      "previous_cut_end": 5.541666666666667,
+      "reference_review": "artifacts/library-loop-8/handoff/selection.json",
+      "input": {
+        "prompt": "Continue this product shot from the supplied opening frame. The same ivory circular recorder remains stationary on the same charcoal tabletop, on the right of the frame. Lock the camera at this exact position, angle, focus and exposure. Preserve the one black top button, tiny green indicator, ceramic surface, circular rim and solid cylindrical sidewall. Stable soft light from upper left, only a very faint natural shift in the highlight on the ceramic. Hold the product and its shadow perfectly settled; keep the left side empty. End in the supplied final composition. No camera move, object rotation, new controls, text, people, speech or music.",
+        "image_url": "local:artifacts/library-loop-8/handoff/exit-5.500.png",
+        "end_image_url": "local:artifacts/library-loop-8/handoff/exit-5.500.png",
+        "duration": 5,
+        "resolution": "768P",
+        "seed": 812,
+        "prompt_expansion_mode": "fast"
+      }
+    },
+    {
+      "id": "product_kling_paired",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 56,
+      "use_case": "product_continuation",
+      "audio_requested": false,
+      "version": 2,
+      "hypothesis": "Use reviewed exit frame as both endpoints for a settled product continuation; compare H3 and Kling on shape, color, frame seams and middle-frame drift. Repeated image is intentional; subtle light only.",
+      "previous_run": "product_h3_pullback",
+      "previous_cut_end": 5.541666666666667,
+      "reference_review": "artifacts/library-loop-8/handoff/selection.json",
+      "input": {
+        "prompt": "Continue this product shot from the supplied opening frame. The same ivory circular recorder remains stationary on the same charcoal tabletop, on the right of the frame. Lock the camera at this exact position, angle, focus and exposure. Preserve the one black top button, tiny green indicator, ceramic surface, circular rim and solid cylindrical sidewall. Stable soft light from upper left, only a very faint natural shift in the highlight on the ceramic. Hold the product and its shadow perfectly settled; keep the left side empty. End in the supplied final composition. No camera move, object rotation, new controls, text, people, speech or music.",
+        "start_image_url": "local:artifacts/library-loop-8/handoff/exit-5.500.png",
+        "end_image_url": "local:artifacts/library-loop-8/handoff/exit-5.500.png",
+        "duration": "5",
+        "generate_audio": false
+      }
+    }
+  ]
+}

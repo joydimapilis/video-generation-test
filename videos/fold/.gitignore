@@ -1,0 +1,9 @@
+# Locally staged media and generated diagnostics; keep editable source.
+assets/*.ttf
+assets/*.wav
+assets/voice/
+.hyperframes/
+.thumbnails/
+.waveform-cache/
+snapshots/
+renders/

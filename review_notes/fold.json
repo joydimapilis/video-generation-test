@@ -1,0 +1,139 @@
+{
+  "experiment": "library-loop-11",
+  "evaluation_type": "composition, not video-model benchmark",
+  "output": "artifacts/final_outcome/fold/fold.mp4",
+  "sha256": "239a9290b4ebd693e58104b2d8233772aad8b951698c62c2d1eddd1ade9acb66",
+  "review_basis": [
+    "16 chronological encoded frames",
+    "24 targeted encoded opening, morph, seam and ending frames",
+    "Full-resolution final paper morph still",
+    "Numerical full decode, audio, seam, cursor and seek checks"
+  ],
+  "scores": {
+    "opening": 8,
+    "product_clarity": 9,
+    "walkthrough_clarity": 9,
+    "ui_quality": 9,
+    "pacing": 8,
+    "visual_consistency": 9,
+    "transition_quality": 8.5,
+    "human_realism": null,
+    "creativity": 8,
+    "ending": 8.5,
+    "overall_watchability": 8
+  },
+  "iterations": [
+    "Safe opening headline travel",
+    "Hide text before nonuniform paper scaling",
+    "Second ending line enters from below",
+    "Opaque paper during product reveal"
+  ],
+  "verification": {
+    "path": "artifacts/final_outcome/fold/fold.mp4",
+    "duration_seconds": 31,
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "fps": 24,
+    "frames": 744,
+    "sha256": "239a9290b4ebd693e58104b2d8233772aad8b951698c62c2d1eddd1ade9acb66",
+    "bytes": 3771281,
+    "full_decode": true,
+    "black_intervals": [],
+    "audio_mix_correlation_at_zero_offset": 0.9995534032279468,
+    "audio_peak": 0.6806419491767883,
+    "seam_checks": [
+      {
+        "time": 9,
+        "adjacent_encoded_frames_mae_255": 8.873456790123456e-05
+      },
+      {
+        "time": 21,
+        "adjacent_encoded_frames_mae_255": 0.00035815329218106997
+      }
+    ],
+    "final_hold_mae_255": 0.0027064043209876544,
+    "cursor_targets": [
+      {
+        "time": 1.7,
+        "target": "f2-organize",
+        "bounds": {
+          "x": 440,
+          "y": 800,
+          "w": 280,
+          "h": 70
+        },
+        "tip": {
+          "x": 572,
+          "y": 831.533
+        },
+        "inside": true
+      },
+      {
+        "time": 7.4,
+        "target": "f2-human",
+        "bounds": {
+          "x": 1280,
+          "y": 800,
+          "w": 250,
+          "h": 70
+        },
+        "tip": {
+          "x": 1397,
+          "y": 831.533
+        },
+        "inside": true
+      }
+    ],
+    "composition_checks": {
+      "lint": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "runtime": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "layout": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "contrast": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    "contrast_checks": {
+      "passed": 46,
+      "total": 46
+    },
+    "budget": {
+      "estimated_generation_cost_cents": 0,
+      "cap_cents": 1000,
+      "paid_requests": 0
+    },
+    "source_hashes": {
+      "videos/fold/index.html": "db3c9cc881a8948a3c7ac6bd0f8f8f3a64dcf763ed60c0ac9c29465fee51fb87",
+      "videos/fold/compositions/frames/01-everywhere.html": "abb34c9a91a89fe02f976638852ec97e4d2ca1df567f3ceeb24d4f19565b0025",
+      "videos/fold/compositions/frames/02-direction.html": "3d97c965d3be83ba33405383f6d6ea90e0cc2eeae3b9db4cb3b2279038f13cdc",
+      "videos/fold/compositions/frames/03-started.html": "6129ec80655ae78753c8efc70bc4ac2e946bbb2630c05bb97d66f528f2149cc4",
+      "videos/fold/assets/score.wav": "58c83781c28c1450d7bc4446d619941347af42fa6ec5dfc14c2665bab86d2777",
+      "videos/fold/assets/voice/01.wav": "8707ace0c8752349585677045da720d492f2b8413efc44292f5be92a41cbbda2",
+      "videos/fold/assets/voice/02.wav": "b8b949fa2004f4f08e675fe61467eba2b21bf9228d0e0e004f05e14485dd423c",
+      "videos/fold/assets/voice/03.wav": "75a8c4700f88b755dc4ac3a9818732dbfdc678fd4d8cdc920109be1d4a03f0f6"
+    },
+    "limitations": [
+      "Agent visual review of sampled encoded frames and transition sequences; no audience test or independent listening test.",
+      "Audio alignment and clipping checked numerically.",
+      "CLI motion sub-audit disabled; separate timeline inspection, seek-state regression and cursor geometry checks used.",
+      "Fictional product demonstration; no working backend or measured AI performance claimed."
+    ]
+  },
+  "limitations": [
+    "Agent visual review of sampled encoded frames and transition sequences; no audience test or independent listening test.",
+    "Audio alignment and clipping checked numerically.",
+    "CLI motion sub-audit disabled; separate timeline inspection, seek-state regression and cursor geometry checks used.",
+    "Fictional product demonstration; no working backend or measured AI performance claimed."
+  ]
+}

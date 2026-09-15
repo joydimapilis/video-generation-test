@@ -1,0 +1,44 @@
+{
+  "name": "trace",
+  "project": "hyperframes/trace",
+  "duration": 33,
+  "output": "artifacts/final_outcome/trace/trace.mp4",
+  "source_runs": [
+    "trace_hands_h3max_v2"
+  ],
+  "budget_root": "artifacts/library-loop-10",
+  "scenes": [
+    {
+      "role": "hook",
+      "start": 0,
+      "duration": 3.25,
+      "engine": "HyperFrames"
+    },
+    {
+      "role": "introduction",
+      "start": 2.9,
+      "duration": 3.6,
+      "engine": "HyperFrames"
+    },
+    {
+      "role": "hands",
+      "start": 6.5,
+      "duration": 3,
+      "engine": "H3 Max",
+      "source_start": 1
+    },
+    {
+      "role": "capture_report",
+      "start": 9.5,
+      "duration": 17.9,
+      "engine": "HyperFrames",
+      "transition_note": "Report overlaps final wipe through 27.4s; report content fades out from 27.02\u201327.2s."
+    },
+    {
+      "role": "CTA",
+      "start": 27,
+      "duration": 6,
+      "engine": "HyperFrames"
+    }
+  ]
+}

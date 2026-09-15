@@ -1,0 +1,41 @@
+[
+  {
+    "source": "hyperframes/crew/assets/CrewSans.ttf",
+    "staged": "hyperframes/crew-availability/assets/CrewSans.ttf",
+    "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+  },
+  {
+    "source": "hyperframes/crew/assets/CrewSans-Bold.ttf",
+    "staged": "hyperframes/crew-availability/assets/CrewSans-Bold.ttf",
+    "sha256": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0"
+  },
+  {
+    "source": "hyperframes/crew/assets/CrewSerif.woff2",
+    "staged": "hyperframes/crew-availability/assets/CrewSerif.woff2",
+    "sha256": "471e321ec7ce908c94dba06848d9088b5d55232d50e962826b3b534e0817b4b1"
+  },
+  {
+    "source": "hyperframes/crew/assets/gsap.min.js",
+    "staged": "hyperframes/crew-availability/assets/gsap.min.js",
+    "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+  },
+  {
+    "source": "artifacts/library-loop-6/outputs/realism_line4_v2.mp4",
+    "staged": "hyperframes/crew-availability/assets/interview.mp4",
+    "sha256": "39dcf4af3423c63f0eb24a70fd2bcfb6ef5dc1f283e948c1aa745d2783754ea9"
+  },
+  {
+    "staged": "hyperframes/crew-availability/assets/voice.wav",
+    "source": "artifacts/library-loop-6/outputs/realism_line4_v2.mp4",
+    "source_sha256": "39dcf4af3423c63f0eb24a70fd2bcfb6ef5dc1f283e948c1aa745d2783754ea9",
+    "derived_sha256": "a571f1aa83d47b55631828871d324a24606d29aea67cdf2c7df9fe26d2522871",
+    "operation": "FFmpeg decoded stereo PCM at 48kHz, linear gain only; WAV preserves source start alignment",
+    "linear_gain": 0.8503813950989402,
+    "source_peak": 0.9407543540000916
+  },
+  {
+    "staged": "hyperframes/crew-availability/assets/score.wav",
+    "source": "original deterministic synthesis in scripts/build_round8_samples.py",
+    "music_starts_after_dialogue": true
+  }
+]

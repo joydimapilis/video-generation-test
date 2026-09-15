@@ -1,0 +1,58 @@
+{
+  "ugc": {
+    "path": "artifacts/library-loop-9/outputs/crumb_ugc_veo_v1.mp4",
+    "in": 0,
+    "out": 5.75,
+    "captions": [
+      [
+        0,
+        2.75,
+        "I preorder my croissants on Crumb."
+      ],
+      [
+        3.75,
+        5.75,
+        "Breakfast is waiting for me."
+      ]
+    ]
+  },
+  "interview": {
+    "path": "artifacts/library-loop-9/outputs/crumb_interview_h3max_v2.mp4",
+    "in": 0,
+    "out": 6.25,
+    "captions": [
+      [
+        0,
+        3.95,
+        "Crumb puts our bakery preorders in one list."
+      ],
+      [
+        4.4,
+        6.25,
+        "We bake what is booked."
+      ]
+    ]
+  },
+  "product": {
+    "path": "artifacts/library-loop-9/outputs/crumb_pastry_kling_v1.mp4",
+    "in": 0,
+    "out": 4.5
+  },
+  "continuation": {
+    "path": "artifacts/library-loop-9/outputs/crumb_continuation_kling.mp4",
+    "in": 0,
+    "out": 2.5
+  },
+  "return": {
+    "path": "artifacts/library-loop-9/outputs/crumb_baker_return_h3max.mp4",
+    "in": 0,
+    "out": 3,
+    "captions": [
+      [
+        0.75,
+        2.5,
+        "Now I can get back to baking."
+      ]
+    ]
+  }
+}

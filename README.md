@@ -56,6 +56,81 @@ npx hyperframes check --snapshots
 npx hyperframes preview --background --port 3017
 ```
 
+
+## Latest automated test run
+
+**Tuck — Receipts to ready** is a new **30-second product launch film** with a subtle hand-and-receipt opening, exact AI expense walkthrough, and human callback beside the finished report. New footage, script, UI, narration and music; no interviews or earlier generated scenes.
+
+[Watch the MP4](artifacts/final_outcome/tuck/tuck.mp4) · [Review player](artifacts/final_outcome/tuck/review.html) · [Delivery checks](docs/LATEST_RUN.md) · [Scorecard](docs/TUCK_SCORECARD.md) · [Rebuild and learnings](docs/TUCK_RUNBOOK.md)
+
+**$1.60 estimated generation cost; $1.84 reserved under a $10 cap.** 1920×1080, 24fps. All 720 frames decode; UI interactions, expense totals, source timing, audio alignment and scene continuity pass verification.
+
+## Previous run: Fold
+
+**Fold — From scattered to started** is a new **31-second product launch film** for a fictional AI creative-brief builder. Scattered notes become a brief, two concise interactions show how it works, and the completed campaign board remains visible at the ending. Bright coral/cream graphics, new local narration and original music; no interviews.
+
+[Watch the MP4](artifacts/final_outcome/fold/fold.mp4) · [Review player](artifacts/final_outcome/fold/review.html) · [Delivery checks](docs/LATEST_RUN.md) · [Creative scorecard](docs/FOLD_SCORECARD.md) · [Rebuild and learnings](docs/FOLD_RUNBOOK.md)
+
+**$0 estimated generation API cost under a $10 cap.** 1920×1080, 24fps; all 744 frames decode. Exact UI, cursor targets, scene seams and audio alignment verified. No new video-model benchmark was necessary for this graphic concept.
+
+## Previous run: Trace
+
+**Trace — Keep the context** is a completely new **33-second software product film** with exact UI, a short newly generated hand/device insert, local narration and an original electronic score. No interviews or earlier generated footage.
+
+[Watch the MP4](artifacts/final_outcome/trace/trace.mp4) · [Review player](artifacts/final_outcome/trace/review.html) · [Delivery checks](docs/LATEST_RUN.md) · [Scorecard](docs/TRACE_SCORECARD.md) · [Rebuild and learnings](docs/TRACE_RUNBOOK.md)
+
+Three new test clips: **$1.36 estimated**, **$1.57 reserved** under one $10 cap. Finished output: 1920×1080, 24fps. Full decode, source timing, audio alignment and UI checks pass.
+
+## Previous run: Crumb
+
+Three completely fresh **Crumb** sample films are ready in
+`artifacts/final_outcome/crumb/`: customer UGC (19.75s), baker interview with
+order-list demo (21.25s), and pastry-led preorder ad (17s).
+
+This run generated **12 new test clips for $5.10 estimated**, with **$5.92
+reserved** under one $10 cap. Final media uses only footage generated in this
+run. Veo supplies the customer, revised H3 Max supplies the baker and a new
+identity-conditioned return, Kling supplies pastry/continuity, and HyperFrames
+supplies exact text, interfaces and final edits.
+
+[Watch all three](artifacts/final_outcome/crumb/review.html) ·
+[Delivery and validation](docs/LATEST_RUN.md) ·
+[Scorecard](docs/CRUMB_SCORECARD.md) ·
+[Research](docs/CRUMB_RESEARCH.md) · [Resume/rebuild](docs/CRUMB_RUNBOOK.md)
+
+## Previous run: H3 samples
+
+Three new samples from the September 12 H3 screening run are ready in
+`artifacts/final_outcome/round8/`:
+
+- **Cue / Follow-through** — 18s creator ad: new H3 presenter and product footage, exact HyperFrames task demo.
+- **Cue / Object study** — 13.54s product film: new H3 reveal → Kling continuation from the reviewed exit frame.
+- **Crew / Availability** — 18s interview-led demo: reviewed Veo presenter plus a new HyperFrames schedule sequence.
+
+Seven new generations cost **$3.20 estimated**, with **$3.72 reserved** in one
+persistent **$10** ledger. H3's speech worked, but its interview performance stayed
+too expressive with and without prompt expansion. Veo remains the interview
+route. Kling produced the closer measured product handoff in this small trial.
+
+See [the sample scorecard](docs/H3_SAMPLES_SCORECARD.md),
+[research and reusable techniques](docs/ROUND8_RESEARCH_AND_LEARNINGS.md),
+[latest delivery](docs/LATEST_RUN.md), and
+[automation instructions](docs/AUTOMATED_VIDEO_LAB.md).
+
+```sh
+.venv/bin/python scripts/run_library_loop.py configs/h3_samples_round1.json --evaluate
+.venv/bin/python scripts/run_library_loop.py configs/h3_samples_round2.json --evaluate
+.venv/bin/python scripts/run_library_loop.py configs/h3_samples_continuity.json --evaluate
+.venv/bin/python scripts/learn_from_loops.py --route interview --reference --audio
+```
+
+Resuming these exact plans reuses persisted jobs. All three plans share
+`artifacts/library-loop-8/budget.json`; no automatic paid retries or cap resets.
+Routing learns from compatible decoded and reviewed outputs; missing realism,
+lip-sync or continuity dimensions remain untested. Earlier interview comparison:
+`artifacts/library-loop-7/interview-comparison.mp4` and
+[its scorecard](docs/INTERVIEW_MODEL_SCORECARD.md).
+
 ## Current Defaults
 
 - First use case: reusable short-form marketing/social clips.
@@ -76,7 +151,7 @@ npx hyperframes preview --background --port 3017
 
 ## Delivered Films
 
-Six finished concept films, each produced inside its own `$10` estimated-cost
+Seven finished concept films, each produced inside its own `$10` estimated-cost
 ledger. Rendered MP4s live under `artifacts/final_outcome/<name>/` and are not in
 Git; the compositions that produce them are.
 
@@ -88,6 +163,12 @@ Git; the compositions that produce them are.
 | Seventeen | Founder origin story | 42s | $6.08 | `docs/SEVENTEEN_SCORECARD.md` |
 | The Sunday Problem | Customer testimonial | 36s | $7.88 | `docs/ROTA_SCORECARD.md` |
 | The Sunday Problem (revised) | Customer testimonial, clarified | 44s | $5.10 | `docs/CREW_SCORECARD.md` |
+| The Sunday Problem (realism cut) | Testimonial, human realism and shot continuity | 49s | $8.48 cumulative | `docs/CREW_REALISM_REPORT.md` |
+
+The realism cut supersedes the revised cut and shares its ledger. It ships with a
+silent before/after reel at
+`artifacts/final_outcome/crew-improved/crew-before-after.mp4`; the earlier cut
+stays at `artifacts/final_outcome/crew/` unchanged.
 
 Routing rules accumulated across those loops are in
 `prompt_library/concept_slate.json`; reusable prompt patterns are in
@@ -105,6 +186,16 @@ python scripts/prepare_crew_assets.py       # stages plates, synthesizes score
 cd hyperframes/crew && npm run check && npm run render
 ```
 
+The realism cut restages from the first cut's assets rather than from scratch,
+and its plates are 24fps, so the render has to be told:
+
+```bash
+python scripts/build_crew_improved.py       # restages, re-times, rebuilds the composition
+python scripts/build_crew_comparison.py     # silent before/after reel
+cd hyperframes/crew-improved && npx hyperframes check && npx hyperframes render -f 24 -q high
+python scripts/finalize_crew_improved.py    # delivery gates, then artifacts/final_outcome/
+```
+
 Each `scripts/prepare_*_assets.py` restages its plates and regenerates its audio
 deterministically from a fixed seed, so `hyperframes/*/assets/` is reproducible
 and stays out of Git.
@@ -119,4 +210,4 @@ export AMARILLO_LIBRARY_DIR="/path/to/your/video library"
 python scripts/inspect_library_slice.py --out artifacts/slice --terms configs/library_slice_round5.json
 ```
 
-It defaults to `data/library` if unset.
+If unset, it uses `data/library`, then a single accessible library recorded in prior reference manifests. Missing or ambiguous libraries fail clearly.

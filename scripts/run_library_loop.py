@@ -2,6 +2,8 @@
 import argparse
 import json
 import os
+import subprocess
+import sys
 import time
 import urllib.error
 import urllib.parse
@@ -9,6 +11,9 @@ import urllib.request
 from pathlib import Path
 
 from amarillo.budget import BudgetLedger
+from amarillo.references import resolve_local_images
+from amarillo.loop_plan import prepare_plan
+from amarillo.learning import requested_audio
 
 
 
@@ -23,35 +28,26 @@ def request(url, payload=None, auth=True):
         return json.load(result)
 
 
-def resolve_local_images(payload):
-    """Upload any local image referenced by the payload and swap in the URL.
-
-    An image-to-video run names a file on disk; Fal needs a URL. Uploading here
-    keeps the run plan readable and keeps the uploaded URL out of version control.
-    """
-    for field in ('image_url', 'start_image_url', 'end_image_url'):
-        value = payload.get(field)
-        if not value or not str(value).startswith('local:'):
-            continue
-        path = Path(str(value)[len('local:'):])
-        if not path.exists():
-            raise SystemExit(f'Missing local image for {field}: {path}')
-        import fal_client
-        payload[field] = fal_client.upload_file(path)
-    return payload
-
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('plan', type=Path)
-    parser.add_argument('--root', type=Path, default=Path('artifacts/library-loop'),
+    parser.add_argument('--root', type=Path,
                         help='Experiment directory holding budget.json and outputs/.')
     parser.add_argument('--cap-cents', type=int, default=1000,
                         help='Hard cap for this experiment. An existing ledger refuses to change it.')
+    parser.add_argument('--dry-run', action='store_true', help='Validate budget without uploads or generation.')
+    parser.add_argument('--poll-timeout', type=float, default=1200,
+                        help='Seconds to poll before returning; resume with the same plan.')
+    parser.add_argument('--evaluate', action='store_true',
+                        help='Extract local technical/speech evidence and refresh cross-loop learning afterward.')
     args = parser.parse_args()
-    root = args.root
     plan = json.loads(args.plan.read_text())
-    ledger = BudgetLedger(root / 'budget.json', args.cap_cents)
+    root, ledger, summary = prepare_plan(plan, args.root, args.cap_cents)
+    print(json.dumps(summary), flush=True)
+    if args.dry_run:
+        return
+    if not os.environ.get('FAL_KEY') and summary['new_requests']:
+        raise SystemExit('FAL_KEY is required; no requests reserved or submitted')
     (root / 'outputs').mkdir(parents=True, exist_ok=True)
     # Submit sequentially and persist each ID before the next submission.
     for run in plan['runs']:
@@ -59,7 +55,9 @@ def main():
         if not ledger.reserve(identifier, run['estimate_cents'], run):
             continue
         try:
-            queue = request('https://queue.fal.run/' + run['endpoint'], resolve_local_images(run['input']))
+            resolved = resolve_local_images(run['input'])
+            ledger.update(identifier, resolved_input=resolved)
+            queue = request('https://queue.fal.run/' + run['endpoint'], resolved)
             ledger.update(identifier, status='submitted', queue=queue, submitted_at=time.time())
             print(identifier, 'submitted', queue['request_id'], flush=True)
         except Exception as error:
@@ -67,7 +65,8 @@ def main():
             ledger.update(identifier, status='submission_unknown', error=str(error))
             print(identifier, 'submission_unknown', str(error), flush=True)
     pending = {r['id'] for r in plan['runs'] if ledger.read()['runs'][r['id']]['status'] in {'submitted', 'running'}}
-    while pending:
+    deadline = time.monotonic() + args.poll_timeout
+    while pending and time.monotonic() < deadline:
         for identifier in sorted(pending):
             row = ledger.read()['runs'][identifier]
             try:
@@ -95,6 +94,8 @@ def main():
         if pending:
             print('Pending:', ', '.join(sorted(pending)), flush=True)
             time.sleep(15)
+    if pending:
+        print('Polling paused. Resume this same plan to retrieve pending jobs without paying again.', flush=True)
     # Downloads can be resumed without another paid generation.
     for identifier, row in ledger.read()['runs'].items():
         if row['status'] == 'generated':
@@ -104,6 +105,15 @@ def main():
     data = ledger.read()
     print('Estimated cents:', sum(r['estimate_cents'] for r in data['runs'].values()))
     print('Reserved cents:', sum(r['reserved_cents'] for r in data['runs'].values()))
+    if args.evaluate:
+        speech_ids = [r['id'] for r in plan['runs'] if requested_audio(r)]
+        command = [sys.executable, str(Path(__file__).with_name('evaluate_library_loop.py')), '--root', str(root)]
+        if speech_ids:
+            command += ['--speech', '--speech-match', ','.join(speech_ids)]
+        subprocess.run(command, check=True)
+        from amarillo.learning import save_learning
+        learning = save_learning(root.parent)
+        print('Learning refreshed; outputs needing qualitative review:', len(learning['needs_review']))
 
 
 if __name__ == '__main__':

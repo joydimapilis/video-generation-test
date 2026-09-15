@@ -1,0 +1,87 @@
+{
+  "experiment": "crumb-fresh-samples-2026-09-12",
+  "budget_root": "artifacts/library-loop-9",
+  "pricing_checked": "2026-09-12",
+  "pricing_sources": [
+    "https://fal.ai/models/minimax/h3/text-to-video",
+    "https://fal.ai/models/fal-ai/veo3.1/fast",
+    "https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video",
+    "https://fal.ai/models/minimax/h3-max/text-to-video",
+    "https://fal.ai/models/minimax/h3-max/image-to-video",
+    "https://fal.ai/models/fal-ai/kling-video/v3/pro/image-to-video"
+  ],
+  "cost_basis": "Same $10 ledger; $0.12 H3 Max interview, $0.90 Veo interview, $0.10 H3 Max paired continuation, $0.56 Kling paired continuation. Revised prompting targets observed overtextured skin and overacting. No price-free allowance assumed.",
+  "runs": [
+    {
+      "id": "crumb_interview_h3max_v2",
+      "endpoint": "minimax/h3-max/text-to-video",
+      "estimate_cents": 12,
+      "use_case": "interview",
+      "audio_requested": true,
+      "version": 2,
+      "line": "Crumb puts our bakery preorders in one list. We bake what is booked.",
+      "hypothesis": "Both first-round models exaggerated the requested pores/lines and expressions. Remove texture adjectives and long negative list; use broad soft light and one calm communicative intention. Same seed per endpoint, but new text-only output is not an identity-controlled comparison.",
+      "input": {
+        "prompt": "A six-second ordinary bakery interview, fixed eye-level medium close-up. A fictional 48-year-old woman with olive skin and loosely tied dark hair wears a plain indigo apron and oatmeal shirt. She sits beside a workbench in a cream-tiled neighborhood bakery. Broad soft window daylight from the left, low contrast, ordinary documentary photography. She calmly explains tomorrow\u2019s plan to a colleague beside the camera, with a steady gaze, relaxed brow and resting shoulders. She says once: \"Crumb puts our bakery preorders in one list. We bake what is booked.\" Small conversational mouth movements, a natural blink, then lips close and she listens. Hands rest below the frame. Voice and room tone, no music, no captions, no camera movement.",
+        "aspect_ratio": "16:9",
+        "seed": 912,
+        "duration": 6,
+        "resolution": "768P",
+        "prompt_expansion_mode": "fast"
+      }
+    },
+    {
+      "id": "crumb_interview_veo_v2",
+      "endpoint": "fal-ai/veo3.1/fast",
+      "estimate_cents": 90,
+      "use_case": "interview",
+      "audio_requested": true,
+      "version": 2,
+      "line": "Crumb puts our bakery preorders in one list. We bake what is booked.",
+      "hypothesis": "Both first-round models exaggerated the requested pores/lines and expressions. Remove texture adjectives and long negative list; use broad soft light and one calm communicative intention. Same seed per endpoint, but new text-only output is not an identity-controlled comparison.",
+      "input": {
+        "prompt": "A six-second ordinary bakery interview, fixed eye-level medium close-up. A fictional 48-year-old woman with olive skin and loosely tied dark hair wears a plain indigo apron and oatmeal shirt. She sits beside a workbench in a cream-tiled neighborhood bakery. Broad soft window daylight from the left, low contrast, ordinary documentary photography. She calmly explains tomorrow\u2019s plan to a colleague beside the camera, with a steady gaze, relaxed brow and resting shoulders. She says once: \"Crumb puts our bakery preorders in one list. We bake what is booked.\" Small conversational mouth movements, a natural blink, then lips close and she listens. Hands rest below the frame. Voice and room tone, no music, no captions, no camera movement.",
+        "aspect_ratio": "16:9",
+        "seed": 912,
+        "duration": "6s",
+        "resolution": "1080p",
+        "generate_audio": true,
+        "auto_fix": false
+      }
+    },
+    {
+      "id": "crumb_continuation_h3max",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "estimate_cents": 10,
+      "use_case": "product_continuation",
+      "audio_requested": false,
+      "version": 2,
+      "hypothesis": "Use reviewed exit image for both endpoints. Compare H3 Max with historical preferred Kling for sampled stability and actual boundary closeness; this does not test complex motion.",
+      "input": {
+        "prompt": "Continue this exact photographed bakery pastry shot. The croissant, plate, parchment, crumbs, counter and tiled wall stay stationary in exactly the supplied layout. Locked camera, same crop, same soft left window light and exposure throughout. Hold the settled composition while tiny natural ambient reflections remain plausible. Begin and end on the supplied identical frame. No zoom, rotation, new objects, steam, text, people, music or speech.",
+        "image_url": "local:artifacts/library-loop-9/exit/exit-4.500.png",
+        "end_image_url": "local:artifacts/library-loop-9/exit/exit-4.500.png",
+        "duration": 5,
+        "resolution": "768P",
+        "seed": 912,
+        "prompt_expansion_mode": "fast"
+      }
+    },
+    {
+      "id": "crumb_continuation_kling",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 56,
+      "use_case": "product_continuation",
+      "audio_requested": false,
+      "version": 2,
+      "hypothesis": "Use reviewed exit image for both endpoints. Compare H3 Max with historical preferred Kling for sampled stability and actual boundary closeness; this does not test complex motion.",
+      "input": {
+        "prompt": "Continue this exact photographed bakery pastry shot. The croissant, plate, parchment, crumbs, counter and tiled wall stay stationary in exactly the supplied layout. Locked camera, same crop, same soft left window light and exposure throughout. Hold the settled composition while tiny natural ambient reflections remain plausible. Begin and end on the supplied identical frame. No zoom, rotation, new objects, steam, text, people, music or speech.",
+        "start_image_url": "local:artifacts/library-loop-9/exit/exit-4.500.png",
+        "end_image_url": "local:artifacts/library-loop-9/exit/exit-4.500.png",
+        "duration": "5",
+        "generate_audio": false
+      }
+    }
+  ]
+}

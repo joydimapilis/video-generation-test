@@ -80,6 +80,15 @@ SCREEN_B_UPDATED_AT = 2.3
 SCREEN_B_UPDATED_FADE = 0.3
 
 plan = json.loads(Path('assets/audio-plan.json').read_text())
+edit_path = Path('edit-plan.json')
+if edit_path.exists():
+    edit = json.loads(edit_path.read_text())
+    DURATION = edit['duration']
+    VIDEO_CUTS = edit['video_cuts']
+    SCREEN_A_AT, SCREEN_A_DUR = edit['screen_a']
+    SCREEN_B_AT, SCREEN_B_DUR = edit['screen_b']
+    CLOSE_AT, CLOSE_DUR = edit['close']
+    BRAND_WINDOWS = edit['brand_windows']
 DIALOGUE_TRACKS = plan['dialogue_tracks']
 CAPTION_SCHEDULE = plan['caption_schedule']
 
@@ -224,6 +233,9 @@ timeline.append(
     "var active=null;for(var i=0;i<CAPS.length;i++){if(now>=CAPS[i]['in']&&now<CAPS[i].out){active=CAPS[i];}}"
     "var key=active?active.text:'';if(key===capLast){return;}capLast=key;"
     "document.getElementById('cap').textContent=key;"
+    # The scrim is a pure function of the same clock, so a seek to any frame
+    # restores it; it is never tweened, only switched with the caption it serves.
+    "document.getElementById('cap-scrim').style.opacity=key?'1':'0';"
     "}},0);")
 
 # ---------------------------------------------------------------- audio: dialogue (kept audio,
@@ -234,7 +246,7 @@ for i, row in enumerate(DIALOGUE_TRACKS):
         f'      <audio data-hf-id="hf-a{row["track"].lower()}" id="a-{row["track"].lower()}" '
         f'src="assets/{row["src"]}" data-start="{row["data_start"]}" '
         f'data-media-start="{row["media_start"]}" data-duration="{row["duration"]}" '
-        f'data-volume="1" data-track-index="{30 + i}"></audio>')
+        f'data-volume="{row.get("volume", 1)}" data-track-index="{30 + i}"></audio>')
 audio.append(
     f'      <audio data-hf-id="hf-ascore" id="a-score" src="assets/score.wav" data-start="0" '
     f'data-duration="{DURATION}" data-volume="{plan["score_volume"]}" data-track-index="40" '
@@ -304,8 +316,19 @@ html = f'''<!DOCTYPE html>
       #close-tag{{margin-top:40px;font-family:CrewSans,Arial,sans-serif;font-size:32px;
         color:var(--crust)}}
 
+      /* The mark and the captions both sit on generated footage whose luminance is
+         outside our control - the pencil-schedule cutaway is near-white warm paper.
+         Each carries its own local scrim so white type keeps a measured ratio there
+         without tinting the rest of the frame. */
       .brand-mark{{font-family:CrewSerif,serif;font-size:34px;color:var(--paper);opacity:.62;
-        padding:64px 0 0 96px;z-index:30;pointer-events:none}}
+        padding:64px 0 0 96px;z-index:30;pointer-events:none;
+        background:radial-gradient(17% 12% at 128px 84px,rgba(18,12,8,.66) 0%,
+          rgba(18,12,8,.38) 50%,rgba(18,12,8,0) 100%)}}
+
+      #cap-scrim{{position:absolute;left:0;right:0;bottom:0;height:320px;z-index:39;
+        opacity:0;pointer-events:none;
+        background:linear-gradient(to top,rgba(18,12,8,.58) 0%,rgba(18,12,8,.52) 45%,
+          rgba(18,12,8,.34) 78%,rgba(18,12,8,0) 100%)}}
 
       #lower-third{{z-index:35;pointer-events:none}}
       #lt-plate{{position:absolute;left:96px;bottom:260px;background:var(--crumb);
@@ -327,6 +350,7 @@ html = f'''<!DOCTYPE html>
     <div data-hf-id="hf-root" id="root" data-composition-id="crew" data-start="0" data-duration="{DURATION}" data-width="1920" data-height="1080">
 {chr(10).join(clips)}
 
+      <div data-hf-id="hf-capscrim" id="cap-scrim"></div>
       <div data-hf-id="hf-cap" id="cap"></div>
       <div data-hf-id="hf-foot" id="footer">ORIGINAL CONCEPT / AI-GENERATED FILM</div>
 

@@ -1,0 +1,87 @@
+{
+  "concept": "Tuck \u2014 Receipts to ready",
+  "subtitle": "A new 30-second AI expense-product launch: minimal hand footage, exact UI walkthrough, human callback and finished report. Two fresh hand takes; one selected.",
+  "criteria": [
+    "prompt_adherence",
+    "sampled_stability",
+    "composition",
+    "edit_readiness"
+  ],
+  "method": "Agent review of eight chronological source frames per take, selected full-resolution stills, source decode, composition snapshots, encoded frame sequences, cursor geometry and source-timing comparisons. Scores are subjective screening judgments. No calibrated hand-motion or lip-sync metric, independent listening or audience test.",
+  "caveat": "One take per condition. The revision changes prompt and seed together, so improvement cannot be attributed to one variable. No new cross-model benchmark or general model-superiority claim.",
+  "runs": {
+    "tuck_receipt_h3max_v1": {
+      "scores": [
+        6.5,
+        8,
+        7,
+        6.5
+      ],
+      "decision": "reject",
+      "note": "Plausible hand and warm desk, but the prominent invented receipt print reads as gibberish in the full-resolution close-up. The hand lifts and pinches despite the planned simple slide. Replaced for this edit.",
+      "detailed_scores": {
+        "human_realism": 8,
+        "prompt_adherence": 6.5,
+        "consistency": 8,
+        "camera_movement": 8.5
+      }
+    },
+    "tuck_receipt_h3max_v2": {
+      "scores": [
+        8,
+        8.5,
+        8,
+        8.5
+      ],
+      "decision": "accept",
+      "note": "Blank receipt backs remove the fake-text distraction; the flatter hand and slow withdrawal support the story. Receipts are wider than the requested slender strips, and several fingers move together. Selected source0.5\u20136s for the opening and6\u201310s for the return, with framing and a final-frame hold; no old footage or second identity is used.",
+      "detailed_scores": {
+        "human_realism": 8.5,
+        "prompt_adherence": 8,
+        "consistency": 8.5,
+        "camera_movement": 8.5
+      }
+    }
+  },
+  "routing": {
+    "minimal_hand_and_paper": {
+      "primary": "H3 Max for this selected take",
+      "selected_run": "tuck_receipt_h3max_v2",
+      "caution": "Only simple paper contact and withdrawal screened. Do not generalize to precise multi-step handling."
+    },
+    "exact_ui_and_text": {
+      "primary": "HyperFrames 0.8.40",
+      "caution": "Fictional authored UI; clicks, math, readable states and boundary frames independently checked."
+    },
+    "voice": {
+      "primary": "Local Kokoro af_heart",
+      "caution": "No on-camera speech; source narration includes measured pause insertion."
+    }
+  },
+  "findings": [
+    "A receipt backside can supply the physical shape while all readable business details are authored in the UI.",
+    "Keep a hand flat and its motion simple; remove instructions that invite pinching, lifting or complex manipulation.",
+    "Use distinct ranges of the same fresh continuous take for the opening and return when identity and lighting should match. This is source-range continuity, not a separately generated matching identity.",
+    "Keep paper opaque as its plane expands; retire type before nonuniform aspect changes.",
+    "Show immediate Preparing feedback after the report action; move the review cursor beside numbers so it does not cover them.",
+    "The final report keeps the same $178.40 sum and three attached receipts visible while the hand leaves.",
+    "Source footage is1344x768 and is cropped/enlarged into1080p panels; exact UI is authored at1920x1080."
+  ],
+  "changed_this_loop": "New Tuck concept, script, original hand source, specific hand/text revision, exact expense walkthrough, fresh local narration and96 BPM score. Source frames and actual encode are evaluated; no prior generated footage is reused.",
+  "finished_film": {
+    "path": "artifacts/final_outcome/tuck/tuck.mp4",
+    "sha256": "18d1f0335e83e3176d4c7805918063f04a0357a1147fe304fe8129ab332d6cfb",
+    "review": "Chronological encoded frames and28 targeted boundary/motion frames reviewed; table-to-report empty beat shortened. Report and CTA remain through final frame.",
+    "scores": {
+      "opening": 8,
+      "product_clarity": 9,
+      "walkthrough_clarity": 9,
+      "ui_quality": 9,
+      "human_presence": 8.5,
+      "transitions": 8.5,
+      "ending": 8.5,
+      "watchability": 8
+    },
+    "verification": "artifacts/final_outcome/tuck/verification.json"
+  }
+}

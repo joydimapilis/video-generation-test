@@ -1,0 +1,56 @@
+{
+  "experiment": "interview-model-routing-2026-09-12",
+  "budget_root": "artifacts/library-loop-7",
+  "runs": [
+    {
+      "id": "interview_kling3_restrained",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 101,
+      "input": {
+        "prompt": "One locked-camera documentary interview take from the supplied frame, same woman, face, hair, apron, background and warm window light. Preserve the reference skin texture without retouching. She remains seated with settled shoulders, hands resting in her lap below frame. Her eyes stay on one interviewer just camera-right; an occasional natural blink and small mouth movements accompany speech. Understated matter-of-fact delivery. Begin speaking immediately, without a preparatory smile or breath: \"we use CREW now. everyone puts their availability on their phone.\" Finish the sentence once, then close her lips and listen quietly. No shoulder shrug, no sideways glance, no head sway, no exaggerated eyebrows, no zoom, no cut, no music, no captions, no logos.",
+        "duration": "6",
+        "generate_audio": true,
+        "start_image_url": "local:artifacts/library-loop-5/reference_frames/f5.8.jpg",
+        "negative_prompt": "repeating a phrase, restarting the sentence, stuttering, duplicated words, trailing off, mumbling, enthusiastic sales delivery, overacting, subtitles, captions, burned-in text, text, letters, numbers, logos, watermark, other people, music, camera shake, cut to another shot, different person, changing clothes, standing up, holding a phone, beauty retouching, waxy skin, exaggerated eyebrows, finger counting, floating hair"
+      },
+      "use_case": "interview",
+      "version": 2,
+      "line": "We use Crew now. Everyone puts their availability on their phone.",
+      "hypothesis": "The long contract produced a delayed line, shoulder lift, and gaze shifts. Test concise observable blocking and prompt speech onset; same model, reference, duration, audio. Kling exposes no seed, so stochastic variation is a confound.",
+      "reference_baseline": "artifacts/library-loop-6/outputs/realism_line4_v2.mp4",
+      "shot_plan": {
+        "entry": {
+          "identity": "the reference bakery owner, greying dark hair tied back",
+          "wardrobe": "cream long-sleeve shirt, flour-dusted charcoal apron, brown straps, lavalier unchanged",
+          "environment": "same wood and tile bakery, bread shelves and window on screen right",
+          "lighting": "unchanged warm morning daylight from screen right, stable exposure and white balance",
+          "framing": "eye-level medium close-up with the original headroom and lens perspective",
+          "camera": "locked tripod, no zoom, no pan",
+          "screen_position": "seated center-left",
+          "travel_direction": "stationary",
+          "pose": "shoulders relaxed, head upright, mouth closed, gaze slightly camera-right",
+          "prop_state": "microphone clipped to the same apron strap; hands empty below frame"
+        },
+        "exit": {
+          "identity": "the reference bakery owner, greying dark hair tied back",
+          "wardrobe": "cream long-sleeve shirt, flour-dusted charcoal apron, brown straps, lavalier unchanged",
+          "environment": "same wood and tile bakery, bread shelves and window on screen right",
+          "lighting": "unchanged warm morning daylight from screen right, stable exposure and white balance",
+          "framing": "eye-level medium close-up with the original headroom and lens perspective",
+          "camera": "locked tripod, no zoom, no pan",
+          "screen_position": "seated center-left",
+          "travel_direction": "stationary",
+          "pose": "shoulders relaxed, head upright, mouth closed, gaze slightly camera-right",
+          "prop_state": "microphone clipped to the same apron strap; hands empty below frame"
+        },
+        "exit_is_requested_not_verified": true
+      }
+    }
+  ],
+  "pricing_checked": "2026-09-12",
+  "pricing_sources": [
+    "https://fal.ai/models/fal-ai/kling-video/v3/pro/image-to-video",
+    "https://fal.ai/models/bytedance/seedance-2.5/image-to-video"
+  ],
+  "cost_basis": "Kling 6s * $0.168 audio on, rounded up; Seedance 6s * $0.473 at 720p 16:9, rounded up. Ledger adds 15%. Veo baseline reused at no new charge."
+}

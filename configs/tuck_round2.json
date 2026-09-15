@@ -1,0 +1,28 @@
+{
+  "experiment": "tuck-product-launch-2026-09-15",
+  "budget_root": "artifacts/library-loop-12",
+  "pricing_checked": "2026-09-15",
+  "pricing_sources": [
+    "https://fal.ai/models/minimax/h3-max/text-to-video"
+  ],
+  "cost_basis": "Normal post-Sept14 H3 Max 768P rate $0.08/s: one 10s take $0.80; runner adds 15% reserve. No expired promotional pricing.",
+  "runs": [
+    {
+      "id": "tuck_receipt_h3max_v2",
+      "endpoint": "minimax/h3-max/text-to-video",
+      "estimate_cents": 80,
+      "use_case": "industrial_human",
+      "audio_requested": false,
+      "version": 2,
+      "hypothesis": "Full-resolution review exposed prominent gibberish receipt print and an exaggerated pinch. Show the blank reverse of one narrow receipt and slide it with a relaxed flat fingertip; preserve the same simple beginning/withdrawal structure.",
+      "input": {
+        "prompt": "One continuous ten-second overhead close-up for a premium software launch. Locked camera directly above a matte warm charcoal desk. At frame right are three narrow off-white paper receipts, all turned face down so ONLY THE COMPLETELY BLANK UNPRINTED BACKS are visible. Their reverse surfaces are plain soft ivory paper, no letters, no numbers, no marks, no logos. The top receipt is a slender vertical strip, roughly three times taller than wide, gently curled at one corner. The left forty percent of the image is empty charcoal desk. A small graphite laptop corner is at the far upper right, cropped to just two keyboard rows, with no screen. A natural adult right hand enters from lower right, with ordinary short nails, warm medium skin, and a dark olive cotton cuff. The palm rests comfortably on the desk; fingers are extended and loosely together, never pinching or making a claw. One index fingertip rests flat on the lower edge of the top receipt and slides it gently a few centimeters toward the laptop. The paper stays flat on the table throughout. Then the hand rests still beside it. In the last three seconds, the relaxed hand glides out toward the lower right, leaving the three blank paper backs still. Warm afternoon light from the left, real skin pores, ordinary knuckles, delicate paper edges. Quiet natural movement. No lifting, no pinching, no folding, no tapping, no face, no other hand, no camera movement, no cuts, no text anywhere, no dialogue.",
+        "duration": 10,
+        "aspect_ratio": "16:9",
+        "resolution": "768P",
+        "seed": 91513,
+        "prompt_expansion_mode": "fast"
+      }
+    }
+  ]
+}

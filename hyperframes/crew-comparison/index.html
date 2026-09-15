@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset="UTF-8"><script src="assets/gsap.min.js"></script><style>
+    @font-face{font-family:CrewSans;src:url('assets/CrewSans.ttf')}
+    *{box-sizing:border-box;margin:0}html,body,#root{width:1920px;height:1080px;overflow:hidden;background:#101315;color:#f6f7f8;font-family:CrewSans,Arial,sans-serif}
+    #root{position:relative}.clip{position:absolute}.plate{top:180px;width:960px;height:540px;object-fit:contain}.side-0{left:0}.side-1{left:960px}
+    .labels{inset:0;pointer-events:none}.left-label,.right-label{position:absolute;top:94px;width:840px;font-size:34px}.left-label{left:64px}.right-label{left:1024px}
+    h1{position:absolute;left:64px;top:785px;font-size:44px;font-weight:400}p{position:absolute;left:64px;top:857px;font-size:28px;color:#c5cbd0}
+    footer{position:absolute;left:64px;bottom:52px;font-size:22px;color:#b7bfc4}
+    </style></head><body><div id="root" data-composition-id="crew-comparison" data-width="1920" data-height="1080" data-duration="20"><section id="chapter-0" class="clip labels" data-start="0" data-duration="6" data-track-index="10"><div class="left-label">Original prompt</div><div class="right-label">Revised prompt</div><h1>01 / Human performance</h1><p>Same reference, seed and model. Full takes; no retouching.</p></section>
+<video id="v-0-0-0" class="clip plate side-0" src="assets/before-person.mp4" data-start="0" data-duration="6" data-track-index="0" muted playsinline></video>
+<video id="v-0-1-0" class="clip plate side-1" src="assets/after-person.mp4" data-start="0" data-duration="6" data-track-index="1" muted playsinline></video>
+<section id="chapter-1" class="clip labels" data-start="6" data-duration="6" data-track-index="11"><div class="left-label">Original action</div><div class="right-label">Revised action</div><h1>02 / Hands and physical contact</h1><p>Full takes. The final film uses only the first press-and-release.</p></section>
+<video id="v-1-0-0" class="clip plate side-0" src="assets/before-hands.mp4" data-start="6" data-duration="6" data-track-index="0" muted playsinline></video>
+<video id="v-1-1-0" class="clip plate side-1" src="assets/after-hands.mp4" data-start="6" data-duration="6" data-track-index="1" muted playsinline></video>
+<section id="chapter-2" class="clip labels" data-start="12" data-duration="4" data-track-index="12"><div class="left-label">Original shared anchor</div><div class="right-label">Previous exit frame</div><h1>03 / Shot continuity</h1><p>One second before and after each cut, repeated twice.</p></section>
+<video id="v-2-0-0" class="clip plate side-0" src="assets/before-join.mp4" data-start="12" data-duration="2" data-track-index="0" muted playsinline></video>
+<video id="v-2-0-1" class="clip plate side-0" src="assets/before-join.mp4" data-start="14" data-duration="2" data-track-index="0" muted playsinline></video>
+<video id="v-2-1-0" class="clip plate side-1" src="assets/after-join.mp4" data-start="12" data-duration="2" data-track-index="1" muted playsinline></video>
+<video id="v-2-1-1" class="clip plate side-1" src="assets/after-join.mp4" data-start="14" data-duration="2" data-track-index="1" muted playsinline></video>
+<section id="chapter-3" class="clip labels" data-start="16" data-duration="4" data-track-index="13"><div class="left-label">Shared-anchor control</div><div class="right-label">Previous exit frame</div><h1>04 / Reference-only control</h1><p>Same improved prompt, seed and outgoing shot; different input reference.</p></section>
+<video id="v-3-0-0" class="clip plate side-0" src="assets/control-join.mp4" data-start="16" data-duration="2" data-track-index="0" muted playsinline></video>
+<video id="v-3-0-1" class="clip plate side-0" src="assets/control-join.mp4" data-start="18" data-duration="2" data-track-index="0" muted playsinline></video>
+<video id="v-3-1-0" class="clip plate side-1" src="assets/after-join.mp4" data-start="16" data-duration="2" data-track-index="1" muted playsinline></video>
+<video id="v-3-1-1" class="clip plate side-1" src="assets/after-join.mp4" data-start="18" data-duration="2" data-track-index="1" muted playsinline></video><footer>SILENT VISUAL COMPARISON / AI-GENERATED FOOTAGE / SINGLE-TAKE PILOT</footer></div>
+    <script>window.__timelines=window.__timelines||{};const tl=gsap.timeline({paused:true});tl.to({t:0},{t:20,duration:20,ease:'none'});window.__timelines['crew-comparison']=tl;</script></body></html>

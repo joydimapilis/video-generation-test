@@ -1,0 +1,214 @@
+Create another completely new video from scratch using our existing video library, previous model learnings, scorecard, prompt/skill library, and transition learnings.
+
+This time, create a product launch video.
+
+The video should introduce a software, technology, digital product, or AI product and give the viewer a glimpse of how it works through a short walkthrough.
+
+Do not make it feel like a full tutorial or long product demo. The walkthrough should only show enough of the product to make the viewer understand what it does and become interested in seeing more.
+
+Creative direction
+
+Make this video feel different from the previous samples while still taking inspiration from the styles, pacing, transitions, and visual ideas found in our existing video library.
+
+Do not copy one specific reference video.
+
+Instead, combine useful patterns from multiple videos and create a fresh concept.
+
+Aim for something that feels like a polished modern product launch:
+
+* Creative
+* Fast-paced but easy to follow
+* Visually clean
+* Product-focused
+* Technology-forward
+* Clear in its message
+* Memorable
+
+Avoid relying heavily on interviews or people speaking directly to camera.
+
+People can appear when useful, but the product and its experience should be the main focus.
+
+Opening
+
+Put extra thought into the first few seconds.
+
+The opening should not feel generic.
+
+Avoid immediately starting with a basic logo reveal, generic product screen, or predictable “Introducing…” text unless there is a creative reason for it.
+
+Create a strong visual hook that makes the viewer want to keep watching.
+
+The opening could use:
+
+* A problem or frustrating moment
+* An unexpected visual
+* A bold statement
+* A fast transformation
+* A creative UI reveal
+* A cinematic product moment
+* A visual transition from the real world into the product
+* Another approach inspired by patterns found in the video library
+
+Choose the strongest idea yourself.
+
+The opening should naturally lead into the product rather than feeling disconnected from the rest of the video.
+
+Product reveal and walkthrough
+
+After the hook, clearly introduce the product.
+
+The viewer should quickly understand:
+
+* What the product is
+* What it helps with
+* Why it is useful
+* What makes it interesting or different
+
+Then show a short glimpse of the product walkthrough.
+
+Focus on a few important interactions rather than showing every feature.
+
+For example:
+
+problem → product reveal → key action → result
+
+or
+
+hook → product interface → 2–3 quick features → outcome
+
+Use Hyperframes where appropriate for accurate UI, product screens, text, and interface animations.
+
+Combine Hyperframes with video-generation models where cinematic scenes, environments, people, or product interactions would improve the story.
+
+The walkthrough should feel integrated into the launch video rather than like a screen recording placed in the middle.
+
+Product clarity
+
+Make sure the product is clearly mentioned, shown, and understood.
+
+Do not make the product or its purpose too subtle.
+
+The viewer should not finish the video wondering:
+
+“What does this product actually do?”
+
+Keep the explanation concise, but make the value obvious.
+
+Transitions and continuity
+
+Continue improving transitions between every scene.
+
+Pay particular attention to:
+
+* Entry frames
+* Exit frames
+* Camera direction
+* UI position
+* Motion direction
+* Color and lighting
+* Object placement
+* Scale
+* Timing
+* Visual rhythm
+
+Think about how each shot enters the next shot before generating it.
+
+Where useful, use the final frame or composition of one shot to influence the starting frame of the next.
+
+Look for creative transitions between:
+
+* Real-world scenes and UI
+* Product screens and cinematic scenes
+* Different features
+* Problem and solution
+* Opening and product reveal
+
+Do not rely only on simple cuts or fades.
+
+Ending
+
+Give the ending the same level of attention as the opening.
+
+Do not let the video simply stop after the walkthrough.
+
+Create an intentional final moment that makes the video feel complete.
+
+The ending could:
+
+* Return to an idea introduced in the opening
+* Reveal the final benefit
+* Show the result of using the product
+* Transition from UI back into the real world
+* Use a strong final product visual
+* End with a memorable CTA or concise product statement
+* Visually complete a transformation started at the beginning
+
+Where possible, create a connection between the opening and ending so the video feels like one complete story.
+
+Avoid a generic logo + tagline ending unless it genuinely works for the concept.
+
+Use previous learnings
+
+Continue using everything learned from previous generations:
+
+* Model scorecard
+* Model strengths and weaknesses
+* Prompt library
+* Human realism techniques
+* Transition techniques
+* Entry/exit frame planning
+* Hyperframes learnings
+* Model-routing logic
+
+Do not repeat research that has already been completed unless a new model or technique could meaningfully improve this video.
+
+Choose the best model for every shot rather than forcing one model to create the whole video.
+
+Improvement loop
+
+Run:
+
+concept → script → shot plan → generate → assemble → evaluate → improve weak scenes → regenerate → final review
+
+Evaluate the actual finished video for:
+
+* Strength of the opening
+* Product clarity
+* Walkthrough clarity
+* UI quality
+* Pacing
+* Visual consistency
+* Transition quality
+* Human realism where applicable
+* Creativity
+* Strength of the ending
+* Overall watchability
+
+If the opening or ending feels generic, iterate on it.
+
+If the product walkthrough is confusing, simplify it.
+
+If an individual scene looks weaker than the rest of the video, regenerate or replace it.
+
+Budget
+
+Keep the maximum estimated generation cost at $10 for this run.
+
+Do not exceed the limit.
+
+Use existing learnings to avoid unnecessary model tests and spend the budget primarily on producing and improving the new video.
+
+Final output
+
+Create a completely new finished .mp4 launch video.
+
+The video should:
+
+* Introduce a new product/technology concept
+* Include a short glimpse of a product walkthrough
+* Have a creative and carefully planned opening
+* Have an intentional and memorable ending
+* Feel different from previous samples
+* Still draw inspiration from the existing video library
+
+Deliver the finished .mp4 video as the final output.

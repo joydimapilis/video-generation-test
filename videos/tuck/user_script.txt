@@ -1,0 +1,208 @@
+Create another completely new product launch video from scratch using the same existing video library, previous model learnings, scorecard, prompt/skill library, and transition learnings.
+
+Keep the overall direction similar to the previous launch video:
+
+* Software / technology / AI product
+* Short glimpse of a walkthrough
+* Creative opening
+* Strong ending
+* Product-focused storytelling
+* Polished launch-video feel
+
+But for this version, use minimal human appearance.
+
+Do not use interviews, testimonials, or people talking directly to the camera.
+
+Human presence
+
+A person can appear, but only in a subtle and natural way.
+
+The person should support the story without becoming the main subject.
+
+Examples:
+
+* A hand opening a laptop
+* A hand using a trackpad or mouse
+* Someone sitting at a desk, shown from behind
+* A person walking into a workspace
+* A shoulder or partial silhouette in the foreground
+* Hands interacting with a phone or device
+* A quick over-the-shoulder product view
+* Someone closing a laptop after completing a task
+* A person briefly reacting to a result on screen
+* A wide shot where the person is part of the environment
+
+Avoid long close-ups of faces.
+
+Avoid dialogue-heavy scenes.
+
+Avoid direct-to-camera speaking.
+
+Avoid making the video feel like a testimonial or UGC ad.
+
+The person should feel like a real user naturally interacting with the product.
+
+Creative concept
+
+Build the video around a simple transformation:
+
+before the product → interaction with the product → better outcome
+
+For example, show a person starting with a messy or frustrating workflow, then transition into the product experience.
+
+The product should gradually take over visually.
+
+The human presence can become less visible as the video moves deeper into the software walkthrough.
+
+This can create a visual progression like:
+
+real-world problem → product interaction → UI walkthrough → outcome → final product moment
+
+Opening
+
+Create a strong opening using a subtle human moment rather than a talking person.
+
+For example:
+
+* A cursor hovering over too many tabs
+* A hand rapidly switching between tools
+* Someone sitting in front of a cluttered screen
+* A phone notification interrupting a workflow
+* A person reaching for a notebook, then stopping
+* A close-up of hands dealing with a repetitive task
+
+Use that moment to establish the problem quickly.
+
+Then transition creatively into the product.
+
+The opening should feel cinematic and intentional, not like generic office stock footage.
+
+Product reveal and walkthrough
+
+Move quickly from the human setup into the product.
+
+Show only the most important parts of the workflow.
+
+Use Hyperframes where appropriate for accurate:
+
+* UI
+* Text
+* Product screens
+* Interface transitions
+* Motion graphics
+
+Use video models for:
+
+* Hands
+* Devices
+* Workspace scenes
+* Cinematic product moments
+* Real-world transitions
+
+The walkthrough should remain short and easy to follow.
+
+Focus on one clear workflow rather than too many features.
+
+Make the product central
+
+The person should not distract from the product.
+
+The viewer should clearly understand:
+
+* What the product is
+* What problem it solves
+* What action the user takes
+* What happens as a result
+
+Keep the product visible and central throughout the video.
+
+Transitions
+
+Use the person and physical environment to create transitions into the UI.
+
+Examples:
+
+* Camera pushes into the laptop screen
+* Phone screen expands into a full-frame interface
+* Cursor movement continues across the next scene
+* A hand gesture triggers the next UI sequence
+* A physical object matches the shape or movement of a UI element
+* A screen reflection transitions into the product interface
+
+Plan entry and exit frames carefully so the real-world and digital scenes feel connected.
+
+Ending
+
+Bring the human presence back subtly at the end.
+
+For example:
+
+* The task is complete and the person closes the laptop
+* A clean result appears, then cut to a relaxed workspace
+* The person gets up and leaves while the product remains visible
+* A final over-the-shoulder product screen
+* A phone is placed down after the workflow is completed
+
+Then finish with a strong product visual or concise CTA.
+
+Try to create a visual callback to the opening so the video feels complete.
+
+Use previous learnings
+
+Continue using:
+
+* Existing model scorecard
+* Prompt library
+* Human realism learnings
+* Transition techniques
+* Entry/exit frame planning
+* Hyperframes learnings
+* Model-routing logic
+
+Do not repeat research unnecessarily.
+
+Use the strongest model for each scene.
+
+Improvement loop
+
+Run:
+
+concept → script → shot plan → generate → assemble → evaluate → improve weak scenes → regenerate → final review
+
+Pay particular attention to:
+
+* Whether the human presence feels natural
+* Whether the person stays secondary to the product
+* Product clarity
+* UI quality
+* Transition quality
+* Visual consistency
+* Opening strength
+* Ending strength
+* Overall watchability
+
+If a person looks obviously AI-generated, reduce the shot length, change the framing, improve the prompt, or use a different model.
+
+Budget
+
+Keep the maximum estimated generation cost at $10 for this run.
+
+Do not exceed the limit.
+
+Final output
+
+Create a completely new finished .mp4 launch video.
+
+The video should:
+
+* Focus on a software, technology, or AI product
+* Include a short product walkthrough
+* Use people only in a subtle, minimal way
+* Avoid interviews and direct-to-camera speaking
+* Keep the product as the main focus
+* Have a creative opening
+* Have a strong, intentional ending
+* Feel different from previous samples
+* Still take inspiration from the existing video library
+
+Deliver the finished .mp4 video as the final output.

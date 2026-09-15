@@ -1,0 +1,44 @@
+{
+  "experiment": "library-loop-11",
+  "status": "Applied in Fold; sampled encoded visual review and numerical checks",
+  "patterns": [
+    {
+      "name": "same object, complete story",
+      "recipe": "Introduce scattered source notes, transform them into the product surface, show those same facts in the result, retain them in the CTA.",
+      "evidence": "videos/fold/STORYBOARD.md; fold-frames.jpg",
+      "limit": "One fictional product concept; no audience retention test."
+    },
+    {
+      "name": "two-action launch glimpse",
+      "recipe": "A primary action creates an understandable result; one secondary control changes that result visibly. Keep cursor land, press, response and read hold explicit.",
+      "evidence": "verify_fold_geometry.cjs; cursor-targets.json",
+      "limit": "Illustrative UI, no actual backend evaluation."
+    },
+    {
+      "name": "shared geometry at modular seams",
+      "recipe": "Use the same generator for outgoing and incoming object geometry; settle before the boundary. Animate the transformation within scenes, then compare neighboring encoded boundary frames.",
+      "evidence": "build_fold_composition.py; verification.json seam_checks",
+      "limit": "Stationary handoff method; it does not validate high-speed moving seams."
+    },
+    {
+      "name": "paper morph without text distortion",
+      "recipe": "Retire text before nonuniform surface scaling; add destination text after the surface settles. Preserve a complete object at each scene boundary.",
+      "evidence": "Frame 3 brief-to-board revision",
+      "limit": "Short empty surface intervals must still be reviewed for pacing."
+    },
+    {
+      "name": "ending with visible work",
+      "recipe": "Carry the resulting notes below the final statement and CTA so the opening problem has a visible resolution.",
+      "evidence": "Final 4.5 seconds of Fold",
+      "limit": "Subjective visual screening only."
+    }
+  ],
+  "routing": "HyperFrames for exact UI, typography, paper transformations. Local Kokoro for narration and procedural audio for score. No video-model test needed for an all-graphic story.",
+  "avoid": [
+    "Stretching live text while changing a paper surface aspect ratio",
+    "Initial headline paths across secondary labels",
+    "Entering successive headline lines toward each other",
+    "Claiming an all-clear motion audit when the CLI disabled it",
+    "Treating a fictional demo as a working shipped product"
+  ]
+}

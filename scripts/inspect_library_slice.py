@@ -11,6 +11,7 @@ import subprocess
 from pathlib import Path
 
 import os
+from amarillo.library import resolve_library
 
 # The reference library lives outside the repo and its path is personal, so it is
 # read from the environment rather than hardcoded. Point AMARILLO_LIBRARY_DIR at
@@ -37,8 +38,9 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     terms = json.loads(Path(args.terms).read_text())
 
-    files = sorted(LIBRARY.glob('*.mp4'))
-    manifest = {'library': str(LIBRARY), 'file_count': len(files), 'selection': []}
+    library = resolve_library()
+    files = sorted(library.glob('*.mp4'))
+    manifest = {'library': str(library), 'file_count': len(files), 'selection': []}
     for index, entry in enumerate(terms):
         term, genre = entry['term'], entry['genre']
         path = next((p for p in files if term in p.name), None)
