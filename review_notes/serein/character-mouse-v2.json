@@ -1,0 +1,14 @@
+{
+  "approved": true,
+  "reviewer": "agent visual review before video submission",
+  "source_sha256": "b8cf765b1391964a521060eba6effdaa33ba9ee6e53ed8cc0beb6cacea492b20",
+  "checks": {
+    "face": "Same identity; natural pores, hair and cotton texture.",
+    "hand": "Full-frame and enlarged hand review: index and middle seated on mouse button areas, other fingers relaxed along side; no obvious extra fingers.",
+    "mouse": "Dark mouse distinct from pale desk; visible front silhouette, button seam and wheel; laptop does not occlude it.",
+    "alignment": "Relaxed wrist follows forearm and mouse grip without abrupt bend.",
+    "gaze": "Eyes directed toward laptop screen at frame right; not mouse.",
+    "framing": "Mouse and hand remain within x350 crop after scaling to1920x1080."
+  },
+  "limits": "Subjective sampled visual review; video motion requires separate review."
+}

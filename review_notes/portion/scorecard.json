@@ -1,0 +1,60 @@
+{
+  "name": "Portion new before-after workflow",
+  "review_scope": "New stills and footage; one targeted gaze retry, no blanket model superiority claim.",
+  "runs": [
+    {
+      "id": "portion_before_v1",
+      "decision": "rejected",
+      "scores": {
+        "prompt_adherence": 5,
+        "sampled_stability": 8,
+        "composition": 9,
+        "edit_readiness": 4,
+        "human_realism": 6,
+        "face_realism": 8.5,
+        "hand_body_movement": 8,
+        "identity_consistency": 9,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "review": "Rejected: raised eyes and horizontal stare above screen despite correct source still. Mouse grip remains plausible but gaze fails action. No final footage used.",
+      "review_method": "Approved source still before I2V, chronological 8-frame full sheet plus 12 enlarged face/hand frames, full decode; subjective agent review."
+    },
+    {
+      "id": "portion_before_v2",
+      "decision": "selected",
+      "scores": {
+        "prompt_adherence": 8,
+        "sampled_stability": 8.5,
+        "composition": 9,
+        "edit_readiness": 8.5,
+        "human_realism": 8.5,
+        "face_realism": 8.5,
+        "hand_body_movement": 8,
+        "identity_consistency": 9,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "review": "Stricter chin-lowered and downward-pupil constraints retain screenward gaze better. Natural blinks and tiny mouse movement. Select 0.3\u20135.6s; wipe covers last 0.65s. Identity, wrist and mouse stable. Review is subjective, not eye tracking.",
+      "review_method": "Approved source still before I2V, chronological 8-frame full sheet plus 12 enlarged face/hand frames, full decode; subjective agent review."
+    },
+    {
+      "id": "portion_after_v1",
+      "decision": "selected",
+      "scores": {
+        "prompt_adherence": 8,
+        "sampled_stability": 8.5,
+        "composition": 9,
+        "edit_readiness": 8.5,
+        "human_realism": 8.5,
+        "face_realism": 8.5,
+        "hand_body_movement": 8,
+        "identity_consistency": 9,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "review": "Natural box-directed gaze across sampled range, preserved wardrobe and face. Fingers settle on lid then shift toward box edge: more motion than requested, but coherent packing action. No box opening or lifting. End wipe covers final hand withdrawal.",
+      "review_method": "Approved source still before I2V, chronological 8-frame full sheet plus 12 enlarged face/hand frames, full decode; subjective agent review."
+    }
+  ]
+}

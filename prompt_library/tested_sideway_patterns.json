@@ -1,0 +1,48 @@
+{
+  "experiment": "library-loop-14",
+  "source_images": [
+    "phone-reference-v1.png",
+    "story-reference-v1.png",
+    "arrival-reference-v1.png",
+    "phone-reference-v2.png",
+    "arrival-reference-v2.png"
+  ],
+  "patterns": [
+    {
+      "name": "Establish phone contact in the still",
+      "recipe": "One supporting hand, one tapping finger, rigid visible phone, gaze on screen. Review before I2V; animate only a small tap.",
+      "evidence": "sideway_phone_v1",
+      "limit": "Original I2V gaze wandered despite a generic keep-eyes-on-phone instruction. User feedback supersedes the initial sampled approval. Correct the head/phone geometry in the source and explicitly constrain eye fixation; inspect temporal eye crops."
+    },
+    {
+      "name": "One voice take, two story moments",
+      "recipe": "Generate the problem and reflection in one eight-second native-voice take, keep problem briefly on camera, carry the reflection over lifestyle result.",
+      "evidence": "sideway_story_v2; videos/sideway/audio-plan.json",
+      "limit": "Original script was judged too polished and lacked a spoken app mention. Use ordinary personal wording and name the app once."
+    },
+    {
+      "name": "Carry product state into the outcome",
+      "recipe": "The app navigation card persists over the cafe reveal and resolves from First stop to Arrived. Ending route echoes opening saved places.",
+      "evidence": "videos/sideway/compositions/frames",
+      "limit": "Illustrative app, not live geographic routing."
+    },
+    {
+      "name": "Align source head and phone before constraining the eyes",
+      "recipe": "Lower the chin, bring phone toward midline and its screen toward the viewing axis; inspect both pupils against the display before animation. Specify one fixed screen target, natural blinking, no upward glance. Select stable stretches from temporal eye/phone crops.",
+      "evidence": "sideway_phone_v2; review_notes/sideway/phone-image-v2.json",
+      "limit": "Longer blink/head lift later in take was excluded. Source correction improves clarity but does not guarantee every generated frame."
+    },
+    {
+      "name": "Candid caf\u00e9 posture starts in the still",
+      "recipe": "Align head and shoulders forward, soften gaze toward the coffee, support elbow naturally at the counter and keep the cup low. Animate a quiet pause with minimal breathing and cup movement.",
+      "evidence": "sideway_arrival_v2; review_notes/sideway/arrival-image-v2.json",
+      "limit": "Small cup lift and lips parting occurred despite negative instructions. Assess actual movement; source posture is more reliable than wording alone."
+    }
+  ],
+  "avoids": [
+    "Unreviewed human stills",
+    "Video-generated readable UI",
+    "Long interview blocks",
+    "Replacing a weak interaction with prompt detail alone"
+  ]
+}

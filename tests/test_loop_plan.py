@@ -46,3 +46,30 @@ def test_invalid_ids_and_duplicate_requests(tmp_path):
     p['runs'].append({**p['runs'][0], 'id': 'b'})
     with pytest.raises(ValueError, match='Identical request'):
         prepare_plan(p)
+
+
+def test_external_image_allowance_remains_in_shared_cap(tmp_path):
+    p = plan(tmp_path)
+    _, ledger, _ = prepare_plan(p)
+    ledger.reserve('character-image', 700, {'provider': 'external-image'})
+    assert prepare_plan(p)[2]['reserved_after_cents'] == 920
+    p['runs'][0]['estimate_cents'] = 200
+    with pytest.raises(ValueError, match='entire plan'):
+        prepare_plan(p)
+
+
+def test_explicit_approved_ceiling_preserves_cumulative_reservations(tmp_path):
+    p = plan(tmp_path)
+    p['approved_cap_cents'] = 1200  # Plan data cannot grant approval.
+    with pytest.raises(ValueError, match='maximum'):
+        prepare_plan(p, cap_cents=1200)
+    _, ledger, _ = prepare_plan(p, cap_cents=1200, approved_cap_cents=1200)
+    ledger.reserve('earlier-image', 900, {'provider': 'external-image'})
+    assert prepare_plan(p, cap_cents=1200, approved_cap_cents=1200)[2]['reserved_after_cents'] == 1150
+    p['runs'][0]['estimate_cents'] = 200
+    with pytest.raises(ValueError, match='entire plan'):
+        prepare_plan(p, cap_cents=1200, approved_cap_cents=1200)
+    with pytest.raises(ValueError, match='maximum'):
+        prepare_plan(p, cap_cents=1201, approved_cap_cents=1200)
+    with pytest.raises(ValueError, match='Cannot change'):
+        prepare_plan(p, cap_cents=1300, approved_cap_cents=1300)

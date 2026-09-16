@@ -1,0 +1,108 @@
+{
+  "name": "Sideway mobile customer experience",
+  "review_scope": "Three approved new stills before three I2V takes; related stills share identity reference. Single-take subjective evidence, no general model superiority claim.",
+  "runs": [
+    {
+      "id": "sideway_phone_v1",
+      "scores": {
+        "prompt_adherence": 5,
+        "sampled_stability": 8.5,
+        "composition": 9,
+        "edit_readiness": 4,
+        "human_realism": 6,
+        "face_realism": 8,
+        "identity_consistency": 9,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "decision": "rejected",
+      "review": "Superseded after user observed gaze missing the phone during interaction. Original sampled review missed the temporal eye-line defect; gaze stability is not approved.",
+      "review_method": "Agent review of chronological full frames plus12/16 enlarged face or hand samples. Full decode. Native story transcribed locally; transcript alone does not prove lip sync."
+    },
+    {
+      "id": "sideway_story_v1",
+      "scores": {
+        "prompt_adherence": 8.5,
+        "sampled_stability": 8.5,
+        "composition": 9,
+        "edit_readiness": 6,
+        "human_realism": 8.5,
+        "face_realism": 8.5,
+        "identity_consistency": 9,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "decision": "superseded",
+      "review": "Original speech felt scripted to the user and omitted an explicit spoken app name. Regenerating with conversational phrasing and Sideway named in context.",
+      "review_method": "Agent review of chronological full frames plus12/16 enlarged face or hand samples. Full decode. Native story transcribed locally; transcript alone does not prove lip sync."
+    },
+    {
+      "id": "sideway_arrival_v1",
+      "scores": {
+        "prompt_adherence": 8.5,
+        "sampled_stability": 8.5,
+        "composition": 9,
+        "edit_readiness": 5,
+        "human_realism": 8.5,
+        "face_realism": 8,
+        "identity_consistency": 9,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "decision": "superseded",
+      "review": "User found the sideways caf\u00e9 pose staged. Replace with forward-facing head/shoulder alignment and relaxed coffee-directed gaze, established in a new source still.",
+      "review_method": "Agent review of chronological full frames plus12/16 enlarged face or hand samples. Full decode. Native story transcribed locally; transcript alone does not prove lip sync."
+    },
+    {
+      "id": "sideway_phone_v2",
+      "scores": {
+        "prompt_adherence": 8,
+        "sampled_stability": 8.5,
+        "composition": 9,
+        "edit_readiness": 8.5,
+        "human_realism": 8.5,
+        "face_realism": 8.5,
+        "identity_consistency": 9,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "decision": "selected",
+      "review_method": "Pre-animation source inspection, chronological portrait frames, 24 enlarged gaze frames for phone and 16 speaking face frames, local transcript and full decode. Subjective, sampled review.",
+      "review": "Corrected chin/phone geometry creates clearer binocular screen fixation. Early short taps then reading. Later longer blink and head lift at ~3.3\u20134.6s excluded: opening uses 0\u20133s; return uses 1\u20133s at 0.5x, a quiet reading stretch. Exact one-tap choreography not achieved."
+    },
+    {
+      "id": "sideway_story_v2",
+      "scores": {
+        "prompt_adherence": 8,
+        "sampled_stability": 8.5,
+        "composition": 9,
+        "edit_readiness": 8.5,
+        "human_realism": 8.5,
+        "face_realism": 8.5,
+        "identity_consistency": 9,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "decision": "selected",
+      "review_method": "Pre-animation source inspection, chronological portrait frames, 24 enlarged gaze frames for phone and 16 speaking face frames, local transcript and full decode. Subjective, sampled review.",
+      "review": "Plain personal speech and Sideway explicitly named; exact requested wording transcribed. Stable interviewer-directed eyes and relaxed brows. First 3s retained on camera; second thought is voiceover over closed-mouth arrival."
+    },
+    {
+      "id": "sideway_arrival_v2",
+      "scores": {
+        "prompt_adherence": 8,
+        "sampled_stability": 8.5,
+        "composition": 9,
+        "edit_readiness": 8.5,
+        "human_realism": 8.5,
+        "face_realism": 8.5,
+        "identity_consistency": 9,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "decision": "selected",
+      "review": "Forward-aligned shoulders/head, downward coffee gaze, no sideways street look or lens contact. Natural elbow support and stable handle grip. Small cup lift/settle and slight parted lips early despite requested closed lips; reads as a quiet breath near hot coffee, not sustained speech or a drinking gesture. No obvious hand/device distortion in sampled frames.",
+      "review_method": "Approved corrected still before I2V; 24 chronological enlarged face/shoulder/cup samples plus portrait frames and full decode. Subjective sampled review."
+    }
+  ]
+}

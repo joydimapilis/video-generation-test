@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #F4F1E9;
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #F4F1E9;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .scene { z-index: 2; }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-6tfx" id="root" data-composition-id="main" data-start="0" data-duration="32" data-width="1920" data-height="1080">
+      <div data-hf-id="hf-9zxg" id="el-01-full-day" class="scene clip" data-composition-id="01-full-day" data-composition-src="compositions/frames/01-full-day.html" data-start="0" data-duration="8" data-track-index="1"></div>
+      <audio data-hf-id="hf-gu9q" id="el-01-full-day-voice" src="assets/voice/01.wav" data-start="0" data-duration="8" data-track-index="10" data-volume="1"></audio>
+
+      <div data-hf-id="hf-oy02" id="el-02-find-space" class="scene clip" data-composition-id="02-find-space" data-composition-src="compositions/frames/02-find-space.html" data-start="8" data-duration="16" data-track-index="1"></div>
+      <audio data-hf-id="hf-4sq5" id="el-02-find-space-voice" src="assets/voice/02.wav" data-start="8" data-duration="16" data-track-index="10" data-volume="1"></audio>
+
+      <div data-hf-id="hf-o5w5" id="el-03-room-to-begin" class="scene clip" data-composition-id="03-room-to-begin" data-composition-src="compositions/frames/03-room-to-begin.html" data-start="24" data-duration="8" data-track-index="1"></div>
+      <audio data-hf-id="hf-dtqn" id="el-03-room-to-begin-voice" src="assets/voice/03.wav" data-start="24" data-duration="8" data-track-index="10" data-volume="1"></audio>
+
+<video data-hf-id="hf-7m89" id="serein-focus" class="clip" src="assets/focus.mp4" data-start="0" data-duration="6" data-track-index="20" muted playsinline style="position:absolute;inset:auto;left:800px;top:0;width:1120px;height:1080px;object-fit:cover;z-index:1"></video>
+<video data-hf-id="hf-rl5d" id="serein-relief" class="clip" src="assets/relief.mp4" data-start="24" data-duration="6" data-track-index="21" muted playsinline style="position:absolute;inset:auto;left:880px;top:0;width:1040px;height:1080px;object-fit:cover;z-index:1"></video>
+      <!-- BGM -->
+      <audio data-hf-id="hf-819x" id="el-bgm" src="assets/score.wav" data-start="0" data-duration="32" data-track-index="11" data-volume="1"></audio>
+
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

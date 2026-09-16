@@ -1,0 +1,32 @@
+{
+  "title": "Sideway \u2014 Less saving. More going.",
+  "final_mp4": "artifacts/final_outcome/sideway/sideway-cafe-revised.mp4",
+  "project": "videos/sideway",
+  "duration": 36,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "fps": 24,
+  "sha256": "178493db8b740913365f28de478eab483f44c658860fd4782daae4f17c300a4e",
+  "image_first": true,
+  "selected_runs": [
+    "sideway_phone_v2",
+    "sideway_story_v2",
+    "sideway_arrival_v2"
+  ],
+  "verification": "artifacts/final_outcome/sideway/verification.json",
+  "budget": {
+    "estimated_cents_including_image_allowance": 1012,
+    "reserved_cents": 1167,
+    "cap_cents": 1200,
+    "image_allowance_cents": 500,
+    "fal_estimated_cents": 512
+  },
+  "on_camera_speaking_seconds": 3,
+  "concept": "Saved neighborhood places become a one-hour three-stop walk.",
+  "bytes": 29590967,
+  "revision": "Caf\u00e9 source and I2V regenerated with forward-aligned posture, relaxed coffee gaze and subtle movement; prior dialogue and phone fixes retained.",
+  "original_delivery": "artifacts/final_outcome/sideway/original/sideway.mp4",
+  "previous_delivery": "artifacts/final_outcome/sideway/sideway-revised.mp4"
+}

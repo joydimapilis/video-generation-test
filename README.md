@@ -149,10 +149,35 @@ lip-sync or continuity dimensions remain untested. Earlier interview comparison:
 - `catalog/`: model catalog and model-selection evidence.
 - `docs/`: roadmap, methodology, and operating notes.
 
-## Delivered Films
+## Latest session deliveries
 
-Seven finished concept films, each produced inside its own `$10` estimated-cost
-ledger. Rendered MP4s live under `artifacts/final_outcome/<name>/` and are not in
+The current delivery is **Portion**, a new 36-second before/after catering workflow
+film. Serein and Sideway also include the latest mouse, gaze, dialogue and café
+revisions. Each project includes editable compositions, source-image and motion
+prompts, generation plans, review decisions and rebuild instructions.
+
+| Film | Latest work | Estimated generation cost | Rebuild and review |
+| --- | --- | ---: | --- |
+| Portion | New image-first human scenes and exact order-to-prep UI | $4.04 / $10 cap | [Runbook](docs/PORTION_RUNBOOK.md) · [Scorecard](docs/PORTION_SCORECARD.md) |
+| Serein | Visible mouse interaction and screen-aligned gaze | $7.92 / $10 cap | [Runbook](docs/SEREIN_RUNBOOK.md) · [Scorecard](docs/SEREIN_SCORECARD.md) |
+| Sideway | Conversational dialogue, phone gaze and candid café pose | $10.12 / user-approved $12 cap | [Runbook](docs/SIDEWAY_RUNBOOK.md) · [Scorecard](docs/SIDEWAY_SCORECARD.md) |
+
+Costs include image planning allowances, not confirmed image invoices. The default
+generation ceiling remains $10; a larger cap requires explicit caller approval and
+preserves every earlier reservation. Image allowances share the budget but are
+excluded from video-model scoring. The latest snapshot covers 104 recorded video
+attempts; review scores remain subjective and provisional.
+
+Delivery manifests and hashes are in `assembled_outputs/`. Machine scorecards,
+source-image reviews and final verification summaries are tracked in `review_notes/`.
+Generated MP4s, stills, audio, fonts and render caches remain local under the existing
+media-exclusion policy. Regenerating model footage can incur cost and does not
+reproduce identical bytes; retain the approved local media to reproduce an edit.
+
+## Earlier delivered films
+
+The earlier concept films below were produced inside `$10` estimated-cost
+ledgers. Rendered MP4s live under `artifacts/final_outcome/<name>/` and are not in
 Git; the compositions that produce them are.
 
 | Film | Use case | Length | Est. cost | Scorecard |

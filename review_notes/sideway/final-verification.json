@@ -1,0 +1,178 @@
+{
+  "path": "artifacts/final_outcome/sideway/sideway-cafe-revised.mp4",
+  "sha256": "178493db8b740913365f28de478eab483f44c658860fd4782daae4f17c300a4e",
+  "bytes": 29590967,
+  "duration_seconds": 36,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "fps": 24,
+  "frames": 864,
+  "full_decode": true,
+  "black_intervals": [],
+  "audio_peak": 0.7223758101463318,
+  "audio_correlation_with_previous_delivery": 1.0,
+  "unchanged_assets_verified": [
+    "videos/sideway/index.html",
+    "videos/sideway/compositions/frames/01-someday.html",
+    "videos/sideway/compositions/frames/02-one-walk.html",
+    "videos/sideway/compositions/frames/03-go.html",
+    "videos/sideway/assets/phone.mp4",
+    "videos/sideway/assets/story.mp4",
+    "videos/sideway/assets/speech.wav",
+    "videos/sideway/assets/score.wav"
+  ],
+  "audio_mix_correlation": 0.9986419946564983,
+  "audio_mix_reference": "Unprocessed speech plus authored score; output includes native dynamic carve at strength0.25",
+  "native_voice_alignment": [
+    {
+      "timeline_start": 3,
+      "source_start": 0,
+      "zero_offset_correlation": 0.9999999814986422
+    },
+    {
+      "timeline_start": 27.5,
+      "source_start": 3.65,
+      "zero_offset_correlation": 0.999999971497113
+    }
+  ],
+  "seams": [
+    {
+      "time": 10,
+      "mae_255": 0.001800411522633745
+    },
+    {
+      "time": 26,
+      "mae_255": 0.0002301954732510288
+    }
+  ],
+  "source_comparisons": [
+    {
+      "role": "phone",
+      "timeline_time": 0.5,
+      "source_time": 0.5,
+      "mae_255": 2.1969005083514888
+    },
+    {
+      "role": "phone",
+      "timeline_time": 1.5,
+      "source_time": 1.5,
+      "mae_255": 2.1059636891793754
+    },
+    {
+      "role": "phone",
+      "timeline_time": 2.5,
+      "source_time": 2.5,
+      "mae_255": 2.0979622367465507
+    },
+    {
+      "role": "phone",
+      "timeline_time": 6.5,
+      "source_time": 1.25,
+      "mae_255": 2.139305737109659
+    },
+    {
+      "role": "phone",
+      "timeline_time": 7.5,
+      "source_time": 1.75,
+      "mae_255": 2.111266521423384
+    },
+    {
+      "role": "phone",
+      "timeline_time": 8,
+      "source_time": 2,
+      "mae_255": 2.0950065359477126
+    },
+    {
+      "role": "story",
+      "timeline_time": 4,
+      "source_time": 1,
+      "mae_255": 2.1492374727668846
+    },
+    {
+      "role": "story",
+      "timeline_time": 5.7,
+      "source_time": 2.7,
+      "mae_255": 2.1856354393609294
+    },
+    {
+      "role": "arrival",
+      "timeline_time": 27.1,
+      "source_time": 1.1,
+      "mae_255": 2.101837327523602
+    },
+    {
+      "role": "arrival",
+      "timeline_time": 28,
+      "source_time": 2,
+      "mae_255": 2.163509077705156
+    },
+    {
+      "role": "arrival",
+      "timeline_time": 29.5,
+      "source_time": 3.5,
+      "mae_255": 2.160155410312273
+    },
+    {
+      "role": "arrival",
+      "timeline_time": 31,
+      "source_time": 5,
+      "mae_255": 2.1737196804647785
+    }
+  ],
+  "final_hold_mae_255": 0.002829861111111111,
+  "image_first": true,
+  "human_reference_reviews": [
+    "artifacts/library-loop-14/reviews/phone-image-v2.json",
+    "artifacts/library-loop-14/reviews/story-image-v1.json",
+    "artifacts/library-loop-14/reviews/arrival-image-v2.json"
+  ],
+  "on_camera_speaking_seconds": 3,
+  "revision": "Caf\u00e9 source and I2V regenerated for aligned forward-facing posture and relaxed coffee gaze; previous phone and dialogue revisions retained",
+  "checks": {
+    "lint": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "runtime": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "layout": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "motion": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "contrast": {
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  "contrast": {
+    "passed": 21,
+    "checked": 21
+  },
+  "budget": {
+    "estimated_cents_including_image_allowance": 1012,
+    "reserved_cents": 1167,
+    "cap_cents": 1200,
+    "image_allowance_cents": 500,
+    "fal_estimated_cents": 512
+  },
+  "limitations": [
+    "Fictional app and illustrative route, no live routing backend.",
+    "Sampled subjective visual review; ASR is not proof of lip sync.",
+    "Built-in image tool exposes no invoice; image costs are planning allowances."
+  ],
+  "cafe_visual_review": {
+    "source_review": "review_notes/sideway/arrival-image-v2.json",
+    "source_motion_sheet": "artifacts/library-loop-14/evidence/cafe-v2-detail.jpg",
+    "encoded_sheet": "artifacts/final_outcome/sideway/cafe-encoded-review.jpg",
+    "finding": "Forward-aligned head and shoulders, relaxed coffee-directed gaze, stable cup grip and subtle settling motion; no sideways street look or lens contact.",
+    "method": "24 source motion samples and9 encoded caf\u00e9 frames; subjective sampled review."
+  }
+}

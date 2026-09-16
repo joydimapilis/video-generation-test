@@ -1,0 +1,14 @@
+{
+  "approved": true,
+  "source_sha256": "116b93c565d8efbe910b3d2b27dbada6681bd074df95c0884fd243c795272f69",
+  "identity_reference": "videos/sideway/assets/phone-reference-v1.png",
+  "reviewer": "agent still review before video generation",
+  "checks": {
+    "identity": "Same face, curls, stubble, olive overshirt and ivory tee as approved phone source.",
+    "skin": "Visible pores and ordinary asymmetry; no plastic finish.",
+    "pose": "Upright relaxed posture, natural shoulders.",
+    "interaction": "Visible ceramic cup has plausible handle grip, neutral wrist; other hand rests in trouser pocket. No obvious extra fingers.",
+    "light": "Soft outdoor daylight consistent with phone scene."
+  },
+  "limits": "Subjective review; preserve natural source texture and separately inspect animation."
+}

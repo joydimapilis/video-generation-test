@@ -1,0 +1,14 @@
+{
+  "approved": true,
+  "source_sha256": "9a1134dbd30bec700fee3f7afd78fdd54dd553499c5a099aab28acc49a04a2d2",
+  "reviewer": "Agent visual review before I2V",
+  "supersedes": "phone-image-v1.json",
+  "checks": {
+    "gaze": "Chin lowered toward raised phone; both eyes directed down toward display instead of past phone. Pupils visible beneath relaxed lids.",
+    "head_phone_geometry": "Phone moved toward torso midline and raised, improving clear head-to-screen alignment.",
+    "hands": "Left hand supports rigid phone; right index at screen edge, relaxed remaining fingers and wrists.",
+    "identity": "Same curls, stubble, skin texture, olive overshirt and ivory tee.",
+    "lighting": "Soft consistent outdoor daylight."
+  },
+  "limits": "Subjective still review; animated eye behavior must be inspected separately."
+}

@@ -1,0 +1,85 @@
+[
+  {
+    "role": "phone",
+    "run_id": "sideway_phone_v2",
+    "source": "artifacts/library-loop-14/outputs/sideway_phone_v2.mp4",
+    "source_sha256": "2330085b8c52f7fa88283c5144f330bbafc4cbc017314d6dbb5940f5af0af542",
+    "derived": "videos/sideway/assets/phone.mp4",
+    "derived_sha256": "d93416e52c9a7cab569f3a56498c958470f45a8aca31c9c3856fb6771c2bbd18",
+    "image_first": true,
+    "reference": "assets/phone-reference-v2.png",
+    "reference_sha256": "9a1134dbd30bec700fee3f7afd78fdd54dd553499c5a099aab28acc49a04a2d2",
+    "review": "artifacts/library-loop-14/reviews/phone-image-v2.json",
+    "ranges": [
+      {
+        "timeline": [
+          0,
+          3
+        ],
+        "source": [
+          0,
+          3
+        ]
+      },
+      {
+        "timeline": [
+          6,
+          10
+        ],
+        "source": [
+          1,
+          3
+        ],
+        "playback_rate": 0.5
+      }
+    ]
+  },
+  {
+    "role": "story",
+    "run_id": "sideway_story_v2",
+    "source": "artifacts/library-loop-14/outputs/sideway_story_v2.mp4",
+    "source_sha256": "e34a9fed04de09373b08e2f8aa8838a9a3364daabac1629504a1adeda0864136",
+    "derived": "videos/sideway/assets/story.mp4",
+    "derived_sha256": "610da5a4f4fd24fe4afcb7baa05c7299172bc3d7582a325ee9fc97c26c448922",
+    "image_first": true,
+    "reference": "assets/story-reference-v1.png",
+    "reference_sha256": "5ef66bf7704ebcb9b094be13e5361af994f1db417527960c225c1c661b0e3219",
+    "review": "artifacts/library-loop-14/reviews/story-image-v1.json",
+    "ranges": [
+      {
+        "timeline": [
+          3,
+          6
+        ],
+        "source": [
+          0,
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "role": "arrival",
+    "run_id": "sideway_arrival_v2",
+    "source": "artifacts/library-loop-14/outputs/sideway_arrival_v2.mp4",
+    "source_sha256": "3665f304d3ef011cc8125f831c5b04db44f89860c2b76c33bbaf830140ca5bde",
+    "derived": "videos/sideway/assets/arrival.mp4",
+    "derived_sha256": "5dcec91d30e58f2443c3e91d759aa775f14b76aa484ef9712a0389f312d6132e",
+    "image_first": true,
+    "reference": "assets/arrival-reference-v2.png",
+    "reference_sha256": "a14e544d3088aa28dd5c306e712c34c9e969c6915f74f814accfdefca53be7ec",
+    "review": "artifacts/library-loop-14/reviews/arrival-image-v2.json",
+    "ranges": [
+      {
+        "timeline": [
+          26,
+          32
+        ],
+        "source": [
+          0,
+          6
+        ]
+      }
+    ]
+  }
+]

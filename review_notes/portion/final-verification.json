@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "path": "artifacts/final_outcome/portion/portion.mp4",
+  "sha256": "fb7ca3a751063240e222ec999091c88a16c63d380a5813018a8818fe5b4c2f69",
+  "bytes": 13881400,
+  "duration": 36.0,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "frames": 864,
+  "full_decode": true,
+  "black_gaps": false,
+  "audio_peak_dbfs": -5.238694920110482,
+  "audio_source_correlation": 0.9997672208142334,
+  "source_comparisons": [
+    {
+      "role": "before",
+      "timeline_time": 0.5,
+      "source_time": 0.8,
+      "mean_abs_error_255": 1.7686582732719034
+    },
+    {
+      "role": "before",
+      "timeline_time": 1.5,
+      "source_time": 1.8,
+      "mean_abs_error_255": 1.7779478758020861
+    },
+    {
+      "role": "before",
+      "timeline_time": 3,
+      "source_time": 3.3,
+      "mean_abs_error_255": 1.7833683058115135
+    },
+    {
+      "role": "before",
+      "timeline_time": 4.3,
+      "source_time": 4.6,
+      "mean_abs_error_255": 1.7844120062038136
+    },
+    {
+      "role": "after",
+      "timeline_time": 26.6,
+      "source_time": 1.0,
+      "mean_abs_error_255": 1.86877839613174
+    },
+    {
+      "role": "after",
+      "timeline_time": 27.7,
+      "source_time": 2.099999999999998,
+      "mean_abs_error_255": 1.8545403399933096
+    },
+    {
+      "role": "after",
+      "timeline_time": 29.2,
+      "source_time": 3.599999999999998,
+      "mean_abs_error_255": 1.8765267767539457
+    },
+    {
+      "role": "after",
+      "timeline_time": 30.7,
+      "source_time": 5.099999999999998,
+      "mean_abs_error_255": 1.9007380713438555
+    }
+  ],
+  "final_hold_pixel_error": 0.0034643454218106994,
+  "budget_estimated_cents": 404,
+  "budget_reserved_cents": 467,
+  "budget_cap_cents": 1000,
+  "human_review": "See scorecard and encoded chronological sheets; source matches are technical evidence, not aesthetic scores."
+}

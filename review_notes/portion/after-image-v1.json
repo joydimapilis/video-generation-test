@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source_sha256": "c0e97bbbce170b2667e8349a16c6bb2c22561cf8a09f564e46c602228eabb5e9",
+  "reviewer": "assistant visual inspection",
+  "checks": {
+    "hands": "Both hands rest naturally on lid edges; plausible fingers and straight wrists.",
+    "gaze": "Downward eyes align to box in front of her.",
+    "identity": "Face, hair, clay shirt and denim apron consistent with before still.",
+    "props": "Closed box rests on counter; open meal nearby and tidy closed boxes convey packing."
+  },
+  "limits": "Review motion before selecting clip range; avoid lid manipulation."
+}

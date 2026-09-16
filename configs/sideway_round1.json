@@ -1,0 +1,70 @@
+{
+  "experiment": "sideway-mobile-experience-2026-09-16",
+  "budget_root": "artifacts/library-loop-14",
+  "pricing_checked": "2026-09-16",
+  "pricing_sources": [
+    "https://fal.ai/models/fal-ai/veo3.1/fast/image-to-video",
+    "https://fal.ai/models/fal-ai/kling-video/v3/pro/image-to-video"
+  ],
+  "cost_basis": "Veo8s native audio1080p x$0.15; two Kling6s silent x$0.112 rounded up. Image allowances in shared ledger.",
+  "runs": [
+    {
+      "id": "sideway_phone_v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 68,
+      "use_case": "industrial_human",
+      "version": 1,
+      "role": "phone",
+      "reference_review": "artifacts/library-loop-14/reviews/phone-image-v1.json",
+      "reference_sha256": "dd0ab6747bae6dbf216dbc6ced95c13fec551fceb9412194a8ae630c109227c1",
+      "hypothesis": "Approve physical interaction and identity in still before tightly bounded I2V; route native speech to provisional Veo incumbent and controlled silent shots to Kling.",
+      "input": {
+        "start_image_url": "local:videos/sideway/assets/phone-reference-v1.png",
+        "prompt": "Six-second candid observation of the exact man in the photograph. Preserve natural face texture, curls, olive shirt, daylight and framing. Locked tripod. His left hand maintains the exact secure phone grip. His right index finger makes one tiny tap on the screen, returns to the same position and settles. His eyes stay focused on the phone screen. Device remains rigid and stationary; wrists stay relaxed. One brief blink, subtle breathing, tiny motion only.",
+        "negative_prompt": "talking, mouth opening, teeth, overacting, gesturing, extra fingers, hand morphing, changing object shape, lifting arms, turning head, camera movement, zoom, text, cuts",
+        "duration": "6",
+        "generate_audio": false
+      }
+    },
+    {
+      "id": "sideway_story_v1",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 120,
+      "use_case": "interview",
+      "version": 1,
+      "role": "story",
+      "reference_review": "artifacts/library-loop-14/reviews/story-image-v1.json",
+      "reference_sha256": "5ef66bf7704ebcb9b094be13e5361af994f1db417527960c225c1c661b0e3219",
+      "hypothesis": "Approve physical interaction and identity in still before tightly bounded I2V; route native speech to provisional Veo incumbent and controlled silent shots to Kling.",
+      "input": {
+        "image_url": "local:videos/sideway/assets/story-reference-v1.png",
+        "prompt": "One candid eight-second conversational shot from this exact portrait. Same man, textured skin, curls, olive shirt and street. Locked camera, settled shoulders. He looks at one person just camera-right throughout. He begins immediately in a quiet natural adult male English voice, matter-of-fact, saying exactly: \"I kept saving places. I never went.\" A short natural pause. Then: \"Now I pick a walk and go.\" Say each line once with small natural mouth movements, no sales delivery. End with lips gently closed. Natural blinks, almost still head. Clean close voice, faint outdoor ambience only. No music, no subtitles, no new objects, no camera movement.",
+        "negative_prompt": "overacting, exaggerated eyebrows, shoulder shrug, head sway, looking away, plastic skin, captions, words on screen, music, stuttering, repeated words, other voices, zoom, cuts",
+        "duration": "8s",
+        "resolution": "1080p",
+        "aspect_ratio": "9:16",
+        "generate_audio": true,
+        "auto_fix": false,
+        "seed": 916141
+      }
+    },
+    {
+      "id": "sideway_arrival_v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 68,
+      "use_case": "industrial_human",
+      "version": 1,
+      "role": "arrival",
+      "reference_review": "artifacts/library-loop-14/reviews/arrival-image-v1.json",
+      "reference_sha256": "116b93c565d8efbe910b3d2b27dbada6681bd074df95c0884fd243c795272f69",
+      "hypothesis": "Approve physical interaction and identity in still before tightly bounded I2V; route native speech to provisional Veo incumbent and controlled silent shots to Kling.",
+      "input": {
+        "start_image_url": "local:videos/sideway/assets/arrival-reference-v1.png",
+        "prompt": "Six-second candid observation of the exact man in the photograph. Preserve natural face texture, curls, olive shirt, daylight and framing. Locked tripod. He quietly enjoys the pause at the cafe. Cup stays steady at the same height in the same grip. His eyes stay on the street at frame-right. A barely noticeable content expression, lips stay closed. No drinking or raising the cup. One brief blink, subtle breathing, tiny motion only.",
+        "negative_prompt": "talking, mouth opening, teeth, overacting, gesturing, extra fingers, hand morphing, changing object shape, lifting arms, turning head, camera movement, zoom, text, cuts",
+        "duration": "6",
+        "generate_audio": false
+      }
+    }
+  ]
+}

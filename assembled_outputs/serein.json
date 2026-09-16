@@ -1,0 +1,29 @@
+{
+  "title": "Serein \u2014 Make room",
+  "final_mp4": "artifacts/final_outcome/serein/serein-mouse-revision.mp4",
+  "project": "videos/serein",
+  "duration": 32,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "sha256": "f25e8cec357ca6931439d3a8e49f4ad0e48a4126eb4cace192104f95dfb672da",
+  "image_first": true,
+  "new_reference": "videos/serein/assets/designer-mouse-v2.png",
+  "selected_runs": [
+    "serein_mouse_focus_kling_v5",
+    "serein_mouse_relief_kling_v5"
+  ],
+  "verification": "artifacts/final_outcome/serein/verification.json",
+  "budget": {
+    "estimated_cents_including_image_allowance": 792,
+    "reserved_cents": 914,
+    "cap_cents": 1000,
+    "image_allowance_cents": 200,
+    "image_invoice": "not exposed by built-in tool; allowance is planning estimate",
+    "fal_estimated_cents": 592
+  },
+  "revision": "Visible mouse interaction established in source still before animation; screen-directed gaze and subtle navigation.",
+  "original_delivery": "artifacts/final_outcome/serein/original/serein.mp4"
+}

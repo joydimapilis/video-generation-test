@@ -35,6 +35,8 @@ def main():
                         help='Experiment directory holding budget.json and outputs/.')
     parser.add_argument('--cap-cents', type=int, default=1000,
                         help='Hard cap for this experiment. An existing ledger refuses to change it.')
+    parser.add_argument('--approved-cap-cents', type=int,
+                        help='Explicit user-approved ceiling above the default $10; does not reset or change a ledger.')
     parser.add_argument('--dry-run', action='store_true', help='Validate budget without uploads or generation.')
     parser.add_argument('--poll-timeout', type=float, default=1200,
                         help='Seconds to poll before returning; resume with the same plan.')
@@ -42,7 +44,8 @@ def main():
                         help='Extract local technical/speech evidence and refresh cross-loop learning afterward.')
     args = parser.parse_args()
     plan = json.loads(args.plan.read_text())
-    root, ledger, summary = prepare_plan(plan, args.root, args.cap_cents)
+    root, ledger, summary = prepare_plan(plan, args.root, args.cap_cents,
+                                         approved_cap_cents=args.approved_cap_cents)
     print(json.dumps(summary), flush=True)
     if args.dry_run:
         return

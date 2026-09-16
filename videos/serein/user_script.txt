@@ -1,0 +1,176 @@
+Create a completely new video from scratch using our existing video library, previous model learnings, scorecard, prompt/skill library, and transition learnings.
+
+This new video should include people, but for all important human-focused scenes, use an image-first workflow.
+
+Required workflow for people
+
+Do not generate the main people-focused shots directly from text-to-video.
+
+Instead:
+
+1. Generate a high-quality still image of the person first.
+2. Review the image for realism and consistency.
+3. Only use images that look convincingly realistic.
+4. Use the approved image as the reference/start frame for image-to-video generation.
+5. Animate it with controlled, natural movement.
+
+The goal is to improve:
+
+* Human realism
+* Face quality
+* Identity consistency
+* Skin texture
+* Hands and body proportions
+* Clothing consistency
+* Scene-to-scene consistency
+
+If the same person appears in multiple shots, reuse the same character reference or closely related approved reference images so their identity stays consistent.
+
+Image quality
+
+Before generating the video clip, make sure the source image has:
+
+* Natural facial proportions
+* Realistic skin texture and imperfections
+* Natural hair
+* Realistic hands when visible
+* Realistic clothing textures
+* Natural lighting
+* Appropriate depth of field
+* No overly polished or plastic-looking skin
+* No obvious AI artifacts
+* No distorted fingers or facial features
+
+If the image does not look realistic enough, regenerate the image before moving to video.
+
+Do not animate a weak source image.
+
+Motion prompting
+
+When converting the image to video, prefer subtle and realistic movement.
+
+Use:
+
+* Natural blinking
+* Small eye movements
+* Subtle facial expressions
+* Small head movements
+* Natural breathing
+* Realistic posture shifts
+* Controlled hand movement
+* Natural hair and clothing movement
+
+Avoid unnecessary large gestures or exaggerated movement unless the scene genuinely requires it.
+
+New video concept
+
+Create a completely new concept.
+
+Do not edit, extend, or reuse one of the previous videos as the base.
+
+The new video should have:
+
+* A new idea
+* A new script
+* A new shot plan
+* Newly generated people/images
+* Newly generated video scenes
+* A new final edit
+
+Use people naturally within the story, but do not make it an interview-heavy video.
+
+People can appear through:
+
+* Lifestyle scenes
+* Product usage
+* Working at a desk
+* Over-the-shoulder shots
+* Hands interacting with technology
+* Short cinematic moments
+* Natural reactions
+* Walking or environmental shots
+
+Avoid long direct-to-camera speaking unless there is a strong creative reason.
+
+Product and story
+
+Keep the video focused on a product, software, technology, AI tool, or digital service.
+
+The product should remain clear throughout the video.
+
+Make sure the viewer understands:
+
+* What the product is
+* What problem it solves
+* How the person uses it
+* What result or benefit they get
+
+Do not make the product too subtle or leave the viewer confused about the context.
+
+Model routing
+
+Continue using the existing model scorecard.
+
+Use:
+
+* Image generation model → realistic character/source image
+* Image-to-video model → people-focused scenes
+* Hyperframes → UI, text, software screens, and motion graphics
+* Other video models → cinematic or product scenes where they perform better
+
+Choose the best model for each individual shot.
+
+Transitions
+
+Continue improving entry and exit frames.
+
+Plan transitions between:
+
+* Person → product
+* Real-world scene → UI
+* UI → person
+* Product → result
+
+Keep consistency in:
+
+* Lighting
+* Color
+* Character appearance
+* Clothing
+* Camera direction
+* Motion
+* Framing
+
+Where useful, use the final frame of one scene to help guide the next.
+
+Improvement loop
+
+Run:
+
+concept → generate character images → approve internally → image-to-video → assemble → evaluate → improve weak scenes → regenerate → final review
+
+If a human shot still looks obviously AI-generated:
+
+1. Check the source image.
+2. Improve or regenerate the image first.
+3. Adjust the image-to-video prompt.
+4. Change the video model if necessary.
+5. Regenerate the shot.
+
+Do not accept poor human realism just because the generation technically succeeded.
+
+Budget
+
+Keep the maximum estimated generation cost at $10 for this run.
+
+Do not exceed the limit.
+
+Final output
+
+Deliver one completely new finished .mp4 video.
+
+The video must include people and must use the image-first → image-to-video workflow for the main human-focused scenes.
+
+Do not send the source images, scorecard, report, script, or notes unless I specifically ask for them.
+
+The task is complete only when the new .mp4 video is ready for review.

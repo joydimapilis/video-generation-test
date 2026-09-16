@@ -1,0 +1,13 @@
+# Local generated media and diagnostics; editable source is tracked.
+assets/*.mp4
+assets/*.png
+assets/*.jpg
+assets/*.wav
+assets/fonts/
+.media/
+.hyperframes/
+.thumbnails/
+.waveform-cache/
+snapshots/
+renders/
+node_modules/

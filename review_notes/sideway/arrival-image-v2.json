@@ -1,0 +1,14 @@
+{
+  "approved": true,
+  "source_sha256": "a14e544d3088aa28dd5c306e712c34c9e969c6915f74f814accfdefca53be7ec",
+  "reviewer": "Agent source-image review before animation",
+  "supersedes": "arrival-image-v1.json",
+  "checks": {
+    "orientation": "Head and shoulders forward and aligned; no sideways neck twist.",
+    "gaze": "Chin gently lowered, both eyes directed toward visible coffee cup.",
+    "hands": "Natural right-hand handle grip, elbow supported by caf\u00e9 counter, free hand relaxed near waist. Free hand does not rest on counter as requested, but anatomy and relaxed position are acceptable.",
+    "identity": "Same curls, stubble, skin texture, olive overshirt and ivory tee.",
+    "mood": "Soft closed-mouth expression and ordinary daylight, no camera eye contact."
+  },
+  "limits": "Subjective still review; separately review motion, hand stability and gaze."
+}

@@ -1,0 +1,52 @@
+{
+  "experiment": "sideway-gaze-dialogue-revision",
+  "budget_root": "artifacts/library-loop-14",
+  "pricing_checked": "2026-09-16",
+  "pricing_sources": [
+    "https://fal.ai/models/fal-ai/veo3.1/fast/image-to-video",
+    "https://fal.ai/models/fal-ai/kling-video/v3/pro/image-to-video"
+  ],
+  "cost_basis": "Same-day verified pricing: Kling 6s silent $0.112/s and Veo 8s native audio $0.15/s. Cumulative original ledger retained.",
+  "runs": [
+    {
+      "id": "sideway_phone_v2",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 68,
+      "use_case": "industrial_human",
+      "version": 2,
+      "role": "phone",
+      "reference_review": "artifacts/library-loop-14/reviews/phone-image-v2.json",
+      "reference_sha256": "9a1134dbd30bec700fee3f7afd78fdd54dd553499c5a099aab28acc49a04a2d2",
+      "hypothesis": "Correct source head/phone geometry first; hold binocular screen fixation throughout one tiny tap.",
+      "input": {
+        "start_image_url": "local:videos/sideway/assets/phone-reference-v2.png",
+        "prompt": "Six seconds from this exact approved photograph, locked camera. He is silently reading the phone display directly in front of him. Preserve the exact lowered chin, head angle, eye direction and phone position of the reference. Both eyes remain naturally focused on the CENTER OF THE PHONE SCREEN for the entire shot. His eye line follows the screen, not his tapping finger; no looking toward the camera or into the distance. A single relaxed blink around the middle, then return to the SAME screen fixation. No eye wandering or upward glance. Left hand keeps the phone rigid and still. Right index makes ONE very small tap at second 2, then rests beside the screen. Barely perceptible gaze adjustment confined within the display, minimal wrist movement, quiet breathing. Relaxed mouth stays closed. Preserve identity, skin texture, hands, clothing and daylight. The action is small because he is concentrating on reading.",
+        "negative_prompt": "looking up, looking away from phone, eye darting, wandering pupils, unfocused gaze, crossed eyes, head turn, head lifting, phone drifting, repeated tapping, finger waving, speech, mouth opening, extra fingers, hand morphing, device bending, camera motion, zoom, text, cuts",
+        "duration": "6",
+        "generate_audio": false
+      }
+    },
+    {
+      "id": "sideway_story_v2",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 120,
+      "use_case": "interview",
+      "version": 2,
+      "role": "story",
+      "reference_review": "artifacts/library-loop-14/reviews/story-image-v1.json",
+      "reference_sha256": "5ef66bf7704ebcb9b094be13e5361af994f1db417527960c225c1c661b0e3219",
+      "hypothesis": "Plain personal phrasing with an explicit Sideway mention; one conversational take with fixed interviewer eye line.",
+      "input": {
+        "image_url": "local:videos/sideway/assets/story-reference-v1.png",
+        "prompt": "One eight-second candid conversational shot from this exact portrait. Preserve this man's identity, textured skin, curls, olive shirt and street. Locked camera. He speaks quietly to one friend just camera-right, maintaining the same relaxed eye line throughout. Natural low-key adult male English voice, casual and unhurried, as if answering what he did on Saturday. Start immediately: \"I'd save all these places, then forget about them.\" Finish that thought by about 3.5 seconds. A short pause, then: \"Sideway maps them out for me. Way easier.\" Finish by 7.5 seconds and let lips settle closed. Say the wording exactly once. Ordinary conversational rhythm, gentle falling intonation, no emphatic pitch rise on the app name, no advertising announcer voice, no practiced smile. Small natural mouth movement, relaxed brows, minimal head motion, natural blinking. Keep both eyes on the same off-camera friend; no wandering gaze. Clean close speech, faint outdoor ambience only. No music or text.",
+        "negative_prompt": "overacting, exaggerated eyebrows, shoulder shrug, head sway, looking away, plastic skin, captions, words on screen, music, stuttering, repeated words, other voices, zoom, cuts",
+        "duration": "8s",
+        "resolution": "1080p",
+        "aspect_ratio": "9:16",
+        "generate_audio": true,
+        "auto_fix": false,
+        "seed": 916142
+      }
+    }
+  ]
+}

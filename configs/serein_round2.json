@@ -1,0 +1,43 @@
+{
+  "experiment": "serein-image-first-2026-09-16",
+  "budget_root": "artifacts/library-loop-13",
+  "pricing_checked": "2026-09-16",
+  "pricing_sources": [
+    "https://fal.ai/models/fal-ai/kling-video/v3/pro/image-to-video"
+  ],
+  "cost_basis": "6s x $0.112 silent=0.672 rounded up to68c each. Shared ledger retains all earlier attempts plus image allowance.",
+  "runs": [
+    {
+      "id": "serein_focus_kling_v2",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 68,
+      "use_case": "industrial_human",
+      "version": 2,
+      "role": "human_bookend",
+      "hypothesis": "Veo retained identity but opened mouth early; shorter affirmative silent-reading prompt with Kling. Model and prompt confounded. Source remains internally approved.",
+      "input": {
+        "start_image_url": "local:videos/serein/assets/designer-reference-v1.png",
+        "prompt": "Locked camera, same woman and home studio as the source photograph. Her lips remain gently touching throughout. She quietly reads the laptop with small eye refocusing and one natural blink. Her expression stays thoughtful and neutral. Natural breath, realistic skin texture, tiny movements only. Her hands remain resting exactly as shown, with fingers still. Preserve the face, hair, pale blue cotton shirt and soft daylight. Six-second continuous candid take.",
+        "negative_prompt": "speaking, mouth opening, teeth, lip sync, exaggerated expressions, head sway, beauty smoothing, facial morphing, hand gestures, extra fingers, camera movement, text, cuts",
+        "duration": "6",
+        "generate_audio": false
+      }
+    },
+    {
+      "id": "serein_relief_kling_v2",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 68,
+      "use_case": "industrial_human",
+      "version": 2,
+      "role": "human_bookend",
+      "hypothesis": "Veo retained identity but opened mouth early; shorter affirmative silent-reading prompt with Kling. Model and prompt confounded. Source remains internally approved.",
+      "input": {
+        "start_image_url": "local:videos/serein/assets/designer-reference-v1.png",
+        "prompt": "Locked camera, same woman and home studio as the source photograph. Her lips remain gently touching throughout. Her shoulders settle slightly as she relaxes; a very small closed-mouth smile develops, then holds. She continues looking at her laptop. Natural breath, realistic skin texture, tiny movements only. Her hands remain resting exactly as shown, with fingers still. Preserve the face, hair, pale blue cotton shirt and soft daylight. Six-second continuous candid take.",
+        "negative_prompt": "speaking, mouth opening, teeth, lip sync, exaggerated expressions, head sway, beauty smoothing, facial morphing, hand gestures, extra fingers, camera movement, text, cuts",
+        "duration": "6",
+        "generate_audio": false
+      }
+    }
+  ]
+}

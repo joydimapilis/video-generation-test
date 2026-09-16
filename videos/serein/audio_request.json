@@ -1,0 +1,22 @@
+{
+  "provider": "kokoro",
+  "speed": 1,
+  "lines": [
+    {
+      "id": "01",
+      "text": "A full day. But no room to focus. Meet Serein. Your AI focus planner."
+    },
+    {
+      "id": "02",
+      "text": "Start with what matters. The concept presentation is due tomorrow. Serein finds ninety open minutes, around your existing meetings. Review the plan. Protect the time."
+    },
+    {
+      "id": "03",
+      "text": "A little less planning. Room for your best work. Serein. Make room."
+    }
+  ],
+  "bgm": {
+    "mode": "none"
+  },
+  "voice": "af_bella"
+}

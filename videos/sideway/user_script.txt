@@ -1,0 +1,249 @@
+Create another completely new video from scratch using our existing video library as inspiration and the learnings from previous generations.
+
+This time, create an experience-based video for a mobile app.
+
+The format should feel somewhat like an interview or customer story, but not a full interview.
+
+The person should briefly talk about their experience or problem, while most of the story is supported by lifestyle footage, phone interactions, app UI, and product visuals.
+
+Use the styles, pacing, framing, storytelling, transitions, and other patterns found in our existing video library as inspiration. Do not copy one specific reference video.
+
+Important: generate the person as an image first
+
+For every important scene involving the main person, follow the same workflow we used in the previous video:
+
+Generate a realistic still image of the person first, then use that image as the reference/start frame for image-to-video generation.
+
+Do not generate the main human scenes directly from text-to-video.
+
+The workflow should be:
+
+1. Generate the person’s source/reference image first.
+2. Check that the image looks realistic and that the pose, hands, clothing, lighting, and interaction are correct.
+3. If the image looks wrong or obviously AI-generated, regenerate the image before proceeding.
+4. Use the approved image for image-to-video generation.
+5. Keep movement natural and controlled.
+
+If the same person appears across several shots, keep using the same approved character reference so their identity remains consistent.
+
+Do not rely on the video model to fix an incorrect source image.
+
+Concept direction
+
+Choose the mobile app concept yourself based on what will work best visually and narratively.
+
+It could be something like:
+
+* Productivity
+* Personal organization
+* Planning
+* Finance
+* Travel
+* Wellness
+* Communication
+* AI assistant
+* Learning
+* Habit tracking
+* Scheduling
+* Another mobile-first product that fits the styles in our video library
+
+The concept should be easy for the viewer to understand quickly.
+
+Story structure
+
+Build the video around the person’s experience with the product, rather than a traditional interview.
+
+A possible structure:
+
+experience/problem → app discovery/use → glimpse of app workflow → result → short reflection
+
+The person might say one short line about what they struggled with.
+
+Then move away from the talking shot and visually show:
+
+* Them using their phone
+* The app interface
+* The relevant feature
+* How it fits into their day
+* The result or improvement
+
+Later, briefly return to the person for another short line or reaction.
+
+Do not keep the camera on the person speaking for long periods.
+
+Human realism
+
+Before animating any human scene, make sure the source image has:
+
+* Natural facial proportions
+* Realistic skin texture and imperfections
+* Natural hair
+* Correct hands and fingers
+* Realistic clothing texture
+* Natural lighting
+* Appropriate posture
+* No obvious AI artifacts
+* No overly polished or plastic-looking face
+
+For the image-to-video stage, use subtle motion:
+
+* Natural blinking
+* Small eye movements
+* Subtle facial expressions
+* Slight head movement
+* Natural breathing
+* Small posture shifts
+* Controlled hand movement
+* Natural hair and clothing movement
+
+Avoid exaggerated body or facial movement.
+
+Phone interaction
+
+Phone interaction needs to look believable.
+
+Generate the interaction correctly in the source image first.
+
+For example:
+
+* The phone should actually be visible.
+* The person’s hand should be positioned naturally around it.
+* Fingers should be in the correct position for tapping or scrolling.
+* Their gaze should match the phone or environment.
+* Avoid distorted device shapes or fingers.
+
+Only animate the scene after the still image looks correct.
+
+For animation, keep the interaction simple:
+
+* Small thumb movement
+* Short tap
+* Natural scrolling
+* Slight hand movement
+* Realistic gaze change
+
+App UI
+
+Use Hyperframes or the strongest available UI method for the actual mobile interface.
+
+Do not rely on a general video model to generate important readable UI.
+
+Show only the most important parts of the app.
+
+The viewer should understand:
+
+* What the app does
+* What the user is doing
+* How it helps
+* What result they get
+
+Make the product clear. Do not make the app mention too subtle.
+
+Opening
+
+Do not start with a generic interview shot.
+
+Create a stronger opening using:
+
+* A real-life moment
+* A phone interaction
+* A notification
+* A problem or frustration
+* A short visual hook
+* Another idea inspired by the video library
+
+Then naturally introduce the person’s experience and the app.
+
+Blend the person and product
+
+Avoid making the video feel like:
+
+interview → app demo → interview
+
+Connect the scenes visually.
+
+For example:
+
+* Person looks at phone → transition into UI
+* Finger taps → UI animation continues the movement
+* App completes an action → return to the person’s reaction
+* Phone screen → full-screen product interface
+
+Think carefully about the entry and exit frames.
+
+Ending
+
+Create a proper ending rather than simply ending on the final spoken line.
+
+The ending can combine:
+
+* The person’s result
+* One final app interaction
+* A visual callback to the opening
+* A strong app screen
+* A concise final message or CTA
+
+The opening and ending should feel connected.
+
+Keep the interview minimal
+
+The person can speak, but keep direct-to-camera or interview-like footage short.
+
+Use their experience to support the story while letting the product visuals do most of the work.
+
+Think:
+
+customer experience film
+
+rather than:
+
+traditional interview/testimonial
+
+Continue using previous learnings
+
+Use the existing:
+
+* Model scorecard
+* Prompt library
+* Image-first → image-to-video human workflow
+* Human realism learnings
+* Hyperframes/UI learnings
+* Transition techniques
+* Entry/exit frame planning
+* Model-routing logic
+
+Do not repeat previous research unnecessarily.
+
+Improvement loop
+
+Run:
+
+concept → generate character/reference images → verify realism → script/shot plan → generate human clips with image-to-video → create app UI → assemble → evaluate → improve weak scenes → regenerate → final review
+
+If a human scene looks wrong, go back to the source image first instead of trying to fix everything during video generation.
+
+Budget
+
+Keep the maximum estimated generation cost at $10 for this run.
+
+Do not exceed the limit.
+
+Final output
+
+Deliver one completely new finished .mp4 video.
+
+The video should:
+
+* Be inspired by our existing video library
+* Focus on a mobile app
+* Tell the story through someone’s experience
+* Include only short interview-like moments
+* Use lifestyle and app scenes for most of the storytelling
+* Generate the person as a still image first before creating the human video scenes
+* Use image-to-video for the main human scenes
+* Clearly communicate what the app does
+* Have a creative opening and intentional ending
+
+Do not send the source images, script, scorecard, report, or notes unless I specifically ask for them.
+
+Deliver the finished .mp4 as the final output.

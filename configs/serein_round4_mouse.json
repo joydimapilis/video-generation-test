@@ -1,0 +1,54 @@
+{
+  "experiment": "serein-image-first-2026-09-16",
+  "budget_root": "artifacts/library-loop-13",
+  "pricing_checked": "2026-09-16",
+  "pricing_sources": [
+    "https://fal.ai/models/fal-ai/veo3.1/fast/image-to-video"
+  ],
+  "runs": [
+    {
+      "id": "serein_mouse_focus_veo_v4",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 60,
+      "use_case": "industrial_human",
+      "version": 4,
+      "role": "human_bookend",
+      "hypothesis": "Mouse geometry established and approved in source still; animate only tiny navigation and finger click.",
+      "reference_review": "artifacts/library-loop-13/reviews/character-mouse-v2.json",
+      "reference_sha256": "b8cf765b1391964a521060eba6effdaa33ba9ee6e53ed8cc0beb6cacea492b20",
+      "input": {
+        "prompt": "Continue this photograph as a quiet candid six-second shot. Preserve the exact woman, natural face texture, hair, blue cotton shirt, desk, laptop and mouse. Locked camera. Her right hand keeps the same comfortable mouse grip throughout: index and middle fingers resting on the two buttons, wrist aligned with forearm. She makes a small smooth mouse glide of about one centimeter and a tiny natural index-finger click, then settles the mouse. Fingers remain in contact with their buttons, minimal wrist movement. Her eyes stay focused on the laptop screen, making tiny cursor-following eye movements, never looking at her hand. Natural blink and subtle breathing. Lips gently together. Neutral attentive concentration as she navigates her work.",
+        "negative_prompt": "hand lifting, pointing, floating fingers, extra fingers, deformed hand, bent wrist, disappearing mouse, looking at hand, looking at camera, talking, teeth, lip sync, overacting, camera movement, zoom, text overlays, cuts",
+        "image_url": "local:videos/serein/assets/designer-mouse-v2.png",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 91604
+      }
+    },
+    {
+      "id": "serein_mouse_relief_veo_v4",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 60,
+      "use_case": "industrial_human",
+      "version": 4,
+      "role": "human_bookend",
+      "hypothesis": "Mouse geometry established and approved in source still; animate only tiny navigation and finger click.",
+      "reference_review": "artifacts/library-loop-13/reviews/character-mouse-v2.json",
+      "reference_sha256": "b8cf765b1391964a521060eba6effdaa33ba9ee6e53ed8cc0beb6cacea492b20",
+      "input": {
+        "prompt": "Continue this photograph as a quiet candid six-second shot. Preserve the exact woman, natural face texture, hair, blue cotton shirt, desk, laptop and mouse. Locked camera. Her right hand keeps the same comfortable mouse grip throughout: index and middle fingers resting on the two buttons, wrist aligned with forearm. She makes a small smooth mouse glide of about one centimeter and a tiny natural index-finger click, then settles the mouse. Fingers remain in contact with their buttons, minimal wrist movement. Her eyes stay focused on the laptop screen, making tiny cursor-following eye movements, never looking at her hand. Natural blink and subtle breathing. Lips gently together. A barely perceptible closed-mouth smile as she continues working comfortably.",
+        "negative_prompt": "hand lifting, pointing, floating fingers, extra fingers, deformed hand, bent wrist, disappearing mouse, looking at hand, looking at camera, talking, teeth, lip sync, overacting, camera movement, zoom, text overlays, cuts",
+        "image_url": "local:videos/serein/assets/designer-mouse-v2.png",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 91605
+      }
+    }
+  ]
+}

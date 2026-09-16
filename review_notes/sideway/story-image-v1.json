@@ -1,0 +1,14 @@
+{
+  "approved": true,
+  "source_sha256": "5ef66bf7704ebcb9b094be13e5361af994f1db417527960c225c1c661b0e3219",
+  "identity_reference": "videos/sideway/assets/phone-reference-v1.png",
+  "reviewer": "agent still review before video generation",
+  "checks": {
+    "identity": "Same face, curls, stubble, olive overshirt and ivory tee as approved phone source.",
+    "skin": "Visible pores and ordinary asymmetry; no plastic finish.",
+    "pose": "Upright relaxed posture, natural shoulders.",
+    "interaction": "Hands outside tight speaking crop; consistent off-camera gaze target.",
+    "light": "Soft outdoor daylight consistent with phone scene."
+  },
+  "limits": "Subjective review; preserve natural source texture and separately inspect animation."
+}

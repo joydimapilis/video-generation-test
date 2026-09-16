@@ -6,9 +6,14 @@ from .budget import BudgetLedger
 from .learning import requested_audio, signature
 
 
-def prepare_plan(plan, root=None, cap_cents=1000):
-    if type(cap_cents) is not int or not 0 < cap_cents <= 1000:
-        raise ValueError('The maximum experiment cap is $10 (1000 cents)')
+def prepare_plan(plan, root=None, cap_cents=1000, *, approved_cap_cents=None):
+    # Default remains $10. A larger ceiling requires an explicit caller-supplied
+    # approval, never a value embedded in a generation plan.
+    maximum = 1000 if approved_cap_cents is None else approved_cap_cents
+    if type(maximum) is not int or maximum <= 0:
+        raise ValueError('Approved cap must be positive integer cents')
+    if type(cap_cents) is not int or not 0 < cap_cents <= maximum:
+        raise ValueError(f'The maximum experiment cap is {maximum} cents')
     declared = plan.get('budget_root')
     if root is not None and declared and Path(root).resolve() != Path(declared).resolve():
         raise ValueError('--root conflicts with the plan budget_root; keep the original ledger')
@@ -17,8 +22,11 @@ def prepare_plan(plan, root=None, cap_cents=1000):
     existing = ledger.read()['runs']
     seen = set()
     pending = []
+    # External image-generation allowances share the cumulative budget but
+    # have no Fal request to deduplicate. Their reservations still count below.
     fingerprints = {signature(r['payload']['endpoint'], r['payload']['input']): key
-                    for key, r in existing.items()}
+                    for key, r in existing.items()
+                    if 'endpoint' in r['payload'] and 'input' in r['payload']}
     for run in plan['runs']:
         requested_audio(run)  # validate local audio intent before any submission
         identifier = run['id']

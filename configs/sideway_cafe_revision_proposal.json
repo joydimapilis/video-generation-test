@@ -1,0 +1,33 @@
+{
+  "status": "completed",
+  "requested_total_cap_cents": 1200,
+  "existing_reserved_cents": 973,
+  "planned_additional_estimate_cents": 168,
+  "planned_additional_reserved_cents": 194,
+  "total_reserved_after_cents": 1167,
+  "source_image": {
+    "reference": "videos/sideway/assets/arrival-reference-v1.png",
+    "destination": "videos/sideway/assets/arrival-reference-v2.png",
+    "prompt_file": "prompt_library/sideway_cafe_candid_still_v2.txt",
+    "estimate_cents": 100,
+    "review_required_before_animation": [
+      "same character and wardrobe",
+      "untwisted head aligned with shoulders",
+      "relaxed coordinated gaze at cup",
+      "natural handle grip and counter contact",
+      "unposed posture"
+    ]
+  },
+  "video": {
+    "id": "sideway_arrival_v2",
+    "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+    "estimate_cents": 68,
+    "duration_seconds": 6,
+    "generate_audio": false,
+    "prompt": "Six-second candid caf\u00e9 pause from the exact reviewed still. Preserve identity, framing, skin texture, clothing and daylight. His head stays naturally aligned with his shoulders, facing forward toward the counter. Eyes rest softly on the coffee in front of him, with one natural brief blink and no eye wandering. He quietly enjoys the stop: gentle breathing and an almost imperceptible settling of his shoulders. Cup stays low in the same relaxed grip, forearm comfortably supported. Lips remain softly closed. No drinking action, cup lift or head turn. No camera awareness or practiced smile. Locked camera; very small natural motion only.",
+    "negative_prompt": "sideways look, head turning, twisted neck, looking into camera, posing, advertising smile, head sway, exaggerated facial expression, talking, cup rising, drinking, extra fingers, hand morphing, bent cup, camera movement, zoom, text, cuts"
+  },
+  "assembly": "Replace only arrival.mp4 in the existing 26\u201332s window. Preserve current dialogue, phone scenes, app UI, music, transitions and ending. Verify image before I2V; then inspect early/middle/late gaze and posture before final render.",
+  "authorization": "User Yes to total $12 cap",
+  "final_output": "artifacts/final_outcome/sideway/sideway-cafe-revised.mp4"
+}

@@ -1,0 +1,126 @@
+{
+  "path": "artifacts/final_outcome/serein/serein-mouse-revision.mp4",
+  "sha256": "f25e8cec357ca6931439d3a8e49f4ad0e48a4126eb4cace192104f95dfb672da",
+  "bytes": 8999493,
+  "duration_seconds": 32,
+  "fps": 24,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "frames": 768,
+  "full_decode": true,
+  "black_intervals": [],
+  "audio_peak": 0.814681887626648,
+  "audio_mix_correlation": 0.9998927340302153,
+  "seams": [
+    {
+      "time": 8,
+      "mae_255": 0.0
+    },
+    {
+      "time": 24,
+      "mae_255": 0.0002623456790123457
+    }
+  ],
+  "source_comparisons": [
+    {
+      "timeline_time": 0.8,
+      "source_time": 2.1,
+      "role": "focus",
+      "mae_255": 2.2963712522045854
+    },
+    {
+      "timeline_time": 2.4,
+      "source_time": 3.3,
+      "role": "focus",
+      "mae_255": 2.39791335978836
+    },
+    {
+      "timeline_time": 4,
+      "source_time": 4.5,
+      "role": "focus",
+      "mae_255": 2.255565476190476
+    },
+    {
+      "timeline_time": 25.5,
+      "source_time": 1.5,
+      "role": "relief",
+      "mae_255": 2.304212962962963
+    },
+    {
+      "timeline_time": 26.5,
+      "source_time": 2.5,
+      "role": "relief",
+      "mae_255": 2.256982431149098
+    },
+    {
+      "timeline_time": 28,
+      "source_time": 4,
+      "role": "relief",
+      "mae_255": 2.29267094017094
+    }
+  ],
+  "image_first": true,
+  "reference_review": {
+    "approved": true,
+    "reviewer": "agent visual review before video submission",
+    "source_sha256": "b8cf765b1391964a521060eba6effdaa33ba9ee6e53ed8cc0beb6cacea492b20",
+    "checks": {
+      "face": "Same identity; natural pores, hair and cotton texture.",
+      "hand": "Full-frame and enlarged hand review: index and middle seated on mouse button areas, other fingers relaxed along side; no obvious extra fingers.",
+      "mouse": "Dark mouse distinct from pale desk; visible front silhouette, button seam and wheel; laptop does not occlude it.",
+      "alignment": "Relaxed wrist follows forearm and mouse grip without abrupt bend.",
+      "gaze": "Eyes directed toward laptop screen at frame right; not mouse.",
+      "framing": "Mouse and hand remain within x350 crop after scaling to1920x1080."
+    },
+    "limits": "Subjective sampled visual review; video motion requires separate review."
+  },
+  "final_hold_mae_255": 0.07481159979423868,
+  "checks": {
+    "lint": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "runtime": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "layout": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "motion": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "contrast": {
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  "motion_enabled": true,
+  "contrast": {
+    "passed": 43,
+    "checked": 43
+  },
+  "budget": {
+    "estimated_cents_including_image_allowance": 792,
+    "reserved_cents": 914,
+    "cap_cents": 1000,
+    "image_allowance_cents": 200,
+    "image_invoice": "not exposed by built-in tool; allowance is planning estimate",
+    "fal_estimated_cents": 592
+  },
+  "source_hashes": {
+    "videos/serein/index.html": "720025772e9f5bd911b68fcde99b68c641ba014c987129b3f6dbf9c2c2eb0b0c",
+    "videos/serein/compositions/frames/01-full-day.html": "a0d1e15c3eeb9272aaa3e5a1020ae594511324c4276a6371bb32d8493b3c0937",
+    "videos/serein/compositions/frames/02-find-space.html": "6034d96f36047c784da0f5ef5be38f67df630fd4c38b7dc9d8b70a23e8aace58",
+    "videos/serein/compositions/frames/03-room-to-begin.html": "356c13fbea036814562519f8e7df7b24f50087dfbb84c9436a1fb1bafe4553b7"
+  },
+  "limitations": [
+    "Subjective sampled visual review; no independent audience test.",
+    "Image tool invoice not exposed; Per-image planning allowances included.",
+    "Product UI is a fictional authored demonstration."
+  ]
+}

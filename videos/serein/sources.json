@@ -1,0 +1,58 @@
+[
+  {
+    "role": "focus",
+    "run_id": "serein_mouse_focus_kling_v5",
+    "source": "artifacts/library-loop-13/outputs/serein_mouse_focus_kling_v5.mp4",
+    "source_sha256": "2e45990899434f28afcf9e85f6ce2f8cc6209f21f0a4c1de3fe77ba7c6c2089f",
+    "derived": "videos/serein/assets/focus.mp4",
+    "derived_sha256": "c4e2471f36fdc970a849dbe09a4da3aea539127964c2ef16f6bb06e2e628b059",
+    "source_start": 1.5,
+    "playback_rate": 0.75,
+    "source_duration": 4.5,
+    "duration": 6,
+    "timeline_start": 0,
+    "crop": {
+      "x": 350,
+      "y": 0,
+      "width": 1120,
+      "height": 1080
+    },
+    "pre_crop_size": [
+      1920,
+      1080
+    ],
+    "display_x": 800,
+    "image_first": true,
+    "reference": "assets/designer-mouse-v2.png",
+    "reference_sha256": "b8cf765b1391964a521060eba6effdaa33ba9ee6e53ed8cc0beb6cacea492b20",
+    "review": "artifacts/library-loop-13/reviews/character-mouse-v2.json"
+  },
+  {
+    "role": "relief",
+    "run_id": "serein_mouse_relief_kling_v5",
+    "source": "artifacts/library-loop-13/outputs/serein_mouse_relief_kling_v5.mp4",
+    "source_sha256": "2631bd897acf3715c4226828c07deb1bd7abb710e47b8e7cc9bb6c3b52cfb786",
+    "derived": "videos/serein/assets/relief.mp4",
+    "derived_sha256": "2cd53ab2861c3d2a8a1d2f87c54cf203989609aa22d3853747ea5ffd5f3cbbd1",
+    "source_start": 0,
+    "playback_rate": 1,
+    "source_duration": 6,
+    "duration": 6,
+    "timeline_start": 24,
+    "crop": {
+      "x": 350,
+      "y": 0,
+      "width": 1040,
+      "height": 1080
+    },
+    "pre_crop_size": [
+      1920,
+      1080
+    ],
+    "display_x": 880,
+    "image_first": true,
+    "reference": "assets/designer-mouse-v2.png",
+    "reference_sha256": "b8cf765b1391964a521060eba6effdaa33ba9ee6e53ed8cc0beb6cacea492b20",
+    "review": "artifacts/library-loop-13/reviews/character-mouse-v2.json"
+  }
+]

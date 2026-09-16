@@ -35,6 +35,16 @@ def test_signature_is_order_independent_even_in_nested_inputs():
     assert signature('x', {'a': {'b': 1, 'c': 2}}) == signature('x', {'a': {'c': 2, 'b': 1}})
 
 
+def test_external_image_allowances_are_not_video_model_evidence(tmp_path):
+    from amarillo.learning import collect_experiments
+    loop = tmp_path / 'library-loop-images'
+    loop.mkdir()
+    (loop / 'budget.json').write_text(json.dumps({'runs': {'image': {
+        'payload': {'provider': 'external-image'}, 'status': 'completed',
+        'estimate_cents': 100, 'reserved_cents': 115}}}))
+    assert collect_experiments(tmp_path) == []
+
+
 def test_shot_router_uses_saved_evidence_and_adapts_schema(tmp_path):
     p = tmp_path / 'learning.json'
     endpoint = 'fal-ai/kling-video/v3/pro/image-to-video'

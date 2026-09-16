@@ -1,0 +1,33 @@
+{
+  "experiment": "serein-image-first-2026-09-16",
+  "budget_root": "artifacts/library-loop-13",
+  "pricing_checked": "2026-09-16",
+  "pricing_sources": [
+    "https://fal.ai/models/fal-ai/veo3.1/fast/image-to-video"
+  ],
+  "cost_basis": "8s x$0.10 silent1080p. Shared cumulative ledger retained.",
+  "runs": [
+    {
+      "id": "serein_focus_veo_v3",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 80,
+      "use_case": "industrial_human",
+      "version": 3,
+      "role": "human_bookend",
+      "hypothesis": "Select a settled silent reading range from an8s take, avoid emotional performance cues. Reviewed image unchanged.",
+      "reference_review": "artifacts/library-loop-13/reviews/character-v1.json",
+      "reference_sha256": "da96de8f3c73c53950d663adb72488a5525e72ff6dff66343679f407effbd57b",
+      "input": {
+        "prompt": "A quiet candid eight-second observation of the woman in the supplied photo, reading on her laptop. Exactly the same face, natural skin texture, dark hair, blue cotton shirt, resting hands, laptop and daylight. Her lips rest together. Her gaze makes tiny reading movements on the screen. One or two natural blinks and subtle breathing. Still shoulders, still hands, fixed camera. Neutral attentive expression, quiet concentration. The person is listening to nothing and performing for nobody. Preserve the photographic image with only these tiny movements.",
+        "negative_prompt": "dialogue, lip sync, overacting, exaggerated smile, gestures, head sway, smooth plastic skin, distorted face, text, zoom, cuts",
+        "image_url": "local:videos/serein/assets/designer-reference-v1.png",
+        "duration": "8s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 91603
+      }
+    }
+  ]
+}

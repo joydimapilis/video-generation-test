@@ -1,0 +1,23 @@
+{
+  "project": "Portion",
+  "scope": "One fictional catering-workflow film; subjective sample evidence, not a model ranking.",
+  "patterns": [
+    {
+      "scene": "Computer use",
+      "source_requirement": "Visible mouse, fingers supported on buttons, neutral wrist, gaze already aimed into screen in source still.",
+      "failed": "Generic screen-focused gaze plus breathing/blink still let Kling raise the eyes in before_v1.",
+      "improved": "Lowered chin and downward pupils, screen below eye level, no head lift, near-still breathing with tiny click improved before_v2.",
+      "caution": "Inspect chronological moving frames: written constraints never prove the actual eye line."
+    },
+    {
+      "scene": "Kitchen payoff",
+      "source_requirement": "Supported closed box, simple two-hand lid-edge contact, downward box-directed gaze, same identity and clothes.",
+      "selected": "after_v1; hand settling and a modest shift to the box edge were coherent even though stricter immobility was requested.",
+      "caution": "Complex packing choreography was unnecessary. End wipe covers final hand withdrawal."
+    },
+    {
+      "scene": "Before/after UI",
+      "pattern": "Retain the same order-card nodes across reflow; keep exact counts, names and packing note traceable. Carry completion badge into human payoff, then close with the opening quantity."
+    }
+  ]
+}

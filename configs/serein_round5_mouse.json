@@ -1,0 +1,47 @@
+{
+  "experiment": "serein-image-first-2026-09-16",
+  "budget_root": "artifacts/library-loop-13",
+  "pricing_checked": "2026-09-16",
+  "pricing_sources": [
+    "https://fal.ai/models/fal-ai/kling-video/v3/pro/image-to-video"
+  ],
+  "runs": [
+    {
+      "id": "serein_mouse_focus_kling_v5",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 68,
+      "use_case": "industrial_human",
+      "version": 5,
+      "role": "human_bookend",
+      "hypothesis": "Veo v4 grip recognizable but gaze drops to desk and mouse rotates too much. Preserve approved still and use concise screen fixation with smaller click on Kling; model/prompt confounded.",
+      "reference_review": "artifacts/library-loop-13/reviews/character-mouse-v2.json",
+      "reference_sha256": "b8cf765b1391964a521060eba6effdaa33ba9ee6e53ed8cc0beb6cacea492b20",
+      "input": {
+        "start_image_url": "local:videos/serein/assets/designer-mouse-v2.png",
+        "prompt": "Locked-off candid shot, six seconds. She watches the CENTER OF THE UPRIGHT LAPTOP DISPLAY at frame right continuously, with her head, chin and eye direction held exactly as in the source image throughout. Her right hand stays comfortably seated on the mouse exactly as shown. A tiny smooth mouse nudge, only a few millimeters, followed by one subtle index-finger press on its button; the hand stays planted and the wrist stays straight. Very small natural breathing and one brief blink. Lips stay gently touching. Preserve the exact photographic face, skin texture, clothing and scene. Calm attentive working expression.",
+        "negative_prompt": "looking down, looking at hand, looking at desk, lowering chin, head turn, head bob, glancing away, eyes closed for long periods, large smile, speaking, gestures, lifting hand, lifting mouse, rotating mouse, waving fingers, bent wrist, extra fingers, morphing face, zoom, pan, cut",
+        "duration": "6",
+        "generate_audio": false
+      }
+    },
+    {
+      "id": "serein_mouse_relief_kling_v5",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 68,
+      "use_case": "industrial_human",
+      "version": 5,
+      "role": "human_bookend",
+      "hypothesis": "Veo v4 grip recognizable but gaze drops to desk and mouse rotates too much. Preserve approved still and use concise screen fixation with smaller click on Kling; model/prompt confounded.",
+      "reference_review": "artifacts/library-loop-13/reviews/character-mouse-v2.json",
+      "reference_sha256": "b8cf765b1391964a521060eba6effdaa33ba9ee6e53ed8cc0beb6cacea492b20",
+      "input": {
+        "start_image_url": "local:videos/serein/assets/designer-mouse-v2.png",
+        "prompt": "Locked-off candid shot, six seconds. She watches the CENTER OF THE UPRIGHT LAPTOP DISPLAY at frame right continuously, with her head, chin and eye direction held exactly as in the source image throughout. Her right hand stays comfortably seated on the mouse exactly as shown. A tiny smooth mouse nudge, only a few millimeters, followed by one subtle index-finger press on its button; the hand stays planted and the wrist stays straight. Very small natural breathing and one brief blink. Lips stay gently touching. Preserve the exact photographic face, skin texture, clothing and scene. Relaxed attentive working expression, same screen focus.",
+        "negative_prompt": "looking down, looking at hand, looking at desk, lowering chin, head turn, head bob, glancing away, eyes closed for long periods, large smile, speaking, gestures, lifting hand, lifting mouse, rotating mouse, waving fingers, bent wrist, extra fingers, morphing face, zoom, pan, cut",
+        "duration": "6",
+        "generate_audio": false
+      }
+    }
+  ],
+  "cost_basis": "Two 6s Kling3Pro silent I2V takes, $0.112/sec rounded up per take; existing cumulative ledger."
+}

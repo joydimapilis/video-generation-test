@@ -46,6 +46,10 @@ def collect_experiments(artifacts):
         reviews = {r['id']: r for r in json.loads(score_path.read_text()).get('runs', [])} if score_path.exists() else {}
         for identifier, result in ledger['runs'].items():
             request = result['payload']
+            # A shared ledger may include external image/tool allowances.
+            # They count toward spending, but are not video-model evidence.
+            if 'endpoint' not in request or 'input' not in request:
+                continue
             review = reviews.get(identifier, {})
             evidence_path = root / 'evidence' / f'{identifier}.json'
             evidence = json.loads(evidence_path.read_text()) if evidence_path.exists() else {}

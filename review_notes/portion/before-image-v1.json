@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "source_sha256": "d8ee2fbed75a45e5e194c89df159de3fba6a42f3644e369625e5386529df0bff",
+  "reviewer": "assistant visual inspection",
+  "checks": {
+    "mouse_visible": true,
+    "button_contact": true,
+    "neutral_wrist": true,
+    "screenward_gaze": true,
+    "natural_skin_hair_pose": true
+  },
+  "limits": "Far hand largely occluded by laptop; no animation requiring typing. Active mouse hand is clearly visible. Review gaze and hand through moving clip."
+}

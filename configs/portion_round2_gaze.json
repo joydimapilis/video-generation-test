@@ -1,0 +1,29 @@
+{
+  "experiment": "portion-before-downward-gaze-correction",
+  "budget_root": "artifacts/library-loop-15",
+  "pricing_checked": "2026-09-16",
+  "pricing_sources": [
+    "https://fal.ai/models/fal-ai/kling-video/v3/pro/image-to-video"
+  ],
+  "cost_basis": "Same-day verified silent Kling v3 Pro $0.112/s, 6 seconds rounded up to 68 cents; two $1 image allowances separately reserved.",
+  "runs": [
+    {
+      "id": "portion_before_v2",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 68,
+      "use_case": "industrial_human",
+      "version": 2,
+      "role": "before",
+      "reference_review": "artifacts/library-loop-15/reviews/before-image-v1.json",
+      "reference_sha256": "d8ee2fbed75a45e5e194c89df159de3fba6a42f3644e369625e5386529df0bff",
+      "hypothesis": "Reject v1 raised eyes. Preserve the approved still\u2019s lowered eye direction with breathing-only motion; no head lift.",
+      "input": {
+        "start_image_url": "local:videos/portion/assets/before-reference-v1.png",
+        "prompt": "Six seconds. Almost-still documentary photograph brought gently to life. The woman keeps her CHIN LOWERED and BOTH EYES LOOKING DOWN at the LAPTOP SCREEN throughout all six seconds. Preserve the original starting photograph\u2019s downward pupil placement and gently lowered upper eyelids exactly. Her head does not lift or turn. She is quietly reading the screen BELOW her eye level, never staring horizontally ahead or over the top of the screen. Very subtle breathing is the only motion besides one tiny mouse-button depression. Her mouse hand remains on the same mouse with the same relaxed finger contact and straight wrist. No wrist travel, no lifting hand, no typing. The other hand stays hidden behind the laptop. Lips closed. Keep exact identity, skin, clothing, desk and props. Completely locked camera, no zoom, no cuts, no dialogue.",
+        "negative_prompt": "raised chin, head lifting, eyes looking up, wide open eyes, horizontal stare, looking beyond laptop, looking at camera, eye wandering, large blink, gesturing, talking, smiling broadly, lifted hand, hand morphing, extra fingers, moving props, camera move, zoom, cuts, text",
+        "duration": "6",
+        "generate_audio": false
+      }
+    }
+  ]
+}

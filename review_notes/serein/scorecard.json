@@ -1,0 +1,171 @@
+{
+  "name": "Serein image-first human workflow",
+  "review_scope": "Original passive poses superseded after user feedback; revised still approved before four mouse I2V attempts. All attempts retained.",
+  "runs": [
+    {
+      "id": "serein_focus_veo_v1",
+      "scores": {
+        "prompt_adherence": 7,
+        "sampled_stability": 8.5,
+        "composition": 8,
+        "edit_readiness": 6.5,
+        "human_realism": 8,
+        "face_realism": 8.5,
+        "identity_consistency": 8.5,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "decision": "reject",
+      "review": "Recognizable face and photographic detail, but early mouth opening and expressive brow conflict with quiet reading.",
+      "review_method": "Agent review:8 full-frame chronological samples plus12/16 face crops, full decode. No independent audience test or calibrated realism metric."
+    },
+    {
+      "id": "serein_relief_veo_v1",
+      "scores": {
+        "prompt_adherence": 6.5,
+        "sampled_stability": 8.5,
+        "composition": 8,
+        "edit_readiness": 6,
+        "human_realism": 8,
+        "face_realism": 8.5,
+        "identity_consistency": 8.5,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "decision": "reject",
+      "review": "Identity and studio hold; large early open-mouth exhale and broad smile overplay this restrained closing beat.",
+      "review_method": "Agent review:8 full-frame chronological samples plus12/16 face crops, full decode. No independent audience test or calibrated realism metric."
+    },
+    {
+      "id": "serein_focus_kling_v2",
+      "scores": {
+        "prompt_adherence": 7.5,
+        "sampled_stability": 8,
+        "composition": 8.5,
+        "edit_readiness": 7,
+        "human_realism": 8,
+        "face_realism": 8,
+        "identity_consistency": 8.5,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "decision": "reject",
+      "review": "Small mouth opening remains; face is visibly softer than Veo. No improvement sufficient to select.",
+      "review_method": "Agent review:8 full-frame chronological samples plus12/16 face crops, full decode. No independent audience test or calibrated realism metric."
+    },
+    {
+      "id": "serein_relief_kling_v2",
+      "scores": {
+        "prompt_adherence": 8.5,
+        "sampled_stability": 8.5,
+        "composition": 8.5,
+        "edit_readiness": 8.5,
+        "human_realism": 8.5,
+        "face_realism": 8,
+        "identity_consistency": 8.5,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "decision": "superseded",
+      "review": "Small closed-mouth smile, settled hands and shoulders, recognizable identity. Slightly softer facial texture than the approved still.",
+      "review_method": "Agent review:8 full-frame chronological samples plus12/16 face crops, full decode. No independent audience test or calibrated realism metric.",
+      "historical_decision": "selected",
+      "user_feedback": "Resting hands did not show active computer use; regenerate the interaction in the still before animation."
+    },
+    {
+      "id": "serein_focus_veo_v3",
+      "scores": {
+        "prompt_adherence": 8.5,
+        "sampled_stability": 9,
+        "composition": 8.5,
+        "edit_readiness": 8.5,
+        "human_realism": 8.5,
+        "face_realism": 8.5,
+        "identity_consistency": 8.5,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "decision": "superseded",
+      "review": "Lips remain closed in sampled frames. Natural gaze/downward eye movements and blinks; preserved skin, hair, shirt and studio. Use settled2\u20138s range.",
+      "review_method": "Agent review:8 full-frame chronological samples plus12/16 face crops, full decode. No independent audience test or calibrated realism metric.",
+      "historical_decision": "selected",
+      "user_feedback": "Resting hands did not show active computer use; regenerate the interaction in the still before animation."
+    },
+    {
+      "id": "serein_mouse_focus_veo_v4",
+      "scores": {
+        "prompt_adherence": 6,
+        "sampled_stability": 8,
+        "composition": 8.5,
+        "edit_readiness": 5.5,
+        "human_realism": 8,
+        "face_realism": 8.5,
+        "identity_consistency": 9,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "decision": "reject",
+      "review": "Mouse is present and grip recognizable; however gaze repeatedly drops to desk/hand and mouse rotates more than requested. Source still passes interaction review; motion fails fixed screen attention.",
+      "review_method": "Agent chronological8 full frames and12 enlarged face/hand samples, full decode."
+    },
+    {
+      "id": "serein_mouse_relief_veo_v4",
+      "scores": {
+        "prompt_adherence": 6,
+        "sampled_stability": 8,
+        "composition": 8.5,
+        "edit_readiness": 5.5,
+        "human_realism": 8,
+        "face_realism": 8.5,
+        "identity_consistency": 9,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "decision": "reject",
+      "review": "Mouse is present and grip recognizable; however gaze repeatedly drops to desk/hand and mouse rotates more than requested. Source still passes interaction review; motion fails fixed screen attention.",
+      "review_method": "Agent chronological8 full frames and12 enlarged face/hand samples, full decode."
+    },
+    {
+      "id": "serein_mouse_focus_kling_v5",
+      "scores": {
+        "prompt_adherence": 8.5,
+        "sampled_stability": 8.5,
+        "composition": 9,
+        "edit_readiness": 8.5,
+        "human_realism": 8.5,
+        "face_realism": 8,
+        "identity_consistency": 9,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "decision": "selected",
+      "review": "Use settled source1.5\u20136s at0.75x: omit early downward eye movement/blinks. Visible mouse with maintained button grip, relaxed wrist/forearm, screen-directed attention in selected range, small mouse travel and subtle finger motion. Face slightly softer than source still.",
+      "review_method": "Agent chronological8 full frames,12 face/hand close samples plus selected edit inspection; full decode. Subjective review, not calibrated anatomy metric."
+    },
+    {
+      "id": "serein_mouse_relief_kling_v5",
+      "scores": {
+        "prompt_adherence": 8.5,
+        "sampled_stability": 8.5,
+        "composition": 9,
+        "edit_readiness": 8.5,
+        "human_realism": 8.5,
+        "face_realism": 8,
+        "identity_consistency": 9,
+        "camera_movement": 9,
+        "consistency": 8.5
+      },
+      "decision": "selected",
+      "review": "Use source0\u20136s. Visible mouse with maintained button grip, relaxed wrist/forearm, screen-directed attention in selected range, small mouse travel and subtle finger motion. Face slightly softer than source still.",
+      "review_method": "Agent chronological8 full frames,12 face/hand close samples plus selected edit inspection; full decode. Subjective review, not calibrated anatomy metric."
+    }
+  ],
+  "budget": {
+    "estimated_cents": 436,
+    "reserved_cents": 503,
+    "cap_cents": 1000,
+    "image_allowance_cents": 100,
+    "fal_estimate_cents": 336,
+    "image_invoice": "Tool does not expose an invoice; $1 is a conservative planning allowance, not a verified charge."
+  }
+}

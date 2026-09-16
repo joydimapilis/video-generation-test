@@ -1,0 +1,59 @@
+{
+  "experiment": "library-loop-13",
+  "status": "Provisional single-take evidence; internal image review before animation",
+  "patterns": [
+    {
+      "name": "Approve identity before buying motion",
+      "workflow": "Generate one realistic lifestyle still, inspect face, hands, hair, skin, cotton texture and lighting, save its SHA and internal review, then reference that exact file in every main human-shot request.",
+      "source": "videos/serein/assets/designer-reference-v1.png",
+      "evidence": "artifacts/library-loop-13/reviews/character-v1.json",
+      "limit": "A good still is necessary but does not guarantee good motion."
+    },
+    {
+      "name": "Silent reading needs its own prompt",
+      "recipe": "Keep gaze on the laptop. Lips rest together, hands rest as shown, camera fixed. Allow tiny eye motion, one or two blinks, breath. Remove interview and expressive emotional performance cues.",
+      "selected": "serein_focus_veo_v3, source 2\u20138 seconds",
+      "evidence": "configs/serein_round3.json",
+      "limit": "Prompt and seed changed; do not attribute improvement to one sentence. Superseded for product interaction: resting hands and downward gaze did not make active computer use clear to the user."
+    },
+    {
+      "name": "Route the reaction separately",
+      "recipe": "Use the same approved still but select the model/take that yields a small closed-mouth smile without broad exhale or mouth opening.",
+      "selected": "serein_relief_kling_v2",
+      "evidence": "configs/serein_round2.json",
+      "limit": "Kling is slightly softer in the face. This selection is for this shot, not universal model superiority. Historical selection; mouse revision must establish physical interaction before video generation."
+    },
+    {
+      "name": "Keep the product result beside the person",
+      "recipe": "Promote the exact calendar block to a summary card, keep its final pose identical across the modular join, then reveal the person beside it. Both clips share reference, daylight and wardrobe.",
+      "evidence": "scripts/verify_serein_geometry.cjs; videos/serein/sources.json",
+      "limit": "The long UI section separates the two independent shots; not a continuous-camera or continuous-action join."
+    },
+    {
+      "name": "Approve the intended interaction before animation",
+      "workflow": "Generate the hand already gripping a visible mouse, with index/middle on button areas, neutral wrist and forearm, gaze at laptop screen. Inspect full frame and enlarged hand. Regenerate the still if this fails, then animate a small mouse glide and tiny finger click.",
+      "source": "videos/serein/assets/designer-mouse-v2.png",
+      "evidence": "artifacts/library-loop-13/reviews/character-mouse-v2.json",
+      "limit": "An anatomically plausible resting hand is insufficient evidence of active product usage. Motion requires a separate chronological review.",
+      "selected": [
+        "serein_mouse_focus_kling_v5",
+        "serein_mouse_relief_kling_v5"
+      ]
+    },
+    {
+      "name": "Separate correct grip from gaze adherence",
+      "recipe": "Hold head, chin and eye direction at the approved still angle, watching the center of the upright laptop display continuously. Limit mouse travel to millimeters and one index-finger press.",
+      "evidence": "configs/serein_round4_mouse.json; configs/serein_round5_mouse.json",
+      "observation": "Veo v4 preserved a recognizable mouse grip but repeatedly looked down and rotated the mouse. It failed the screen-attention requirement despite improved physical interaction. Kling v5 selected after face/hand review; opening uses settled1.5\u20136s at0.75x, return0\u20136s. The selected framing keeps mouse visible.",
+      "limit": "V5 model and prompt both change; result does not isolate a causal mechanism."
+    }
+  ],
+  "avoid": [
+    "Animating an unreviewed or weak source image",
+    "Assuming image conditioning guarantees a silent mouth",
+    "Using interview prompts for quiet work footage",
+    "Overloading subtle motion prompts with repeated emotional micro-actions",
+    "Claiming that internal subjective scores are calibrated realism measurements",
+    "Asking the video model to invent a mouse grip missing from the still"
+  ]
+}

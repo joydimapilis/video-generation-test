@@ -1,0 +1,75 @@
+{
+  "duration": 32,
+  "voice": "Fresh local Kokoro af_bella",
+  "schedule": [
+    {
+      "frame": 1,
+      "raw_duration": 4.842666666666666,
+      "spoken_with_pauses_s": 6.342666666666666,
+      "lead": 0.25,
+      "pauses": [
+        {
+          "raw_time": 0.8495833333333334,
+          "pause_s": 0.2
+        },
+        {
+          "raw_time": 2.4735833333333335,
+          "pause_s": 0.85
+        },
+        {
+          "raw_time": 3.3195833333333336,
+          "pause_s": 0.45
+        }
+      ],
+      "rate": 1
+    },
+    {
+      "frame": 2,
+      "raw_duration": 10.709333333333333,
+      "spoken_with_pauses_s": 13.325145833333334,
+      "lead": 0.3,
+      "pauses": [
+        {
+          "raw_time": 1.6355833333333334,
+          "pause_s": 0.15
+        },
+        {
+          "raw_time": 4.484583333333333,
+          "pause_s": 0.25
+        },
+        {
+          "raw_time": 8.461583333333333,
+          "pause_s": 0.3
+        },
+        {
+          "raw_time": 9.670583333333333,
+          "pause_s": 0.2
+        }
+      ],
+      "rate": 0.87
+    },
+    {
+      "frame": 3,
+      "raw_duration": 3.9466666666666668,
+      "spoken_with_pauses_s": 5.996666666666667,
+      "lead": 0.3,
+      "pauses": [
+        {
+          "raw_time": 1.1625833333333333,
+          "pause_s": 0.4
+        },
+        {
+          "raw_time": 2.7335833333333333,
+          "pause_s": 1.4
+        },
+        {
+          "raw_time": 3.306583333333333,
+          "pause_s": 0.25
+        }
+      ],
+      "rate": 1
+    }
+  ],
+  "score": "Original84BPM felt-piano, seed91613; no previous audio reused",
+  "api_cost": 0
+}

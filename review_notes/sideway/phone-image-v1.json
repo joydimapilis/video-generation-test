@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "source_sha256": "dd0ab6747bae6dbf216dbc6ced95c13fec551fceb9412194a8ae630c109227c1",
+  "reviewer": "agent pre-animation visual review",
+  "checks": {
+    "face": "Natural skin texture, ordinary asymmetry and stubble.",
+    "hands": "Left hand supports visible rigid phone; right index contacts screen side, remaining fingers relaxed. Plausible joints and no obvious extras.",
+    "gaze": "Directed at phone.",
+    "wardrobe": "Olive cotton overshirt, ivory tee, navy trousers; coherent folds.",
+    "lighting": "Soft outdoor morning light; consistent contact shadows."
+  },
+  "limits": "Subjective still review; animation must be reviewed separately."
+}

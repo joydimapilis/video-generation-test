@@ -1,0 +1,35 @@
+{
+  "title": "Portion \u2014 Orders in. Prep ready.",
+  "concept": "Scattered catering orders become one checked kitchen prep sheet.",
+  "final_mp4": "artifacts/final_outcome/portion/portion.mp4",
+  "project": "videos/portion",
+  "duration": 36,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "frames": 864,
+  "bytes": 13881400,
+  "sha256": "fb7ca3a751063240e222ec999091c88a16c63d380a5813018a8818fe5b4c2f69",
+  "new_video_from_scratch": true,
+  "image_first": true,
+  "selected_runs": [
+    "portion_before_v2",
+    "portion_after_v1"
+  ],
+  "rejected_runs": [
+    "portion_before_v1"
+  ],
+  "verification": "artifacts/final_outcome/portion/verification/verification.json",
+  "budget": {
+    "estimated_cents_including_image_allowance": 404,
+    "reserved_cents": 467,
+    "cap_cents": 1000,
+    "image_allowance_cents": 200,
+    "fal_estimated_cents": 204
+  },
+  "dialogue": "none",
+  "audio": "New original local synthesis",
+  "visual_review": "Approved source stills before generation; chronological raw and encoded final face/hand samples reviewed. Sampled, subjective review."
+}

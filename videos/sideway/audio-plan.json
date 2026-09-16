@@ -1,0 +1,24 @@
+{
+  "duration": 36,
+  "native_source": "artifacts/library-loop-14/outputs/sideway_story_v2.mp4",
+  "native_source_sha256": "e34a9fed04de09373b08e2f8aa8838a9a3364daabac1629504a1adeda0864136",
+  "gain": 1.4217427430431726,
+  "sample_rate": 48000,
+  "cuts": [
+    {
+      "source_start": 0,
+      "source_end": 2.95,
+      "timeline_start": 3
+    },
+    {
+      "source_start": 3.65,
+      "source_end": 6.65,
+      "timeline_start": 27.5
+    }
+  ],
+  "voice": "Native single Veo take; first experience on camera, reflection over arrival",
+  "score": "Original100BPM plucked keys/percussion, seed91614",
+  "generation_estimate_cents": 0,
+  "final_speech_sha256": "68b6ba4940c514879b54ba2ac001ce69297865c80cbd910f7e79dd549cae0695",
+  "final_score_sha256": "a6963b2d130bc4c5a9d15531512dcfde9457892b9158fdf722f4ef1960ef30a1"
+}

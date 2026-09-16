@@ -1,0 +1,33 @@
+{
+  "duration": 32,
+  "assertions": [
+    {
+      "kind": "appearsBy",
+      "selector": "#s1-heading",
+      "bySec": 0.7
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#s2-focuscopy",
+      "bySec": 15.1
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#s2-protected",
+      "bySec": 20.7
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#s3-finalcopy",
+      "bySec": 30.2
+    },
+    {
+      "kind": "staysInFrame",
+      "selector": "#s2-focus"
+    },
+    {
+      "kind": "staysInFrame",
+      "selector": "#s2-summary"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "project": "Portion",
+  "new_media": true,
+  "sources": [
+    {
+      "role": "before",
+      "image": "before-reference-v1.png",
+      "video": "before.mp4",
+      "selected_run": "portion_before_v2",
+      "source_range": [
+        0.3,
+        5.6
+      ],
+      "timeline_range": [
+        0,
+        5.3
+      ]
+    },
+    {
+      "role": "after",
+      "image": "after-reference-v1.png",
+      "video": "after.mp4",
+      "selected_run": "portion_after_v1",
+      "source_range": [
+        0,
+        6
+      ],
+      "timeline_range": [
+        25.6,
+        31.6
+      ]
+    }
+  ],
+  "audio": {
+    "score": "score.wav",
+    "sfx": "ui-sfx.wav",
+    "provenance": "Original local deterministic synthesis, prepare_portion_audio.py"
+  },
+  "shared_infrastructure_only": [
+    "GSAP runtime",
+    "Source Serif 4 and Inter font binaries"
+  ],
+  "registry": [
+    "simulated-cursor, adapted shape and click pulse"
+  ],
+  "important_ui": "Native authored HTML, not generated pixels"
+}

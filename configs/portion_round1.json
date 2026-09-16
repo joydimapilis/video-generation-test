@@ -1,0 +1,47 @@
+{
+  "experiment": "portion-new-before-after-workflow",
+  "budget_root": "artifacts/library-loop-15",
+  "pricing_checked": "2026-09-16",
+  "pricing_sources": [
+    "https://fal.ai/models/fal-ai/kling-video/v3/pro/image-to-video"
+  ],
+  "cost_basis": "Same-day verified silent Kling v3 Pro $0.112/s, 6 seconds rounded up to 68 cents; two $1 image allowances separately reserved.",
+  "runs": [
+    {
+      "id": "portion_before_v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 68,
+      "use_case": "industrial_human",
+      "version": 1,
+      "role": "before",
+      "reference_review": "artifacts/library-loop-15/reviews/before-image-v1.json",
+      "reference_sha256": "d8ee2fbed75a45e5e194c89df159de3fba6a42f3644e369625e5386529df0bff",
+      "hypothesis": "Approve task-aligned gaze and hand contact in still before constrained silent image-to-video.",
+      "input": {
+        "start_image_url": "local:videos/portion/assets/before-reference-v1.png",
+        "prompt": "Six-second documentary shot from this exact approved photograph. Preserve the same woman, face, skin, wardrobe, laptop, desk and visible mouse. Her eyes remain naturally focused on the laptop screen directly in front of her, head steady with the same slight downward screenward angle. One brief natural blink. Her mouse hand stays seated on the existing mouse in exactly the same anatomical grip, wrist aligned with forearm. A very small mouse glide of a few millimeters and one subtle index-finger click, then still. Tiny natural breathing. Lips stay closed, calm concentrated expression, no camera awareness. Locked camera, no cuts, no new UI or text. Maintain original framing and all desk objects. No typing or lifted hand.",
+        "negative_prompt": "wandering eyes, looking at camera, head turning, gaze at wrong object, gesturing, talking, exaggerated smile, lifted hands, extra fingers, fused fingers, hand morphing, prop morphing, box opening, camera movement, zoom, text, cuts",
+        "duration": "6",
+        "generate_audio": false
+      }
+    },
+    {
+      "id": "portion_after_v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 68,
+      "use_case": "industrial_human",
+      "version": 1,
+      "role": "after",
+      "reference_review": "artifacts/library-loop-15/reviews/after-image-v1.json",
+      "reference_sha256": "c0e97bbbce170b2667e8349a16c6bb2c22561cf8a09f564e46c602228eabb5e9",
+      "hypothesis": "Approve task-aligned gaze and hand contact in still before constrained silent image-to-video.",
+      "input": {
+        "start_image_url": "local:videos/portion/assets/after-reference-v1.png",
+        "prompt": "Six-second candid documentary shot from this exact approved photograph. Preserve this same woman, her face, curly hair, apron and shirt and all food boxes. She quietly finishes settling the closed kraft meal box on the counter. Both hands stay in natural gentle contact with the existing lid edges, with only a tiny relaxed pressure release, no lifting the box or opening the lid. Eyes stay naturally directed at the box beneath her hands, head angle aligned with that work surface. One natural blink, slight breathing and a nearly imperceptible shoulder settle. Soft closed-mouth expression, no posing or looking at camera. Locked camera, no cuts, minimal movement, preserve realistic skin and fingers. Keep the food containers and box geometry stable.",
+        "negative_prompt": "wandering eyes, looking at camera, head turning, gaze at wrong object, gesturing, talking, exaggerated smile, lifted hands, extra fingers, fused fingers, hand morphing, prop morphing, box opening, camera movement, zoom, text, cuts",
+        "duration": "6",
+        "generate_audio": false
+      }
+    }
+  ]
+}

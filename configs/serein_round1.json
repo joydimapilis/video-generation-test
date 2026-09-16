@@ -1,0 +1,55 @@
+{
+  "experiment": "serein-image-first-2026-09-16",
+  "budget_root": "artifacts/library-loop-13",
+  "pricing_checked": "2026-09-16",
+  "pricing_sources": [
+    "https://fal.ai/models/fal-ai/veo3.1/fast/image-to-video"
+  ],
+  "cost_basis": "6 seconds x $0.10 silent 1080p. $1 image allowance separately reserved. Ledger adds 15%.",
+  "runs": [
+    {
+      "id": "serein_focus_veo_v1",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 60,
+      "use_case": "industrial_human",
+      "version": 1,
+      "role": "human_bookend",
+      "hypothesis": "New internally approved realistic image, restrained silent performance; preserve exact identity across separate takes.",
+      "reference_review": "artifacts/library-loop-13/reviews/character-v1.json",
+      "reference_sha256": "da96de8f3c73c53950d663adb72488a5525e72ff6dff66343679f407effbd57b",
+      "input": {
+        "prompt": "Continue the supplied photographic frame as one silent candid documentary take. Preserve the exact woman, facial structure, skin pores and uneven complexion, hair, pale-blue cotton shirt, laptop, hands, studio and soft window light from camera-left. Locked tripod and unchanged framing. Eyes attend to laptop slightly camera-right, never to camera. Mouth remains closed. Small natural irregular blinks, quiet breathing and tiny eye refocusing only. Hands rest on the desk in their original position; fingers remain relaxed and still. No speaking, camera movement, cut, beauty retouching, text, graphic overlays or changes to objects. She considers the work calmly with a slight thoughtful tension around the eyes. One tiny head inclination, then settles. No frown or exaggerated expression.",
+        "negative_prompt": "talking, lip sync, beauty retouching, waxy skin, exaggerated eyebrows, deformed fingers, hand gestures, face changing, floating hair, camera shake, zoom, subtitles, watermark",
+        "image_url": "local:videos/serein/assets/designer-reference-v1.png",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 91601
+      }
+    },
+    {
+      "id": "serein_relief_veo_v1",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 60,
+      "use_case": "industrial_human",
+      "version": 1,
+      "role": "human_bookend",
+      "hypothesis": "New internally approved realistic image, restrained silent performance; preserve exact identity across separate takes.",
+      "reference_review": "artifacts/library-loop-13/reviews/character-v1.json",
+      "reference_sha256": "da96de8f3c73c53950d663adb72488a5525e72ff6dff66343679f407effbd57b",
+      "input": {
+        "prompt": "Continue the supplied photographic frame as one silent candid documentary take. Preserve the exact woman, facial structure, skin pores and uneven complexion, hair, pale-blue cotton shirt, laptop, hands, studio and soft window light from camera-left. Locked tripod and unchanged framing. Eyes attend to laptop slightly camera-right, never to camera. Mouth remains closed. Small natural irregular blinks, quiet breathing and tiny eye refocusing only. Hands rest on the desk in their original position; fingers remain relaxed and still. No speaking, camera movement, cut, beauty retouching, text, graphic overlays or changes to objects. She gives a quiet exhale; her shoulders settle a little and the corners of her closed mouth soften into a barely noticeable content expression. She returns her attention to the laptop. No broad smile, laughter or large movement.",
+        "negative_prompt": "talking, lip sync, beauty retouching, waxy skin, exaggerated eyebrows, deformed fingers, hand gestures, face changing, floating hair, camera shake, zoom, subtitles, watermark",
+        "image_url": "local:videos/serein/assets/designer-reference-v1.png",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "auto_fix": false,
+        "seed": 91602
+      }
+    }
+  ]
+}
