@@ -1,0 +1,601 @@
+I want to create a Kite.ai marketing video based on the creative brief below.
+
+Start with Concept 2: Screen-led product demo — “Ask, plan, review.”
+
+Use the existing video-generation system and our current video library. Treat the brief below as the source of truth for the concept, script, shot timing, production direction, and guardrails.
+
+Goal
+
+Create a polished 42-second screen-led product demo showing this flow:
+
+Ask → Plan → Reviewable work → Approval
+
+The video should clearly communicate that Kite works inside Slack, prepares marketing work for review, and that public changes still require the user’s approval.
+
+Use the video library first
+
+Before generating anything, review the existing video library and identify the strongest references for:
+
+* Product walkthrough pacing
+* UI animation
+* Transitions
+* Captions
+* Opening hooks
+* End cards / CTA treatments
+* Camera angles
+* Framing
+* Lighting
+* Human poses and gestures
+* Movement
+* Shot composition
+
+Use the library as inspiration for the style and structure, but do not copy any reference directly.
+
+The goal is to understand what makes the strongest reference videos work, then apply those principles to this Kite video.
+
+Do not use unrelated downloaded videos as Kite footage, proof, or customer evidence.
+
+Model and tool routing
+
+Do not force one model to create the whole video.
+
+For every shot, determine which tool or model is best suited for the task.
+
+Use:
+
+* HyperFrames for deterministic UI, text-heavy scenes, motion graphics, Slack-style interfaces, and layouts where text accuracy matters.
+* Video-generation models for cinematic motion, people, camera movement, or scenes where generative video adds value.
+* Image-to-video as the preferred workflow for shots involving people when possible.
+
+Choose the model based on the shot requirements and the strengths learned from our previous tests.
+
+People / image-to-video workflow
+
+For any shot involving a person, do not default directly to text-to-video.
+
+Use this process:
+
+1. Review the video library and identify the best inspiration for:
+    * pose
+    * framing
+    * camera angle
+    * lighting
+    * clothing
+    * environment
+    * gesture
+    * intended movement
+2. Generate a high-quality reference image of the person first.
+3. Review the image before generating the video.
+
+Check for:
+
+* realistic facial features
+* realistic skin texture
+* natural hands and fingers
+* correct body posture
+* correct objects in the person’s hands
+* natural clothing
+* correct environment
+* believable pose
+* good eye direction
+* no obvious AI artifacts
+
+4. Once the image is acceptable, use image-to-video to animate the shot.
+5. Choose the strongest available image-to-video model based on the action required.
+6. Pay special attention to:
+
+* eye direction and gaze
+* natural hand movement
+* realistic body movement
+* object interaction
+* facial micro-expressions
+* realistic skin texture
+* hair and clothing movement
+* lip sync when applicable
+* consistent identity between shots
+* avoiding overly polished or obviously AI-generated faces
+
+7. If the motion looks unnatural, do not automatically keep regenerating from the same bad source image.
+
+Determine whether the problem comes from:
+
+* the source image
+* the prompt
+* the model
+* the camera instruction
+* the pose
+* the action
+
+Then either improve the source image, rewrite the prompt, or route the shot to a different model.
+
+Production requirements
+
+Create the main video as:
+
+* 9:16
+* 1080 × 1920
+* burned-in captions
+
+Keep all important text inside the vertical safe area.
+
+Also perform crop checks for:
+
+* 1:1
+* 16:9
+
+Make sure important text, faces, UI, and CTA elements are still visible and usable in those crops.
+
+Product and privacy guardrails
+
+Do not use:
+
+* real customer information
+* private Slack messages
+* fabricated customer results
+* fabricated testimonials
+* fake customer names
+* fake proof of product performance
+
+Any reconstructed Slack or product screen should use fictional data.
+
+Use labels such as:
+
+Sample company
+
+If the workflow is reconstructed rather than captured from the real product, visibly label it:
+
+Illustrative workflow
+
+Do not make a reconstruction look like a real customer workspace.
+
+Any product claim or screen shown must match the approved script and current Kite product experience.
+
+Workflow
+
+Do not immediately generate the full video.
+
+Work through the following stages.
+
+Stage 1 — Creative interpretation
+
+Explain how you plan to translate the Kite brief into a video.
+
+Include:
+
+* overall visual direction
+* opening hook
+* pacing
+* inspiration from the video library
+* transition style
+* UI style
+* how the video will remain visually interesting despite being screen-led
+* how the CTA/end card will work
+
+Stage 2 — Shot-by-shot production plan
+
+Create a production plan for every shot.
+
+For each shot include:
+
+* timestamp
+* purpose
+* visual description
+* voiceover
+* on-screen copy
+* source/reference inspiration from the video library
+* whether it is UI, motion graphics, person, cinematic, or hybrid
+* recommended tool/model
+* why that tool/model is best
+* whether a reference image needs to be generated first
+* transition into the next shot
+
+Stage 3 — Nine-frame storyboard
+
+Create a nine-frame storyboard covering the main beats of the video.
+
+Do this before final generation.
+
+Each storyboard frame should show:
+
+* approximate composition
+* important UI
+* captions
+* person placement if applicable
+* text placement
+* transition intention
+* crop-safe positioning
+
+Do not proceed to final rendering until the storyboard direction is clear.
+
+Stage 4 — Exact copy check
+
+List all final copy before generation:
+
+* spoken voiceover
+* burned-in captions
+* UI text
+* screen labels
+* CTA text
+* disclaimer or “Illustrative workflow” labels
+
+Do not casually rewrite product claims or introduce new claims.
+
+Stage 5 — Asset check
+
+Identify anything required from production before generating.
+
+For example:
+
+* Kite logo
+* current brand colors
+* typeface
+* approved CTA URL
+* actual Slack screen recording
+* current Kite UI screenshots
+* product approval state
+* approved product copy
+
+If an approved real Kite Slack recording is unavailable, use a fictional reconstruction rather than inventing a customer workspace.
+
+Stage 6 — Generate shot-by-shot
+
+After planning, create the video shot-by-shot.
+
+For UI/text-heavy shots:
+
+* prioritize HyperFrames or deterministic rendering
+* keep text perfectly readable
+* avoid AI-generated text whenever possible
+
+For people:
+
+* generate the reference image first
+* evaluate the image
+* then use image-to-video
+
+For generative video shots:
+
+* keep prompts shot-specific
+* use camera directions only when appropriate
+* avoid unnecessary cinematic movement
+
+Stage 7 — Evaluate every shot
+
+Do not automatically accept the first generation.
+
+Evaluate each shot for:
+
+* text accuracy
+* UI accuracy
+* human realism
+* hands
+* eyes
+* gaze
+* body pose
+* object interaction
+* camera motion
+* composition
+* lighting
+* identity consistency
+* transition quality
+* pacing
+* visual continuity
+* obvious AI artifacts
+
+If a shot fails, decide whether to:
+
+* regenerate
+* modify the source image
+* modify the prompt
+* change the model
+* use HyperFrames instead
+* simplify the shot
+
+Do not waste multiple generations repeating the exact same failed approach.
+
+Editing direction
+
+The product screen should be the proof, not just decorative background footage.
+
+Keep the editing deliberate and legible.
+
+For major screen moments such as:
+
+* request
+* plan
+* reviewable work
+* approval
+
+allow enough time for the viewer to understand what is happening.
+
+Use cursor movement only to guide attention.
+
+Avoid excessive zooming, fake mouse movement, or flashy UI animation.
+
+Use tight captions for sound-off viewing.
+
+Voiceover should feel calm and matter-of-fact.
+
+Music should be:
+
+* modern
+* subtle
+* rhythmic
+* low enough not to compete with voiceover
+
+Avoid:
+
+* notification spam
+* hype drops
+* comedy effects
+* excessive sound effects
+
+A subtle confirmation sound can be used for a review state, but do not imply a public action was published.
+
+Opening and ending
+
+Give extra attention to the opening and ending.
+
+The opening should immediately communicate the problem:
+
+One request. The work around it.
+
+It should feel visually distinct and strong enough to hold attention within the first few seconds.
+
+The ending should clearly show:
+
+* Kite
+* AI marketer in Slack
+* CTA
+* clean end card
+
+Avoid a generic AI-video ending.
+
+Use the video library to identify what makes strong openings and CTA endings effective, then create an original version for Kite.
+
+Budget
+
+Keep the total generation cost within the existing $10 per-video limit unless I explicitly change it.
+
+Track cost throughout the process.
+
+If a planned generation is likely to exceed the remaining budget, adjust the approach before spending.
+
+Prefer deterministic rendering for shots that do not require paid generative video.
+
+Final quality check
+
+Before considering the video complete, verify:
+
+* 42-second target duration
+* 9:16 master
+* 1:1 crop
+* 16:9 crop
+* captions
+* safe-area placement
+* UI readability
+* exact approved copy
+* product claim accuracy
+* CTA accuracy
+* product screens reflect the current experience
+* reconstructed screens are labelled correctly
+* no private or fabricated customer data
+* no obvious AI artifacts
+* people look believable
+* eye coordination is correct
+* hands and object interactions are correct
+* transitions feel intentional
+* audio levels are consistent
+* no unexpected color changes
+* no awkward poses
+
+Final report
+
+After the video is assembled, provide a concise report including:
+
+* final video duration
+* models/tools used per shot
+* video-library references used for inspiration
+* which shots used HyperFrames
+* which shots used image-to-video
+* source images generated for people
+* shots regenerated
+* reasons for regeneration
+* total generation cost
+* 9:16 quality check
+* 1:1 crop result
+* 16:9 crop result
+* any remaining issues
+* anything requiring manual review
+
+⸻
+
+Kite creative brief
+
+Shared test guardrails
+
+Produce each concept as a 9:16, 1080 × 1920 master with burned-in captions, a 1:1 crop check, and a 16:9 crop check. Keep all required text inside the vertical safe area.
+
+Use the same approved destination, CTA treatment, audience, flight dates, budget, placements, and measurement definition when comparing concepts. Change the creative concept, not several variables at once.
+
+Every depicted person, company, Slack message, task, and screen is illustrative unless production supplies approved, verifiable footage. Use fictional labels such as “Sample company” in reconstructed screens.
+
+Before final rendering, approve a nine-frame storyboard and the exact on-screen copy. Before release, verify captions and shown product claims against the approved script, and confirm any product screen reflects the current experience.
+
+Do not use the unrelated downloaded LinkedIn video or the invideo profile extraction as Kite footage or proof.
+
+Screen-led product demo: “Ask, plan, review”
+
+Testable angle: Kite makes the operating loop visible in the place the team already works, turning one marketing request into a plan and reviewable work.
+
+Audience tension: Buyers do not need another place to manage. They need to see what will happen after they hand off a marketing job and where their approval fits.
+
+Format and duration: 42 seconds. Screen-first walkthrough with minimal voiceover and precise on-screen captions.
+
+Spoken script and on-screen copy
+
+0:00–0:06
+
+Voiceover:
+“A launch needs more than a caption. It needs the work around it to move.”
+
+On-screen:
+One request. The work around it.
+
+0:06–0:13
+
+Voiceover:
+“In your company Slack, give me the job.”
+
+On-screen:
+Ask in Slack
+
+0:13–0:21
+
+Voiceover:
+“I start with a plan: what I will look at, what I will prepare, and what I need you to decide.”
+
+On-screen:
+Plan first
+
+0:21–0:31
+
+Voiceover:
+“Then I research the business and prepare reviewable marketing work, such as a product page, announcement, walkthrough, and email.”
+
+On-screen:
+Reviewable work, in the conversation
+
+0:31–0:37
+
+Voiceover:
+“When a public change is ready, you approve it.”
+
+On-screen:
+Public changes stay with you.
+
+0:37–0:42
+
+Voiceover:
+“I’m Kite, the AI marketer in Slack. Add me to your team.”
+
+On-screen:
+Add Kite to Slack
+
+Shot plan
+
+0:00–0:06
+
+Animated opening frame: four launch-work cards stack quickly, then resolve into one Slack conversation window.
+
+Use motion graphics based on the approved Kite visual system.
+
+The work-card labels are illustrative.
+
+0:06–0:13
+
+Real or faithfully reconstructed Slack screen.
+
+A user enters:
+
+“Kite, help us prepare the launch.”
+
+The request must be visibly illustrative if reconstructed.
+
+Use a current approved product recording with private workspace data removed, or a reconstruction marked:
+
+Illustrative workflow
+
+0:13–0:21
+
+Zoom into Kite’s response showing the plan before work begins.
+
+Highlight:
+
+* planned inputs
+* outputs
+* decision point
+
+Use a cursor or soft visual mask only to direct attention.
+
+0:21–0:27
+
+Show a compact research summary with a source/caveat cue, followed by a clear:
+
+Prepared for review
+
+state.
+
+Any research fact shown should be traceable and should not become an unsupported marketing claim.
+
+0:27–0:31
+
+Four output tiles slide from the thread:
+
+* Product page
+* Announcement
+* Walkthrough
+* Email
+
+Then return to a single review card.
+
+These are workflow examples, not proof of delivery for a named customer.
+
+0:31–0:37
+
+Show the approval moment:
+
+Ready for your review
+
+and a user decision state.
+
+Make it clear that nothing public has gone out yet.
+
+0:37–0:42
+
+Clean end card:
+
+* Kite mark
+* AI marketer in Slack
+* CTA
+
+Use approved logo, visual system, and CTA destination.
+
+Production direction
+
+Make the product screen the proof, not a backdrop for flashy UI.
+
+The edit should be deliberate and legible.
+
+Use 5–8 second holds for important product moments where appropriate.
+
+Use cursor movement only to guide attention.
+
+Add tight captioning for sound-off viewing.
+
+Keep voiceover calm and matter-of-fact.
+
+Use a quiet pulse or soft percussive bed below the voiceover.
+
+Reserve one subtle confirmation sound for the review state, not a public publish action.
+
+Controlled-test signal
+
+Compare 75% completed-view rate among the same qualified audience and placement set.
+
+This is a measurement choice, not a prediction of downstream conversion.
+
+Required before production
+
+Production needs a current, privacy-cleared screen recording for:
+
+* request
+* stated plan
+* reviewable work
+* approval point
+
+If that cannot be supplied, the reconstruction must be labelled:
+
+Illustrative workflow
+
+and must not resemble an actual customer workspace.

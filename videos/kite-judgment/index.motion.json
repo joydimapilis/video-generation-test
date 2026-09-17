@@ -1,0 +1,25 @@
+{
+  "duration": 40,
+  "assertions": [
+    {
+      "kind": "appearsBy",
+      "selector": "#j1-opening",
+      "bySec": 0.1
+    },
+    {
+      "kind": "before",
+      "a": "#j2-context",
+      "b": "#j2-drafts"
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#j3-your-call",
+      "bySec": 32
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#j3-lockup",
+      "bySec": 37
+    }
+  ]
+}

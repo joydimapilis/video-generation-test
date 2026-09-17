@@ -1,0 +1,43 @@
+{
+  "name": "Kite \u2014 Ask, plan, review",
+  "duration": 42,
+  "master": "artifacts/final_outcome/kite/kite.mp4",
+  "player": "artifacts/final_outcome/kite/review.html",
+  "exports": [
+    {
+      "file": "kite.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration": 42.0,
+      "frames": 1260,
+      "fps": "30/1",
+      "audio": "aac",
+      "full_decode": "pass",
+      "sha256": "42d8a04648b5093a4efd525a3a0f8e438c26953734d3e01faea0d806c903de0a"
+    },
+    {
+      "file": "kite-square.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 42.0,
+      "frames": 1260,
+      "fps": "30/1",
+      "audio": "aac",
+      "full_decode": "pass",
+      "sha256": "e0b3e7c2319030e2aabfd12ce0cd447721b1395911929d2a80ffecad6f6e87f1"
+    },
+    {
+      "file": "kite-landscape.mp4",
+      "width": 1920,
+      "height": 1080,
+      "duration": 42.0,
+      "frames": 1260,
+      "fps": "30/1",
+      "audio": "aac",
+      "full_decode": "pass",
+      "sha256": "d209acfc1da3407dcdb4dc564913e387fb135e91c651d8edb010d0d950231796"
+    }
+  ],
+  "generation_cost_usd": 0,
+  "report": "videos/kite/DELIVERY_REPORT.md"
+}

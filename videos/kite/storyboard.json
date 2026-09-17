@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "status": "pending_product_verification_and_storyboard_copy_approval",
+  "product_verification": {
+    "status": "incomplete",
+    "evidence": "PRODUCT_VERIFICATION.md",
+    "policy": "COPY_REVIEW_POLICY.md",
+    "final_render_ready": false
+  },
+  "duration_seconds": 42,
+  "width": 1080,
+  "height": 1920,
+  "shots": 7,
+  "keyframes": 9,
+  "voiceover": [
+    {
+      "start": 0,
+      "end": 6,
+      "text": "A launch needs more than a caption. It needs the work around it to move."
+    },
+    {
+      "start": 6,
+      "end": 13,
+      "text": "In your company Slack, give me the job."
+    },
+    {
+      "start": 13,
+      "end": 21,
+      "text": "I start with a plan: what I will look at, what I will prepare, and what I need you to decide."
+    },
+    {
+      "start": 21,
+      "end": 31,
+      "text": "Then I research the business and prepare reviewable marketing work, such as a product page, announcement, walkthrough, and email."
+    },
+    {
+      "start": 31,
+      "end": 37,
+      "text": "When a public change is ready, you approve it."
+    },
+    {
+      "start": 37,
+      "end": 42,
+      "text": "I’m Kite, the AI marketer in Slack. Add me to your team."
+    }
+  ],
+  "captions": [
+    {
+      "start": 0,
+      "end": 2.7,
+      "text": "A launch needs more than a caption."
+    },
+    {
+      "start": 2.7,
+      "end": 6,
+      "text": "It needs the work around it to move."
+    },
+    {
+      "start": 6,
+      "end": 9.5,
+      "text": "In your company Slack,"
+    },
+    {
+      "start": 9.5,
+      "end": 13,
+      "text": "give me the job."
+    },
+    {
+      "start": 13,
+      "end": 15,
+      "text": "I start with a plan:"
+    },
+    {
+      "start": 15,
+      "end": 17,
+      "text": "what I will look at,"
+    },
+    {
+      "start": 17,
+      "end": 19,
+      "text": "what I will prepare,"
+    },
+    {
+      "start": 19,
+      "end": 21,
+      "text": "and what I need you to decide."
+    },
+    {
+      "start": 21,
+      "end": 23.5,
+      "text": "Then I research the business"
+    },
+    {
+      "start": 23.5,
+      "end": 27,
+      "text": "and prepare reviewable marketing work,"
+    },
+    {
+      "start": 27,
+      "end": 29,
+      "text": "such as a product page, announcement,"
+    },
+    {
+      "start": 29,
+      "end": 31,
+      "text": "walkthrough, and email."
+    },
+    {
+      "start": 31,
+      "end": 34.5,
+      "text": "When a public change is ready,"
+    },
+    {
+      "start": 34.5,
+      "end": 37,
+      "text": "you approve it."
+    },
+    {
+      "start": 37,
+      "end": 40.1,
+      "text": "I’m Kite, the AI marketer in Slack."
+    },
+    {
+      "start": 40.1,
+      "end": 42,
+      "text": "Add me to your team."
+    }
+  ],
+  "frames": [
+    {
+      "index": 1,
+      "title": "The work around it",
+      "start": 0,
+      "end": 3,
+      "key_time": 1.5
+    },
+    {
+      "index": 2,
+      "title": "One conversation",
+      "start": 3,
+      "end": 6,
+      "key_time": 5
+    },
+    {
+      "index": 3,
+      "title": "Ask in Slack",
+      "start": 6,
+      "end": 13,
+      "key_time": 10
+    },
+    {
+      "index": 4,
+      "title": "Plan: inputs and outputs",
+      "start": 13,
+      "end": 17,
+      "key_time": 16
+    },
+    {
+      "index": 5,
+      "title": "Plan: your decision",
+      "start": 17,
+      "end": 21,
+      "key_time": 20
+    },
+    {
+      "index": 6,
+      "title": "Research to review",
+      "start": 21,
+      "end": 27,
+      "key_time": 25
+    },
+    {
+      "index": 7,
+      "title": "Four drafts, one review",
+      "start": 27,
+      "end": 31,
+      "key_time": 29
+    },
+    {
+      "index": 8,
+      "title": "Approval stays with you",
+      "start": 31,
+      "end": 37,
+      "key_time": 35
+    },
+    {
+      "index": 9,
+      "title": "Add Kite to Slack",
+      "start": 37,
+      "end": 42,
+      "key_time": 40.5
+    }
+  ]
+}

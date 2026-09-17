@@ -1,0 +1,14 @@
+{
+  "currency": "USD",
+  "cap": 10,
+  "committed_generation_cost": 0,
+  "reserved": 0,
+  "remaining": 10,
+  "jobs": [],
+  "planned_routes": {
+    "S1-S7": "HyperFrames local deterministic UI",
+    "narration": "local Kokoro, pending",
+    "music": "local deterministic synthesis, pending"
+  },
+  "note": "No paid generation. Local compute excluded."
+}

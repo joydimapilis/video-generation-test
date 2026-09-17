@@ -1,0 +1,15 @@
+{
+  "duration": 39,
+  "assertions": [
+    {
+      "kind": "appearsBy",
+      "selector": "#plan-step-2",
+      "bySec": 9
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#revised-copy",
+      "bySec": 31.2
+    }
+  ]
+}

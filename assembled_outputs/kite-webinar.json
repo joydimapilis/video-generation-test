@@ -1,0 +1,12 @@
+{
+  "name": "Kite \u2014 The webinar request",
+  "video": "artifacts/final_outcome/kite-webinar/kite-webinar.mp4",
+  "player": "artifacts/final_outcome/kite-webinar/review.html",
+  "duration_seconds": 39,
+  "generation_cost_usd": 0,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "verification": "artifacts/final_outcome/kite-webinar/verification.json"
+}

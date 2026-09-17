@@ -1,0 +1,11 @@
+node_modules/
+.hyperframes/
+.hf-*/
+.thumbnails/
+.waveform-cache/
+snapshots/
+renders/
+assets/*.mp4
+assets/*.mp3
+assets/*.wav
+assets/marketer-source.png

@@ -1,0 +1,121 @@
+{
+  "duration": 42,
+  "voice": "Kokoro af_heart local",
+  "source": "six supplied lines split at caption phrase boundaries",
+  "takes": [
+    {
+      "text": "A launch needs more than a caption.",
+      "start": 0.08,
+      "duration": 2.0732916666666665,
+      "rate": 0.88,
+      "file": "assets/voice/01.wav"
+    },
+    {
+      "text": "It needs the work around it to move.",
+      "start": 2.7800000000000002,
+      "duration": 2.101166666666667,
+      "rate": 0.88,
+      "file": "assets/voice/02.wav"
+    },
+    {
+      "text": "In your company Slack,",
+      "start": 6.08,
+      "duration": 1.4424166666666667,
+      "rate": 0.88,
+      "file": "assets/voice/03.wav"
+    },
+    {
+      "text": "give me the job.",
+      "start": 9.58,
+      "duration": 1.2015,
+      "rate": 0.88,
+      "file": "assets/voice/04.wav"
+    },
+    {
+      "text": "I start with a plan:",
+      "start": 13.08,
+      "duration": 1.3001666666666667,
+      "rate": 0.88,
+      "file": "assets/voice/05.wav"
+    },
+    {
+      "text": "what I will look at,",
+      "start": 15.08,
+      "duration": 1.1542916666666667,
+      "rate": 0.88,
+      "file": "assets/voice/06.wav"
+    },
+    {
+      "text": "what I will prepare,",
+      "start": 17.08,
+      "duration": 1.16725,
+      "rate": 0.88,
+      "file": "assets/voice/07.wav"
+    },
+    {
+      "text": "and what I need you to decide.",
+      "start": 19.08,
+      "duration": 1.70525,
+      "rate": 0.88,
+      "file": "assets/voice/08.wav"
+    },
+    {
+      "text": "Then I research the business",
+      "start": 21.08,
+      "duration": 1.84925,
+      "rate": 0.88,
+      "file": "assets/voice/09.wav"
+    },
+    {
+      "text": "and prepare reviewable marketing work,",
+      "start": 23.58,
+      "duration": 2.247875,
+      "rate": 0.88,
+      "file": "assets/voice/10.wav"
+    },
+    {
+      "text": "such as a product page, announcement,",
+      "start": 27.08,
+      "duration": 1.8300416666666666,
+      "rate": 1.1813186813186811,
+      "file": "assets/voice/11.wav"
+    },
+    {
+      "text": "walkthrough, and email.",
+      "start": 29.08,
+      "duration": 1.4154583333333333,
+      "rate": 0.88,
+      "file": "assets/voice/12.wav"
+    },
+    {
+      "text": "When a public change is ready,",
+      "start": 31.08,
+      "duration": 1.7834166666666667,
+      "rate": 0.88,
+      "file": "assets/voice/13.wav"
+    },
+    {
+      "text": "you approve it.",
+      "start": 34.58,
+      "duration": 1.0659583333333333,
+      "rate": 0.88,
+      "file": "assets/voice/14.wav"
+    },
+    {
+      "text": "I’m Kite, the AI marketer in Slack.",
+      "start": 37.08,
+      "duration": 2.5505833333333334,
+      "rate": 0.88,
+      "file": "assets/voice/15.wav"
+    },
+    {
+      "text": "Add me to your team.",
+      "start": 40.18,
+      "duration": 1.23375,
+      "rate": 0.88,
+      "file": "assets/voice/16.wav"
+    }
+  ],
+  "score": "original 92 BPM restrained keyboard/pulse, fixed seed91742",
+  "cost_usd": 0
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Kite \u2014 Keep the final say",
+  "video": "artifacts/final_outcome/kite-judgment/kite-judgment.mp4",
+  "player": "artifacts/final_outcome/kite-judgment/review.html",
+  "editable_project": "videos/kite-judgment",
+  "duration_seconds": 40,
+  "generation_cost_usd": 0,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "cta_destination": "https://kite.ai/welcome",
+  "verification": "artifacts/final_outcome/kite-judgment/verification.json"
+}

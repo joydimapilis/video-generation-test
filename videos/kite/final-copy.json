@@ -1,0 +1,209 @@
+{
+  "voiceover": [
+    {
+      "start": 0,
+      "end": 6,
+      "text": "A launch needs more than a caption. It needs the work around it to move."
+    },
+    {
+      "start": 6,
+      "end": 13,
+      "text": "In your company Slack, give me the job."
+    },
+    {
+      "start": 13,
+      "end": 21,
+      "text": "I start with a plan: what I will look at, what I will prepare, and what I need you to decide."
+    },
+    {
+      "start": 21,
+      "end": 31,
+      "text": "Then I research the business and prepare reviewable marketing work, such as a product page, announcement, walkthrough, and email."
+    },
+    {
+      "start": 31,
+      "end": 37,
+      "text": "When a public change is ready, you approve it."
+    },
+    {
+      "start": 37,
+      "end": 42,
+      "text": "I’m Kite, the AI marketer in Slack. Add me to your team."
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.08,
+      "end": 2.2532916666666667,
+      "text": "A launch needs more than a caption."
+    },
+    {
+      "start": 2.7800000000000002,
+      "end": 4.981166666666667,
+      "text": "It needs the work around it to move."
+    },
+    {
+      "start": 6.08,
+      "end": 7.622416666666666,
+      "text": "In your company Slack,"
+    },
+    {
+      "start": 9.58,
+      "end": 10.881499999999999,
+      "text": "give me the job."
+    },
+    {
+      "start": 13.08,
+      "end": 14.480166666666667,
+      "text": "I start with a plan:"
+    },
+    {
+      "start": 15.08,
+      "end": 16.33429166666667,
+      "text": "what I will look at,"
+    },
+    {
+      "start": 17.08,
+      "end": 18.34725,
+      "text": "what I will prepare,"
+    },
+    {
+      "start": 19.08,
+      "end": 20.88525,
+      "text": "and what I need you to decide."
+    },
+    {
+      "start": 21.08,
+      "end": 23.02925,
+      "text": "Then I research the business"
+    },
+    {
+      "start": 23.58,
+      "end": 25.927875,
+      "text": "and prepare reviewable marketing work,"
+    },
+    {
+      "start": 27.08,
+      "end": 28.97,
+      "text": "such as a product page, announcement,"
+    },
+    {
+      "start": 29.08,
+      "end": 30.595458333333333,
+      "text": "walkthrough, and email."
+    },
+    {
+      "start": 31.08,
+      "end": 32.96341666666667,
+      "text": "When a public change is ready,"
+    },
+    {
+      "start": 34.58,
+      "end": 35.745958333333334,
+      "text": "you approve it."
+    },
+    {
+      "start": 37.08,
+      "end": 39.730583333333335,
+      "text": "I’m Kite, the AI marketer in Slack."
+    },
+    {
+      "start": 40.18,
+      "end": 41.51375,
+      "text": "Add me to your team."
+    }
+  ],
+  "global_labels": [
+    "Illustrative workflow",
+    "Sample company"
+  ],
+  "shots": [
+    {
+      "shot": 1,
+      "screen_text": [
+        "One request.",
+        "The work around it.",
+        "Product page",
+        "Announcement",
+        "Walkthrough",
+        "Email",
+        "# marketing",
+        "You",
+        "Message Kite"
+      ]
+    },
+    {
+      "shot": 2,
+      "screen_text": [
+        "Ask in Slack",
+        "# marketing",
+        "You",
+        "Kite, help us prepare",
+        "the launch."
+      ]
+    },
+    {
+      "shot": 3,
+      "screen_text": [
+        "Plan first",
+        "# marketing",
+        "Kite",
+        "Inputs",
+        "Website and launch brief",
+        "Prepare",
+        "Product page, announcement,",
+        "walkthrough, email",
+        "Decide",
+        "Approve public changes"
+      ]
+    },
+    {
+      "shot": 4,
+      "screen_text": [
+        "Reviewable work,",
+        "in the conversation",
+        "Kite · Research summary",
+        "Source: sample launch brief",
+        "Confirm audience and launch date.",
+        "Illustrative inputs; not verified findings.",
+        "Prepared for review"
+      ]
+    },
+    {
+      "shot": 5,
+      "screen_text": [
+        "Reviewable work,",
+        "in the conversation",
+        "Product page",
+        "Announcement",
+        "Walkthrough",
+        "Email",
+        "Kite · Product page",
+        "Preview",
+        "Review",
+        "Prepared for review"
+      ]
+    },
+    {
+      "shot": 6,
+      "screen_text": [
+        "Public changes stay with you.",
+        "Propose first mode",
+        "# marketing",
+        "Product page",
+        "Preview",
+        "Review",
+        "Publish it.",
+        "Illustrative draft — not sent"
+      ]
+    },
+    {
+      "shot": 7,
+      "screen_text": [
+        "AI marketer in Slack",
+        "Add Kite to Slack"
+      ]
+    }
+  ],
+  "note": "Review-ready and unsent-state text are editorial explanations, not claims of native status labels. No publication or send occurs."
+}

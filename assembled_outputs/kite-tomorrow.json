@@ -1,0 +1,11 @@
+{
+  "name": "Kite \u2014 Tomorrow",
+  "video": "artifacts/final_outcome/kite-tomorrow/kite-tomorrow.mp4",
+  "player": "artifacts/final_outcome/kite-tomorrow/review.html",
+  "duration_seconds": 38,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "verification": "artifacts/final_outcome/kite-tomorrow/verification.json"
+}

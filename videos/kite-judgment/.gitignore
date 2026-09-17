@@ -1,0 +1,7 @@
+assets/
+node_modules/
+.hyperframes/
+.thumbnails/
+.waveform-cache/
+snapshots/
+renders/
