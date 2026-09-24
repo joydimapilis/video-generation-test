@@ -4,7 +4,7 @@ Amarillo is a local-first system for turning reference video samples into reusab
 
 ## Repository structure
 
-- **Repository root: the video-generation system (Amarillo).** `src/`, `scripts/`, `configs/`, `prompt_library/`, `catalog/`, `hyperframes/`, `videos/`, `docs/`, `analysis_notes/`, `review_notes/`, `assembled_outputs/`, and `tests/` are the core workflow and its production records. See [Main Folders](#main-folders) below.
+- **Repository root: the video-generation system (Amarillo).** `src/`, `scripts/`, `configs/`, `prompt_library/`, `catalog/`, `hyperframes/`, `videos/`, `docs/`, `analysis_notes/`, `review_notes/`, `assembled_outputs/`, `references/`, and `tests/` are the automated video-generation workflow and its production records. See [Main Folders](#main-folders) and [Latest automated video-generation work](#latest-automated-video-generation-work) below. Rendered media stays local under the ignored `artifacts/` tree.
 - **[`demo-videos/`](demo-videos/README.md): the Demo Videos workspace.** Self-contained Tesseract (by Mirage) editing workspace for the product demo videos: demo scripts, screen recordings, audio and AI voice, edited outputs, notes, and the Tesseract launcher and skills they use. It does not depend on, or change, the system at the root.
 
 ## Workflow
@@ -164,9 +164,53 @@ lip-sync or continuity dimensions remain untested. Earlier interview comparison:
 - `docs/`: roadmap, methodology, and operating notes.
 - `demo-videos/`: the separate Demo Videos workspace (not part of the Amarillo pipeline).
 
-## Latest session deliveries
+## Latest automated video-generation work
 
-The current delivery is **Portion**, a new 36-second before/after catering workflow
+Added on 2026-09-24. Everything here lives at the repository root, separate from
+`demo-videos/`.
+
+**Workflow changes** (see [core workflow gates](docs/CORE_VIDEO_WORKFLOW.md)):
+
+- Every final MP4 needs its own `<mp4-stem>.reverse-engineering.md`, written and
+  checked by `scripts/reverse_engineering.py`. Finalizers call
+  `amarillo.delivery.require_reverse_engineering` before recording completion.
+- Every new request reviews general-library footage first and validates
+  `videos/<name>/reference-review.json` with `scripts/verify_reference_review.py`.
+- The library resolver rejects the Phase 2 `references/human-realism/` collection;
+  core learning accepts whole-take `selected`/`accepted`/`approved` decisions.
+
+**Sample outputs.** MP4s are local under `artifacts/final_outcome/<name>/`. Hashes,
+costs and limitations are in `assembled_outputs/<name>.json`.
+
+| Production | Output | Estimated / reserved provider USD | Scorecard |
+| --- | --- | ---: | --- |
+| Kite campaign | 36s deterministic HyperFrames film, no paid generation | $0 / $0 | [Scorecard](docs/KITE_CAMPAIGN_SCORECARD.md) |
+| Kite core demo | 30s film with one Kling 3.0 Pro paper take and a demo page | $0.56 / $0.65 | [Scorecard](docs/KITE_CORE_DEMO_SCORECARD.md) |
+| Kite feedback | 36s Slack-to-Kite feedback film; I2V bookend revision reusing existing takes | $0 new; inherited cost unresolved | [Scorecard](docs/KITE_FEEDBACK_SCORECARD.md) |
+| Kite Tomorrow series | 38s film revisions (Slack, UI pass 2, character pass, final) plus a contact test | Character pass $2.73 / $3.14; historical Higgsfield USD unresolved | [Scorecard](docs/KITE_TOMORROW_CHARACTER_SCORECARD.md) · [Notes](review_notes/kite-tomorrow.md) |
+| Computer realism samples | Three short I2V computer-interaction studies | $8.38 / $9.67 | [Scorecard](docs/COMPUTER_REALISM_SAMPLES_SCORECARD.md) |
+| Computer movement studies 02 | Reading pause, mouse movement, laptop typing | $8.60 / $9.92 | [Scorecard](docs/COMPUTER_MOVEMENT_STUDIES_02_SCORECARD.md) |
+| Computer movement long | 15s, 15s and 9s desktop, mouse and laptop sequences, each with its own ledger | $20.39 / $23.51 cumulative across the three videos | [Scorecard](docs/COMPUTER_MOVEMENT_LONG_SCORECARD.md) |
+| Sideway human-realism tests | Café left-hand correction and a reference comparison (diagnostic only) | $10.57 / $12.21 cumulative, user-approved $12.25 cap | [Left hand](review_notes/sideway/left-hand-correction.md) · [Comparison](review_notes/sideway/sample02-test-results.md) |
+
+No invoices were confirmed. These figures are published-quote estimates with the
+15% reservation buffer, and unknown historical costs are not counted as zero.
+
+**Learnings** (details in the scorecards and `prompt_library/tested_*_patterns.json`):
+
+- Selecting a usable segment is valid, but it does not make the full take a success.
+  Long takes still drift into hovering hands, finger splay and downward keyboard gaze.
+- Written movement observations from reference clips did not reliably improve
+  realism. Model, prompt and seed changes confound every comparison.
+- Seedance improved gaze and expression timing in the Kite character pass, but its
+  faces are softer than Veo's. One comparison does not rank the models.
+- Deterministic UI films need checks for font glyph coverage, media stacking and
+  contrast before layout findings can be trusted. Keep the result visible through
+  the CTA.
+
+## Previous session deliveries
+
+The previous delivery was **Portion**, a new 36-second before/after catering workflow
 film. Serein and Sideway also include the latest mouse, gaze, dialogue and café
 revisions. Each project includes editable compositions, source-image and motion
 prompts, generation plans, review decisions and rebuild instructions.
