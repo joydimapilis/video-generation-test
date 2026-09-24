@@ -140,6 +140,13 @@ lip-sync or continuity dimensions remain untested. Earlier interview comparison:
 
 ## Current Defaults
 
+- People scenes: source image → internal image review → image-to-video → motion
+  review, following [the production defaults](AGENTS.md). This remains part of
+  normal video generation.
+- The human-movement clips in `references/human-realism/` are reserved for separate
+  Phase 2 human-realism evaluation and improvement. They are not a default
+  production dependency. General video reference review and normal generated-shot
+  realism checks remain in place.
 - First use case: reusable short-form marketing/social clips.
 - Review format: Markdown milestone report plus machine-readable JSON.
 - Output formats: MP4 videos, JSON prompt library, JSONL experiment logs, Markdown reports.
@@ -243,4 +250,21 @@ export AMARILLO_LIBRARY_DIR="/path/to/your/video library"
 python scripts/inspect_library_slice.py --out artifacts/slice --terms configs/library_slice_round5.json
 ```
 
-If unset, it uses `data/library`, then a single accessible library recorded in prior reference manifests. Missing or ambiguous libraries fail clearly.
+If unset, it uses `data/library`, then a single accessible general library recorded
+in prior reference manifests. Missing or ambiguous libraries fail clearly.
+The core resolver rejects `references/human-realism` and symlink aliases, including
+when explicitly configured. This workspace's gitignored `data/library` points to
+`/Users/joydimapilis/Desktop/untitled folder/Startup Launch Videos` (11 accessible
+MP4s verified on 2026-09-23; older records describe a larger collection).
+
+Every new request automatically includes agent review of relevant general-library
+footage before shot planning. The agent records and validates
+`videos/<name>/reference-review.json`; a generated contact sheet is not itself a
+completed review. Core learning uses `artifacts/learning/core.json`, supports
+historical `selected` approvals, and retains both success and failure findings.
+
+Every final MP4 requires its own adjacent `<mp4-stem>.reverse-engineering.md`.
+The completion gate checks the individual document, required content and current
+MP4 hash; missing/stale documents block completion. Multi-video projects require
+one document per video. See [core workflow gates](docs/CORE_VIDEO_WORKFLOW.md)
+for the reference-review schema, production-record fields and write/check commands.

@@ -1,0 +1,26 @@
+{
+  "design": "videos/computer-movement-long/design.md",
+  "result": "pass",
+  "findings": [],
+  "review": "Native framing/color/speed; no authored motion, overlays, text, borders, shadows or effects. Hidden canvas background is declared in design. One media clip per sample. Snapshot framing and device contact checked; aesthetic compliance does not establish realism.",
+  "composition_checks": [
+    {
+      "sample": 1,
+      "ok": true,
+      "lint_errors": 0,
+      "lint_warnings": 0
+    },
+    {
+      "sample": 2,
+      "ok": true,
+      "lint_errors": 0,
+      "lint_warnings": 0
+    },
+    {
+      "sample": 3,
+      "ok": true,
+      "lint_errors": 0,
+      "lint_warnings": 0
+    }
+  ]
+}

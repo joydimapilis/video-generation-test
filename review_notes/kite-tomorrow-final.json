@@ -1,0 +1,22 @@
+{
+  "decision": "selected_for_full_film_with_documented_limitations",
+  "run_id": "kite_person_seedance2_purposeful_contact_v2",
+  "visual_review": {
+    "status": "accepted_with_documented_limitations",
+    "method": "Four sub-composition midpoint snapshots and 19 encoded full-film frames including opening motion, every scene join, product states, caption and final frame; close UI views at 11.8 and 33.5 s. Prior source motion review at 12 fps, including face/hand crops, retained. Sampled visual inspection, not continuous real-time playback.",
+    "findings": [
+      "New purposeful-contact shot appears beneath the existing opening title without covering face or hands. The brief reposition is usable as a work pause in the full edit; exact continuous-trackpad-contact prompt was not achieved.",
+      "All four scenes mount and existing UI text, narrative caption and ending remain readable in inspected states.",
+      "No new color treatment: warm side lighting and source grade fit the existing orange/cream palette. No skin smoothing or sharpening applied.",
+      "Decoded audio is bit-identical to the prior delivered master; narration timing, music and effects are preserved. No new listening review claimed."
+    ],
+    "reviewed_warning": "Kite icon intentionally appears in app navigation and message avatar; duplicate image warning is accepted."
+  },
+  "limitations": [
+    "Human pose and hand purpose improve, but brief hand lift and restrained/soft facial rendering remain.",
+    "Kite UI is a deterministic illustrative reconstruction informed by product references, not an authenticated product recording.",
+    "Cumulative USD remains unknown because original Higgsfield credits and source-image costs are not fully reconciled."
+  ],
+  "manifest": "assembled_outputs/kite-tomorrow-final.json",
+  "new_generation_calls": 0
+}

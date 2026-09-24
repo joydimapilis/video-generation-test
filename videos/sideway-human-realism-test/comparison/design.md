@@ -1,0 +1,3 @@
+# Sideway realism comparison
+Concept: inspect original and candidate performances at equal scale, with the observed motion reference beside them.
+Warm charcoal #20231f, cream #f3f1e6, yellow #f0d970. Onest for all diagnostic labels: one neutral voice, no ornamental typography. Full images remain uncropped and ungraded. Equal original/candidate portrait panels are the focal pair; reference and concise observations occupy the right column. No decorative movement. Hard cuts separate studies; a thin linear progress marker supports review seeking. No music or speech in this silent movement comparison. Original spoken take remains available separately.

@@ -1,0 +1,447 @@
+{
+  "audited_at_utc": "2026-09-22T00:55:58.072798+00:00",
+  "basis": "Persisted resolved_input, queue IDs, source-image generation records and remote uploaded-byte SHA256 checks. Not an independent provider-side log.",
+  "source_media": "Reused independently generated Nano Banana Pro stills; their original generation inputs were text only.",
+  "reference_media_in_generation": false,
+  "real_extracted_frames_used_only_for_local_observation": true,
+  "video_inputs": 0,
+  "last_frame_inputs": 0,
+  "pose_inputs": 0,
+  "motion_control_inputs": 0,
+  "original_budget_preserved": true,
+  "samples": [
+    {
+      "sample": "01",
+      "source_image": {
+        "sample": "01",
+        "file": "artifacts/library-loop-computer-movement-studies-02/source-images/01-desktop-typing-v2.png",
+        "sha256": "f350ac3c82895907cd79345d93fbfe415654c8057fb918e43482810a62ecef31",
+        "original_image_model": "fal-ai/nano-banana-pro",
+        "reviewed_before_this_animation": true,
+        "decision": "reuse",
+        "review": "Existing generated still re-inspected at full size. Face/eye target, natural skin/clothing, visible hand contact and support are suitable starting constraints. Desktop uses keyboard navigation because no mouse exists in still; mouse hand transfer and laptop trackpad transfer remain animation risks.",
+        "prior_image_provenance": "review_notes/computer-movement-studies-02-generation-audit.json"
+      },
+      "source_image_generation_request": {
+        "id": "01-desktop-typing-source-v2",
+        "request_id": "01a0b9cd-4590-7470-a9db-f981cf26a728",
+        "status": "completed",
+        "endpoint": "fal-ai/nano-banana-pro",
+        "stage": "text-to-image",
+        "input_files": [],
+        "submitted_model_input": {
+          "prompt": "Candid realistic unretouched documentary photo, landscape 16:9. An ordinary 43-year-old Black woman with short loosely tied natural curls, freckles and under-eye texture, wearing a faded sage-green cotton overshirt over a grey T-shirt, seated at a walnut laminate desk in a modest office with corkboard and folders. Neutral task-focused face, eyes looking at the desktop monitor on screen-left, not at camera. Medium three-quarter view including face, torso, both full hands and keyboard, camera slightly above desk. Soft ordinary window light, realistic skin pores and cotton creases; no glamour, smile, retouching or dramatic bokeh. IMPORTANT physical pose: A separate very thin matte-black keyboard sits flat on the desk with a thick black padded wrist-rest flush against its near edge. Both forearms lie on the desk; the heels of both palms are visibly resting on the padded support. Hands are low and relaxed, fingers almost extended with only a very shallow curve. Fingertip pads touch the letter keys lightly; knuckles do not arch high. Left hand on left letters, right hand on right letters, thumbs resting near the spacebar. All fingers visible and normal, no curled or dangling fingers. Both wrists supported at the same level as the keys, clearly showing contact with the pad. She is an experienced quiet typist caught between two small key presses. Still image only, no motion blur. Normal desktop monitor and desk geometry, hands fully unobscured.",
+          "aspect_ratio": "16:9",
+          "resolution": "2K",
+          "output_format": "png",
+          "num_images": 1
+        },
+        "output_path": "artifacts/library-loop-computer-movement-studies-02/source-images/01-desktop-typing-v2.png",
+        "human_reference_media_inputs": []
+      },
+      "new_source_image_generated_this_turn": false,
+      "video_requests": [
+        {
+          "id": "01-computer-sequence-kling-v1",
+          "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+          "request_id": "01a0c686-10b9-7013-850c-6822a5180410",
+          "status": "completed",
+          "input_files": [
+            {
+              "file": "artifacts/library-loop-computer-movement-studies-02/source-images/01-desktop-typing-v2.png",
+              "sha256": "f350ac3c82895907cd79345d93fbfe415654c8057fb918e43482810a62ecef31",
+              "field": "start_image_url",
+              "uploaded_url": "https://v3b.fal.media/files/b/0aab613a/2UwAZAZTVLUErirM1OH3b_01-desktop-typing-v2.png",
+              "uploaded_bytes_match": true
+            }
+          ],
+          "submitted_model_input": {
+            "prompt": "Single continuous 15-second candid shot at normal speed. Camera locked on tripod with absolutely unchanged framing. Preserve the source person, face, hairstyle, age, clothing, lighting, room and device geometry. Ordinary concentrated expression, relaxed closed mouth, natural blinks. Small movements, supported forearms, relaxed low wrists. The woman is editing a short sentence. 0\u20132 seconds: she reads the monitor with fingertips resting quietly on the keyboard. 2\u20135 seconds: she types a few words with small independent fingertip presses close to the key surface; the heels of her hands stay on the padded wrist rest. 5\u20137 seconds: she stops pressing and rereads the screen, leaving fingers relaxed on their keys. 7\u20139 seconds: the right hand slides a short distance along the keyboard to press two navigation keys, then rests. 9\u201311 seconds: eyes refocus higher on the screen while hands remain supported and quiet. 11\u201314 seconds: right hand returns to the letter keys and both hands type one brief correction, irregular quiet finger movements. 14\u201315 seconds: typing settles; one shoulder relaxes slightly with a breath, gaze still on the screen. Give the pauses time to register. No mouse is present: use only the existing keyboard. Hands stay low throughout; never perform a flourish or hold raised curled fingers.",
+            "start_image_url": "https://v3b.fal.media/files/b/0aab613a/2UwAZAZTVLUErirM1OH3b_01-desktop-typing-v2.png",
+            "duration": "15",
+            "generate_audio": false,
+            "negative_prompt": "continuous repetitive typing, air typing, hands floating, high finger lifts, curled raised hands, fused fingers, extra fingers, hand teleportation, sudden pose changes, head bobbing, looking into camera, talking, exaggerated smile, beauty filter, zoom, pan, camera drift, cuts",
+            "cfg_scale": 0.5
+          },
+          "human_reference_video_inputs": [],
+          "human_reference_extracted_frame_inputs": [],
+          "human_reference_first_last_frames": [],
+          "pose_reference_inputs": [],
+          "motion_control_inputs": [],
+          "output_path": "artifacts/library-loop-computer-long-01/outputs/01-computer-sequence-kling-v1.mp4"
+        },
+        {
+          "id": "01-computer-sequence-wan-v2",
+          "endpoint": "wan/v2.6/image-to-video",
+          "request_id": "01a0c68f-378a-72d3-ba44-cd5748010be1",
+          "status": "completed",
+          "input_files": [
+            {
+              "file": "artifacts/library-loop-computer-movement-studies-02/source-images/01-desktop-typing-v2.png",
+              "sha256": "f350ac3c82895907cd79345d93fbfe415654c8057fb918e43482810a62ecef31",
+              "field": "image_url",
+              "uploaded_url": "https://v3b.fal.media/files/b/0aab6176/ATG6VsUxfPGLj-vdk_-JU_01-desktop-typing-v2.png",
+              "uploaded_bytes_match": true
+            }
+          ],
+          "submitted_model_input": {
+            "prompt": "A single locked-off 15-second documentary shot of this woman quietly editing a document at her desktop. Preserve her exact appearance and room. Her gaze is directed at the monitor. Both wrists are supported on the black wrist cushion. Start with two seconds of reading, fingertips resting on the keys. Then enter a few words with very small, irregular finger presses for three seconds. Stop typing completely and read for three seconds, hands resting against the keyboard. One right fingertip taps a nearby key twice to navigate the document; the hand stays at its home-key position. Read briefly, then type one short correction. Finish resting on the keys, with a small relaxed shoulder settling. The only hand travel is the millimeters needed to press keys. Quiet face, closed mouth, occasional blink, minimal head motion. Forearms stay supported, fingers stay low and relaxed. Normal speed, unchanged camera framing throughout. Silent scene.",
+            "image_url": "https://v3b.fal.media/files/b/0aab6176/ATG6VsUxfPGLj-vdk_-JU_01-desktop-typing-v2.png",
+            "duration": "15",
+            "resolution": "1080p",
+            "enable_prompt_expansion": false,
+            "multi_shots": false,
+            "seed": 922001,
+            "enable_safety_checker": true,
+            "negative_prompt": "air typing, high finger lifts, curled raised fingers, floating hands, extra fingers, fused fingers, excessive head movement, talking, animated expression, cuts, zoom, camera movement, hand teleportation, repetitive typing loop"
+          },
+          "human_reference_video_inputs": [],
+          "human_reference_extracted_frame_inputs": [],
+          "human_reference_first_last_frames": [],
+          "pose_reference_inputs": [],
+          "motion_control_inputs": [],
+          "output_path": "artifacts/library-loop-computer-long-01/outputs/01-computer-sequence-wan-v2.mp4"
+        }
+      ]
+    },
+    {
+      "sample": "02",
+      "source_image": {
+        "sample": "02",
+        "file": "artifacts/library-loop-computer-movement-studies-02/source-images/02-mouse-work.png",
+        "sha256": "08434a07e8d353ae95b87aa899343d0079bb2d460d69a0ba7310d82b294b546c",
+        "original_image_model": "fal-ai/nano-banana-pro",
+        "reviewed_before_this_animation": true,
+        "decision": "reuse",
+        "review": "Existing generated still re-inspected at full size. Face/eye target, natural skin/clothing, visible hand contact and support are suitable starting constraints. Desktop uses keyboard navigation because no mouse exists in still; mouse hand transfer and laptop trackpad transfer remain animation risks.",
+        "prior_image_provenance": "review_notes/computer-movement-studies-02-generation-audit.json"
+      },
+      "source_image_generation_request": {
+        "id": "02-mouse-work-source-v1",
+        "request_id": "01a0b9c6-c921-7421-93db-cd001488b26b",
+        "status": "completed",
+        "endpoint": "fal-ai/nano-banana-pro",
+        "stage": "text-to-image",
+        "input_files": [],
+        "submitted_model_input": {
+          "prompt": "A candid unretouched documentary color photograph of an ordinary adult working at a computer, landscape 16:9, medium shot including entire head, seated torso, both forearms and hands and the input device. Natural daylight, normal exposure, realistic skin pores and fine lines, small asymmetries, ordinary flyaway hairs, genuine cloth weave and creases. Moderate depth of field: face and hands both in focus. Neutral absorbed working expression, closed mouth, eyes unmistakably looking at the computer display rather than the camera. Practical slightly forward seated posture, relaxed unequal shoulders. Neither a fashion portrait nor stock-photo smile, no makeup retouching, no cinematic bokeh, no logos. Anatomically normal five-finger hands with low natural knuckle arcs and short unpainted fingernails. A 51-year-old East Asian man with a salt-and-pepper close-cropped haircut, a few forehead lines and natural textured skin, clean shaven, wearing a rumpled muted burgundy polo shirt. Home office with a grey desk, cream plaster wall, simple window blind and shelves of worn manuals. Medium three-quarter view from the front-right of his desk, modestly elevated to see his right hand. A desktop computer monitor stands screen-left and is turned toward him at ordinary reading height. He looks intently at its middle. His right hand naturally cups a normal dark grey computer mouse on a dull blue fabric mousepad; palm rests on the mouse, thumb touches its left flank, index finger lies gently on the left button, middle finger on the right button, ring/little fingers softly wrap the right side. Mouse body clearly visible beneath the hand. Right forearm and heel of wrist supported on the mousepad/desk. His left hand rests softly beside a separate keyboard, with left forearm on desk. All hand-device contact clear. The mouse is close to his body, not stretched away. Stable ordinary workplace moment.",
+          "aspect_ratio": "16:9",
+          "resolution": "2K",
+          "output_format": "png",
+          "num_images": 1
+        },
+        "output_path": "artifacts/library-loop-computer-movement-studies-02/source-images/02-mouse-work.png",
+        "human_reference_media_inputs": []
+      },
+      "new_source_image_generated_this_turn": false,
+      "video_requests": [
+        {
+          "id": "02-computer-sequence-kling-v1",
+          "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+          "request_id": "01a0c686-1175-7452-9888-02e296c9ef02",
+          "status": "completed",
+          "input_files": [
+            {
+              "file": "artifacts/library-loop-computer-movement-studies-02/source-images/02-mouse-work.png",
+              "sha256": "08434a07e8d353ae95b87aa899343d0079bb2d460d69a0ba7310d82b294b546c",
+              "field": "start_image_url",
+              "uploaded_url": "https://v3b.fal.media/files/b/0aab613a/nDiUAjXFQgl0u8KUf3fXj_02-mouse-work.png",
+              "uploaded_bytes_match": true
+            }
+          ],
+          "submitted_model_input": {
+            "prompt": "Single continuous 15-second candid shot at normal speed. Camera locked on tripod with absolutely unchanged framing. Preserve the source person, face, hairstyle, age, clothing, lighting, room and device geometry. Ordinary concentrated expression, relaxed closed mouth, natural blinks. Small movements, supported forearms, relaxed low wrists. The man alternates reading, mouse navigation and entering a short search phrase. 0\u20132 seconds: read the monitor, right hand comfortably cupping the mouse, left hand resting at keyboard. 2\u20134 seconds: move the mouse a small distance along the blue pad, index and middle fingers remaining on the buttons; stop and read. 4\u20136 seconds: right hand leaves the mouse along a low short path and settles gently onto the right letter keys, with forearm supported on desk; left hand stays on left keys. 6\u20139 seconds: type a short phrase with modest independent fingertip movements, eyes at the monitor. 9\u201310 seconds: pause with fingertips resting on keys. 10\u201312 seconds: right hand returns along the same low path and cups the stationary mouse naturally; make one small pointer movement. 12\u201313 seconds: a quiet reading pause, eyes focused on the display. 13\u201315 seconds: left hand enters two quiet key presses while right hand rests on mouse, and shoulders settle subtly with breathing. Distinct actions separated by genuine still moments; no repeated clicking, big finger lifts or head turns.",
+            "start_image_url": "https://v3b.fal.media/files/b/0aab613a/nDiUAjXFQgl0u8KUf3fXj_02-mouse-work.png",
+            "duration": "15",
+            "generate_audio": false,
+            "negative_prompt": "continuous repetitive typing, air typing, hands floating, high finger lifts, curled raised hands, fused fingers, extra fingers, hand teleportation, sudden pose changes, head bobbing, looking into camera, talking, exaggerated smile, beauty filter, zoom, pan, camera drift, cuts",
+            "cfg_scale": 0.5
+          },
+          "human_reference_video_inputs": [],
+          "human_reference_extracted_frame_inputs": [],
+          "human_reference_first_last_frames": [],
+          "pose_reference_inputs": [],
+          "motion_control_inputs": [],
+          "output_path": "artifacts/library-loop-computer-long-02/outputs/02-computer-sequence-kling-v1.mp4"
+        }
+      ]
+    },
+    {
+      "sample": "03",
+      "source_image": {
+        "sample": "03",
+        "file": "artifacts/library-loop-computer-movement-studies-02/source-images/03-laptop-typing.png",
+        "sha256": "a7372c80e86fc20a9ba737303ef58f9808da1ac20e892fa26fe92d09e0f9741f",
+        "original_image_model": "fal-ai/nano-banana-pro",
+        "reviewed_before_this_animation": true,
+        "decision": "reuse",
+        "review": "Existing generated still re-inspected at full size. Face/eye target, natural skin/clothing, visible hand contact and support are suitable starting constraints. Desktop uses keyboard navigation because no mouse exists in still; mouse hand transfer and laptop trackpad transfer remain animation risks.",
+        "prior_image_provenance": "review_notes/computer-movement-studies-02-generation-audit.json"
+      },
+      "source_image_generation_request": {
+        "id": "03-laptop-typing-source-v1",
+        "request_id": "01a0b9c6-cb71-7663-8c28-6f4801d66351",
+        "status": "completed",
+        "endpoint": "fal-ai/nano-banana-pro",
+        "stage": "text-to-image",
+        "input_files": [],
+        "submitted_model_input": {
+          "prompt": "A candid unretouched documentary color photograph of an ordinary adult working at a computer, landscape 16:9, medium shot including entire head, seated torso, both forearms and hands and the input device. Natural daylight, normal exposure, realistic skin pores and fine lines, small asymmetries, ordinary flyaway hairs, genuine cloth weave and creases. Moderate depth of field: face and hands both in focus. Neutral absorbed working expression, closed mouth, eyes unmistakably looking at the computer display rather than the camera. Practical slightly forward seated posture, relaxed unequal shoulders. Neither a fashion portrait nor stock-photo smile, no makeup retouching, no cinematic bokeh, no logos. Anatomically normal five-finger hands with low natural knuckle arcs and short unpainted fingernails. A 57-year-old woman with a short wavy dark-auburn bob streaked with grey, noticeable smile lines but no smile, and normal slightly uneven complexion. She wears a worn navy-blue linen blouse with sleeves rolled below the elbows. Seated on a simple upholstered chair at a pale birch table in a modest apartment study with a textured warm grey wall and a low bookshelf in the background. Medium side-three-quarter view, slightly above table height, both hands visible, face in three-quarter profile, her plain dark charcoal laptop on screen-left. The laptop screen is tilted at a practical reading angle and shows a dim neutral document without prominent lettering. Gaze goes down-left into the screen. Both forearms rest on table and both palm heels lie lightly on the laptop palm-rest; wrists straight and low. Left fingertips touch left letter keys, right fingertips touch right letter keys, each separate finger softly curved only a few millimeters above its neighboring keys. Laptop has ordinary keyboard and a rectangular trackpad separated below. Photograph a quiet actual typing posture, hands low on keys, no suspended whole hand.",
+          "aspect_ratio": "16:9",
+          "resolution": "2K",
+          "output_format": "png",
+          "num_images": 1
+        },
+        "output_path": "artifacts/library-loop-computer-movement-studies-02/source-images/03-laptop-typing.png",
+        "human_reference_media_inputs": []
+      },
+      "new_source_image_generated_this_turn": false,
+      "video_requests": [
+        {
+          "id": "03-computer-sequence-kling-v1",
+          "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+          "request_id": "01a0c686-1832-74e2-acbc-f88355d2c034",
+          "status": "completed",
+          "input_files": [
+            {
+              "file": "artifacts/library-loop-computer-movement-studies-02/source-images/03-laptop-typing.png",
+              "sha256": "a7372c80e86fc20a9ba737303ef58f9808da1ac20e892fa26fe92d09e0f9741f",
+              "field": "start_image_url",
+              "uploaded_url": "https://v3b.fal.media/files/b/0aab613a/utwgTm7xgJZtkLV_lq_gt_03-laptop-typing.png",
+              "uploaded_bytes_match": true
+            }
+          ],
+          "submitted_model_input": {
+            "prompt": "Single continuous 15-second candid shot at normal speed. Camera locked on tripod with absolutely unchanged framing. Preserve the source person, face, hairstyle, age, clothing, lighting, room and device geometry. Ordinary concentrated expression, relaxed closed mouth, natural blinks. Small movements, supported forearms, relaxed low wrists. The woman reads and edits a document on her laptop. 0\u20132 seconds: eyes read the laptop screen, hands resting low on keys. 2\u20135 seconds: type a few words with small uneven individual finger presses, forearms supported on table. 5\u20136 seconds: pause, fingertips resting on keys. 6\u20139 seconds: right hand glides a short distance down to the rectangular trackpad below the letter keys; index fingertip visibly rests on the pad and makes one short smooth scroll, wrist heel supported on palm rest; left hand stays at keyboard. 9\u201311 seconds: hand rests on the trackpad while her eyes follow the screen, without a head nod. 11\u201314 seconds: right hand returns to its letter-key position and both hands enter a short correction with low fingertips. 14\u201315 seconds: hands relax in contact with keys and one small seated weight adjustment settles her shoulders. Keep mouth calmly closed. Make the transitions unhurried and physically connected, not a repeating typing loop.",
+            "start_image_url": "https://v3b.fal.media/files/b/0aab613a/utwgTm7xgJZtkLV_lq_gt_03-laptop-typing.png",
+            "duration": "15",
+            "generate_audio": false,
+            "negative_prompt": "continuous repetitive typing, air typing, hands floating, high finger lifts, curled raised hands, fused fingers, extra fingers, hand teleportation, sudden pose changes, head bobbing, looking into camera, talking, exaggerated smile, beauty filter, zoom, pan, camera drift, cuts",
+            "cfg_scale": 0.5
+          },
+          "human_reference_video_inputs": [],
+          "human_reference_extracted_frame_inputs": [],
+          "human_reference_first_last_frames": [],
+          "pose_reference_inputs": [],
+          "motion_control_inputs": [],
+          "output_path": "artifacts/library-loop-computer-long-03/outputs/03-computer-sequence-kling-v1.mp4"
+        },
+        {
+          "id": "03-computer-sequence-wan-v2",
+          "endpoint": "wan/v2.6/image-to-video",
+          "request_id": "01a0c68f-381d-7373-bdec-b542f876d495",
+          "status": "completed",
+          "input_files": [
+            {
+              "file": "artifacts/library-loop-computer-movement-studies-02/source-images/03-laptop-typing.png",
+              "sha256": "a7372c80e86fc20a9ba737303ef58f9808da1ac20e892fa26fe92d09e0f9741f",
+              "field": "image_url",
+              "uploaded_url": "https://v3b.fal.media/files/b/0aab6176/hQQuH2hiPw-Bzk6vffdqv_03-laptop-typing.png",
+              "uploaded_bytes_match": true
+            }
+          ],
+          "submitted_model_input": {
+            "prompt": "A single locked-off 15-second documentary shot of this woman quietly working on her laptop. Preserve her exact appearance and room. Start by reading the laptop screen for two seconds, hands resting naturally on the keyboard. Type a few words with small irregular finger presses, then pause completely to read. Around the middle of the shot, her right hand slides down onto the laptop trackpad, keeping the heel of the hand supported on the palm rest. Her index finger lies flat on the trackpad and makes one short gentle scroll. The other fingers remain relaxed and close together; the left hand rests on the keys. Read for a moment with her right hand resting on the pad. Slide that hand back to the letter keys and type a brief correction, then rest both hands low on the keyboard. One small shoulder settling, otherwise quiet posture. Eyes stay directed toward the screen with only one brief keyboard glance. Relaxed closed mouth, natural blink, minimal head movement. Camera perfectly still, normal speed. Silent scene.",
+            "image_url": "https://v3b.fal.media/files/b/0aab6176/hQQuH2hiPw-Bzk6vffdqv_03-laptop-typing.png",
+            "duration": "15",
+            "resolution": "1080p",
+            "enable_prompt_expansion": false,
+            "multi_shots": false,
+            "seed": 922003,
+            "enable_safety_checker": true,
+            "negative_prompt": "air typing, high finger lifts, curled raised fingers, floating hands, extra fingers, fused fingers, excessive head movement, talking, animated expression, cuts, zoom, camera movement, hand teleportation, repetitive typing loop"
+          },
+          "human_reference_video_inputs": [],
+          "human_reference_extracted_frame_inputs": [],
+          "human_reference_first_last_frames": [],
+          "pose_reference_inputs": [],
+          "motion_control_inputs": [],
+          "output_path": "artifacts/library-loop-computer-long-03/outputs/03-computer-sequence-wan-v2.mp4"
+        },
+        {
+          "id": "03-computer-sequence-wan-v3",
+          "endpoint": "wan/v2.6/image-to-video",
+          "request_id": "01a0c694-a2ec-7240-b670-c7064251acd8",
+          "status": "completed",
+          "input_files": [
+            {
+              "file": "artifacts/library-loop-computer-movement-studies-02/source-images/03-laptop-typing.png",
+              "sha256": "a7372c80e86fc20a9ba737303ef58f9808da1ac20e892fa26fe92d09e0f9741f",
+              "field": "image_url",
+              "uploaded_url": "https://v3b.fal.media/files/b/0aab619a/d6uP5VFlCXdtPtYQUBnQS_03-laptop-typing.png",
+              "uploaded_bytes_match": true
+            }
+          ],
+          "submitted_model_input": {
+            "prompt": "One continuous 15-second candid shot. Locked camera. The woman quietly edits a document on her laptop. Her eyes read the laptop screen; her forearms rest on the table and her fingertips rest on the letter keys. Hold this attentive reading pause for the first three seconds. Type a short phrase with tiny, irregular individual key presses for about three seconds. Pause completely to check the screen for three seconds, with fingers resting where they stopped. Press one nearby key with a small finger movement, then enter a short correction for two seconds. Finish quietly reading the screen with resting hands and a barely perceptible shoulder settling. Both hands remain over their own halves of the letter keyboard throughout; all movements are localized to individual fingers, with relaxed low knuckles. One brief glance at the keyboard, then eyes return to the screen. Ordinary calm expression, closed mouth, natural blink. Preserve her identity, face, hair, clothing, lighting, furniture and laptop. Normal speed. Silent scene.",
+            "image_url": "https://v3b.fal.media/files/b/0aab619a/d6uP5VFlCXdtPtYQUBnQS_03-laptop-typing.png",
+            "duration": "15",
+            "resolution": "1080p",
+            "enable_prompt_expansion": false,
+            "multi_shots": false,
+            "seed": 922103,
+            "enable_safety_checker": true,
+            "negative_prompt": "crossed hands, touching other hand, air typing, floating hands, curled raised fingers, high finger lifts, wrist stretching, hand gestures, reaching, repetitive typing, talking, smiling, head bobbing, sudden pose change, camera movement, cuts, zoom, extra fingers"
+          },
+          "human_reference_video_inputs": [],
+          "human_reference_extracted_frame_inputs": [],
+          "human_reference_first_last_frames": [],
+          "pose_reference_inputs": [],
+          "motion_control_inputs": [],
+          "output_path": "artifacts/library-loop-computer-long-03/outputs/03-computer-sequence-wan-v3.mp4"
+        }
+      ]
+    }
+  ],
+  "selected_samples": [
+    {
+      "name": "01-desktop-sequence",
+      "title": "Desktop reading and keyboard sequence",
+      "source": "artifacts/library-loop-computer-long-01/outputs/01-computer-sequence-wan-v2.mp4",
+      "source_image": "artifacts/library-loop-computer-movement-studies-02/source-images/01-desktop-typing-v2.png",
+      "source_start": 0,
+      "duration": 15,
+      "decision": "provisional",
+      "review": "review_notes/computer-movement-long.json",
+      "review_note": "Reading, low typing, sparse nearby key presses, another reading pause and a short correction. Keyboard-directed gaze lasts longer than requested; screen response is unverified.",
+      "run_id": "01-computer-sequence-wan-v2",
+      "image_model": "fal-ai/nano-banana-pro",
+      "video_model": "wan/v2.6/image-to-video",
+      "width": 1926,
+      "height": 1076,
+      "source_sha256": "3501d63e9af6067d855e46ae4cc5d254c08dde52ca13ef656f2a6864e673daf7",
+      "fps": "30/1"
+    },
+    {
+      "name": "02-mouse-keyboard-sequence",
+      "title": "Mouse and keyboard sequence",
+      "source": "artifacts/library-loop-computer-long-02/outputs/02-computer-sequence-kling-v1.mp4",
+      "source_image": "artifacts/library-loop-computer-movement-studies-02/source-images/02-mouse-work.png",
+      "source_start": 0,
+      "duration": 15,
+      "decision": "provisional",
+      "review": "review_notes/computer-movement-long.json",
+      "review_note": "Reading and mouse movement, a continuous transfer to brief typing, then a return to mouse use. Gaze checks are somewhat frequent during typing; a second typing burst was not achieved.",
+      "run_id": "02-computer-sequence-kling-v1",
+      "image_model": "fal-ai/nano-banana-pro",
+      "video_model": "fal-ai/kling-video/v3/pro/image-to-video",
+      "width": 1928,
+      "height": 1072,
+      "source_sha256": "2207a6d604da3baa4f398f03f086522fdb5acf32f3440a5a3848de9f849cc8b1",
+      "fps": "24/1"
+    },
+    {
+      "name": "03-laptop-sequence",
+      "title": "Laptop reading and typing sequence",
+      "source": "artifacts/library-loop-computer-long-03/outputs/03-computer-sequence-wan-v3.mp4",
+      "source_image": "artifacts/library-loop-computer-movement-studies-02/source-images/03-laptop-typing.png",
+      "source_start": 0,
+      "duration": 9,
+      "decision": "provisional_segment_only",
+      "review": "review_notes/computer-movement-long.json",
+      "review_note": "Nine-second selection: reading, low typing, pause, a local hand reposition and return to keys. Mid-sequence fingers are somewhat stiff. Full 15-second take rejected for later hand hovering; a clean trackpad scroll was not achieved.",
+      "run_id": "03-computer-sequence-wan-v3",
+      "image_model": "fal-ai/nano-banana-pro",
+      "video_model": "wan/v2.6/image-to-video",
+      "width": 1926,
+      "height": 1076,
+      "source_sha256": "24330f02c7281d904c8fbe3977103ef40829a16f875c1a344364ccef7f877ea7",
+      "fps": "30/1"
+    }
+  ],
+  "reference_observations": {
+    "reference_videos_uploaded": false,
+    "reference_frames_used_as_sources": false,
+    "identity_or_scene_recreation": false,
+    "references": [
+      {
+        "file": "references/human-realism/human-reference-02.mp4",
+        "sha256": "5178f9ce56a99881aa001f9b19bdcd4bc201cc0045419fb9883b8fcb92a0f494",
+        "ranges_seconds": [
+          [
+            0,
+            2
+          ]
+        ],
+        "observation": "Unequal finger activity, short presses, low wrists and supported forearms; one finger can lift while others stay at keys.",
+        "limits": "Face not visible; cannot infer gaze.",
+        "review_method": "Chronological extracted frames; 8fps detail for 02 and 05, 2fps contextual sheets for 03 and 04. Not continuous playback."
+      },
+      {
+        "file": "references/human-realism/human-reference-03.mp4",
+        "sha256": "97faaf7e02128ad0f30b1172b9fca9176fa900d9b64fbc1d180993fc84481446",
+        "ranges_seconds": [
+          [
+            0,
+            2.5
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "observation": "Typing with small gaze checks between screen and keyboard; task attention returns to screen.",
+        "limits": "Clinical setting and reaching action are not copied.",
+        "review_method": "Chronological extracted frames; 8fps detail for 02 and 05, 2fps contextual sheets for 03 and 04. Not continuous playback."
+      },
+      {
+        "file": "references/human-realism/human-reference-04.mp4",
+        "sha256": "aa8625fbd04c69e1e354402e61128b538b79e14d023cb7a2f5536af0dfda0153",
+        "ranges_seconds": [
+          [
+            0,
+            2.8
+          ]
+        ],
+        "observation": "Eye attention stays near screen while head and shoulders move much less than the hand.",
+        "limits": "Tablet/stylus, not keyboard or mouse evidence.",
+        "review_method": "Chronological extracted frames; 8fps detail for 02 and 05, 2fps contextual sheets for 03 and 04. Not continuous playback."
+      },
+      {
+        "file": "references/human-realism/human-reference-05.mp4",
+        "sha256": "28538087ee7bc97b9a93021db457c4cb82a4bbb0fbafaaeb5668d7116be4617b",
+        "ranges_seconds": [
+          [
+            0,
+            3
+          ],
+          [
+            7,
+            9
+          ]
+        ],
+        "observation": "Unequal hand roles, uneven timing and occasional local finger reposition; seated forward engagement.",
+        "limits": "Visible curls/repositions are observed but not copied because user asks persistent supported contact; no clear external mouse evidence.",
+        "review_method": "Chronological extracted frames; 8fps detail for 02 and 05, 2fps contextual sheets for 03 and 04. Not continuous playback."
+      }
+    ],
+    "application": {
+      "01": [
+        "02 typing rhythm/contact",
+        "03 screen-key gaze"
+      ],
+      "02": [
+        "04 attentive gaze and restrained posture",
+        "05 unequal hand roles; mouse grip itself is an untested extrapolation"
+      ],
+      "03": [
+        "02 low localized typing",
+        "05 forward posture/unequal timing",
+        "04 subtle body adjustment"
+      ]
+    },
+    "hypothesis": "Encoding these cues in new-source I2V prompts may improve contact. Not yet tested causally; no matched control.",
+    "this_session_review": {
+      "date": "2026-09-22",
+      "method": "Re-inspected chronological reference sheets: 02 0\u20131.875s at 8fps; 03,04,05 0\u20137.5s at 2fps. Ran library resolver inspection anew. No continuous playback claim.",
+      "phase_mapping": {
+        "reading_and_gaze": "04 0\u20132.5s and 3\u20134s; 03 0\u20132.5s/5\u20137s",
+        "typing": "02 0\u20131.875s",
+        "pause_and_unequal_hand_roles": "05 0\u20137.5s",
+        "subtle_posture": "04 0\u20134s and 05 0\u20137.5s",
+        "mouse_or_trackpad_transfer": "05 local hand reposition informs timing only; exact external mouse grip and transfer are untested choreography."
+      },
+      "no_reference_media_uploaded": true
+    }
+  }
+}

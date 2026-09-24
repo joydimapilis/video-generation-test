@@ -1,0 +1,27 @@
+---
+workflow: product-launch-video
+flow: automation
+storyboard: no
+message: "Kite turns customer feedback in Slack into marketing drafts; a person decides what should be published."
+length: 36s
+aspect: "16:9"
+format: 1920x1080
+language: en
+audience: product marketing teams
+destination: website and social landscape
+budget_usd: 10
+status: delivered
+---
+# Kite — From feedback to a better message
+User asks for a finished Kite video: customer-feedback signal arrives through Slack; Kite prepares review-ready product marketing messaging/assets; end with human review and publishing decision. Standing AGENTS.md authorization covers autonomous creative decisions, revisions and final render, with no approval questions.
+
+Decision: 36 seconds, three 12-second acts, typographic/UI-first, original fictional Relay feedback scenario, existing reviewed laptop-worker footage for final review, music only with fully readable on-screen story. No new paid generation. No narration or subtitles; visible copy carries meaning. Existing source-media historical costs remain in original cumulative ledger and are not reset or treated as zero. New production marginal cost $0. Do not initiate paid calls while inherited cumulative costs remain unresolved.
+
+Source material comes from user scenario, prior local Kite/Slack references and current official documentation. Illustrative reconstructed Slack and draft assets, visibly labelled; no authenticated capture or real customer testimonial. Fictional customer confusion: handoff ownership. Draft headline: Every handoff. A clear next owner. Human decision: Use the headline. Revise the social copy before publishing. No public action depicted.
+
+Assumed brand: verified prior official Kite wordmark, Onest, orange #FF6D2D, night #0E0E0E, cream #F6F4EE. Product mode is review-first workflow, not a universal claim about all autonomy settings. Current approvals documentation confirms draft/revision/thread decisions.
+
+Human source: existing purposeful-contact v2, use quiet 0.4–4.0s native speed once; not continuous with another human shot. Evaluate source before accepting. Behavioral references 04 0–4s and 05 7–9s, task-directed gaze, unequal hands, pauses. Do not use reference identities or footage in output. General marketing reference library currently resolves only human-reference set; unavailable commercial references cannot be claimed reviewed.
+
+## Image-to-video revision
+User requests image-to-video as used in other Kite projects. Existing cut already contained a small 3.6-second I2V insert; revised treatment uses two full-screen native-speed takes: reviewed Seedance reference v1 at 0–3.6s and purposeful-contact v2 at 28.4–32s. The unchanged fictional Slack/draft story fits between them; final human decision remains 32–36s. Reused footage, not new generation. Prior unresolved cumulative costs remain inherited; incremental cost $0.

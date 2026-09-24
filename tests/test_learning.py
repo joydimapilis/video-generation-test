@@ -95,3 +95,47 @@ def test_h3_adapter_uses_native_audio_and_native_resolution():
     with pytest.raises(ValueError, match='duration'):
         adapt_interview_input('minimax/h3/image-to-video', {
             'prompt': 'hello', 'duration': '4s', 'image_url': 'local:face.png'})
+
+
+@pytest.mark.parametrize('decision', ['accept', 'accepted', 'approved', 'selected', 'provisional'])
+def test_whole_take_approval_aliases_are_routable_without_rewriting_history(decision):
+    take = {**row(), 'decision': decision}
+    assert recommend([take], 'interview', has_reference=True, audio=True)['endpoint'] == 'veo'
+    assert take['decision'] == decision
+
+
+@pytest.mark.parametrize('decision', ['rejected', 'superseded', 'selected_segment', 'selected_for_opening', 'unknown'])
+def test_partial_or_rejected_takes_are_lessons_not_whole_take_endorsements(decision):
+    take = {**row(), 'decision': decision, 'review': 'Gaze drift after two seconds.', 'prompt': 'Read the screen.'}
+    recommendation = recommend([take], 'interview', has_reference=True, audio=True)
+    assert recommendation['status'] == 'needs_test'
+    assert recommendation['lessons'][0]['review'] == take['review']
+
+
+def test_phase2_rows_are_not_core_routing_or_prompt_lessons():
+    take = {**row(), 'key': 'library-loop-computer-realism/take', 'review': 'Research finding'}
+    recommendation = recommend([take], 'interview', has_reference=True, audio=True)
+    assert recommendation['status'] == 'needs_test'
+    assert recommendation['lessons'] == []
+
+
+def test_learning_refresh_preserves_unavailable_history_and_archives_original(tmp_path):
+    from amarillo.learning import save_learning
+    previous = {**row(), 'status': 'completed', 'elapsed_seconds': 12,
+                'estimate_cents': 60, 'reserved_cents': 69, 'review': 'Selected successful shot',
+                'prompt': 'Exact original prompt.', 'evidence': 'old/evidence.json', 'decision': 'selected'}
+    phase2 = {**previous, 'key': 'library-loop-computer-realism/old'}
+    folder = tmp_path / 'learning'
+    folder.mkdir()
+    original = json.dumps({'runs': [previous, phase2]}).encode()
+    (folder / 'latest.json').write_bytes(original)
+    data = save_learning(tmp_path)
+    assert len(data['runs']) == 2
+    assert data['runs'][0]['prompt'] == previous['prompt']
+    assert data['runs'][0]['decision'] == 'selected'
+    assert not data['runs'][0]['verified_output']
+    assert data['routes'][0]['status'] == 'needs_test'
+    assert next((folder / 'history').glob('*.json')).read_bytes() == original
+    core = json.loads((folder / 'core.json').read_text())
+    assert len(core['runs']) == 1
+    assert all('computer-realism' not in r['key'] for r in core['prompt_memory'])

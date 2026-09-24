@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "final": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/artifacts/final_outcome/kite-feedback/kite-feedback-i2v.mp4",
+  "sha256": "c08c3eac3ff7193a6d9a65ef31ca39f11429878e644313270c7f2327356a0dd4",
+  "duration": 36,
+  "fps": 30,
+  "resolution": "1920x1080",
+  "frames": 1080,
+  "full_decode": "passed",
+  "audio_peak": 0.7129514217376709,
+  "audio_listening": false,
+  "review_times": [
+    0,
+    0.7,
+    1.4,
+    2.1,
+    2.8,
+    3.5,
+    3.6,
+    4.3,
+    8.3,
+    8.9,
+    11.9,
+    12.2,
+    17,
+    23.9,
+    24.2,
+    27.9,
+    28.4,
+    29,
+    29.6,
+    30.2,
+    30.8,
+    31.5,
+    32,
+    32.5,
+    35.9
+  ],
+  "native_speed_i2v_seconds": 7.2,
+  "new_generation": false,
+  "new_spend_usd": 0,
+  "visual_review": {
+    "method": "25 chronological encoded samples including both human intervals and scene boundaries; source I2V chronological evidence and full-size pre-render frames inspected.",
+    "subjective": true,
+    "findings": [
+      "Both I2V takes now fill the frame; restrained native-speed person motion is visible.",
+      "Title plates do not obscure face, hands, or laptop.",
+      "Slack feedback, both draft assets, review annotations, and final human decision retained.",
+      "No new observed anatomy discontinuities in sampled frames; soft face detail retained."
+    ],
+    "limitations": [
+      "Sampled visual inspection, no continuous playback or listening claim.",
+      "Generated footage reused; no new image or video generation."
+    ]
+  }
+}

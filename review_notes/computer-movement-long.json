@@ -1,0 +1,86 @@
+{
+  "reviewer": "assistant subjective chronological frame inspection",
+  "method": "full scene and face at 2 fps; hand crops at 8 fps across full 15 seconds. Device screen content is not visible enough to verify cursor/text response. No objective realism score claimed.",
+  "runs": [
+    {
+      "run_id": "01-computer-sequence-kling-v1",
+      "decision": "rejected",
+      "observations": [
+        "0-1s quiet reading; 1-3.5s exaggerated fingers spreading while typing.",
+        "3.5-6s right hand travels across keyboard toward screen-left; 6-11s it rests partly hidden off the keyboard despite requested nearby navigation keys.",
+        "11.5s returns to keys; 13-15s mouth opens and posture rises more than requested.",
+        "Identity and mostly static camera survive; hand path and unnecessary repeated down/up gaze fail the intended restrained sequence."
+      ],
+      "revision": "Wan 2.6 single shot, simpler nearby-key actions, hands remain at home keys, quiet reading pauses."
+    },
+    {
+      "run_id": "02-computer-sequence-kling-v1",
+      "decision": "provisional_selected",
+      "observations": [
+        "0-3.3s screen-directed reading with small cupped-mouse movements; supported wrist and button contact.",
+        "3.3-3.9s continuous hand transfer to keyboard; 4-7.5s short typing run with several keyboard/screen glances.",
+        "7.6-8.4s hand travels back and settles on mouse; 8.4-15s screen reading with small pointer movements and a minor torso settling near 11.5s.",
+        "Identity, clothing, quiet facial expression and framing remain consistent. Mouse hand briefly opens during transfer then re-establishes contact. No prolonged air typing visible."
+      ],
+      "limitations": [
+        "Timing differs from prompt; final resumed two-handed typing was not achieved.",
+        "Keyboard phase is partly distant/occluded and gaze checks are more frequent than ideal; actual cursor behavior cannot be verified."
+      ]
+    },
+    {
+      "run_id": "03-computer-sequence-kling-v1",
+      "decision": "rejected",
+      "observations": [
+        "0-2.5s typing starts early; 3-6.5s both hands rise into strongly curled fingers while index taps remain near letter keys.",
+        "6.5-9.5s pauses with curled hands still over keys, no unambiguous supported trackpad scroll.",
+        "10.5-13s resumed typing; 13.5-15s hands withdraw onto table and torso leans back.",
+        "Face and identity fairly stable, but incorrect navigation/contact and excessive final withdrawal fail."
+      ],
+      "revision": "Wan 2.6, flatter relaxed fingers, explicit supported trackpad slide, one short scroll and low return."
+    },
+    {
+      "run_id": "01-computer-sequence-wan-v2",
+      "decision": "provisional_selected",
+      "observations": [
+        "0-1.5s reads screen, 1.5-4.5s looks at keyboard while entering short phrase. Hands stay low with wrists on cushion.",
+        "4.5-8.5s right hand repositions locally and makes sparse key presses; left stays on keys. Movement is larger than millimeters but retains nearby-key purpose.",
+        "8.5-10.5s supported reading pause, 11-12.5s short right-hand correction then resting hands and slight shoulder settling.",
+        "Natural skin and stable appearance; mostly fixed camera. No gross finger splay or off-keyboard reach from earlier take."
+      ],
+      "limitations": [
+        "Keyboard gaze lasts about six seconds, longer than requested.",
+        "Sparse-key navigation is visually plausible but cannot verify what appears on hidden screen; mouth parts briefly near 12s."
+      ]
+    },
+    {
+      "run_id": "03-computer-sequence-wan-v2",
+      "decision": "rejected",
+      "observations": [
+        "0-3s good quiet screen engagement and low hands.",
+        "3.3-4.5s right hand crosses over left and curls high during attempted trackpad transfer; both hands rise unnecessarily.",
+        "5-9s returns to low keyboard action; 9.8-11s reaches across again; 12.8-14.5s repeated hand crossing/curled fingers.",
+        "Face/gaze and identity remain fairly natural, camera static. Contact-transition failure outweighs facial quality."
+      ],
+      "revision": "Remove trackpad transfer; use nearby-key navigation and long reading pauses, each hand stays on own keyboard half."
+    },
+    {
+      "run_id": "03-computer-sequence-wan-v3",
+      "decision": "provisional_segment_only",
+      "observations": [
+        "0-1.3s quiet reading with resting hands; 1.3-3.7s low localized typing; 3.8-5.3s mostly still reading pause.",
+        "5.4-6.4s brief key activity, 6.5-7.4s right hand shifts locally toward central pad with index contact; other fingers curl more than ideal but forearm remains supported.",
+        "7.5-8.8s returns to letter keys and reads; final small presses begin near 8.9s. Gaze is primarily screen-directed with short downward checks.",
+        "9.3-15s develops elevated resting hands and repeated lateral reach; full take rejected. Select 0-9s, longer than previous 6s, with no loops or slow motion."
+      ],
+      "limitations": [
+        "Only 9 of generated 15 seconds selected because of later contact failure.",
+        "Mid-sequence finger curl remains somewhat stiff; this is a provisional study, not flawless hand realism.",
+        "Requested exact trackpad scroll was not demonstrated; screen response remains unverified."
+      ],
+      "selected_range_seconds": [
+        0,
+        9
+      ]
+    }
+  ]
+}

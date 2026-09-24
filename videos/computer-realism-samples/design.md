@@ -1,0 +1,3 @@
+# Observational comparison
+
+Three quiet, uninterrupted computer-use samples with all attention on hands, gaze and supported posture. The original photographic frame fills 16:9. The laptop and near hand anchor the lower edge, the face occupies the upper right, and ordinary window light supplies depth. No decorative overlays, transitions, captions, font assets, cosmetic grading or added camera motion are appropriate for this behavioral test. Silent by intent. Preserve native playback speed and all six seconds so failures remain inspectable. The separate browser comparison page may use system text outside the clips.

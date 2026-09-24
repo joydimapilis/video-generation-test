@@ -1,0 +1,29 @@
+{
+  "duration": 36,
+  "assertions": [
+    {
+      "kind": "appearsBy",
+      "selector": ".f01-brief-briefline",
+      "bySec": 4
+    },
+    {
+      "kind": "appearsBy",
+      "selector": ".f03-campaign-email-main",
+      "bySec": 25.2
+    },
+    {
+      "kind": "before",
+      "a": ".f03-campaign-page-main",
+      "b": ".f03-campaign-email-main"
+    },
+    {
+      "kind": "staysInFrame",
+      "selector": ".f03-campaign-email-main"
+    },
+    {
+      "kind": "appearsBy",
+      "selector": ".f04-review-url",
+      "bySec": 33.5
+    }
+  ]
+}

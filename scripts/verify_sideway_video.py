@@ -1,4 +1,6 @@
 """Check final Sideway encode, native audio alignment and image-first provenance."""
+from amarillo.delivery import require_reverse_engineering
+
 import hashlib,json,subprocess
 from pathlib import Path
 import numpy as np
@@ -11,6 +13,7 @@ def frame(p,t,filters='',w=540,h=960):
  f=(filters+',' if filters else '')+f'scale={w}:{h}'
  return np.frombuffer(run('ffmpeg','-v','error','-ss',str(t),'-i',str(p),'-frames:v','1','-vf',f,'-pix_fmt','rgb24','-f','rawvideo','-'),dtype=np.uint8).reshape(h,w,3).astype(float)
 def main():
+ require_reverse_engineering(V)
  s=(R/'check-final.json').read_text();check=json.loads(s[s.index('{'):]);assert check['ok'];assert all(check[k]['errorCount']==0 for k in ['lint','runtime','layout','motion','contrast'])
  meta=json.loads(run('ffprobe','-v','error','-show_streams','-show_format','-of','json',str(V)));v=next(x for x in meta['streams'] if x['codec_type']=='video');assert(v['width'],v['height'],v['r_frame_rate'],int(v['nb_frames']))==(1080,1920,'24/1',864);assert abs(float(meta['format']['duration'])-36)<.05
  decode=subprocess.run(['ffmpeg','-v','error','-i',str(V),'-f','null','-'],capture_output=True);assert decode.returncode==0 and not decode.stderr

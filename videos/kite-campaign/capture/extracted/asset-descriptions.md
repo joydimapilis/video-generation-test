@@ -1,0 +1,77 @@
+# Asset Descriptions
+
+⚠️  No vision credentials — descriptions below are catalog-derived (alt text, headings, section context, filename) instead of Vision-generated. To get richer Vision descriptions on the next capture, set GEMINI_API_KEY (or GOOGLE_API_KEY), or HYPERFRAMES_VERTEX_PROJECT_ID plus HYPERFRAMES_VERTEX_SERVICE_ACCOUNT for Vertex service-account auth, and re-run.
+
+The `logo-<hash>.svg` filename prefix is a structural hint (DOM said this SVG was inside a `<header>`, home-link `<a>`, or had an aria-label matching the page brand). To pick the actual brand logo without Vision, open the `logo-*` candidates in a previewer or rasterize them with `sharp` before referencing — composing a fake logo ships off-brand in the final video.
+
+- aedndfxjkpmznlnq3ruy.png — 4472KB, section: "I’m an AI marketer."
+- ccedox3dsit1ujzuxwcs.jpg — 38KB, ccedox3dsit1ujzuxwcs
+- chjjrsmnpqykjz97a6f7.png — 3715KB, section: "I’m an AI marketer."
+- favicon.svg — 0KB, favicon
+- icon-icon-unsized.svg — 0KB, icon icon unsized
+- im-an-ai-marketer.png — 3725KB, im an ai marketer
+- kite-slack-app-icon.png — 100KB, section: "Let’s walk through our first week together."
+- kite.png — 72KB, kite
+- lets-walk-through-our-first-week-togethe.png — 30KB, lets walk through our first week togethe
+- og-image.png — 910KB, og image
+- slack-avatar-dessi.png — 29KB, section: "Let’s walk through our first week together."
+- slack-avatar-pedro.png — 29KB, section: "Let’s walk through our first week together."
+- slack-avatar-vinay.png — 31KB, section: "Let’s walk through our first week together."
+- svg-13ebc8df.svg — 1KB, svg 13ebc8df
+- svg-27ff7cde.svg — 2KB, svg 27ff7cde
+- svg-63596dbb.svg — 2KB, svg 63596dbb
+- svg-9977f1db.svg — 1KB, svg 9977f1db
+- svg-a82cc793.svg — 2KB, svg a82cc793
+- svg-c8a24da7.svg — 1KB, svg c8a24da7
+- svg-e1838e32.svg — 2KB, svg e1838e32
+- tqjocorgix78ug1ugzw0.png — 3378KB, section: "I’m an AI marketer."
+- xkjnov9dwsmfmvrw0fhi.png — 3569KB, section: "I’m an AI marketer.", above fold
+- svgs/logo-182f63de.svg — logo 182f63de
+- svgs/svg-051218af.svg — svg 051218af
+- svgs/svg-14b15f52.svg — svg 14b15f52
+- svgs/svg-2678321a.svg — svg 2678321a
+- svgs/svg-3eac1414-2.svg — svg 3eac1414 2
+- svgs/svg-3eac1414.svg — svg 3eac1414
+- svgs/svg-4d568533.svg — svg 4d568533
+- svgs/svg-6109d94d.svg — svg 6109d94d
+- svgs/svg-61ac5e7f.svg — svg 61ac5e7f
+- svgs/svg-6ac8202e-2.svg — svg 6ac8202e 2
+- svgs/svg-6ac8202e.svg — svg 6ac8202e
+- svgs/svg-73c703df.svg — svg 73c703df
+- svgs/svg-92ff8089.svg — svg 92ff8089
+- svgs/svg-ad2e7f39.svg — svg ad2e7f39
+- svgs/svg-bb550330.svg — svg bb550330
+- svgs/svg-c328b758.svg — svg c328b758
+- svgs/svg-c7c7bb91.svg — svg c7c7bb91
+- svgs/svg-c9e021d4-2.svg — svg c9e021d4 2
+- svgs/svg-c9e021d4.svg — svg c9e021d4
+- svgs/svg-cb59746c.svg — svg cb59746c
+- svgs/svg-cc87f310-2.svg — svg cc87f310 2
+- svgs/svg-cc87f310.svg — svg cc87f310
+- svgs/svg-dba1455f.svg — svg dba1455f
+- svgs/svg-dd0a6d0b.svg — svg dd0a6d0b
+- svgs/svg-e36a5ebd.svg — svg e36a5ebd
+- svgs/svg-ef9d8b85-2.svg — svg ef9d8b85 2
+- svgs/svg-ef9d8b85.svg — svg ef9d8b85
+- svgs/svg-fb1fe583-2.svg — svg fb1fe583 2
+- svgs/svg-fb1fe583.svg — svg fb1fe583
+- svgs/svg-fee544d6.svg — svg fee544d6
+- fonts/16d91c780434f2ce-s.0y1w0k24nk0rl.woff2 — font file
+- fonts/345c85a432359eed-s.p.0zem_9y19rte6.woff2 — font file
+- fonts/4084ce120da2621a-s.0for97nelvzih.woff2 — font file
+- fonts/4d81d00cb6dc755c-s.3j7br4w5g0o3h.woff2 — font file
+- fonts/58c4895d0a0ef7cc-s.2vhvl9vrvk-va.woff2 — font file
+- fonts/611a8bd7707cff25-s.1vqdc5lvrb4tb.woff2 — font file
+- fonts/6ab0db14f70d8ed6-s.13hnt-xgp82zk.woff2 — font file
+- fonts/8e451580e5e95631-s.p.27vw08z6_vw0m.woff2 — font file
+- fonts/9be384ea93fe3f49-s.p.0ig786lf0ff2-.woff2 — font file
+- fonts/InterVariable_latin-s.p.1oos_aa5h6h8w.woff2 — font file
+- fonts/a342834df7752944-s.3hd2l7bm32o7k.woff2 — font file
+- fonts/a343f882a40d2cc9-s.p.1sj6eobyi31rd.woff2 — font file
+- fonts/a45e4938f2a14ebd-s.3e-lg5zbsykpq.woff2 — font file
+- fonts/b529365fa126a3f2-s.441olqq_uijdr.woff2 — font file
+- fonts/bfc7db5c00d21bc5-s.173xwsdme27n8.woff2 — font file
+- fonts/d3fe2f289711ac3f-s.1l2zhvq5eocqf.woff2 — font file
+- fonts/d74bdd14d6019bc6-s.097vcw437jzga.woff2 — font file
+- fonts/da28569d36042d01-s.2tfobr5_17yq8.woff2 — font file
+- fonts/ef79401ea952b7f0-s.0t4d9turf_6_x.woff2 — font file

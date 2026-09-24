@@ -1,0 +1,41 @@
+{
+  "experiment": "computer-realism-seedance-correction",
+  "budget_root": "artifacts/library-loop-computer-realism",
+  "source_still_review": "videos/computer-realism-samples/source-reviews.json",
+  "runs": [
+    {
+      "id": "01-typing-seedance-v2",
+      "endpoint": "bytedance/seedance-2.0/image-to-video",
+      "estimate_cents": 152,
+      "use_case": "computer_interaction",
+      "audio_requested": false,
+      "hypothesis": "Reroute from rejected Kling large finger/hand lifts; five-second single small action, fixed frame, retained supported contact. Model and prompt changed; not a model-only controlled test.",
+      "input": {
+        "prompt": "Locked-off tripod shot at normal real-time speed for five seconds. Keep the exact framing and all desk and window edges fixed in the picture. Preserve the person, age, face, skin texture, clothing and laptop from the supplied image. The seated man quietly types a few words on this keyboard. Keep movement small and localized: alternating fingertips depress the keys they already touch, returning close to those keys. Unequal, irregular finger timing, low wrists, forearms resting where they already are. There is a brief natural hesitation between words. He watches the laptop display and breathes normally, with a quiet blink. His head barely adjusts. Finish with hands still comfortably at the keyboard. No raised hands, no performance for camera, no talking or smiling, no push-in, no zoom or cuts.",
+        "image_url": "local:artifacts/library-loop-computer-realism/source-images/01-typing.png",
+        "duration": "5",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "bitrate_mode": "standard"
+      }
+    },
+    {
+      "id": "02-trackpad-seedance-v2",
+      "endpoint": "bytedance/seedance-2.0/image-to-video",
+      "estimate_cents": 152,
+      "use_case": "computer_interaction",
+      "audio_requested": false,
+      "hypothesis": "Reroute from rejected Kling large finger/hand lifts; five-second single small action, fixed frame, retained supported contact. Model and prompt changed; not a model-only controlled test.",
+      "input": {
+        "prompt": "Locked-off tripod shot at normal real-time speed for five seconds. Keep the exact framing and all desk and window edges fixed in the picture. Preserve the person, age, face, skin texture, clothing and laptop from the supplied image. The seated man reads the laptop document. The two fingertips already touching the trackpad make one short slow glide along the pad, then stop and remain lightly resting on it. Their wrist stays supported. The other hand remains comfortably on the wooden desk, with a slight independent relaxation of its fingers. His eyes follow the content within the screen with a quiet blink; head and shoulders make only a subtle breathing adjustment. Keep the existing hand roles, normal anatomy, skin texture and support. No typing, hand lifting, gesturing, speech, smile, camera motion or cuts.",
+        "image_url": "local:artifacts/library-loop-computer-realism/source-images/02-trackpad-v3.png",
+        "duration": "5",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "bitrate_mode": "standard"
+      }
+    }
+  ]
+}

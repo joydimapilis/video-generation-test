@@ -1,6 +1,8 @@
 """Verify delivered Portion media, source selection, exact data and budget.
 Perceptual scores remain subjective in scorecard.json; these are technical checks.
 """
+from amarillo.delivery import require_reverse_engineering
+
 from pathlib import Path
 import hashlib,io,json,subprocess,wave
 import numpy as np
@@ -13,6 +15,7 @@ def cmd(args):return subprocess.check_output(args)
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def frame(path,t,filter='scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080'):
     return Image.open(io.BytesIO(cmd(['ffmpeg','-v','error','-ss',f'{t:.6f}','-i',str(path),'-vf',filter,'-frames:v','1','-f','image2pipe','-vcodec','png','-']))).convert('RGB')
+require_reverse_engineering(FINAL)
 probe=json.loads(cmd(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(FINAL)]))
 v=next(x for x in probe['streams'] if x['codec_type']=='video');a=next(x for x in probe['streams'] if x['codec_type']=='audio')
 assert(v['width'],v['height'],v['r_frame_rate'],int(v['nb_frames']))==(1920,1080,'24/1',864)

@@ -1,0 +1,36 @@
+{
+  "status": "tested-limited-negative",
+  "source": "review_notes/sideway/sample02-test-results.json",
+  "patterns": [
+    {
+      "name": "Support the resting hand in the source",
+      "finding": "Cafe hand lowered onto clothing but this alone did not fix facial performance. Phone return starts with supported hand, yet mouth movement remained.",
+      "evidence": [
+        "sideway_phone_sample02_wan_v3",
+        "sideway_arrival_sample02_wan_v3",
+        "sideway_reading_sample02_wan_v4"
+      ],
+      "generalization": "Single attempts; no causal reference conclusion."
+    },
+    {
+      "name": "Do not import reference actions wholesale",
+      "finding": "Sample02 cafe includes sipping/extended eye closure; speaking clip develops broad smile. Borrow only compatible cues.",
+      "evidence": "review_notes/sideway/sample02-movement-review.md",
+      "generalization": "Reference-selection observation, not model benchmark."
+    },
+    {
+      "name": "Give the free hand a purposeful resting place",
+      "finding": "User rejected splayed hand on trouser front. V4 moves hand into outer hip pocket but lifts gaze to camera. Continuing from the last reviewed lowered-head frame (1.9375s) with a short pocket-settle action yields a usable hand-focused segment; mild facial motion persists.",
+      "evidence": [
+        "sideway_arrival_left_pocket_v4",
+        "sideway_arrival_pocket_settle_v5"
+      ],
+      "generalization": "Single source and two trials. Pocket gesture is a new hypothesis, not an observed sample02 motion or validated general model behavior."
+    }
+  ],
+  "avoid": [
+    "Calling rejected candidates improved replacements",
+    "Attributing effects to reference alone when model/source/resolution/rate also change",
+    "Promoting extracted usable moments as a successful full take"
+  ]
+}

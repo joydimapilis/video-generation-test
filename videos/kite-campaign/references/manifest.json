@@ -1,0 +1,26 @@
+{
+  "library": "/Users/joydimapilis/Desktop/untitled folder/Startup Launch Videos",
+  "file_count": 11,
+  "selection": [
+    {
+      "genre": "brief_to_output",
+      "source": "/Users/joydimapilis/Desktop/untitled folder/Startup Launch Videos/Motion-5-Motion plans the video scene by scene before building it..mp4",
+      "name": "Motion-5-Motion plans the video scene by scene before building it..mp4",
+      "duration": 32.531156,
+      "resolution": "3840x2160",
+      "shape": "landscape",
+      "has_audio": true,
+      "contact_sheet": "videos/kite-campaign/references/01-brief_to_output.jpg"
+    },
+    {
+      "genre": "readable_interaction",
+      "source": "/Users/joydimapilis/Desktop/untitled folder/Startup Launch Videos/Paper.mp4",
+      "name": "Paper.mp4",
+      "duration": 32.96,
+      "resolution": "1920x1080",
+      "shape": "landscape",
+      "has_audio": true,
+      "contact_sheet": "videos/kite-campaign/references/02-readable_interaction.jpg"
+    }
+  ]
+}

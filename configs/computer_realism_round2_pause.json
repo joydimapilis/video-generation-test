@@ -1,0 +1,24 @@
+{
+  "experiment": "computer-realism-seedance-correction",
+  "budget_root": "artifacts/library-loop-computer-realism",
+  "source_still_review": "videos/computer-realism-samples/source-reviews.json",
+  "runs": [
+    {
+      "id": "03-read-pause-seedance-v2",
+      "endpoint": "bytedance/seedance-2.0/image-to-video",
+      "estimate_cents": 152,
+      "use_case": "computer_interaction",
+      "audio_requested": false,
+      "hypothesis": "Kling rejected for withdrawing arms and fist-like pose; new reviewed lit-screen still and simpler pause retaining hand support, Seedance2 at native speed.",
+      "input": {
+        "prompt": "Locked-off tripod camera, one uninterrupted five-second shot at normal speed. Preserve this man, ordinary face texture, hair, shirt, chair, desk, lit laptop display and exact framing from the supplied image. He remains seated and engaged with his computer. For roughly the first two seconds he types a few characters with small independent fingertip movements close to the keyboard; low wrists and supported forearms remain where they are. He then pauses naturally to read the screen. Both hands stay at the keyboard, with fingertips relaxed near their keys, not curling up or withdrawing. His gaze briefly checks the keys then returns to the middle of the screen, with only a small head inclination and a quiet blink. One subtle breath moves the shirt; shoulders settle a little without a large lean. Finish in the same working posture. Keep all window, screen and desk edges fixed. No gestures, raised hands, speech, camera-facing look, performed smile, zoom, pan, reframing, slow motion or cuts.",
+        "image_url": "local:artifacts/library-loop-computer-realism/source-images/03-read-pause-v2.png",
+        "duration": "5",
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "bitrate_mode": "standard"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "video": "kite-tomorrow",
+  "cumulative_ceiling_usd": 10,
+  "historical_ledger": {
+    "currency": "Higgsfield credits",
+    "attempts": [
+      {
+        "model": "Kling 3 Pro",
+        "duration": 6,
+        "quoted_credits": 9,
+        "status": "rejected-gaze"
+      },
+      {
+        "model": "Kling 3 Pro",
+        "duration": 6,
+        "quoted_credits": 9,
+        "status": "rejected-gaze"
+      },
+      {
+        "model": "Veo 3.1 Fast high",
+        "duration": 4,
+        "quoted_credits": 11,
+        "status": "selected-first-1.8-seconds-at-half-speed"
+      },
+      {
+        "model": "Sonilo Music",
+        "duration": 38,
+        "quoted_credits": 2.38,
+        "status": "completed"
+      }
+    ],
+    "total_quoted_credits": 31.38,
+    "source_image": "one built-in image generation; no USD invoice provided",
+    "local_audio_render_cost_usd": 0,
+    "usd_note": "Credits are reported directly; no unverified current conversion is claimed."
+  },
+  "historical_credits_confirmed": 31.38,
+  "historical_usd": null,
+  "source_image_usd": null,
+  "revision_paid_generation_usd": 0,
+  "paid_requests_submitted": [],
+  "note": "Same cumulative video budget; not reset. Unknown historical USD prevents further paid reservations."
+}

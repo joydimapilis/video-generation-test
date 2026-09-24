@@ -1,0 +1,25 @@
+{
+  "project": "kite-core-demo",
+  "budget_root": "artifacts/library-loop-kite-core-demo",
+  "runs": [
+    {
+      "id": "kite_core_paper_v1",
+      "use_case": "product_ad",
+      "estimate_cents": 56,
+      "endpoint": "fal-ai/kling-video/v3/pro/text-to-video",
+      "input": {
+        "prompt": "A single five-second cinematic macro product still life. On the right half of a dark charcoal desk sits one small sculptural folded paper kite, matte sky blue paper, a clean simple diamond fold with a short paper tail, beside three blank warm ivory note cards. The left half is mostly empty dark negative space for titles added later. Soft large window light from camera left reveals real paper fibers and fold edges, restrained natural shadows. The objects stay perfectly still. One very slow straight camera push inward, no orbit, no cuts, no transformation, no hands or people. Premium understated product photography, tactile materials, physically coherent contact shadows. All paper and surfaces are completely blank. Landscape composition.",
+        "duration": "5",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "shot_type": "customize",
+        "negative_prompt": "text, letters, logos, watermark, people, hands, object morphing, fluttering paper, fast camera, cuts, excessive blur",
+        "cfg_scale": 0.5
+      },
+      "rationale": "Bounded cinematic paper-object test; no directly compatible learned T2V endorsement. Exact UI separate.",
+      "pricing_source": "https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video",
+      "pricing_checked": "2026-09-23",
+      "scope": "core"
+    }
+  ]
+}

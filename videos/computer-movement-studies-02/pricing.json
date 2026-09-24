@@ -1,0 +1,15 @@
+{
+  "checked_date": "2026-09-19",
+  "sources": [
+    "https://fal.ai/models/fal-ai/veo3.1/image-to-video",
+    "https://api.fal.ai/v1/models/pricing?endpoint_id=fal-ai%2Fnano-banana-pro"
+  ],
+  "nano_usd_per_1k_or_2k_image": 0.15,
+  "veo_silent_1080p_usd_per_second": 0.2,
+  "veo_audio_on_base_api_quote": 0.4,
+  "settings_specific_price_note": "Official playground explicitly quotes silent 720p/1080p at .20/s. API generic .40 is audio-on base.",
+  "initial_estimate_usd": 4.05,
+  "initial_reservation_usd": 4.68,
+  "remaining_reserved_capacity_usd": 5.32,
+  "confirmed_spend_usd": null
+}

@@ -58,6 +58,8 @@ def main() -> None:
     recommend.add_argument("--scoreboard", default="artifacts/scoreboards/latest.json")
     compose = sub.add_parser("compose-brief")
     compose.add_argument("--brief", required=True)
+    compose.add_argument("--reference-review", required=True,
+                         help="Recorded general-library footage review JSON, required before planning")
     outputs = sub.add_parser("catalog-outputs")
     outputs.add_argument("--results", default="artifacts/results/latest.jsonl")
     evaluate = sub.add_parser("evaluate-outputs")
@@ -126,6 +128,7 @@ def main() -> None:
             Path("prompt_library/patterns.json"),
             Path("artifacts/recommendations/latest.json"),
             Path("artifacts/brief_plans/latest.json"),
+            reference_review_path=Path(args.reference_review),
         )
         print(f"Selected {plan['selected_variant_id']} with {plan['recommended_model']}.")
     elif args.command == "catalog-outputs":

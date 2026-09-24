@@ -1,0 +1,16 @@
+{
+  "source_project": "videos/kite-tomorrow-final",
+  "human_run": "kite_person_seedance2_purposeful_contact_v2",
+  "human_source": "artifacts/library-loop-kite-tomorrow/outputs/kite_person_seedance2_purposeful_contact_v2.mp4",
+  "human_sha256": "23e9208d031ce3e82fe96a44dc24c7373d280e384b29a70ebc223c35b5396358",
+  "source_range_seconds": [
+    0,
+    3.6
+  ],
+  "playback_rate": 1,
+  "new_paid_generation": false,
+  "incremental_cost_usd": 0,
+  "generation_ledger": "artifacts/library-loop-kite-tomorrow/budget.json",
+  "revision": "Slack UI reference reconstruction and page-preview refinement",
+  "reference": "artifacts/Slack UI.webp"
+}

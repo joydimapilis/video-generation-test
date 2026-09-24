@@ -9,10 +9,10 @@ new production.
 ## Ownership and authorization
 
 - Own the creative and technical decisions. Choose the concept treatment, script,
-  shot plan, models, tools, and implementation; state useful assumptions briefly.
-  Ask only for a genuine blocker, such as an essential missing fact or asset,
-  inaccessible required service, or an unavoidable budget conflict. Do not ask
-  the user to select models, tools, technical approaches, or intermediate options.
+  shot plan, models, tools, and implementation. Do not ask for approvals or
+  follow-up questions. Make necessary decisions using available context and
+  record assumptions in production records. If an unavoidable blocker prevents
+  completion, report it concisely without inventing facts or exceeding the budget.
 - A request for a finished video authorizes generation, revisions, assembly, and
   final rendering within the budget below. Continue through final MP4 delivery.
   Do not require storyboard, stage, or final-render approval unless the user
@@ -30,18 +30,38 @@ new production.
 
 ## Research and planning
 
-- Before planning, review relevant videos from the existing reference library.
+- Before planning, review relevant videos from the existing general video reference library.
   Use `src/amarillo/library.py` and `scripts/inspect_library_slice.py`; library
   discovery uses `AMARILLO_LIBRARY_DIR`, `data/library`, or prior manifests as
   documented in `README.md`. Inspect the actual relevant footage and pacing;
   contact sheets and existing analyses support this review. If media is missing,
   report the limitation and use available evidence rather than claiming a review.
+- For every new request, including a one-sentence request, perform this research
+  automatically before writing the shot plan: resolve the general library, choose
+  relevant filename terms from its actual inventory, and run
+  `scripts/inspect_library_slice.py --out videos/<name>/references --terms <terms.json>`.
+  Inspect the selected footage and pacing, then write
+  `videos/<name>/reference-review.json` using the schema in
+  `docs/CORE_VIDEO_WORKFLOW.md`. Run `scripts/verify_reference_review.py` on that
+  record before planning. Contact sheets alone do not complete the review.
+  Do not substitute the Phase 2 library if references are unavailable; report the
+  missing general-media dependency and do not claim the research gate passed.
+- The human-movement reference library (`references/human-realism/`) is reserved
+  for separate Phase 2 evaluation and improvement of human realism. Do not make
+  studying, selecting, comparing against, or conditioning on those movement clips
+  part of default video generation. Preserve the clips and their review records
+  for Phase 2; the general video reference review above remains part of production.
 - Apply relevant `analysis_notes/`, `review_notes/`, `docs/*SCORECARD.md`, production
   runbooks, and `prompt_library/tested_*_patterns.json`. Consult
-  `artifacts/learning/latest.json` and refresh cross-loop evidence with
+  `artifacts/learning/core.json` and refresh cross-loop evidence with
   `scripts/learn_from_loops.py` when needed. Use `docs/AUTOMATED_VIDEO_LAB.md` for
   the evidence and review workflow. Recent relevant failures and user corrections
   take precedence over older successful examples or static model recommendations.
+  `latest.json` remains the complete historical archive; core routing and prompt
+  memory exclude Phase 2 research. Preserve original review statuses and failed
+  attempts. Whole-take `selected`, `accepted`, and `approved` decisions are eligible
+  alongside `accept` and `provisional`; segment-only decisions are not blanket
+  approval of the full take.
 - Consider the relevant techniques already reviewed in
   `docs/VIDEO_PROMPTS_TOPIC_REVIEW.md`, `docs/ROUND8_RESEARCH_AND_LEARNINGS.md`, and
   `docs/CREW_REALISM_REPORT.md` from https://github.com/topics/video-prompts.
@@ -65,8 +85,11 @@ new production.
 - Use HyperFrames or deterministic rendering for accurate UI, typography,
   captions, product screens, and text-heavy scenes. Follow the installed
   composition skills instead of asking generative footage to render exact text.
-- For generated scenes involving people, generate a source image first and
-  internally review it before image-to-video. An exception needs a strong reason
+- The normal workflow for generated scenes involving people is **source image
+  → internal image review → image-to-video → motion review**. Generate a source
+  image first and internally review it before image-to-video. This workflow
+  remains part of default production, independent of the Phase 2 movement library.
+  An exception needs a strong reason
   documented in the shot plan, such as an already suitable supplied reference.
   Establish identity, pose, gaze target, hands, and object contact in the still;
   retain the reviewed reference and its provenance for subsequent shots.
@@ -123,13 +146,31 @@ new production.
   the existing production records. Update applicable scorecards, reusable prompt
   learnings, and routing evidence; refresh the legacy artifacts when that pipeline
   was used. Keep untested dimensions null and subjective judgments labeled.
+- Every final video must have its own `<mp4-stem>.reverse-engineering.md` in the
+  same folder as that MP4. Three videos require three individual documents, even
+  when they share a project, ledger, or source shots. Include that video's timed
+  structure, exact prompts, models/methods and settings, routing decisions,
+  revisions, failed attempts, and final learnings. State explicitly when no
+  generation prompts, revisions, or failures apply; never invent missing history.
+  Write a separate factual production JSON record for each video and run
+  `scripts/reverse_engineering.py write <final.mp4> <record.json>` after rendering.
+  Then run the existing technical/perceptual final checks and
+  `scripts/reverse_engineering.py check <final.mp4> [<other-final.mp4> ...]`.
+  Missing, empty, shared, or stale documents block completion of the affected
+  video. A combined report is supplementary and cannot satisfy this gate.
+  Record each document path and hash returned by the gate in the delivery
+  manifest. Do not mark the video/project complete or deliver it as finished
+  until all required video documents and final quality checks pass. New custom
+  finalizers must call `amarillo.delivery.require_reverse_engineering` before
+  writing success/completion records; rendering alone is not completion.
 - Follow the existing layout: editable projects in `videos/<name>/` (or an existing
   `hyperframes/<name>/` project), final media in `artifacts/final_outcome/<name>/`,
   delivery manifests in `assembled_outputs/`, and durable reviews in `review_notes/`
   and `docs/`. Preserve source media and the repository's media-exclusion policy.
-  Deliver a clickable final MP4 path, editable project path, cost summary, and any
-  material limitations. Do not stop at a plan, storyboard, preview, or loose shots
-  when the user requested a finished video.
+  Return only the final video output as a clickable final MP4 path. Keep the
+  editable project path, cost summary, and material limitations in the delivery
+  manifest and production records. Do not stop at a plan, storyboard, preview,
+  or loose shots when the user requested a finished video.
 
 ## Demo Videos workspace
 

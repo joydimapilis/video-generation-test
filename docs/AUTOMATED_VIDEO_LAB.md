@@ -4,6 +4,27 @@ The existing library analyses and finished films remain the foundation. This
 extension joins the previously separate experiment ledgers and reviews into one
 evidence library, adds compatible-shot routing, and closes a budget resume bug.
 
+The mandatory new-request research gate and per-video completion gate are in
+[CORE_VIDEO_WORKFLOW.md](CORE_VIDEO_WORKFLOW.md). Review the configured general
+library before shot planning. Each final MP4 needs a separate adjacent
+`<mp4-stem>.reverse-engineering.md`; finalizers reject missing or stale documents.
+
+## People scenes and Phase 2 movement references
+
+Normal production follows **source image → internal image review → image-to-video
+→ motion review** for generated scenes involving people. Establish identity, pose,
+gaze, hands and object contact in the still before animating it; retain the reviewed
+image and provenance. Document any justified exception in the shot plan, as required
+by `AGENTS.md`. Review every generated take and revise weak images or motion within
+the same video's budget.
+
+The human-movement library in `references/human-realism/` is reserved for separate
+Phase 2 evaluation and improvement of human realism. Studying those clips, selecting
+movement ranges, comparing against them or using them for conditioning is not a
+default generation step. Keep the clips and historical reviews available for that
+phase. General video reference research, prior production learnings and normal
+realism checks still apply; source-image generation does not depend on this library.
+
 ## Run and resume
 
 ```sh
@@ -35,6 +56,16 @@ loop is installed.
 with their evidence and scorecards. It carries every requested visual dimension,
 with `null` for untested dimensions, and preserves prompts, settings, costs,
 latency, successes, rejections and provider failures.
+
+Use `artifacts/learning/core.json` for normal production decisions. It excludes
+Phase 2 research from both routing and prompt memory. The complete `latest.json`
+history is retained and archived before refresh. Previously recorded rows with
+unavailable ledgers remain historical-only rather than disappearing.
+Whole-take `selected`, `accepted`, and `approved` decisions are compatible with
+`accept` and `provisional`, without rewriting original labels. Rejected,
+superseded and segment-only takes stay available as lessons, not whole-take
+endorsements. Recommendations include compatible success/failure findings under
+`lessons`; unavailable or unverified media never acquires a verified score.
 
 The router compares only the same use case, image-conditioning mode, and requested
 audio mode. It averages the same four historical criteria, excludes rejected or

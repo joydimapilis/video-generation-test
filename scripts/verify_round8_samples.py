@@ -1,4 +1,6 @@
 """Verify delivery against source media, composition checks and the shared ledger."""
+from amarillo.delivery import require_reverse_engineering, require_video_documents
+
 import hashlib
 import json
 import subprocess
@@ -22,9 +24,11 @@ def frame(path,t):
 def main():
     results=[]
     builds=json.loads((ROOT/'sample-build.json').read_text())
+    require_video_documents([DELIVERY / (Path(spec['project']).name + '.mp4') for spec in builds])
     selection=json.loads((ROOT/'sample-selection.json').read_text())
     for spec in builds:
         project=Path(spec['project']);name=project.name;path=DELIVERY/(name+'.mp4')
+        require_reverse_engineering(path)
         check=json.loads((ROOT/('check-'+name+'.json')).read_text())
         assert check['ok'] and check['contrast']['checked']>0
         assert not any(v.get('findings') for k,v in check.items() if k in ['lint','runtime','layout','motion','contrast'])

@@ -1,0 +1,11 @@
+{
+  "video": "kite-tomorrow",
+  "ledger": "../../artifacts/library-loop-kite-tomorrow/budget.json",
+  "new_estimate_usd": 2.73,
+  "new_reserved_usd": 3.14,
+  "confirmed_new_charge_usd": null,
+  "historical_higgsfield_credits": 31.38,
+  "historical_source_image_usd": null,
+  "cumulative_usd": null,
+  "note": "One explicitly authorized incremental $3.14 test; prior unknown costs retained. Billing query returned 403. No new image/audio generation."
+}

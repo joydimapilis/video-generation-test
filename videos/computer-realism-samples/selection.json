@@ -1,0 +1,46 @@
+{
+  "reviewed": true,
+  "samples": [
+    {
+      "name": "01-typing",
+      "source": "artifacts/library-loop-computer-realism/outputs/01-typing-veo-v3.mp4",
+      "source_image": "artifacts/library-loop-computer-realism/source-images/01-typing.png",
+      "source_start": 0,
+      "duration": 4,
+      "decision": "provisional",
+      "review": "review_notes/computer-realism-samples.json",
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "bb300a594678a63828a5f072283c5838dd4528386eac63e49b01c5cbe5bf4932",
+      "fps": "24/1"
+    },
+    {
+      "name": "02-trackpad",
+      "source": "artifacts/library-loop-computer-realism/outputs/02-trackpad-veo-v4.mp4",
+      "source_image": "artifacts/library-loop-computer-realism/source-images/02-trackpad-v3.png",
+      "source_start": 0,
+      "duration": 1.25,
+      "decision": "usable_segment_only",
+      "review": "review_notes/computer-realism-samples.json",
+      "review_limit": "Early fingertip contact/tap only; full take rejected for curled lifted-hand hold after 1.3s. Contact approaches trackpad edge; not validated sustained operation.",
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "2c4f3c8358e2ac94fef51cacac26d1f6927f0e9dd24b8f3ee1ff554506c1bc7d",
+      "fps": "24/1"
+    },
+    {
+      "name": "03-side-typing",
+      "source": "artifacts/library-loop-computer-realism/outputs/03-read-pause-veo-v3.mp4",
+      "source_image": "artifacts/library-loop-computer-realism/source-images/03-read-pause-v2.png",
+      "source_start": 0,
+      "duration": 1.5,
+      "decision": "usable_segment_only",
+      "review": "review_notes/computer-realism-samples.json",
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "ecb8d799e3668f6be76bfd012fa6c6fc16efb035cbc9e473cc953dd2d1f8f5d1",
+      "fps": "24/1",
+      "review_limit": "Full-resolution snapshot reveals pronounced curled-hand pose after approximately 1.7s; retain only 0\u20131.5s natural typing. No reading-pause claim."
+    }
+  ]
+}

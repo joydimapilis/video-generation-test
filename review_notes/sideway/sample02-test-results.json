@@ -1,0 +1,74 @@
+{
+  "runs": [
+    {
+      "id": "sideway_phone_sample02_wan_v3",
+      "decision": "rejected",
+      "scores": {
+        "prompt_adherence": 4,
+        "sampled_stability": 7,
+        "composition": 8,
+        "edit_readiness": 3,
+        "human_realism": 5,
+        "face_realism": 6,
+        "identity_consistency": 7,
+        "camera_movement": 8
+      },
+      "review": "Original still retained. Small initial touch, but finger remains hovering before lowering; unwanted lip movements occur early and again later. Head rises and gaze leaves the screen near 4.1s with a smile. Reject as a phone-use improvement. Full5.03125s take retained.",
+      "review_method": "Chronological 4fps portrait sheets over full takes; 8fps enlarged face/hand/prop sheets for original phone/cafe and first candidates. Source images directly inspected before calls. Full FFmpeg decode. Sampled visual judgment, not uninterrupted playback or calibrated realism measurement.",
+      "subjective_scores": true,
+      "motion_reference_video_uploaded": false,
+      "causal_reference_benefit": null,
+      "lip_sync": null
+    },
+    {
+      "id": "sideway_arrival_sample02_wan_v3",
+      "decision": "rejected",
+      "scores": {
+        "prompt_adherence": 6,
+        "sampled_stability": 7,
+        "composition": 8,
+        "edit_readiness": 5,
+        "human_realism": 6,
+        "face_realism": 6,
+        "identity_consistency": 7,
+        "camera_movement": 8
+      },
+      "review": "Partial movement improvement only: free left hand lowers and establishes resting contact on trousers by about1s; cup/hand relationship remains stable. Low eyelids, small cup excursion, smile-like lip change and facial softening remain. Not approved to replace full six-second slot; generated take is5.03125s. Delivered as partial-result comparison, not selected footage.",
+      "review_method": "Chronological 4fps portrait sheets over full takes; 8fps enlarged face/hand/prop sheets for original phone/cafe and first candidates. Source images directly inspected before calls. Full FFmpeg decode. Sampled visual judgment, not uninterrupted playback or calibrated realism measurement.",
+      "subjective_scores": true,
+      "motion_reference_video_uploaded": false,
+      "causal_reference_benefit": null,
+      "lip_sync": null
+    },
+    {
+      "id": "sideway_reading_sample02_wan_v4",
+      "decision": "rejected",
+      "scores": {
+        "prompt_adherence": 5,
+        "sampled_stability": 7,
+        "composition": 8,
+        "edit_readiness": 4,
+        "human_realism": 5,
+        "face_realism": 5,
+        "identity_consistency": 7,
+        "camera_movement": 8
+      },
+      "review": "Supported lap hand is steadier and eye direction generally stays near phone. Unwanted mouth opening/movement persists, phone/head settle lower, and480p loses facial detail. No clear overall improvement over original. Source extracted at2.4s after rejecting closed-eye frame1.75s. Full5.03125s retained.",
+      "review_method": "Chronological 4fps portrait sheets over full takes; 8fps enlarged face/hand/prop sheets for original phone/cafe and first candidates. Source images directly inspected before calls. Full FFmpeg decode. Sampled visual judgment, not uninterrupted playback or calibrated realism measurement.",
+      "subjective_scores": true,
+      "motion_reference_video_uploaded": false,
+      "causal_reference_benefit": null,
+      "lip_sync": null
+    }
+  ],
+  "scope": "Human realism diagnostic, not full-film replacement",
+  "new_estimate_cents": 25,
+  "new_reserved_cents": 30,
+  "cumulative_estimate_cents": 1037,
+  "cumulative_reserved_cents": 1197,
+  "cap_cents": 1200,
+  "confirmed_charge_cents": null,
+  "billing_note": "Published estimates, not verified invoice. Five prior image allowances remain reserved.",
+  "method": "Chronological 4fps portrait sheets over full takes; 8fps enlarged face/hand/prop sheets for original phone/cafe and first candidates. Source images directly inspected before calls. Full FFmpeg decode. Sampled visual judgment, not uninterrupted playback or calibrated realism measurement.",
+  "conclusion": "Cafe hand contact improves in isolation; no generated take passes all replacement criteria. Reference benefit is not established."
+}

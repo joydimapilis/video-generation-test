@@ -1,0 +1,29 @@
+{
+  "project": "kite-campaign",
+  "evidence_scope": "core",
+  "type": "deterministic_campaign_brand_film",
+  "review": "review_notes/kite-campaign-final-verification.json",
+  "judgment": "subjective visual acceptance with numerical technical checks; not a controlled study",
+  "patterns": [
+    {
+      "name": "single_brief_coherent_multichannel_result",
+      "guidance": "Keep one fictional client, audience and promise across the page/post/email; show one full-size output before the overview.",
+      "observed_result": "Encoded36second film keeps Relay copy and cream/navy/lime identity through all three outputs and final CTA.",
+      "limit": "One graphic film; no real Kite backend execution or measured effectiveness."
+    },
+    {
+      "name": "freeze_runtime_and_validate_before_layout",
+      "guidance": "When replacing CDN GSAP with a local file, remove or recompute the CDN integrity attribute. Use letter-prefixed selectors and verify font glyph coverage.",
+      "observed_result": "Initial blocked-runtime check failed; repaired runtime allowed meaningful layout and motion checks."
+    },
+    {
+      "name": "thumbnail_overlap_audit",
+      "guidance": "Inspect the ending overview at encoded resolution; omit nonessential covered text from decorative thumbnails while retaining it in full-size primary views.",
+      "observed_result": "Removed hidden landing-page CTA in ending only; final layout pass clear."
+    }
+  ],
+  "human_realism": null,
+  "audience_effectiveness": null,
+  "generation_prompts": [],
+  "paid_attempts": 0
+}

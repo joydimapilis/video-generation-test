@@ -1,0 +1,11 @@
+<!doctype html><html><body><template><style>#cafe-root{position:absolute;inset:0;width:100%;height:100%;background:#20231f}</style>
+ <div id="cafe-root" data-composition-id="cafe" data-width="1920" data-height="1080" data-duration="5">
+ <h1 class="headline">Sideway / human realism test</h1><div class="chapter">03  Café pause</div>
+ <p class="label old">Original · latest delivered take</p><p class="label new">Candidate · 720p</p><p class="label reference-label">sample02 / 216598 · 0–5s</p>
+ <video id="cafe-original" class="clip panel old" src="assets/arrival-original.mp4" data-start="0" data-duration="5" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline></video>
+ <video id="cafe-candidate" class="clip panel new" src="assets/arrival-candidate.mp4" data-start="0" data-duration="5" data-media-start="0" data-playback-rate="1" data-track-index="2" muted playsinline></video>
+ <video id="cafe-reference" class="clip reference" src="assets/cafe-reference.mp4" data-start="0" data-duration="5" data-track-index="3" muted playsinline></video>
+ <div class="note-box"><p class="verdict">Trial 1 · partial improvement</p><p class="note">Free hand lowers onto the trousers.</p><p class="note">Cup and holding hand stay connected.</p><p class="note">Low eyelids and posed expression remain.</p></div>
+ <div class="disclosure">Reference observations informed the prompt. Different model; no direct motion-video conditioning.</div>
+ <div class="footer">Original window 26–32s · first 5s compared at native speed</div><div id="cafe-progress" class="progress"></div>
+ </div><script>window.__timelines["cafe"]=gsap.timeline({paused:true}).fromTo("#cafe-progress",{scaleX:0},{scaleX:1,duration:5,ease:"none"},0);</script></template></body></html>

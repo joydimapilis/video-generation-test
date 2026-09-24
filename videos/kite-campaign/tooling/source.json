@@ -1,0 +1,5 @@
+{
+  "url": "https://raw.githubusercontent.com/heygen-com/hyperframes/main/packages/cli/src/media-use/lib/media-fetch.mjs",
+  "sha256": "744e322495c63d363f71cf95c6ce6a514642dad7e35fe0b25b97e75e6ecab871",
+  "purpose": "Restore missing dependency for installed assembly helper without altering core or global skills."
+}

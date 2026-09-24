@@ -1,0 +1,83 @@
+{
+  "runs": [
+    {
+      "id": "01-desktop-typing-veo-standard-v1",
+      "decision": "reject",
+      "scores": {},
+      "review": "Good identity and screen/key gaze, restrained shoulders and fixed framing. But fingers repeatedly arch and rise high from ~0.4s across take; palms/wrists lift from initial position, giving a piano-like typing rhythm rather than low-contact typing. Revise source to clear padded wrist rest and flatter finger pose before another animation.",
+      "review_method": "Chronological hand crops at 12fps (72 frames), full-frame and face crops at 4fps (24 each), all six seconds inspected; sampled visual review, not continuous playback. Subjective findings."
+    },
+    {
+      "id": "02-mouse-work-veo-standard-v1",
+      "decision": "reject",
+      "scores": {},
+      "review": "Palm, supporting fingers and wrist retain mouse/pad contact and mouse moves plausibly in small amounts; face/gaze stable. Index finger repeatedly lifts far above button around 1.9\u20133.6s instead of tiny contact click. Revise to cursor movement alone, all fingers settled on shell; avoid click instruction.",
+      "review_method": "Chronological hand crops at 12fps (72 frames), full-frame and face crops at 4fps (24 each), all six seconds inspected; sampled visual review, not continuous playback. Subjective findings."
+    },
+    {
+      "id": "03-laptop-typing-veo-standard-v1",
+      "decision": "provisional",
+      "scores": {
+        "prompt_adherence": 8,
+        "sampled_stability": 8,
+        "composition": 8,
+        "edit_readiness": 8,
+        "human_realism": 8,
+        "face_realism": 8,
+        "hand_body_movement": 8,
+        "identity_consistency": null,
+        "product_accuracy": null,
+        "text_ui_accuracy": null,
+        "speech_lip_sync": null
+      },
+      "review": "Full six-second candidate selected: hands stay near letter keys with independent modest presses, supported forearms and no late curled-hand hold. Gaze remains laptop-directed with small changes/blinks. Face keeps age/texture and hair/clothes stable. Brief mouth opening around 2.3\u20133.0s resembles an exhale; slightly more than intended, but no repeated speech pattern or large head motion. Minor regularity in finger cadence remains; exact key depression not proven.",
+      "review_method": "Chronological hand crops at 12fps (72 frames), full-frame and face crops at 4fps (24 each), all six seconds inspected; sampled visual review, not continuous playback. Subjective findings. Scores provisional and uncalibrated."
+    },
+    {
+      "id": "02-mouse-work-veo-standard-v2",
+      "decision": "provisional",
+      "scores": {
+        "prompt_adherence": 8,
+        "sampled_stability": 8,
+        "composition": 8,
+        "edit_readiness": 8,
+        "human_realism": 8,
+        "face_realism": 8,
+        "hand_body_movement": 8,
+        "identity_consistency": null,
+        "product_accuracy": null,
+        "text_ui_accuracy": null,
+        "speech_lip_sync": null
+      },
+      "review": "Selected full six seconds. Mouse and cupped hand travel together by small amounts; index/middle fingers remain settled on buttons, palm/wrist and pad contact persist. Other hand stays at keyboard. Gaze primarily screen-directed; brief downward inclination/blink around 2.0\u20132.6s returns toward screen by ~2.75s. Slightly more head movement than requested, but restrained. Natural skin/hair/clothing and static framing. Actual cursor response hidden by monitor; not verified. Removing click eliminated obvious repeated finger lift in this one take, with seed also changed.",
+      "review_method": "Chronological hand crops at 12fps (72 frames), full-frame and face crops at 4fps (24 each), all six seconds inspected; sampled visual review, not continuous playback. Subjective findings. Scores provisional and uncalibrated."
+    },
+    {
+      "id": "01-desktop-typing-veo-standard-v2",
+      "decision": "reject",
+      "scores": {},
+      "review": "Wrist pad stabilizes nearer hand, ordinary face and fixed frame remain good. Far hand still rises and repeatedly articulates fingers high, particularly ~1.2\u20132.4s; repeated downward glances at ~0.8\u20131.8, 3.0\u20134.2, 5.0\u20135.5s overplay attention changes. Simplify to a few light presses followed by reading with hands resting on keys. Hand crop partly clips far fingertips, so full frames also used; face crop clips left cheek but shows eyes.",
+      "review_method": "Chronological hand crops at 12fps (72 frames), full-frame and face crops at 4fps (24 each), all six seconds inspected; sampled visual review, not continuous playback. Subjective findings. Scores provisional and uncalibrated."
+    },
+    {
+      "id": "01-desktop-typing-veo-standard-v3",
+      "decision": "reject",
+      "scores": {},
+      "review": "The requested two-press reading action is not followed: typing/repositioning repeats through ~2s and recurs ~3.7\u20135.2s, far fingers hover in an extended pose, and downward glances recur. ~2.25\u20133.6s is restrained but too short for useful full comparison. Revise to four seconds of reading alone with fingertips resting; retain full failed take.",
+      "review_method": "Chronological hand crops at 12fps (72 frames), full-frame and face crops at 4fps (24 each), all six seconds inspected; sampled visual review, not continuous playback. Subjective findings. Scores provisional and uncalibrated.",
+      "selected_segment": {
+        "start": 2.1666666666666665,
+        "duration": 1.5,
+        "decision": "provisional_segment_only",
+        "note": "Supported resting fingers, mild small reposition, blink/downward gaze returns to monitor. No high extended far-hand pose in selected interval. Full take remains rejected."
+      }
+    },
+    {
+      "id": "01-desktop-reading-veo-standard-v4",
+      "decision": "reject",
+      "scores": {},
+      "review": "Reading-only direction not followed. Fingers begin typing after ~1.25s and far hand extends/lifts ~2.0\u20132.8s; sustained down-gaze from ~1.25\u20132.5s. Ordinary face, supported nearer wrist and static scene are strengths, but full take fails requested hand rest. Budget remaining $0.08 reserved capacity; no new paid call. Select a supported 1.5s reading segment from v3 instead, with original full take delivered and full-take rejection retained.",
+      "review_method": "Chronological hands at 12fps (48 frames), full/face at 4fps (16 each), all four seconds inspected. Sampled visual review, not continuous playback. Subjective judgment."
+    }
+  ]
+}

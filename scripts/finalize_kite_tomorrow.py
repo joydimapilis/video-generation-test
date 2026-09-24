@@ -1,8 +1,11 @@
 """Verify a completed render and write the local handoff artifacts."""
+from amarillo.delivery import require_reverse_engineering
+
 from pathlib import Path
 import json,subprocess,hashlib,shutil
 from PIL import Image,ImageDraw
 R=Path(__file__).resolve().parents[1];P=R/'videos/kite-tomorrow';D=R/'artifacts/final_outcome/kite-tomorrow';movie=D/'kite-tomorrow.mp4'
+require_reverse_engineering(movie)
 meta=json.loads(subprocess.check_output(['ffprobe','-v','error','-count_frames','-show_format','-show_streams','-of','json',str(movie)]))
 v=next(s for s in meta['streams'] if s['codec_type']=='video');a=next(s for s in meta['streams'] if s['codec_type']=='audio')
 assert (v['width'],v['height'])==(1920,1080)

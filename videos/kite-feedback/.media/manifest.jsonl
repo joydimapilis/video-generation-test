@@ -1,0 +1,5 @@
+{"id":"image_001","type":"image","path":"assets/kite-slack-app-icon.png","source":"existing","description":"kite slack app icon","width":1024,"height":1024,"provenance":{"provider":"local","adopted":true}}
+{"id":"image_002","type":"image","path":"assets/kite-wordmark.png","source":"existing","description":"kite wordmark","width":5049,"height":3022,"provenance":{"provider":"local","adopted":true}}
+{"id":"video_001","type":"video","path":"assets/marketer.mp4","source":"existing","description":"marketer","duration":4,"width":1920,"height":1080,"provenance":{"provider":"local","adopted":true}}
+{"id":"bgm_001","type":"bgm","path":"assets/music.wav","source":"existing","description":"music","duration":38,"provenance":{"provider":"local","adopted":true}}
+{"id":"video_002","type":"video","path":"assets/marketer-opening.mp4","source":"existing","description":"marketer opening","duration":4,"width":1920,"height":1080,"provenance":{"provider":"local","adopted":true}}

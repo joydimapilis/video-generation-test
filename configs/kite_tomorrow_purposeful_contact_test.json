@@ -1,0 +1,26 @@
+{
+  "experiment": "kite-tomorrow-purposeful-contact-test",
+  "budget_root": "artifacts/library-loop-kite-tomorrow",
+  "authorization_file": "artifacts/library-loop-kite-tomorrow/purposeful-contact-authorization.json",
+  "source_still_review": "artifacts/library-loop-kite-tomorrow/source-images/purposeful-contact-v2-review.json",
+  "runs": [
+    {
+      "id": "kite_person_seedance2_purposeful_contact_v2",
+      "endpoint": "bytedance/seedance-2.0/image-to-video",
+      "estimate_cents": 273,
+      "use_case": "observational_person",
+      "audio_requested": false,
+      "version": 2,
+      "hypothesis": "Revised source pose establishes purposeful trackpad contact; one small movement and pause should improve naturalness over grouped resting hands. Same endpoint, settings and playback. Source still and matching action prompt change together; not a still-only causal test. Input seed not exposed by current endpoint schema.",
+      "input": {
+        "prompt": "Animate this supplied reference as one four-second observational desk shot at normal speed. Preserve this woman's face, age, asymmetry, hairline, shirt, room, lighting, laptop and established hand-to-device contact. Keep the tripod framing.\n\nShe quietly reads the laptop screen. The trackpad hand makes one short, gentle finger movement along the actual trackpad surface and settles into a pause. Its wrist stays supported and the fingers remain distinct. The other hand stays comfortably by the keyboard with only slight independent finger relaxation; do not add a typing sequence. Her attention makes a small shift within the laptop screen, with an unforced blink and a quiet breath. The head and shoulders follow only minimally; no performed smile. Shirt folds respond to the breath and hair moves only with the small body adjustment in still air. She finishes attending to the same screen, lips comfortably closed, both hands retaining believable support.\n\nRetain the reference's ordinary skin texture rather than smoothing or sharpening the face. No beauty treatment, added facial marks, speaking, large head turn, unrelated gestures, camera movement, new objects or lettering. Keep the trackpad, keyboard and fingers geometrically stable. Avoid sliding through surfaces, floating contact, merged fingers or a hand movement that drags the whole arm and torso in lockstep.",
+        "image_url": "local:artifacts/library-loop-kite-tomorrow/source-images/purposeful-contact-v2.png",
+        "resolution": "1080p",
+        "duration": "4",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "bitrate_mode": "standard"
+      }
+    }
+  ]
+}

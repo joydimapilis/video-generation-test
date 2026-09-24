@@ -1,4 +1,6 @@
 """Verify delivered Crumb MP4s against checked compositions and source audio."""
+from amarillo.delivery import require_reverse_engineering, require_video_documents
+
 import hashlib,json,subprocess,wave
 from pathlib import Path
 import numpy as np
@@ -8,11 +10,14 @@ def pcm(path):return np.frombuffer(subprocess.check_output(['ffmpeg','-v','error
 def rgb(path,t):return np.frombuffer(subprocess.check_output(['ffmpeg','-v','error','-ss',str(t),'-i',str(path),'-frames:v','1','-vf','scale=960:540','-pix_fmt','rgb24','-f','rawvideo','-']),dtype=np.uint8).reshape(540,960,3).astype(float)
 def digest(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 def main():
+ builds=json.loads((ROOT/'build.json').read_text())
+ require_video_documents([OUT / (build['name'] + '.mp4') for build in builds])
  result={'films':[],'limitations':['Sampled visual review; no independent listening or audience test.','Automatic transcript is not proof of lip sync or voice identity.'],'generation_budget':json.loads((ROOT/'budget.json').read_text())}
  budget=result['generation_budget'];result['generation_budget']={'estimate_cents':sum(r['estimate_cents'] for r in budget['runs'].values()),'reserved_cents':sum(r['reserved_cents'] for r in budget['runs'].values()),'cap_cents':budget['limit_cents'],'completed':sum(r['status']=='completed' for r in budget['runs'].values()),'pending':sum(r['status'] in ['submitted','running','generated'] for r in budget['runs'].values())}
  assert result['generation_budget']['reserved_cents']<=1000
- for build in json.loads((ROOT/'build.json').read_text()):
+ for build in builds:
   name=build['name'];short=name.removeprefix('crumb-');p=OUT/f'{name}.mp4';project=Path(build['project']);check=json.loads((ROOT/f'check-{short}.json').read_text());assert check['ok']
+  require_reverse_engineering(p)
   meta=probe(p);video=next(s for s in meta['streams'] if s['codec_type']=='video');assert (video['width'],video['height'],video['r_frame_rate'])==(1920,1080,'24/1');duration=float(meta['format']['duration']);assert abs(duration-build['duration'])<.05
   decode=subprocess.run(['ffmpeg','-v','error','-i',str(p),'-f','null','-'],capture_output=True);assert decode.returncode==0 and not decode.stderr
   black=subprocess.run(['ffmpeg','-hide_banner','-i',str(p),'-vf','blackdetect=d=0.08:pix_th=0.08','-an','-f','null','-'],capture_output=True);intervals=[l for l in black.stderr.decode().splitlines() if 'black_start:' in l];assert not intervals

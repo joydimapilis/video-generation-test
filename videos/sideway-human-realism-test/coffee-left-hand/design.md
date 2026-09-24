@@ -1,0 +1,1 @@
+Three equal portrait views: original, prior rejected hand movement, new revision. Warm charcoal, cream Onest labels and yellow accent from existing comparison. No cropping, grading, music or decorative movement. Five seconds at native playback; original six-second slot is not replaced.

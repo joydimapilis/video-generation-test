@@ -1,0 +1,28 @@
+{
+  "method": "Inspected each encoded 16-frame chronological overview and native-resolution last frame; earlier generated full scene/face 2fps and hands 8fps supplied denser motion review. No continuous-playback claim.",
+  "technical_report": "review_notes/computer-movement-long-final-verification.json",
+  "findings": [
+    {
+      "sample": "01",
+      "duration": 15,
+      "picture": "No visible render-added blank frames, overlays, framing change or end corruption. Known long downward gaze and brief mouth parting remain.",
+      "decision": "provisional"
+    },
+    {
+      "sample": "02",
+      "duration": 15,
+      "picture": "Mouse-to-keyboard transfer and return survive encode; no visible render-added artifact. Frequent gaze checks and missing second typing burst remain.",
+      "decision": "provisional"
+    },
+    {
+      "sample": "03",
+      "duration": 9,
+      "picture": "Selected reading/typing/pause/reposition interval survives encode; later sustained hover excluded. Brief mid-interval elevated fingers during reposition and stiffness remain.",
+      "decision": "provisional_segment_only"
+    }
+  ],
+  "audio": "All final MP4s have no audio stream.",
+  "comparison_page": "artifacts/final_outcome/computer-movement-long/review.html",
+  "comparison_links": "All local video, source image and original take links exist.",
+  "limitations": "Qualitative studies, not a controlled demonstration of improved realism."
+}

@@ -1,0 +1,21 @@
+{
+  "video": "kite-tomorrow",
+  "status": "ui_revision_delivered_human_test_pending",
+  "master": "artifacts/final_outcome/kite-tomorrow-ui-pass2/kite-tomorrow-ui-pass2.mp4",
+  "editable_project": "videos/kite-tomorrow-ui-pass2",
+  "ui_comparison": "artifacts/final_outcome/kite-tomorrow-ui-pass2/ui-comparison.mp4",
+  "person_speed_diagnostic": "artifacts/final_outcome/kite-tomorrow-ui-pass2/person-speed-diagnostic.mp4",
+  "scene_routes": "videos/kite-tomorrow-revised/studies/SCENE_ROUTING.md",
+  "verification": "artifacts/final_outcome/kite-tomorrow-ui-pass2/verification.json",
+  "duration_seconds": 38,
+  "new_paid_generation_usd": 0,
+  "prior_credits_confirmed": 31.38,
+  "prior_usd": null,
+  "human_model_test": {
+    "candidate": "Seedance 2.0 standard I2V",
+    "proposed_buffered_video_only_usd": 3.14,
+    "submitted": false,
+    "blocker": "unknown historical USD spend under cumulative $10 cap"
+  },
+  "ui_fidelity": "Illustrative reconstruction informed by public Kite demo; no authenticated capture claim."
+}

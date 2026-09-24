@@ -1,0 +1,12 @@
+{
+  "name": "Kite Tomorrow \u2014 targeted UI revision study",
+  "status": "isolated UI comparison complete; character revision blocked",
+  "comparison": "artifacts/final_outcome/kite-tomorrow-revision/ui-comparison.mp4",
+  "revised_ui_shot": "artifacts/final_outcome/kite-tomorrow-revision/ui-revised-shot.mp4",
+  "editable_project": "videos/kite-tomorrow/studies/ui-after",
+  "review": "review_notes/kite-tomorrow.md",
+  "verification": "artifacts/final_outcome/kite-tomorrow-revision/verification.json",
+  "new_generation_cost_usd": 0,
+  "historical_total_usd": null,
+  "main_film_modified": false
+}

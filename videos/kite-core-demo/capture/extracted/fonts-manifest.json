@@ -1,0 +1,327 @@
+{
+  "files": [
+    {
+      "file": "16d91c780434f2ce-s.0y1w0k24nk0rl.woff2",
+      "family": "Onest",
+      "rawFamily": "Onest",
+      "subfamily": "Regular",
+      "postscript": "Onest-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "345c85a432359eed-s.p.0zem_9y19rte6.woff2",
+      "family": "Lato",
+      "rawFamily": "Lato",
+      "subfamily": "Bold",
+      "postscript": "Lato-Bold",
+      "weight": 700,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "4084ce120da2621a-s.0for97nelvzih.woff2",
+      "family": "Onest",
+      "rawFamily": "Onest",
+      "subfamily": "Regular",
+      "postscript": "Onest-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "4d81d00cb6dc755c-s.3j7br4w5g0o3h.woff2",
+      "family": "Onest",
+      "rawFamily": "Onest",
+      "subfamily": "Regular",
+      "postscript": "Onest-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "58c4895d0a0ef7cc-s.2vhvl9vrvk-va.woff2",
+      "family": "Manrope",
+      "rawFamily": "Manrope ExtraLight",
+      "subfamily": "Regular",
+      "postscript": "Manrope-ExtraLight",
+      "weight": 200,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "611a8bd7707cff25-s.1vqdc5lvrb4tb.woff2",
+      "family": "Onest",
+      "rawFamily": "Onest",
+      "subfamily": "Regular",
+      "postscript": "Onest-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "6ab0db14f70d8ed6-s.13hnt-xgp82zk.woff2",
+      "family": "Manrope",
+      "rawFamily": "Manrope ExtraLight",
+      "subfamily": "Regular",
+      "postscript": "Manrope-ExtraLight",
+      "weight": 200,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "8e451580e5e95631-s.p.27vw08z6_vw0m.woff2",
+      "family": "Lato",
+      "rawFamily": "Lato",
+      "subfamily": "Regular",
+      "postscript": "Lato-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "9be384ea93fe3f49-s.p.0ig786lf0ff2-.woff2",
+      "family": "Lato",
+      "rawFamily": "Lato Black",
+      "subfamily": "Regular",
+      "postscript": "Lato-Black",
+      "weight": 900,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "InterVariable_latin-s.p.1oos_aa5h6h8w.woff2",
+      "family": "Inter Variable",
+      "rawFamily": "Inter Variable",
+      "subfamily": "Regular",
+      "postscript": "InterVariable",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [
+        "opsz",
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "a342834df7752944-s.3hd2l7bm32o7k.woff2",
+      "family": "Manrope",
+      "rawFamily": "Manrope ExtraLight",
+      "subfamily": "Regular",
+      "postscript": "Manrope-ExtraLight",
+      "weight": 200,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "a343f882a40d2cc9-s.p.1sj6eobyi31rd.woff2",
+      "family": "Manrope",
+      "rawFamily": "Manrope ExtraLight",
+      "subfamily": "Regular",
+      "postscript": "Manrope-ExtraLight",
+      "weight": 200,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "a45e4938f2a14ebd-s.3e-lg5zbsykpq.woff2",
+      "family": "Onest",
+      "rawFamily": "Onest",
+      "subfamily": "Regular",
+      "postscript": "Onest-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "b529365fa126a3f2-s.441olqq_uijdr.woff2",
+      "family": "Lato",
+      "rawFamily": "Lato",
+      "subfamily": "Regular",
+      "postscript": "Lato-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "bfc7db5c00d21bc5-s.173xwsdme27n8.woff2",
+      "family": "Manrope",
+      "rawFamily": "Manrope ExtraLight",
+      "subfamily": "Regular",
+      "postscript": "Manrope-ExtraLight",
+      "weight": 200,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "d3fe2f289711ac3f-s.1l2zhvq5eocqf.woff2",
+      "family": "Manrope",
+      "rawFamily": "Manrope ExtraLight",
+      "subfamily": "Regular",
+      "postscript": "Manrope-ExtraLight",
+      "weight": 200,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "d74bdd14d6019bc6-s.097vcw437jzga.woff2",
+      "family": "Lato",
+      "rawFamily": "Lato",
+      "subfamily": "Bold",
+      "postscript": "Lato-Bold",
+      "weight": 700,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "da28569d36042d01-s.2tfobr5_17yq8.woff2",
+      "family": "Lato",
+      "rawFamily": "Lato Black",
+      "subfamily": "Regular",
+      "postscript": "Lato-Black",
+      "weight": 900,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "ef79401ea952b7f0-s.0t4d9turf_6_x.woff2",
+      "family": "Onest",
+      "rawFamily": "Onest",
+      "subfamily": "Regular",
+      "postscript": "Onest-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    }
+  ],
+  "families": [
+    {
+      "family": "Inter Variable",
+      "weights": [
+        400
+      ],
+      "variable": true,
+      "fileCount": 1,
+      "files": [
+        "InterVariable_latin-s.p.1oos_aa5h6h8w.woff2"
+      ]
+    },
+    {
+      "family": "Lato",
+      "weights": [
+        400,
+        700,
+        900
+      ],
+      "variable": false,
+      "fileCount": 6,
+      "files": [
+        "345c85a432359eed-s.p.0zem_9y19rte6.woff2",
+        "8e451580e5e95631-s.p.27vw08z6_vw0m.woff2",
+        "9be384ea93fe3f49-s.p.0ig786lf0ff2-.woff2",
+        "b529365fa126a3f2-s.441olqq_uijdr.woff2",
+        "d74bdd14d6019bc6-s.097vcw437jzga.woff2",
+        "da28569d36042d01-s.2tfobr5_17yq8.woff2"
+      ]
+    },
+    {
+      "family": "Manrope",
+      "weights": [
+        200
+      ],
+      "variable": true,
+      "fileCount": 6,
+      "files": [
+        "58c4895d0a0ef7cc-s.2vhvl9vrvk-va.woff2",
+        "6ab0db14f70d8ed6-s.13hnt-xgp82zk.woff2",
+        "a342834df7752944-s.3hd2l7bm32o7k.woff2",
+        "a343f882a40d2cc9-s.p.1sj6eobyi31rd.woff2",
+        "bfc7db5c00d21bc5-s.173xwsdme27n8.woff2",
+        "d3fe2f289711ac3f-s.1l2zhvq5eocqf.woff2"
+      ]
+    },
+    {
+      "family": "Onest",
+      "weights": [
+        400
+      ],
+      "variable": true,
+      "fileCount": 6,
+      "files": [
+        "16d91c780434f2ce-s.0y1w0k24nk0rl.woff2",
+        "4084ce120da2621a-s.0for97nelvzih.woff2",
+        "4d81d00cb6dc755c-s.3j7br4w5g0o3h.woff2",
+        "611a8bd7707cff25-s.1vqdc5lvrb4tb.woff2",
+        "a45e4938f2a14ebd-s.3e-lg5zbsykpq.woff2",
+        "ef79401ea952b7f0-s.0t4d9turf_6_x.woff2"
+      ]
+    }
+  ],
+  "unidentified": [],
+  "meta": {
+    "generatedAt": "2026-09-23T07:36:38.839Z",
+    "tool": "fontkit"
+  }
+}

@@ -1,0 +1,102 @@
+<template>
+  <style>
+    @font-face { font-family: 'Onest'; src: url('assets/Onest.woff2') format('woff2'); font-style: normal; font-weight: 100 900; font-display: block; }
+    #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; container-type: size; color: #FFFFFF; font-family: 'Onest',sans-serif; }
+    [class~="03-feedback-ground"] { position: absolute; inset: 0; background: #1D1C1D; }
+    [class~="03-feedback-content"] { position: absolute; inset: 0; }
+    [class~="03-feedback-left"] { position: absolute; left: 105px; top: 135px; width: 690px; height: 700px; }
+    [class~="03-feedback-before"], [class~="03-feedback-after"] { position: absolute; inset: 0; transform-origin: 50% 50%; }
+    [class~="03-feedback-after"] { z-index: 2; }
+    [class~="03-feedback-title"] { margin: 0; width: 1500px; font-size: 4.58333cqw; font-weight: 900; line-height: 1.08; letter-spacing: -0.04em; }
+    [class~="03-feedback-note"] { position: absolute; left: 0; top: 230px; width: 690px; height: 320px; background: #18191A; box-sizing: border-box; border-top: 1px solid #484C50; padding: 30px 32px; }
+    [class~="03-feedback-you"] { font-size: 1.5625cqw; font-weight: 600; color: #E5E7EB; margin-bottom: 23px; }
+    [class~="03-feedback-request"] { font-size: 2.5cqw; font-weight: 600; line-height: 1.13; letter-spacing: -0.025em; max-width: 585px; }
+    [class~="03-feedback-detail"] { font-size: 1.66667cqw; font-weight: 400; line-height: 1.3; color: #E5E7EB; margin-top: 20px; }
+    [class~="03-feedback-send"] { position: absolute; right: 28px; top: 25px; width: 40px; height: 40px; border: 1px solid #484C50; display: grid; place-items: center; color: #E5E7EB; font-size: 1.25cqw; }
+    [class~="03-feedback-status"] { position: absolute; left: 0; top: 585px; font-size: 1.5625cqw; color: #E5E7EB; }
+    [class~="03-feedback-status"]::before { content: ''; display: inline-block; width: 26px; height: 2px; background: #347BCD; vertical-align: middle; margin-right: 14px; }
+    [class~="03-feedback-preview"] { position: absolute; left: 880px; top: 320px; width: 935px; height: 570px; box-sizing: border-box; background: #18191A; border: 1px solid #484C50; padding: 42px 46px; }
+    [class~="03-feedback-label"] { color: #E5E7EB; font-size: 1.5625cqw; font-weight: 500; }
+    [class~="03-feedback-updated-edge"] { position: absolute; left: -1px; top: 124px; width: 3px; height: 256px; background: #347BCD; }
+    [class~="03-feedback-headline"] { position: absolute; left: 46px; top: 154px; width: 840px; min-width: 840px; height: 200px; white-space: pre-line; font-size: 2.916667cqw; font-weight: 800; line-height: 1.08; letter-spacing: -0.04em; }
+    [class~="03-feedback-preview-footer"] { position: absolute; left: 46px; right: 46px; top: 435px; border-top: 1px solid #484C50; padding-top: 24px; color: #E5E7EB; font-size: 1.302083cqw; font-weight: 400; white-space: nowrap; }
+    [class~="03-feedback-cta-title"] { position: absolute; top: 114px; margin: 0; font-size: 4.166667cqw; line-height: 1.04; letter-spacing: -0.04em; font-weight: 900; }
+    [class~="03-feedback-brand"] { position: absolute; top: 365px; left: 0; display: flex; align-items: center; gap: 22px; }
+    [class~="03-feedback-brand"] img { width: 64px; height: 64px; object-fit: contain; }
+    [class~="03-feedback-brand-name"] { font-size: 2.708333cqw; font-weight: 700; letter-spacing: -0.035em; }
+    [class~="03-feedback-url"] { position: absolute; top: 468px; font-size: 2.083333cqw; color: #E5E7EB; }
+    [class~="03-feedback-ready"] { position: absolute; left: 926px; top: 834px; font-size: 1.510417cqw; color: #E5E7EB; }
+    [class~="03-feedback-disclaimer"] { position: absolute; left: 105px; top: 993px; font-size: 1.354167cqw; color: #E5E7EB; }
+  </style>
+  <div data-hf-id="hf-8i3p" id="root" data-composition-id="03-feedback" data-duration="10" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-vmlv" id="f03-feedback-ground" class="clip 03-feedback-ground" data-start="0" data-duration="10" data-track-index="0"></div>
+    <div data-hf-id="hf-p50e" id="f03-feedback-content" class="clip 03-feedback-content" data-start="0" data-duration="10" data-track-index="1">
+      <div data-hf-id="hf-toot" class="03-feedback-left">
+        <div data-hf-id="hf-shif" class="03-feedback-before" data-part="before">
+          <h1 data-hf-id="hf-wu46" class="03-feedback-title">one note. a better draft.</h1>
+          <div data-hf-id="hf-e0x1" class="03-feedback-note" data-part="note">
+            <div data-hf-id="hf-2x9y" class="03-feedback-you">You</div>
+            <div data-hf-id="hf-rqv9" class="03-feedback-request">Lead with the team handoff.</div>
+            <div data-hf-id="hf-1kdw" class="03-feedback-detail">Make the headline more direct.</div>
+            <div data-hf-id="hf-kuww" class="03-feedback-send" data-part="send">↑</div>
+          </div>
+          <div data-hf-id="hf-v7nn" class="03-feedback-status" data-part="status">Revised from your feedback</div>
+        </div>
+        <div data-hf-id="hf-shdz" class="03-feedback-after" data-part="after">
+          <h2 data-hf-id="hf-2q3j" class="03-feedback-cta-title">meet your<br data-hf-id="hf-x5px">AI marketer.</h2>
+          <div data-hf-id="hf-zqdv" class="03-feedback-brand" data-part="brand"><img data-hf-id="hf-rp9m" src="assets/kite-slack-app-icon.png" alt="Kite"><span data-hf-id="hf-gw19" class="03-feedback-brand-name">Kite</span></div>
+          <div data-hf-id="hf-68zs" class="03-feedback-url" data-part="url">kite.ai</div>
+        </div>
+      </div>
+      <div data-hf-id="hf-pcor" class="03-feedback-preview" data-part="preview">
+        <div data-hf-id="hf-f7cj" class="03-feedback-label" data-part="label">Relay / draft v1</div>
+        <div data-hf-id="hf-chv5" class="03-feedback-updated-edge" data-part="edge"></div>
+        <div data-hf-id="hf-aczq" class="03-feedback-headline" data-part="headline">A shared inbox.<br data-hf-id="hf-rsrt">A clearer day.</div>
+        <div data-hf-id="hf-xfhr" class="03-feedback-preview-footer">Shared inbox · Saved replies · Team handoff</div>
+      </div>
+      <div data-hf-id="hf-x67a" class="03-feedback-ready" data-part="ready">Ready for your review.</div>
+      <div data-hf-id="hf-ywmy" class="03-feedback-disclaimer" data-part="disclaimer">Illustrative workflow</div>
+    </div>
+  </div>
+  <script src="assets/gsap.min.js"></script>
+  <script>
+    (function () {
+      const root = document.querySelector('[data-composition-id="03-feedback"]');
+      const part = name => root.querySelector('[data-part="' + name + '"]');
+      const tl = gsap.timeline({ paused: true });
+      const states = [
+        { t: 0, text: 'A shared inbox.\nA clearer day.', label: 'Relay / draft v1', size: '2.916667cqw' },
+        { t: 3.12, text: 'Every handoff.\nHandled.', label: 'Relay / draft v2', size: '3.958333cqw' }
+      ];
+      const driver = { t: 0 };
+      const applyText = function () {
+        for (let i = states.length - 1; i >= 0; i--) {
+          if (driver.t >= states[i].t) {
+            part('headline').textContent = states[i].text;
+            part('headline').style.fontSize = states[i].size;
+            part('label').textContent = states[i].label;
+            break;
+          }
+        }
+      };
+      tl.to(driver, { t: 10, duration: 10, ease: 'none', onUpdate: applyText }, 0);
+      tl.fromTo(part('before'), { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.42, ease: 'power3.out' }, 0);
+      tl.fromTo(part('preview'), { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.45, ease: 'power3.out' }, 0.1);
+      tl.fromTo(part('send'), { scale: 1 }, { scale: 0.8, duration: 0.13, ease: 'power2.in' }, 2.5);
+      tl.to(part('send'), { scale: 1, duration: 0.22, ease: 'power3.out' }, 2.63);
+      tl.to(part('headline'), { opacity: 0, duration: 0.27, ease: 'power2.in' }, 2.81);
+      tl.to(part('headline'), { opacity: 1, duration: 0.36, ease: 'power3.out' }, 3.12);
+      tl.fromTo(part('edge'), { opacity: 0, scaleY: 0.65 }, { opacity: 1, scaleY: 1, duration: 0.4, ease: 'power3.out' }, 3.12);
+      tl.fromTo(part('status'), { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power3.out' }, 4.5);
+      tl.to(part('before'), { scale: 0.78, opacity: 0, duration: 0.38, ease: 'power2.in' }, 6);
+      tl.fromTo(part('after'), { scale: 0.78, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.58, ease: 'back.out(1.4)' }, 6.23);
+      tl.fromTo(part('brand'), { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: 'power3.out' }, 6.64);
+      tl.fromTo(part('url'), { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.26, ease: 'power3.out' }, 6.72);
+      tl.fromTo(part('ready'), { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power3.out' }, 6.7);
+      tl.fromTo(part('disclaimer'), { opacity: 0 }, { opacity: 1, duration: 0.3, ease: 'none' }, 6.7);
+      applyText();
+      window.__timelines = window.__timelines || {};
+      window.__timelines['03-feedback'] = tl;
+    })();
+  </script>
+</template>

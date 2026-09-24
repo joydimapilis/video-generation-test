@@ -1,0 +1,104 @@
+{
+  "runs": [
+    {
+      "id": "01-typing-kling-v1",
+      "decision": "reject",
+      "scores": {
+        "human_realism": null,
+        "face_realism": null,
+        "hand_body_movement": null,
+        "identity_consistency": null,
+        "product_accuracy": null,
+        "text_ui_accuracy": null,
+        "speech_lip_sync": null
+      },
+      "review": "Large hooked finger lifts and whole-hand hovering from roughly 0.8\u20132.8s, followed by a very still curled-hand hold. Camera slowly widens despite locked-camera request. Screen-directed attention and facial identity mostly stable, but contact and cadence fail the intended natural typing.",
+      "review_method": "Chronological full overview and hand/face sheets at 8 fps across all six seconds. Sampled visual review, not continuous playback."
+    },
+    {
+      "id": "03-read-pause-kling-v1",
+      "decision": "reject",
+      "scores": {
+        "human_realism": null,
+        "face_realism": null,
+        "hand_body_movement": null,
+        "identity_consistency": null,
+        "product_accuracy": null,
+        "text_ui_accuracy": null,
+        "speech_lip_sync": null
+      },
+      "review": "Typing gives way around 2.5s to both hands curling/lifting above the computer; later arms withdraw onto desk while subject reclines. This is larger than requested quiet reading pause, with wrist contact lost. Screen changes from black to document during the shot, and framing widens.",
+      "review_method": "Chronological overview, face and hand crops at 8 fps across all six seconds; sampled visual review."
+    },
+    {
+      "id": "01-typing-seedance-v2",
+      "decision": "provider_rejected_no_output",
+      "scores": {},
+      "review": "422 content_policy_violation / partner_validation_failed: endpoint declined possible person likenesses. No video exists to review. Cost remains reserved; no quality inference.",
+      "review_method": "Provider response only; no generated media."
+    },
+    {
+      "id": "02-trackpad-seedance-v2",
+      "decision": "provider_rejected_no_output",
+      "scores": {},
+      "review": "422 content_policy_violation / partner_validation_failed: endpoint declined possible person likenesses. No video exists to review. Cost remains reserved; no quality inference.",
+      "review_method": "Provider response only; no generated media."
+    },
+    {
+      "id": "03-read-pause-seedance-v2",
+      "decision": "provider_rejected_no_output",
+      "scores": {},
+      "review": "422 content_policy_violation / partner_validation_failed: endpoint declined possible person likenesses. No video exists to review. Cost remains reserved; no quality inference.",
+      "review_method": "Provider response only; no generated media."
+    },
+    {
+      "id": "01-typing-veo-v3",
+      "decision": "provisional",
+      "scores": {
+        "prompt_adherence": 7,
+        "sampled_stability": 8,
+        "composition": 8,
+        "edit_readiness": 7,
+        "human_realism": 7,
+        "face_realism": 7,
+        "hand_body_movement": 7,
+        "identity_consistency": null,
+        "product_accuracy": null,
+        "text_ui_accuracy": null,
+        "speech_lip_sync": null,
+        "camera_movement": 8
+      },
+      "review": "Selected full four-second typing study. Finger motion is smaller, alternating and closer to keys than the rejected Kling sample; no repeated high hooked-hand lifting. Gaze shifts between screen and keys, with subtle head changes and blinks. Forearms remain on desk. Face remains slightly smile-set from source and details soften in motion. Some finger movement is still somewhat regular; not proof of exact key depression or fully solved hands. Camera stays mostly fixed.",
+      "review_method": "Subjective chronological review of 48 frames at 12 fps across 0\u20133.917s: all full-frame, hand and face sheets. Not continuous playback; numerical scores are provisional subjective judgments, not calibrated measurements."
+    },
+    {
+      "id": "02-trackpad-veo-v3",
+      "decision": "reject",
+      "scores": {},
+      "review": "Initially valid contact, but active hand slides onto keyboard around 0.6\u20131.6s, then withdraws to the side by 2s. Gaze/face and resting hand remain restrained, but requested trackpad use is not sustained. Revise to one stationary fingertip tap.",
+      "review_method": "All 48 full-frame, hand and face sampled frames at 12fps across 0\u20133.917s."
+    },
+    {
+      "id": "03-read-pause-veo-v3",
+      "decision": "reject",
+      "scores": {},
+      "review": "Full-resolution composition snapshot escalated the initial sampled review: the curled-hand pose after about 1.7s is too pronounced to accept the full take. Only 0\u20131.5s is selected as a shorter side-view typing sample, with visible small finger movements, stable gaze and supported arms. No reading-pause claim. Full take retained as rejected for comparison.",
+      "review_method": "Subjective chronological review at 12fps across all four seconds, full-frame and hand/face crops; no continuous playback claim. Scores are provisional, uncalibrated judgments.",
+      "selected_segment": [
+        0,
+        1.5
+      ]
+    },
+    {
+      "id": "02-trackpad-veo-v4",
+      "decision": "reject",
+      "scores": {},
+      "selected_segment": [
+        0,
+        1.25
+      ],
+      "review": "Full take rejected: active fingers lift and curl after about 1.3s and stay in a curled hold to end. Early 0\u20131.25s retained only as a brief contact/tap study: small lift then index contact near pad edge, supported forearm, still resting hand. Gaze lowered toward computer, ordinary face, subtle head movement. Not evidence of sustained reliable trackpad use.",
+      "review_method": "Chronological full-frame, hand and face sheets at 12fps across all four seconds; sampled visual review, not continuous playback."
+    }
+  ]
+}

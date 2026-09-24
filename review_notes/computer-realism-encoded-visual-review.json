@@ -1,0 +1,14 @@
+{
+  "status": "reviewed_with_limitations",
+  "method": "Encoded eight-frame chronological overviews for each sample plus native-resolution last encoded frame; source motion already reviewed chronologically at 12fps. Not continuous playback.",
+  "findings": {
+    "01-typing": "Clean encode, steady framing and ending. Some lifted fingers and regular cadence remain; provisional selection, not perfect interaction.",
+    "02-trackpad": "Contact/tap visible in short selection; ends during small finger release. Tail with prolonged curled pose excluded. Sustained operation not established.",
+    "03-side-typing": "Supported forearms, small typing changes, steady gaze. Ends before later pronounced curled pose. No reading-pause success claim."
+  },
+  "picture": "No blank frames or framing/letterbox problem in sampled final images. Full decode and source SSIM checks passed.",
+  "text": "No added typography/captions; generated screen text not assessed for accuracy.",
+  "audio": "Intentionally silent; absence of audio stream verified.",
+  "comparison_links": "All local src/href/poster targets exist.",
+  "timing": "4s / 1.25s / 1.5s at 24fps, original speed; separate single shots, no joins."
+}

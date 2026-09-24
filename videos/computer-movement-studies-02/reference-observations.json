@@ -1,0 +1,83 @@
+{
+  "reference_videos_uploaded": false,
+  "reference_frames_used_as_sources": false,
+  "identity_or_scene_recreation": false,
+  "references": [
+    {
+      "file": "references/human-realism/human-reference-02.mp4",
+      "sha256": "5178f9ce56a99881aa001f9b19bdcd4bc201cc0045419fb9883b8fcb92a0f494",
+      "ranges_seconds": [
+        [
+          0,
+          2
+        ]
+      ],
+      "observation": "Unequal finger activity, short presses, low wrists and supported forearms; one finger can lift while others stay at keys.",
+      "limits": "Face not visible; cannot infer gaze.",
+      "review_method": "Chronological extracted frames; 8fps detail for 02 and 05, 2fps contextual sheets for 03 and 04. Not continuous playback."
+    },
+    {
+      "file": "references/human-realism/human-reference-03.mp4",
+      "sha256": "97faaf7e02128ad0f30b1172b9fca9176fa900d9b64fbc1d180993fc84481446",
+      "ranges_seconds": [
+        [
+          0,
+          2.5
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "observation": "Typing with small gaze checks between screen and keyboard; task attention returns to screen.",
+      "limits": "Clinical setting and reaching action are not copied.",
+      "review_method": "Chronological extracted frames; 8fps detail for 02 and 05, 2fps contextual sheets for 03 and 04. Not continuous playback."
+    },
+    {
+      "file": "references/human-realism/human-reference-04.mp4",
+      "sha256": "aa8625fbd04c69e1e354402e61128b538b79e14d023cb7a2f5536af0dfda0153",
+      "ranges_seconds": [
+        [
+          0,
+          2.8
+        ]
+      ],
+      "observation": "Eye attention stays near screen while head and shoulders move much less than the hand.",
+      "limits": "Tablet/stylus, not keyboard or mouse evidence.",
+      "review_method": "Chronological extracted frames; 8fps detail for 02 and 05, 2fps contextual sheets for 03 and 04. Not continuous playback."
+    },
+    {
+      "file": "references/human-realism/human-reference-05.mp4",
+      "sha256": "28538087ee7bc97b9a93021db457c4cb82a4bbb0fbafaaeb5668d7116be4617b",
+      "ranges_seconds": [
+        [
+          0,
+          3
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "observation": "Unequal hand roles, uneven timing and occasional local finger reposition; seated forward engagement.",
+      "limits": "Visible curls/repositions are observed but not copied because user asks persistent supported contact; no clear external mouse evidence.",
+      "review_method": "Chronological extracted frames; 8fps detail for 02 and 05, 2fps contextual sheets for 03 and 04. Not continuous playback."
+    }
+  ],
+  "application": {
+    "01": [
+      "02 typing rhythm/contact",
+      "03 screen-key gaze"
+    ],
+    "02": [
+      "04 attentive gaze and restrained posture",
+      "05 unequal hand roles; mouse grip itself is an untested extrapolation"
+    ],
+    "03": [
+      "02 low localized typing",
+      "05 forward posture/unequal timing",
+      "04 subtle body adjustment"
+    ]
+  },
+  "hypothesis": "Encoding these cues in new-source I2V prompts may improve contact. Not yet tested causally; no matched control."
+}

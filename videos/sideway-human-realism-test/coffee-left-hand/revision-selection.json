@@ -1,0 +1,24 @@
+{
+  "duration_seconds": 5,
+  "fps": 32,
+  "join_seconds": 1.9375,
+  "clips": [
+    {
+      "source": "artifacts/library-loop-14/outputs/sideway_arrival_left_pocket_v4.mp4",
+      "start_seconds": 0,
+      "duration_seconds": 1.9375,
+      "frames": 62
+    },
+    {
+      "source": "artifacts/library-loop-14/outputs/sideway_arrival_pocket_settle_v5.mp4",
+      "start_seconds": 0,
+      "duration_seconds": 3.0625,
+      "frames": 98
+    }
+  ],
+  "source_image_for_continuation": "videos/sideway-human-realism-test/coffee-left-hand/pocket-continuation-source.png",
+  "retiming": false,
+  "crossfade": false,
+  "audio": "intentionally silent",
+  "full_film_replaced": false
+}

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Kite human contact test</title><script src="assets/gsap.min.js"></script><style>
+@font-face{font-family:Onest;src:url(assets/Onest.woff2);font-weight:100 900}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#171717}#root{position:relative;width:100%;height:100%;font-family:Onest,sans-serif;color:#fff}.clip{position:absolute;top:100px;width:640px;height:360px;object-fit:contain}.label{position:absolute;top:29px;margin:0;font-size:30px;line-height:40px;font-weight:600}#current,.a{left:0}#still,.b{left:640px}#candidate,.c{left:1280px}.label.a{left:24px}.label.b{left:664px}.label.c{left:1304px}.footer{position:absolute;left:24px;top:482px;margin:0;font-size:23px;line-height:31px;color:#bebebe}
+</style></head><body><main id="root" data-composition-id="contact-comparison" data-width="1920" data-height="560" data-duration="3.6" data-fps="30">
+<h1 class="label a">CURRENT SHOT</h1><h1 class="label b">NEW SOURCE STILL</h1><h1 class="label c">NEW ANIMATED SHOT</h1>
+<video id="current" class="clip" src="assets/current.mp4" data-start="0" data-duration="3.6" data-playback-rate="1" data-track-index="1" muted playsinline></video>
+<img id="still" class="clip" src="assets/source-still.png" data-start="0" data-duration="3.6" data-track-index="2" alt="Reviewed revised still with purposeful device contact">
+<video id="candidate" class="clip" src="assets/candidate.mp4" data-start="0" data-duration="3.6" data-playback-rate="1" data-track-index="3" muted playsinline></video>
+<p class="footer">Same Seedance 2.0 settings · 1080p · native speed · matching 0–3.6 s window · center panel is static</p>
+</main><script>window.__timelines=window.__timelines||{};window.__timelines['contact-comparison']=gsap.timeline({paused:true});</script></body></html>

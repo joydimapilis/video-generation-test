@@ -1,0 +1,15 @@
+{
+  "method": "Chronological encoded overview sheets (12 frames each), native-resolution final frames and composition snapshots; full decode and source-to-final SSIM in final-verification record. Sampled visual inspection, not continuous playback.",
+  "findings": {
+    "01-desktop-reading": "1.5s only: blink/downward gaze transitions back toward monitor; fingertips remain near keys with supported arms. Small hand movement/motion blur begins at final frame; no pronounced extended curl in chosen interval. Full six-second take remains rejected.",
+    "02-mouse-work": "Full six seconds retain cupped grip and steady scene, with a brief downward head dip. Last frame falls during blink, no end-card/fade or freeze added.",
+    "03-laptop-typing": "Full six seconds retain low localized typing and screen gaze. Brief mouth opening and some regularity remain; final hands at keyboard."
+  },
+  "technical": "All three composition checks pass with zero findings. Native speed, 1920x1080, 24fps, silent. 36/144/144 decoded frames; source-to-final SSIM 0.989950/0.985309/0.986345. No joins, captions or audio alignment to check.",
+  "overall": "Two provisional full takes and one provisional short segment. Not evidence of consistent reference-driven improvement.",
+  "limits": [
+    "Exact key/button actuation and cursor response not verified.",
+    "Scores subjective, no matched control.",
+    "Desktop sustained hand realism unresolved."
+  ]
+}

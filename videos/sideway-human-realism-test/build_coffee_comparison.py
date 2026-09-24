@@ -1,0 +1,13 @@
+"""Build a local five-second left-hand comparison; never submits generation."""
+from pathlib import Path
+import sys,shutil,json
+R=Path(__file__).resolve().parents[2];P=R/'videos/sideway-human-realism-test/coffee-left-hand'
+id=sys.argv[1] if len(sys.argv)>1 else 'reviewed-v4-v5-sequence'
+source=R/f'artifacts/library-loop-14/outputs/{id}.mp4' if len(sys.argv)>1 else R/'artifacts/final_outcome/sideway-coffee-left-hand/sideway-coffee-left-hand-revised.mp4'
+shutil.copy2(source,P/'assets/revised.mp4')
+panels=[('original','Original film take',77),('previous','Previous trial · awkward hand',717),('revised','Revision · pocket movement',1357)]
+videos=''.join(f'<p class="label" style="left:{x}px">{label}</p><video id="{name}" class="clip" src="assets/{name}.mp4" data-start="0" data-duration="5" data-media-start="0" data-playback-rate="1" data-track-index="{i+1}" style="left:{x}px" muted playsinline></video>' for i,(name,label,x) in enumerate(panels))
+(P/'index.html').write_text('''<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sideway coffee · left-hand revision</title><style>@font-face{font-family:Onest;src:url(assets/Onest.woff2)}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#20231f;color:#f3f1e6;font-family:Onest,sans-serif}#root{position:relative;width:1920px;height:1080px;overflow:hidden}h1{position:absolute;top:27px;left:40px;margin:0;font-size:40px;line-height:1.2}.label{position:absolute;top:92px;margin:0;font-size:26px;font-weight:600;line-height:1.2}video{position:absolute;top:138px;width:486px;height:864px;object-fit:contain;background:#151713}.footer{position:absolute;left:40px;top:1027px;font-size:24px;color:#e0ddcc;margin:0}</style><script src="assets/gsap.min.js"></script></head><body><div id="root" data-composition-id="coffee-left-hand" data-width="1920" data-height="1080" data-duration="5">'''+videos+'''<p class="footer">5-second comparison · native speed · matched-frame continuation · full film unchanged</p></div><script>window.__timelines["coffee-left-hand"]=gsap.timeline({paused:true});</script></body></html>''')
+(P/'selection.json').write_text(json.dumps({'duration':5,'rate':1,'revised_run_id':id,'original_source':'sideway_arrival_v2','previous_source':'sideway_arrival_sample02_wan_v3','source_ranges':{'original':[0,5],'previous':[0,5],'revision':[0,5]},'audio':'intentionally silent'},indent=2)+'\n')
+(P/'STORYBOARD.md').write_text('## Frame 1\nstatus: implemented\nsrc: index.html\nThree equal portrait panels, 5s native playback, no transition, static diagnostic labels.\n')
+print(P)

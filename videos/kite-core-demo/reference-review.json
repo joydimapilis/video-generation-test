@@ -1,0 +1,31 @@
+{
+  "library": "/Users/joydimapilis/Desktop/untitled folder/Startup Launch Videos",
+  "review_method": "Decoded the actual source videos end to end; visually inspected chronological 1fps sequences across each complete video, then 4fps join sequences at Motion5 8\u201311s, Cero 1\u20134s, Paper 6\u20139s. This is sampled chronological footage review, not uninterrupted audiovisual playback. Audio not assessed. Contact sheets support the observations.",
+  "references": [
+    {
+      "source": "/Users/joydimapilis/Desktop/untitled folder/Startup Launch Videos/Motion-5-Motion plans the video scene by scene before building it..mp4",
+      "footage_reviewed": true,
+      "relevance": "A compact software story moves from an input message to visible work and a summary.",
+      "pacing": "0\u20139s logo/character build; 10\u201314s task sent; 15\u201321s response unfolds; 23\u201327s parallel work; 28\u201330s report; 31\u201332s brand. The 8\u201311s join contracts the mascot, then resolves wordmark.",
+      "techniques": "A single message remains the anchor while consequences appear; progress precedes the result.",
+      "application": "Keep one fictional release and one thread throughout the story; show the result rather than a list of capabilities."
+    },
+    {
+      "source": "/Users/joydimapilis/Desktop/untitled folder/Startup Launch Videos/Cero.mp4",
+      "footage_reviewed": true,
+      "relevance": "Contrast between a photographic opening and precise readable product surfaces.",
+      "pacing": "0\u20132s physical token; around 2.25s cut to a phone; 3\u20134s controlled push toward result. The remainder alternates roughly 1\u20133s beats before a 31\u201334s brand hold.",
+      "techniques": "Color continuity connects footage to authored UI; UI occupies the frame when it needs to read.",
+      "application": "One brief physical-paper opening, followed by exact deterministic product illustration. No human scenes or reference conditioning."
+    },
+    {
+      "source": "/Users/joydimapilis/Desktop/untitled folder/Startup Launch Videos/Paper.mp4",
+      "footage_reviewed": true,
+      "relevance": "Calm readable software interaction with deliberate cursor and text timing.",
+      "pacing": "0\u20132s identity to application; 3\u20136s title and tabs; 6\u20139s click then close crop of typed tab label; 12\u201316s broad overview; 17\u201323s details; 27\u201329s CTA; 30\u201332s brand.",
+      "techniques": "Focus follows the control being changed; a readable hold follows each interaction.",
+      "application": "Use distinct request, preview, and feedback beats; leave revised output visible during the final CTA."
+    }
+  ],
+  "phase2_used": false
+}

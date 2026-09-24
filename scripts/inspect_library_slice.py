@@ -10,13 +10,8 @@ import json
 import subprocess
 from pathlib import Path
 
-import os
 from amarillo.library import resolve_library
 
-# The reference library lives outside the repo and its path is personal, so it is
-# read from the environment rather than hardcoded. Point AMARILLO_LIBRARY_DIR at
-# the folder of source videos, or symlink it to data/library.
-LIBRARY = Path(os.environ.get('AMARILLO_LIBRARY_DIR', 'data/library'))
 
 
 def shape_of(width, height):

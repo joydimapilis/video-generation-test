@@ -1,0 +1,23 @@
+{
+  "experiment": "computer-movement-long-01",
+  "budget_root": "artifacts/library-loop-computer-long-01",
+  "runs": [
+    {
+      "id": "01-computer-sequence-kling-v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 168,
+      "use_case": "computer_interaction",
+      "audio_requested": false,
+      "hypothesis": "Longer single take with explicitly separated task phases may avoid continuous typing. Kling previously over-articulated in shorter takes; this is a bounded new sequence test, not a proven model advantage. No real reference media inputs.",
+      "reference_observations": "videos/computer-movement-long/reference-observations.json",
+      "input": {
+        "prompt": "Single continuous 15-second candid shot at normal speed. Camera locked on tripod with absolutely unchanged framing. Preserve the source person, face, hairstyle, age, clothing, lighting, room and device geometry. Ordinary concentrated expression, relaxed closed mouth, natural blinks. Small movements, supported forearms, relaxed low wrists. The woman is editing a short sentence. 0\u20132 seconds: she reads the monitor with fingertips resting quietly on the keyboard. 2\u20135 seconds: she types a few words with small independent fingertip presses close to the key surface; the heels of her hands stay on the padded wrist rest. 5\u20137 seconds: she stops pressing and rereads the screen, leaving fingers relaxed on their keys. 7\u20139 seconds: the right hand slides a short distance along the keyboard to press two navigation keys, then rests. 9\u201311 seconds: eyes refocus higher on the screen while hands remain supported and quiet. 11\u201314 seconds: right hand returns to the letter keys and both hands type one brief correction, irregular quiet finger movements. 14\u201315 seconds: typing settles; one shoulder relaxes slightly with a breath, gaze still on the screen. Give the pauses time to register. No mouse is present: use only the existing keyboard. Hands stay low throughout; never perform a flourish or hold raised curled fingers.",
+        "start_image_url": "local:artifacts/library-loop-computer-movement-studies-02/source-images/01-desktop-typing-v2.png",
+        "duration": "15",
+        "generate_audio": false,
+        "negative_prompt": "continuous repetitive typing, air typing, hands floating, high finger lifts, curled raised hands, fused fingers, extra fingers, hand teleportation, sudden pose changes, head bobbing, looking into camera, talking, exaggerated smile, beauty filter, zoom, pan, camera drift, cuts",
+        "cfg_scale": 0.5
+      }
+    }
+  ]
+}

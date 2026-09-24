@@ -1,0 +1,30 @@
+{
+  "revisions": [
+    {
+      "version": "01",
+      "status": "rejected",
+      "evidence": "../../.context/kite-core-demo/snapshots-01/",
+      "findings": [
+        "Assembler hoisted opening video above headline",
+        "Original reused Onest was a non-Latin subset, causing serif fallback",
+        "Opening headline lines overlap in layout check",
+        "Timeline elements missing stable edit IDs"
+      ],
+      "action": "Use Latin Onest from this capture; keep video behind scene overlay with transparent opening ground; increase headline line-height; add stable IDs. Store original source and snapshots."
+    },
+    {
+      "version": "02",
+      "status": "accepted",
+      "changes": [
+        "Host layering corrected",
+        "Captured Latin font used, sans-serif fallback added",
+        "Opening headline has safe line spacing",
+        "Editable IDs and final footer aligned",
+        "Runtime GSAP local for reproducibility",
+        "Corrected an intermediate font-face declaration caught by lint; final checks have zero findings."
+      ],
+      "evidence": "check-03.json; ../../.context/kite-core-demo/snapshots-final/; encoded-review.json"
+    }
+  ],
+  "tooling_note": "Installed assembly helper import restored through .context/kite-core-demo/tooling/restore-import.mjs using byte-for-byte official media-fetch.mjs; no core script edited."
+}

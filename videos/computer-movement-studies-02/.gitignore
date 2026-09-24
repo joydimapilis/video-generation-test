@@ -1,0 +1,7 @@
+assets/
+node_modules/
+.hyperframes/
+renders/
+snapshots/
+.media/
+__pycache__/

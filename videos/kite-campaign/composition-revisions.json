@@ -1,0 +1,30 @@
+[
+  {
+    "attempt": "assembly-01",
+    "status": "failed",
+    "finding": "Installed assembly helper imports a missing media-fetch module.",
+    "fix": "Use retained official module and scoped import hook; no global modifications.",
+    "paid_cost_usd": 0
+  },
+  {
+    "attempt": "check-01",
+    "status": "rejected",
+    "finding": "Naive class-prefix replacement corrupted app icon filename; numeric CSS prefixes invalid.",
+    "fix": "Safe letter-prefixed selectors and preserved asset filenames.",
+    "paid_cost_usd": 0
+  },
+  {
+    "attempt": "check-02",
+    "status": "rejected",
+    "finding": "Assembler CDN integrity hash mismatched frozen local GSAP; motion did not run.",
+    "fix": "Use local GSAP without stale CDN integrity; render-check again.",
+    "paid_cost_usd": 0
+  },
+  {
+    "attempt": "check-03",
+    "status": "rejected",
+    "finding": "Headline line boxes too tight; final overlapping thumbnail covered page CTA.",
+    "fix": "Increase campaign-idea line spacing; omit covered CTA only from decorative ending thumbnail. Main landing-page CTA retained.",
+    "paid_cost_usd": 0
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "endpoint": "fal-ai/kling-video/v3/pro/text-to-video",
+  "reviewed_samples": 1,
+  "mean_legacy_quality": 8.38,
+  "evidence": [
+    "library-loop-kite-core-demo/kite_core_paper_v1"
+  ],
+  "status": "provisional",
+  "candidates": [
+    {
+      "endpoint": "fal-ai/kling-video/v3/pro/text-to-video",
+      "reviewed_samples": 1,
+      "mean_legacy_quality": 8.38,
+      "evidence": [
+        "library-loop-kite-core-demo/kite_core_paper_v1"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "key": "library-loop-kite-core-demo/kite_core_paper_v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/text-to-video",
+      "decision": "selected",
+      "prompt": "A single five-second cinematic macro product still life. On the right half of a dark charcoal desk sits one small sculptural folded paper kite, matte sky blue paper, a clean simple diamond fold with a short paper tail, beside three blank warm ivory note cards. The left half is mostly empty dark negative space for titles added later. Soft large window light from camera left reveals real paper fibers and fold edges, restrained natural shadows. The objects stay perfectly still. One very slow straight camera push inward, no orbit, no cuts, no transformation, no hands or people. Premium understated product photography, tactile materials, physically coherent contact shadows. All paper and surfaces are completely blank. Landscape composition.",
+      "review": "Paper fold, blank note cards and contact shadows remain coherent in the samples. Slow push changes scale without visible object transformation. No text, people or logos. The top-left notebook edge is incidental, and left negative space is narrower than requested; readable title placement requires a separate dark side panel/overlay. Accept whole take as a simple product still life; edit uses 0\u20134s.",
+      "hypothesis": null,
+      "error": null,
+      "evidence": "artifacts/library-loop-kite-core-demo/evidence/kite_core_paper_v1.json"
+    }
+  ],
+  "reason": "Within-use-case mean of the same four legacy criteria; scene difficulty and resolution vary. Not a human-realism ranking."
+}

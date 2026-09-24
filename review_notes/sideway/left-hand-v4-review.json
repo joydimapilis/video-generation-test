@@ -1,0 +1,20 @@
+{
+  "id": "sideway_arrival_left_pocket_v4",
+  "decision": "rejected",
+  "scores": {
+    "prompt_adherence": 6,
+    "sampled_stability": 7,
+    "composition": 8,
+    "edit_readiness": 5,
+    "human_realism": 6,
+    "face_realism": 6,
+    "identity_consistency": 7,
+    "camera_movement": 9
+  },
+  "review": "Pocket-directed action removes prior splayed hand: hand travels toward outer hip, fingers enter pocket by about 2.5s, stable pocket rest follows. However gaze lifts toward camera after about 2s; mouth/cup rise later. Whole take rejected for continuity. Opening before 1.9375s is a candidate for a matched continuation.",
+  "review_method": "Full take decoded; chronological 4fps full-body frames plus 8fps enlarged face/cup frames. Reviewed exact source at 1.9375s. Subjective sampled visual assessment.",
+  "subjective_scores": true,
+  "motion_reference_video_uploaded": false,
+  "causal_reference_benefit": null,
+  "lip_sync": null
+}

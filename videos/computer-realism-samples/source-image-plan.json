@@ -1,0 +1,100 @@
+{
+  "budget_root": "artifacts/library-loop-computer-realism",
+  "kind": "source_images_not_video_evidence",
+  "runs": [
+    {
+      "id": "01-typing-source-v1",
+      "endpoint": "fal-ai/flux-2-pro",
+      "estimate_cents": 6,
+      "media_type": "image",
+      "input": {
+        "prompt": "An ordinary candid documentary photograph, landscape 16:9. A 38-year-old man with short slightly untidy dark brown hair, modest stubble, a slightly receding hairline, natural under-eye texture, and an unretouched asymmetrical face. Faded slate-blue cotton shirt with sleeves rolled once. Seated at a used light oak desk in a modest home workroom, working on a plain silver 15-inch laptop with a normal black keyboard and a clearly separate rectangular trackpad below the keyboard. Soft broad daylight from a window, ordinary photographic exposure, moderate depth of field keeping both face and hands readable. Relaxed neutral task-focused face, lips closed, eyes directed at the actual laptop screen; no looking at camera, no model pose, no cinematic glamour, no retouching, no logos or legible text. Laptop screen is tilted back normally; keyboard and trackpad have conventional geometry. Both forearms supported, shoulders naturally unequal, slight working lean. Medium three-quarter view from the laptop side, camera slightly above desk height, both hands, keyboard, upper body and face fully visible. The laptop occupies lower left of frame; the man on the right looks down-left into its screen. Both hands are in practical touch-typing position: left fingertips on left letter keys, right fingertips on right letter keys, thumbs near space bar, fingers gently curved with individual visible joints, wrists low and aligned with forearms. Capture a small ordinary typing moment, not lifted decorative hands.",
+        "image_size": {
+          "width": 1536,
+          "height": 864
+        },
+        "seed": 40910,
+        "output_format": "png"
+      },
+      "output_path": "artifacts/library-loop-computer-realism/source-images/01-typing.png"
+    },
+    {
+      "id": "02-trackpad-source-v1",
+      "endpoint": "fal-ai/flux-2-pro",
+      "estimate_cents": 6,
+      "media_type": "image",
+      "input": {
+        "prompt": "An ordinary candid documentary photograph, landscape 16:9. A 38-year-old man with short slightly untidy dark brown hair, modest stubble, a slightly receding hairline, natural under-eye texture, and an unretouched asymmetrical face. Faded slate-blue cotton shirt with sleeves rolled once. Seated at a used light oak desk in a modest home workroom, working on a plain silver 15-inch laptop with a normal black keyboard and a clearly separate rectangular trackpad below the keyboard. Soft broad daylight from a window, ordinary photographic exposure, moderate depth of field keeping both face and hands readable. Relaxed neutral task-focused face, lips closed, eyes directed at the actual laptop screen; no looking at camera, no model pose, no cinematic glamour, no retouching, no logos or legible text. Laptop screen is tilted back normally; keyboard and trackpad have conventional geometry. Both forearms supported, shoulders naturally unequal, slight working lean. A slightly closer side three-quarter view, camera elevated enough to clearly see the entire palm rest and rectangular trackpad. Frame includes face, elbows, wrists and laptop. Man on frame right facing laptop to left. His right index and middle fingertips rest lightly and visibly on the middle of the laptop trackpad; right palm heel supported near its edge, other right fingers relaxed separately. Left hand rests on left keyboard home keys, wrist supported. Clear separation between hands. Screen-directed attentive gaze. Not touching the screen. Trackpad contact is the focal detail.",
+        "image_size": {
+          "width": 1536,
+          "height": 864
+        },
+        "seed": 40911,
+        "output_format": "png"
+      },
+      "output_path": "artifacts/library-loop-computer-realism/source-images/02-trackpad.png"
+    },
+    {
+      "id": "03-read-pause-source-v1",
+      "endpoint": "fal-ai/flux-2-pro",
+      "estimate_cents": 6,
+      "media_type": "image",
+      "input": {
+        "prompt": "An ordinary candid documentary photograph, landscape 16:9. A 38-year-old man with short slightly untidy dark brown hair, modest stubble, a slightly receding hairline, natural under-eye texture, and an unretouched asymmetrical face. Faded slate-blue cotton shirt with sleeves rolled once. Seated at a used light oak desk in a modest home workroom, working on a plain silver 15-inch laptop with a normal black keyboard and a clearly separate rectangular trackpad below the keyboard. Soft broad daylight from a window, ordinary photographic exposure, moderate depth of field keeping both face and hands readable. Relaxed neutral task-focused face, lips closed, eyes directed at the actual laptop screen; no looking at camera, no model pose, no cinematic glamour, no retouching, no logos or legible text. Laptop screen is tilted back normally; keyboard and trackpad have conventional geometry. Both forearms supported, shoulders naturally unequal, slight working lean. A somewhat wider side view from slightly higher than shoulder level, framing seated hips through head and complete desk interaction. Person frame right, laptop frame left, chair clearly visible. Both forearms supported with relaxed elbows. Left and right fingertips independently rest on their respective sides of the keyboard, gently curled, ready for a short typing burst. Eyes at the laptop screen, modest forward lean. Ordinary room background softly visible, plain wall and one shelf, no staged lifestyle accessories. Face and hands unobscured.",
+        "image_size": {
+          "width": 1536,
+          "height": 864
+        },
+        "seed": 40912,
+        "output_format": "png"
+      },
+      "output_path": "artifacts/library-loop-computer-realism/source-images/03-read-pause.png"
+    },
+    {
+      "id": "02-trackpad-source-v2",
+      "endpoint": "fal-ai/flux-2-pro",
+      "estimate_cents": 6,
+      "media_type": "image",
+      "input": {
+        "prompt": "Real candid documentary photograph, landscape 16:9, unretouched ordinary 40-year-old man with short dark hair, slight receding hairline, stubble, under-eye lines, worn slate-blue shirt. Sitting at a wooden desk naturally reading an open silver laptop. Window daylight, plain home office, moderately deep focus. View from his right side at a high three-quarter angle, looking DOWN enough that the ENTIRE laptop keyboard and the large rectangular trackpad IN FRONT OF THE KEYBOARD are clearly visible. Include his face, shoulders and both arms in frame. The computer screen is on the left side of the frame, man on right, eyes looking into the actual screen, lips closed, neutral concentration.\nCRITICAL PHYSICAL POSE: His RIGHT HAND IS NOT ON THE KEYBOARD. His right hand is lower down, closer to his body, on the LARGE EMPTY RECTANGULAR TRACKPAD between the keyboard and the front edge of laptop. Right index and middle finger pads lie flat touching the CENTER OF THE TRACKPAD, two straight relaxed fingers pointing toward the keyboard but stopping SHORT of all keys. The right palm heel rests on the laptop's front edge, right forearm on the desk. Right ring and little fingers relax beside the trackpad. His LEFT hand rests to the LEFT OF THE LAPTOP ON THE WOODEN DESK, palm down, loosely curled fingers. Neither hand is typing. The black keyboard is entirely UNOBSTRUCTED with no fingers on any keys. Separate wrists, five anatomically correct fingers on each hand with natural occlusion. This is a still photograph of trackpad scrolling, not a typing pose. Everyday face and posture, no glamour, no smile to camera, no logos or readable text.",
+        "image_size": {
+          "width": 1536,
+          "height": 864
+        },
+        "seed": 51708,
+        "output_format": "png"
+      },
+      "output_path": "artifacts/library-loop-computer-realism/source-images/02-trackpad-v2.png"
+    },
+    {
+      "id": "02-trackpad-source-v3",
+      "endpoint": "fal-ai/nano-banana-pro",
+      "estimate_cents": 15,
+      "media_type": "image",
+      "output_path": "artifacts/library-loop-computer-realism/source-images/02-trackpad-v3.png",
+      "input": {
+        "prompt": "Real candid documentary photograph, landscape 16:9, unretouched ordinary 40-year-old man with short dark hair, slight receding hairline, stubble, under-eye lines, worn slate-blue shirt. Sitting at a wooden desk naturally reading an open silver laptop. Window daylight, plain home office, moderately deep focus. View from his right side at a high three-quarter angle, looking DOWN enough that the ENTIRE laptop keyboard and the large rectangular trackpad IN FRONT OF THE KEYBOARD are clearly visible. Include his face, shoulders and both arms in frame. The computer screen is on the left side of the frame, man on right, eyes looking into the actual screen, lips closed, neutral concentration.\nCRITICAL PHYSICAL POSE: His RIGHT HAND IS NOT ON THE KEYBOARD. His right hand is lower down, closer to his body, on the LARGE EMPTY RECTANGULAR TRACKPAD between the keyboard and the front edge of laptop. Right index and middle finger pads lie flat touching the CENTER OF THE TRACKPAD, two straight relaxed fingers pointing toward the keyboard but stopping SHORT of all keys. The right palm heel rests on the laptop's front edge, right forearm on the desk. Right ring and little fingers relax beside the trackpad. His LEFT hand rests to the LEFT OF THE LAPTOP ON THE WOODEN DESK, palm down, loosely curled fingers. Neither hand is typing. The black keyboard is entirely UNOBSTRUCTED with no fingers on any keys. Separate wrists, five anatomically correct fingers on each hand with natural occlusion. This is a still photograph of trackpad scrolling, not a typing pose. Everyday face and posture, no glamour, no smile to camera, no logos or readable text. The laptop display is ON, showing a dim ordinary document with soft unreadable text rows and neutral margins. Trackpad position and hand contact must be physically correct. Emphasize the right fingertips touching the broad smooth trackpad surface, with ALL KEYS visibly clear. A natural working moment, not a stock-photo pose.",
+        "aspect_ratio": "16:9",
+        "resolution": "1K",
+        "num_images": 1,
+        "output_format": "png",
+        "seed": 51709
+      }
+    },
+    {
+      "id": "03-read-pause-source-v2",
+      "endpoint": "fal-ai/nano-banana-pro",
+      "estimate_cents": 15,
+      "media_type": "image",
+      "output_path": "artifacts/library-loop-computer-realism/source-images/03-read-pause-v2.png",
+      "input": {
+        "prompt": "An ordinary candid documentary photograph, landscape 16:9. A 38-year-old man with short slightly untidy dark brown hair, modest stubble, a slightly receding hairline, natural under-eye texture, and an unretouched asymmetrical face. Faded slate-blue cotton shirt with sleeves rolled once. Seated at a used light oak desk in a modest home workroom, working on a plain silver 15-inch laptop with a normal black keyboard and a clearly separate rectangular trackpad below the keyboard. Soft broad daylight from a window, ordinary photographic exposure, moderate depth of field keeping both face and hands readable. Relaxed neutral task-focused face, lips closed, eyes directed at the actual laptop screen; no looking at camera, no model pose, no cinematic glamour, no retouching, no logos or legible text. Laptop screen is tilted back normally; keyboard and trackpad have conventional geometry. Both forearms supported, shoulders naturally unequal, slight working lean. A somewhat wider side view from slightly higher than shoulder level, framing seated hips through head and complete desk interaction. Person frame right, laptop frame left, chair clearly visible. Both forearms supported with relaxed elbows. Left and right fingertips independently rest on their respective sides of the keyboard, gently curled, ready for a short typing burst. Eyes at the laptop screen, modest forward lean. Ordinary room background softly visible, plain wall and one shelf, no staged lifestyle accessories. Face and hands unobscured. IMPORTANT: the laptop display is visibly ON with a dim neutral document, grey text rows too small to read. The man is actually looking into this lit display. Keep both hands on the keyboard with individual fingertips contacting keys and forearms resting on desk, wrists low. No jewelry. Everyday unretouched face, not a fashion model. Wider side view, entire seated upper body and keyboard in view.",
+        "aspect_ratio": "16:9",
+        "resolution": "1K",
+        "num_images": 1,
+        "output_format": "png",
+        "seed": 51710
+      }
+    }
+  ]
+}

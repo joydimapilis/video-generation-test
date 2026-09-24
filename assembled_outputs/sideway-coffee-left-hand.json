@@ -1,0 +1,75 @@
+{
+  "project": "Sideway coffee left-hand revision",
+  "date": "2026-09-19",
+  "status": "delivered targeted revision for review",
+  "revised_mp4": "artifacts/final_outcome/sideway-coffee-left-hand/sideway-coffee-left-hand-revised.mp4",
+  "comparison_mp4": "artifacts/final_outcome/sideway-coffee-left-hand/sideway-coffee-left-hand-comparison.mp4",
+  "review_page": "artifacts/final_outcome/sideway-coffee-left-hand/review.html",
+  "editable_project": "videos/sideway-human-realism-test/coffee-left-hand",
+  "selection": "videos/sideway-human-realism-test/coffee-left-hand/revision-selection.json",
+  "full_film_replaced": false,
+  "changes": "Free left hand moves into outer hip pocket and rests there. Matched-frame continuation avoids later camera-directed gaze.",
+  "limitations": [
+    "Hand-focused improvement; mild downward head movement, low eyelids and subtle mouth changes remain.",
+    "5-second study; original six-second film slot not replaced.",
+    "No direct motion-reference conditioning.",
+    "Sampled visual review, not uninterrupted playback.",
+    "Invoices unverified; historical accounting reconstructed conservatively."
+  ],
+  "review": "review_notes/sideway/left-hand-correction.md",
+  "verification": "artifacts/sideway-human-realism-test/coffee-encoded-review/verification.json",
+  "cost": {
+    "new_estimate_cents": 20,
+    "new_reserved_cents": 24,
+    "cumulative_estimate_cents": 1057,
+    "cumulative_reserved_cents": 1221,
+    "approved_cap_cents": 1225,
+    "confirmed_charge_cents": null
+  },
+  "request_ids": {
+    "sideway_arrival_left_pocket_v4": "01a0b7ba-23d8-7c41-9c8d-3448f8fca980",
+    "sideway_arrival_pocket_settle_v5": "01a0b7bd-869c-7e01-b1f6-843d97c230af"
+  },
+  "files": [
+    {
+      "path": "artifacts/final_outcome/sideway-coffee-left-hand/review-notes.md",
+      "sha256": "d9000353d9b1b9ebae3fc8511b55efa0be4a9ad0c24861117fa60d192582d977",
+      "bytes": 2808
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-coffee-left-hand/review.html",
+      "sha256": "0a6a79fb6dd1737df320bcb5f1722e2f12f0ef74c34a0cfa83b55357d23d90ac",
+      "bytes": 1723
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-coffee-left-hand/sideway-coffee-left-hand-comparison.mp4",
+      "sha256": "e14b5005b67664530b98d3289fa1da6721cee1237a15c1a0e60b99146622240f",
+      "bytes": 8344682
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-coffee-left-hand/sideway-coffee-left-hand-revised.mp4",
+      "sha256": "589a74adb6fe25daf0487a738553286b8b99e42e3164bae6134c6743805d646d",
+      "bytes": 2374286
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-coffee-left-hand/takes/sideway_arrival_left_pocket_v4.mp4",
+      "sha256": "e3a20ff4eaa27305082a8abcf6423cc74eb92c74b7479d9a9361346dc276953e",
+      "bytes": 3321301
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-coffee-left-hand/takes/sideway_arrival_pocket_settle_v5.mp4",
+      "sha256": "0236d27cdd613c34c8c717469e06454f9c788b9f6d5abc5d356eea99e7e83cfa",
+      "bytes": 2603208
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-coffee-left-hand/takes/sideway_arrival_sample02_wan_v3.mp4",
+      "sha256": "ef938a1e25de321aac7f4702fc9d75f006509af5a7b37ecb7a1e390aed5d38fe",
+      "bytes": 3310387
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-coffee-left-hand/takes/sideway_arrival_v2.mp4",
+      "sha256": "3665f304d3ef011cc8125f831c5b04db44f89860c2b76c33bbaf830140ca5bde",
+      "bytes": 9965157
+    }
+  ]
+}

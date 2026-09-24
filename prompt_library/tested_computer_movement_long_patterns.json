@@ -1,0 +1,50 @@
+{
+  "scope": "Longer computer interaction samples; text-guided observation only.",
+  "causal_improvement_tested": false,
+  "patterns": [
+    {
+      "pattern": "Distinct phases and resting pauses",
+      "finding": "Can yield varied activity over a long take, but exact beat timing is not reliable.",
+      "evidence": [
+        "02-computer-sequence-kling-v1",
+        "01-computer-sequence-wan-v2"
+      ],
+      "status": "provisional"
+    },
+    {
+      "pattern": "Device transfer remains high risk",
+      "finding": "Laptop trackpad language triggered high curls and crossed hands in Kling and Wan. Simplified keyboard-only prompt reduced crossing, but later hovering persisted.",
+      "evidence": [
+        "03-computer-sequence-kling-v1",
+        "03-computer-sequence-wan-v2",
+        "03-computer-sequence-wan-v3"
+      ],
+      "status": "failure_and_partial_revision"
+    },
+    {
+      "pattern": "Keep a real-time usable sequence",
+      "finding": "Choose an uninterrupted 9-second laptop range with several behaviors; do not hide failure by looping a short static moment. Longer 15-second source retained for inspection.",
+      "evidence": [
+        "03-computer-sequence-wan-v3"
+      ],
+      "status": "provisional_segment"
+    },
+    {
+      "pattern": "Hand contact outranks face attractiveness",
+      "finding": "All rejected laptop takes had stable, believable faces. That did not establish usable device interaction.",
+      "evidence": [
+        "03-computer-sequence-kling-v1",
+        "03-computer-sequence-wan-v2"
+      ],
+      "status": "observed"
+    }
+  ],
+  "review": "review_notes/computer-movement-long.json",
+  "unverified_dimensions": [
+    "actual_cursor_response",
+    "actual_text_entry",
+    "speech_lip_sync",
+    "causal_reference_benefit"
+  ],
+  "numerical_scores": null
+}

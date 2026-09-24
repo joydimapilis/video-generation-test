@@ -1,0 +1,34 @@
+{
+  "name": "Kite Tomorrow \u2014 character revision",
+  "status": "delivered",
+  "final": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/artifacts/final_outcome/kite-tomorrow-character-pass/kite-tomorrow-final.mp4",
+  "comparison": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/artifacts/final_outcome/kite-tomorrow-character-pass/character-comparison.mp4",
+  "editable_project": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-tomorrow-character-pass",
+  "duration_seconds": 38,
+  "resolution": "1920x1080",
+  "fps": 30,
+  "sha256": "4894d53755694501447041c93ed1c38f0b4aeeaafb7f777aa859dabe9f0a85d2",
+  "source_master": "artifacts/final_outcome/kite-tomorrow-ui-pass2/kite-tomorrow-ui-pass2.mp4",
+  "selected_character_run": "kite_person_seedance2_reference_v1",
+  "source_range_seconds": [
+    0,
+    3.6
+  ],
+  "playback_rate": 1,
+  "verification": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/artifacts/final_outcome/kite-tomorrow-character-pass/verification.json",
+  "cost": {
+    "estimate_usd": 2.73,
+    "reserved_usd": 3.14,
+    "confirmed_usd": null,
+    "historical_credits": 31.38,
+    "historical_image_usd": null,
+    "cumulative_usd": null,
+    "ledger": "artifacts/library-loop-kite-tomorrow/budget.json",
+    "authorization": "Explicit single-test incremental $3.14 approval; historical USD not reset or treated as zero."
+  },
+  "limitations": [
+    "Character has improved gaze/expression timing but softer facial detail and a restrained pose.",
+    "One workflow comparison does not establish general model superiority.",
+    "UI is an illustrative deterministic reconstruction, not authenticated product capture."
+  ]
+}

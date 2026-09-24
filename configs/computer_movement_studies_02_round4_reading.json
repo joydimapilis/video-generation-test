@@ -1,0 +1,27 @@
+{
+  "experiment": "new-computer-movement-studies-02",
+  "budget_root": "artifacts/library-loop-computer-movement-studies-02",
+  "source_still_review": "videos/computer-movement-studies-02/source-reviews.json",
+  "runs": [
+    {
+      "id": "01-desktop-reading-veo-standard-v4",
+      "endpoint": "fal-ai/veo3.1/image-to-video",
+      "estimate_cents": 80,
+      "use_case": "computer_interaction",
+      "audio_requested": false,
+      "hypothesis": "V3 still performs typing during requested rest. Remove all typing action for a four-second engaged reading study; new-source v2 still has keys under resting fingers. Last bounded standard Veo attempt.",
+      "reference_observations": "videos/computer-movement-studies-02/reference-observations.json",
+      "input": {
+        "prompt": "A quiet four-second candid portrait of a woman reading a paragraph on her computer monitor. The hands remain at rest in their exact starting positions on the keyboard for the entire shot. Both forearms and palm heels are supported by the padded wrist rest. No keys are pressed. Her attention is clearly on the monitor: her pupils make tiny left-to-right reading movements across the screen, followed by one natural blink. Head orientation remains stable. Subtle breathing visible in the shoulders and shirt. Relaxed closed mouth, ordinary unposed concentration. Preserve the woman, pores, natural skin texture, hair, clothing and desk from the photograph. Locked stationary camera, normal real-time motion, one unbroken shot.",
+        "negative_prompt": "typing, tapping, key presses, finger movement, fingers lifting, hand repositioning, hovering hands, gestures, head nodding, looking down, talking, smile, frozen face, blank stare, beauty filter, camera movement, zoom, cuts",
+        "image_url": "local:artifacts/library-loop-computer-movement-studies-02/source-images/01-desktop-typing-v2.png",
+        "duration": "4s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "seed": 71913,
+        "auto_fix": false
+      }
+    }
+  ]
+}

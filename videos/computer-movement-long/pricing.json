@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-22",
+  "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+  "quote_usd_per_second_audio_off": 0.112,
+  "duration": 15,
+  "estimate_cents_per_call": 168,
+  "reservation_cents_per_call": 194,
+  "source": "https://fal.ai/models/fal-ai/kling-video/v3/pro/image-to-video",
+  "settings": "generate_audio false, one generated start image, no end image or elements",
+  "confirmed_spend": null
+}

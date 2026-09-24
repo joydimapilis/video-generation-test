@@ -1,0 +1,27 @@
+{
+  "experiment": "new-computer-movement-studies-02",
+  "budget_root": "artifacts/library-loop-computer-movement-studies-02",
+  "source_still_review": "videos/computer-movement-studies-02/source-reviews.json",
+  "runs": [
+    {
+      "id": "01-desktop-typing-veo-standard-v2",
+      "endpoint": "fal-ai/veo3.1/image-to-video",
+      "estimate_cents": 120,
+      "use_case": "computer_interaction",
+      "audio_requested": false,
+      "hypothesis": "First take over-articulates finger lifts. New still adds explicit padded wrist contact. Reduce number/amplitude of key presses while preserving ongoing work and gaze.",
+      "reference_observations": "videos/computer-movement-studies-02/reference-observations.json",
+      "input": {
+        "prompt": "A candid locked-off six-second shot of quiet computer work, normal speed. Preserve the woman, practical office, keyboard, padded wrist support and natural texture in this photograph. She is an experienced typist entering a short sentence while watching the monitor. Her forearms stay supported and the heels of both hands remain resting on the black padded support. Only the ends of individual fingers move: very short soft downward key presses, with fingertip pads returning immediately to rest on the keys. Her relaxed hand shape stays almost unchanged, with minimal knuckle movement. Two or three irregular little groups of letters have brief thinking gaps; during each gap her fingertips remain quietly touching their keys. Her eyes subtly track the screen and blink naturally, with a tiny breathing adjustment in the shoulders. The head stays comfortably oriented toward the screen. She continues working at the end, without a finishing gesture. Keep the camera, furniture and keyboard perfectly steady.",
+        "negative_prompt": "piano playing, high finger lifts, high arched knuckles, hands raised from wrist rest, waving fingers, air typing, hovering hands, repeated head nods, performed smile, talking, beauty filter, camera movement, zoom, cuts",
+        "image_url": "local:artifacts/library-loop-computer-movement-studies-02/source-images/01-desktop-typing-v2.png",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "seed": 71910,
+        "auto_fix": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "ok": true,
+  "projectDir": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/capture",
+  "url": "https://kite.ai",
+  "httpStatus": 200,
+  "title": "I'm Kite — the AI marketer for teams with more work than they can handle",
+  "screenshots": 16,
+  "assets": 52,
+  "dropped": {
+    "size-floor": 1,
+    "budget-exhausted": 0,
+    "cap-reached": 21,
+    "unavailable": 0
+  },
+  "detectedSections": 5,
+  "fonts": [
+    "Onest",
+    "Manrope",
+    "interDisplay",
+    "Lato"
+  ],
+  "fontsDetailed": [
+    {
+      "family": "Onest",
+      "weights": [],
+      "variable": true,
+      "weightRange": [
+        100,
+        900
+      ]
+    },
+    {
+      "family": "Manrope",
+      "weights": [
+        400,
+        500,
+        600,
+        700
+      ],
+      "variable": true,
+      "weightRange": [
+        200,
+        800
+      ]
+    },
+    {
+      "family": "interDisplay",
+      "weights": [
+        300,
+        400,
+        500,
+        600,
+        700,
+        800
+      ],
+      "variable": true,
+      "weightRange": [
+        100,
+        900
+      ]
+    },
+    {
+      "family": "Lato",
+      "weights": [
+        400,
+        700,
+        900
+      ],
+      "variable": false
+    }
+  ],
+  "animations": {
+    "webAnimations": 7,
+    "cssDeclarations": 82,
+    "scrollTargets": 28,
+    "cdpAnimations": 57,
+    "canvases": 1
+  },
+  "warnings": [
+    "22 referenced asset(s) are not in this capture (1 size-floor, 21 cap-reached). A thin capture with no drops is a thin page; this one was truncated."
+  ],
+  "lastPhase": {
+    "schema": "hyperframes.capture.phase.v1",
+    "phase": "complete",
+    "status": "completed",
+    "remainingMs": 61340
+  }
+}

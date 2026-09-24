@@ -1,0 +1,27 @@
+{
+  "experiment": "new-computer-movement-studies-02",
+  "budget_root": "artifacts/library-loop-computer-movement-studies-02",
+  "source_still_review": "videos/computer-movement-studies-02/source-reviews.json",
+  "runs": [
+    {
+      "id": "02-mouse-work-veo-standard-v2",
+      "endpoint": "fal-ai/veo3.1/image-to-video",
+      "estimate_cents": 120,
+      "use_case": "computer_interaction",
+      "audio_requested": false,
+      "hypothesis": "Full-take review found index finger lifting repeatedly on click. Remove click action; request small mouse-body movement with fingers resting on shell.",
+      "reference_observations": "videos/computer-movement-studies-02/reference-observations.json",
+      "input": {
+        "prompt": "Static tripod shot, six seconds at normal real-time speed. Animate the supplied photograph as a quiet candid moment of computer work. The seated man uses the mouse to move the pointer while his eyes follow a small area of the monitor. His right hand keeps its relaxed cupped shape around the mouse for the entire shot: index and middle fingertips lie on their buttons, other fingers and palm maintain contact with the shell. Hand and mouse move together as one supported unit in two very small smooth slides on the blue pad, with a short reading pause between them. The mouse always rests flat on the pad and the wrist rests low on the desk. This is pointer movement only, with the fingers resting quietly rather than clicking. His left hand stays relaxed at the keyboard. One natural blink and a tiny breathing adjustment keep the face and shoulders alive without a head turn. Keep the original face, natural skin, clothing, room and exact camera framing. Work quietly continues at the end.",
+        "negative_prompt": "raised index finger, finger tapping, clicking, fingers leaving mouse, floating hand, mouse lifting off pad, exaggerated gestures, head bobbing, looking at camera, speech, beauty retouching, camera movement, cuts",
+        "image_url": "local:artifacts/library-loop-computer-movement-studies-02/source-images/02-mouse-work.png",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "seed": 71911,
+        "auto_fix": false
+      }
+    }
+  ]
+}

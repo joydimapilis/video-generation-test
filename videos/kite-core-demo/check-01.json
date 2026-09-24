@@ -1,0 +1,914 @@
+{
+  "ok": false,
+  "strict": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 34,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"2\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<h1 data-start=\"0\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"4\" data-track-index=\"4\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"5\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<h2 data-start=\"4\" data-track-index=\"6\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"4.3\" data-track-index=\"7\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"4\" data-track-index=\"8\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-ground\" starts with a digit, so the common selector `#02-draft-ground` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-ground",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-heading\" starts with a digit, so the common selector `#02-draft-heading` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-heading",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-stage\" starts with a digit, so the common selector `#02-draft-stage` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-stage",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-thread\" starts with a digit, so the common selector `#02-draft-thread` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-thread",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-reply\" starts with a digit, so the common selector `#02-draft-reply` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-reply",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-author\" starts with a digit, so the common selector `#02-draft-author` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-author",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-message\" starts with a digit, so the common selector `#02-draft-message` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-message",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-actions\" starts with a digit, so the common selector `#02-draft-actions` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-actions",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-preview-button\" starts with a digit, so the common selector `#02-draft-preview-button` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-preview-button",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-review-button\" starts with a digit, so the common selector `#02-draft-review-button` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-review-button",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-web\" starts with a digit, so the common selector `#02-draft-web` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-web",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-browser\" starts with a digit, so the common selector `#02-draft-browser` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-browser",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-bar\" starts with a digit, so the common selector `#02-draft-bar` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-bar",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-dots\" starts with a digit, so the common selector `#02-draft-dots` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-dots",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-draft-badge\" starts with a digit, so the common selector `#02-draft-draft-badge` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-draft-badge",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-page-title\" starts with a digit, so the common selector `#02-draft-page-title` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-page-title",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-subline\" starts with a digit, so the common selector `#02-draft-subline` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-subline",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-feature-list\" starts with a digit, so the common selector `#02-draft-feature-list` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-feature-list",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-feature-0\" starts with a digit, so the common selector `#02-draft-feature-0` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-feature-0",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-feature-1\" starts with a digit, so the common selector `#02-draft-feature-1` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-feature-1",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-feature-2\" starts with a digit, so the common selector `#02-draft-feature-2` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-feature-2",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-page-bottom\" starts with a digit, so the common selector `#02-draft-page-bottom` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-page-bottom",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-ready\" starts with a digit, so the common selector `#02-draft-ready` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-ready",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-draft-footer\" starts with a digit, so the common selector `#02-draft-footer` throws a SyntaxError in querySelector().",
+        "selector": "#02-draft-footer",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/02-draft.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div class=\"03-feedback-ground\" data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/03-feedback.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div class=\"03-feedback-content\" data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/compositions/frames/03-feedback.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      }
+    ],
+    "filesScanned": 4
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": false,
+    "errorCount": 1,
+    "warningCount": 0,
+    "infoCount": 7,
+    "findings": [
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 0.75,
+        "selector": "h1[data-start=\"0\"] > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 104,
+          "top": 332,
+          "right": 301.34,
+          "bottom": 495,
+          "width": 197.34,
+          "height": 163
+        },
+        "containerSelector": "h1[data-start=\"0\"] > span:nth-of-type(4)",
+        "text": "give",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-n": "01-notes-word"
+        },
+        "sourceFile": "compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 104,
+          "y": 332,
+          "width": 197.34,
+          "height": 163
+        },
+        "firstSeen": 0.75,
+        "lastSeen": 3.875,
+        "occurrences": 27,
+        "heldMs": 3125
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 1.667,
+        "selector": "h1[data-start=\"0\"] > span:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 104,
+          "top": 332,
+          "right": 301.34,
+          "bottom": 495,
+          "width": 197.34,
+          "height": 163
+        },
+        "containerSelector": "#el-01-notes-video-0",
+        "text": "give",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {
+          "data-n": "01-notes-word"
+        },
+        "sourceFile": "compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 104,
+          "y": 332,
+          "width": 197.34,
+          "height": 163
+        },
+        "firstSeen": 1.667,
+        "lastSeen": 1.667,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 1.667,
+        "selector": "h1[data-start=\"0\"] > span:nth-of-type(2)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 332.72,
+          "top": 332,
+          "right": 565.69,
+          "bottom": 495,
+          "width": 232.97,
+          "height": 163
+        },
+        "containerSelector": "#el-01-notes-video-0",
+        "text": "your",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {
+          "data-n": "01-notes-word"
+        },
+        "sourceFile": "compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 332.72,
+          "y": 332,
+          "width": 232.97,
+          "height": 163
+        },
+        "firstSeen": 1.667,
+        "lastSeen": 1.667,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 1.667,
+        "selector": "h1[data-start=\"0\"] > span:nth-of-type(3)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 597.06,
+          "top": 332,
+          "right": 852.7,
+          "bottom": 495,
+          "width": 255.64,
+          "height": 163
+        },
+        "containerSelector": "#el-01-notes-video-0",
+        "text": "notes",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {
+          "data-n": "01-notes-word"
+        },
+        "sourceFile": "compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 597.06,
+          "y": 332,
+          "width": 255.64,
+          "height": 163
+        },
+        "firstSeen": 1.667,
+        "lastSeen": 1.667,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 1.667,
+        "selector": "h1[data-start=\"0\"] > span:nth-of-type(4)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 104,
+          "top": 460,
+          "right": 162.25,
+          "bottom": 623,
+          "width": 58.25,
+          "height": 163
+        },
+        "containerSelector": "#el-01-notes-video-0",
+        "text": "a",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {
+          "data-n": "01-notes-word"
+        },
+        "sourceFile": "compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 104,
+          "y": 460,
+          "width": 58.25,
+          "height": 163
+        },
+        "firstSeen": 1.667,
+        "lastSeen": 1.667,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 1.667,
+        "selector": "h1[data-start=\"0\"] > span:nth-of-type(5)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 193.63,
+          "top": 460,
+          "right": 405.22,
+          "bottom": 623,
+          "width": 211.59,
+          "height": 163
+        },
+        "containerSelector": "#el-01-notes-video-0",
+        "text": "next",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {
+          "data-n": "01-notes-word"
+        },
+        "sourceFile": "compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 193.63,
+          "y": 460,
+          "width": 211.59,
+          "height": 163
+        },
+        "firstSeen": 1.667,
+        "lastSeen": 1.667,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 1.667,
+        "selector": "h1[data-start=\"0\"] > span:nth-of-type(6)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 436.59,
+          "top": 460,
+          "right": 660.23,
+          "bottom": 623,
+          "width": 223.64,
+          "height": 163
+        },
+        "containerSelector": "#el-01-notes-video-0",
+        "text": "step.",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {
+          "data-n": "01-notes-word"
+        },
+        "sourceFile": "compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 436.59,
+          "y": 460,
+          "width": 223.64,
+          "height": 163
+        },
+        "firstSeen": 1.667,
+        "lastSeen": 1.667,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 1.667,
+        "selector": "div[data-start=\"0\"] > span:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 178,
+          "top": 88.5,
+          "right": 246.25,
+          "bottom": 139.5,
+          "width": 68.25,
+          "height": 51
+        },
+        "containerSelector": "#el-01-notes-video-0",
+        "text": "Kite",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 178,
+          "y": 88.5,
+          "width": 68.25,
+          "height": 51
+        },
+        "firstSeen": 1.667,
+        "lastSeen": 1.667,
+        "occurrences": 1,
+        "heldMs": 0
+      }
+    ],
+    "duration": 30,
+    "samples": [
+      1.667,
+      5,
+      8.333,
+      11.667,
+      15,
+      18.333,
+      21.667,
+      25,
+      28.333
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 8,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1.48:1; WCAG AA requires 3:1.",
+        "text": "Kite",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(214,211,218)",
+        "ratio": 1.48,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(119,119,119)",
+        "large": true,
+        "selector": "div > div:nth-of-type(1) > div > div:nth-of-type(4) > span",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-notes.html",
+        "bbox": {
+          "x": 178,
+          "y": 88.5,
+          "width": 68.25,
+          "height": 51
+        },
+        "time": 1.667
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      1.667,
+      8.333,
+      15,
+      21.667,
+      28.333
+    ],
+    "checked": 42,
+    "passed": 41
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "_meta": {
+    "version": "0.8.62",
+    "latestVersion": "0.8.60",
+    "updateAvailable": false
+  }
+}

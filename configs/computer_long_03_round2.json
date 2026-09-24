@@ -1,0 +1,26 @@
+{
+  "experiment": "computer-movement-long-03",
+  "budget_root": "artifacts/library-loop-computer-long-03",
+  "runs": [
+    {
+      "id": "03-computer-sequence-wan-v2",
+      "endpoint": "wan/v2.6/image-to-video",
+      "estimate_cents": 225,
+      "use_case": "computer_interaction",
+      "audio_requested": false,
+      "hypothesis": "Reroute after reviewed Kling contact failures; simplify action language and increase resting pauses. Bounded test, not established model superiority.",
+      "reference_observations": "videos/computer-movement-long/reference-observations.json",
+      "input": {
+        "prompt": "A single locked-off 15-second documentary shot of this woman quietly working on her laptop. Preserve her exact appearance and room. Start by reading the laptop screen for two seconds, hands resting naturally on the keyboard. Type a few words with small irregular finger presses, then pause completely to read. Around the middle of the shot, her right hand slides down onto the laptop trackpad, keeping the heel of the hand supported on the palm rest. Her index finger lies flat on the trackpad and makes one short gentle scroll. The other fingers remain relaxed and close together; the left hand rests on the keys. Read for a moment with her right hand resting on the pad. Slide that hand back to the letter keys and type a brief correction, then rest both hands low on the keyboard. One small shoulder settling, otherwise quiet posture. Eyes stay directed toward the screen with only one brief keyboard glance. Relaxed closed mouth, natural blink, minimal head movement. Camera perfectly still, normal speed. Silent scene.",
+        "image_url": "local:artifacts/library-loop-computer-movement-studies-02/source-images/03-laptop-typing.png",
+        "duration": "15",
+        "resolution": "1080p",
+        "enable_prompt_expansion": false,
+        "multi_shots": false,
+        "seed": 922003,
+        "enable_safety_checker": true,
+        "negative_prompt": "air typing, high finger lifts, curled raised fingers, floating hands, extra fingers, fused fingers, excessive head movement, talking, animated expression, cuts, zoom, camera movement, hand teleportation, repetitive typing loop"
+      }
+    }
+  ]
+}

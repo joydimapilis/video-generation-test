@@ -1,0 +1,19 @@
+{
+  "assets/current.mp4": {
+    "source": "artifacts/library-loop-kite-tomorrow/outputs/kite_person_seedance2_reference_v1.mp4",
+    "role": "current baseline"
+  },
+  "assets/source-still.png": {
+    "source": "artifacts/library-loop-kite-tomorrow/source-images/purposeful-contact-v2.png",
+    "role": "new still reviewed before generation",
+    "tool": "built-in imagegen",
+    "cost_usd": null
+  },
+  "assets/candidate.mp4": {
+    "source": "artifacts/library-loop-kite-tomorrow/outputs/kite_person_seedance2_purposeful_contact_v2.mp4",
+    "role": "new reviewed test candidate; not integrated",
+    "endpoint": "bytedance/seedance-2.0/image-to-video",
+    "request_id": "01a0b443-bb89-7bf3-b53b-26b0d4b20a80",
+    "sha256": "23e9208d031ce3e82fe96a44dc24c7373d280e384b29a70ebc223c35b5396358"
+  }
+}

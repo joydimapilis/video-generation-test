@@ -1,0 +1,8 @@
+[
+  {
+    "video": "artifacts/final_outcome/kite-campaign/kite-campaign.mp4",
+    "reverse_engineering": "artifacts/final_outcome/kite-campaign/kite-campaign.reverse-engineering.md",
+    "reverse_engineering_sha256": "b811e4ec2107a85eec086680ee5fd020e798639167a9c34bbbbbbcd71b7690f0",
+    "documentation_complete": true
+  }
+]

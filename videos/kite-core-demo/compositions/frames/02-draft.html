@@ -1,0 +1,89 @@
+<template>
+<style>
+@font-face{font-family:Onest;src:url('assets/Onest.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:block}
+#root{position:relative;width:1920px;height:1080px;overflow:hidden;container-type:size;font-family:Onest,sans-serif;color:#FFFFFF}
+[id="f02-draft-ground"]{position:absolute;inset:0;background:#1D1C1D}
+[id="f02-draft-heading"]{position:absolute;left:105px;top:138px;margin:0;font-size:4.895833cqw;line-height:1.1;letter-spacing:-.045em;font-weight:800}
+[id="f02-draft-heading"] span{color:#347BCD}
+[id="f02-draft-stage"]{position:absolute;left:220px;top:325px;width:1480px;height:605px}
+[id="f02-draft-thread"]{position:absolute;inset:0;transform-origin:50% 50%}
+[id="f02-draft-reply"]{position:absolute;left:0;top:25px;width:1480px;height:420px;box-sizing:border-box;border:1px solid #484C50;background:#18191A;padding:52px 62px}
+[id="f02-draft-author"]{display:flex;align-items:center;gap:22px;font-size:2.083333cqw;font-weight:700}
+[id="f02-draft-author"] img{width:64px;height:64px;object-fit:contain}
+[id="f02-draft-message"]{font-size:2.604167cqw;line-height:1.35;letter-spacing:-.025em;margin-top:30px;margin-bottom:35px}
+[id="f02-draft-actions"]{display:flex;gap:20px}
+[id="f02-draft-preview-button"],[id="f02-draft-review-button"]{height:80px;min-width:265px;padding:0 38px;border:1px solid #484C50;display:flex;align-items:center;justify-content:center;font-size:1.770833cqw;font-weight:650;box-sizing:border-box;transform-origin:50% 50%}
+[id="f02-draft-preview-button"]{background:#347BCD;border-color:#347BCD;color:#FFFFFF}
+[id="f02-draft-review-button"]{background:#18191A;color:#E5E7EB}
+[id="f02-draft-web"]{position:absolute;inset:0;z-index:2;transform-origin:50% 50%}
+[id="f02-draft-browser"]{position:absolute;left:50px;top:0;width:1380px;height:605px;box-sizing:border-box;border:1px solid #E5E7EB;background:#FFFFFF;color:#1D1C1D}
+[id="f02-draft-bar"]{height:62px;padding:0 28px;box-sizing:border-box;border-bottom:1px solid #E5E7EB;display:flex;align-items:center;gap:28px;font-size:1.354167cqw;color:#484C50}
+[id="f02-draft-dots"]{display:flex;gap:8px}
+[id="f02-draft-dots"] i{width:8px;height:8px;border-radius:50%;background:#484C50;opacity:.45}
+[id="f02-draft-draft-badge"]{margin-left:auto;border:1px solid #347BCD;color:#347BCD;padding:5px 15px;font-size:1.25cqw;font-weight:600}
+[id="f02-draft-page-title"]{position:absolute;left:62px;top:111px;font-size:4.166667cqw;line-height:1.04;letter-spacing:-.045em;font-weight:800;margin:0}
+[id="f02-draft-subline"]{position:absolute;left:64px;top:327px;font-size:1.770833cqw;line-height:1.45;letter-spacing:-.02em;width:710px;color:#484C50}
+[id="f02-draft-feature-list"]{position:absolute;left:925px;top:113px;width:390px;border-left:1px solid #E5E7EB;padding-left:34px;box-sizing:border-box}
+[class~="02-draft-feature"]{height:104px;box-sizing:border-box;border-bottom:1px solid #E5E7EB;padding-top:26px;font-size:1.666667cqw;letter-spacing:-.02em;font-weight:600;display:flex;gap:17px;align-items:flex-start}
+[class~="02-draft-feature"] span{color:#347BCD;font-weight:400}
+[id="f02-draft-page-bottom"]{position:absolute;left:64px;right:64px;bottom:36px;border-top:1px solid #E5E7EB;padding-top:22px;font-size:1.354167cqw;color:#484C50;display:flex;justify-content:space-between}
+[id="f02-draft-ready"]{position:absolute;right:270px;top:273px;font-size:1.354167cqw;letter-spacing:-.015em;color:#E5E7EB}
+[id="f02-draft-ready"] span{display:inline-block;width:8px;height:8px;background:#347BCD;border-radius:50%;margin-right:13px;vertical-align:middle}
+[id="f02-draft-footer"]{position:absolute;left:105px;bottom:49px;color:#E5E7EB;font-size:1.354167cqw}
+</style>
+<div data-hf-id="hf-s786" id="root" data-composition-id="02-draft" data-duration="10" data-width="1920" data-height="1080">
+<div data-hf-id="hf-2rxd" id="f02-draft-ground" class="clip" data-start="0" data-duration="10" data-track-index="0"></div>
+<h1 data-hf-id="hf-5f3b" id="f02-draft-heading">from notes <span data-hf-id="hf-3lre">to a draft.</span></h1>
+<div data-hf-id="hf-u8jc" id="f02-draft-stage">
+<div data-hf-id="hf-f1vq" id="f02-draft-thread">
+<div data-hf-id="hf-sfgu" id="f02-draft-reply">
+<div data-hf-id="hf-5x5c" id="f02-draft-author"><img data-hf-id="hf-rp9m" src="assets/kite-slack-app-icon.png" alt="Kite">Kite</div>
+<div data-hf-id="hf-h85t" id="f02-draft-message">Your launch-page draft is ready.</div>
+<div data-hf-id="hf-bpx3" id="f02-draft-actions"><div data-hf-id="hf-nkkw" id="f02-draft-preview-button">Preview ↗</div><div data-hf-id="hf-67pz" id="f02-draft-review-button">Review</div></div>
+</div>
+</div>
+<div data-hf-id="hf-r0n4" id="f02-draft-web">
+<div data-hf-id="hf-21ye" id="f02-draft-browser">
+<div data-hf-id="hf-ubl1" id="f02-draft-bar"><div data-hf-id="hf-jagu" id="f02-draft-dots"><i data-hf-id="hf-wt6k"></i><i data-hf-id="hf-zeb8"></i><i data-hf-id="hf-y7e5"></i></div><span data-hf-id="hf-qws1">Relay / launch draft</span><span data-hf-id="hf-fvh3" id="f02-draft-draft-badge">Draft</span></div>
+<h2 data-hf-id="hf-lam8" id="f02-draft-page-title">A shared inbox.<br data-hf-id="hf-x5px">A clearer day.</h2>
+<div data-hf-id="hf-uo79" id="f02-draft-subline">Saved replies and team handoff,<br data-hf-id="hf-rsrt">in one place.</div>
+<div data-hf-id="hf-vxyt" id="f02-draft-feature-list">
+<div data-hf-id="hf-5jj4" id="f02-draft-feature-0" class="02-draft-feature"><span data-hf-id="hf-jdai">/</span> Shared inbox</div>
+<div data-hf-id="hf-516b" id="f02-draft-feature-1" class="02-draft-feature"><span data-hf-id="hf-4csu">/</span> Saved replies</div>
+<div data-hf-id="hf-4480" id="f02-draft-feature-2" class="02-draft-feature"><span data-hf-id="hf-4r3v">/</span> Team handoff</div>
+</div>
+<div data-hf-id="hf-g1zd" id="f02-draft-page-bottom"><span data-hf-id="hf-9oli">Relay</span><span data-hf-id="hf-7qll">Launch page preview</span></div>
+</div>
+</div>
+</div>
+<div data-hf-id="hf-29g7" id="f02-draft-ready"><span data-hf-id="hf-uckh"></span>ready for your feedback</div>
+<div data-hf-id="hf-8mp2" id="f02-draft-footer">Illustrative workflow</div>
+</div>
+<script src="assets/gsap.min.js"></script>
+<script>
+(function(){
+const el=(name)=>document.getElementById('f02-draft-'+name);
+const tl=gsap.timeline({paused:true});
+tl.fromTo(el('heading'),{opacity:0,y:14},{opacity:1,y:0,duration:.45,ease:'power3.out'},0);
+tl.fromTo(el('thread'),{opacity:0,y:20},{opacity:1,y:0,duration:.48,ease:'power3.out'},.05);
+// Tactile press; recovery is adjacent to preserve scale continuity.
+tl.to(el('preview-button'),{scale:.92,duration:.16,ease:'none'},2);
+tl.to(el('preview-button'),{scale:1,duration:.55,ease:'back.out(1.8)'},2.16);
+// One fixed-footprint state swap. The preview remains a separate sharp surface.
+tl.to(el('thread'),{scale:.78,opacity:0,duration:.4,ease:'power2.in'},2.35);
+tl.fromTo(el('web'),{scale:.78,opacity:0},{scale:1,opacity:1,duration:.65,ease:'back.out(1.4)'},2.60);
+tl.fromTo(el('page-title'),{y:12,opacity:0},{y:0,opacity:1,duration:.42,ease:'power3.out'},3.28);
+tl.fromTo(el('subline'),{y:10,opacity:0},{y:0,opacity:1,duration:.42,ease:'power3.out'},3.7);
+// Content-derived reveal windows are computed once, leaving a full closing hold.
+const content=[{body:'Shared inbox'},{body:'Saved replies'},{body:'Team handoff'}];
+let cursor=4.3;
+const schedule=content.map((item,index)=>{const start=cursor;cursor+=.65+item.body.length*.035;return {index,start};});
+schedule.forEach(item=>tl.fromTo(el('feature-'+item.index),{x:18,opacity:0},{x:0,opacity:1,duration:.46,ease:'power3.out'},item.start));
+tl.fromTo(el('page-bottom'),{opacity:0},{opacity:1,duration:.4,ease:'power2.out'},7.3);
+tl.fromTo(el('ready'),{opacity:0,y:5},{opacity:1,y:0,duration:.4,ease:'power2.out'},8);
+tl.to({}, {duration:1.6},8.4);
+window.__timelines=window.__timelines||{};
+window.__timelines['02-draft']=tl;
+})();
+</script>
+</template>

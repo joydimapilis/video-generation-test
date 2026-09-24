@@ -1,0 +1,41 @@
+{
+  "video": "artifacts/final_outcome/kite-campaign/kite-campaign.mp4",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "duration_seconds": 36.0,
+  "frames_decoded": 1080,
+  "full_decode_pass": true,
+  "preview_encoded_comparisons": [
+    {
+      "time": 7.9,
+      "rgb_mae_255": 0.796
+    },
+    {
+      "time": 15.9,
+      "rgb_mae_255": 2.0593
+    },
+    {
+      "time": 19.9,
+      "rgb_mae_255": 1.4953
+    },
+    {
+      "time": 27.9,
+      "rgb_mae_255": 1.1994
+    },
+    {
+      "time": 35.9,
+      "rgb_mae_255": 1.0671
+    }
+  ],
+  "audio": {
+    "codec": "aac",
+    "sample_rate": "48000",
+    "channels": 2,
+    "source_correlation": 0.9996621009264661,
+    "peak_dbfs": -3.8820295003962153,
+    "clipped_samples": 0,
+    "review_method": "Numerical waveform, exact intended-score correlation and synthesis inspection. No independent listening claim."
+  },
+  "status": "technical_checks_passed_pending_visual_review"
+}

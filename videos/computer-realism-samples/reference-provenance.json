@@ -1,0 +1,108 @@
+{
+  "collection": "references/human-realism",
+  "requested_name": "human-movements",
+  "mapping": "Existing user-provided movement collection per repository README; no separate folder of that exact name found",
+  "provider_video_uploads": 0,
+  "use": "behavioral observations translated to prompt, not motion/identity copying",
+  "clips": [
+    {
+      "file": "references/human-realism/human-reference-01.mp4",
+      "sha256": "e7e929cf3f7b661a4ec2f9560f8c70fca2adab5a5a91523182b2a1beb31aa99d",
+      "duration": 20.56,
+      "full_decode_ok": true,
+      "chronological_review_fps": 2,
+      "frames": 41,
+      "primary_use": "whole_body_and_office_work",
+      "approximate_useful_ranges_seconds": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          11
+        ]
+      ],
+      "kite_role": "secondary"
+    },
+    {
+      "file": "references/human-realism/human-reference-02.mp4",
+      "sha256": "5178f9ce56a99881aa001f9b19bdcd4bc201cc0045419fb9883b8fcb92a0f494",
+      "duration": 5.076667,
+      "full_decode_ok": true,
+      "chronological_review_fps": 2,
+      "frames": 10,
+      "primary_use": "typing_finger_contact",
+      "approximate_useful_ranges_seconds": [
+        [
+          0,
+          5
+        ]
+      ],
+      "kite_role": "supplemental_hands"
+    },
+    {
+      "file": "references/human-realism/human-reference-03.mp4",
+      "sha256": "97faaf7e02128ad0f30b1172b9fca9176fa900d9b64fbc1d180993fc84481446",
+      "duration": 25.358667,
+      "full_decode_ok": true,
+      "chronological_review_fps": 2,
+      "frames": 51,
+      "primary_use": "screen_keyboard_gaze_and_object_contact",
+      "approximate_useful_ranges_seconds": [
+        [
+          0,
+          7
+        ],
+        [
+          20,
+          25
+        ]
+      ],
+      "kite_role": "secondary"
+    },
+    {
+      "file": "references/human-realism/human-reference-04.mp4",
+      "sha256": "aa8625fbd04c69e1e354402e61128b538b79e14d023cb7a2f5536af0dfda0153",
+      "duration": 19.646667,
+      "full_decode_ok": true,
+      "chronological_review_fps": 2,
+      "frames": 39,
+      "primary_use": "quiet_seated_attention_and_posture",
+      "approximate_useful_ranges_seconds": [
+        [
+          0,
+          4
+        ]
+      ],
+      "kite_role": "primary_overall"
+    },
+    {
+      "file": "references/human-realism/human-reference-05.mp4",
+      "sha256": "28538087ee7bc97b9a93021db457c4cb82a4bbb0fbafaaeb5668d7116be4617b",
+      "duration": 36.201667,
+      "full_decode_ok": true,
+      "chronological_review_fps": 2,
+      "frames": 72,
+      "primary_use": "laptop_keyboard_trackpad_area_interaction",
+      "approximate_useful_ranges_seconds": [
+        [
+          0,
+          10
+        ],
+        [
+          16,
+          24
+        ]
+      ],
+      "kite_role": "supplemental_laptop"
+    }
+  ],
+  "reviewed_this_run": [
+    "02 0-2s at 8fps",
+    "04 0-2s at 8fps",
+    "05 7-9s at 8fps",
+    "03 full-clip overview at 12 samples"
+  ],
+  "limits": "Sampled frames, no continuous playback or measured keystroke/gaze tracking; no matched baseline."
+}

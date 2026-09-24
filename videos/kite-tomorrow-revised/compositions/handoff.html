@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Kite Tomorrow — handoff revision</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:Onest;src:url('assets/Onest.woff2') format('woff2');font-weight:100 900}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#F8F6F2}
+#handoff-root{position:relative;width:100%;height:100%;font-family:Onest,sans-serif;color:#1D1C1D}.clip{position:absolute;inset:0;width:100%;height:100%}
+.heading{position:absolute;left:88px;top:39px;margin:0;font-size:53px;line-height:64px;font-weight:550;letter-spacing:-1.5px}
+.app{position:absolute;left:88px;top:136px;width:1744px;height:825px;background:white;border:1px solid #D4CED5;border-radius:14px;overflow:hidden}
+.topbar{height:54px;background:#352138;display:flex;align-items:center;gap:28px;padding:0 24px;color:#EEE7EF}.history{width:306px;font-size:24px;letter-spacing:14px}.search{width:870px;height:34px;border:1px solid #746177;border-radius:7px;background:#5A455D;padding:4px 18px;font-size:19px;line-height:24px}.top-avatar{margin-left:auto;width:32px;height:32px;background:#D8B39C;border-radius:6px;color:#352138;text-align:center;font-size:21px;font-weight:650;line-height:32px}
+.sidebar{position:absolute;left:0;top:54px;bottom:0;width:298px;background:#F4EEF5;border-right:1px solid #DDD5DF;padding:24px 16px;color:#49354D}.workspace{font-size:27px;font-weight:650;padding:0 14px 22px}.side-row{height:44px;padding:7px 14px;font-size:22px;line-height:30px;border-radius:6px;display:flex;gap:13px;align-items:center}.side-row img{width:27px;height:27px;border-radius:5px}.side-section{font-size:18px;font-weight:550;margin:30px 14px 8px;color:#66576A}.selected{background:#DECBE3;color:#37203D;font-weight:600}.side-symbol{width:25px;color:#655269}
+.channel-header{position:absolute;left:298px;right:0;top:54px;height:75px;border-bottom:1px solid #E5E1E6;padding:19px 36px;font-size:28px;font-weight:650;display:flex;justify-content:space-between;align-items:center}.channel-tools{font-size:19px;font-weight:450;color:#625963}
+.message{position:absolute;left:330px;right:44px;top:163px;padding-left:70px}.avatar{position:absolute;left:0;top:0;width:48px;height:48px;border-radius:9px;background:#DEC5B5;color:#3E3027;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:650}.avatar img{width:100%;height:100%;border-radius:9px}.author{font-size:25px;font-weight:650;line-height:32px;display:flex;align-items:center;gap:12px}.app-badge{padding:0 6px;background:#EEECEF;border-radius:4px;color:#615A63;font-size:15px;font-weight:550;line-height:23px}
+.request-copy{font-size:35px;line-height:47px;letter-spacing:-.65px;margin-top:11px}.mention{background:#E5F1F8;color:#145E80;border-radius:4px;padding:0 3px}.attachment-line{display:flex;align-items:center;gap:12px;margin-top:19px;font-size:23px;font-weight:550;line-height:32px}.document-icon{border:1px solid #BCB8AF;border-radius:4px;width:26px;height:31px;display:inline-flex;align-items:center;justify-content:center;font-size:17px;color:#5D574E;background:#F8F6F2}
+.notes{margin-top:13px;width:1014px;padding:22px 27px;border:1px solid #DCD7CE;border-radius:8px;background:#FBFAF6}.note-title{font-size:17px;letter-spacing:1.2px;color:#625D52;font-weight:550;margin-bottom:15px}.note-item{font-size:28px;line-height:40px;display:flex;align-items:center;gap:16px;padding:6px 0}.note-dot{width:5px;height:5px;border-radius:50%;background:#6F675C;flex:none}
+#returned{top:395px}.reply-copy{font-size:31px;line-height:40px;margin-top:8px}.draft-card{margin-top:16px;width:1014px;border:1px solid #C8CEB8;border-radius:8px;overflow:hidden;background:#F1F2E5;display:flex;align-items:center;min-height:174px;padding:22px 26px;gap:32px}.draft-copy{flex:1}.relay{font-size:23px;font-weight:650;line-height:30px;margin-bottom:11px}.draft-title{font-size:34px;font-weight:600;line-height:42px;letter-spacing:-.8px}.draft-subtitle{font-size:22px;line-height:33px;color:#4F5843;margin-top:5px}.mini-page{width:204px;height:124px;border:1px solid #C3C9B1;border-radius:5px;background:#F1F2E5;flex:none;padding:0}.mini-nav{font-size:13px;font-weight:650;border-bottom:1px solid #DDE1D1;padding-bottom:8px}.mini-hero{font-size:17px;font-weight:600;line-height:21px;margin-top:8px;color:#29321F}.mini-owner{margin-top:8px;font-size:11px;background:#E6EDC8;color:#3B4621;padding:3px 5px;display:flex;justify-content:space-between}
+.actions{display:flex;gap:12px;margin-top:16px}.action{width:142px;height:49px;border:1px solid #87828A;border-radius:6px;background:white;font-family:Onest,sans-serif;font-size:23px;font-weight:550;color:#272329;display:flex;align-items:center;justify-content:center}.composer{position:absolute;left:330px;right:35px;bottom:21px;border:1px solid #ABA5AE;border-radius:8px;height:60px;background:#FFF;padding:14px 18px;color:#6C656F;font-size:19px}.composer-bottom{margin-top:12px;font-size:20px;letter-spacing:11px;color:#514C54}
+#preview-cursor-position{position:absolute;left:512px;top:705px;width:34px;height:48px;pointer-events:none}#preview-cursor{width:34px;height:48px}.disclosure{position:absolute;left:88px;bottom:35px;font-size:23px;line-height:29px;color:#585650}
+</style></head><body>
+<main id="handoff-root" data-composition-id="handoff" data-width="1920" data-height="1080" data-duration="9.3" data-fps="30">
+<div id="handoff-layer" class="clip" data-start="0" data-duration="9.3" data-track-index="0">
+<h1 class="heading">Give Kite the launch page.</h1><div class="app">
+<div class="topbar"><span class="history" aria-hidden="true">‹ ›</span><div class="search">Search Relay</div><div class="top-avatar">M</div></div>
+<aside class="sidebar"><div class="workspace">Relay ⌄</div><div class="side-row"><span class="side-symbol">↳</span>Threads</div><div class="side-row"><span class="side-symbol">▤</span>Drafts &amp; sent</div><div class="side-section">Channels</div><div class="side-row"><span class="side-symbol">#</span>general</div><div class="side-row selected"><span class="side-symbol">#</span>marketing</div><div class="side-row"><span class="side-symbol">#</span>product</div><div class="side-section">Apps</div><div class="side-row"><img src="assets/kite-slack-app-icon.png" alt="">Kite</div></aside>
+<div class="channel-header"><span># marketing</span><span class="channel-tools">Thread</span></div>
+<div id="request-msg" class="message"><div class="avatar">M</div><div class="author">Maya</div><div class="request-copy"><div id="request-line-1"><span class="mention">Kite</span>, turn these release notes</div><div id="request-line-2">into our launch page.</div></div><div id="attachment-line" class="attachment-line"><span class="document-icon" aria-hidden="true">≡</span><span>Relay · Release notes</span></div>
+<div id="notes-card" class="notes"><div class="note-title">RELEASE NOTES</div><div id="notes-item-0" class="note-item"><span class="note-dot"></span>One inbox for the whole team</div><div id="notes-item-1" class="note-item"><span class="note-dot"></span>Assign an owner to every message</div><div id="notes-item-2" class="note-item"><span class="note-dot"></span>Keep replies and context together</div></div></div>
+<div id="returned" class="message"><div class="avatar"><img src="assets/kite-slack-app-icon.png" alt="Kite"></div><div class="author">Kite <span class="app-badge">APP</span></div><div class="reply-copy">Here’s the page draft.</div><div class="draft-card"><div class="draft-copy"><div class="relay">relay</div><div class="draft-title">A shared inbox. A clearer day.</div><div class="draft-subtitle">Bring customer conversations together.</div></div><div class="mini-page"><img src="assets/relay-draft-thumbnail.png" alt="Preview of the existing Relay draft" style="display:block;width:100%;height:100%;object-fit:contain"></div></div><div class="actions"><div id="preview-button" class="action">Preview</div><div class="action">Review</div></div></div>
+<div class="composer"><span>Reply in thread</span></div>
+<div id="preview-cursor-position"><svg id="preview-cursor" viewBox="0 0 34 48"><path d="M2 2L2 36L11 28L19 45L26 41L18 25L31 25Z" fill="#171419" stroke="#FFF" stroke-width="2"/></svg></div>
+</div><div class="disclosure">Illustrative workflow · Fictional company</div></div></main>
+<script>
+window.__timelines=window.__timelines||{};const tl=gsap.timeline({paused:true});
+tl.fromTo('#request-msg',{y:12,opacity:0},{y:0,opacity:1,duration:.55,ease:'power3.out'},.05);
+tl.fromTo('#request-line-1',{opacity:0},{opacity:1,duration:.35},.4);
+tl.fromTo('#request-line-2',{opacity:0},{opacity:1,duration:.35},1.05);
+tl.fromTo('#attachment-line',{opacity:0},{opacity:1,duration:.3},1.6);
+tl.fromTo('#notes-card',{y:10,opacity:0},{y:0,opacity:1,duration:.45,ease:'power2.out'},1.6);
+for(let i=0;i<3;i++)tl.fromTo('#notes-item-'+i,{opacity:0,y:6},{opacity:1,y:0,duration:.4,ease:'power2.out'},2.2+i*.95);
+tl.to('#notes-card',{y:-8,opacity:0,duration:.28,ease:'power2.in'},6.35);
+tl.fromTo('#returned',{y:12,opacity:0},{y:0,opacity:1,duration:.4,ease:'power3.out'},6.6);
+tl.fromTo('#preview-cursor',{opacity:0,x:38,y:24},{opacity:1,x:0,y:0,duration:.55,ease:'power2.out'},7.4);
+tl.to('#preview-button',{backgroundColor:'#F1EDF3',duration:.14},8.15);
+tl.to('#preview-cursor',{scale:.86,duration:.1,yoyo:true,repeat:1,transformOrigin:'0 0'},8.5);
+tl.to('#preview-button',{backgroundColor:'#DED7E2',duration:.1,yoyo:true,repeat:1},8.5);
+window.__timelines.handoff=tl;
+</script></body></html>

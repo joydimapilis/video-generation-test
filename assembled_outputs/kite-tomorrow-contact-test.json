@@ -1,0 +1,34 @@
+{
+  "project": "Kite Tomorrow purposeful-contact controlled test",
+  "status": "delivered_test_only",
+  "full_film_changed": false,
+  "editable_project": "videos/kite-tomorrow-contact-test",
+  "review": "videos/kite-tomorrow-contact-test/REVIEW.md",
+  "structured_review": "review_notes/kite-tomorrow-purposeful-contact.json",
+  "request_id": "01a0b443-bb89-7bf3-b53b-26b0d4b20a80",
+  "run_id": "kite_person_seedance2_purposeful_contact_v2",
+  "cost": {
+    "new_video_estimate_usd": 2.73,
+    "new_video_reservation_usd": 3.14,
+    "new_image_usd": null,
+    "actual_video_charge_usd": null,
+    "historical_higgsfield_credits": 31.38,
+    "historical_higgsfield_and_source_image_usd": null,
+    "authorization": "artifacts/library-loop-kite-tomorrow/purposeful-contact-authorization.json"
+  },
+  "verification": "artifacts/final_outcome/kite-tomorrow-contact-test/verification.json",
+  "deliverables": {
+    "comparison.mp4": {
+      "path": "artifacts/final_outcome/kite-tomorrow-contact-test/comparison.mp4",
+      "sha256": "c6fce24e09b2b96f70cef6f4ad9e9070f771656a140faf170f284e3d682288c2"
+    },
+    "new-human-shot.mp4": {
+      "path": "artifacts/final_outcome/kite-tomorrow-contact-test/new-human-shot.mp4",
+      "sha256": "23e9208d031ce3e82fe96a44dc24c7373d280e384b29a70ebc223c35b5396358"
+    },
+    "source-still.png": {
+      "path": "artifacts/final_outcome/kite-tomorrow-contact-test/source-still.png",
+      "sha256": "0e8c15a2f189c3eeb4236d75bce85d4e85b58cc053ae87aaf9ae9f11ca386578"
+    }
+  }
+}

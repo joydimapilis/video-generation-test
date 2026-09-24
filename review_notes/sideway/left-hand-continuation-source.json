@@ -1,0 +1,9 @@
+{
+  "source": "videos/sideway-human-realism-test/coffee-left-hand/pocket-continuation-source.png",
+  "sha256": "78dce9cf36b1e5990d0bfcbbd12a5e30e73e2c1ff146a7810f22ba720813b702",
+  "parent_video": "artifacts/library-loop-14/outputs/sideway_arrival_left_pocket_v4.mp4",
+  "source_time_seconds": 1.9375,
+  "review": "Full source inspected. Same actor, wardrobe, framing and cup grip. Head still down before later camera-directed lift. Left hand partially at pocket, loose exposed fingertips; complete short pocket entry in continuation. Prior 1.75s candidate frame not used.",
+  "approved_for_i2v": true,
+  "new_image_cost_cents": 0
+}

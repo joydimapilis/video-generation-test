@@ -1,0 +1,57 @@
+{
+  "budget_root": "artifacts/library-loop-computer-movement-studies-02",
+  "runs": [
+    {
+      "id": "01-desktop-typing-source-v1",
+      "endpoint": "fal-ai/nano-banana-pro",
+      "estimate_cents": 15,
+      "input": {
+        "prompt": "A candid unretouched documentary color photograph of an ordinary adult working at a computer, landscape 16:9, medium shot including entire head, seated torso, both forearms and hands and the input device. Natural daylight, normal exposure, realistic skin pores and fine lines, small asymmetries, ordinary flyaway hairs, genuine cloth weave and creases. Moderate depth of field: face and hands both in focus. Neutral absorbed working expression, closed mouth, eyes unmistakably looking at the computer display rather than the camera. Practical slightly forward seated posture, relaxed unequal shoulders. Neither a fashion portrait nor stock-photo smile, no makeup retouching, no cinematic bokeh, no logos. Anatomically normal five-finger hands with low natural knuckle arcs and short unpainted fingernails. A 43-year-old Black woman with short loosely tied natural curly hair, small freckles and faint under-eye shadows, wearing a faded sage-green cotton overshirt over a grey T-shirt. Modest design-office corner with a dark walnut laminate desk, dusty cork noticeboard and stacked folders, not a clinical setting. Medium three-quarter camera angle from her right, 20 degrees above desk height. A normal desktop monitor sits on the left, angled toward her; its edge and dim document screen are visible. A separate thin matte-black keyboard is directly in front of her on the desk. Both forearms rest on the desk; the heel of each palm gently rests on the keyboard wrist rest. Fingers lightly contacting their home-row keys, left hand on left keys, right hand on right keys, thumbs near space bar. Hands entirely visible, not obscured by the monitor. The key contact is precise and relaxed, captured between small key presses. Eyes look toward the middle of the monitor. The keyboard is horizontally aligned with her torso.",
+        "aspect_ratio": "16:9",
+        "resolution": "2K",
+        "output_format": "png",
+        "num_images": 1
+      },
+      "output_path": "artifacts/library-loop-computer-movement-studies-02/source-images/01-desktop-typing.png"
+    },
+    {
+      "id": "02-mouse-work-source-v1",
+      "endpoint": "fal-ai/nano-banana-pro",
+      "estimate_cents": 15,
+      "input": {
+        "prompt": "A candid unretouched documentary color photograph of an ordinary adult working at a computer, landscape 16:9, medium shot including entire head, seated torso, both forearms and hands and the input device. Natural daylight, normal exposure, realistic skin pores and fine lines, small asymmetries, ordinary flyaway hairs, genuine cloth weave and creases. Moderate depth of field: face and hands both in focus. Neutral absorbed working expression, closed mouth, eyes unmistakably looking at the computer display rather than the camera. Practical slightly forward seated posture, relaxed unequal shoulders. Neither a fashion portrait nor stock-photo smile, no makeup retouching, no cinematic bokeh, no logos. Anatomically normal five-finger hands with low natural knuckle arcs and short unpainted fingernails. A 51-year-old East Asian man with a salt-and-pepper close-cropped haircut, a few forehead lines and natural textured skin, clean shaven, wearing a rumpled muted burgundy polo shirt. Home office with a grey desk, cream plaster wall, simple window blind and shelves of worn manuals. Medium three-quarter view from the front-right of his desk, modestly elevated to see his right hand. A desktop computer monitor stands screen-left and is turned toward him at ordinary reading height. He looks intently at its middle. His right hand naturally cups a normal dark grey computer mouse on a dull blue fabric mousepad; palm rests on the mouse, thumb touches its left flank, index finger lies gently on the left button, middle finger on the right button, ring/little fingers softly wrap the right side. Mouse body clearly visible beneath the hand. Right forearm and heel of wrist supported on the mousepad/desk. His left hand rests softly beside a separate keyboard, with left forearm on desk. All hand-device contact clear. The mouse is close to his body, not stretched away. Stable ordinary workplace moment.",
+        "aspect_ratio": "16:9",
+        "resolution": "2K",
+        "output_format": "png",
+        "num_images": 1
+      },
+      "output_path": "artifacts/library-loop-computer-movement-studies-02/source-images/02-mouse-work.png"
+    },
+    {
+      "id": "03-laptop-typing-source-v1",
+      "endpoint": "fal-ai/nano-banana-pro",
+      "estimate_cents": 15,
+      "input": {
+        "prompt": "A candid unretouched documentary color photograph of an ordinary adult working at a computer, landscape 16:9, medium shot including entire head, seated torso, both forearms and hands and the input device. Natural daylight, normal exposure, realistic skin pores and fine lines, small asymmetries, ordinary flyaway hairs, genuine cloth weave and creases. Moderate depth of field: face and hands both in focus. Neutral absorbed working expression, closed mouth, eyes unmistakably looking at the computer display rather than the camera. Practical slightly forward seated posture, relaxed unequal shoulders. Neither a fashion portrait nor stock-photo smile, no makeup retouching, no cinematic bokeh, no logos. Anatomically normal five-finger hands with low natural knuckle arcs and short unpainted fingernails. A 57-year-old woman with a short wavy dark-auburn bob streaked with grey, noticeable smile lines but no smile, and normal slightly uneven complexion. She wears a worn navy-blue linen blouse with sleeves rolled below the elbows. Seated on a simple upholstered chair at a pale birch table in a modest apartment study with a textured warm grey wall and a low bookshelf in the background. Medium side-three-quarter view, slightly above table height, both hands visible, face in three-quarter profile, her plain dark charcoal laptop on screen-left. The laptop screen is tilted at a practical reading angle and shows a dim neutral document without prominent lettering. Gaze goes down-left into the screen. Both forearms rest on table and both palm heels lie lightly on the laptop palm-rest; wrists straight and low. Left fingertips touch left letter keys, right fingertips touch right letter keys, each separate finger softly curved only a few millimeters above its neighboring keys. Laptop has ordinary keyboard and a rectangular trackpad separated below. Photograph a quiet actual typing posture, hands low on keys, no suspended whole hand.",
+        "aspect_ratio": "16:9",
+        "resolution": "2K",
+        "output_format": "png",
+        "num_images": 1
+      },
+      "output_path": "artifacts/library-loop-computer-movement-studies-02/source-images/03-laptop-typing.png"
+    },
+    {
+      "id": "01-desktop-typing-source-v2",
+      "endpoint": "fal-ai/nano-banana-pro",
+      "estimate_cents": 15,
+      "input": {
+        "prompt": "Candid realistic unretouched documentary photo, landscape 16:9. An ordinary 43-year-old Black woman with short loosely tied natural curls, freckles and under-eye texture, wearing a faded sage-green cotton overshirt over a grey T-shirt, seated at a walnut laminate desk in a modest office with corkboard and folders. Neutral task-focused face, eyes looking at the desktop monitor on screen-left, not at camera. Medium three-quarter view including face, torso, both full hands and keyboard, camera slightly above desk. Soft ordinary window light, realistic skin pores and cotton creases; no glamour, smile, retouching or dramatic bokeh. IMPORTANT physical pose: A separate very thin matte-black keyboard sits flat on the desk with a thick black padded wrist-rest flush against its near edge. Both forearms lie on the desk; the heels of both palms are visibly resting on the padded support. Hands are low and relaxed, fingers almost extended with only a very shallow curve. Fingertip pads touch the letter keys lightly; knuckles do not arch high. Left hand on left letters, right hand on right letters, thumbs resting near the spacebar. All fingers visible and normal, no curled or dangling fingers. Both wrists supported at the same level as the keys, clearly showing contact with the pad. She is an experienced quiet typist caught between two small key presses. Still image only, no motion blur. Normal desktop monitor and desk geometry, hands fully unobscured.",
+        "aspect_ratio": "16:9",
+        "resolution": "2K",
+        "output_format": "png",
+        "num_images": 1
+      },
+      "output_path": "artifacts/library-loop-computer-movement-studies-02/source-images/01-desktop-typing-v2.png"
+    }
+  ]
+}

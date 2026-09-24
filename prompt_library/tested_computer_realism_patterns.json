@@ -1,0 +1,42 @@
+{
+  "project": "computer-realism-samples",
+  "status": "uncontrolled_subjective_tests",
+  "review": "review_notes/computer-realism-samples.json",
+  "reference_provenance": "videos/computer-realism-samples/reference-provenance.json",
+  "patterns": [
+    {
+      "name": "supported_low_amplitude_typing",
+      "run_id": "01-typing-veo-v3",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "tested_result": "Provisional usable 4s; smaller alternating fingers and mostly static camera. Facial softening and regular cadence remain.",
+      "guidance": "Establish low wrists and actual key contact in the still; request individual brief key presses without a performative completion gesture.",
+      "causal_reference_improvement": null
+    },
+    {
+      "name": "continuous_trackpad_glide",
+      "run_id": "02-trackpad-veo-v3",
+      "tested_result": "Rejected: hand crosses onto keys then withdraws. Correct starting contact did not persist.",
+      "guidance": "Do not infer reliable trackpad operation from starting pose. Review every movement phase.",
+      "causal_reference_improvement": null
+    },
+    {
+      "name": "single_trackpad_tap",
+      "run_id": "02-trackpad-veo-v4",
+      "tested_result": "Only 0\u20131.25s retained. Later lifted curled pose persists even after reducing action to a tap.",
+      "guidance": "Reducing action is a revision hypothesis, not a guaranteed correction. Preserve rejected tails in experimental comparisons.",
+      "causal_reference_improvement": null
+    },
+    {
+      "name": "typing_then_read_pause",
+      "run_id": "03-read-pause-veo-v3",
+      "tested_result": "Reject full take: pronounced curled-hand pose after about 1.7s. Only 0\u20131.5s side typing retained.",
+      "guidance": "A transition to reading can trigger a hand performance; never accept based on face alone.",
+      "causal_reference_improvement": null
+    }
+  ],
+  "limitations": [
+    "No matched baseline; changed models and source images confound comparisons.",
+    "Behavioral reference cues in prompts, not direct motion-video conditioning.",
+    "No external mouse, speech, UI accuracy or cross-shot identity assessment."
+  ]
+}

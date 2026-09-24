@@ -1,0 +1,57 @@
+{
+  "status": "completed_reviewed_test_only",
+  "baseline_run": "kite_person_seedance2_reference_v1",
+  "baseline_clip": "artifacts/library-loop-kite-tomorrow/outputs/kite_person_seedance2_reference_v1.mp4",
+  "source_edit_target": "artifacts/kite-tomorrow-revision/recovered/marketer-reference.png",
+  "proposed_run_id": "kite_person_seedance2_purposeful_contact_v2",
+  "budget_root": "artifacts/library-loop-kite-tomorrow",
+  "new_paid_calls": 1,
+  "source_still_created": true,
+  "video_generated": true,
+  "still_cost_usd": null,
+  "video_estimate_cents": 273,
+  "video_reservation_cents": 314,
+  "price_source": "https://fal.ai/models/bytedance/seedance-2.0/image-to-video",
+  "controls": {
+    "endpoint": "bytedance/seedance-2.0/image-to-video",
+    "resolution": "1080p",
+    "duration": "4",
+    "aspect_ratio": "16:9",
+    "generate_audio": false,
+    "bitrate_mode": "standard",
+    "editorial_window_seconds": [
+      0,
+      3.6
+    ],
+    "playback_rate": 1,
+    "seed_control": "Unavailable in current input schema; baseline returned seed is recorded but not sent as an unsupported parameter.",
+    "baseline_returned_seed": 446057771,
+    "seed_sent": false
+  },
+  "reference_roles": {
+    "04": "Primary posture, gaze, head motion and quiet performance; approximately 0\u20134 s",
+    "02": "Finger articulation and device contact",
+    "03": "Task-related screen/keyboard gaze; no compulsory head sweep",
+    "05": "Hand repositioning, unequal hand roles and pauses"
+  },
+  "test_variable": "Purposeful source pose plus minimum corresponding action-prompt change; no input seed control. Not a still-only causal experiment.",
+  "stages": [
+    "Generate one revised source still under the explicit user budget exception, recording its unknown cost.",
+    "Inspect full frame and face/hand/device close-ups; reject implausible contact before any video call.",
+    "Only after still passes, submit one image-to-video shot using same-video ledger and persist request ID.",
+    "Compare current clip, new still and new clip at equal scale; review 0\u20133.6 s normal-speed window plus entire source clip chronology.",
+    "Record hands, gaze, posture, purposeful movement and overall naturalness separately; report regressions and untested dimensions. Do not replace or render the full film."
+  ],
+  "budget_exception": "artifacts/library-loop-kite-tomorrow/purposeful-contact-authorization.json",
+  "source_image_calls": 1,
+  "new_image_calls": 1,
+  "video_request_id": "01a0b443-bb89-7bf3-b53b-26b0d4b20a80",
+  "review": "review_notes/kite-tomorrow-purposeful-contact.json",
+  "output": "artifacts/final_outcome/kite-tomorrow-contact-test/new-human-shot.mp4",
+  "comparison": "artifacts/final_outcome/kite-tomorrow-contact-test/comparison.mp4",
+  "budget_state_before_exception": {
+    "existing_limit_cents": 314,
+    "existing_reserved_cents": 314,
+    "available_cents": 0
+  }
+}

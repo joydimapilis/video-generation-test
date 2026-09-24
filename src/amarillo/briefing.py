@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import Any
 
 from .io import ensure_dir, read_json, write_json
+from .library import require_reference_review
 
 
 def compose_brief_plan(
@@ -11,7 +12,11 @@ def compose_brief_plan(
     prompt_library_path: Path,
     recommendations_path: Path,
     output_path: Path,
+    *, reference_review_path: Path | None = None,
 ) -> dict[str, Any]:
+    if reference_review_path is None:
+        raise ValueError('Review the general video library before planning; supply reference_review_path')
+    require_reference_review(reference_review_path)
     patterns = read_json(prompt_library_path) if prompt_library_path.exists() else []
     recommendations = read_json(recommendations_path) if recommendations_path.exists() else {"recommendations": []}
     variant_id = choose_variant(brief)
@@ -21,6 +26,7 @@ def compose_brief_plan(
     prompt = variant.get("prompt") or pattern.get("prompt_template", "")
     plan = {
         "brief": brief,
+        "reference_review": str(reference_review_path),
         "selected_pattern_id": pattern.get("pattern_id"),
         "selected_variant_id": variant_id,
         "recommended_model": rec.get("recommended_model") if rec else None,

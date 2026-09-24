@@ -1,0 +1,32 @@
+{
+  "shots": [
+    {
+      "id": "1",
+      "method": "HyperFrames HTML + GSAP",
+      "reason": "Exact product and campaign typography. Native deterministic layout and explicit seekable states.",
+      "paid_generation": false
+    },
+    {
+      "id": "2",
+      "method": "HyperFrames HTML + GSAP",
+      "reason": "Exact product and campaign typography. Native deterministic layout and explicit seekable states.",
+      "paid_generation": false
+    },
+    {
+      "id": "3",
+      "method": "HyperFrames HTML + GSAP",
+      "reason": "Exact product and campaign typography. Native deterministic layout and explicit seekable states.",
+      "paid_generation": false
+    },
+    {
+      "id": "4",
+      "method": "HyperFrames HTML + GSAP",
+      "reason": "Exact product and campaign typography. Native deterministic layout and explicit seekable states.",
+      "paid_generation": false
+    }
+  ],
+  "human_scenes": false,
+  "phase2_used": false,
+  "provider_estimated_usd": 0,
+  "limit_usd": 10
+}

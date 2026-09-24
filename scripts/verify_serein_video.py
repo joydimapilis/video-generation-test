@@ -1,4 +1,6 @@
 """Verify the delivered Serein encode and the image-first source chain."""
+from amarillo.delivery import require_reverse_engineering
+
 import hashlib,json,subprocess
 from pathlib import Path
 import numpy as np
@@ -10,6 +12,7 @@ def frame(p,t,w=960,h=540,filters=''):
  return np.frombuffer(run('ffmpeg','-v','error','-ss',str(t),'-i',str(p),'-frames:v','1','-vf',f,'-pix_fmt','rgb24','-f','rawvideo','-'),dtype=np.uint8).reshape(h,w,3).astype(float)
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def main():
+ require_reverse_engineering(V)
  raw=(R/'check-final.json').read_text();check=json.loads(raw[raw.index('{'):]);assert check['ok'];assert not any(check[k]['errorCount'] for k in ['lint','runtime','layout','contrast','motion'])
  meta=json.loads(run('ffprobe','-v','error','-show_format','-show_streams','-of','json',str(V)));v=next(s for s in meta['streams'] if s['codec_type']=='video')
  assert (v['width'],v['height'],v['r_frame_rate'],int(v['nb_frames']))==(1920,1080,'24/1',768);assert abs(float(meta['format']['duration'])-32)<.05

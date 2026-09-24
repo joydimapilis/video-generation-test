@@ -1,0 +1,12 @@
+{
+  "duration_seconds": 30,
+  "sample_rate": 48000,
+  "channels": 2,
+  "peak_dbfs": -3.88,
+  "rms_dbfs": -20.56,
+  "clipped_samples": 0,
+  "first_five_seconds_rms_dbfs": -20.35,
+  "last_second_rms_dbfs": -43.25,
+  "review_limit": "Numerical waveform and synthesis review, not independent perceptual listening. No narration or speech sync claims.",
+  "local_cost_usd": 0
+}

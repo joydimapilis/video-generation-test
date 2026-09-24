@@ -1,0 +1,27 @@
+{
+  "cap_usd": 10,
+  "groups": {
+    "source_images": {
+      "attempts": 6,
+      "estimate_cents": 54,
+      "reserved_cents": 64
+    },
+    "kling_rejected": {
+      "attempts": 2,
+      "estimate_cents": 168,
+      "reserved_cents": 194
+    },
+    "seedance_no_output": {
+      "attempts": 3,
+      "estimate_cents": 456,
+      "reserved_cents": 525
+    },
+    "veo": {
+      "attempts": 4,
+      "estimate_cents": 160,
+      "reserved_cents": 184
+    }
+  },
+  "confirmed_usd": null,
+  "note": "All attempts retained including provider-rejected calls. No invoice available: usage API 403. Reservations include 15 percent buffer rounded per request."
+}

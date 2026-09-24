@@ -1,0 +1,56 @@
+{
+  "run_id": "kite_person_seedance2_purposeful_contact_v2",
+  "status": "reviewed",
+  "decision": "partial_improvement_test_only_not_integrated",
+  "selected": false,
+  "method": "Subjective chronological visual review: 48 sampled frames at 12 fps across 0\u20133.917 s, full-frame/face/hand contact sheets, plus final frame at 4.0 s; baseline face/hand sequences at 8 fps. Encoded comparison frames inspected at 0.2, 1.2, 2.5 and 3.5 s. Full decode checks passed. This is sampled frame review, not a claim of continuous real-time playback.",
+  "scores": {
+    "human_realism": null,
+    "face_realism": null,
+    "hand_body_movement": null,
+    "identity_consistency": null,
+    "product_accuracy": null,
+    "text_ui_accuracy": null,
+    "speech_lip_sync": null
+  },
+  "findings": {
+    "hands": "Clearer purpose than the current joined resting hands: separate roles and visible device contact are established in the still and retained at the end. No obvious fused visible digits in sampled frames; hidden digits cannot be audited. From approximately 0.25\u20131.1 s the active hand lifts and repositions before returning, rather than maintaining the requested gentle trackpad glide. Continuous contact instruction therefore only partly followed.",
+    "gaze": "The new still establishes a laptop-directed gaze, and the video maintains it with restrained eyelid/eye changes. No camera-facing glance. A full blink is not clearly evident in sampled frames, while the baseline has a clearer blink near 0.75 s. Do not claim improved gaze dynamics or that every requested micro-action occurred.",
+    "posture": "Separated supported forearms and a modest forward lean read as task engagement. Small body changes stay restrained; no large gestures. More purposeful pose, but the performance remains very still.",
+    "purposeful_movement": "One small active-hand reposition and a long pause give clearer intent than the baseline resting finger curl. The second hand stays quiet. Action is more legible, but the brief lift weakens the requested sustained trackpad contact.",
+    "overall_naturalness": "Partial improvement driven chiefly by pose and task context. Face shape, hair and wardrobe remain recognizably consistent with the edited reference. Skin remains softly rendered and facial performance restrained; no convincing independent gain in skin realism is established. Hair and shirt motion are slight and do not imply wind. Treat as a useful diagnostic candidate, not a fully solved photoreal person.",
+    "device_geometry": "Contact is judged against the generated laptop surface. This is not a verified physical laptop layout or an accurate product UI. Complex typing, screen responses and real hardware correctness were not tested."
+  },
+  "model": "bytedance/seedance-2.0/image-to-video",
+  "mode": "image-to-video",
+  "source_image": "artifacts/library-loop-kite-tomorrow/source-images/purposeful-contact-v2.png",
+  "source_sha256": "0e8c15a2f189c3eeb4236d75bce85d4e85b58cc053ae87aaf9ae9f11ca386578",
+  "source_review": "artifacts/library-loop-kite-tomorrow/source-images/purposeful-contact-v2-review.json",
+  "motion_prompt": "videos/kite-tomorrow-character-pass/studies/purposeful-contact-test/motion-prompt.txt",
+  "exact_motion_prompt": "Animate this supplied reference as one four-second observational desk shot at normal speed. Preserve this woman's face, age, asymmetry, hairline, shirt, room, lighting, laptop and established hand-to-device contact. Keep the tripod framing.\n\nShe quietly reads the laptop screen. The trackpad hand makes one short, gentle finger movement along the actual trackpad surface and settles into a pause. Its wrist stays supported and the fingers remain distinct. The other hand stays comfortably by the keyboard with only slight independent finger relaxation; do not add a typing sequence. Her attention makes a small shift within the laptop screen, with an unforced blink and a quiet breath. The head and shoulders follow only minimally; no performed smile. Shirt folds respond to the breath and hair moves only with the small body adjustment in still air. She finishes attending to the same screen, lips comfortably closed, both hands retaining believable support.\n\nRetain the reference's ordinary skin texture rather than smoothing or sharpening the face. No beauty treatment, added facial marks, speaking, large head turn, unrelated gestures, camera movement, new objects or lettering. Keep the trackpad, keyboard and fingers geometrically stable. Avoid sliding through surfaces, floating contact, merged fingers or a hand movement that drags the whole arm and torso in lockstep.",
+  "request_id": "01a0b443-bb89-7bf3-b53b-26b0d4b20a80",
+  "returned_seed": 2020143156,
+  "seed_control_available": false,
+  "reference_roles": {
+    "04": "Primary posture, gaze, head motion and quiet performance; approximately 0\u20134 s",
+    "02": "Finger articulation and device contact",
+    "03": "Task-related screen/keyboard gaze; no compulsory head sweep",
+    "05": "Hand repositioning, unequal hand roles and pauses"
+  },
+  "limitations": [
+    "One candidate, source pose and matching action prompt both changed; no supported input seed control. Not a causal still-only experiment or model ranking.",
+    "No real reference-clip likeness or motion was directly copied; behavioral findings only.",
+    "No speech, cross-shot identity, typing sequence, UI correctness or full-film integration tested."
+  ],
+  "cost": {
+    "new_video_estimate_usd": 2.73,
+    "new_video_reservation_usd": 3.14,
+    "new_image_usd": null,
+    "actual_video_charge_usd": null,
+    "historical_higgsfield_credits": 31.38,
+    "historical_higgsfield_and_source_image_usd": null,
+    "authorization": "artifacts/library-loop-kite-tomorrow/purposeful-contact-authorization.json"
+  },
+  "full_film_changed": false,
+  "comparison": "artifacts/final_outcome/kite-tomorrow-contact-test/comparison.mp4"
+}

@@ -1,0 +1,10 @@
+{
+  "bgm": {
+    "path": "assets/score.wav",
+    "volume": 1
+  },
+  "voices": [],
+  "sfx": [],
+  "bgm_pending": false,
+  "provenance": "Original local deterministic composition: make_score.py; no samples, no API spend; 120 BPM; attack and final fade baked in"
+}

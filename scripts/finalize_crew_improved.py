@@ -11,6 +11,8 @@ revision forces:
 
 The previous deliverable at artifacts/final_outcome/crew/ is never touched.
 """
+from amarillo.delivery import require_reverse_engineering
+
 import argparse
 import hashlib
 import json
@@ -105,6 +107,8 @@ def main():
     shutil.copyfile(SOURCE, video)
     shutil.copyfile(COMPARISON, comparison)
 
+    require_reverse_engineering(video)
+    require_reverse_engineering(comparison)
     film = probe(video)
     picture = next(s for s in film['streams'] if s['codec_type'] == 'video')
     sound = next(s for s in film['streams'] if s['codec_type'] == 'audio')

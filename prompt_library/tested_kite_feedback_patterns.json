@@ -1,0 +1,23 @@
+{
+  "type": "deterministic_editorial_workflow",
+  "review": "review_notes/kite-feedback.json",
+  "patterns": [
+    {
+      "name": "feedback_to_draft_to_human_decision",
+      "tested_result": "Rendered illustrative customer-feedback signal with matching ownership-focused headline and social draft; final human note selects one and requests revision of the other.",
+      "guidance": "Keep source quote visible in draft rationale. Use explicit human decision language in Slack. Distinguish draft outputs from publishing and preserve readable holds.",
+      "limitations": "One subjective film review; no audience or product-behavior validation."
+    },
+    {
+      "name": "native_speed_existing_reading_insert",
+      "source_run": "kite_person_seedance2_purposeful_contact_v2",
+      "range": [
+        0.4,
+        4
+      ],
+      "tested_result": "Selected a short quiet reviewing insert; supported arms and laptop gaze retained, soft face detail unchanged.",
+      "guidance": "Use UI inserts to explain decisions rather than claim a generated finger movement performs an exact click.",
+      "limitations": "No new human model experiment or causal inference."
+    }
+  ]
+}

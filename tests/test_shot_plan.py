@@ -42,8 +42,8 @@ def test_continuity_separates_position_motion_and_inherits_props():
 def test_routing_requires_real_references():
     with pytest.raises(ValueError):
         route_shot('interview')
-    assert route_shot('interview', has_reference=True).endswith('image-to-video')
-    assert route_shot('hands').endswith('text-to-video')
+    assert route_shot('interview', has_reference=True, evidence_path=None).endswith('image-to-video')
+    assert route_shot('hands', evidence_path=None).endswith('text-to-video')
     with pytest.raises(ValueError):
         route_shot('hands', continuous=True)
     assert route_shot('exact_ui') == 'hyperframes'

@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "path": "assets/fonts/Onest-latin.woff2",
+      "sha256": "27a244d81d9faa46ec5167cb642167e1dce0e60a240ba203c93aff1b6bdad899",
+      "bytes": 25460
+    },
+    {
+      "path": "assets/gsap.min.js",
+      "sha256": "19e3ad578c9c583ddf9bdca2ad87bb55c3d70b331058e28abacab898f799b2ee",
+      "bytes": 72777
+    },
+    {
+      "path": "assets/kite-slack-app-icon.png",
+      "sha256": "26df2a2ca0375dfd8e383fd7d0c893cb0a007d2b8848c0c730c88304e74f37e7",
+      "bytes": 102206
+    },
+    {
+      "path": "assets/kite.png",
+      "sha256": "45605e5493b30776b7e33a49029f128db57a14525f682e6bff033e794395ca7e",
+      "bytes": 73710
+    },
+    {
+      "path": "assets/score.wav",
+      "sha256": "e0b75b7f9fc45ff417be0d87fa4ac9dbdd148ca02e76004d406de750317194f7",
+      "bytes": 6912044
+    }
+  ],
+  "sources": "SOURCES.md"
+}

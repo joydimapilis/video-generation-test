@@ -1,4 +1,6 @@
 """Create crop-check videos, verify encoded media, and write the Kite delivery."""
+from amarillo.delivery import require_reverse_engineering
+
 from pathlib import Path
 import hashlib,json,subprocess,shutil
 import numpy as np
@@ -10,6 +12,7 @@ for name,vf in [('kite-square.mp4','crop=1080:1080:0:420'),('kite-landscape.mp4'
 checks=[]
 for name,wh in [('kite.mp4',(1080,1920)),('kite-square.mp4',(1080,1080)),('kite-landscape.mp4',(1920,1080))]:
  file=D/name
+ require_reverse_engineering(file)
  probe=json.loads(run(['ffprobe','-v','error','-count_frames','-show_streams','-show_format','-of','json',str(file)]).stdout)
  v=next(s for s in probe['streams'] if s['codec_type']=='video');a=next(s for s in probe['streams'] if s['codec_type']=='audio')
  assert (v['width'],v['height'])==wh

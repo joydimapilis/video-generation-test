@@ -6,6 +6,8 @@ speech-vs-bed measurement windows are derived from the caption schedule (the
 measured transcript timing) rather than from a narration schedule. Modeled
 directly on scripts/finalize_rota.py.
 """
+from amarillo.delivery import require_reverse_engineering
+
 import argparse
 import hashlib
 import json
@@ -60,6 +62,7 @@ def main():
     video = ROOT / 'crew-final.mp4'
     shutil.copyfile(SOURCE, video)
 
+    require_reverse_engineering(video)
     probe = json.loads(subprocess.check_output(
         ['ffprobe', '-v', 'error', '-show_streams', '-show_format', '-of', 'json', str(video)]))
     picture = next(s for s in probe['streams'] if s['codec_type'] == 'video')

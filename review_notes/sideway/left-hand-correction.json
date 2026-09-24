@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-19",
+  "user_feedback": "For the video where he is drinking coffee, his left hand is awkward. Can you move it in a different way?",
+  "target": "sideway_arrival_sample02_wan_v3",
+  "observed_defect": "At about 0.75s the free left hand spreads its fingers across the front of the trousers and holds that conspicuous pose through the end. Earlier partial hand-contact improvement is not accepted by the user as natural.",
+  "proposed_action": "Left hand slips into left trouser pocket at outer hip, thumb outside; elbow relaxes. Right cup hand stays supported.",
+  "source": "videos/sideway/assets/arrival-reference-v2.png",
+  "source_reused": true,
+  "new_paid_requests": 2,
+  "approval_required_reason": "User standing cumulative budget rule: only an explicit user instruction may change the ceiling. $0.03 reservation capacity remains; 720p attempt requires $0.12.",
+  "config": "configs/sideway_cafe_left_hand_correction.json",
+  "status": "delivered targeted revision and comparison",
+  "reference_action_observed": false,
+  "quality_result": "Selected five-second assembly removes the prior splayed resting hand: V4 action 0\u20131.9375s plus V5 continuation 0\u20133.0625s. Some bowed-head/eyelid and subtle mouth motion remain. No full-film replacement.",
+  "approved_cumulative_cap_cents": 1225,
+  "user_budget_approval": "Yes, go ahead.",
+  "new_estimate_cents": 20,
+  "new_reserved_cents": 24,
+  "cumulative_estimate_cents": 1057,
+  "cumulative_reserved_cents": 1221,
+  "confirmed_charge_cents": null,
+  "delivery_manifest": "assembled_outputs/sideway-coffee-left-hand.json"
+}

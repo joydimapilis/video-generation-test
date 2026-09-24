@@ -1,0 +1,23 @@
+{
+  "groups": {
+    "source_images": {
+      "requests": 4,
+      "estimated_usd": 0.6,
+      "reserved_usd": 0.72
+    },
+    "video": {
+      "requests": 7,
+      "estimated_usd": 8.0,
+      "reserved_usd": 9.2
+    }
+  },
+  "estimated_usd": 8.6,
+  "reserved_usd": 9.92,
+  "cap_usd": 10,
+  "confirmed_spend_usd": null,
+  "note": "All calls including rejected quality takes remain counted. Quotes verified before submission; 15% buffer rounded per call. Invoice not verified. Separate new production from computer-realism-samples; old ledger unchanged.",
+  "sources": [
+    "https://fal.ai/models/fal-ai/veo3.1/image-to-video",
+    "https://fal.ai/models/fal-ai/nano-banana-pro"
+  ]
+}

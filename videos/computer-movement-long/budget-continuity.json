@@ -1,0 +1,54 @@
+{
+  "original_ledger": "artifacts/library-loop-computer-movement-studies-02/budget.json",
+  "original_sha256": "faea853eb01fffd186d64eb8548a509240a56015c276812cab154edc712fa19b",
+  "reason": "Standing user limit is $10 per video. Earlier assistant voluntarily grouped three independent videos under one conservative $10 batch ledger. Longer versions keep every corresponding prior charge/reservation in each video cumulative ledger; no history reset, no per-provider budgets, no per-video cap increase. Original ledger preserved byte-for-byte; do not double-count mirrored history.",
+  "videos": [
+    {
+      "video": "01",
+      "budget_root": "artifacts/library-loop-computer-long-01",
+      "carried_run_ids": [
+        "01-desktop-typing-source-v1",
+        "01-desktop-typing-veo-standard-v1",
+        "01-desktop-typing-source-v2",
+        "01-desktop-typing-veo-standard-v2",
+        "01-desktop-typing-veo-standard-v3",
+        "01-desktop-reading-veo-standard-v4"
+      ],
+      "prior_estimated_cents": 470,
+      "prior_reserved_cents": 542,
+      "cap_cents": 1000,
+      "round1_estimate_cents": 168,
+      "round1_reservation_cents": 194,
+      "reserved_after_round1_cents": 736
+    },
+    {
+      "video": "02",
+      "budget_root": "artifacts/library-loop-computer-long-02",
+      "carried_run_ids": [
+        "02-mouse-work-source-v1",
+        "02-mouse-work-veo-standard-v1",
+        "02-mouse-work-veo-standard-v2"
+      ],
+      "prior_estimated_cents": 255,
+      "prior_reserved_cents": 294,
+      "cap_cents": 1000,
+      "round1_estimate_cents": 168,
+      "round1_reservation_cents": 194,
+      "reserved_after_round1_cents": 488
+    },
+    {
+      "video": "03",
+      "budget_root": "artifacts/library-loop-computer-long-03",
+      "carried_run_ids": [
+        "03-laptop-typing-source-v1",
+        "03-laptop-typing-veo-standard-v1"
+      ],
+      "prior_estimated_cents": 135,
+      "prior_reserved_cents": 156,
+      "cap_cents": 1000,
+      "round1_estimate_cents": 168,
+      "round1_reservation_cents": 194,
+      "reserved_after_round1_cents": 350
+    }
+  ]
+}

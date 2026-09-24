@@ -1,0 +1,97 @@
+{
+  "video": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/artifacts/final_outcome/kite-core-demo/kite-core-demo.mp4",
+  "sha256": "4ec8df9dfe286b6f25120e347d8e2f38d6af653ce8bd0c9869b727cb31e56e55",
+  "duration_seconds": 30,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "frames": 900,
+  "full_decode": true,
+  "black_intervals": [],
+  "audio": {
+    "codec": "aac",
+    "sample_rate": "48000",
+    "channels": 2,
+    "score_correlation": 0.9996258586952834,
+    "peak": 0.6398429274559021
+  },
+  "encoded_preview_comparisons": [
+    {
+      "seconds": 1.5,
+      "encoded_vs_preview_mae_255": 1.611
+    },
+    {
+      "seconds": 7.8,
+      "encoded_vs_preview_mae_255": 1.384
+    },
+    {
+      "seconds": 17,
+      "encoded_vs_preview_mae_255": 1.182
+    },
+    {
+      "seconds": 24.5,
+      "encoded_vs_preview_mae_255": 1.371
+    },
+    {
+      "seconds": 29.8,
+      "encoded_vs_preview_mae_255": 1.367
+    }
+  ],
+  "composition": {
+    "errors": 0,
+    "warnings": 0,
+    "contrast_passed": 42,
+    "contrast_checked": 42,
+    "automated_motion_subcheck_enabled": false
+  },
+  "visual_review": {
+    "decision": "accept",
+    "video_sha256": "4ec8df9dfe286b6f25120e347d8e2f38d6af653ce8bd0c9869b727cb31e56e55",
+    "method": "Agent visual review of the encoded MP4 decoded at 2fps through all30s plus35 explicitly selected transition/action frames. Compared complete layouts with pre-render snapshots.",
+    "findings": [
+      "Opening title and official icon clearly visible over paper plate after layering correction.",
+      "Input request and source release facts readable during their hold.",
+      "Preview opens a distinct authored page; old text does not stretch into the next surface.",
+      "Feedback precedes visible v1-to-v2 headline change.",
+      "Revised draft remains visible during final CTA and ending.",
+      "Clean intentional cuts at4,10,20s; brief entrance fades leave a few minimally populated frames, no prolonged blank segment."
+    ],
+    "evidence": [
+      "../../.context/kite-core-demo/encoded/chronological-1.jpg",
+      "../../.context/kite-core-demo/encoded/chronological-2.jpg",
+      "../../.context/kite-core-demo/encoded/joins.jpg",
+      "../../.context/kite-core-demo/encoded/sample-times.json"
+    ],
+    "limitations": [
+      "Sampled review, not uninterrupted audiovisual listening.",
+      "No speech or caption synchronization required.",
+      "Illustrative workflow, not an authenticated application capture."
+    ]
+  },
+  "budget": {
+    "cap_cents": 1000,
+    "estimated_cents": 56,
+    "reserved_cents": 65,
+    "confirmed_charge_cents": null,
+    "paid_attempts": 1,
+    "local_audio_cost_cents": 0
+  },
+  "source_hashes": {
+    "videos/kite-core-demo/index.html": "81b4fedae5c127cfa62197cb9fcc185d9f263bc95414fafb10af968db15077be",
+    "videos/kite-core-demo/compositions/frames/01-notes.html": "c6a28f564a2aa86635101b1dc150c74c497c86370778531cd8cc92162279701d",
+    "videos/kite-core-demo/compositions/frames/02-draft.html": "64452405fe8185a75a5545a252dbf7682befc45a6e7a0e1989ea1492d3c5907b",
+    "videos/kite-core-demo/compositions/frames/03-feedback.html": "a75cc1cbb80e4066ea5f7959aa228f9a02ac30e90b15791ae5b6c1ebfcadc25b",
+    "videos/kite-core-demo/assets/score.wav": "0c202a4de9526b50c0cf742c843cde0060d8d47374d90cc5dcdd1ef7a3e5b036",
+    "videos/kite-core-demo/assets/Onest.woff2": "27a244d81d9faa46ec5167cb642167e1dce0e60a240ba203c93aff1b6bdad899"
+  },
+  "limitations": [
+    "Illustrative UI, not an authenticated backend capture.",
+    "Sampled chronological visual review and numerical audio checks; no audience test or independent listening.",
+    "Automated motion subcheck disabled; actual encoded frame sequences and preview equivalence checked."
+  ],
+  "reverse_engineering": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/artifacts/final_outcome/kite-core-demo/kite-core-demo.reverse-engineering.md",
+  "reverse_engineering_sha256": "f02148a37d8afb09d1079ebfad4aeeffe189d1b419760c5b23c58b9b417c783b",
+  "documentation_complete": true
+}

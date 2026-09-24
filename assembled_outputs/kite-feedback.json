@@ -1,0 +1,74 @@
+{
+  "name": "Kite \u2014 From feedback to a better message",
+  "status": "delivered",
+  "final": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/artifacts/final_outcome/kite-feedback/kite-feedback-i2v.mp4",
+  "editable_project": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-feedback",
+  "duration_seconds": 36,
+  "resolution": "1920x1080",
+  "fps": 30,
+  "sha256": "c08c3eac3ff7193a6d9a65ef31ca39f11429878e644313270c7f2327356a0dd4",
+  "cost": {
+    "ceiling_usd": 10,
+    "new_provider_calls": 0,
+    "incremental_estimated_usd": 0,
+    "incremental_reserved_usd": 0,
+    "incremental_confirmed_usd": 0,
+    "cumulative_historical_usd": null,
+    "shared_budget_root": "artifacts/library-loop-kite-tomorrow",
+    "inherited_cost_record": "assembled_outputs/kite-tomorrow-slack.json",
+    "note": "Reuse only. Historical uncertain source-media USD not zeroed or reset. No paid request made."
+  },
+  "verification": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/artifacts/final_outcome/kite-feedback/verification-i2v.json",
+  "review": "review_notes/kite-feedback.json",
+  "production_record": "videos/kite-feedback/PRODUCTION_REVIEW.md",
+  "sources": "videos/kite-feedback/SOURCES.md",
+  "source_assets": "videos/kite-feedback/asset-provenance.json",
+  "limitations": [
+    "Illustrative reconstructed Slack and fictional Relay marketing assets; not authenticated product capture or customer evidence.",
+    "Inherited historical source-media USD remains unresolved; no new paid calls or spend.",
+    "Human footage retains prior soft facial detail; no typing, click-response or lip-sync claim.",
+    "Audio peak/fade checks passed; no new auditory listening review."
+  ],
+  "reverification": {
+    "method": "25 chronological encoded samples including both human intervals and scene boundaries; source I2V chronological evidence and full-size pre-render frames inspected.",
+    "subjective": true,
+    "findings": [
+      "Both I2V takes now fill the frame; restrained native-speed person motion is visible.",
+      "Title plates do not obscure face, hands, or laptop.",
+      "Slack feedback, both draft assets, review annotations, and final human decision retained.",
+      "No new observed anatomy discontinuities in sampled frames; soft face detail retained."
+    ],
+    "limitations": [
+      "Sampled visual inspection, no continuous playback or listening claim.",
+      "Generated footage reused; no new image or video generation."
+    ]
+  },
+  "previous_final": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/artifacts/final_outcome/kite-feedback/kite-feedback.mp4",
+  "revision": "Two full-screen existing image-to-video takes at native speed, 7.2 seconds total",
+  "human_sources": [
+    {
+      "run": "kite_person_seedance2_reference_v1",
+      "source_range": [
+        0,
+        3.6
+      ],
+      "timeline_range": [
+        0,
+        3.6
+      ],
+      "speed": 1
+    },
+    {
+      "run": "kite_person_seedance2_purposeful_contact_v2",
+      "source_range": [
+        0.4,
+        4
+      ],
+      "timeline_range": [
+        28.4,
+        32
+      ],
+      "speed": 1
+    }
+  ]
+}

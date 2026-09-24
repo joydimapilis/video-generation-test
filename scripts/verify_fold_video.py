@@ -1,4 +1,6 @@
 """Verify the final Fold encode, exact seam states and newly authored audio mix."""
+from amarillo.delivery import require_reverse_engineering
+
 import hashlib,json,subprocess
 from pathlib import Path
 import numpy as np
@@ -8,6 +10,7 @@ def pcm(p):return np.frombuffer(run('ffmpeg','-v','error','-i',str(p),'-vn','-ac
 def frame(t):return np.frombuffer(run('ffmpeg','-v','error','-ss',str(t),'-i',str(V),'-frames:v','1','-vf','scale=960:540','-pix_fmt','rgb24','-f','rawvideo','-'),dtype=np.uint8).astype(float)
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
+ require_reverse_engineering(V)
  raw=(R/'check-final.json').read_text();check=json.loads(raw[raw.index('{'):]);assert check['ok']
  assert not any(check[k]['findings'] for k in ['lint','runtime','layout','contrast'])
  meta=json.loads(run('ffprobe','-v','error','-show_format','-show_streams','-of','json',str(V)))

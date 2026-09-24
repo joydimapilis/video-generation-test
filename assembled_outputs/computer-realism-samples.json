@@ -1,0 +1,91 @@
+{
+  "samples": [
+    {
+      "source_to_final_ssim": 0.991512,
+      "name": "01-typing",
+      "file": "artifacts/final_outcome/computer-realism-samples/01-typing.mp4",
+      "source_image": "artifacts/final_outcome/computer-realism-samples/01-typing-source.png",
+      "duration": 4.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": "24/1",
+      "decoded_frames": 96,
+      "full_decode_ok": true,
+      "audio": "intentionally silent",
+      "sha256": "416c3ed2cb5c9be7d451ce3ee2a3d449169335dcb55216a7edface4b3b1c9fbc",
+      "source_sha256": "bb300a594678a63828a5f072283c5838dd4528386eac63e49b01c5cbe5bf4932",
+      "source_image_sha256": "38603f50cb2bac4868df482063254df3e1f761e8e75ac4f8cdb1e73ddab6927a",
+      "source_range": [
+        0,
+        4
+      ],
+      "playback_rate": 1,
+      "full_generated_take": "artifacts/final_outcome/computer-realism-samples/01-typing-full-take.mp4",
+      "selection_decision": "provisional",
+      "review_limit": "Provisional naturalness judgment; minor regular finger cadence and softened facial detail remain."
+    },
+    {
+      "source_to_final_ssim": 0.986901,
+      "name": "02-trackpad",
+      "file": "artifacts/final_outcome/computer-realism-samples/02-trackpad.mp4",
+      "source_image": "artifacts/final_outcome/computer-realism-samples/02-trackpad-source.png",
+      "duration": 1.25,
+      "width": 1920,
+      "height": 1080,
+      "fps": "24/1",
+      "decoded_frames": 30,
+      "full_decode_ok": true,
+      "audio": "intentionally silent",
+      "sha256": "83febd5635b27c6f7413ff6580552e8eddb1bdb798fdbcc10f952acb9a072d01",
+      "source_sha256": "2c4f3c8358e2ac94fef51cacac26d1f6927f0e9dd24b8f3ee1ff554506c1bc7d",
+      "source_image_sha256": "6e2b08de664fd35b6ab0000e44ece4c912e8b2648617f7b95cf71c12a528ba9b",
+      "source_range": [
+        0,
+        1.25
+      ],
+      "playback_rate": 1,
+      "full_generated_take": "artifacts/final_outcome/computer-realism-samples/02-trackpad-full-take.mp4",
+      "selection_decision": "usable_segment_only",
+      "review_limit": "Early fingertip contact/tap only; full take rejected for curled lifted-hand hold after 1.3s. Contact approaches trackpad edge; not validated sustained operation."
+    },
+    {
+      "source_to_final_ssim": 0.988463,
+      "name": "03-side-typing",
+      "file": "artifacts/final_outcome/computer-realism-samples/03-side-typing.mp4",
+      "source_image": "artifacts/final_outcome/computer-realism-samples/03-side-typing-source.png",
+      "duration": 1.5,
+      "width": 1920,
+      "height": 1080,
+      "fps": "24/1",
+      "decoded_frames": 36,
+      "full_decode_ok": true,
+      "audio": "intentionally silent",
+      "sha256": "da46c39c1212bf7ede8c048fa266cb3ccb158db18538847c78b085865059c3d1",
+      "source_sha256": "ecb8d799e3668f6be76bfd012fa6c6fc16efb035cbc9e473cc953dd2d1f8f5d1",
+      "source_image_sha256": "1a1228e726ff7452d77c79d6f8129eafbcae58eb96446a4698d2933a55f23455",
+      "source_range": [
+        0,
+        1.5
+      ],
+      "playback_rate": 1,
+      "full_generated_take": "artifacts/final_outcome/computer-realism-samples/03-side-typing-full-take.mp4",
+      "selection_decision": "usable_segment_only",
+      "review_limit": "Full-resolution snapshot reveals pronounced curled-hand pose after approximately 1.7s; retain only 0\u20131.5s natural typing. No reading-pause claim."
+    }
+  ],
+  "method": "Full decode, metadata, source hashes, sampled encoded frames; subjective motion review recorded separately.",
+  "cost": {
+    "estimate_usd": 8.38,
+    "reserved_usd": 9.67,
+    "cap_usd": 10,
+    "confirmed_charge_usd": null,
+    "invoice_limitation": "Fal usage endpoint returns 403 for this key; no verified invoice. All source-image and rejected video attempts included."
+  },
+  "limitations": [
+    "Behavioral reference cues translated into prompts; real movement videos were not model inputs.",
+    "No matched no-reference control; causal improvement untested.",
+    "Independent source-image identities; no cross-shot identity test.",
+    "Second and third samples retain only 0\u20131.25s and 0\u20131.5s respectively; later curled-hand poses were rejected. Untrimmed takes are included for diagnosis.",
+    "Exact UI, speech/lip sync and external mouse use not tested."
+  ]
+}

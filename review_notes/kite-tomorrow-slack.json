@@ -1,0 +1,65 @@
+{
+  "project": "videos/kite-tomorrow-slack",
+  "review": {
+    "status": "accepted_with_documented_limitations",
+    "method": "31 encoded samples over the entire 38-second film, including 0\u20133.6 s human chronology, interface reveals, preview click, every scene join, feedback transition, revised hero/caption and final frame; full-size detail inspection at 11.8, 15.8, 27 and 33.5 seconds. Sub-composition snapshots and full decode checks supplement this sampled visual review. No continuous real-time playback or new listening claim.",
+    "ui_findings": [
+      "Dark Slack reconstruction follows the supplied screenshot: charcoal app background, darker sidebar/topbar, centered search, compact navigation, blue selection, bordered composer and appropriately separated messages.",
+      "Readable deterministic typography and stable geometry. Brand headings share a consistent left edge; page preview uses clearer spacing and hierarchy. Matching dark thread makes feedback visually continuous with the request scene.",
+      "Preview thumbnail is a local capture of the rebuilt page, not a generated approximation. Cursor uses the installed simulated-cursor geometry, with one press/pulse at the preview action.",
+      "Caption is a separate transparent sub-composition and title-safe track. Initial authoring error covering the page was detected by visual review, corrected and rechecked before final render."
+    ],
+    "human_findings": [
+      "Reuses the exact reviewed purposeful-contact v2 asset, source range 0\u20133.6 s at native speed; no regenerated or retimed human footage.",
+      "Separate hand roles, supported forearms, laptop-directed attention and quiet posture are carried forward. Brief early hand reposition and restrained/soft facial detail remain; no improved skin realism or perfect contact is claimed.",
+      "New title placement leaves the face and hands unobscured. Warm source lighting suits the cream/orange brand; no new beauty or grading treatment."
+    ],
+    "audio": "Encoded audio PCM matches the prior complete master exactly. Narration, music, effects and original cue timing preserved.",
+    "reviewed_warning": "Kite app icon intentionally reused as navigation icon and message avatar; no duplicated video/audio track.",
+    "unverified": [
+      "Authenticated Slack behavior/product capture",
+      "Actual hardware cursor or key response",
+      "New skin realism improvement",
+      "Cross-shot identity",
+      "Speech/lip sync"
+    ],
+    "scores": null
+  },
+  "cost": {
+    "incremental_provider_usd": 0,
+    "new_provider_calls": 0,
+    "known_prior_fal_video_estimates_usd": 5.46,
+    "known_prior_fal_reservations_usd": 6.28,
+    "confirmed_fal_usd": null,
+    "historical_higgsfield_credits": 31.38,
+    "historical_higgsfield_usd": null,
+    "source_image_usd": null,
+    "cumulative_usd": null,
+    "shared_budget_root": "artifacts/library-loop-kite-tomorrow",
+    "note": "Reuses existing media and audio; no budget reset or new paid generation. Unknown costs are not zero."
+  },
+  "reference": {
+    "reference": "artifacts/Slack UI.webp",
+    "reference_sha256": "55ff31255f4c43276b7b6214e7fc5439ca5e5e3dcb2b23e36745d53344694091",
+    "use": "Visual style/layout only; no screenshot usernames copied. Deterministic reconstruction, not authenticated Slack recording.",
+    "human_source": "artifacts/library-loop-kite-tomorrow/outputs/kite_person_seedance2_purposeful_contact_v2.mp4",
+    "human_sha256": "23e9208d031ce3e82fe96a44dc24c7373d280e384b29a70ebc223c35b5396358",
+    "human_range": [
+      0,
+      3.6
+    ],
+    "rate": 1,
+    "new_provider_calls": 0,
+    "incremental_usd": 0,
+    "cursor": "simulated-cursor registry geometry adapted into existing timeline",
+    "previous_project": "videos/kite-tomorrow-final",
+    "thumbnail": {
+      "source": "artifacts/final_outcome/kite-tomorrow-slack/thumbnail/frame-00-at-22s.png",
+      "method": "HyperFrames snapshot at 22s, zoom #page-surface, 1x density",
+      "asset": "assets/relay-draft-thumbnail.png",
+      "sha256": "0a92a657a5b0a069029ebed5df5f2661f21138c31d22c30f0fd380db9991a3c8"
+    }
+  },
+  "verification": "artifacts/final_outcome/kite-tomorrow-slack/verification.json",
+  "library_limitation": "Cero and Motion-5 not found in current library; manifests record missing media. Real-human refs 04/05 were available and overview sheets re-inspected; prior detailed observations retained."
+}

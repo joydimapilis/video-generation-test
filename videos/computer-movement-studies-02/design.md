@@ -1,0 +1,3 @@
+# Visual direction
+
+Three separate candid work observations. The person, eyes and device contact are the focal points; the desk and monitor edges provide fixed anchors to judge camera drift. New ordinary workrooms and varied clothing differentiate the shots. Native aspect, speed and color; leave suitable photographic exposure unchanged. No grade, skin filter, faux film grain, crop, stabilizer, interpolation, overlays, title card, transitions or music. Single video clip per editable project with an empty paused GSAP timeline; media playback belongs to HyperFrames. Typography is absent from the videos; comparison page uses system UI only. Brand/marketing motion conventions do not apply to this observational test.

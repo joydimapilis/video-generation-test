@@ -1,0 +1,54 @@
+{
+  "experiment": "sideway-cafe-left-hand-correction",
+  "budget_root": "artifacts/library-loop-14",
+  "execution_status": "authorized",
+  "pricing_checked": "2026-09-19",
+  "pricing_sources": [
+    "https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video/turbo"
+  ],
+  "cost_basis": "Published $0.10 per 720p attempt / $0.12 reserved. Reuse original still at no new image cost. Before submission cumulative reserve $11.97; after this attempt $12.09; at most one further 12-cent correction fits authorized $12.25 cap.",
+  "reference_mode": "Observed sample02 movement translated to prompts. No motion-reference video submitted; endpoint accepts image conditioning only. Different model is a confound, not proof of causal reference improvement.",
+  "runs": [
+    {
+      "id": "sideway_arrival_left_pocket_v4",
+      "endpoint": "fal-ai/wan/v2.2-a14b/image-to-video/turbo",
+      "estimate_cents": 10,
+      "use_case": "observational_person",
+      "role": "arrival",
+      "version": 4,
+      "audio_requested": false,
+      "reference_review": "videos/sideway-human-realism-test/source-review.json",
+      "reference_sha256": "a14e544d3088aa28dd5c306e712c34c9e969c6915f74f814accfdefca53be7ec",
+      "hypothesis": "User rejects splayed left hand across front of trousers. Replace it with one purposeful left hand movement into his own left trouser pocket, at screen right. Keep thumb outside and elbow relaxed; preserve identity, wardrobe, framing and right hand/cup contact. This pocket action is an untested generation hypothesis, not observed in sample02.",
+      "motion_reference": {
+        "file": "references/sample02/216598_medium.mp4",
+        "ranges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            7.5
+          ]
+        ],
+        "use": "behavioral observation, not uploaded motion conditioning"
+      },
+      "input": {
+        "image_url": "local:videos/sideway/assets/arrival-reference-v2.png",
+        "prompt": "Locked camera, same man and cafe in the photograph. His free LEFT hand, on the RIGHT side of the image, moves toward his own left trouser pocket at the outer hip. In one small unhurried motion, his four left fingers slip into the pocket, with only the thumb resting outside. The pocket opening and cloth respond to the fingers entering. His left elbow relaxes close to his side and the hand stays comfortably in that pocket for the rest of the shot. His RIGHT hand maintains the same grip on the coffee cup; that elbow keeps its support on the wooden counter. Quiet breathing and a brief natural blink, attentive eyes directed toward the coffee, relaxed closed lips. Preserve the same face, curls, olive overshirt, white tee, dark trousers, body proportions, lighting, background and framing. Natural skin texture and modest independent motion.",
+        "resolution": "720p",
+        "aspect_ratio": "9:16",
+        "seed": 919143,
+        "enable_prompt_expansion": false,
+        "acceleration": "regular",
+        "video_quality": "maximum",
+        "video_write_mode": "balanced",
+        "enable_safety_checker": true,
+        "enable_output_safety_checker": true
+      }
+    }
+  ],
+  "approved_cap_cents": 1225,
+  "authorization": "User explicitly approved $12.25 cumulative cap: Yes, go ahead."
+}

@@ -1,4 +1,6 @@
 """Verify and index the complete Motion-5 deliverable after HyperFrames renders it."""
+from amarillo.delivery import require_reverse_engineering
+
 import json
 import shutil
 import subprocess
@@ -10,6 +12,7 @@ from amarillo.pipeline import refresh_artifacts
 
 def main():
     final = Path("artifacts/final_outcome/motion5/motion5-final.mp4")
+    require_reverse_engineering(final)
     metadata = json.loads(subprocess.check_output([
         "ffprobe", "-v", "error", "-show_streams", "-show_format", "-of", "json", str(final)
     ]))

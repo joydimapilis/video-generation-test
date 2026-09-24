@@ -1,0 +1,39 @@
+{
+  "experiment": "computer-realism-reference-informed",
+  "budget_root": "artifacts/library-loop-computer-realism",
+  "source_still_review": "videos/computer-realism-samples/source-reviews.json",
+  "runs": [
+    {
+      "id": "01-typing-kling-v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 84,
+      "use_case": "computer_interaction",
+      "audio_requested": false,
+      "hypothesis": "He types a brief phrase with small irregular alternating finger presses on the keys directly underneath each fingertip. Individual fingers curl and release by a few millimeters, with different timing between the hands; wrists remain low and forearms supported, not rising together. After a short burst he pauses with fingertips comfortably on the keys, reads the screen, then adds two or three gentle keystrokes. Tiny screen-directed eye refocusing and an unforced blink; shoulders only respond subtly to breath. His expression stays absorbed and neutral, no smile growing for the camera.",
+      "input": {
+        "prompt": "One continuous six-second candid documentary shot, normal real-time movement, camera locked to the supplied framing. Preserve this exact adult man, ordinary skin texture, facial proportions, hair, shirt, desk and laptop geometry. He stays seated, quietly working, attention on the actual laptop screen. He types a brief phrase with small irregular alternating finger presses on the keys directly underneath each fingertip. Individual fingers curl and release by a few millimeters, with different timing between the hands; wrists remain low and forearms supported, not rising together. After a short burst he pauses with fingertips comfortably on the keys, reads the screen, then adds two or three gentle keystrokes. Tiny screen-directed eye refocusing and an unforced blink; shoulders only respond subtly to breath. His expression stays absorbed and neutral, no smile growing for the camera. Keep the room and light steady; still air. No speech, no cuts, no zoom, no pan, no slow motion, no new objects or beauty filtering. Do not animate both arms in lockstep.",
+        "start_image_url": "local:artifacts/library-loop-computer-realism/source-images/01-typing.png",
+        "duration": "6",
+        "generate_audio": false,
+        "cfg_scale": 0.5,
+        "negative_prompt": "synchronized hand bobbing, fingers fusing, extra fingers, fingers through keys, floating wrists, face morphing, beauty retouching, theatrical smile, looking at camera, talking, standing, camera movement, zoom, slow motion"
+      }
+    },
+    {
+      "id": "03-read-pause-kling-v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 84,
+      "use_case": "computer_interaction",
+      "audio_requested": false,
+      "hypothesis": "He types a few words for about two seconds with small unequal finger movements, then stops typing while keeping both hands lightly supported at the keyboard. His eyes make a small refocus from lower screen to middle screen, with only a slight head adjustment. A quiet breath and a very small settling back through the upper torso accompany the reading pause; elbows remain supported. He finishes still engaged with the same screen, lips closed, fingertips relaxed on keys. No large lean or lifting the arms.",
+      "input": {
+        "prompt": "One continuous six-second candid documentary shot, normal real-time movement, camera locked to the supplied framing. Preserve this exact adult man, ordinary skin texture, facial proportions, hair, shirt, desk and laptop geometry. He stays seated, quietly working, attention on the actual laptop screen. He types a few words for about two seconds with small unequal finger movements, then stops typing while keeping both hands lightly supported at the keyboard. His eyes make a small refocus from lower screen to middle screen, with only a slight head adjustment. A quiet breath and a very small settling back through the upper torso accompany the reading pause; elbows remain supported. He finishes still engaged with the same screen, lips closed, fingertips relaxed on keys. No large lean or lifting the arms. Keep the room and light steady; still air. No speech, no cuts, no zoom, no pan, no slow motion, no new objects or beauty filtering. Do not animate both arms in lockstep.",
+        "start_image_url": "local:artifacts/library-loop-computer-realism/source-images/03-read-pause.png",
+        "duration": "6",
+        "generate_audio": false,
+        "cfg_scale": 0.5,
+        "negative_prompt": "synchronized hand bobbing, fingers fusing, extra fingers, fingers through keys, floating wrists, face morphing, beauty retouching, theatrical smile, looking at camera, talking, standing, camera movement, zoom, slow motion"
+      }
+    }
+  ]
+}

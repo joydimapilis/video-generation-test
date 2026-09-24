@@ -1,0 +1,4 @@
+# Retain user-supplied reference footage locally, following the media-exclusion policy.
+*.mp4
+*.mov
+*.webm

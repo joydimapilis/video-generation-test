@@ -1,0 +1,108 @@
+{
+  "project": "Sideway human-realism test",
+  "date": "2026-09-19",
+  "status": "completed diagnostic; no replacement selected",
+  "comparison_mp4": "artifacts/final_outcome/sideway-human-realism-test/sideway-human-realism-comparison.mp4",
+  "review_page": "artifacts/final_outcome/sideway-human-realism-test/review.html",
+  "editable_project": "videos/sideway-human-realism-test/comparison",
+  "duration_seconds": 12,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "selected_replacements": [],
+  "full_film_replaced": false,
+  "comparison_ranges": "videos/sideway-human-realism-test/comparison/selection.json",
+  "reviews": [
+    "review_notes/sideway/sample02-movement-review.md",
+    "review_notes/sideway/sample02-test-results.md",
+    "review_notes/sideway/sample02-test-results.json"
+  ],
+  "verification": "artifacts/sideway-human-realism-test/encoded-review/verification.json",
+  "cost": {
+    "new_estimate_cents": 25,
+    "new_reserved_cents": 30,
+    "cumulative_estimate_cents": 1037,
+    "cumulative_reserved_cents": 1197,
+    "cap_cents": 1200,
+    "confirmed_charge_cents": null,
+    "billing_note": "Published estimates, not verified invoice. Five prior image allowances remain reserved."
+  },
+  "limitations": [
+    "Original full encode unavailable; recovered original human takes match selected-source hashes.",
+    "References informed prompts; no direct video motion conditioning.",
+    "Model, source pose, resolution and timing changes confound causal reference benefit.",
+    "Cafe trial 5.03125 seconds cannot fill original six-second slot at native speed.",
+    "All candidates rejected for full replacement; cafe hand support improves alone.",
+    "Visual review used chronological frames and close-ups; no claim of uninterrupted playback.",
+    "Historical cumulative budget reconstructed, not original ledger bytes."
+  ],
+  "files": [
+    {
+      "path": "artifacts/final_outcome/sideway-human-realism-test/media/arrival-candidate.mp4",
+      "bytes": 3310387,
+      "sha256": "ef938a1e25de321aac7f4702fc9d75f006509af5a7b37ecb7a1e390aed5d38fe"
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-human-realism-test/media/arrival-original.mp4",
+      "bytes": 9965157,
+      "sha256": "3665f304d3ef011cc8125f831c5b04db44f89860c2b76c33bbaf830140ca5bde"
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-human-realism-test/media/cafe-reference.mp4",
+      "bytes": 1574964,
+      "sha256": "f98472d8bbe5b12bb30039835b6796b87aadc45fc529ee1e76e1dca84010d29b"
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-human-realism-test/media/hands-reference.mp4",
+      "bytes": 990974,
+      "sha256": "7eb21937759b173a55ae23d64c4f852700579161373fc04c7217d2e061daaafa"
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-human-realism-test/media/phone-candidate.mp4",
+      "bytes": 2802322,
+      "sha256": "389da627fb6d8a26a1080e8ea44db6985e86722e1883e1a5e044d9d5d8c74242"
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-human-realism-test/media/phone-original.mp4",
+      "bytes": 6202541,
+      "sha256": "2330085b8c52f7fa88283c5144f330bbafc4cbc017314d6dbb5940f5af0af542"
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-human-realism-test/media/phone-reference.mp4",
+      "bytes": 690170,
+      "sha256": "3ac397d44012641a555b07411aff7ed75d95a99f0186eb3b6c4c54bccd488df2"
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-human-realism-test/media/reading-candidate.mp4",
+      "bytes": 1304541,
+      "sha256": "b7a9403ac51cd29ce4d3b3c8387a3245ee6914ad714e7a08a88a46a45234ce26"
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-human-realism-test/media/story-original.mp4",
+      "bytes": 13598789,
+      "sha256": "e34a9fed04de09373b08e2f8aa8838a9a3364daabac1629504a1adeda0864136"
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-human-realism-test/media/story-reference.mp4",
+      "bytes": 377244,
+      "sha256": "bfe59a9ab5dbe57cade95ce2b41bd875a306eadd11290f2e1acd1ab4c3a25237"
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-human-realism-test/review-notes.md",
+      "bytes": 4693,
+      "sha256": "b0d911d0185aa04b62eb246c7390c5e8d78f566051367f7b34f8e10f3916e0fc"
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-human-realism-test/review.html",
+      "bytes": 5773,
+      "sha256": "ac13f0bae2f25663d410dfb75ce80ca4d33afc58c5c360fa341d379a3f110f20"
+    },
+    {
+      "path": "artifacts/final_outcome/sideway-human-realism-test/sideway-human-realism-comparison.mp4",
+      "bytes": 14269993,
+      "sha256": "d29308ae4cae99cfbb96e76f772583fc6e8979e4bd86b80739e30e8bd2aa3abf"
+    }
+  ]
+}

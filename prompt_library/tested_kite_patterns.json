@@ -1,0 +1,48 @@
+{
+  "project": "kite-tomorrow",
+  "status": "two_single_candidate_subjective_workflow_reviews",
+  "source": "review_notes/kite-tomorrow-character.json",
+  "patterns": [
+    {
+      "name": "supported_reading_at_native_speed",
+      "endpoint": "bytedance/seedance-2.0/image-to-video",
+      "run_id": "kite_person_seedance2_reference_v1",
+      "prompt_record": "artifacts/library-loop-kite-tomorrow/budget.json",
+      "tested_result": "Improved gaze and expression timing relative to prior half-speed Veo edit. Softer facial detail. Selected for restrained opening only.",
+      "guidance": "Use the reviewed still to establish supported limbs and gaze target. Describe small coherent reading behavior; do not prohibit all expressions and then slow the take to fit. Render UI independently.",
+      "limitations": [
+        "Not a model-only comparison",
+        "Only one reference and one paid candidate",
+        "No speech, typing or cross-shot identity test",
+        "Does not solve all skin/detail realism concerns"
+      ]
+    },
+    {
+      "name": "purposeful_device_contact_still_first",
+      "endpoint": "bytedance/seedance-2.0/image-to-video",
+      "run_id": "kite_person_seedance2_purposeful_contact_v2",
+      "prompt_record": "videos/kite-tomorrow-character-pass/studies/purposeful-contact-test/motion-prompt.txt",
+      "tested_result": "Partial improvement: source establishes separate hands and task contact; motion adds brief lift/reposition instead of continuous glide. Gaze stays laptop-directed but expression remains very restrained. Not integrated.",
+      "guidance": "Establish useful hand roles in the still; animate a single small action and pause. Judge contact throughout the action, not just initial/final frames. Do not label a good starting pose a solved animation.",
+      "limitations": [
+        "One candidate, source pose and matching action prompt both changed; no supported input seed control. Not a causal still-only experiment or model ranking.",
+        "No real reference-clip likeness or motion was directly copied; behavioral findings only.",
+        "No speech, cross-shot identity, typing sequence, UI correctness or full-film integration tested."
+      ],
+      "review": "review_notes/kite-tomorrow-purposeful-contact.json"
+    },
+    {
+      "name": "supplied_dark_slack_reference_deterministic_ui",
+      "type": "deterministic_ui_revision",
+      "project": "videos/kite-tomorrow-slack",
+      "review": "review_notes/kite-tomorrow-slack.json",
+      "tested_result": "Sharp dark Slack shell and matching thread, consistent typography and local preview thumbnail. Encoded samples and composition checks passed.",
+      "guidance": "Reconstruct screenshot surfaces and layout in HTML, retain fictional narrative labels, capture thumbnails from the actual page composition, and inspect caption transparency in the encoded film.",
+      "limitations": [
+        "Not an authenticated product capture",
+        "Subjective style improvement; no numeric or causal realism score",
+        "No new human generation"
+      ]
+    }
+  ]
+}

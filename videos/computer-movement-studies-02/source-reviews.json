@@ -1,0 +1,37 @@
+{
+  "reviewed": true,
+  "images": [
+    {
+      "id": "01-desktop-typing-source-v1",
+      "file": "artifacts/library-loop-computer-movement-studies-02/source-images/01-desktop-typing.png",
+      "sha256": "895e22c9133f11ac7050de856c728ac287bbcb3eef9025ecf2765571bccdd140",
+      "decision": "accept_for_i2v",
+      "review": "Accept for animation: visible keyboard contact, low hands, supported forearms, gaze meets monitor. Freckles/skin variation, imperfect curls and cotton creases appear ordinary. Monitor obscures screen itself; UI not tested. Palm heel/wrist rest is less explicit than requested but no whole-hand levitation in source.",
+      "method": "Full generated image visual inspection before animation; subjective."
+    },
+    {
+      "id": "02-mouse-work-source-v1",
+      "file": "artifacts/library-loop-computer-movement-studies-02/source-images/02-mouse-work.png",
+      "sha256": "08434a07e8d353ae95b87aa899343d0079bb2d460d69a0ba7310d82b294b546c",
+      "decision": "accept_for_i2v",
+      "review": "Accept: normal cupped mouse contact and supported wrist, resting other hand, focused screen gaze, credible skin/clothes. Actual framing is lower/tighter than planned, making the mouse large in foreground; useful for contact inspection. Thumb is partly hidden by mouse, so verify shape in motion.",
+      "method": "Full generated image visual inspection before animation; subjective."
+    },
+    {
+      "id": "03-laptop-typing-source-v1",
+      "file": "artifacts/library-loop-computer-movement-studies-02/source-images/03-laptop-typing.png",
+      "sha256": "a7372c80e86fc20a9ba737303ef58f9808da1ac20e892fa26fe92d09e0f9741f",
+      "decision": "accept_for_i2v",
+      "review": "Accept: forearms supported, visible independent fingers placed over keys, downward screen gaze, age/skin variation and natural hair. Actual framing is front-side three-quarter rather than pure profile; no reference likeness or setting match. Some fingers slightly above keys as normal typing; wrist/arm support must persist.",
+      "method": "Full generated image visual inspection before animation; subjective."
+    },
+    {
+      "id": "01-desktop-typing-source-v2",
+      "file": "artifacts/library-loop-computer-movement-studies-02/source-images/01-desktop-typing-v2.png",
+      "sha256": "f350ac3c82895907cd79345d93fbfe415654c8057fb918e43482810a62ecef31",
+      "decision": "accept_for_i2v",
+      "review": "New text-to-image pose has visible padded wrist support under both low wrists and fingers already on keys. Screen-directed gaze and ordinary textured face/clothes. Knuckles still modestly arched; motion must not amplify. Entire person/scene generated anew, no real-reference inputs.",
+      "method": "Full-resolution still viewed before animation."
+    }
+  ]
+}

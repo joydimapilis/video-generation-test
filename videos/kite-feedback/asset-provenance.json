@@ -1,0 +1,67 @@
+[
+  {
+    "path": "videos/kite-feedback/assets/music.wav",
+    "sha256": "47fa0a1d167cf5d9c58fc100ef5fc717f4228c256ba872257a43ccddb4a476c7",
+    "source": "videos/kite-tomorrow-slack/assets/music.wav",
+    "incremental_provider_usd": 0
+  },
+  {
+    "path": "videos/kite-feedback/assets/gsap.min.js",
+    "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+    "source": "videos/kite-tomorrow-slack/assets/gsap.min.js",
+    "incremental_provider_usd": 0
+  },
+  {
+    "path": "videos/kite-feedback/assets/kite-wordmark.png",
+    "sha256": "beb3312aee2f09aa8eb7f10b72e05c21cc594ecea9531196c120ca967429bf3d",
+    "source": "videos/kite-tomorrow-slack/assets/kite-wordmark.png",
+    "incremental_provider_usd": 0
+  },
+  {
+    "path": "videos/kite-feedback/assets/Onest.woff2",
+    "sha256": "f72bdc75595bf844f68b15e18dae7eb4f5829b633c402201c8e036d1dfc5f17b",
+    "source": "videos/kite-tomorrow-slack/assets/Onest.woff2",
+    "incremental_provider_usd": 0
+  },
+  {
+    "path": "videos/kite-feedback/assets/Lato-400.woff2",
+    "sha256": "d4ae5188a65370ecfe28f42293bbee8297cfd5712c6aadfdb270d48f2bcd88b0",
+    "source": "videos/kite-tomorrow-slack/assets/Lato-400.woff2",
+    "incremental_provider_usd": 0
+  },
+  {
+    "path": "videos/kite-feedback/assets/kite-slack-app-icon.png",
+    "sha256": "26df2a2ca0375dfd8e383fd7d0c893cb0a007d2b8848c0c730c88304e74f37e7",
+    "source": "videos/kite-tomorrow-slack/assets/kite-slack-app-icon.png",
+    "incremental_provider_usd": 0
+  },
+  {
+    "path": "videos/kite-feedback/assets/marketer.mp4",
+    "sha256": "23e9208d031ce3e82fe96a44dc24c7373d280e384b29a70ebc223c35b5396358",
+    "source": "videos/kite-tomorrow-slack/assets/marketer.mp4",
+    "incremental_provider_usd": 0
+  },
+  {
+    "path": "videos/kite-feedback/assets/Lato-700.woff2",
+    "sha256": "7a7ce1a34f3e9944fe88fc61abbc93b6db383afa2b90815fd7ccea456fbce4e5",
+    "source": "videos/kite-tomorrow-slack/assets/Lato-700.woff2",
+    "incremental_provider_usd": 0
+  },
+  {
+    "path": "videos/kite-feedback/assets/marketer-opening.mp4",
+    "sha256": "da00ccaccd5b88416b933b6fc186868bf1f26686396177a6cd160578ca76507f",
+    "source": "artifacts/library-loop-kite-tomorrow/outputs/kite_person_seedance2_reference_v1.mp4",
+    "model": "bytedance/seedance-2.0/image-to-video",
+    "new_generation": false,
+    "source_range": [
+      0,
+      3.6
+    ],
+    "timeline_range": [
+      0,
+      3.6
+    ],
+    "speed": 1,
+    "incremental_provider_usd": 0
+  }
+]

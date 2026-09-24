@@ -1,0 +1,11 @@
+{
+  "ceiling_usd": 10,
+  "new_provider_calls": 0,
+  "incremental_estimated_usd": 0,
+  "incremental_reserved_usd": 0,
+  "incremental_confirmed_usd": 0,
+  "cumulative_historical_usd": null,
+  "shared_budget_root": "artifacts/library-loop-kite-tomorrow",
+  "inherited_cost_record": "assembled_outputs/kite-tomorrow-slack.json",
+  "note": "Reuse only. Historical uncertain source-media USD not zeroed or reset. No paid request made."
+}

@@ -1,10 +1,13 @@
 """Verify the final webinar film and write its self-contained local handoff."""
+from amarillo.delivery import require_reverse_engineering
+
 from pathlib import Path
 import json, subprocess, hashlib, shutil
 from PIL import Image, ImageDraw
 R=Path(__file__).resolve().parents[1]
 P=R/'videos/kite-webinar'; D=R/'artifacts/final_outcome/kite-webinar'
 movie=D/'kite-webinar.mp4'
+require_reverse_engineering(movie)
 meta=json.loads(subprocess.check_output(['ffprobe','-v','error','-count_frames','-show_format','-show_streams','-of','json',str(movie)]))
 v=next(s for s in meta['streams'] if s['codec_type']=='video')
 a=next(s for s in meta['streams'] if s['codec_type']=='audio')

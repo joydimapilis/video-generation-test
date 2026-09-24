@@ -1,0 +1,369 @@
+{
+  "typography": [
+    {
+      "role": "heading",
+      "fontFamily": "interDisplay",
+      "fontSize": "60px",
+      "fontWeight": "800",
+      "lineHeight": "69px",
+      "letterSpacing": "-1.2px",
+      "color": "#FFFFFF",
+      "sampleText": "Most AIs wait for instructions."
+    },
+    {
+      "role": "heading-2",
+      "fontFamily": "interDisplay",
+      "fontSize": "56px",
+      "fontWeight": "700",
+      "lineHeight": "84px",
+      "letterSpacing": "-0.56px",
+      "color": "#FFFFFF",
+      "sampleText": "Ready when you are."
+    },
+    {
+      "role": "body",
+      "fontFamily": "interDisplay",
+      "fontSize": "54px",
+      "fontWeight": "700",
+      "lineHeight": "64.8px",
+      "letterSpacing": "-1.08px",
+      "color": "#FFFFFF",
+      "sampleText": "I find what needs doing and do it."
+    },
+    {
+      "role": "display",
+      "fontFamily": "interDisplay",
+      "fontSize": "48px",
+      "fontWeight": "300",
+      "lineHeight": "56.16px",
+      "letterSpacing": "0.48px",
+      "color": "#FFFFFF",
+      "sampleText": "I’m an AI marketer."
+    },
+    {
+      "role": "heading-2",
+      "fontFamily": "interDisplay",
+      "fontSize": "48px",
+      "fontWeight": "600",
+      "lineHeight": "50.4px",
+      "letterSpacing": "-0.48px",
+      "color": "#FFFFFF",
+      "sampleText": "Let’s walk through our first week together."
+    },
+    {
+      "role": "heading-2",
+      "fontFamily": "interDisplay",
+      "fontSize": "28px",
+      "fontWeight": "600",
+      "lineHeight": "33.6px",
+      "letterSpacing": "-0.56px",
+      "color": "#FFFFFF",
+      "sampleText": "Join 3,800+ others I’ve helped grow."
+    },
+    {
+      "role": "label",
+      "fontFamily": "interDisplay",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "color": "#FFFFFF",
+      "sampleText": "“Wow, this is beautiful and professional.”“It looks really a"
+    },
+    {
+      "role": "link",
+      "fontFamily": "Manrope",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "color": "#1A1A2E",
+      "sampleText": ""
+    }
+  ],
+  "spacing": {
+    "observed": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      14,
+      16,
+      18,
+      20,
+      24,
+      32
+    ],
+    "baseUnit": 4
+  },
+  "radius": [
+    "3px",
+    "5px",
+    "6px",
+    "8px",
+    "12px",
+    "999px"
+  ],
+  "shadows": [
+    {
+      "value": "rgba(10, 30, 70, 0.28) 0px 24px 60px 0px, rgba(10, 30, 70, 0.14) 0px 6px 18px 0px",
+      "count": 4
+    },
+    {
+      "value": "rgba(255, 255, 255, 0.1) 0px -1px 0px 0px inset",
+      "count": 4
+    },
+    {
+      "value": "rgba(255, 255, 255, 0.5) 0px 1px 1px 0px inset, rgba(255, 255, 255, 0.15) 0px -1px 1px 0px inset, rgba(0, 0, 0, 0.15) 0px 20px 40px 0px",
+      "count": 3
+    },
+    {
+      "value": "rgba(10, 30, 70, 0.22) 0px 8px 32px 0px, rgba(10, 30, 70, 0.12) 0px 1px 4px 0px",
+      "count": 3
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px",
+      "count": 1
+    }
+  ],
+  "buttons": [
+    {
+      "label": "Get started",
+      "background": "#FFFFFF",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#17223B",
+      "padding": "10px 24px",
+      "borderRadius": "6px",
+      "border": "0px solid lab(91.6229 -0.159115 -2.26791)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "height": "40px"
+    },
+    {
+      "label": "button",
+      "background": "lab(98.2596 -0.247031 -0.706708)",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#1A1A2E",
+      "padding": "8px",
+      "borderRadius": "3.35544e+07px",
+      "border": "0px solid lab(91.6229 -0.159115 -2.26791)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "36px"
+    },
+    {
+      "label": "Solutions",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#1A1A2E",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px solid lab(91.6229 -0.159115 -2.26791)",
+      "boxShadow": "none",
+      "fontSize": "18px",
+      "fontWeight": "500",
+      "height": "28px"
+    },
+    {
+      "label": "Get started",
+      "background": "transparent",
+      "backgroundImage": "linear-gradient(135deg, rgb(44, 77, 239) 0%, rgb(12, 18, 146) 100%)",
+      "backdropFilter": "",
+      "color": "#FFFFFF",
+      "padding": "12px 24px",
+      "borderRadius": "4px",
+      "border": "0px solid lab(91.6229 -0.159115 -2.26791)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "height": "44px"
+    },
+    {
+      "label": "Add me to Slack",
+      "background": "#FFFFFF",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#17223B",
+      "padding": "14px 30px",
+      "borderRadius": "999px",
+      "border": "0px solid lab(91.6229 -0.159115 -2.26791)",
+      "boxShadow": "rgba(10, 30, 70, 0.3) 0px 14px 40px 0px",
+      "fontSize": "18px",
+      "fontWeight": "700",
+      "height": "55px"
+    }
+  ],
+  "cards": [
+    {
+      "label": "card",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FFFFFF",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px solid lab(91.6229 -0.159115 -2.26791)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "560px"
+    },
+    {
+      "label": "card",
+      "background": "#FFFFFF",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#1D1C1D",
+      "padding": "10px 20px 12px",
+      "borderRadius": "12px",
+      "border": "0px solid lab(91.6229 -0.159115 -2.26791)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "122.5px"
+    },
+    {
+      "label": "card",
+      "background": "transparent",
+      "backgroundImage": "linear-gradient(135deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.08) 100%)",
+      "backdropFilter": "blur(16px) saturate(1.6)",
+      "color": "#FFFFFF",
+      "padding": "10px 20px 12px",
+      "borderRadius": "12px",
+      "border": "1px solid rgba(255, 255, 255, 0.35)",
+      "boxShadow": "rgba(255, 255, 255, 0.5) 0px 1px 1px 0px inset, rgba(255, 255, 255, 0.15) 0px -1px 1px 0px inset, rgba(0, 0, 0, 0.15) 0px 20px 40px 0px",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "70.5px"
+    }
+  ],
+  "nav": {
+    "label": "navigation",
+    "background": "transparent",
+    "backgroundImage": "",
+    "backdropFilter": "",
+    "color": "#1A1A2E",
+    "padding": "0px",
+    "borderRadius": "0px",
+    "border": "0px solid lab(91.6229 -0.159115 -2.26791)",
+    "boxShadow": "none",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": "80px"
+  },
+  "chips": [
+    {
+      "label": "Get Started",
+      "background": "#FFFFFF",
+      "color": "#FFFFFF",
+      "padding": "6px 14px",
+      "borderRadius": "12px",
+      "border": "1px solid rgba(255, 255, 255, 0.25)",
+      "boxShadow": "none",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "height": "50px"
+    },
+    {
+      "label": "Monday 9:54 AM",
+      "background": "#FFFFFF",
+      "color": "#FFFFFF",
+      "padding": "6px 10px",
+      "borderRadius": "12px",
+      "border": "0px solid lab(91.6229 -0.159115 -2.26791)",
+      "boxShadow": "none",
+      "fontSize": "24px",
+      "fontWeight": "500",
+      "height": "48px"
+    },
+    {
+      "label": "6",
+      "background": "#CD2553",
+      "color": "#FFFFFF",
+      "padding": "0px 6px",
+      "borderRadius": "999px",
+      "border": "0px solid lab(91.6229 -0.159115 -2.26791)",
+      "boxShadow": "none",
+      "fontSize": "10.5px",
+      "fontWeight": "700",
+      "height": "16px"
+    },
+    {
+      "label": "APP",
+      "background": "#1D1C1D",
+      "color": "#616061",
+      "padding": "1px 4px",
+      "borderRadius": "3px",
+      "border": "0px solid lab(91.6229 -0.159115 -2.26791)",
+      "boxShadow": "none",
+      "fontSize": "10px",
+      "fontWeight": "700",
+      "height": "17px"
+    }
+  ],
+  "statCells": [],
+  "tabs": [
+    {
+      "label": "MessagesHomeAbout",
+      "background": "transparent",
+      "color": "#616061",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px solid lab(91.6229 -0.159115 -2.26791)",
+      "boxShadow": "none",
+      "fontSize": "12.5px",
+      "fontWeight": "400",
+      "height": "26.75px"
+    }
+  ],
+  "backgrounds": [
+    {
+      "value": "radial-gradient(circle, rgba(100, 116, 139, 0.45) 1px, rgba(0, 0, 0, 0) 1px)",
+      "area": 23331300
+    },
+    {
+      "value": "linear-gradient(rgb(52, 123, 205) 0%, rgb(69, 130, 198) 35%, rgb(89, 138, 190) 72%, rgb(102, 143, 184) 100%)",
+      "area": 2073600
+    },
+    {
+      "value": "linear-gradient(135deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.08) 100%)",
+      "area": 106309
+    }
+  ],
+  "glass": [
+    {
+      "backdropFilter": "blur(18px)",
+      "background": "rgba(0, 0, 0, 0.2)",
+      "border": "0px solid lab(91.6229 -0.159115 -2.26791)",
+      "borderRadius": "12px",
+      "boxShadow": "rgba(10, 30, 70, 0.28) 0px 24px 60px 0px, rgba(10, 30, 70, 0.14) 0px 6px 18px 0px",
+      "area": 3523520
+    },
+    {
+      "backdropFilter": "blur(16px) saturate(1.6)",
+      "background": "linear-gradient(135deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.08) 100%)",
+      "border": "1px solid rgba(255, 255, 255, 0.35)",
+      "borderRadius": "12px",
+      "boxShadow": "rgba(255, 255, 255, 0.5) 0px 1px 1px 0px inset, rgba(255, 255, 255, 0.15) 0px -1px 1px 0px inset, rgba(0, 0, 0, 0.15) 0px 20px 40px 0px",
+      "area": 106309
+    },
+    {
+      "backdropFilter": "blur(13px)",
+      "background": "rgba(48, 48, 48, 0.45)",
+      "border": "0px solid lab(91.6229 -0.159115 -2.26791)",
+      "borderRadius": "8px",
+      "boxShadow": "",
+      "area": 25268
+    }
+  ]
+}

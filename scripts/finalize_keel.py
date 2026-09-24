@@ -4,6 +4,8 @@ Every assertion is a delivery gate. This film is narrated, so it adds two checks
 the earlier ones did not need: speech must be present in each act's voice window,
 and a local transcript must match the written script before the file ships.
 """
+from amarillo.delivery import require_reverse_engineering
+
 import argparse
 import hashlib
 import json
@@ -36,6 +38,7 @@ def main():
     video = ROOT / 'keel-final.mp4'
     shutil.copyfile(SOURCE, video)
 
+    require_reverse_engineering(video)
     probe = json.loads(subprocess.check_output(
         ['ffprobe', '-v', 'error', '-show_streams', '-show_format', '-of', 'json', str(video)]))
     picture = next(s for s in probe['streams'] if s['codec_type'] == 'video')

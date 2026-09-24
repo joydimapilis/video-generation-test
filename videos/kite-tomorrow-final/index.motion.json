@@ -1,0 +1,25 @@
+{
+  "duration": 38,
+  "assertions": [
+    {
+      "kind": "appearsBy",
+      "selector": "#opening-title",
+      "bySec": 1.5
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#request-msg",
+      "bySec": 10
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#revised-hero",
+      "bySec": 31.5
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#end-text",
+      "bySec": 37
+    }
+  ]
+}

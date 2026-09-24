@@ -1,0 +1,67 @@
+{
+  "experiment": "new-computer-movement-studies-02",
+  "budget_root": "artifacts/library-loop-computer-movement-studies-02",
+  "source_still_review": "videos/computer-movement-studies-02/source-reviews.json",
+  "runs": [
+    {
+      "id": "01-desktop-typing-veo-standard-v1",
+      "endpoint": "fal-ai/veo3.1/image-to-video",
+      "estimate_cents": 120,
+      "use_case": "computer_interaction",
+      "audio_requested": false,
+      "hypothesis": "New ordinary character and practical supported source pose; behavioral cues from real clips in text only. Standard Veo quality candidate after prior Fast contact failures. Not a controlled model comparison.",
+      "reference_observations": "videos/computer-movement-studies-02/reference-observations.json",
+      "input": {
+        "prompt": "Static tripod documentary shot, six seconds at real-time speed. Preserve the woman and the entire desk scene in the input photograph, including her natural skin, freckles, hair and clothing. She is in the middle of ordinary touch typing. Both hands stay low over their existing keys while individual fingertips make small quick downward presses in uneven short groups, one hand slightly busier than the other. Forearms keep their weight on the desk and wrists remain low. Between groups the fingers simply rest against the keys for a fraction of a second, then continue typing. Her eyes follow the monitor text; a brief small eye check toward the keys returns to the screen without a head bob. A natural blink and quiet breathing add slight life to her face and shirt. Shoulders remain relaxed. Work continues through the end of the shot, with hands still at the keyboard. Keep the monitor, desk and framing fixed.",
+        "negative_prompt": "floating wrists, lifted hands, exaggerated finger curling, hand gestures, head bobbing, looking at camera, talking, beauty retouching, camera movement, zoom, slow motion, cuts",
+        "image_url": "local:artifacts/library-loop-computer-movement-studies-02/source-images/01-desktop-typing.png",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "seed": 71900,
+        "auto_fix": false
+      }
+    },
+    {
+      "id": "02-mouse-work-veo-standard-v1",
+      "endpoint": "fal-ai/veo3.1/image-to-video",
+      "estimate_cents": 120,
+      "use_case": "computer_interaction",
+      "audio_requested": false,
+      "hypothesis": "New ordinary character and practical supported source pose; behavioral cues from real clips in text only. Standard Veo quality candidate after prior Fast contact failures. Not a controlled model comparison.",
+      "reference_observations": "videos/computer-movement-studies-02/reference-observations.json",
+      "input": {
+        "prompt": "Static tripod documentary shot, six seconds at normal real-time speed. Preserve this seated man, face texture, salt-and-pepper hair, burgundy shirt and desk. He quietly works with the mouse while reading the computer monitor. His right palm and curved fingers stay in their existing comfortable contact around the mouse shell; the mouse makes two small slow movements of about half a centimeter on the blue pad, with a short still moment between them. The right index finger makes one tiny downward click while remaining on its button. The supported wrist follows locally without lifting the hand or mouse. The left hand stays relaxed at its current keyboard position. His eyes make small reading movements within the monitor area with a natural blink; the head barely adjusts. Subtle breathing shifts the shirt and shoulders. Continue this ordinary engaged working posture to the end. Keep the camera, monitor and desk edges stationary.",
+        "negative_prompt": "floating wrists, lifted hands, exaggerated finger curling, hand gestures, head bobbing, looking at camera, talking, beauty retouching, camera movement, zoom, slow motion, cuts",
+        "image_url": "local:artifacts/library-loop-computer-movement-studies-02/source-images/02-mouse-work.png",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "seed": 71901,
+        "auto_fix": false
+      }
+    },
+    {
+      "id": "03-laptop-typing-veo-standard-v1",
+      "endpoint": "fal-ai/veo3.1/image-to-video",
+      "estimate_cents": 120,
+      "use_case": "computer_interaction",
+      "audio_requested": false,
+      "hypothesis": "New ordinary character and practical supported source pose; behavioral cues from real clips in text only. Standard Veo quality candidate after prior Fast contact failures. Not a controlled model comparison.",
+      "reference_observations": "videos/computer-movement-studies-02/reference-observations.json",
+      "input": {
+        "prompt": "A locked-off six-second documentary shot at real-time speed. Preserve this woman, her age, skin texture, grey-streaked bob, navy linen blouse, laptop and room exactly as established by the new input photograph. She types a short passage while looking at the laptop screen. Fingers press neighboring keys independently in small irregular groups close to the keyboard surface; some fingertips stay resting on keys while others press. Both forearms remain supported on the table and the wrists keep their low working position. Brief hesitations separate words but she continues working rather than making a finishing gesture. Her eyes refocus subtly on different lines of the laptop screen, with one ordinary blink. One small breath slightly changes her shoulders and sleeve folds, without leaning back or nodding. At the end she is still seated and typing comfortably. The laptop and all background edges remain fixed in the frame.",
+        "negative_prompt": "floating wrists, lifted hands, exaggerated finger curling, hand gestures, head bobbing, looking at camera, talking, beauty retouching, camera movement, zoom, slow motion, cuts",
+        "image_url": "local:artifacts/library-loop-computer-movement-studies-02/source-images/03-laptop-typing.png",
+        "duration": "6s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "seed": 71902,
+        "auto_fix": false
+      }
+    }
+  ]
+}

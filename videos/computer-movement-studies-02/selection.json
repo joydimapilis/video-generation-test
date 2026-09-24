@@ -1,0 +1,59 @@
+{
+  "reviewed": true,
+  "samples": [
+    {
+      "name": "01-desktop-reading",
+      "title": "Desktop reading pause \u2014 short selection",
+      "source": "artifacts/library-loop-computer-movement-studies-02/outputs/01-desktop-typing-veo-standard-v3.mp4",
+      "source_image": "artifacts/library-loop-computer-movement-studies-02/source-images/01-desktop-typing-v2.png",
+      "source_start": 2.1666666666666665,
+      "duration": 1.5,
+      "decision": "provisional_segment_only",
+      "review": "review_notes/computer-movement-studies-02.json",
+      "review_note": "Only 1.5 seconds retained: supported hands during a reading pause. The full six-second take is rejected for repeated finger lifting outside this interval. Sustained desktop realism remains unresolved.",
+      "run_id": "01-desktop-typing-veo-standard-v3",
+      "image_model": "fal-ai/nano-banana-pro",
+      "video_model": "fal-ai/veo3.1/image-to-video",
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "e3fa5c1ea13a8ab75ae43b42d051ba160917545fa8f01d0a9f6fcb5c88f3abd2",
+      "fps": "24/1"
+    },
+    {
+      "name": "02-mouse-work",
+      "title": "Mouse pointer movement",
+      "source": "artifacts/library-loop-computer-movement-studies-02/outputs/02-mouse-work-veo-standard-v2.mp4",
+      "source_image": "artifacts/library-loop-computer-movement-studies-02/source-images/02-mouse-work.png",
+      "source_start": 0,
+      "duration": 6,
+      "decision": "provisional",
+      "review": "review_notes/computer-movement-studies-02.json",
+      "review_note": "Small mouse movements with fingers resting on buttons. Brief downward head inclination; actual cursor response is not visible.",
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "56aa8e30740051c5c540a3562aac9000bfe4b592f8f93f7aa2d79c23364153e3",
+      "fps": "24/1",
+      "run_id": "02-mouse-work-veo-standard-v2",
+      "image_model": "fal-ai/nano-banana-pro",
+      "video_model": "fal-ai/veo3.1/image-to-video"
+    },
+    {
+      "name": "03-laptop-typing",
+      "title": "Laptop typing",
+      "source": "artifacts/library-loop-computer-movement-studies-02/outputs/03-laptop-typing-veo-standard-v1.mp4",
+      "source_image": "artifacts/library-loop-computer-movement-studies-02/source-images/03-laptop-typing.png",
+      "source_start": 0,
+      "duration": 6,
+      "decision": "provisional",
+      "review": "review_notes/computer-movement-studies-02.json",
+      "review_note": "Small independent typing movements and supported forearms across the full six seconds. Brief mouth opening resembles an exhale; some finger cadence remains regular.",
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "879a7487c5ddf73fe242c7511c79f66e2b9cbd22bf957c1d689a97b8d825d44f",
+      "fps": "24/1",
+      "run_id": "03-laptop-typing-veo-standard-v1",
+      "image_model": "fal-ai/nano-banana-pro",
+      "video_model": "fal-ai/veo3.1/image-to-video"
+    }
+  ]
+}

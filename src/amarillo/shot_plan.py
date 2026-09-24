@@ -61,7 +61,7 @@ def interview_prompt(entry: ShotState, exit: ShotState, line: str):
 
 
 def route_shot(use_case, *, has_reference=False, continuous=False,
-               evidence_path=Path('artifacts/learning/latest.json')):
+               evidence_path=Path('artifacts/learning/core.json')):
     if use_case == 'exact_ui':
         return 'hyperframes'
     if use_case in {'interview', 'ugc_dialogue'} and not has_reference:

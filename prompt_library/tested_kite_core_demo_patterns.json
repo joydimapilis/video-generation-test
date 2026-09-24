@@ -1,0 +1,31 @@
+{
+  "experiment": "library-loop-kite-core-demo",
+  "evidence_scope": "core",
+  "status": "Applied in a completed 30-second film; sampled encoded review and numerical checks",
+  "patterns": [
+    {
+      "name": "generated texture with exact product states",
+      "recipe": "Use a short silent stationary-object generation for the opening; route all readable requests, UI controls, draft text and revisions to deterministic rendering.",
+      "evidence": "videos/kite-core-demo/shot-routing.json; artifacts/library-loop-kite-core-demo/scorecard.json",
+      "limit": "One paper-object shot; not a general model ranking."
+    },
+    {
+      "name": "font name is not character coverage",
+      "recipe": "Inspect the captured font subset's Latin coverage and rendered typography. An existing file named Onest can contain only non-Latin glyphs.",
+      "evidence": "videos/kite-core-demo/composition-revisions.json",
+      "limit": "Observed on this site's split font subsets."
+    },
+    {
+      "name": "review after media hoisting",
+      "recipe": "After assembly moves media to the host, inspect z-order and transparent scene ground so the opening title remains visible over the video.",
+      "evidence": "videos/kite-core-demo/index.html; .context/kite-core-demo/snapshots-01; .context/kite-core-demo/snapshots-final",
+      "limit": "Specific to the installed HyperFrames assembler's hoisting behavior."
+    }
+  ],
+  "avoid": [
+    "Treating a successful API return as acceptance",
+    "Manufacturing retries for a demo when the first candidate is usable",
+    "Claiming the automated motion subcheck ran when it was disabled",
+    "Presenting illustrative UI as an authenticated backend capture"
+  ]
+}

@@ -1,4 +1,6 @@
 """Verify, fingerprint, and index the finished MP4 without paid API calls."""
+from amarillo.delivery import require_reverse_engineering
+
 import hashlib
 import json
 import subprocess
@@ -7,6 +9,7 @@ from pathlib import Path
 def main():
     root=Path('artifacts/final_outcome/cue')
     video=root/'cue-final.mp4'
+    require_reverse_engineering(video)
     probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(video)]))
     streams=probe['streams']
     picture=next(s for s in streams if s['codec_type']=='video')

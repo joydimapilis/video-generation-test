@@ -1,4 +1,6 @@
 """Verify the delivered Trace MP4, its new source footage, and authored audio mix."""
+from amarillo.delivery import require_reverse_engineering
+
 import hashlib, json, subprocess
 from pathlib import Path
 import numpy as np
@@ -10,6 +12,7 @@ def frame(p,t,w,h,filters=''):
  return np.frombuffer(run('ffmpeg','-v','error','-ss',str(t),'-i',str(p),'-frames:v','1','-vf',filt,'-pix_fmt','rgb24','-f','rawvideo','-'),dtype=np.uint8).reshape(h,w,3).astype(float)
 def digest(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def main():
+ require_reverse_engineering(V)
  check=json.loads((R/'check.json').read_text());assert check['ok']
  assert not any(check[k]['findings'] for k in ['lint','runtime','layout','contrast'])
  meta=json.loads(run('ffprobe','-v','error','-show_format','-show_streams','-of','json',str(V)))

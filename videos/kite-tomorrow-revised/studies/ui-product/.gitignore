@@ -1,0 +1,4 @@
+node_modules/
+.hyperframes/
+assets/*.mp4
+assets/relay-draft-thumbnail.png

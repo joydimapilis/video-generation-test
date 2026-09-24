@@ -1,0 +1,54 @@
+{
+  "experiment": "sideway-cafe-pocket-settle-correction",
+  "budget_root": "artifacts/library-loop-14",
+  "execution_status": "authorized",
+  "pricing_checked": "2026-09-19",
+  "pricing_sources": [
+    "https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video/turbo"
+  ],
+  "cost_basis": "Final authorized correction: $0.10 estimate / $0.12 reservation; projected cumulative reserve $12.21 of approved $12.25. Source is local reviewed frame extraction, no paid image call.",
+  "reference_mode": "Observed sample02 movement translated to prompts. No motion-reference video submitted; endpoint accepts image conditioning only. Different model is a confound, not proof of causal reference improvement.",
+  "runs": [
+    {
+      "id": "sideway_arrival_pocket_settle_v5",
+      "endpoint": "fal-ai/wan/v2.2-a14b/image-to-video/turbo",
+      "estimate_cents": 10,
+      "use_case": "observational_person",
+      "role": "arrival",
+      "version": 5,
+      "audio_requested": false,
+      "reference_review": "review_notes/sideway/left-hand-continuation-source.json",
+      "reference_sha256": "78dce9cf36b1e5990d0bfcbbd12a5e30e73e2c1ff146a7810f22ba720813b702",
+      "hypothesis": "V4 achieves pocket-directed hand action but looks toward camera after about 2s. Continue from reviewed V4 frame at 1.9375s before head lift. Complete pocket entry, keep bowed head and quiet mouth. If continuous and usable, join V4 opening to V5 continuation at matched source frame.",
+      "motion_reference": {
+        "file": "references/sample02/216598_medium.mp4",
+        "ranges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            7.5
+          ]
+        ],
+        "use": "behavioral observation, not uploaded motion conditioning"
+      },
+      "input": {
+        "image_url": "local:videos/sideway-human-realism-test/coffee-left-hand/pocket-continuation-source.png",
+        "prompt": "A quiet candid continuation of this exact frame, camera fixed. The man keeps his head gently bowed at this same angle throughout, eyes lowered, lips softly closed. His left fingertips finish their short slide into his left trouser pocket at the outer hip, then that hand rests comfortably inside the pocket with thumb outside and elbow relaxed. His right hand holds the coffee cup steadily at the same low height with the same handle grip, elbow supported on the counter. A little breathing and one brief ordinary blink, then the same quiet downward attention. Preserve face texture, hair, clothes, cup shape, light and background. Keep his head at the starting angle and his mouth relaxed and closed for the entire observation.",
+        "resolution": "720p",
+        "aspect_ratio": "9:16",
+        "seed": 919144,
+        "enable_prompt_expansion": false,
+        "acceleration": "regular",
+        "video_quality": "maximum",
+        "video_write_mode": "balanced",
+        "enable_safety_checker": true,
+        "enable_output_safety_checker": true
+      }
+    }
+  ],
+  "approved_cap_cents": 1225,
+  "authorization": "User explicitly approved $12.25 cumulative cap: Yes, go ahead."
+}

@@ -1,0 +1,21 @@
+{
+  "status": "final_render_delivered",
+  "video": "kite-tomorrow",
+  "output": "artifacts/final_outcome/kite-tomorrow-revised/kite-tomorrow-revised.mp4",
+  "editable_project": "videos/kite-tomorrow-revised",
+  "verification": "artifacts/final_outcome/kite-tomorrow-revised/verification.json",
+  "comparison": "artifacts/final_outcome/kite-tomorrow-revision/ui-comparison.mp4",
+  "review": "review_notes/kite-tomorrow.md",
+  "cost": {
+    "new_paid_generation_usd": 0,
+    "prior_credits_confirmed": 31.38,
+    "prior_usd": null,
+    "ceiling_usd": 10,
+    "same_video_ledger": true
+  },
+  "limitations": [
+    "Original character retained; no new reference image or I2V test. Facial smoothness, restrained movement and late gaze drift remain.",
+    "UI is an illustrative reconstruction with official brand assets, not a recording of a live Kite account.",
+    "Original complete encoded MP4 and local VO/SFX were not recovered. Full cut reconstructed from tracked project, original video/music, and locally restored VO/SFX."
+  ]
+}

@@ -1,0 +1,22 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="IconGroup2" clip-path="url(#clip0_0_4)">
+<g id="Union" filter="url(#filter0_d_0_4)">
+<path d="M6.24958 10C8.6418 10 10.9107 11.6506 11.7554 14.6777C12.197 16.2607 10.8474 17.4999 9.4615 17.5H3.03767C1.65179 17.4999 0.302136 16.2606 0.743725 14.6777C1.58836 11.6506 3.85734 10 6.24958 10ZM13.7496 10C16.1419 10 18.4108 11.6506 19.2554 14.6777C19.697 16.2606 18.3474 17.4999 16.9615 17.5H12.775C13.415 16.6292 13.7067 15.4703 13.3609 14.2305C12.9544 12.7734 12.2553 11.5404 11.357 10.585C12.1033 10.1987 12.9193 10 13.7496 10ZM6.24958 2.5C8.09032 2.50013 9.58242 3.99229 9.58259 5.83301C9.58259 7.67388 8.09043 9.16686 6.24958 9.16699C4.40863 9.16699 2.9156 7.67396 2.9156 5.83301C2.91578 3.99221 4.40874 2.5 6.24958 2.5ZM13.7496 2.5C15.5904 2.50013 17.0824 3.99229 17.0826 5.83301C17.0826 7.67388 15.5905 9.16687 13.7496 9.16699C11.9087 9.16699 10.4156 7.67396 10.4156 5.83301C10.4158 3.99221 11.9088 2.5 13.7496 2.5Z" fill="white"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_4" x="-1.34155" y="2.5" width="22.6823" height="19" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="2"/>
+<feGaussianBlur stdDeviation="1"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_4"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_4" result="shape"/>
+</filter>
+<clipPath id="clip0_0_4">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -8,12 +8,8 @@ import json
 import subprocess
 from pathlib import Path
 
-import os
+from amarillo.library import resolve_library
 
-# The reference library lives outside the repo and its path is personal, so it is
-# read from the environment rather than hardcoded. Point AMARILLO_LIBRARY_DIR at
-# the folder of source videos, or symlink it to data/library.
-LIBRARY = Path(os.environ.get('AMARILLO_LIBRARY_DIR', 'data/library'))
 OUT = Path('artifacts/library-loop-2/references')
 TERMS = [
     ('1X-NEO-The-Home-Robot', 'consumer_hardware_launch'),
@@ -29,8 +25,9 @@ TERMS = [
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    files = sorted(LIBRARY.glob('*.mp4'))
-    manifest = {'library': str(LIBRARY), 'file_count': len(files),
+    library = resolve_library()
+    files = sorted(library.glob('*.mp4'))
+    manifest = {'library': str(library), 'file_count': len(files),
                 'slice': 'hardware, field and milestone launches', 'selection': []}
     for index, (term, genre) in enumerate(TERMS):
         path = next((p for p in files if term in p.name), None)

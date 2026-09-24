@@ -1,8 +1,11 @@
 """Decode, verify and package the finished brand film."""
+from amarillo.delivery import require_reverse_engineering
+
 from pathlib import Path
 import subprocess,json,hashlib,shutil
 from PIL import Image,ImageDraw
 R=Path(__file__).resolve().parents[1];P=R/'videos/kite-judgment';D=R/'artifacts/final_outcome/kite-judgment';movie=D/'kite-judgment.mp4'
+require_reverse_engineering(movie)
 m=json.loads(subprocess.check_output(['ffprobe','-v','error','-count_frames','-show_streams','-show_format','-of','json',str(movie)]))
 v=next(s for s in m['streams'] if s['codec_type']=='video');a=next(s for s in m['streams'] if s['codec_type']=='audio')
 assert(v['width'],v['height'])==(1920,1080)

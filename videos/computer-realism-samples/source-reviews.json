@@ -1,0 +1,47 @@
+{
+  "method": "Full source images visually inspected before I2V",
+  "sources": [
+    {
+      "id": "01-typing-source-v1",
+      "decision": "accept",
+      "finding": "Visible independently curved fingers on keyboard; supported forearms, screen-directed gaze, ordinary facial texture. Keyboard markings not treated as exact UI.",
+      "path": "artifacts/library-loop-computer-realism/source-images/01-typing.png",
+      "sha256": "38603f50cb2bac4868df482063254df3e1f761e8e75ac4f8cdb1e73ddab6927a"
+    },
+    {
+      "id": "02-trackpad-source-v1",
+      "decision": "reject",
+      "finding": "Both hands on keyboard instead of requested trackpad. Do not animate this as a trackpad sample. New still must show unambiguous pad contact.",
+      "path": "artifacts/library-loop-computer-realism/source-images/02-trackpad.png",
+      "sha256": "e7eaf04d6c6b29521468b863ac0b1d34d888e119eb87b836bbd6c24dd4d5adff"
+    },
+    {
+      "id": "03-read-pause-source-v1",
+      "decision": "accept",
+      "finding": "Side view gives visible contact, wrists and gaze. Screen is dark/reflective; no claim of UI correctness. Source will support a short typing pause.",
+      "path": "artifacts/library-loop-computer-realism/source-images/03-read-pause.png",
+      "sha256": "e1983d4db1e0afe6d4fe92c6af962979328605fc465ca0db759dcc1374b0ac26"
+    },
+    {
+      "id": "02-trackpad-source-v2",
+      "decision": "reject",
+      "finding": "Clear trackpad is empty; right hand again incorrectly on keys, and display dark. Switch source model with the same simple contact constraint.",
+      "path": "artifacts/library-loop-computer-realism/source-images/02-trackpad-v2.png",
+      "sha256": "4e2f51f83a2ff7ee1bdd41becadf3870acedc06b24e052142f0b8b7368e3750b"
+    },
+    {
+      "id": "02-trackpad-source-v3",
+      "decision": "accept",
+      "finding": "Unambiguous two-finger pad contact, separate resting hand on desk, lit screen with unreadable document, gaze into display. Left hand operates pad instead of specified right: accept visible roles and match motion prompt, not verbal anatomy. Natural texture and supported posture.",
+      "path": "artifacts/library-loop-computer-realism/source-images/02-trackpad-v3.png",
+      "sha256": "6e2b08de664fd35b6ab0000e44ece4c912e8b2648617f7b95cf71c12a528ba9b"
+    },
+    {
+      "id": "03-read-pause-source-v2",
+      "decision": "accept",
+      "finding": "Visible lit document, ordinary uneven skin and hair, screen-directed gaze, low curved fingers on keys, supported wrists/forearms. Separate man identity accepted as independent sample. UI is illustrative generated content, not an exact product screen.",
+      "path": "artifacts/library-loop-computer-realism/source-images/03-read-pause-v2.png",
+      "sha256": "1a1228e726ff7452d77c79d6f8129eafbcae58eb96446a4698d2933a55f23455"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+No new website capture; supplied brief plus existing local assets.
+assets/kite-wordmark.png — prior official wordmark; assets/kite-slack-app-icon.png — official app avatar; assets/marketer.mp4 — reviewed generated laptop worker, source purposeful-contact v2, 0.4–4 seconds native speed; assets/music.wav — existing Kite instrumental; assets/Onest.woff2 — local brand font; assets/Lato-400.woff2 and Lato-700.woff2 — Slack font. Slack visual reference artifacts/Slack UI.webp.

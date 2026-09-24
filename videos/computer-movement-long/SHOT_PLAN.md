@@ -1,0 +1,20 @@
+# Longer computer-work sequences
+
+## 01
+
+The woman is editing a short sentence. 0–2 seconds: she reads the monitor with fingertips resting quietly on the keyboard. 2–5 seconds: she types a few words with small independent fingertip presses close to the key surface; the heels of her hands stay on the padded wrist rest. 5–7 seconds: she stops pressing and rereads the screen, leaving fingers relaxed on their keys. 7–9 seconds: the right hand slides a short distance along the keyboard to press two navigation keys, then rests. 9–11 seconds: eyes refocus higher on the screen while hands remain supported and quiet. 11–14 seconds: right hand returns to the letter keys and both hands type one brief correction, irregular quiet finger movements. 14–15 seconds: typing settles; one shoulder relaxes slightly with a breath, gaze still on the screen. Give the pauses time to register. No mouse is present: use only the existing keyboard. Hands stay low throughout; never perform a flourish or hold raised curled fingers.
+
+## 02
+
+The man alternates reading, mouse navigation and entering a short search phrase. 0–2 seconds: read the monitor, right hand comfortably cupping the mouse, left hand resting at keyboard. 2–4 seconds: move the mouse a small distance along the blue pad, index and middle fingers remaining on the buttons; stop and read. 4–6 seconds: right hand leaves the mouse along a low short path and settles gently onto the right letter keys, with forearm supported on desk; left hand stays on left keys. 6–9 seconds: type a short phrase with modest independent fingertip movements, eyes at the monitor. 9–10 seconds: pause with fingertips resting on keys. 10–12 seconds: right hand returns along the same low path and cups the stationary mouse naturally; make one small pointer movement. 12–13 seconds: a quiet reading pause, eyes focused on the display. 13–15 seconds: left hand enters two quiet key presses while right hand rests on mouse, and shoulders settle subtly with breathing. Distinct actions separated by genuine still moments; no repeated clicking, big finger lifts or head turns.
+
+## 03
+
+The woman reads and edits a document on her laptop. 0–2 seconds: eyes read the laptop screen, hands resting low on keys. 2–5 seconds: type a few words with small uneven individual finger presses, forearms supported on table. 5–6 seconds: pause, fingertips resting on keys. 6–9 seconds: right hand glides a short distance down to the rectangular trackpad below the letter keys; index fingertip visibly rests on the pad and makes one short smooth scroll, wrist heel supported on palm rest; left hand stays at keyboard. 9–11 seconds: hand rests on the trackpad while her eyes follow the screen, without a head nod. 11–14 seconds: right hand returns to its letter-key position and both hands enter a short correction with low fingertips. 14–15 seconds: hands relax in contact with keys and one small seated weight adjustment settles her shoulders. Keep mouth calmly closed. Make the transitions unhurried and physically connected, not a repeating typing loop.
+
+Kling 3 Pro supports a single 15s I2V request. Use one text prompt, no multi-shot or video-reference inputs. Current silent price $0.112/s: $1.68 estimate / $1.94 reserved per attempt. First round incremental total $5.04 / $5.82. Existing per-video reserves: desktop $5.42, mouse $2.94, laptop $1.56. All prior failures remain counted.
+
+Recent negative evidence: standard Veo ignored reading-only and repeated raised finger poses; earlier Kling over-articulated too. Longer sequence is a bounded hypothesis. If it fails, reroute/revise within cumulative budget, review chronology and close-ups, and disclose unresolved behavior. No proof of reference benefit without a matched control.
+
+## Reviewed route revisions
+Kling desktop/laptop transitions failed; Wan 2.6 1080p was tested at $0.15/s (15s=$2.25, $2.59 reservation). Desktop Wan v2 selected full 15s. Laptop Wan v2 crossed hands; Wan v3 simplified to nearby-key editing and yielded a provisional 0-9s selection; full take rejected. Mouse Kling v1 selected 15s. No real movement inputs at any stage.

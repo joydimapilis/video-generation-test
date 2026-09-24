@@ -1,0 +1,294 @@
+[p] KITE NEWS & BRAND ASSETS
+[p] News, logo, colors & trademark guidelines
+[span] Download logo (PNG)
+[button] Solutions
+[a] Website Building
+[a] Product Marketing
+[button] Resources
+[a] About Kite
+[a] Agent Guide
+[a] LinkedIn to Website
+[a] Website Makeover
+[a] Growth Grader
+[a] Security
+[a] Get started
+[a] Pricing
+[button] Solutions
+[a] Website Building
+[a] Product Marketing
+[button] Resources
+[a] About Kite
+[a] Agent Guide
+[a] LinkedIn to Website
+[a] Website Makeover
+[a] Growth Grader
+[a] Blog
+[a] Security
+[a] Docs
+[a] Login
+[a] Get started
+[p] “Wow, this is beautiful and professional.”
+[p] “It looks really amazing :)”
+[p] “Perfect 🤩”
+[p] Hi, I’m Kite
+[h1] I’m an AI marketer.
+[li] Hand me your marketing to-do list:
+[li] ‘Draft a post about every feature we ship’
+[li] ‘Get more signups on our pricing page’
+[li] ‘Audit how we show up in ChatGPT each week’
+[li] ‘Find prospects going to re:Invent’
+[li] Tell me your goal and I’ll get to work.
+[a] Get Started
+[h2] Join 3,800+ others I’ve helped grow.
+[span] Priya
+[span] 10:14 AM
+[span] Wow, this is beautiful and professional.
+[span] Marcus
+[span] 2:33 PM
+[span] It looks really amazing :)
+[span] Sofia
+[span] 11:48 AM
+[span] You've just been doing wonders.
+[span] James
+[span] 4:07 PM
+[span] Perfect 🤩
+[span] Anika
+[span] 9:52 AM
+[span] Thank you for your thoroughness. Way better than Claude.
+[h2] Most AIs wait for instructions.
+[p] I find what needs doing and
+[span] do it.
+[h2] Let’s walk through our first week together.
+[p] Say you’ve got a product that people love, but not enough customers have found you yet.
+[span] Monday 9:54 AM
+[p] First, I run a deep dive on your business.
+[li] Your product
+[li] Your customers
+[li] Your competitors
+[li] What AI says about you
+[p] Then I turn it into a plan to help you grow.
+[span] Monday
+[span] Search Acme
+[span] Kite
+[li] Threads
+[li] Huddles
+[li] Recap
+[li] Drafts & sent
+[div] Channels
+[li] general
+[li] marketing
+[li] product
+[li] sales
+[li] operations
+[li] fundraising
+[li] leadership
+[li] + Add channels
+[div] Direct messages
+[li] Abhishek Nayak
+[li] Dessi Ugarte
+[li] Pedro Rodrigues
+[li] Vinay Chilukuri
+[li] Rachel Harris
+[li] Daniel Orr
+[li] Isabella Truman
+[li] Marilyn Hart
+[li] + Add channels
+[div] Apps
+[li] + Add apps
+[li] Kite
+[div] # Marketing
+[span] Messages
+[span] Today
+[span] Kite
+[span] APP
+[span] 9:54 AM
+[span] So, I did some digging.
+[span] When people ask Google and ChatGPT about customer feedback tools, Answerly barely shows up.
+[span] Here's my plan to fix that this week
+[span] Growth plan • Week of 12th Aug
+[li] Publish a comparison page targeting "Answerly vs Typeform"
+[li] Get it in front of people already choosing between the two
+[li] Fix pages that get traffic but never ask for the sign-up
+[span] Dessi Ugarte
+[span] 10:02 AM
+[span] go for it!
+[span] Kite
+[span] APP
+[span] 4:48 PM
+[span] Comparison page is written and built. It's not live until you say so.
+[div] Answerly vs. Typeform: what's the best tool for collecting feedback?
+[div] answerly.com · unlimited seats from $29/mo vs 3 seats from $50/mo
+[span] Jot something down
+[span] Monday 3:23 PM
+[p] By that afternoon, I've already built your first project.
+[p] Whether it's:
+[li] a comparison page
+[li] an outreach plan
+[li] a robots.txt fix
+[p] you'll have it ready today.
+[p] (Don't worry. Nothing goes live without your say-so.)
+[span] Tuesday 10:12 AM
+[p] Next, I get you seen across Reddit, social, and email.
+[p] I'll find your best channels and bring you the conversations already happening there.
+[span] Tuesday
+[span] Search Acme
+[span] Kite
+[li] Threads
+[li] Huddles
+[li] Recap
+[li] Drafts & sent
+[div] Channels
+[li] general
+[li] marketing
+[li] product
+[li] sales
+[li] operations
+[li] fundraising
+[li] leadership
+[li] + Add channels
+[div] Direct messages
+[li] Abhishek Nayak
+[li] Dessi Ugarte
+[li] Pedro Rodrigues
+[li] Vinay Chilukuri
+[li] Rachel Harris
+[li] Daniel Orr
+[li] Isabella Truman
+[li] Marilyn Hart
+[li] + Add channels
+[div] Apps
+[li] + Add apps
+[li] Kite
+[div] # Marketing
+[span] Messages
+[span] Today
+[span] Kite
+[span] APP
+[span] 3:23 PM
+[span] Page is live. Now let's get people to it.
+[span] Found a thread where people are actively picking between feedback tools. I've drafted a reply that's genuinely useful and mentions us once, at the end - awaiting your 👍
+[span] Reddit
+[div] r/SaaS · "What are you all using for in-product feedback in 2026?"
+[div] 214 upvotes · 47 comments
+[span] Vinay Chilukuri
+[span] 3:41 PM
+[span] 👍 posted
+[span] Jot something down
+[span] Wednesday 4:03 PM
+[p] Then I keep finding new ways to turn that traffic into customers.
+[p] Growth is never one simple fix.
+[p] So, I hunt down the next job
+[p] before you even ask.
+[span] Wednesday
+[span] Search Acme
+[span] Kite
+[li] Threads
+[li] Huddles
+[li] Recap
+[li] Drafts & sent
+[div] Channels
+[li] general
+[li] marketing
+[li] product
+[li] sales
+[li] operations
+[li] fundraising
+[li] leadership
+[li] + Add channels
+[div] Direct messages
+[li] Abhishek Nayak
+[li] Dessi Ugarte
+[li] Pedro Rodrigues
+[li] Vinay Chilukuri
+[li] Rachel Harris
+[li] Daniel Orr
+[li] Isabella Truman
+[li] Marilyn Hart
+[li] + Add channels
+[div] Apps
+[li] + Add apps
+[li] Kite
+[div] # Marketing
+[span] Messages
+[span] Today
+[span] Kite
+[span] APP
+[span] 4:03 PM
+[span] I found something else. Our “How it Works” page pulls around 250 visitors each week, but it never invites anyone to start a trial.
+[span] This is a perfect place to add a nudge that gets high-intent visitors to sign up.
+[span] I added a call to action in two spots. Here’s a preview that’s ready to publish, just say the word:
+[div] How it Works — now with a sign-up nudge in two spots
+[div] answerly.com/how-it-works · preview · not live until you say so
+[span] Abhishek Nayak
+[span] 4:11 PM
+[span] the word is said — publish it 🚀
+[span] Jot something down
+[span] Friday 11:17 AM
+[p] By Friday, results are rolling in and I’m learning from every one.
+[p] We’re on our way, and I’m just getting started.
+[span] Friday
+[span] Search Acme
+[span] Kite
+[li] Threads
+[li] Huddles
+[li] Recap
+[li] Drafts & sent
+[div] Channels
+[li] general
+[li] marketing
+[li] product
+[li] sales
+[li] operations
+[li] fundraising
+[li] leadership
+[li] + Add channels
+[div] Direct messages
+[li] Abhishek Nayak
+[li] Dessi Ugarte
+[li] Pedro Rodrigues
+[li] Vinay Chilukuri
+[li] Rachel Harris
+[li] Daniel Orr
+[li] Isabella Truman
+[li] Marilyn Hart
+[li] + Add channels
+[div] Apps
+[li] + Add apps
+[li] Kite
+[div] # Marketing
+[span] Messages
+[span] Today
+[span] Kite
+[span] APP
+[span] 11:17 AM
+[span] Here’s a quick end-of-week check-in.
+[span] We’ve got 5 new trials directly from talking about Answerly on Reddit. People are searching “Answerly vs Typeform” and our comparison page is what they find.
+[span] AI takes a couple of weeks to start citing new pages. I’ll keep promoting it, but we’re in good shape.
+[span] Here’s what I’m planning for next week:
+[div] Growth plan • Week of 19th Aug
+[div] answerly.com · drafted by Kite, awaiting your 👍
+[span] Pedro Rodrigues
+[span] 11:24 AM
+[span] 5 trials in week one 🔥 keep going
+[span] Jot something down
+[span] Monday
+[span] Tuesday
+[span] Wednesday
+[span] Thursday
+[span] Friday
+[span] Saturday
+[span] Sunday
+[h2] Ready when you are.
+[p] Add me to your Slack and I’ll start this week.
+[a] Add me to Slack
+[a] Agent Guide
+[a] Newsroom
+[a] Privacy Policy
+[a] Terms of Service
+[a] Security
+[a] Use cases
+[a] Integration guides
+[a] Comparisons
+[a] Playbooks
+[button] Your Privacy Choices
+[div] © 2026 Kite AI

@@ -1,0 +1,44 @@
+{
+  "experiment": "sideway-sample02-reading-correction",
+  "budget_root": "artifacts/library-loop-14",
+  "pricing_checked": "2026-09-19",
+  "pricing_sources": [
+    "https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video/turbo"
+  ],
+  "cost_basis": "Published flat $0.05 at 480p. Reserve6c; cumulative1197c under1200c cap. No new image cost.",
+  "runs": [
+    {
+      "id": "sideway_reading_sample02_wan_v4",
+      "endpoint": "fal-ai/wan/v2.2-a14b/image-to-video/turbo",
+      "estimate_cents": 5,
+      "use_case": "observational_person",
+      "version": 4,
+      "role": "phone-return",
+      "audio_requested": false,
+      "reference_review": "videos/sideway-human-realism-test/source-review.json",
+      "reference_sha256": "7bb85d3ae12102e057575338e0d0e4cbc53aab8f696bac14d75d2fb93ca770d4",
+      "hypothesis": "Remove poised tapping gesture from the source and simplify to reading with supported hands to prevent pantomime speech and look-away. 480p motion study within remaining cumulative budget; not a resolution-matched quality comparison.",
+      "motion_reference": {
+        "file": "references/sample02/233390_medium.mp4",
+        "range": [
+          0,
+          4
+        ],
+        "use": "observed attention and restraint translated to prompt, no video conditioning"
+      },
+      "input": {
+        "image_url": "local:videos/sideway-human-realism-test/phone-reading-source.png",
+        "prompt": "Locked camera. The man silently reads the phone held steadily in his left hand. His right hand rests loosely on his thigh. His eyes stay attentive to the display; a brief ordinary blink, then reading continues. Closed relaxed lips, quiet breathing, subtle independent motion. Keep the same face, clothing, head angle, phone grip, seated posture, light and background. An unposed quiet reading moment.",
+        "resolution": "480p",
+        "aspect_ratio": "9:16",
+        "seed": 919142,
+        "enable_prompt_expansion": false,
+        "acceleration": "regular",
+        "video_quality": "maximum",
+        "video_write_mode": "balanced",
+        "enable_safety_checker": true,
+        "enable_output_safety_checker": true
+      }
+    }
+  ]
+}

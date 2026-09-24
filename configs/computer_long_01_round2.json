@@ -1,0 +1,26 @@
+{
+  "experiment": "computer-movement-long-01",
+  "budget_root": "artifacts/library-loop-computer-long-01",
+  "runs": [
+    {
+      "id": "01-computer-sequence-wan-v2",
+      "endpoint": "wan/v2.6/image-to-video",
+      "estimate_cents": 225,
+      "use_case": "computer_interaction",
+      "audio_requested": false,
+      "hypothesis": "Reroute after reviewed Kling contact failures; simplify action language and increase resting pauses. Bounded test, not established model superiority.",
+      "reference_observations": "videos/computer-movement-long/reference-observations.json",
+      "input": {
+        "prompt": "A single locked-off 15-second documentary shot of this woman quietly editing a document at her desktop. Preserve her exact appearance and room. Her gaze is directed at the monitor. Both wrists are supported on the black wrist cushion. Start with two seconds of reading, fingertips resting on the keys. Then enter a few words with very small, irregular finger presses for three seconds. Stop typing completely and read for three seconds, hands resting against the keyboard. One right fingertip taps a nearby key twice to navigate the document; the hand stays at its home-key position. Read briefly, then type one short correction. Finish resting on the keys, with a small relaxed shoulder settling. The only hand travel is the millimeters needed to press keys. Quiet face, closed mouth, occasional blink, minimal head motion. Forearms stay supported, fingers stay low and relaxed. Normal speed, unchanged camera framing throughout. Silent scene.",
+        "image_url": "local:artifacts/library-loop-computer-movement-studies-02/source-images/01-desktop-typing-v2.png",
+        "duration": "15",
+        "resolution": "1080p",
+        "enable_prompt_expansion": false,
+        "multi_shots": false,
+        "seed": 922001,
+        "enable_safety_checker": true,
+        "negative_prompt": "air typing, high finger lifts, curled raised fingers, floating hands, extra fingers, fused fingers, excessive head movement, talking, animated expression, cuts, zoom, camera movement, hand teleportation, repetitive typing loop"
+      }
+    }
+  ]
+}

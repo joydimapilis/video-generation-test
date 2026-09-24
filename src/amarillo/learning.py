@@ -15,6 +15,20 @@ DIMENSIONS = ('human_realism', 'face_realism', 'hand_body_movement',
               'entry_exit_continuity', 'context_clarity', 'product_message_clarity',
               'prompt_adherence', 'consistency')
 LEGACY = ('prompt_adherence', 'sampled_stability', 'composition', 'edit_readiness')
+APPROVED_DECISIONS = frozenset({'accept', 'accepted', 'approved', 'selected', 'provisional'})
+# Existing research ledgers are retained, but excluded from core routing/memory.
+PHASE_2_PREFIXES = ('library-loop-computer-', 'library-loop-human-realism')
+
+
+def is_core_evidence(row):
+    return (row.get('evidence_scope') != 'phase_2'
+            and not row.get('key', '').startswith(PHASE_2_PREFIXES))
+
+
+def approved_decision(value):
+    # Do not promote "selected_segment", "selected_with_limitations", or an
+    # unknown status into approval of the whole take. Preserve the original label.
+    return isinstance(value, str) and value.strip().lower() in APPROVED_DECISIONS
 
 
 def requested_audio(request):
@@ -66,6 +80,8 @@ def collect_experiments(artifacts):
             decision = review.get('decision') or ('review_required' if quality is None else
                        'reject' if scores.get('edit_readiness', 0) < 6 else 'provisional')
             rows.append({'key': root.name + '/' + identifier, 'id': identifier,
+                         'evidence_scope': request.get('evidence_scope',
+                             'phase_2' if root.name.startswith(PHASE_2_PREFIXES) else 'core'),
                          'endpoint': request['endpoint'], 'use_case': request.get('use_case', 'unknown'),
                          'image_conditioned': image_conditioned,
                          'audio_requested': requested_audio(request),
@@ -88,10 +104,15 @@ def recommend(rows, use_case, *, has_reference=False, audio=False, min_reviews=1
         return {'endpoint': 'hyperframes', 'status': 'deterministic',
                 'reason': 'Exact type and interaction states require authored UI.', 'evidence': []}
     groups = defaultdict(list)
+    lessons = []
     for row in rows:
-        if (row['use_case'] == use_case and row['image_conditioned'] == has_reference
-                and row['audio_requested'] == audio and row['verified_output']
-                and row['decision'] in {'accept', 'provisional'} and row['legacy_quality'] is not None):
+        compatible = (is_core_evidence(row) and row['use_case'] == use_case
+                      and row['image_conditioned'] == has_reference and row['audio_requested'] == audio)
+        if compatible and (row.get('review') or row.get('error')):
+            lessons.append({k: row.get(k) for k in
+                            ('key', 'endpoint', 'decision', 'prompt', 'review', 'hypothesis', 'error', 'evidence')})
+        if (compatible and row['verified_output']
+                and approved_decision(row['decision']) and row['legacy_quality'] is not None):
             groups[row['endpoint']].append(row)
     candidates = []
     for endpoint, samples in groups.items():
@@ -104,22 +125,36 @@ def recommend(rows, use_case, *, has_reference=False, audio=False, min_reviews=1
                            'evidence': [s['key'] for s in samples]})
     candidates.sort(key=lambda c: (-c['mean_legacy_quality'], -c['reviewed_samples'], c['endpoint']))
     if not candidates:
-        return {'endpoint': None, 'status': 'needs_test', 'reason': 'No compatible reviewed output.', 'candidates': []}
+        return {'endpoint': None, 'status': 'needs_test', 'reason': 'No compatible reviewed output.',
+                'candidates': [], 'lessons': lessons}
     return {**candidates[0], 'status': 'provisional', 'candidates': candidates,
+            'lessons': lessons,
             'reason': 'Within-use-case mean of the same four legacy criteria; scene difficulty and resolution vary. Not a human-realism ranking.'}
 
 
 def build_learning(artifacts=Path('artifacts')):
     rows = collect_experiments(artifacts)
+    # Keep historical records when a local ledger/media checkout disappears.
+    # Current records supersede the same key; unavailable media is not routable.
+    previous = Path(artifacts) / 'learning/latest.json'
+    if previous.is_file():
+        current = {r['key'] for r in rows}
+        for row in json.loads(previous.read_text()).get('runs', []):
+            if row['key'] not in current:
+                rows.append({**row, 'verified_output': False, 'historical_only': True})
+    return summarize_learning(rows)
+
+
+def summarize_learning(rows):
     routes = []
-    for use_case, reference, audio in sorted({(r['use_case'], r['image_conditioned'], r['audio_requested']) for r in rows}):
+    for use_case, reference, audio in sorted({(r['use_case'], r['image_conditioned'], r['audio_requested']) for r in rows if is_core_evidence(r)}):
         routes.append({'use_case': use_case, 'has_reference': reference, 'audio': audio,
                        **recommend(rows, use_case, has_reference=reference, audio=audio)})
     statistics = []
     for endpoint in sorted({r['endpoint'] for r in rows}):
         attempts = [r for r in rows if r['endpoint'] == endpoint]
         completed = [r for r in attempts if r['status'] == 'completed']
-        usable = [r for r in attempts if r['verified_output'] and r['decision'] in {'accept', 'provisional'}]
+        usable = [r for r in attempts if r['verified_output'] and approved_decision(r['decision'])]
         latencies = [r['elapsed_seconds'] for r in completed if r['elapsed_seconds'] is not None]
         statistics.append({'endpoint': endpoint, 'attempts': len(attempts), 'completed': len(completed),
                            'completion_fraction': len(completed) / len(attempts),
@@ -141,7 +176,16 @@ def save_learning(artifacts=Path('artifacts')):
     data = build_learning(artifacts)
     target = Path(artifacts) / 'learning'
     target.mkdir(parents=True, exist_ok=True)
+    previous = target / 'latest.json'
+    if previous.is_file():
+        content = previous.read_bytes()
+        archive = target / 'history' / (hashlib.sha256(content).hexdigest() + '.json')
+        archive.parent.mkdir(exist_ok=True)
+        if not archive.exists():
+            archive.write_bytes(content)
     (target / 'latest.json').write_text(json.dumps(data, indent=2) + '\n')
+    core = summarize_learning([row for row in data['runs'] if is_core_evidence(row)])
+    (target / 'core.json').write_text(json.dumps(core, indent=2) + '\n')
     lines = ['# Cross-loop evidence and routing', '', data['method'], '',
              'Routes are provisional within a use case, reference mode, and audio mode. '
              'These averages are not scientific model rankings. Missing face, hands, and continuity scores remain N/T.', '',

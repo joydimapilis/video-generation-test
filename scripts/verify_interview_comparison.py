@@ -1,4 +1,6 @@
 """Check delivered comparison structure, decode, source provenance and audio order."""
+from amarillo.delivery import require_reverse_engineering
+
 import hashlib
 import json
 from pathlib import Path
@@ -16,6 +18,7 @@ def pcm(path):
 
 def main():
     path = ROOT / 'interview-comparison.mp4'
+    require_reverse_engineering(path)
     probe = json.loads(subprocess.check_output(['ffprobe', '-v', 'error', '-show_format',
                                                '-show_streams', '-of', 'json', str(path)]))
     video = next(s for s in probe['streams'] if s['codec_type'] == 'video')

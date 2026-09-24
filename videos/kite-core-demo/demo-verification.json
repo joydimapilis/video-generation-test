@@ -1,0 +1,69 @@
+{
+  "errors": [],
+  "stages": [
+    {
+      "visible": "stage-1",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "visible": "stage-2",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "visible": "stage-3",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "visible": "stage-4",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "visible": "stage-5",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "visible": "stage-6",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "visible": "stage-7",
+      "width": 1440,
+      "height": 1005
+    },
+    {
+      "visible": "stage-8",
+      "width": 1440,
+      "height": 1000
+    }
+  ],
+  "reference_excerpt": {
+    "duration": 32.96,
+    "currentTime": 6.239059,
+    "error": null
+  },
+  "final_video": {
+    "duration": 30,
+    "readyState": 4,
+    "error": null
+  },
+  "images": [
+    {
+      "src": "assets/kite-slack-app-icon.png",
+      "ok": true
+    },
+    {
+      "src": "../../.context/kite-core-demo/snapshots-01/frame-00-at-1s.png",
+      "ok": true
+    },
+    {
+      "src": "../../.context/kite-core-demo/snapshots-final/frame-00-at-1.5s.png",
+      "ok": true
+    }
+  ]
+}

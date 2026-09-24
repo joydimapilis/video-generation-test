@@ -1,0 +1,36 @@
+{
+  "library": "/Users/joydimapilis/Desktop/untitled folder/Startup Launch Videos",
+  "file_count": 11,
+  "selection": [
+    {
+      "genre": "workflow_story",
+      "source": "/Users/joydimapilis/Desktop/untitled folder/Startup Launch Videos/Motion-5-Motion plans the video scene by scene before building it..mp4",
+      "name": "Motion-5-Motion plans the video scene by scene before building it..mp4",
+      "duration": 32.531156,
+      "resolution": "3840x2160",
+      "shape": "landscape",
+      "has_audio": true,
+      "contact_sheet": "videos/kite-core-demo/references/01-workflow_story.jpg"
+    },
+    {
+      "genre": "cinematic_to_ui",
+      "source": "/Users/joydimapilis/Desktop/untitled folder/Startup Launch Videos/Cero.mp4",
+      "name": "Cero.mp4",
+      "duration": 34.837333,
+      "resolution": "1920x1080",
+      "shape": "landscape",
+      "has_audio": true,
+      "contact_sheet": "videos/kite-core-demo/references/02-cinematic_to_ui.jpg"
+    },
+    {
+      "genre": "editorial_pacing",
+      "source": "/Users/joydimapilis/Desktop/untitled folder/Startup Launch Videos/Paper.mp4",
+      "name": "Paper.mp4",
+      "duration": 32.96,
+      "resolution": "1920x1080",
+      "shape": "landscape",
+      "has_audio": true,
+      "contact_sheet": "videos/kite-core-demo/references/03-editorial_pacing.jpg"
+    }
+  ]
+}

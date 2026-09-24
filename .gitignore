@@ -8,10 +8,40 @@ __pycache__/
 
 # User/reference media and generated outputs can be large or credential-adjacent.
 data/samples/*
+data/library
 artifacts/
 hyperframes/**/assets/*.mp4
 hyperframes/**/assets/*.mov
 hyperframes/**/assets/*.webm
+
+# Editable video projects keep source, prompts, and production records. Staged,
+# captured, generated, and rendered media stays local; final MP4s live under the
+# ignored artifacts/ tree and are listed in assembled_outputs/ manifests.
+videos/**/*.mp4
+videos/**/*.mov
+videos/**/*.webm
+videos/**/*.wav
+videos/**/*.mp3
+videos/**/*.m4a
+videos/**/*.ttf
+videos/**/*.jpg
+videos/**/*.jpeg
+videos/**/*-source.png
+videos/**/*.log
+videos/**/budget.lock
+videos/**/.thumbnails/
+videos/**/.hyperframes/
+videos/**/.waveform-cache/
+videos/**/snapshots/
+videos/**/renders/
+videos/**/capture/screenshots/
+videos/**/capture/assets/*.png
+videos/**/capture/extracted/page.html
+
+# Reference footage stays local (see references/human-realism/.gitignore).
+references/**/*.mp4
+references/**/*.mov
+references/**/*.webm
 
 # Keep workspace coordination files local to Conductor.
 .context/

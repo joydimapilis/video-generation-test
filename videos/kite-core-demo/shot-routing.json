@@ -1,0 +1,51 @@
+{
+  "exact_ui": "hyperframes",
+  "product_candidate_evidence": {
+    "endpoint": null,
+    "status": "needs_test",
+    "reason": "No compatible reviewed output.",
+    "candidates": [],
+    "lessons": []
+  },
+  "core_evidence_file": "artifacts/learning/core.json",
+  "phase2_used": false,
+  "shots": [
+    {
+      "id": "S01",
+      "time": "0\u20134",
+      "purpose": "Physical metaphor for notes gaining direction",
+      "route": "fal-ai/kling-video/v3/pro/text-to-video",
+      "input": "generation-plan.json",
+      "review_required": "coherent paper and shadows, controlled motion, usable title space; else revise/reroute",
+      "bounded_test": true
+    },
+    {
+      "id": "S02",
+      "time": "4\u201310",
+      "purpose": "Show the input and send",
+      "route": "hyperframes",
+      "reason": "Exact readable request and release facts"
+    },
+    {
+      "id": "S03",
+      "time": "10\u201320",
+      "purpose": "Open a useful draft",
+      "route": "hyperframes",
+      "reason": "Exact Preview control and page text"
+    },
+    {
+      "id": "S04",
+      "time": "20\u201326",
+      "purpose": "Visible feedback changes same draft",
+      "route": "hyperframes",
+      "reason": "Deterministic before/after copy and timing"
+    },
+    {
+      "id": "S05",
+      "time": "26\u201330",
+      "purpose": "End with work visible and CTA",
+      "route": "hyperframes",
+      "reason": "Official brand asset and accurate CTA"
+    }
+  ]
+}

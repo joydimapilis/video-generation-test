@@ -1,0 +1,38 @@
+{
+  "experiment": "kite-tomorrow-approved-character-test",
+  "budget_root": "artifacts/library-loop-kite-tomorrow",
+  "authorization_file": "artifacts/library-loop-kite-tomorrow/authorization.json",
+  "cost_basis": {
+    "provider": "Fal",
+    "endpoint": "bytedance/seedance-2.0/image-to-video",
+    "api_unit_price": 0.014,
+    "unit": "1000 tokens",
+    "expected_tokens": 194400.0,
+    "token_estimate_usd": 2.7216,
+    "published_1080p_rate_per_second": 0.682,
+    "conservative_estimate_cents": 273,
+    "reserved_cents_with_15_percent_buffer": 314,
+    "source": "https://fal.ai/models/bytedance/seedance-2.0/image-to-video",
+    "reference_sha256": "12fdbbf7671cc91513ef1cc5d7f1bd59e7ee9e3583e93f870670f99eff8bd2fa"
+  },
+  "runs": [
+    {
+      "id": "kite_person_seedance2_reference_v1",
+      "endpoint": "bytedance/seedance-2.0/image-to-video",
+      "estimate_cents": 273,
+      "use_case": "observational_person",
+      "audio_requested": false,
+      "version": 1,
+      "hypothesis": "Reference-conditioned Seedance at normal speed with coherent reading behavior may improve naturalness over the Veo Fast freeze-performance prompt and 0.5x editorial retiming. Same reference retains identity; model, prompt and playback change together, so not a controlled model-only benchmark.",
+      "input": {
+        "prompt": "Animate this supplied reference as one four-second observational desk shot at normal speed. Preserve this woman's face, age, asymmetry, hairline, shirt, room, lighting, laptop and supported hand positions. Keep the tripod framing.\n\nShe is quietly reading the laptop screen. Her attention shifts a small distance between two points inside the visible screen, without lifting her gaze above it. One unforced blink accompanies a quiet breath. A little concentration in the brow relaxes naturally; no performed smile. The supported fingers relax slightly against the desk without lifting, typing or sliding toward another object. Her wrist and forearm remain physically supported. Shirt folds respond to the breath; hair moves only with the small body movement in still air. She finishes still attending to the same screen, lips comfortably closed.\n\nRetain the reference's ordinary pores, uneven tone and fine lines rather than smoothing or sharpening the face. No beauty treatment or added facial marks. No head turn, speaking, gestures, camera movement, new objects or lettering. Avoid frozen-body performance, floating hair, merged fingers, drifting laptop geometry and skin texture that changes from frame to frame.",
+        "image_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_39GzQdZ2HncdTn8DROL65xhZ8sE/76e5e3d3-441d-4fe2-ba72-4fff8d3a9199.png",
+        "resolution": "1080p",
+        "duration": "4",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "bitrate_mode": "standard"
+      }
+    }
+  ]
+}

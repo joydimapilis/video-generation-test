@@ -1,0 +1,40 @@
+{
+  "deduplication": "Same persisted provider queue request ID counted once; separately submitted attempts remain separate.",
+  "budget_ledgers_modified": false,
+  "duplicate_mirror_rows_excluded": [
+    "library-loop-computer-long-01/01-desktop-typing-veo-standard-v1",
+    "library-loop-computer-long-02/02-mouse-work-veo-standard-v1",
+    "library-loop-computer-long-03/03-laptop-typing-veo-standard-v1",
+    "library-loop-computer-long-02/02-mouse-work-veo-standard-v2",
+    "library-loop-computer-long-01/01-desktop-typing-veo-standard-v2",
+    "library-loop-computer-long-01/01-desktop-typing-veo-standard-v3",
+    "library-loop-computer-long-01/01-desktop-reading-veo-standard-v4"
+  ],
+  "unique_video_attempts": 35,
+  "new_longer_runs": [
+    {
+      "id": "01-computer-sequence-kling-v1",
+      "decision": "reject"
+    },
+    {
+      "id": "01-computer-sequence-wan-v2",
+      "decision": "provisional"
+    },
+    {
+      "id": "02-computer-sequence-kling-v1",
+      "decision": "provisional"
+    },
+    {
+      "id": "03-computer-sequence-kling-v1",
+      "decision": "reject"
+    },
+    {
+      "id": "03-computer-sequence-wan-v2",
+      "decision": "reject"
+    },
+    {
+      "id": "03-computer-sequence-wan-v3",
+      "decision": "provisional"
+    }
+  ]
+}

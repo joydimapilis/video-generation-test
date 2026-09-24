@@ -1,0 +1,2273 @@
+{
+  "ok": false,
+  "strict": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 9,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"01-brief-background\" starts with a digit, so the common selector `#01-brief-background` throws a SyntaxError in querySelector().",
+        "selector": "#01-brief-background",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-campaign/compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"01-brief-content\" starts with a digit, so the common selector `#01-brief-content` throws a SyntaxError in querySelector().",
+        "selector": "#01-brief-content",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-campaign/compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-direction-background\" starts with a digit, so the common selector `#02-direction-background` throws a SyntaxError in querySelector().",
+        "selector": "#02-direction-background",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-campaign/compositions/frames/02-direction.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-direction-content\" starts with a digit, so the common selector `#02-direction-content` throws a SyntaxError in querySelector().",
+        "selector": "#02-direction-content",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-campaign/compositions/frames/02-direction.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"03-campaign-background\" starts with a digit, so the common selector `#03-campaign-background` throws a SyntaxError in querySelector().",
+        "selector": "#03-campaign-background",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-campaign/compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"03-campaign-content\" starts with a digit, so the common selector `#03-campaign-content` throws a SyntaxError in querySelector().",
+        "selector": "#03-campaign-content",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-campaign/compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"04-review-background\" starts with a digit, so the common selector `#04-review-background` throws a SyntaxError in querySelector().",
+        "selector": "#04-review-background",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-campaign/compositions/frames/04-review.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"04-review-content\" starts with a digit, so the common selector `#04-review-content` throws a SyntaxError in querySelector().",
+        "selector": "#04-review-content",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-campaign/compositions/frames/04-review.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "duplicate_media_discovery_risk",
+        "severity": "warning",
+        "message": "Detected 2 matching img entries with the same source/start/duration.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-campaign/compositions/frames/04-review.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Avoid duplicated media nodes that can be discovered twice during compilation."
+      }
+    ],
+    "filesScanned": 5
+  },
+  "runtime": {
+    "ok": false,
+    "errorCount": 2,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "console_error",
+        "severity": "error",
+        "message": "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:52928/assets/gsap.min.js' with computed SHA-384 integrity 'wRBqF5afF/Q64r0nYlFYwOMyqRL9EzdtUB1AP1T0iKOVNjh9gmQcYtqvzHQgqFRQ'. The resource has been blocked.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "36",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:52928/"
+      },
+      {
+        "code": "page_error",
+        "severity": "error",
+        "message": "gsap is not defined",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "36",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0
+      }
+    ]
+  },
+  "layout": {
+    "ok": false,
+    "errorCount": 57,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 0,
+        "selector": "div.f01-brief-hook-title > div:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 100,
+          "top": 246,
+          "right": 610.88,
+          "bottom": 401,
+          "width": 510.88,
+          "height": 155
+        },
+        "containerSelector": "div.f01-brief-demo-title.f01-brief-h",
+        "text": "One brief.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 100,
+          "y": 246,
+          "width": 510.88,
+          "height": 155
+        },
+        "firstSeen": 0,
+        "lastSeen": 7.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 0,
+        "selector": "div.f01-brief-hook-title > div:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 100,
+          "top": 246,
+          "right": 610.88,
+          "bottom": 401,
+          "width": 510.88,
+          "height": 155
+        },
+        "containerSelector": "div.f01-brief-channel-head",
+        "text": "One brief.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 100,
+          "y": 246,
+          "width": 510.88,
+          "height": 155
+        },
+        "firstSeen": 0,
+        "lastSeen": 7.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 0,
+        "selector": "div.f01-brief-hook-title > div:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 100,
+          "top": 246,
+          "right": 610.88,
+          "bottom": 401,
+          "width": 510.88,
+          "height": 155
+        },
+        "containerSelector": "div.f01-brief-channel-head > span:nth-of-type(1)",
+        "text": "One brief.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 100,
+          "y": 246,
+          "width": 510.88,
+          "height": 155
+        },
+        "firstSeen": 0,
+        "lastSeen": 7.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 0,
+        "selector": "div.f01-brief-hook-title > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 100,
+          "top": 377.75,
+          "right": 527.3,
+          "bottom": 532.75,
+          "width": 427.3,
+          "height": 155
+        },
+        "containerSelector": "div.f01-brief-channel-head",
+        "text": "A whole",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 100,
+          "y": 377.75,
+          "width": 427.3,
+          "height": 155
+        },
+        "firstSeen": 0,
+        "lastSeen": 7.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 0,
+        "selector": "div.f01-brief-hook-title > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 100,
+          "top": 377.75,
+          "right": 527.3,
+          "bottom": 532.75,
+          "width": 427.3,
+          "height": 155
+        },
+        "containerSelector": "div.f01-brief-channel-head > span:nth-of-type(1)",
+        "text": "A whole",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 100,
+          "y": 377.75,
+          "width": 427.3,
+          "height": 155
+        },
+        "firstSeen": 0,
+        "lastSeen": 7.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 0,
+        "selector": "div.f01-brief-hook-title > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 100,
+          "top": 377.75,
+          "right": 527.3,
+          "bottom": 532.75,
+          "width": 427.3,
+          "height": 155
+        },
+        "containerSelector": "div.f01-brief-avatar",
+        "text": "A whole",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 100,
+          "y": 377.75,
+          "width": 427.3,
+          "height": 155
+        },
+        "firstSeen": 0,
+        "lastSeen": 7.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 0,
+        "selector": "div.f01-brief-hook-title > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 100,
+          "top": 377.75,
+          "right": 527.3,
+          "bottom": 532.75,
+          "width": 427.3,
+          "height": 155
+        },
+        "containerSelector": "div.f01-brief-sender",
+        "text": "A whole",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 100,
+          "y": 377.75,
+          "width": 427.3,
+          "height": 155
+        },
+        "firstSeen": 0,
+        "lastSeen": 7.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 0,
+        "selector": "div.f01-brief-hook-title > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 100,
+          "top": 377.75,
+          "right": 527.3,
+          "bottom": 532.75,
+          "width": 427.3,
+          "height": 155
+        },
+        "containerSelector": "div.f01-brief-sender > span:nth-of-type(1)",
+        "text": "A whole",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 100,
+          "y": 377.75,
+          "width": 427.3,
+          "height": 155
+        },
+        "firstSeen": 0,
+        "lastSeen": 7.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 0,
+        "selector": "div.f01-brief-hook-title > div:nth-of-type(3)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 100,
+          "top": 509.5,
+          "right": 640.69,
+          "bottom": 664.5,
+          "width": 540.69,
+          "height": 155
+        },
+        "containerSelector": "div.f01-brief-briefline",
+        "text": "campaign.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 100,
+          "y": 509.5,
+          "width": 540.69,
+          "height": 155
+        },
+        "firstSeen": 0,
+        "lastSeen": 7.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 0,
+        "selector": "div.f01-brief-hook-title > div:nth-of-type(3)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 100,
+          "top": 509.5,
+          "right": 640.69,
+          "bottom": 664.5,
+          "width": 540.69,
+          "height": 155
+        },
+        "containerSelector": "div.f01-brief-briefmore",
+        "text": "campaign.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 100,
+          "y": 509.5,
+          "width": 540.69,
+          "height": 155
+        },
+        "firstSeen": 0,
+        "lastSeen": 7.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 0,
+        "selector": "div.f01-brief-hook-title > div:nth-of-type(3)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 100,
+          "top": 509.5,
+          "right": 640.69,
+          "bottom": 664.5,
+          "width": 540.69,
+          "height": 155
+        },
+        "containerSelector": "div.f01-brief-deliverables",
+        "text": "campaign.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 100,
+          "y": 509.5,
+          "width": 540.69,
+          "height": 155
+        },
+        "firstSeen": 0,
+        "lastSeen": 7.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 0,
+        "selector": "div.f01-brief-hook-title > div:nth-of-type(3)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 100,
+          "top": 509.5,
+          "right": 640.69,
+          "bottom": 664.5,
+          "width": 540.69,
+          "height": 155
+        },
+        "containerSelector": "div.f01-brief-deliverables > span:nth-of-type(1)",
+        "text": "campaign.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 100,
+          "y": 509.5,
+          "width": 540.69,
+          "height": 155
+        },
+        "firstSeen": 0,
+        "lastSeen": 7.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 0,
+        "selector": "div.f01-brief-channel.f01-brief-ch3",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1360,
+          "top": 774.5,
+          "right": 1586.44,
+          "bottom": 815.5,
+          "width": 226.44,
+          "height": 41
+        },
+        "containerSelector": "div.f01-brief-send.f01-brief-button",
+        "text": "Launch email ↗",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 1360,
+          "y": 774.5,
+          "width": 226.44,
+          "height": 41
+        },
+        "firstSeen": 0,
+        "lastSeen": 7.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 2,
+        "selector": "div.f01-brief-hook-title > div:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 100,
+          "top": 246,
+          "right": 610.88,
+          "bottom": 401,
+          "width": 510.88,
+          "height": 155
+        },
+        "containerSelector": "div.f01-brief-message",
+        "text": "One brief.",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.26,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 100,
+          "y": 246,
+          "width": 510.88,
+          "height": 155
+        },
+        "firstSeen": 2,
+        "lastSeen": 6,
+        "occurrences": 2,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 2,
+        "selector": "div.f01-brief-hook-title > div:nth-of-type(2)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 100,
+          "top": 377.75,
+          "right": 527.3,
+          "bottom": 532.75,
+          "width": 427.3,
+          "height": 155
+        },
+        "containerSelector": "div.f01-brief-message",
+        "text": "A whole",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.67,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 100,
+          "y": 377.75,
+          "width": 427.3,
+          "height": 155
+        },
+        "firstSeen": 2,
+        "lastSeen": 6,
+        "occurrences": 2,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 2,
+        "selector": "div.f01-brief-hook-title > div:nth-of-type(3)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 100,
+          "top": 509.5,
+          "right": 640.69,
+          "bottom": 664.5,
+          "width": 540.69,
+          "height": 155
+        },
+        "containerSelector": "div.f01-brief-message",
+        "text": "campaign.",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.78,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 100,
+          "y": 509.5,
+          "width": 540.69,
+          "height": 155
+        },
+        "firstSeen": 2,
+        "lastSeen": 6,
+        "occurrences": 2,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 2,
+        "selector": "div.f01-brief-sheet-title",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 1151,
+          "top": 331,
+          "right": 1379.41,
+          "bottom": 484.19,
+          "width": 228.41,
+          "height": 153.19
+        },
+        "containerSelector": "div.f01-brief-message",
+        "text": "A simplebrief.",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 1151,
+          "y": 331,
+          "width": 228.41,
+          "height": 153.19
+        },
+        "firstSeen": 2,
+        "lastSeen": 6,
+        "occurrences": 2,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 2,
+        "selector": "div.f01-brief-channel.f01-brief-ch1",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 1360,
+          "top": 592.5,
+          "right": 1594.41,
+          "bottom": 633.5,
+          "width": 234.41,
+          "height": 41
+        },
+        "containerSelector": "div.f01-brief-message",
+        "text": "Landing page ↗",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 1360,
+          "y": 592.5,
+          "width": 234.41,
+          "height": 41
+        },
+        "firstSeen": 2,
+        "lastSeen": 6,
+        "occurrences": 2,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 2,
+        "selector": "div.f01-brief-channel.f01-brief-ch2",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 1360,
+          "top": 683.5,
+          "right": 1556.42,
+          "bottom": 724.5,
+          "width": 196.42,
+          "height": 41
+        },
+        "containerSelector": "div.f01-brief-message",
+        "text": "Social post ↗",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 1360,
+          "y": 683.5,
+          "width": 196.42,
+          "height": 41
+        },
+        "firstSeen": 2,
+        "lastSeen": 6,
+        "occurrences": 2,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 2,
+        "selector": "div.f01-brief-channel.f01-brief-ch3",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 1360,
+          "top": 774.5,
+          "right": 1586.44,
+          "bottom": 815.5,
+          "width": 226.44,
+          "height": 41
+        },
+        "containerSelector": "div.f01-brief-message",
+        "text": "Launch email ↗",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 1360,
+          "y": 774.5,
+          "width": 226.44,
+          "height": 41
+        },
+        "firstSeen": 2,
+        "lastSeen": 6,
+        "occurrences": 2,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 8,
+        "selector": "div.f02-direction-kite",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 246,
+          "top": 400,
+          "right": 306.3,
+          "bottom": 441,
+          "width": 60.3,
+          "height": 41
+        },
+        "containerSelector": "span.f02-direction-line.f02-direction-idea-a",
+        "text": "Kite",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-direction.html",
+        "bbox": {
+          "x": 246,
+          "y": 400,
+          "width": 60.3,
+          "height": 41
+        },
+        "firstSeen": 8,
+        "lastSeen": 15.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 8,
+        "selector": "div.f02-direction-replytext",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 246,
+          "top": 456,
+          "right": 803.11,
+          "bottom": 518,
+          "width": 557.11,
+          "height": 62
+        },
+        "containerSelector": "span.f02-direction-line.f02-direction-idea-a",
+        "text": "Here’s the campaign idea.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-direction.html",
+        "bbox": {
+          "x": 246,
+          "y": 456,
+          "width": 557.11,
+          "height": 62
+        },
+        "firstSeen": 8,
+        "lastSeen": 15.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 8,
+        "selector": "div.f02-direction-chips > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 270,
+          "top": 580,
+          "right": 409.66,
+          "bottom": 612,
+          "width": 139.66,
+          "height": 32
+        },
+        "containerSelector": "span.f02-direction-line.f02-direction-idea-b",
+        "text": "Small teams",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-direction.html",
+        "bbox": {
+          "x": 270,
+          "y": 580,
+          "width": 139.66,
+          "height": 32
+        },
+        "firstSeen": 8,
+        "lastSeen": 15.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 8,
+        "selector": "div.f02-direction-chips > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 469.66,
+          "top": 580,
+          "right": 657.11,
+          "bottom": 612,
+          "width": 187.45,
+          "height": 32
+        },
+        "containerSelector": "span.f02-direction-line.f02-direction-idea-b",
+        "text": "Less task chaos",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-direction.html",
+        "bbox": {
+          "x": 469.66,
+          "y": 580,
+          "width": 187.45,
+          "height": 32
+        },
+        "firstSeen": 8,
+        "lastSeen": 15.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 8,
+        "selector": "span.f02-direction-line.f02-direction-idea-a",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 160,
+          "top": 420,
+          "right": 852.69,
+          "bottom": 561,
+          "width": 692.69,
+          "height": 141
+        },
+        "containerSelector": "span.f02-direction-line.f02-direction-idea-b",
+        "text": "Make room for",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-direction.html",
+        "bbox": {
+          "x": 160,
+          "y": 420,
+          "width": 692.69,
+          "height": 141
+        },
+        "firstSeen": 8,
+        "lastSeen": 15.875,
+        "occurrences": 64,
+        "heldMs": 7875
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 10,
+        "selector": "div.f02-direction-kite",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 246,
+          "top": 400,
+          "right": 306.3,
+          "bottom": 441,
+          "width": 60.3,
+          "height": 41
+        },
+        "containerSelector": "div.f02-direction-idea",
+        "text": "Kite",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-direction.html",
+        "bbox": {
+          "x": 246,
+          "y": 400,
+          "width": 60.3,
+          "height": 41
+        },
+        "firstSeen": 10,
+        "lastSeen": 14,
+        "occurrences": 2,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 10,
+        "selector": "div.f02-direction-replytext",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 246,
+          "top": 456,
+          "right": 803.11,
+          "bottom": 518,
+          "width": 557.11,
+          "height": 62
+        },
+        "containerSelector": "div.f02-direction-idea",
+        "text": "Here’s the campaign idea.",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-direction.html",
+        "bbox": {
+          "x": 246,
+          "y": 456,
+          "width": 557.11,
+          "height": 62
+        },
+        "firstSeen": 10,
+        "lastSeen": 14,
+        "occurrences": 2,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 10,
+        "selector": "div.f02-direction-chips > span:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 270,
+          "top": 580,
+          "right": 409.66,
+          "bottom": 612,
+          "width": 139.66,
+          "height": 32
+        },
+        "containerSelector": "span.f02-direction-line.f02-direction-idea-b",
+        "text": "Small teams",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-direction.html",
+        "bbox": {
+          "x": 270,
+          "y": 580,
+          "width": 139.66,
+          "height": 32
+        },
+        "firstSeen": 10,
+        "lastSeen": 14,
+        "occurrences": 2,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 10,
+        "selector": "div.f02-direction-chips > span:nth-of-type(2)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 469.66,
+          "top": 580,
+          "right": 657.11,
+          "bottom": 612,
+          "width": 187.45,
+          "height": 32
+        },
+        "containerSelector": "span.f02-direction-line.f02-direction-idea-b",
+        "text": "Less task chaos",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-direction.html",
+        "bbox": {
+          "x": 469.66,
+          "y": 580,
+          "width": 187.45,
+          "height": 32
+        },
+        "firstSeen": 10,
+        "lastSeen": 14,
+        "occurrences": 2,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 16,
+        "selector": "div.f03-campaign-title-first.f03-campaign-h",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 100,
+          "top": 162,
+          "right": 980.25,
+          "bottom": 259,
+          "width": 880.25,
+          "height": 97
+        },
+        "containerSelector": "div.f03-campaign-title-last.f03-campaign-h",
+        "text": "The campaign takes shape.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 100,
+          "y": 162,
+          "width": 880.25,
+          "height": 97
+        },
+        "firstSeen": 16,
+        "lastSeen": 27.875,
+        "occurrences": 96,
+        "heldMs": 11875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 16,
+        "selector": "div.f03-campaign-page-cta",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 228,
+          "top": 843,
+          "right": 410.81,
+          "bottom": 875,
+          "width": 182.81,
+          "height": 32
+        },
+        "containerSelector": "div.f03-campaign-stage-label.f03-campaign-label1",
+        "text": "Explore Relay ↗",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 228,
+          "y": 843,
+          "width": 182.81,
+          "height": 32
+        },
+        "firstSeen": 16,
+        "lastSeen": 27.875,
+        "occurrences": 96,
+        "heldMs": 11875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 16,
+        "selector": "div.f03-campaign-art-label",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1315,
+          "top": 442,
+          "right": 1572.59,
+          "bottom": 470,
+          "width": 257.59,
+          "height": 28
+        },
+        "containerSelector": "div.f03-campaign-social-title",
+        "text": "A CLEARER MONDAY",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1315,
+          "y": 442,
+          "width": 257.59,
+          "height": 28
+        },
+        "firstSeen": 16,
+        "lastSeen": 27.875,
+        "occurrences": 96,
+        "heldMs": 11875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 16,
+        "selector": "div.f03-campaign-art-label",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1315,
+          "top": 442,
+          "right": 1572.59,
+          "bottom": 470,
+          "width": 257.59,
+          "height": 28
+        },
+        "containerSelector": "div.f03-campaign-email-body > div:nth-of-type(1)",
+        "text": "A CLEARER MONDAY",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1315,
+          "y": 442,
+          "width": 257.59,
+          "height": 28
+        },
+        "firstSeen": 16,
+        "lastSeen": 27.875,
+        "occurrences": 96,
+        "heldMs": 11875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 16,
+        "selector": "div.f03-campaign-task-art > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1379,
+          "top": 524,
+          "right": 1564.98,
+          "bottom": 554,
+          "width": 185.98,
+          "height": 30
+        },
+        "containerSelector": "div.f03-campaign-social-title > span:nth-of-type(1)",
+        "text": "✓ Set the priorities",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1379,
+          "y": 524,
+          "width": 185.98,
+          "height": 30
+        },
+        "firstSeen": 16,
+        "lastSeen": 27.875,
+        "occurrences": 96,
+        "heldMs": 11875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 16,
+        "selector": "div.f03-campaign-task-art > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1379,
+          "top": 524,
+          "right": 1564.98,
+          "bottom": 554,
+          "width": 185.98,
+          "height": 30
+        },
+        "containerSelector": "div.f03-campaign-email-copy",
+        "text": "✓ Set the priorities",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1379,
+          "y": 524,
+          "width": 185.98,
+          "height": 30
+        },
+        "firstSeen": 16,
+        "lastSeen": 27.875,
+        "occurrences": 96,
+        "heldMs": 11875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 16,
+        "selector": "div.f03-campaign-task-art > div:nth-of-type(2) > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1342.88,
+          "top": 528.5,
+          "right": 1355.11,
+          "bottom": 549.5,
+          "width": 12.23,
+          "height": 21
+        },
+        "containerSelector": "div.f03-campaign-social-title > span:nth-of-type(1)",
+        "text": "✓",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1342.88,
+          "y": 528.5,
+          "width": 12.23,
+          "height": 21
+        },
+        "firstSeen": 16,
+        "lastSeen": 27.875,
+        "occurrences": 96,
+        "heldMs": 11875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 16,
+        "selector": "div.f03-campaign-social-title",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1224,
+          "top": 419,
+          "right": 1627.48,
+          "bottom": 508,
+          "width": 403.48,
+          "height": 89
+        },
+        "containerSelector": "div.f03-campaign-email-body > div:nth-of-type(1)",
+        "text": "Less chasing. More doing.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1224,
+          "y": 419,
+          "width": 403.48,
+          "height": 89
+        },
+        "firstSeen": 16,
+        "lastSeen": 27.875,
+        "occurrences": 96,
+        "heldMs": 11875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 16,
+        "selector": "div.f03-campaign-social-title",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1224,
+          "top": 419,
+          "right": 1627.48,
+          "bottom": 508,
+          "width": 403.48,
+          "height": 89
+        },
+        "containerSelector": "div.f03-campaign-email-subject",
+        "text": "Less chasing. More doing.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1224,
+          "y": 419,
+          "width": 403.48,
+          "height": 89
+        },
+        "firstSeen": 16,
+        "lastSeen": 27.875,
+        "occurrences": 96,
+        "heldMs": 11875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 16,
+        "selector": "div.f03-campaign-social-title > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1224,
+          "top": 491.09,
+          "right": 1577.69,
+          "bottom": 580.09,
+          "width": 353.69,
+          "height": 89
+        },
+        "containerSelector": "div.f03-campaign-email-subject",
+        "text": "More doing.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1224,
+          "y": 491.09,
+          "width": 353.69,
+          "height": 89
+        },
+        "firstSeen": 16,
+        "lastSeen": 27.875,
+        "occurrences": 96,
+        "heldMs": 11875
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 16,
+        "selector": "div.f03-campaign-social-title > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1224,
+          "top": 491.09,
+          "right": 1577.69,
+          "bottom": 580.09,
+          "width": 353.69,
+          "height": 89
+        },
+        "containerSelector": "div.f03-campaign-email-copy",
+        "text": "More doing.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1224,
+          "y": 491.09,
+          "width": 353.69,
+          "height": 89
+        },
+        "firstSeen": 16,
+        "lastSeen": 27.875,
+        "occurrences": 96,
+        "heldMs": 11875
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 18,
+        "selector": "div.f03-campaign-art-label",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 1315,
+          "top": 442,
+          "right": 1572.59,
+          "bottom": 470,
+          "width": 257.59,
+          "height": 28
+        },
+        "containerSelector": "div.f03-campaign-social.f03-campaign-social-main",
+        "text": "A CLEARER MONDAY",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1315,
+          "y": 442,
+          "width": 257.59,
+          "height": 28
+        },
+        "firstSeen": 18,
+        "lastSeen": 26,
+        "occurrences": 3,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 18,
+        "selector": "div.f03-campaign-task-art > div:nth-of-type(2)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 1379,
+          "top": 524,
+          "right": 1564.98,
+          "bottom": 554,
+          "width": 185.98,
+          "height": 30
+        },
+        "containerSelector": "div.f03-campaign-social.f03-campaign-social-main",
+        "text": "Set the priorities",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1379,
+          "y": 524,
+          "width": 185.98,
+          "height": 30
+        },
+        "firstSeen": 18,
+        "lastSeen": 26,
+        "occurrences": 3,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 18,
+        "selector": "div.f03-campaign-task-art > div:nth-of-type(2) > span:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 1342.88,
+          "top": 528.5,
+          "right": 1355.11,
+          "bottom": 549.5,
+          "width": 12.23,
+          "height": 21
+        },
+        "containerSelector": "div.f03-campaign-social.f03-campaign-social-main",
+        "text": "✓",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1342.88,
+          "y": 528.5,
+          "width": 12.23,
+          "height": 21
+        },
+        "firstSeen": 18,
+        "lastSeen": 26,
+        "occurrences": 3,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 18,
+        "selector": "div.f03-campaign-task-art > div:nth-of-type(3)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 1379,
+          "top": 612,
+          "right": 1541.66,
+          "bottom": 642,
+          "width": 162.66,
+          "height": 30
+        },
+        "containerSelector": "div.f03-campaign-social.f03-campaign-social-main > div:nth-of-type(3) > div:nth-of-type(1)",
+        "text": "Share the plan",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1379,
+          "y": 612,
+          "width": 162.66,
+          "height": 30
+        },
+        "firstSeen": 18,
+        "lastSeen": 26,
+        "occurrences": 3,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 18,
+        "selector": "div.f03-campaign-task-art > div:nth-of-type(3) > span:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 1342.88,
+          "top": 616.5,
+          "right": 1355.11,
+          "bottom": 637.5,
+          "width": 12.23,
+          "height": 21
+        },
+        "containerSelector": "div.f03-campaign-social.f03-campaign-social-main > div:nth-of-type(3) > div:nth-of-type(1)",
+        "text": "✓",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1342.88,
+          "y": 616.5,
+          "width": 12.23,
+          "height": 21
+        },
+        "firstSeen": 18,
+        "lastSeen": 26,
+        "occurrences": 3,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 18,
+        "selector": "div.f03-campaign-task-art > div:nth-of-type(4)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 1379,
+          "top": 700,
+          "right": 1551.25,
+          "bottom": 730,
+          "width": 172.25,
+          "height": 30
+        },
+        "containerSelector": "div.f03-campaign-social.f03-campaign-social-main > div:nth-of-type(3) > div:nth-of-type(3)",
+        "text": "Make it happen",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1379,
+          "y": 700,
+          "width": 172.25,
+          "height": 30
+        },
+        "firstSeen": 18,
+        "lastSeen": 26,
+        "occurrences": 3,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 18,
+        "selector": "div.f03-campaign-task-art > div:nth-of-type(4) > span:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 1342.88,
+          "top": 704.5,
+          "right": 1355.11,
+          "bottom": 725.5,
+          "width": 12.23,
+          "height": 21
+        },
+        "containerSelector": "div.f03-campaign-social.f03-campaign-social-main > div:nth-of-type(3) > div:nth-of-type(3)",
+        "text": "✓",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1342.88,
+          "y": 704.5,
+          "width": 12.23,
+          "height": 21
+        },
+        "firstSeen": 18,
+        "lastSeen": 26,
+        "occurrences": 3,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 18,
+        "selector": "div.f03-campaign-social-title",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 1224,
+          "top": 419,
+          "right": 1627.48,
+          "bottom": 508,
+          "width": 403.48,
+          "height": 89
+        },
+        "containerSelector": "div.f03-campaign-email.f03-campaign-email-main",
+        "text": "Less chasing.",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.56,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1224,
+          "y": 419,
+          "width": 403.48,
+          "height": 89
+        },
+        "firstSeen": 18,
+        "lastSeen": 26,
+        "occurrences": 3,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 18,
+        "selector": "div.f03-campaign-social-title > span:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 1224,
+          "top": 491.09,
+          "right": 1577.69,
+          "bottom": 580.09,
+          "width": 353.69,
+          "height": 89
+        },
+        "containerSelector": "div.f03-campaign-email.f03-campaign-email-main",
+        "text": "More doing.",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.56,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1224,
+          "y": 491.09,
+          "width": 353.69,
+          "height": 89
+        },
+        "firstSeen": 18,
+        "lastSeen": 26,
+        "occurrences": 3,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 18,
+        "selector": "div.f03-campaign-social-body",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 1224,
+          "top": 776.19,
+          "right": 1559.69,
+          "bottom": 813.19,
+          "width": 335.69,
+          "height": 37
+        },
+        "containerSelector": "div.f03-campaign-email.f03-campaign-email-main",
+        "text": "Make room for real work.",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.56,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1224,
+          "y": 776.19,
+          "width": 335.69,
+          "height": 37
+        },
+        "firstSeen": 18,
+        "lastSeen": 26,
+        "occurrences": 3,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 28,
+        "selector": "div.f04-review-row > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 168,
+          "top": 484.5,
+          "right": 222.66,
+          "bottom": 521.5,
+          "width": 54.66,
+          "height": 37
+        },
+        "containerSelector": "div.f04-review-final-title",
+        "text": "Kite",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-review.html",
+        "bbox": {
+          "x": 168,
+          "y": 484.5,
+          "width": 54.66,
+          "height": 37
+        },
+        "firstSeen": 28,
+        "lastSeen": 36,
+        "occurrences": 65,
+        "heldMs": 8000
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 28,
+        "selector": "div.f04-review-reviewtext",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 100,
+          "top": 550,
+          "right": 631.08,
+          "bottom": 591,
+          "width": 531.08,
+          "height": 41
+        },
+        "containerSelector": "div.f04-review-final-sub",
+        "text": "The page, post and email are ready.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-review.html",
+        "bbox": {
+          "x": 100,
+          "y": 550,
+          "width": 531.08,
+          "height": 41
+        },
+        "firstSeen": 28,
+        "lastSeen": 36,
+        "occurrences": 65,
+        "heldMs": 8000
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 28,
+        "selector": "div.f04-review-button",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 129,
+          "top": 630.59,
+          "right": 390.95,
+          "bottom": 666.59,
+          "width": 261.95,
+          "height": 36
+        },
+        "containerSelector": "div.f04-review-url > span:nth-of-type(1)",
+        "text": "Review campaign ↗",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-review.html",
+        "bbox": {
+          "x": 129,
+          "y": 630.59,
+          "width": 261.95,
+          "height": 36
+        },
+        "firstSeen": 28,
+        "lastSeen": 36,
+        "occurrences": 65,
+        "heldMs": 8000
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 28,
+        "selector": "div.f04-review-page-cta",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 918.4,
+          "top": 583.65,
+          "right": 1018.95,
+          "bottom": 601.25,
+          "width": 100.55,
+          "height": 17.6
+        },
+        "containerSelector": "div.f04-review-social-title",
+        "text": "Explore Relay ↗",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-review.html",
+        "bbox": {
+          "x": 918.4,
+          "y": 583.65,
+          "width": 100.55,
+          "height": 17.6
+        },
+        "firstSeen": 28,
+        "lastSeen": 36,
+        "occurrences": 65,
+        "heldMs": 8000
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 30,
+        "selector": "div.f04-review-h.f04-review-reviewtitle",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 100,
+          "top": 220,
+          "right": 612.27,
+          "bottom": 318,
+          "width": 512.27,
+          "height": 98
+        },
+        "containerSelector": "img.f04-review-final-logo",
+        "text": "Your campaign.",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.26,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-review.html",
+        "bbox": {
+          "x": 100,
+          "y": 220,
+          "width": 512.27,
+          "height": 98
+        },
+        "firstSeen": 30,
+        "lastSeen": 34,
+        "occurrences": 2,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 30,
+        "selector": "div.f04-review-h.f04-review-reviewtitle > span:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 100,
+          "top": 306.23,
+          "right": 658.52,
+          "bottom": 404.23,
+          "width": 558.52,
+          "height": 98
+        },
+        "containerSelector": "img.f04-review-final-logo",
+        "text": "Ready to review.",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.33,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-review.html",
+        "bbox": {
+          "x": 100,
+          "y": 306.23,
+          "width": 558.52,
+          "height": 98
+        },
+        "firstSeen": 30,
+        "lastSeen": 34,
+        "occurrences": 2,
+        "heldMs": 0
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 30,
+        "selector": "div.f04-review-page-cta",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 918.4,
+          "top": 583.65,
+          "right": 1018.95,
+          "bottom": 601.25,
+          "width": 100.55,
+          "height": 17.6
+        },
+        "containerSelector": "div.f04-review-social.f04-review-final-social",
+        "text": "Explore Relay ↗",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.56,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-review.html",
+        "bbox": {
+          "x": 918.4,
+          "y": 583.65,
+          "width": 100.55,
+          "height": 17.6
+        },
+        "firstSeen": 30,
+        "lastSeen": 34,
+        "occurrences": 2,
+        "heldMs": 0
+      }
+    ],
+    "duration": 36,
+    "samples": [
+      2,
+      6,
+      10,
+      14,
+      18,
+      22,
+      26,
+      30,
+      34
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 57,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": false,
+    "errorCount": 10,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1:1; WCAG AA requires 3:1.",
+        "text": "Landing page ↗",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 1,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(148,148,148)",
+        "large": true,
+        "selector": "div > div:nth-of-type(1) > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 1330,
+          "y": 575,
+          "width": 440,
+          "height": 76
+        },
+        "time": 2
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1:1; WCAG AA requires 3:1.",
+        "text": "Social post ↗",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 1,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(148,148,148)",
+        "large": true,
+        "selector": "div > div:nth-of-type(1) > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(3)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-brief.html",
+        "bbox": {
+          "x": 1330,
+          "y": 666,
+          "width": 440,
+          "height": 76
+        },
+        "time": 2
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "error",
+        "message": "Contrast is 1:1; WCAG AA requires 3:1.",
+        "text": "relay",
+        "fg": "rgb(244,241,232)",
+        "bg": "rgb(244,241,232)",
+        "ratio": 1,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(141,139,134)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(5) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1224,
+          "y": 334,
+          "width": 472,
+          "height": 41
+        },
+        "time": 18
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "error",
+        "message": "Contrast is 1.13:1; WCAG AA requires 3:1.",
+        "text": "Less chasing.More doing.",
+        "fg": "rgb(244,241,232)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 1.13,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(150,148,143)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(5) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1224,
+          "y": 428,
+          "width": 472,
+          "height": 144.1875
+        },
+        "time": 18
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "error",
+        "message": "Contrast is 1.13:1; WCAG AA requires 3:1.",
+        "text": "Make room for real work.",
+        "fg": "rgb(244,241,232)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 1.13,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(150,148,143)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(5) > div:nth-of-type(4)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1224,
+          "y": 777.1875,
+          "width": 472,
+          "height": 36.25
+        },
+        "time": 18
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "error",
+        "message": "Contrast is 2.2:1; WCAG AA requires 3:1.",
+        "text": "01 / LANDING PAGE",
+        "fg": "rgb(16,93,168)",
+        "bg": "rgb(24,43,50)",
+        "ratio": 2.2,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(50,116,180)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(7)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 100,
+          "y": 835,
+          "width": 254.6875,
+          "height": 30
+        },
+        "time": 18
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "error",
+        "message": "Contrast is 2.2:1; WCAG AA requires 3:1.",
+        "text": "03 / LAUNCH EMAIL",
+        "fg": "rgb(16,93,168)",
+        "bg": "rgb(24,43,50)",
+        "ratio": 2.2,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(50,116,180)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(9)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1388,
+          "y": 835,
+          "width": 263.3125,
+          "height": 30
+        },
+        "time": 18
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "error",
+        "message": "Contrast is 1:1; WCAG AA requires 3:1.",
+        "text": "relay",
+        "fg": "rgb(244,241,232)",
+        "bg": "rgb(244,241,232)",
+        "ratio": 1,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(141,139,134)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(5) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1224,
+          "y": 334,
+          "width": 472,
+          "height": 41
+        },
+        "time": 26
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "error",
+        "message": "Contrast is 1.13:1; WCAG AA requires 3:1.",
+        "text": "Less chasing.More doing.",
+        "fg": "rgb(244,241,232)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 1.13,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(150,148,143)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(5) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1224,
+          "y": 428,
+          "width": 472,
+          "height": 144.1875
+        },
+        "time": 26
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "error",
+        "message": "Contrast is 1.13:1; WCAG AA requires 3:1.",
+        "text": "Make room for real work.",
+        "fg": "rgb(244,241,232)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 1.13,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(150,148,143)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(5) > div:nth-of-type(4)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1224,
+          "y": 777.1875,
+          "width": 472,
+          "height": 36.25
+        },
+        "time": 26
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "error",
+        "message": "Contrast is 2.2:1; WCAG AA requires 3:1.",
+        "text": "01 / LANDING PAGE",
+        "fg": "rgb(16,93,168)",
+        "bg": "rgb(24,43,50)",
+        "ratio": 2.2,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(50,116,180)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(7)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 100,
+          "y": 835,
+          "width": 254.6875,
+          "height": 30
+        },
+        "time": 26
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "error",
+        "message": "Contrast is 2.2:1; WCAG AA requires 3:1.",
+        "text": "03 / LAUNCH EMAIL",
+        "fg": "rgb(16,93,168)",
+        "bg": "rgb(24,43,50)",
+        "ratio": 2.2,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(50,116,180)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(9)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-campaign.html",
+        "bbox": {
+          "x": 1388,
+          "y": 835,
+          "width": 263.3125,
+          "height": 30
+        },
+        "time": 26
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      2,
+      10,
+      18,
+      26,
+      34
+    ],
+    "checked": 117,
+    "passed": 105
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "_meta": {
+    "version": "0.8.62",
+    "latestVersion": "0.8.60",
+    "updateAvailable": false
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Kite Tomorrow \u2014 Slack reference edition",
+  "status": "delivered",
+  "final": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/artifacts/final_outcome/kite-tomorrow-slack/kite-tomorrow-slack.mp4",
+  "editable_project": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-tomorrow-slack",
+  "duration_seconds": 38,
+  "resolution": "1920x1080",
+  "fps": 30,
+  "sha256": "6933a1aa7dacc8dd8a3cfb8d49d841f77d733f1d2cac8578d7d2e60820d66f5e",
+  "reference": {
+    "reference": "artifacts/Slack UI.webp",
+    "reference_sha256": "55ff31255f4c43276b7b6214e7fc5439ca5e5e3dcb2b23e36745d53344694091",
+    "use": "Visual style/layout only; no screenshot usernames copied. Deterministic reconstruction, not authenticated Slack recording.",
+    "human_source": "artifacts/library-loop-kite-tomorrow/outputs/kite_person_seedance2_purposeful_contact_v2.mp4",
+    "human_sha256": "23e9208d031ce3e82fe96a44dc24c7373d280e384b29a70ebc223c35b5396358",
+    "human_range": [
+      0,
+      3.6
+    ],
+    "rate": 1,
+    "new_provider_calls": 0,
+    "incremental_usd": 0,
+    "cursor": "simulated-cursor registry geometry adapted into existing timeline",
+    "previous_project": "videos/kite-tomorrow-final",
+    "thumbnail": {
+      "source": "artifacts/final_outcome/kite-tomorrow-slack/thumbnail/frame-00-at-22s.png",
+      "method": "HyperFrames snapshot at 22s, zoom #page-surface, 1x density",
+      "asset": "assets/relay-draft-thumbnail.png",
+      "sha256": "0a92a657a5b0a069029ebed5df5f2661f21138c31d22c30f0fd380db9991a3c8"
+    }
+  },
+  "human_run": "kite_person_seedance2_purposeful_contact_v2",
+  "cost": {
+    "incremental_provider_usd": 0,
+    "new_provider_calls": 0,
+    "known_prior_fal_video_estimates_usd": 5.46,
+    "known_prior_fal_reservations_usd": 6.28,
+    "confirmed_fal_usd": null,
+    "historical_higgsfield_credits": 31.38,
+    "historical_higgsfield_usd": null,
+    "source_image_usd": null,
+    "cumulative_usd": null,
+    "shared_budget_root": "artifacts/library-loop-kite-tomorrow",
+    "note": "Reuses existing media and audio; no budget reset or new paid generation. Unknown costs are not zero."
+  },
+  "verification": "artifacts/final_outcome/kite-tomorrow-slack/verification.json",
+  "review": "review_notes/kite-tomorrow-slack.json",
+  "renderer_version": "0.8.59",
+  "previous_master_preserved": "artifacts/final_outcome/kite-tomorrow-final/kite-tomorrow-final.mp4",
+  "limitations": [
+    "UI is reconstructed from the user reference; fictional Relay workflow, not authenticated Slack recording.",
+    "Human realism remains partial; earlier brief hand reposition and soft facial detail remain.",
+    "Earlier cumulative USD is unresolved; this local revision adds no provider spend."
+  ]
+}

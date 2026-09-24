@@ -1,0 +1,25 @@
+{
+  "decision": "accepted",
+  "reviewer": "agent",
+  "judgment_type": "subjective visual inspection supported by technical checks",
+  "method": "Inspected encoded source chronologically at2fps across all36seconds (72frames in6sequential strips), five full-size held-state comparisons, and18pre-render scene/join/end snapshots. Not uninterrupted audiovisual playback.",
+  "picture": "Official wordmark and app icon render correctly; brief, campaign direction, page, social, email and review are consistently legible at their intended focal sizes. Intentional thumbnail detail becomes secondary during overview. No missing media, unexpected blank scene, or visible letter deformation in reviewed samples.",
+  "timing": "Brief arrives before send; direction precedes asset construction. Page holds before reducing; social precedes email; all three remain together for final overview. Short fades show expected transitional lower contrast. Clear cuts at8,16,28seconds.",
+  "continuity": "Relay name, audience, task-planning promise, cream/navy/lime identity and call to action retained across campaign pieces. Final layered thumbnails intentionally conceal nonessential lower page areas; covered page CTA removed in ending only.",
+  "ending": "Final brand, URL and campaign previews remain visible at35.9seconds; no black ending.",
+  "audio": "Original instrumental only. Source correlation0.999662; AAC48kHz stereo, peak-3.88dBFS, no clipped samples. Score accents align with authored moments and final chord decays to end. Independent perceptual listening not performed.",
+  "human_realism": null,
+  "lip_sync": null,
+  "audience_effectiveness": null,
+  "illustrative_ui": true,
+  "review_scope_limits": [
+    "Sampling cannot guarantee absence of every one-frame defect.",
+    "No live Kite backend or real campaign result verified."
+  ],
+  "evidence": [
+    ".context/kite-campaign-encoded/motion-0.jpg through motion-5.jpg",
+    ".context/kite-campaign-encoded/held-35.9.png",
+    "videos/kite-campaign/encoded-technical-checks.json",
+    "videos/kite-campaign/check-04.json"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "duration": 5,
+  "rate": 1,
+  "revised_run_id": "reviewed-v4-v5-sequence",
+  "original_source": "sideway_arrival_v2",
+  "previous_source": "sideway_arrival_sample02_wan_v3",
+  "source_ranges": {
+    "original": [
+      0,
+      5
+    ],
+    "previous": [
+      0,
+      5
+    ],
+    "revision": [
+      0,
+      5
+    ]
+  },
+  "audio": "intentionally silent"
+}

@@ -1,0 +1,24 @@
+{
+  "decision": "accept",
+  "video_sha256": "4ec8df9dfe286b6f25120e347d8e2f38d6af653ce8bd0c9869b727cb31e56e55",
+  "method": "Agent visual review of the encoded MP4 decoded at 2fps through all30s plus35 explicitly selected transition/action frames. Compared complete layouts with pre-render snapshots.",
+  "findings": [
+    "Opening title and official icon clearly visible over paper plate after layering correction.",
+    "Input request and source release facts readable during their hold.",
+    "Preview opens a distinct authored page; old text does not stretch into the next surface.",
+    "Feedback precedes visible v1-to-v2 headline change.",
+    "Revised draft remains visible during final CTA and ending.",
+    "Clean intentional cuts at4,10,20s; brief entrance fades leave a few minimally populated frames, no prolonged blank segment."
+  ],
+  "evidence": [
+    "../../.context/kite-core-demo/encoded/chronological-1.jpg",
+    "../../.context/kite-core-demo/encoded/chronological-2.jpg",
+    "../../.context/kite-core-demo/encoded/joins.jpg",
+    "../../.context/kite-core-demo/encoded/sample-times.json"
+  ],
+  "limitations": [
+    "Sampled review, not uninterrupted audiovisual listening.",
+    "No speech or caption synchronization required.",
+    "Illustrative workflow, not an authenticated application capture."
+  ]
+}

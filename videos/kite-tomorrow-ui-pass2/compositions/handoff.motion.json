@@ -1,0 +1,29 @@
+{
+  "duration": 9.3,
+  "assertions": [
+    {
+      "kind": "appearsBy",
+      "selector": "#request-line-2",
+      "bySec": 1.5
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#notes-item-2",
+      "bySec": 4.6
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#returned",
+      "bySec": 7.0
+    },
+    {
+      "kind": "before",
+      "a": "#notes-card",
+      "b": "#returned"
+    },
+    {
+      "kind": "staysInFrame",
+      "selector": "#preview-button"
+    }
+  ]
+}

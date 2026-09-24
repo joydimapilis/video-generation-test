@@ -1,0 +1,26 @@
+{
+  "experiment": "computer-realism-trackpad-tap-correction",
+  "budget_root": "artifacts/library-loop-computer-realism",
+  "source_still_review": "videos/computer-realism-samples/source-reviews.json",
+  "runs": [
+    {
+      "id": "02-trackpad-veo-v4",
+      "endpoint": "fal-ai/veo3.1/fast/image-to-video",
+      "estimate_cents": 40,
+      "use_case": "computer_interaction",
+      "audio_requested": false,
+      "hypothesis": "Prior glide travels onto keyboard and retracts to laptop edge. Simplify to one light tap, same reviewed still and endpoint, fixed hand position; no lateral travel. One bounded correction within unchanged $10 cap.",
+      "input": {
+        "prompt": "One static four-second documentary shot of this seated man using his laptop. Preserve the supplied photo composition, natural face, skin, clothing, lit display and desk. The hand already resting on the smooth rectangular trackpad stays in EXACTLY that position throughout. He makes one tiny tap with its index fingertip on the CENTER of the trackpad, then quietly reads the display. The fingertip returns to the same point. The palm and wrist do not travel. The other hand remains naturally supported on the wooden desk. His gaze stays on the screen; a natural blink and small breath are the only other motion. Normal speed, ordinary absorbed expression. Keep the keyboard untouched. Keep camera and background perfectly static. No reaching, typing, swiping, raised hand, withdrawal, speech, smile or camera move.",
+        "image_url": "local:artifacts/library-loop-computer-realism/source-images/02-trackpad-v3.png",
+        "duration": "4s",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "seed": 61301,
+        "auto_fix": false,
+        "negative_prompt": "hand moving onto keyboard, arm repositioning, raised wrist, hand lifting, typing, large gestures, smiling, camera movement, zoom, slow motion"
+      }
+    }
+  ]
+}

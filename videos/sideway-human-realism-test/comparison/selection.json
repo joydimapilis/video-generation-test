@@ -1,0 +1,68 @@
+[
+  {
+    "id": "phone-open",
+    "start": 0,
+    "duration": 3,
+    "title": "01  Phone opening",
+    "original": "phone-original.mp4",
+    "candidate": "phone-candidate.mp4",
+    "reference": "phone-reference.mp4",
+    "orig_start": 0,
+    "orig_rate": 1,
+    "cand_start": 0,
+    "cand_rate": 1,
+    "detail": "Original window 0\u20133s \u00b7 both at native speed",
+    "ref_label": "sample02 / 233390 \u00b7 0\u20133s",
+    "verdict": "Trial 1 \u00b7 rejected",
+    "notes": [
+      "Screen attention and small hand motion.",
+      "Candidate adds unwanted mouth movement.",
+      "The full take also develops a look away."
+    ],
+    "candidate_label": "Candidate \u00b7 720p"
+  },
+  {
+    "id": "phone-return",
+    "start": 3,
+    "duration": 4,
+    "title": "02  Phone reading return",
+    "original": "phone-original.mp4",
+    "candidate": "reading-candidate.mp4",
+    "reference": "phone-reference.mp4",
+    "orig_start": 1,
+    "orig_rate": 0.5,
+    "cand_start": 0,
+    "cand_rate": 1,
+    "detail": "Original window 6\u201310s \u00b7 original 0.5\u00d7 / candidate 1\u00d7",
+    "ref_label": "sample02 / 233390 \u00b7 0\u20134s",
+    "verdict": "Trial 2 \u00b7 not selected",
+    "notes": [
+      "Hands steadier; mouth movement persists.",
+      "480p study; reduced facial detail.",
+      "Source pose and playback timing also differ."
+    ],
+    "candidate_label": "Candidate \u00b7 480p"
+  },
+  {
+    "id": "cafe",
+    "start": 7,
+    "duration": 5,
+    "title": "03  Caf\u00e9 pause",
+    "original": "arrival-original.mp4",
+    "candidate": "arrival-candidate.mp4",
+    "reference": "cafe-reference.mp4",
+    "orig_start": 0,
+    "orig_rate": 1,
+    "cand_start": 0,
+    "cand_rate": 1,
+    "detail": "Original window 26\u201332s \u00b7 first 5s compared at native speed",
+    "ref_label": "sample02 / 216598 \u00b7 0\u20135s",
+    "verdict": "Trial 1 \u00b7 partial improvement",
+    "notes": [
+      "Free hand lowers onto the trousers.",
+      "Cup and holding hand stay connected.",
+      "Low eyelids and posed expression remain."
+    ],
+    "candidate_label": "Candidate \u00b7 720p"
+  }
+]

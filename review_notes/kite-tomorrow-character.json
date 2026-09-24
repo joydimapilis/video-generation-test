@@ -1,0 +1,41 @@
+{
+  "concept": "Kite Tomorrow \u2014 targeted character revision",
+  "criteria": [],
+  "method": "Subjective chronological review of 32 frames at 8 fps across the four-second result, with full-frame, face and hand contact sheets; matched editorial-time before/after face crops. Encoded comparison and final integration reviewed separately. No calibrated numeric quality scores.",
+  "routing": {
+    "observational_person": {
+      "primary": "Reference-conditioned Seedance 2.0 at native speed for this tested opening only",
+      "selected_run": "kite_person_seedance2_reference_v1",
+      "caution": "Softer facial detail; restrained pose; one confounded workflow comparison."
+    },
+    "product_ui": {
+      "primary": "Existing deterministic HyperFrames UI pass 2",
+      "caution": "Illustrative reconstruction informed by official references, not an authenticated product capture."
+    }
+  },
+  "findings": [
+    "Accept the new 0\u20133.6 s segment at native speed for this opening: laptop-directed gaze, shorter unstretched blink, subtle brow/lip relaxation and supported finger flex improve the performance over the old 0.5x Veo edit.",
+    "Correction to initial impression: side-by-side face crops show the Seedance output is softer and less detailed than Veo. Do not claim improved pore detail or complete photorealism.",
+    "Full-frame and hand sequences show stable desk/laptop geometry and supported forearms; visible fingers do not obviously merge. Occluded digits cannot be fully audited. The pose remains quite restrained.",
+    "The same supplied generated reference preserves the apparent identity and setting within this single shot. Cross-shot identity, speech/lip sync, typing and complex object contact were not tested.",
+    "One workflow comparison, not a controlled model benchmark: model, prompt and playback rate change together. This does not establish Seedance as the best people model generally.",
+    "All UI, copy, scene boundaries and sound assets remain from UI pass 2. Only the opening human media and playback rate change."
+  ],
+  "runs": {
+    "kite_person_seedance2_reference_v1": {
+      "scores": [],
+      "detailed_scores": {
+        "human_realism": null,
+        "face_realism": null,
+        "hand_body_movement": null,
+        "identity_consistency": null,
+        "product_accuracy": null,
+        "text_ui_accuracy": null,
+        "speech_lip_sync": null
+      },
+      "note": "Accept the new 0\u20133.6 s segment at native speed for this opening: laptop-directed gaze, shorter unstretched blink, subtle brow/lip relaxation and supported finger flex improve the performance over the old 0.5x Veo edit. Correction to initial impression: side-by-side face crops show the Seedance output is softer and less detailed than Veo. Do not claim improved pore detail or complete photorealism. Full-frame and hand sequences show stable desk/laptop geometry and supported forearms; visible fingers do not obviously merge. Occluded digits cannot be fully audited. The pose remains quite restrained. The same supplied generated reference preserves the apparent identity and setting within this single shot. Cross-shot identity, speech/lip sync, typing and complex object contact were not tested. One workflow comparison, not a controlled model benchmark: model, prompt and playback rate change together. This does not establish Seedance as the best people model generally.",
+      "decision": "selected_for_opening"
+    }
+  },
+  "caveat": "All judgments are subjective. Native-speed behavior improves; skin detail does not. Historical cost remains unconverted. $3.14 is the explicit single-test incremental exception, not a reset of the normal cumulative $10 cap."
+}

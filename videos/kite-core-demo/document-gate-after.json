@@ -1,0 +1,8 @@
+[
+  {
+    "video": "artifacts/final_outcome/kite-core-demo/kite-core-demo.mp4",
+    "reverse_engineering": "artifacts/final_outcome/kite-core-demo/kite-core-demo.reverse-engineering.md",
+    "reverse_engineering_sha256": "f02148a37d8afb09d1079ebfad4aeeffe189d1b419760c5b23c58b9b417c783b",
+    "documentation_complete": true
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "experiment": "computer-movement-long-03",
+  "budget_root": "artifacts/library-loop-computer-long-03",
+  "runs": [
+    {
+      "id": "03-computer-sequence-kling-v1",
+      "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+      "estimate_cents": 168,
+      "use_case": "computer_interaction",
+      "audio_requested": false,
+      "hypothesis": "Longer single take with explicitly separated task phases may avoid continuous typing. Kling previously over-articulated in shorter takes; this is a bounded new sequence test, not a proven model advantage. No real reference media inputs.",
+      "reference_observations": "videos/computer-movement-long/reference-observations.json",
+      "input": {
+        "prompt": "Single continuous 15-second candid shot at normal speed. Camera locked on tripod with absolutely unchanged framing. Preserve the source person, face, hairstyle, age, clothing, lighting, room and device geometry. Ordinary concentrated expression, relaxed closed mouth, natural blinks. Small movements, supported forearms, relaxed low wrists. The woman reads and edits a document on her laptop. 0\u20132 seconds: eyes read the laptop screen, hands resting low on keys. 2\u20135 seconds: type a few words with small uneven individual finger presses, forearms supported on table. 5\u20136 seconds: pause, fingertips resting on keys. 6\u20139 seconds: right hand glides a short distance down to the rectangular trackpad below the letter keys; index fingertip visibly rests on the pad and makes one short smooth scroll, wrist heel supported on palm rest; left hand stays at keyboard. 9\u201311 seconds: hand rests on the trackpad while her eyes follow the screen, without a head nod. 11\u201314 seconds: right hand returns to its letter-key position and both hands enter a short correction with low fingertips. 14\u201315 seconds: hands relax in contact with keys and one small seated weight adjustment settles her shoulders. Keep mouth calmly closed. Make the transitions unhurried and physically connected, not a repeating typing loop.",
+        "start_image_url": "local:artifacts/library-loop-computer-movement-studies-02/source-images/03-laptop-typing.png",
+        "duration": "15",
+        "generate_audio": false,
+        "negative_prompt": "continuous repetitive typing, air typing, hands floating, high finger lifts, curled raised hands, fused fingers, extra fingers, hand teleportation, sudden pose changes, head bobbing, looking into camera, talking, exaggerated smile, beauty filter, zoom, pan, camera drift, cuts",
+        "cfg_scale": 0.5
+      }
+    }
+  ]
+}

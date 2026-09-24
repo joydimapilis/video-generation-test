@@ -1,0 +1,45 @@
+{
+  "project": "computer-movement-studies-02",
+  "status": "uncontrolled_subjective_tests",
+  "review": "review_notes/computer-movement-studies-02.json",
+  "reference_provenance": "videos/computer-movement-studies-02/reference-observations.json",
+  "endpoint": "fal-ai/veo3.1/image-to-video",
+  "patterns": [
+    {
+      "name": "mouse_movement_without_click",
+      "run_id": "02-mouse-work-veo-standard-v2",
+      "tested_result": "Provisional full 6s: hand and mouse move together, fingers rest on buttons. Brief downward head inclination remains. Prior click take repeatedly lifted index finger too far.",
+      "guidance": "Start with cupped grip and supported wrist. Removing the click is a useful simplification candidate when it causes finger performance. Both prompt and seed changed, so not a causal prompt-only result.",
+      "causal_reference_improvement": null
+    },
+    {
+      "name": "laptop_localized_typing",
+      "run_id": "03-laptop-typing-veo-standard-v1",
+      "tested_result": "Provisional full 6s: low independent finger changes, supported arms and screen gaze. Brief mouth opening and some cadence regularity remain.",
+      "guidance": "Keep ongoing work and unequal finger roles, avoid a concluding hand gesture. Inspect full duration and facial behavior as well as initial contact.",
+      "causal_reference_improvement": null
+    },
+    {
+      "name": "wrist_rest_does_not_guarantee_finger_restraint",
+      "run_id": "01-desktop-typing-veo-standard-v2",
+      "tested_result": "Rejected: wrist support improved nearer hand anchoring but far hand still over-articulates. Gaze repeatedly dips.",
+      "guidance": "A supported source is necessary evidence, not a guarantee of motion. Reduce task complexity and review both hands independently.",
+      "causal_reference_improvement": null
+    },
+    {
+      "name": "desktop_reading_does_not_reliably_stop_typing",
+      "run_ids": [
+        "01-desktop-typing-veo-standard-v3",
+        "01-desktop-reading-veo-standard-v4"
+      ],
+      "tested_result": "Both full takes rejected: typing and high far-finger extensions persist despite reading/rest prompt. Only v3 2.167\u20133.667s selected as a 1.5s reading-pause segment.",
+      "guidance": "Do not claim a reading-only prompt guarantees resting hands; retain failure tails and mark trimmed success separately. New source pose or model route needs a future bounded test.",
+      "causal_reference_improvement": null
+    }
+  ],
+  "limitations": [
+    "Real clips only informed written behavioral directions; no uploaded real clip/frame, direct motion transfer or identity recreation.",
+    "No matched control, no controlled model ranking, no exact key or cursor response test.",
+    "Sampled chronological visual review, not continuous real-time playback. Scores provisional and uncalibrated."
+  ]
+}

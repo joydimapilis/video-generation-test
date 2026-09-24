@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "project": "kite-core-demo",
+  "final_video": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/artifacts/final_outcome/kite-core-demo/kite-core-demo.mp4",
+  "editable_project": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo",
+  "demo_page": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/DEMO.html",
+  "verification": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/artifacts/final_outcome/kite-core-demo/verification.json",
+  "phase2_used": false,
+  "reference_library": "/Users/joydimapilis/Desktop/untitled folder/Startup Launch Videos",
+  "budget": {
+    "cap_cents": 1000,
+    "estimated_cents": 56,
+    "reserved_cents": 65,
+    "confirmed_charge_cents": null,
+    "paid_attempts": 1,
+    "local_audio_cost_cents": 0
+  },
+  "limitations": [
+    "Illustrative UI, not an authenticated backend capture.",
+    "Sampled chronological visual review and numerical audio checks; no audience test or independent listening.",
+    "Automated motion subcheck disabled; actual encoded frame sequences and preview equivalence checked."
+  ],
+  "video": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/artifacts/final_outcome/kite-core-demo/kite-core-demo.mp4",
+  "reverse_engineering": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/artifacts/final_outcome/kite-core-demo/kite-core-demo.reverse-engineering.md",
+  "reverse_engineering_sha256": "f02148a37d8afb09d1079ebfad4aeeffe189d1b419760c5b23c58b9b417c783b",
+  "documentation_complete": true,
+  "demo_log": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/DEMO_LOG.md",
+  "demo_sequence": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/FIVE_MINUTE_DEMO.md",
+  "demo_verification": "/Users/joydimapilis/conductor/workspaces/video-generation-test/brasilia/videos/kite-core-demo/demo-verification.json"
+}

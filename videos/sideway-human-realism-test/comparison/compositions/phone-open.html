@@ -1,0 +1,11 @@
+<!doctype html><html><body><template><style>#phone-open-root{position:absolute;inset:0;width:100%;height:100%;background:#20231f}</style>
+ <div id="phone-open-root" data-composition-id="phone-open" data-width="1920" data-height="1080" data-duration="3">
+ <h1 class="headline">Sideway / human realism test</h1><div class="chapter">01  Phone opening</div>
+ <p class="label old">Original · latest delivered take</p><p class="label new">Candidate · 720p</p><p class="label reference-label">sample02 / 233390 · 0–3s</p>
+ <video id="phone-open-original" class="clip panel old" src="assets/phone-original.mp4" data-start="0" data-duration="3" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline></video>
+ <video id="phone-open-candidate" class="clip panel new" src="assets/phone-candidate.mp4" data-start="0" data-duration="3" data-media-start="0" data-playback-rate="1" data-track-index="2" muted playsinline></video>
+ <video id="phone-open-reference" class="clip reference" src="assets/phone-reference.mp4" data-start="0" data-duration="3" data-track-index="3" muted playsinline></video>
+ <div class="note-box"><p class="verdict">Trial 1 · rejected</p><p class="note">Screen attention and small hand motion.</p><p class="note">Candidate adds unwanted mouth movement.</p><p class="note">The full take also develops a look away.</p></div>
+ <div class="disclosure">Reference observations informed the prompt. Different model; no direct motion-video conditioning.</div>
+ <div class="footer">Original window 0–3s · both at native speed</div><div id="phone-open-progress" class="progress"></div>
+ </div><script>window.__timelines["phone-open"]=gsap.timeline({paused:true}).fromTo("#phone-open-progress",{scaleX:0},{scaleX:1,duration:3,ease:"none"},0);</script></template></body></html>

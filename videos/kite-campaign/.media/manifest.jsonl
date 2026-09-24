@@ -1,0 +1,3 @@
+{"id":"image_001","type":"image","path":"assets/kite-slack-app-icon.png","source":"existing","description":"kite slack app icon","width":1024,"height":1024,"provenance":{"provider":"local","adopted":true}}
+{"id":"image_002","type":"image","path":"assets/kite.png","source":"existing","description":"kite","width":3548,"height":1522,"provenance":{"provider":"local","adopted":true}}
+{"id":"bgm_001","type":"bgm","path":".media/audio/bgm/bgm_001.wav","source":"ingested","description":"score.wav","provenance":{"provider":"local","from":"videos/kite-campaign/assets/score.wav"}}

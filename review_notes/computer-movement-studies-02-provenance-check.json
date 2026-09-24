@@ -1,0 +1,33 @@
+{
+  "reference_hashes_unchanged": true,
+  "source_images_text_only": true,
+  "animation_inputs_only_new_source_stills": true,
+  "reference_video_uploads": 0,
+  "reference_frames_used_in_generation": 0,
+  "reference_clip_hashes_excluded_from_project_assets": true,
+  "provider_requests_inspected": 11,
+  "method": "Inspect budget payloads and their local input paths; hash real references against pre-generation record; hash project media. Hash exclusion is a copy check, not proof against transformations; input payload audit establishes text-only new-image route.",
+  "asset_hashes": {
+    "videos/computer-movement-studies-02/assets/02-mouse-work.mp4": "56aa8e30740051c5c540a3562aac9000bfe4b592f8f93f7aa2d79c23364153e3",
+    "videos/computer-movement-studies-02/assets/03-laptop-typing.mp4": "879a7487c5ddf73fe242c7511c79f66e2b9cbd22bf957c1d689a97b8d825d44f",
+    "videos/computer-movement-studies-02/assets/01-desktop-reading.mp4": "e3fa5c1ea13a8ab75ae43b42d051ba160917545fa8f01d0a9f6fcb5c88f3abd2",
+    "videos/computer-movement-studies-02/02-mouse-work/snapshots/frame-03-at-4.3s.png": "870052a4f29b657fef227b51b7763dcf0d9c6981becb37ceea3f7ec48754ed0e",
+    "videos/computer-movement-studies-02/02-mouse-work/snapshots/frame-00-at-0.3s.png": "ca1b17bd287bdb93d963d399df4ba2b52e573ec85569776a9d5bf2f1a66108dc",
+    "videos/computer-movement-studies-02/02-mouse-work/snapshots/frame-02-at-3.0s.png": "e5a91a7851528d2d82a3015de20f95a6a3caec03e6cdaebae58118e11dac6174",
+    "videos/computer-movement-studies-02/02-mouse-work/snapshots/frame-01-at-1.7s.png": "3f9f3831834ed874b68edd8532dafea9fa108d610f8896360481cc455dbd16b8",
+    "videos/computer-movement-studies-02/02-mouse-work/snapshots/frame-04-at-5.7s.png": "fd3c7d3a10f451936471a959de4063ebc51a3e30960981a7a097eec20a954acb",
+    "videos/computer-movement-studies-02/02-mouse-work/assets/02-mouse-work.mp4": "56aa8e30740051c5c540a3562aac9000bfe4b592f8f93f7aa2d79c23364153e3",
+    "videos/computer-movement-studies-02/01-desktop-reading/snapshots/frame-03-at-1.1s.png": "d10d7910ee2dd8f153f21f972dd0241964db40be915d006adf65de08e367291f",
+    "videos/computer-movement-studies-02/01-desktop-reading/snapshots/frame-04-at-1.4s.png": "1e3cf88e08c6c3e06614fa2b88044b87db167c8f8549b7243d06c8ad9df9b6f0",
+    "videos/computer-movement-studies-02/01-desktop-reading/snapshots/frame-02-at-0.8s.png": "6adb4bcddd103e82cb1a53e3c1a18cd62458f3dd1700e2f592fb7e1d1a04fb5a",
+    "videos/computer-movement-studies-02/01-desktop-reading/snapshots/frame-01-at-0.4s.png": "211c056f721215f035e89296e917e53465f04493dbfbc398c523964b6e79f4be",
+    "videos/computer-movement-studies-02/01-desktop-reading/snapshots/frame-00-at-0.1s.png": "626c8e6bc6898db56cd4e818f44d3b88942512bf7b054a8621eebce4b1c969cd",
+    "videos/computer-movement-studies-02/01-desktop-reading/assets/01-desktop-reading.mp4": "e3fa5c1ea13a8ab75ae43b42d051ba160917545fa8f01d0a9f6fcb5c88f3abd2",
+    "videos/computer-movement-studies-02/03-laptop-typing/snapshots/frame-03-at-4.3s.png": "e14aeaa31172c320cef3bc696d4d7fb5ae67a93c9c9eeda51a0a1aa32cb3fc71",
+    "videos/computer-movement-studies-02/03-laptop-typing/snapshots/frame-00-at-0.3s.png": "6193014251de8339666340e6fb34d5c378de49e7b54a0bca41c8a75b082131ed",
+    "videos/computer-movement-studies-02/03-laptop-typing/snapshots/frame-02-at-3.0s.png": "df4b3874e893a5020f462bc8e9a6b6f2d1cb0a2f3f397966af1ebca8cc741e82",
+    "videos/computer-movement-studies-02/03-laptop-typing/snapshots/frame-01-at-1.7s.png": "e6aa4b17f9cab9b43c116c39096d207a893c3e128d66d311d00a36ad7407b57c",
+    "videos/computer-movement-studies-02/03-laptop-typing/snapshots/frame-04-at-5.7s.png": "d312b4a5089d7823e1512a4c62d32865e61c7228dbd97263694a099257af69e2",
+    "videos/computer-movement-studies-02/03-laptop-typing/assets/03-laptop-typing.mp4": "879a7487c5ddf73fe242c7511c79f66e2b9cbd22bf957c1d689a97b8d825d44f"
+  }
+}

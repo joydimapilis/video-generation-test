@@ -1,0 +1,23 @@
+{
+  "library": "/Users/joydimapilis/Desktop/untitled folder/Startup Launch Videos",
+  "review_method": "Both source videos fully decoded; actual source footage inspected chronologically via 1 fps sequences spanning entire duration and 4 fps samples through selected joins. Sampled motion review, not uninterrupted audiovisual playback. Contact sheets are supporting evidence. Audio unassessed.",
+  "phase2_used": false,
+  "references": [
+    {
+      "source": "/Users/joydimapilis/Desktop/untitled folder/Startup Launch Videos/Motion-5-Motion plans the video scene by scene before building it..mp4",
+      "footage_reviewed": true,
+      "relevance": "A request-to-work-to-result narrative closely fits the campaign transformation.",
+      "pacing": "0\u201310s mascot and logo; 11\u201314s task interface and sent request; 15\u201321s reply expands; 23\u201327s multiple task surfaces; 28\u201330s summary; 31\u201332s brand. Dense 13\u201316s samples show request arriving before response.",
+      "techniques": "One stable input anchors expanding work; the result receives its own close view.",
+      "application": "Keep the same Relay brief visible in the setup; reveal campaign outputs sequentially and end on the complete set."
+    },
+    {
+      "source": "/Users/joydimapilis/Desktop/untitled folder/Startup Launch Videos/Paper.mp4",
+      "footage_reviewed": true,
+      "relevance": "Readable product interaction and distinct output surfaces support a typographic campaign demo.",
+      "pacing": "0\u20132s identity to app; 3\u20136s title and tabs; 6\u20139s cursor on plus then close crop of a typed tab title; 10\u201316s concurrent tabs; 17\u201323s produced designs; 27\u201329s call to action; 30\u201332s brand.",
+      "techniques": "Focus moves to the active control, followed by a calm reading hold; output detail precedes overview.",
+      "application": "Show the landing page full-size before reducing it into the completed campaign; keep large text and deliberate reading holds."
+    }
+  ]
+}

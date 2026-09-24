@@ -1,0 +1,24 @@
+{
+  "id": "sideway_arrival_pocket_settle_v5",
+  "decision": "selected_segment",
+  "scores": {
+    "prompt_adherence": 7,
+    "sampled_stability": 8,
+    "composition": 8,
+    "edit_readiness": 7,
+    "human_realism": 7,
+    "face_realism": 6,
+    "identity_consistency": 7,
+    "camera_movement": 9
+  },
+  "review": "First 3.0625s selected only for the targeted hand revision: fingers finish entering outer hip pocket and remain supported; no splayed hand across front of trousers. Gaze stays down without V4 camera-directed lift, cup grip maintained. Head bows a little further and subtle mouth/eyelid changes remain, so this is not an across-the-board face-realism approval. Later source footage is retained but unused.",
+  "review_method": "Full decode; chronological 4fps full-body sheets and 8fps face/cup detail sheets over full take. Exact source frame inspected. Subjective sampled assessment, not uninterrupted playback.",
+  "subjective_scores": true,
+  "selected_source_range": [
+    0,
+    3.0625
+  ],
+  "motion_reference_video_uploaded": false,
+  "causal_reference_benefit": null,
+  "lip_sync": null
+}

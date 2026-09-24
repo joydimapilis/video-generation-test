@@ -3,6 +3,8 @@
 Every assertion here is a delivery gate: wrong codec, wrong size, a decode error,
 a silent or clipped audio window, or a ledger over cap all stop publication.
 """
+from amarillo.delivery import require_reverse_engineering
+
 import hashlib
 import json
 import shutil
@@ -23,6 +25,7 @@ def main():
     video = ROOT / 'orrin-final.mp4'
     shutil.copyfile(SOURCE, video)
 
+    require_reverse_engineering(video)
     probe = json.loads(subprocess.check_output(
         ['ffprobe', '-v', 'error', '-show_streams', '-show_format', '-of', 'json', str(video)]))
     picture = next(s for s in probe['streams'] if s['codec_type'] == 'video')

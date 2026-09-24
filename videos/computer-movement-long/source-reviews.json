@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "sample": "01",
+      "file": "artifacts/library-loop-computer-movement-studies-02/source-images/01-desktop-typing-v2.png",
+      "sha256": "f350ac3c82895907cd79345d93fbfe415654c8057fb918e43482810a62ecef31",
+      "original_image_model": "fal-ai/nano-banana-pro",
+      "reviewed_before_this_animation": true,
+      "decision": "reuse",
+      "review": "Existing generated still re-inspected at full size. Face/eye target, natural skin/clothing, visible hand contact and support are suitable starting constraints. Desktop uses keyboard navigation because no mouse exists in still; mouse hand transfer and laptop trackpad transfer remain animation risks.",
+      "prior_image_provenance": "review_notes/computer-movement-studies-02-generation-audit.json"
+    },
+    {
+      "sample": "02",
+      "file": "artifacts/library-loop-computer-movement-studies-02/source-images/02-mouse-work.png",
+      "sha256": "08434a07e8d353ae95b87aa899343d0079bb2d460d69a0ba7310d82b294b546c",
+      "original_image_model": "fal-ai/nano-banana-pro",
+      "reviewed_before_this_animation": true,
+      "decision": "reuse",
+      "review": "Existing generated still re-inspected at full size. Face/eye target, natural skin/clothing, visible hand contact and support are suitable starting constraints. Desktop uses keyboard navigation because no mouse exists in still; mouse hand transfer and laptop trackpad transfer remain animation risks.",
+      "prior_image_provenance": "review_notes/computer-movement-studies-02-generation-audit.json"
+    },
+    {
+      "sample": "03",
+      "file": "artifacts/library-loop-computer-movement-studies-02/source-images/03-laptop-typing.png",
+      "sha256": "a7372c80e86fc20a9ba737303ef58f9808da1ac20e892fa26fe92d09e0f9741f",
+      "original_image_model": "fal-ai/nano-banana-pro",
+      "reviewed_before_this_animation": true,
+      "decision": "reuse",
+      "review": "Existing generated still re-inspected at full size. Face/eye target, natural skin/clothing, visible hand contact and support are suitable starting constraints. Desktop uses keyboard navigation because no mouse exists in still; mouse hand transfer and laptop trackpad transfer remain animation risks.",
+      "prior_image_provenance": "review_notes/computer-movement-studies-02-generation-audit.json"
+    }
+  ]
+}
