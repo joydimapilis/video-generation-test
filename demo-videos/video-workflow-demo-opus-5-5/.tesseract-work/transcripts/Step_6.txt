@@ -1,0 +1,3 @@
+For every finished video, the system creates its own reverse engineering document.
+This records how the video was made, including the prompts, structure, methods used, revisions, and key learnings.
+The workflow also checks that this file exists before the video can be marked complete.

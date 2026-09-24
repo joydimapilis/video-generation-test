@@ -1,0 +1,247 @@
+{
+ "service": "ElevenLabs",
+ "voice_id": "hpp4J3VqNfWAUOO0d1Us",
+ "voice": "Bella - Professional, Bright, Warm",
+ "model": "eleven_multilingual_v2",
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.75,
+  "style": 0.0,
+  "use_speaker_boost": true,
+  "speed": 1.0
+ },
+ "output_format": "mp3_44100_128",
+ "context": "previous_text/next_text = rest of the chapter",
+ "sentences": [
+  {
+   "key": "V1",
+   "idx": 1,
+   "text": "Hi everyone.",
+   "said": "Hi everyone.",
+   "file": "Assets/AI-Voice/sentences/V1-1.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V1-1.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V1-1.json",
+   "duration": 1.068
+  },
+  {
+   "key": "V1",
+   "idx": 2,
+   "text": "I built a system that takes a video idea, plans and generates the shots, reviews the results, and turns everything into a finished video.",
+   "said": "I built a system that takes a video idea, plans and generates the shots, reviews the results, and turns everything into a finished video.",
+   "file": "Assets/AI-Voice/sentences/V1-2.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V1-2.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V1-2.json",
+   "duration": 9.334
+  },
+  {
+   "key": "V1",
+   "idx": 3,
+   "text": "For this demo, I'll quickly show you the process and the final output.",
+   "said": "For this demo, I'll quickly show you the process and the final output.",
+   "file": "Assets/AI-Voice/sentences/V1-3.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V1-3.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V1-3.json",
+   "duration": 4.18
+  },
+  {
+   "key": "V2",
+   "idx": 1,
+   "text": "The process starts with a simple request.",
+   "said": "The process starts with a simple request.",
+   "file": "Assets/AI-Voice/sentences/V2-1.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V2-1.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V2-1.json",
+   "duration": 2.694
+  },
+  {
+   "key": "V2",
+   "idx": 2,
+   "text": "Instead of giving Conductor a long prompt every time, I moved the recurring instructions into the workflow.",
+   "said": "Instead of giving Conductor a long prompt every time, I moved the recurring instructions into the workflow.",
+   "file": "Assets/AI-Voice/sentences/V2-2.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V2-2.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V2-2.json",
+   "duration": 6.873
+  },
+  {
+   "key": "V2",
+   "idx": 3,
+   "text": "Now I can give it a short request, and the system handles the rest of the process.",
+   "said": "Now I can give it a short request, and the system handles the rest of the process.",
+   "file": "Assets/AI-Voice/sentences/V2-3.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V2-3.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V2-3.json",
+   "duration": 4.783
+  },
+  {
+   "key": "V3",
+   "idx": 1,
+   "text": "The first thing the system does is look at this existing video library.",
+   "said": "The first thing the system does is look at this existing video library.",
+   "file": "Assets/AI-Voice/sentences/V3-1.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V3-1.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V3-1.json",
+   "duration": 4.319
+  },
+  {
+   "key": "V3",
+   "idx": 2,
+   "text": "This library gives the system examples of different video styles, pacing, transitions, and storytelling.",
+   "said": "This library gives the system examples of different video styles, pacing, transitions, and storytelling.",
+   "file": "Assets/AI-Voice/sentences/V3-2.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V3-2.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V3-2.json",
+   "duration": 7.57
+  },
+  {
+   "key": "V3",
+   "idx": 3,
+   "text": "It uses those references as inspiration to plan a new video, rather than copying one directly.",
+   "said": "It uses those references as inspiration to plan a new video, rather than copying one directly.",
+   "file": "Assets/AI-Voice/sentences/V3-3.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V3-3.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V3-3.json",
+   "duration": 6.223
+  },
+  {
+   "key": "V4a",
+   "idx": 1,
+   "text": "After reviewing the references, the system breaks the idea into individual shots.",
+   "said": "After reviewing the references, the system breaks the idea into individual shots.",
+   "file": "Assets/AI-Voice/sentences/V4a-1.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V4a-1.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V4a-1.json",
+   "duration": 5.062
+  },
+  {
+   "key": "V4a",
+   "idx": 2,
+   "text": "For this video, it created four shots with their own purpose, timing, copy, and visual direction.",
+   "said": "For this video, it created four shots with their own purpose, timing, copy, and visual direction.",
+   "file": "Assets/AI-Voice/sentences/V4a-2.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V4a-2.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V4a-2.json",
+   "duration": 6.734
+  },
+  {
+   "key": "V4b",
+   "idx": 1,
+   "text": "Here, I'm showing three of them: the initial brief, the campaign idea, and how that idea expands into different marketing assets.",
+   "said": "Here, I'm showing three of them: the initial brief, the campaign idea, and how that idea expands into different marketing assets.",
+   "file": "Assets/AI-Voice/sentences/V4b-1.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V4b-1.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V4b-1.json",
+   "duration": 7.802
+  },
+  {
+   "key": "V4b",
+   "idx": 2,
+   "text": "For this project, the system chose HyperFrames because the video needed precise text, UI, and layout instead of generative footage.",
+   "said": "For this project, the system chose HyperFrames because the video needed precise text, UI, and layout instead of generative footage.",
+   "file": "Assets/AI-Voice/sentences/V4b-2.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V4b-2.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V4b-2.json",
+   "duration": 8.22
+  },
+  {
+   "key": "V4c",
+   "idx": 1,
+   "text": "For other videos, it can use models available through Fal when the shot needs things like cinematic movement or generated footage.",
+   "said": "For other videos, it can use models available through Fal when the shot needs things like cinematic movement or generated footage.",
+   "file": "Assets/AI-Voice/sentences/V4c-1.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V4c-1.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V4c-1.json",
+   "duration": 7.663
+  },
+  {
+   "key": "V4c",
+   "idx": 2,
+   "text": "The idea is to choose the method that best fits the shot, instead of using the same model for everything.",
+   "said": "The idea is to choose the method that best fits the shot, instead of using the same model for everything.",
+   "file": "Assets/AI-Voice/sentences/V4c-2.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V4c-2.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V4c-2.json",
+   "duration": 6.223
+  },
+  {
+   "key": "V5",
+   "idx": 1,
+   "text": "Once the individual shots are ready, they're combined into the final video.",
+   "said": "Once the individual shots are ready, they're combined into the final video.",
+   "file": "Assets/AI-Voice/sentences/V5-1.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V5-1.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V5-1.json",
+   "duration": 4.412
+  },
+  {
+   "key": "V5",
+   "idx": 2,
+   "text": "The workflow then checks things like timing, transitions, audio, and the final output before considering the video complete.",
+   "said": "The workflow then checks things like timing, transitions, audio, and the final output before considering the video complete.",
+   "file": "Assets/AI-Voice/sentences/V5-2.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V5-2.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V5-2.json",
+   "duration": 7.245
+  },
+  {
+   "key": "V6",
+   "idx": 1,
+   "text": "For every finished video, the system creates its own reverse-engineering document.",
+   "said": "For every finished video, the system creates its own reverse-engineering document.",
+   "file": "Assets/AI-Voice/sentences/V6-1.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V6-1.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V6-1.json",
+   "duration": 5.155
+  },
+  {
+   "key": "V6",
+   "idx": 2,
+   "text": "This records how the video was made, including the prompts, structure, methods used, revisions, and key learnings.",
+   "said": "This records how the video was made, including the prompts, structure, methods used, revisions, and key learnings.",
+   "file": "Assets/AI-Voice/sentences/V6-2.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V6-2.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V6-2.json",
+   "duration": 8.406
+  },
+  {
+   "key": "V6",
+   "idx": 3,
+   "text": "The workflow also checks that this file exists before the video can be marked complete.",
+   "said": "The workflow also checks that this file exists before the video can be marked complete.",
+   "file": "Assets/AI-Voice/sentences/V6-3.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V6-3.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V6-3.json",
+   "duration": 5.201
+  },
+  {
+   "key": "V7",
+   "idx": 1,
+   "text": "And this is the final video produced through that workflow.",
+   "said": "And this is the final video produced through that workflow.",
+   "file": "Assets/AI-Voice/sentences/V7-1.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V7-1.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V7-1.json",
+   "duration": 3.297
+  },
+  {
+   "key": "V8",
+   "idx": 1,
+   "text": "The next phase I'm working on is human realism, especially improving natural movement, hands, eye direction, and longer scenes with people.",
+   "said": "The next phase I'm working on is human realism, especially improving natural movement, hands, eye direction, and longer scenes with people.",
+   "file": "Assets/AI-Voice/sentences/V8-1.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V8-1.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V8-1.json",
+   "duration": 8.777
+  },
+  {
+   "key": "V8",
+   "idx": 2,
+   "text": "I'm keeping that research separate for now while I continue testing and improving it.",
+   "said": "I'm keeping that research separate for now while I continue testing and improving it.",
+   "file": "Assets/AI-Voice/sentences/V8-2.wav",
+   "mp3": "Assets/AI-Voice/elevenlabs-mp3/V8-2.mp3",
+   "alignment": "Assets/AI-Voice/alignment/V8-2.json",
+   "duration": 4.598
+  }
+ ]
+}

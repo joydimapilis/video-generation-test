@@ -1,0 +1,59 @@
+{
+ "captions": [
+  {
+   "startMs": 450,
+   "endMs": 2020,
+   "text": "For every finished video,"
+  },
+  {
+   "startMs": 2020,
+   "endMs": 3250,
+   "text": "the system creates its own"
+  },
+  {
+   "startMs": 3250,
+   "endMs": 5150,
+   "text": "reverse-engineering document."
+  },
+  {
+   "startMs": 5240,
+   "endMs": 7880,
+   "text": "This records how the video was made,"
+  },
+  {
+   "startMs": 7880,
+   "endMs": 9190,
+   "text": "including the prompts,"
+  },
+  {
+   "startMs": 9190,
+   "endMs": 11100,
+   "text": "structure, methods used,"
+  },
+  {
+   "startMs": 11100,
+   "endMs": 13120,
+   "text": "revisions, and key learnings."
+  },
+  {
+   "startMs": 13160,
+   "endMs": 14580,
+   "text": "The workflow also checks"
+  },
+  {
+   "startMs": 14580,
+   "endMs": 16060,
+   "text": "that this file exists"
+  },
+  {
+   "startMs": 16060,
+   "endMs": 17180,
+   "text": "before the video"
+  },
+  {
+   "startMs": 17180,
+   "endMs": 18900,
+   "text": "can be marked complete."
+  }
+ ]
+}

@@ -1,0 +1,275 @@
+1
+00:00:00,450 --> 00:00:01,200
+Hi everyone.
+
+2
+00:00:01,200 --> 00:00:03,900
+I built a system that takes a video idea,
+
+3
+00:00:03,900 --> 00:00:05,950
+plans and generates the shots,
+
+4
+00:00:05,950 --> 00:00:07,000
+reviews the results,
+
+5
+00:00:07,000 --> 00:00:09,600
+and turns everything into a finished video.
+
+6
+00:00:09,950 --> 00:00:11,850
+For this demo, I'll quickly show you
+
+7
+00:00:11,850 --> 00:00:13,100
+the process and the final output.
+
+8
+00:00:13,700 --> 00:00:16,150
+The process starts with a simple request.
+
+9
+00:00:16,350 --> 00:00:17,950
+Instead of giving Conductor
+
+10
+00:00:17,950 --> 00:00:19,200
+a long prompt every time,
+
+11
+00:00:19,200 --> 00:00:21,000
+I moved the recurring instructions
+
+12
+00:00:21,000 --> 00:00:22,100
+into the workflow.
+
+13
+00:00:22,550 --> 00:00:24,400
+Now I can give it a short request,
+
+14
+00:00:24,400 --> 00:00:26,850
+and the system handles the rest of the process.
+
+15
+00:00:28,150 --> 00:00:30,600
+The first thing the system does
+
+16
+00:00:30,600 --> 00:00:32,300
+is look at this existing video library.
+
+17
+00:00:32,450 --> 00:00:34,600
+This library gives the system examples
+
+18
+00:00:34,600 --> 00:00:36,350
+of different video styles,
+
+19
+00:00:36,350 --> 00:00:38,750
+pacing, transitions, and storytelling.
+
+20
+00:00:39,250 --> 00:00:41,400
+It uses those references as inspiration
+
+21
+00:00:41,400 --> 00:00:42,600
+to plan a new video,
+
+22
+00:00:42,600 --> 00:00:44,450
+rather than copying one directly.
+
+23
+00:00:45,200 --> 00:00:47,000
+After reviewing the references,
+
+24
+00:00:47,000 --> 00:00:50,200
+the system breaks the idea into individual shots.
+
+25
+00:00:50,400 --> 00:00:52,450
+For this video, it created four shots
+
+26
+00:00:52,450 --> 00:00:54,400
+with their own purpose, timing,
+
+27
+00:00:54,400 --> 00:00:56,400
+copy, and visual direction.
+
+28
+00:00:56,800 --> 00:00:58,850
+Here, I am showing three of them:
+
+29
+00:00:58,850 --> 00:01:00,000
+the initial brief,
+
+30
+00:01:00,000 --> 00:01:01,150
+the campaign idea,
+
+31
+00:01:01,150 --> 00:01:02,800
+and how that idea expands
+
+32
+00:01:02,800 --> 00:01:05,050
+into different marketing assets.
+
+33
+00:01:05,550 --> 00:01:08,350
+For this project, the system chose HyperFrames
+
+34
+00:01:08,350 --> 00:01:09,800
+because the video needed
+
+35
+00:01:09,800 --> 00:01:12,000
+precise text, UI, and layout
+
+36
+00:01:12,000 --> 00:01:14,300
+instead of generative footage.
+
+37
+00:01:14,600 --> 00:01:16,900
+For other videos, it can use models
+
+38
+00:01:16,900 --> 00:01:18,150
+available through Fal
+
+39
+00:01:18,150 --> 00:01:20,050
+when the shot needs things like
+
+40
+00:01:20,050 --> 00:01:22,600
+cinematic movement or generated footage.
+
+41
+00:01:23,050 --> 00:01:24,850
+The idea is to choose the method
+
+42
+00:01:24,850 --> 00:01:26,100
+that best fits the shot,
+
+43
+00:01:26,100 --> 00:01:27,800
+instead of using the same model
+
+44
+00:01:27,800 --> 00:01:28,800
+for everything.
+
+45
+00:01:29,300 --> 00:01:31,300
+Once the individual shots are ready,
+
+46
+00:01:31,300 --> 00:01:34,000
+they're combined into the final video.
+
+47
+00:01:34,100 --> 00:01:36,400
+The workflow then checks things like
+
+48
+00:01:36,400 --> 00:01:38,000
+timing, transitions, audio,
+
+49
+00:01:38,000 --> 00:01:39,700
+and the final output
+
+50
+00:01:39,700 --> 00:01:42,000
+before considering the video complete.
+
+51
+00:01:42,500 --> 00:01:44,100
+For every finished video,
+
+52
+00:01:44,100 --> 00:01:45,400
+the system creates its own
+
+53
+00:01:45,400 --> 00:01:47,100
+reverse-engineering document.
+
+54
+00:01:47,500 --> 00:01:50,050
+This records how the video was made,
+
+55
+00:01:50,050 --> 00:01:52,650
+including the prompts, structure,
+
+56
+00:01:52,650 --> 00:01:54,100
+methods used, revisions,
+
+57
+00:01:54,100 --> 00:01:55,450
+and key learnings.
+
+58
+00:01:55,800 --> 00:01:57,300
+The workflow also checks
+
+59
+00:01:57,300 --> 00:01:58,550
+that this file exists
+
+60
+00:01:58,550 --> 00:02:01,050
+before the video can be marked complete.
+
+61
+00:02:01,650 --> 00:02:03,250
+And this is the final video
+
+62
+00:02:03,250 --> 00:02:05,250
+produced through that workflow.
+
+63
+00:02:42,450 --> 00:02:44,550
+The next phase I'm working on
+
+64
+00:02:44,550 --> 00:02:45,750
+is making people look
+
+65
+00:02:45,750 --> 00:02:47,150
+and move more naturally,
+
+66
+00:02:47,150 --> 00:02:48,600
+especially their hands,
+
+67
+00:02:48,600 --> 00:02:50,400
+eye movement, and longer scenes.
+
+68
+00:02:51,050 --> 00:02:53,150
+I'm keeping that research separate for now
+
+69
+00:02:53,150 --> 00:02:55,500
+while I continue testing and improving it.

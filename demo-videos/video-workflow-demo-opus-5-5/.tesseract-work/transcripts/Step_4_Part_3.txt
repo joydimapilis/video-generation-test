@@ -1,0 +1,7 @@
+Next, the system decides how its shot should be created.
+For this video, the shots needed precise text, UI and layout so the system chose hyperframes
+instead of a generated video model.
+For other videos, it can use models available through file when the shot needs things like
+cinematic movement or generated footage.
+The idea is to choose the method that best fits the shot instead of using the same model
+for everything.

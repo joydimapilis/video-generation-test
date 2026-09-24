@@ -1,0 +1,43 @@
+1
+00:00:00,450 --> 00:00:02,020
+For every finished video,
+
+2
+00:00:02,020 --> 00:00:03,250
+the system creates its own
+
+3
+00:00:03,250 --> 00:00:05,150
+reverse-engineering document.
+
+4
+00:00:05,240 --> 00:00:07,880
+This records how the video was made,
+
+5
+00:00:07,880 --> 00:00:09,190
+including the prompts,
+
+6
+00:00:09,190 --> 00:00:11,100
+structure, methods used,
+
+7
+00:00:11,100 --> 00:00:13,120
+revisions, and key learnings.
+
+8
+00:00:13,160 --> 00:00:14,580
+The workflow also checks
+
+9
+00:00:14,580 --> 00:00:16,060
+that this file exists
+
+10
+00:00:16,060 --> 00:00:17,180
+before the video
+
+11
+00:00:17,180 --> 00:00:18,900
+can be marked complete.

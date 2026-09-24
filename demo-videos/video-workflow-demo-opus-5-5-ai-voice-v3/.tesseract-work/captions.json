@@ -1,0 +1,349 @@
+{
+ "captions": [
+  {
+   "startMs": 430,
+   "endMs": 1410,
+   "text": "Hi everyone."
+  },
+  {
+   "startMs": 1410,
+   "endMs": 3917,
+   "text": "I built a system that takes a video idea,"
+  },
+  {
+   "startMs": 3917,
+   "endMs": 6147,
+   "text": "plans and generates the shots,"
+  },
+  {
+   "startMs": 6147,
+   "endMs": 7505,
+   "text": "reviews the results,"
+  },
+  {
+   "startMs": 7505,
+   "endMs": 10240,
+   "text": "and turns everything into a finished video."
+  },
+  {
+   "startMs": 10240,
+   "endMs": 12132,
+   "text": "For this demo, I'll quickly show you"
+  },
+  {
+   "startMs": 12132,
+   "endMs": 14810,
+   "text": "the process and the final output."
+  },
+  {
+   "startMs": 14810,
+   "endMs": 17380,
+   "text": "The process starts with a simple request."
+  },
+  {
+   "startMs": 17380,
+   "endMs": 18658,
+   "text": "Instead of giving Conductor"
+  },
+  {
+   "startMs": 18658,
+   "endMs": 20644,
+   "text": "a long prompt every time,"
+  },
+  {
+   "startMs": 20644,
+   "endMs": 22629,
+   "text": "I moved the recurring instructions"
+  },
+  {
+   "startMs": 22629,
+   "endMs": 23891,
+   "text": "into the workflow."
+  },
+  {
+   "startMs": 24620,
+   "endMs": 26653,
+   "text": "Now I can give it a short request,"
+  },
+  {
+   "startMs": 26653,
+   "endMs": 29448,
+   "text": "and the system handles the rest of the process."
+  },
+  {
+   "startMs": 30480,
+   "endMs": 32001,
+   "text": "The first thing the system does"
+  },
+  {
+   "startMs": 32001,
+   "endMs": 34740,
+   "text": "is look at this existing video library."
+  },
+  {
+   "startMs": 34740,
+   "endMs": 36883,
+   "text": "This library gives the system examples"
+  },
+  {
+   "startMs": 36883,
+   "endMs": 38740,
+   "text": "of different video styles,"
+  },
+  {
+   "startMs": 38740,
+   "endMs": 42000,
+   "text": "pacing, transitions, and storytelling."
+  },
+  {
+   "startMs": 42000,
+   "endMs": 44380,
+   "text": "It uses those references as inspiration"
+  },
+  {
+   "startMs": 44380,
+   "endMs": 45935,
+   "text": "to plan a new video,"
+  },
+  {
+   "startMs": 45935,
+   "endMs": 48610,
+   "text": "rather than copying one directly."
+  },
+  {
+   "startMs": 48610,
+   "endMs": 50146,
+   "text": "After reviewing the references,"
+  },
+  {
+   "startMs": 50146,
+   "endMs": 53670,
+   "text": "the system breaks the idea into individual shots."
+  },
+  {
+   "startMs": 53670,
+   "endMs": 55720,
+   "text": "For this video, it created four shots"
+  },
+  {
+   "startMs": 55720,
+   "endMs": 58019,
+   "text": "with their own purpose, timing,"
+  },
+  {
+   "startMs": 58019,
+   "endMs": 60640,
+   "text": "copy, and visual direction."
+  },
+  {
+   "startMs": 60640,
+   "endMs": 62716,
+   "text": "Here, I'm showing three of them:"
+  },
+  {
+   "startMs": 62716,
+   "endMs": 63645,
+   "text": "the initial brief,"
+  },
+  {
+   "startMs": 63645,
+   "endMs": 64655,
+   "text": "the campaign idea,"
+  },
+  {
+   "startMs": 64655,
+   "endMs": 66222,
+   "text": "and how that idea expands"
+  },
+  {
+   "startMs": 66222,
+   "endMs": 68550,
+   "text": "into different marketing assets."
+  },
+  {
+   "startMs": 68550,
+   "endMs": 71076,
+   "text": "For this project, the system chose HyperFrames"
+  },
+  {
+   "startMs": 71076,
+   "endMs": 72225,
+   "text": "because the video needed"
+  },
+  {
+   "startMs": 72225,
+   "endMs": 74954,
+   "text": "precise text, UI, and layout"
+  },
+  {
+   "startMs": 74954,
+   "endMs": 77000,
+   "text": "instead of generative footage."
+  },
+  {
+   "startMs": 77000,
+   "endMs": 78854,
+   "text": "For other videos, it can use models"
+  },
+  {
+   "startMs": 78854,
+   "endMs": 80050,
+   "text": "available through Fal"
+  },
+  {
+   "startMs": 80050,
+   "endMs": 81559,
+   "text": "when the shot needs things like"
+  },
+  {
+   "startMs": 81559,
+   "endMs": 84390,
+   "text": "cinematic movement or generated footage."
+  },
+  {
+   "startMs": 84390,
+   "endMs": 86093,
+   "text": "The idea is to choose the method"
+  },
+  {
+   "startMs": 86093,
+   "endMs": 87869,
+   "text": "that best fits the shot,"
+  },
+  {
+   "startMs": 87869,
+   "endMs": 89518,
+   "text": "instead of using the same model"
+  },
+  {
+   "startMs": 89518,
+   "endMs": 90950,
+   "text": "for everything."
+  },
+  {
+   "startMs": 90950,
+   "endMs": 92832,
+   "text": "Once the individual shots are ready,"
+  },
+  {
+   "startMs": 92832,
+   "endMs": 95180,
+   "text": "they're combined into the final video."
+  },
+  {
+   "startMs": 95180,
+   "endMs": 96729,
+   "text": "The workflow then checks things like"
+  },
+  {
+   "startMs": 96729,
+   "endMs": 98981,
+   "text": "timing, transitions, audio,"
+  },
+  {
+   "startMs": 98981,
+   "endMs": 100200,
+   "text": "and the final output"
+  },
+  {
+   "startMs": 100200,
+   "endMs": 102426,
+   "text": "before considering the video complete."
+  },
+  {
+   "startMs": 103000,
+   "endMs": 104474,
+   "text": "For every finished video,"
+  },
+  {
+   "startMs": 104474,
+   "endMs": 105902,
+   "text": "the system creates its own"
+  },
+  {
+   "startMs": 105902,
+   "endMs": 107870,
+   "text": "reverse-engineering document."
+  },
+  {
+   "startMs": 107870,
+   "endMs": 109905,
+   "text": "This records how the video was made,"
+  },
+  {
+   "startMs": 109905,
+   "endMs": 112157,
+   "text": "including the prompts, structure,"
+  },
+  {
+   "startMs": 112157,
+   "endMs": 114212,
+   "text": "methods used, revisions,"
+  },
+  {
+   "startMs": 114212,
+   "endMs": 115765,
+   "text": "and key learnings."
+  },
+  {
+   "startMs": 116450,
+   "endMs": 117738,
+   "text": "The workflow also checks"
+  },
+  {
+   "startMs": 117738,
+   "endMs": 119132,
+   "text": "that this file exists"
+  },
+  {
+   "startMs": 119132,
+   "endMs": 122010,
+   "text": "before the video can be marked complete."
+  },
+  {
+   "startMs": 122010,
+   "endMs": 123471,
+   "text": "And this is the final video"
+  },
+  {
+   "startMs": 123471,
+   "endMs": 125290,
+   "text": "produced through that workflow."
+  },
+  {
+   "startMs": 162387,
+   "endMs": 163752,
+   "text": "The next phase I'm working on"
+  },
+  {
+   "startMs": 163752,
+   "endMs": 165180,
+   "text": "is human realism,"
+  },
+  {
+   "startMs": 165180,
+   "endMs": 167455,
+   "text": "especially improving natural movement,"
+  },
+  {
+   "startMs": 167455,
+   "endMs": 168872,
+   "text": "hands, eye direction,"
+  },
+  {
+   "startMs": 168872,
+   "endMs": 170767,
+   "text": "and longer scenes with people."
+  },
+  {
+   "startMs": 170767,
+   "endMs": 172838,
+   "text": "I'm keeping that research separate for now"
+  },
+  {
+   "startMs": 172838,
+   "endMs": 175367,
+   "text": "while I continue testing and improving it."
+  }
+ ]
+}

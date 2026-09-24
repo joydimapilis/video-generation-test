@@ -1,0 +1,8 @@
+# Large media stays local: many files exceed GitHub's 100 MB limit and the set
+# totals ~10 GB. MEDIA_MANIFEST.md lists every excluded file with its checksum.
+*.mov
+*.mp4
+*.tsrct
+
+__pycache__/
+*.pyc

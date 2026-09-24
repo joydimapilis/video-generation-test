@@ -1,0 +1,16 @@
+{
+  "path": "/Users/joydimapilis/conductor/workspaces/video-generation-test/reykjavik/save-the-learnings-opus-5-5/.tesseract-work/draft-v3.mp4",
+  "audio_stream": "first audio stream",
+  "integrated_lufs": -16.42,
+  "true_peak_dbtp": -1.63,
+  "loudness_range_lu": 21.0,
+  "working_target": {
+    "integrated_lufs": [
+      -16,
+      -14
+    ],
+    "true_peak_max_dbtp": -1
+  },
+  "within_working_target": false,
+  "note": "Measurement only. Targets are a social-edit starting point, not a platform guarantee. Listen to the mix; silence/very short cues may not have meaningful integrated loudness."
+}

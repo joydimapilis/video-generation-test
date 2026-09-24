@@ -1,0 +1,10 @@
+{
+  "expected_source_start_seconds": 2.05,
+  "best_audio_offset_samples_16khz": -341,
+  "best_audio_offset_ms": -21.3125,
+  "correlation": 0.9965645155934645,
+  "source_samples": 320000,
+  "export_samples": 319147,
+  "export_clipped_16bit_samples": 0,
+  "note": "Numerical comparison supports preserved speech and timing; it is not an auditory quality assessment."
+}

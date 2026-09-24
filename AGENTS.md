@@ -130,3 +130,9 @@ new production.
   Deliver a clickable final MP4 path, editable project path, cost summary, and any
   material limitations. Do not stop at a plan, storyboard, preview, or loose shots
   when the user requested a finished video.
+
+## Demo Videos workspace
+
+`demo-videos/` is a separate Tesseract editing workspace for the product demo
+videos. For any work inside it, follow `demo-videos/AGENTS.md` instead of the
+Amarillo production defaults above.

@@ -1,0 +1,3 @@
+Hi everyone, I built a system that takes a video idea of plans and generates the shots,
+reviews the results and turns everything into a finished video.
+For this demo, I'll quickly show you the process in the final output.

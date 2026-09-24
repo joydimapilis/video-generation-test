@@ -1,0 +1,683 @@
+{
+  "$schema": "https://jerboa.dev/schemas/fx-composition/editable/v1/document.schema.json",
+  "formatVersion": 1,
+  "dimensions": {
+    "width": 1920,
+    "height": 1080
+  },
+  "duration": 3.0,
+  "composition": {
+    "dynamics": {
+      "entries": [
+        {
+          "animator": {
+            "enabled": true,
+            "keyframes": [
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "3-positionX-0",
+                "layerTime": 0,
+                "value": {
+                  "type": "float",
+                  "value": 160.0
+                }
+              },
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "3-positionX-1500",
+                "layerTime": 1500,
+                "value": {
+                  "type": "float",
+                  "value": 1716.0
+                }
+              },
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "3-positionX-2300",
+                "layerTime": 2300,
+                "value": {
+                  "type": "float",
+                  "value": 1716.0
+                }
+              },
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "3-positionX-2967",
+                "layerTime": 2967,
+                "value": {
+                  "type": "float",
+                  "value": 160.0
+                }
+              }
+            ],
+            "type": "keyframes"
+          },
+          "target": {
+            "kind": "layer",
+            "layerId": 3,
+            "propertyType": "positionX"
+          }
+        },
+        {
+          "animator": {
+            "enabled": true,
+            "keyframes": [
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "4-positionY-0",
+                "layerTime": 0,
+                "value": {
+                  "type": "float",
+                  "value": 365.0
+                }
+              },
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "4-positionY-600",
+                "layerTime": 600,
+                "value": {
+                  "type": "float",
+                  "value": 320.0
+                }
+              },
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "4-positionY-2400",
+                "layerTime": 2400,
+                "value": {
+                  "type": "float",
+                  "value": 320.0
+                }
+              },
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "4-positionY-2967",
+                "layerTime": 2967,
+                "value": {
+                  "type": "float",
+                  "value": 300.0
+                }
+              }
+            ],
+            "type": "keyframes"
+          },
+          "target": {
+            "kind": "layer",
+            "layerId": 4,
+            "propertyType": "positionY"
+          }
+        },
+        {
+          "animator": {
+            "enabled": true,
+            "keyframes": [
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "4-opacity-0",
+                "layerTime": 0,
+                "value": {
+                  "type": "float",
+                  "value": 0.0
+                }
+              },
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "4-opacity-500",
+                "layerTime": 500,
+                "value": {
+                  "type": "float",
+                  "value": 100.0
+                }
+              },
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "4-opacity-2400",
+                "layerTime": 2400,
+                "value": {
+                  "type": "float",
+                  "value": 100.0
+                }
+              },
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "4-opacity-2967",
+                "layerTime": 2967,
+                "value": {
+                  "type": "float",
+                  "value": 0.0
+                }
+              }
+            ],
+            "type": "keyframes"
+          },
+          "target": {
+            "kind": "layer",
+            "layerId": 4,
+            "propertyType": "opacity"
+          }
+        },
+        {
+          "animator": {
+            "enabled": true,
+            "keyframes": [
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "5-opacity-0",
+                "layerTime": 0,
+                "value": {
+                  "type": "float",
+                  "value": 0.0
+                }
+              },
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "5-opacity-250",
+                "layerTime": 250,
+                "value": {
+                  "type": "float",
+                  "value": 0.0
+                }
+              },
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "5-opacity-750",
+                "layerTime": 750,
+                "value": {
+                  "type": "float",
+                  "value": 100.0
+                }
+              },
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "5-opacity-2400",
+                "layerTime": 2400,
+                "value": {
+                  "type": "float",
+                  "value": 100.0
+                }
+              },
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.2,
+                  "x2": 0.2,
+                  "y1": 0.0,
+                  "y2": 1.0
+                },
+                "id": "5-opacity-2967",
+                "layerTime": 2967,
+                "value": {
+                  "type": "float",
+                  "value": 0.0
+                }
+              }
+            ],
+            "type": "keyframes"
+          },
+          "target": {
+            "kind": "layer",
+            "layerId": 5,
+            "propertyType": "opacity"
+          }
+        }
+      ]
+    },
+    "id": "main",
+    "layers": [
+      {
+        "activeRange": {
+          "duration": 3000,
+          "start": 0
+        },
+        "blendMode": "normal",
+        "id": 6,
+        "name": "REYKJAVIK  /  WORKSPACE PREVIEW",
+        "sourceText": {
+          "allCaps": false,
+          "applyFill": true,
+          "applyStroke": false,
+          "baselineShift": 0.0,
+          "boxPosition": [
+            0.0,
+            0.0
+          ],
+          "boxSize": [
+            1300.0,
+            180.0
+          ],
+          "boxText": true,
+          "fillColor": [
+            0.4,
+            1.0,
+            0.8,
+            1.0
+          ],
+          "fontFamily": "Abel",
+          "fontSize": 32.0,
+          "fontStyle": "Regular",
+          "justification": "left",
+          "strokeOverFill": false,
+          "strokeWidth": 0.0,
+          "text": "REYKJAVIK  /  WORKSPACE PREVIEW",
+          "tracking": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            164.0,
+            190.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Text"
+      },
+      {
+        "activeRange": {
+          "duration": 3000,
+          "start": 0
+        },
+        "blendMode": "normal",
+        "id": 5,
+        "name": "Editable motion. Local rendering.",
+        "sourceText": {
+          "allCaps": false,
+          "applyFill": true,
+          "applyStroke": false,
+          "baselineShift": 0.0,
+          "boxPosition": [
+            0.0,
+            0.0
+          ],
+          "boxSize": [
+            1300.0,
+            180.0
+          ],
+          "boxText": true,
+          "fillColor": [
+            0.65,
+            0.77,
+            0.84,
+            1.0
+          ],
+          "fontFamily": "Abel",
+          "fontSize": 54.0,
+          "fontStyle": "Regular",
+          "justification": "left",
+          "strokeOverFill": false,
+          "strokeWidth": 0.0,
+          "text": "Editable motion. Local rendering.",
+          "tracking": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            166.0,
+            530.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Text"
+      },
+      {
+        "activeRange": {
+          "duration": 3000,
+          "start": 0
+        },
+        "blendMode": "normal",
+        "id": 4,
+        "name": "TESSERACT",
+        "sourceText": {
+          "allCaps": false,
+          "applyFill": true,
+          "applyStroke": false,
+          "baselineShift": 0.0,
+          "boxPosition": [
+            0.0,
+            0.0
+          ],
+          "boxSize": [
+            1300.0,
+            180.0
+          ],
+          "boxText": true,
+          "fillColor": [
+            0.95,
+            0.97,
+            1.0,
+            1.0
+          ],
+          "fontFamily": "Abel",
+          "fontSize": 160.0,
+          "fontStyle": "Regular",
+          "justification": "left",
+          "strokeOverFill": false,
+          "strokeWidth": 0.0,
+          "text": "TESSERACT",
+          "tracking": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            160.0,
+            320.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Text"
+      },
+      {
+        "activeRange": {
+          "duration": 3000,
+          "start": 0
+        },
+        "blendMode": "normal",
+        "id": 3,
+        "name": "Moving mint marker",
+        "rect": {
+          "fillColor": [
+            0.4,
+            1.0,
+            0.8,
+            1.0
+          ],
+          "fillEnabled": true,
+          "position": [
+            0.0,
+            0.0
+          ],
+          "roundness": 0.0,
+          "size": [
+            44.0,
+            44.0
+          ],
+          "strokeEnabled": false,
+          "strokeWidth": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            160.0,
+            699.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Rect"
+      },
+      {
+        "activeRange": {
+          "duration": 3000,
+          "start": 0
+        },
+        "blendMode": "normal",
+        "id": 2,
+        "name": "Motion rail",
+        "rect": {
+          "fillColor": [
+            0.2,
+            0.3,
+            0.38,
+            1.0
+          ],
+          "fillEnabled": true,
+          "position": [
+            0.0,
+            0.0
+          ],
+          "roundness": 0.0,
+          "size": [
+            1600.0,
+            3.0
+          ],
+          "strokeEnabled": false,
+          "strokeWidth": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            160.0,
+            720.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Rect"
+      },
+      {
+        "activeRange": {
+          "duration": 3000,
+          "start": 0
+        },
+        "blendMode": "normal",
+        "id": 1,
+        "name": "Ink background",
+        "rect": {
+          "fillColor": [
+            0.035,
+            0.055,
+            0.09,
+            1.0
+          ],
+          "fillEnabled": true,
+          "position": [
+            0.0,
+            0.0
+          ],
+          "roundness": 0.0,
+          "size": [
+            1920.0,
+            1080.0
+          ],
+          "strokeEnabled": false,
+          "strokeWidth": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Rect"
+      }
+    ],
+    "name": "Reykjavik setup preview"
+  }
+}

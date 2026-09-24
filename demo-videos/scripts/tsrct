@@ -1,0 +1,13 @@
+#!/bin/bash
+set -euo pipefail
+workspace_root="$(cd -- "$(dirname -- "$0")/../.." && pwd)"
+export TMPDIR="$workspace_root/.context/tesseract/tmp"
+mkdir -p "$TMPDIR"
+# Confine CLI writes (including telemetry and temporary state) to this workspace.
+exec /usr/bin/sandbox-exec -D "WORKSPACE=$workspace_root" -p '
+(version 1)
+(allow default)
+(deny file-write*)
+(allow file-write* (subpath (param "WORKSPACE")))
+(allow file-write* (literal "/dev/null"))
+' "$workspace_root/.context/tesseract/runtime/bin/tsrct" "$@"

@@ -1,0 +1,1845 @@
+{
+ "$schema": "https://jerboa.dev/schemas/fx-composition/editable/v1/document.schema.json",
+ "formatVersion": 1,
+ "dimensions": {
+  "width": 1920,
+  "height": 1080
+ },
+ "duration": 20.2,
+ "composition": {
+  "id": "main",
+  "layers": [
+   {
+    "type": "Rect",
+    "id": 90,
+    "name": "End fade",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 19600,
+     "duration": 600
+    },
+    "transform": {
+     "anchorPoint": [
+      960.0,
+      540.0
+     ],
+     "position": [
+      960.0,
+      540.0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      1920,
+      1080
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      0,
+      0,
+      0,
+      1
+     ],
+     "roundness": 0
+    }
+   },
+   {
+    "type": "Text",
+    "id": 100,
+    "name": "Caption 1",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 450,
+     "duration": 1800
+    },
+    "transform": {
+     "anchorPoint": [
+      0,
+      0
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "sourceText": {
+     "fontFamily": "IBM Plex Sans",
+     "fontStyle": "Regular",
+     "text": "For every finished video,",
+     "fontSize": 48,
+     "fillColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "strokeWidth": 0,
+     "justification": "center",
+     "boxText": true,
+     "boxPosition": [
+      160,
+      956
+     ],
+     "boxSize": [
+      1600,
+      88
+     ],
+     "verticalAlign": "top"
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 101,
+    "name": "Caption 1 backing",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 450,
+     "duration": 1800
+    },
+    "transform": {
+     "anchorPoint": [
+      342.0,
+      44.0
+     ],
+     "position": [
+      960.0,
+      986.0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      684,
+      88
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      0.035,
+      0.035,
+      0.045,
+      1.0
+     ],
+     "roundness": 16
+    }
+   },
+   {
+    "type": "Text",
+    "id": 102,
+    "name": "Caption 2",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 2250,
+     "duration": 1220
+    },
+    "transform": {
+     "anchorPoint": [
+      0,
+      0
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "sourceText": {
+     "fontFamily": "IBM Plex Sans",
+     "fontStyle": "Regular",
+     "text": "the system creates its own",
+     "fontSize": 48,
+     "fillColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "strokeWidth": 0,
+     "justification": "center",
+     "boxText": true,
+     "boxPosition": [
+      160,
+      956
+     ],
+     "boxSize": [
+      1600,
+      88
+     ],
+     "verticalAlign": "top"
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 103,
+    "name": "Caption 2 backing",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 2250,
+     "duration": 1220
+    },
+    "transform": {
+     "anchorPoint": [
+      354.0,
+      44.0
+     ],
+     "position": [
+      960.0,
+      986.0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      708,
+      88
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      0.035,
+      0.035,
+      0.045,
+      1.0
+     ],
+     "roundness": 16
+    }
+   },
+   {
+    "type": "Text",
+    "id": 104,
+    "name": "Caption 3",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 3470,
+     "duration": 2280
+    },
+    "transform": {
+     "anchorPoint": [
+      0,
+      0
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "sourceText": {
+     "fontFamily": "IBM Plex Sans",
+     "fontStyle": "Regular",
+     "text": "reverse-engineering document.",
+     "fontSize": 48,
+     "fillColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "strokeWidth": 0,
+     "justification": "center",
+     "boxText": true,
+     "boxPosition": [
+      160,
+      956
+     ],
+     "boxSize": [
+      1600,
+      88
+     ],
+     "verticalAlign": "top"
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 105,
+    "name": "Caption 3 backing",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 3470,
+     "duration": 2280
+    },
+    "transform": {
+     "anchorPoint": [
+      390.0,
+      44.0
+     ],
+     "position": [
+      960.0,
+      986.0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      780,
+      88
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      0.035,
+      0.035,
+      0.045,
+      1.0
+     ],
+     "roundness": 16
+    }
+   },
+   {
+    "type": "Text",
+    "id": 106,
+    "name": "Caption 4",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 5850,
+     "duration": 2150
+    },
+    "transform": {
+     "anchorPoint": [
+      0,
+      0
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "sourceText": {
+     "fontFamily": "IBM Plex Sans",
+     "fontStyle": "Regular",
+     "text": "This records how the video was made,",
+     "fontSize": 48,
+     "fillColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "strokeWidth": 0,
+     "justification": "center",
+     "boxText": true,
+     "boxPosition": [
+      160,
+      956
+     ],
+     "boxSize": [
+      1600,
+      88
+     ],
+     "verticalAlign": "top"
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 107,
+    "name": "Caption 4 backing",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 5850,
+     "duration": 2150
+    },
+    "transform": {
+     "anchorPoint": [
+      474.0,
+      44.0
+     ],
+     "position": [
+      960.0,
+      986.0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      948,
+      88
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      0.035,
+      0.035,
+      0.045,
+      1.0
+     ],
+     "roundness": 16
+    }
+   },
+   {
+    "type": "Text",
+    "id": 108,
+    "name": "Caption 5",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 8000,
+     "duration": 1210
+    },
+    "transform": {
+     "anchorPoint": [
+      0,
+      0
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "sourceText": {
+     "fontFamily": "IBM Plex Sans",
+     "fontStyle": "Regular",
+     "text": "including the prompts,",
+     "fontSize": 48,
+     "fillColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "strokeWidth": 0,
+     "justification": "center",
+     "boxText": true,
+     "boxPosition": [
+      160,
+      956
+     ],
+     "boxSize": [
+      1600,
+      88
+     ],
+     "verticalAlign": "top"
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 109,
+    "name": "Caption 5 backing",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 8000,
+     "duration": 1210
+    },
+    "transform": {
+     "anchorPoint": [
+      306.0,
+      44.0
+     ],
+     "position": [
+      960.0,
+      986.0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      612,
+      88
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      0.035,
+      0.035,
+      0.045,
+      1.0
+     ],
+     "roundness": 16
+    }
+   },
+   {
+    "type": "Text",
+    "id": 110,
+    "name": "Caption 6",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 9210,
+     "duration": 1680
+    },
+    "transform": {
+     "anchorPoint": [
+      0,
+      0
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "sourceText": {
+     "fontFamily": "IBM Plex Sans",
+     "fontStyle": "Regular",
+     "text": "structure, methods used,",
+     "fontSize": 48,
+     "fillColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "strokeWidth": 0,
+     "justification": "center",
+     "boxText": true,
+     "boxPosition": [
+      160,
+      956
+     ],
+     "boxSize": [
+      1600,
+      88
+     ],
+     "verticalAlign": "top"
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 111,
+    "name": "Caption 6 backing",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 9210,
+     "duration": 1680
+    },
+    "transform": {
+     "anchorPoint": [
+      330.0,
+      44.0
+     ],
+     "position": [
+      960.0,
+      986.0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      660,
+      88
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      0.035,
+      0.035,
+      0.045,
+      1.0
+     ],
+     "roundness": 16
+    }
+   },
+   {
+    "type": "Text",
+    "id": 112,
+    "name": "Caption 7",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 10890,
+     "duration": 2110
+    },
+    "transform": {
+     "anchorPoint": [
+      0,
+      0
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "sourceText": {
+     "fontFamily": "IBM Plex Sans",
+     "fontStyle": "Regular",
+     "text": "revisions, and key learnings.",
+     "fontSize": 48,
+     "fillColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "strokeWidth": 0,
+     "justification": "center",
+     "boxText": true,
+     "boxPosition": [
+      160,
+      956
+     ],
+     "boxSize": [
+      1600,
+      88
+     ],
+     "verticalAlign": "top"
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 113,
+    "name": "Caption 7 backing",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 10890,
+     "duration": 2110
+    },
+    "transform": {
+     "anchorPoint": [
+      390.0,
+      44.0
+     ],
+     "position": [
+      960.0,
+      986.0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      780,
+      88
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      0.035,
+      0.035,
+      0.045,
+      1.0
+     ],
+     "roundness": 16
+    }
+   },
+   {
+    "type": "Text",
+    "id": 114,
+    "name": "Caption 8",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 13080,
+     "duration": 1640
+    },
+    "transform": {
+     "anchorPoint": [
+      0,
+      0
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "sourceText": {
+     "fontFamily": "IBM Plex Sans",
+     "fontStyle": "Regular",
+     "text": "The workflow also checks",
+     "fontSize": 48,
+     "fillColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "strokeWidth": 0,
+     "justification": "center",
+     "boxText": true,
+     "boxPosition": [
+      160,
+      956
+     ],
+     "boxSize": [
+      1600,
+      88
+     ],
+     "verticalAlign": "top"
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 115,
+    "name": "Caption 8 backing",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 13080,
+     "duration": 1640
+    },
+    "transform": {
+     "anchorPoint": [
+      330.0,
+      44.0
+     ],
+     "position": [
+      960.0,
+      986.0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      660,
+      88
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      0.035,
+      0.035,
+      0.045,
+      1.0
+     ],
+     "roundness": 16
+    }
+   },
+   {
+    "type": "Text",
+    "id": 116,
+    "name": "Caption 9",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 14720,
+     "duration": 960
+    },
+    "transform": {
+     "anchorPoint": [
+      0,
+      0
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "sourceText": {
+     "fontFamily": "IBM Plex Sans",
+     "fontStyle": "Regular",
+     "text": "that this file exists",
+     "fontSize": 48,
+     "fillColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "strokeWidth": 0,
+     "justification": "center",
+     "boxText": true,
+     "boxPosition": [
+      160,
+      956
+     ],
+     "boxSize": [
+      1600,
+      88
+     ],
+     "verticalAlign": "top"
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 117,
+    "name": "Caption 9 backing",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 14720,
+     "duration": 960
+    },
+    "transform": {
+     "anchorPoint": [
+      294.0,
+      44.0
+     ],
+     "position": [
+      960.0,
+      986.0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      588,
+      88
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      0.035,
+      0.035,
+      0.045,
+      1.0
+     ],
+     "roundness": 16
+    }
+   },
+   {
+    "type": "Text",
+    "id": 118,
+    "name": "Caption 10",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 15680,
+     "duration": 770
+    },
+    "transform": {
+     "anchorPoint": [
+      0,
+      0
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "sourceText": {
+     "fontFamily": "IBM Plex Sans",
+     "fontStyle": "Regular",
+     "text": "before the video",
+     "fontSize": 48,
+     "fillColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "strokeWidth": 0,
+     "justification": "center",
+     "boxText": true,
+     "boxPosition": [
+      160,
+      956
+     ],
+     "boxSize": [
+      1600,
+      88
+     ],
+     "verticalAlign": "top"
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 119,
+    "name": "Caption 10 backing",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 15680,
+     "duration": 770
+    },
+    "transform": {
+     "anchorPoint": [
+      234.0,
+      44.0
+     ],
+     "position": [
+      960.0,
+      986.0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      468,
+      88
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      0.035,
+      0.035,
+      0.045,
+      1.0
+     ],
+     "roundness": 16
+    }
+   },
+   {
+    "type": "Text",
+    "id": 120,
+    "name": "Caption 11",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 16450,
+     "duration": 2050
+    },
+    "transform": {
+     "anchorPoint": [
+      0,
+      0
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "sourceText": {
+     "fontFamily": "IBM Plex Sans",
+     "fontStyle": "Regular",
+     "text": "can be marked complete.",
+     "fontSize": 48,
+     "fillColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "strokeWidth": 0,
+     "justification": "center",
+     "boxText": true,
+     "boxPosition": [
+      160,
+      956
+     ],
+     "boxSize": [
+      1600,
+      88
+     ],
+     "verticalAlign": "top"
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 121,
+    "name": "Caption 11 backing",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 16450,
+     "duration": 2050
+    },
+    "transform": {
+     "anchorPoint": [
+      318.0,
+      44.0
+     ],
+     "position": [
+      960.0,
+      986.0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      636,
+      88
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      0.035,
+      0.035,
+      0.045,
+      1.0
+     ],
+     "roundness": 16
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 95,
+    "name": "Caption scrim (bottom gradient)",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 0,
+     "duration": 19050
+    },
+    "transform": {
+     "anchorPoint": [
+      960.0,
+      125.0
+     ],
+     "position": [
+      960.0,
+      955.0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      1920,
+      250
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "roundness": 0,
+     "fillPaint": {
+      "type": "gradient",
+      "gradientType": "linear",
+      "start": [
+       0,
+       0
+      ],
+      "end": [
+       0,
+       250
+      ],
+      "stops": [
+       {
+        "offset": 0,
+        "color": [
+         0,
+         0,
+         0,
+         0
+        ]
+       },
+       {
+        "offset": 0.55,
+        "color": [
+         0,
+         0,
+         0,
+         0.55
+        ]
+       },
+       {
+        "offset": 1,
+        "color": [
+         0,
+         0,
+         0,
+         0.8
+        ]
+       }
+      ]
+     }
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 40,
+    "name": "Highlight: reverse-engineering file path",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 3380,
+     "duration": 2020
+    },
+    "transform": {
+     "anchorPoint": [
+      0,
+      26.0
+     ],
+     "position": [
+      620,
+      151.0
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      456,
+      52
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      1.0,
+      0.74,
+      0.28,
+      0.16
+     ],
+     "roundness": 10,
+     "strokeEnabled": true,
+     "strokeColor": [
+      1.0,
+      0.74,
+      0.28,
+      0.95
+     ],
+     "strokeWidth": 3,
+     "strokeJoin": "round"
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 41,
+    "name": "Highlight: Prompts heading",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 8610,
+     "duration": 600
+    },
+    "transform": {
+     "anchorPoint": [
+      0,
+      29.5
+     ],
+     "position": [
+      133,
+      227.5
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      188,
+      59
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      1.0,
+      0.74,
+      0.28,
+      0.16
+     ],
+     "roundness": 10,
+     "strokeEnabled": true,
+     "strokeColor": [
+      1.0,
+      0.74,
+      0.28,
+      0.95
+     ],
+     "strokeWidth": 3,
+     "strokeJoin": "round"
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 42,
+    "name": "Highlight: Structure heading",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 9210,
+     "duration": 720
+    },
+    "transform": {
+     "anchorPoint": [
+      0,
+      29.5
+     ],
+     "position": [
+      133,
+      227.5
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      211,
+      59
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      1.0,
+      0.74,
+      0.28,
+      0.16
+     ],
+     "roundness": 10,
+     "strokeEnabled": true,
+     "strokeColor": [
+      1.0,
+      0.74,
+      0.28,
+      0.95
+     ],
+     "strokeWidth": 3,
+     "strokeJoin": "round"
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 43,
+    "name": "Highlight: Models and methods heading",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 9930,
+     "duration": 960
+    },
+    "transform": {
+     "anchorPoint": [
+      0,
+      29.5
+     ],
+     "position": [
+      133,
+      227.5
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      427,
+      59
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      1.0,
+      0.74,
+      0.28,
+      0.16
+     ],
+     "roundness": 10,
+     "strokeEnabled": true,
+     "strokeColor": [
+      1.0,
+      0.74,
+      0.28,
+      0.95
+     ],
+     "strokeWidth": 3,
+     "strokeJoin": "round"
+    }
+   },
+   {
+    "type": "Rect",
+    "id": 44,
+    "name": "Highlight: Revisions heading",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 10890,
+     "duration": 900
+    },
+    "transform": {
+     "anchorPoint": [
+      0,
+      29.5
+     ],
+     "position": [
+      133,
+      227.5
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "rect": {
+     "size": [
+      210,
+      59
+     ],
+     "position": [
+      0,
+      0
+     ],
+     "fillColor": [
+      1.0,
+      0.74,
+      0.28,
+      0.16
+     ],
+     "roundness": 10,
+     "strokeEnabled": true,
+     "strokeColor": [
+      1.0,
+      0.74,
+      0.28,
+      0.95
+     ],
+     "strokeWidth": 3,
+     "strokeJoin": "round"
+    }
+   },
+   {
+    "type": "Group",
+    "id": 30,
+    "name": "Finale camera (learnings -> file tree)",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 11790,
+     "duration": 8410
+    },
+    "transform": {
+     "anchorPoint": [
+      1870,
+      -189
+     ],
+     "position": [
+      1870,
+      -189
+     ],
+     "scale": [
+      100,
+      100
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "layers": [
+     {
+      "type": "Rect",
+      "id": 46,
+      "name": "Highlight: reverse-engineering file in file tree",
+      "blendMode": "normal",
+      "activeRange": {
+       "start": 3010,
+       "duration": 5400
+      },
+      "transform": {
+       "anchorPoint": [
+        0,
+        26.0
+       ],
+       "position": [
+        1872,
+        -171.0
+       ],
+       "scale": [
+        100,
+        100
+       ],
+       "rotation": 0,
+       "opacity": 100
+      },
+      "rect": {
+       "size": [
+        640,
+        52
+       ],
+       "position": [
+        0,
+        0
+       ],
+       "fillColor": [
+        1.0,
+        0.74,
+        0.28,
+        0.16
+       ],
+       "roundness": 10,
+       "strokeEnabled": true,
+       "strokeColor": [
+        1.0,
+        0.74,
+        0.28,
+        0.95
+       ],
+       "strokeWidth": 3,
+       "strokeJoin": "round"
+      }
+     },
+     {
+      "type": "Rect",
+      "id": 45,
+      "name": "Highlight: Final learnings heading",
+      "blendMode": "normal",
+      "activeRange": {
+       "start": 0,
+       "duration": 1510
+      },
+      "transform": {
+       "anchorPoint": [
+        0,
+        29.5
+       ],
+       "position": [
+        133,
+        227.5
+       ],
+       "scale": [
+        100,
+        100
+       ],
+       "rotation": 0,
+       "opacity": 100
+      },
+      "rect": {
+       "size": [
+        307,
+        59
+       ],
+       "position": [
+        0,
+        0
+       ],
+       "fillColor": [
+        1.0,
+        0.74,
+        0.28,
+        0.16
+       ],
+       "roundness": 10,
+       "strokeEnabled": true,
+       "strokeColor": [
+        1.0,
+        0.74,
+        0.28,
+        0.95
+       ],
+       "strokeWidth": 3,
+       "strokeJoin": "round"
+      }
+     },
+     {
+      "type": "Video",
+      "id": 16,
+      "name": "Final view (src 9.0s+, live)",
+      "blendMode": "normal",
+      "activeRange": {
+       "start": 0,
+       "duration": 8410
+      },
+      "sourceRange": {
+       "start": 9000,
+       "duration": 8410
+      },
+      "sourceIntrinsicDuration": 29766,
+      "volume": 0.0,
+      "transform": {
+       "anchorPoint": [
+        1470,
+        959
+       ],
+       "position": [
+        960,
+        210
+       ],
+       "scale": [
+        100.0,
+        100.0
+       ],
+       "rotation": 0,
+       "opacity": 100
+      },
+      "source": {
+       "assetId": "screen",
+       "fit": "cover"
+      }
+     }
+    ]
+   },
+   {
+    "type": "Image",
+    "id": 12,
+    "name": "Hold: Prompts (original frame)",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 8610,
+     "duration": 600
+    },
+    "transform": {
+     "anchorPoint": [
+      1470,
+      562
+     ],
+     "position": [
+      960,
+      210
+     ],
+     "scale": [
+      100.0,
+      100.0
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "source": {
+     "assetId": "hold-prompts",
+     "fit": "cover"
+    }
+   },
+   {
+    "type": "Image",
+    "id": 13,
+    "name": "Hold: Structure (original frame)",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 9210,
+     "duration": 720
+    },
+    "transform": {
+     "anchorPoint": [
+      1470,
+      727
+     ],
+     "position": [
+      960,
+      210
+     ],
+     "scale": [
+      100.0,
+      100.0
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "source": {
+     "assetId": "hold-structure",
+     "fit": "cover"
+    }
+   },
+   {
+    "type": "Image",
+    "id": 14,
+    "name": "Hold: Models and methods (original frame)",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 9930,
+     "duration": 960
+    },
+    "transform": {
+     "anchorPoint": [
+      1470,
+      714
+     ],
+     "position": [
+      960,
+      210
+     ],
+     "scale": [
+      100.0,
+      100.0
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "source": {
+     "assetId": "hold-methods",
+     "fit": "cover"
+    }
+   },
+   {
+    "type": "Image",
+    "id": 15,
+    "name": "Hold: Revisions (original frame)",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 10890,
+     "duration": 900
+    },
+    "transform": {
+     "anchorPoint": [
+      1470,
+      545
+     ],
+     "position": [
+      960,
+      210
+     ],
+     "scale": [
+      100.0,
+      100.0
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "source": {
+     "assetId": "hold-revisions",
+     "fit": "cover"
+    }
+   },
+   {
+    "type": "Video",
+    "id": 11,
+    "name": "Document scroll (src 2.8-7.1s, 1.34x)",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 5400,
+     "duration": 3210
+    },
+    "sourceRange": {
+     "start": 2800,
+     "duration": 4300
+    },
+    "sourceIntrinsicDuration": 29766,
+    "volume": 0.0,
+    "transform": {
+     "anchorPoint": [
+      1470,
+      283
+     ],
+     "position": [
+      960,
+      150
+     ],
+     "scale": [
+      100.0,
+      100.0
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "source": {
+     "assetId": "screen",
+     "fit": "cover"
+    }
+   },
+   {
+    "type": "Video",
+    "id": 10,
+    "name": "Title view (src 0-2.8s, slowed)",
+    "blendMode": "normal",
+    "activeRange": {
+     "start": 0,
+     "duration": 5400
+    },
+    "sourceRange": {
+     "start": 0,
+     "duration": 2800
+    },
+    "sourceIntrinsicDuration": 29766,
+    "volume": 0.0,
+    "transform": {
+     "anchorPoint": [
+      1470,
+      283
+     ],
+     "position": [
+      960,
+      150
+     ],
+     "scale": [
+      100.0,
+      100.0
+     ],
+     "rotation": 0,
+     "opacity": 100
+    },
+    "source": {
+     "assetId": "screen",
+     "fit": "cover"
+    }
+   },
+   {
+    "type": "Audio",
+    "id": 200,
+    "name": "AI voice sentence 1 (Kokoro af_heart)",
+    "activeRange": {
+     "start": 450,
+     "duration": 5035
+    },
+    "sourceRange": {
+     "start": 0,
+     "duration": 5035
+    },
+    "sourceIntrinsicDuration": 5035,
+    "windowMs": 50,
+    "source": {
+     "assetId": "voice-1"
+    },
+    "volume": 0.7762471166286917,
+    "captionsEnabled": false
+   },
+   {
+    "type": "Audio",
+    "id": 201,
+    "name": "AI voice sentence 2 (Kokoro af_heart)",
+    "activeRange": {
+     "start": 5870,
+     "duration": 6805
+    },
+    "sourceRange": {
+     "start": 0,
+     "duration": 6805
+    },
+    "sourceIntrinsicDuration": 6805,
+    "windowMs": 50,
+    "source": {
+     "assetId": "voice-2"
+    },
+    "volume": 0.7762471166286917,
+    "captionsEnabled": false
+   },
+   {
+    "type": "Audio",
+    "id": 202,
+    "name": "AI voice sentence 3 (Kokoro af_heart)",
+    "activeRange": {
+     "start": 13100,
+     "duration": 4843
+    },
+    "sourceRange": {
+     "start": 0,
+     "duration": 4843
+    },
+    "sourceIntrinsicDuration": 4843,
+    "windowMs": 50,
+    "source": {
+     "assetId": "voice-3"
+    },
+    "volume": 0.7762471166286917,
+    "captionsEnabled": false
+   }
+  ],
+  "name": "Save the Learnings - Opus 5.5 (AI voice)"
+ }
+}

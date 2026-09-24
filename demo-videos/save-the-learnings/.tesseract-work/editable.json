@@ -1,0 +1,232 @@
+{
+  "$schema": "https://jerboa.dev/schemas/fx-composition/editable/v1/document.schema.json",
+  "formatVersion": 1,
+  "dimensions": {
+    "width": 1920,
+    "height": 1080
+  },
+  "duration": 20,
+  "composition": {
+    "id": "main",
+    "layers": [
+      {
+        "type": "Video",
+        "id": 1,
+        "name": "Document introduction \u2014 source 0.0\u20130.7s",
+        "blendMode": "normal",
+        "activeRange": {
+          "start": 0,
+          "duration": 700
+        },
+        "transform": {
+          "position": [
+            -610,
+            -180
+          ],
+          "anchorPoint": [
+            0,
+            0
+          ],
+          "scale": [
+            106,
+            106
+          ],
+          "rotation": 0,
+          "opacity": 100
+        },
+        "source": {
+          "assetId": "screen",
+          "fit": "contain"
+        },
+        "sourceRange": {
+          "start": 0,
+          "duration": 700
+        },
+        "sourceIntrinsicDuration": 29766,
+        "volume": 0
+      },
+      {
+        "type": "Image",
+        "id": 2,
+        "name": "Hold document title \u2014 original frame 0.7s",
+        "blendMode": "normal",
+        "activeRange": {
+          "start": 700,
+          "duration": 4300
+        },
+        "transform": {
+          "position": [
+            -610,
+            -180
+          ],
+          "anchorPoint": [
+            0,
+            0
+          ],
+          "scale": [
+            106,
+            106
+          ],
+          "rotation": 0,
+          "opacity": 100
+        },
+        "source": {
+          "assetId": "title-hold",
+          "fit": "contain"
+        }
+      },
+      {
+        "type": "Video",
+        "id": 3,
+        "name": "Recorded structure scroll \u2014 source 1.4\u20134.27s",
+        "blendMode": "normal",
+        "activeRange": {
+          "start": 5000,
+          "duration": 2870
+        },
+        "transform": {
+          "position": [
+            -610,
+            -180
+          ],
+          "anchorPoint": [
+            0,
+            0
+          ],
+          "scale": [
+            106,
+            106
+          ],
+          "rotation": 0,
+          "opacity": 100
+        },
+        "source": {
+          "assetId": "screen",
+          "fit": "contain"
+        },
+        "sourceRange": {
+          "start": 1400,
+          "duration": 2870
+        },
+        "sourceIntrinsicDuration": 29766,
+        "volume": 0
+      },
+      {
+        "type": "Image",
+        "id": 4,
+        "name": "Hold original prompts \u2014 source frame 7.0s",
+        "blendMode": "normal",
+        "activeRange": {
+          "start": 7870,
+          "duration": 3270
+        },
+        "transform": {
+          "position": [
+            -610,
+            -825
+          ],
+          "anchorPoint": [
+            0,
+            0
+          ],
+          "scale": [
+            106,
+            106
+          ],
+          "rotation": 0,
+          "opacity": 100
+        },
+        "source": {
+          "assetId": "prompts-hold",
+          "fit": "contain"
+        }
+      },
+      {
+        "type": "Image",
+        "id": 5,
+        "name": "Revisions and learnings \u2014 source frame 7.65s",
+        "blendMode": "normal",
+        "activeRange": {
+          "start": 11140,
+          "duration": 2410
+        },
+        "transform": {
+          "position": [
+            -610,
+            -305
+          ],
+          "anchorPoint": [
+            0,
+            0
+          ],
+          "scale": [
+            106,
+            106
+          ],
+          "rotation": 0,
+          "opacity": 100
+        },
+        "source": {
+          "assetId": "revisions-hold",
+          "fit": "contain"
+        }
+      },
+      {
+        "type": "Video",
+        "id": 6,
+        "name": "Document file and verification context \u2014 source 8\u201314.45s",
+        "blendMode": "normal",
+        "activeRange": {
+          "start": 13550,
+          "duration": 6450
+        },
+        "transform": {
+          "position": [
+            -500,
+            -90
+          ],
+          "anchorPoint": [
+            0,
+            0
+          ],
+          "scale": [
+            82,
+            82
+          ],
+          "rotation": 0,
+          "opacity": 100
+        },
+        "source": {
+          "assetId": "screen",
+          "fit": "contain"
+        },
+        "sourceRange": {
+          "start": 8000,
+          "duration": 6450
+        },
+        "sourceIntrinsicDuration": 29766,
+        "volume": 0
+      },
+      {
+        "type": "Audio",
+        "id": 50,
+        "name": "Original narration \u2014 trimmed head and tail; +2.2 dB",
+        "activeRange": {
+          "start": 0,
+          "duration": 20000
+        },
+        "sourceRange": {
+          "start": 2050,
+          "duration": 20000
+        },
+        "sourceIntrinsicDuration": 23253,
+        "source": {
+          "assetId": "narration"
+        },
+        "volume": 1.288249551693134,
+        "captionsEnabled": false
+      }
+    ],
+    "name": "Save the Learnings"
+  }
+}

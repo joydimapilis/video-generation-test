@@ -1,0 +1,1165 @@
+{
+  "$schema": "https://jerboa.dev/schemas/fx-composition/editable/v1/document.schema.json",
+  "formatVersion": 1,
+  "dimensions": {
+    "width": 1920,
+    "height": 1080
+  },
+  "duration": 20.0,
+  "composition": {
+    "dynamics": {
+      "entries": [
+        {
+          "animator": {
+            "enabled": true,
+            "keyframes": [
+              {
+                "easing": {
+                  "type": "linear"
+                },
+                "id": "voice-0",
+                "layerTime": 0,
+                "value": {
+                  "type": "float",
+                  "value": 0.0
+                }
+              },
+              {
+                "easing": {
+                  "type": "linear"
+                },
+                "id": "voice-60",
+                "layerTime": 60,
+                "value": {
+                  "type": "float",
+                  "value": 1.288249551693134
+                }
+              },
+              {
+                "easing": {
+                  "type": "linear"
+                },
+                "id": "voice-19700",
+                "layerTime": 19700,
+                "value": {
+                  "type": "float",
+                  "value": 1.288249551693134
+                }
+              },
+              {
+                "easing": {
+                  "type": "linear"
+                },
+                "id": "voice-19999",
+                "layerTime": 19999,
+                "value": {
+                  "type": "float",
+                  "value": 0.0
+                }
+              }
+            ],
+            "type": "keyframes"
+          },
+          "target": {
+            "kind": "layer",
+            "layerId": 50,
+            "propertyType": "volume"
+          }
+        },
+        {
+          "animator": {
+            "enabled": true,
+            "keyframes": [
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.25,
+                  "x2": 0.25,
+                  "y1": 0.1,
+                  "y2": 1.0
+                },
+                "id": "learnings-pan-0",
+                "layerTime": 0,
+                "value": {
+                  "type": "float",
+                  "value": -305.0
+                }
+              },
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.25,
+                  "x2": 0.25,
+                  "y1": 0.1,
+                  "y2": 1.0
+                },
+                "id": "learnings-pan-450",
+                "layerTime": 450,
+                "value": {
+                  "type": "float",
+                  "value": -305.0
+                }
+              },
+              {
+                "easing": {
+                  "type": "cubicBezier",
+                  "x1": 0.25,
+                  "x2": 0.25,
+                  "y1": 0.1,
+                  "y2": 1.0
+                },
+                "id": "learnings-pan-1100",
+                "layerTime": 1100,
+                "value": {
+                  "type": "float",
+                  "value": -990.0
+                }
+              }
+            ],
+            "type": "keyframes"
+          },
+          "target": {
+            "kind": "layer",
+            "layerId": 5,
+            "propertyType": "positionY"
+          }
+        }
+      ]
+    },
+    "id": "main",
+    "layers": [
+      {
+        "activeRange": {
+          "duration": 1710,
+          "start": 17490
+        },
+        "blendMode": "normal",
+        "id": 210,
+        "name": "Caption: marked complete.",
+        "sourceText": {
+          "allCaps": false,
+          "applyFill": true,
+          "applyStroke": false,
+          "baselineShift": 0.0,
+          "boxPosition": [
+            0.0,
+            0.0
+          ],
+          "boxSize": [
+            1720.0,
+            80.0
+          ],
+          "boxText": true,
+          "fillColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fontFamily": "Lato",
+          "fontSize": 46.0,
+          "fontStyle": "Regular",
+          "justification": "center",
+          "strokeOverFill": false,
+          "strokeWidth": 0.0,
+          "text": "marked complete.",
+          "tracking": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            100.0,
+            978.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Text"
+      },
+      {
+        "activeRange": {
+          "duration": 1340,
+          "start": 16150
+        },
+        "blendMode": "normal",
+        "id": 209,
+        "name": "Caption: before the video can be",
+        "sourceText": {
+          "allCaps": false,
+          "applyFill": true,
+          "applyStroke": false,
+          "baselineShift": 0.0,
+          "boxPosition": [
+            0.0,
+            0.0
+          ],
+          "boxSize": [
+            1720.0,
+            80.0
+          ],
+          "boxText": true,
+          "fillColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fontFamily": "Lato",
+          "fontSize": 46.0,
+          "fontStyle": "Regular",
+          "justification": "center",
+          "strokeOverFill": false,
+          "strokeWidth": 0.0,
+          "text": "before the video can be",
+          "tracking": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            100.0,
+            978.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Text"
+      },
+      {
+        "activeRange": {
+          "duration": 1050,
+          "start": 15100
+        },
+        "blendMode": "normal",
+        "id": 208,
+        "name": "Caption: this file exists",
+        "sourceText": {
+          "allCaps": false,
+          "applyFill": true,
+          "applyStroke": false,
+          "baselineShift": 0.0,
+          "boxPosition": [
+            0.0,
+            0.0
+          ],
+          "boxSize": [
+            1720.0,
+            80.0
+          ],
+          "boxText": true,
+          "fillColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fontFamily": "Lato",
+          "fontSize": 46.0,
+          "fontStyle": "Regular",
+          "justification": "center",
+          "strokeOverFill": false,
+          "strokeWidth": 0.0,
+          "text": "this file exists",
+          "tracking": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            100.0,
+            978.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Text"
+      },
+      {
+        "activeRange": {
+          "duration": 1600,
+          "start": 13500
+        },
+        "blendMode": "normal",
+        "id": 207,
+        "name": "Caption: The workflow also checks that",
+        "sourceText": {
+          "allCaps": false,
+          "applyFill": true,
+          "applyStroke": false,
+          "baselineShift": 0.0,
+          "boxPosition": [
+            0.0,
+            0.0
+          ],
+          "boxSize": [
+            1720.0,
+            80.0
+          ],
+          "boxText": true,
+          "fillColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fontFamily": "Lato",
+          "fontSize": 46.0,
+          "fontStyle": "Regular",
+          "justification": "center",
+          "strokeOverFill": false,
+          "strokeWidth": 0.0,
+          "text": "The workflow also checks that",
+          "tracking": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            100.0,
+            978.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Text"
+      },
+      {
+        "activeRange": {
+          "duration": 1360,
+          "start": 11840
+        },
+        "blendMode": "normal",
+        "id": 206,
+        "name": "Caption: and key learnings.",
+        "sourceText": {
+          "allCaps": false,
+          "applyFill": true,
+          "applyStroke": false,
+          "baselineShift": 0.0,
+          "boxPosition": [
+            0.0,
+            0.0
+          ],
+          "boxSize": [
+            1720.0,
+            80.0
+          ],
+          "boxText": true,
+          "fillColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fontFamily": "Lato",
+          "fontSize": 46.0,
+          "fontStyle": "Regular",
+          "justification": "center",
+          "strokeOverFill": false,
+          "strokeWidth": 0.0,
+          "text": "and key learnings.",
+          "tracking": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            100.0,
+            978.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Text"
+      },
+      {
+        "activeRange": {
+          "duration": 1660,
+          "start": 10180
+        },
+        "blendMode": "normal",
+        "id": 205,
+        "name": "Caption: methods used, revisions,",
+        "sourceText": {
+          "allCaps": false,
+          "applyFill": true,
+          "applyStroke": false,
+          "baselineShift": 0.0,
+          "boxPosition": [
+            0.0,
+            0.0
+          ],
+          "boxSize": [
+            1720.0,
+            80.0
+          ],
+          "boxText": true,
+          "fillColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fontFamily": "Lato",
+          "fontSize": 46.0,
+          "fontStyle": "Regular",
+          "justification": "center",
+          "strokeOverFill": false,
+          "strokeWidth": 0.0,
+          "text": "methods used, revisions,",
+          "tracking": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            100.0,
+            978.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Text"
+      },
+      {
+        "activeRange": {
+          "duration": 2310,
+          "start": 7870
+        },
+        "blendMode": "normal",
+        "id": 204,
+        "name": "Caption: including the prompts, structure,",
+        "sourceText": {
+          "allCaps": false,
+          "applyFill": true,
+          "applyStroke": false,
+          "baselineShift": 0.0,
+          "boxPosition": [
+            0.0,
+            0.0
+          ],
+          "boxSize": [
+            1720.0,
+            80.0
+          ],
+          "boxText": true,
+          "fillColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fontFamily": "Lato",
+          "fontSize": 46.0,
+          "fontStyle": "Regular",
+          "justification": "center",
+          "strokeOverFill": false,
+          "strokeWidth": 0.0,
+          "text": "including the prompts, structure,",
+          "tracking": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            100.0,
+            978.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Text"
+      },
+      {
+        "activeRange": {
+          "duration": 2870,
+          "start": 5000
+        },
+        "blendMode": "normal",
+        "id": 203,
+        "name": "Caption: This records how the video was made,",
+        "sourceText": {
+          "allCaps": false,
+          "applyFill": true,
+          "applyStroke": false,
+          "baselineShift": 0.0,
+          "boxPosition": [
+            0.0,
+            0.0
+          ],
+          "boxSize": [
+            1720.0,
+            80.0
+          ],
+          "boxText": true,
+          "fillColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fontFamily": "Lato",
+          "fontSize": 46.0,
+          "fontStyle": "Regular",
+          "justification": "center",
+          "strokeOverFill": false,
+          "strokeWidth": 0.0,
+          "text": "This records how the video was made,",
+          "tracking": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            100.0,
+            978.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Text"
+      },
+      {
+        "activeRange": {
+          "duration": 1840,
+          "start": 3160
+        },
+        "blendMode": "normal",
+        "id": 202,
+        "name": "Caption: reverse-engineering document.",
+        "sourceText": {
+          "allCaps": false,
+          "applyFill": true,
+          "applyStroke": false,
+          "baselineShift": 0.0,
+          "boxPosition": [
+            0.0,
+            0.0
+          ],
+          "boxSize": [
+            1720.0,
+            80.0
+          ],
+          "boxText": true,
+          "fillColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fontFamily": "Lato",
+          "fontSize": 46.0,
+          "fontStyle": "Regular",
+          "justification": "center",
+          "strokeOverFill": false,
+          "strokeWidth": 0.0,
+          "text": "reverse-engineering document.",
+          "tracking": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            100.0,
+            978.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Text"
+      },
+      {
+        "activeRange": {
+          "duration": 1360,
+          "start": 1800
+        },
+        "blendMode": "normal",
+        "id": 201,
+        "name": "Caption: the system creates its own",
+        "sourceText": {
+          "allCaps": false,
+          "applyFill": true,
+          "applyStroke": false,
+          "baselineShift": 0.0,
+          "boxPosition": [
+            0.0,
+            0.0
+          ],
+          "boxSize": [
+            1720.0,
+            80.0
+          ],
+          "boxText": true,
+          "fillColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fontFamily": "Lato",
+          "fontSize": 46.0,
+          "fontStyle": "Regular",
+          "justification": "center",
+          "strokeOverFill": false,
+          "strokeWidth": 0.0,
+          "text": "the system creates its own",
+          "tracking": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            100.0,
+            978.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Text"
+      },
+      {
+        "activeRange": {
+          "duration": 1570,
+          "start": 230
+        },
+        "blendMode": "normal",
+        "id": 200,
+        "name": "Caption: For every finished video,",
+        "sourceText": {
+          "allCaps": false,
+          "applyFill": true,
+          "applyStroke": false,
+          "baselineShift": 0.0,
+          "boxPosition": [
+            0.0,
+            0.0
+          ],
+          "boxSize": [
+            1720.0,
+            80.0
+          ],
+          "boxText": true,
+          "fillColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fontFamily": "Lato",
+          "fontSize": 46.0,
+          "fontStyle": "Regular",
+          "justification": "center",
+          "strokeOverFill": false,
+          "strokeWidth": 0.0,
+          "text": "For every finished video,",
+          "tracking": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            100.0,
+            978.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Text"
+      },
+      {
+        "activeRange": {
+          "duration": 20000,
+          "start": 0
+        },
+        "blendMode": "normal",
+        "id": 100,
+        "name": "Caption safe area",
+        "rect": {
+          "fillColor": [
+            0.027,
+            0.033,
+            0.043,
+            1.0
+          ],
+          "fillEnabled": true,
+          "position": [
+            0.0,
+            0.0
+          ],
+          "roundness": 0.0,
+          "size": [
+            1920.0,
+            146.0
+          ],
+          "strokeEnabled": false,
+          "strokeWidth": 0.0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            934.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            100.0,
+            100.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Rect"
+      },
+      {
+        "activeRange": {
+          "duration": 700,
+          "start": 0
+        },
+        "blendMode": "normal",
+        "id": 1,
+        "name": "Document introduction — source 0.0–0.7s",
+        "source": {
+          "assetId": "screen",
+          "fit": "contain"
+        },
+        "sourceIntrinsicDuration": 29766,
+        "sourceRange": {
+          "duration": 700,
+          "start": 0
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            -610.0,
+            -180.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            106.0,
+            106.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Video",
+        "volume": 0.0
+      },
+      {
+        "activeRange": {
+          "duration": 4300,
+          "start": 700
+        },
+        "blendMode": "normal",
+        "id": 2,
+        "name": "Hold document title — original frame 0.7s",
+        "source": {
+          "assetId": "title-hold",
+          "fit": "contain"
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            -610.0,
+            -180.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            106.0,
+            106.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Image"
+      },
+      {
+        "activeRange": {
+          "duration": 2870,
+          "start": 5000
+        },
+        "blendMode": "normal",
+        "id": 3,
+        "name": "Recorded structure scroll — source 1.4–4.27s",
+        "source": {
+          "assetId": "screen",
+          "fit": "contain"
+        },
+        "sourceIntrinsicDuration": 29766,
+        "sourceRange": {
+          "duration": 2870,
+          "start": 1400
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            -610.0,
+            -180.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            106.0,
+            106.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Video",
+        "volume": 0.0
+      },
+      {
+        "activeRange": {
+          "duration": 3270,
+          "start": 7870
+        },
+        "blendMode": "normal",
+        "id": 4,
+        "name": "Hold original prompts — source frame 7.0s",
+        "source": {
+          "assetId": "prompts-hold",
+          "fit": "contain"
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            -610.0,
+            -825.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            106.0,
+            106.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Image"
+      },
+      {
+        "activeRange": {
+          "duration": 2410,
+          "start": 11140
+        },
+        "blendMode": "normal",
+        "id": 5,
+        "name": "Revisions and learnings — source frame 7.65s",
+        "source": {
+          "assetId": "revisions-hold",
+          "fit": "contain"
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            -610.0,
+            -305.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            106.0,
+            106.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Image"
+      },
+      {
+        "activeRange": {
+          "duration": 6450,
+          "start": 13550
+        },
+        "blendMode": "normal",
+        "id": 6,
+        "name": "Document file and verification context — source 8–14.45s",
+        "source": {
+          "assetId": "screen",
+          "fit": "contain"
+        },
+        "sourceIntrinsicDuration": 29766,
+        "sourceRange": {
+          "duration": 6450,
+          "start": 8000
+        },
+        "transform": {
+          "anchorPoint": [
+            0.0,
+            0.0
+          ],
+          "opacity": 100.0,
+          "orientation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            -500.0,
+            -90.0
+          ],
+          "rotation": 0.0,
+          "rotationX": 0.0,
+          "rotationY": 0.0,
+          "scale": [
+            82.0,
+            82.0
+          ],
+          "skew": 0.0,
+          "skewAxis": 0.0
+        },
+        "type": "Video",
+        "volume": 0.0
+      },
+      {
+        "activeRange": {
+          "duration": 20000,
+          "start": 0
+        },
+        "captionsEnabled": false,
+        "id": 50,
+        "name": "Original narration — trimmed head and tail; +2.2 dB",
+        "source": {
+          "assetId": "narration"
+        },
+        "sourceIntrinsicDuration": 23253,
+        "sourceRange": {
+          "duration": 20000,
+          "start": 2050
+        },
+        "type": "Audio",
+        "volume": 1.288249551693134,
+        "windowMs": 50
+      }
+    ],
+    "name": "Save the Learnings"
+  }
+}

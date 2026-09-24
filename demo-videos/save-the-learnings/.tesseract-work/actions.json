@@ -1,0 +1,689 @@
+[
+  {
+    "type": "createFxRectLayer",
+    "compositionId": "main",
+    "layerId": 100,
+    "name": "Caption safe area",
+    "insertIndex": 0,
+    "activeRange": {
+      "start": 0,
+      "duration": 20000
+    },
+    "transform": {
+      "position": [
+        0,
+        934
+      ],
+      "anchorPoint": [
+        0,
+        0
+      ],
+      "scale": [
+        100,
+        100
+      ],
+      "rotation": 0,
+      "opacity": 100
+    },
+    "rect": {
+      "size": [
+        1920,
+        146
+      ],
+      "fillColor": [
+        0.027,
+        0.033,
+        0.043,
+        1
+      ]
+    }
+  },
+  {
+    "type": "createFxTextLayer",
+    "compositionId": "main",
+    "layerId": 200,
+    "name": "Caption: For every finished video,",
+    "insertIndex": 0,
+    "activeRange": {
+      "start": 230,
+      "duration": 1570
+    },
+    "transform": {
+      "position": [
+        100,
+        978
+      ],
+      "anchorPoint": [
+        0,
+        0
+      ],
+      "scale": [
+        100,
+        100
+      ],
+      "rotation": 0,
+      "opacity": 100
+    },
+    "sourceText": {
+      "text": "For every finished video,",
+      "fontFamily": "Lato",
+      "fontStyle": "Regular",
+      "fontSize": 46,
+      "fillColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "justification": "center",
+      "boxText": true,
+      "boxPosition": [
+        0,
+        0
+      ],
+      "boxSize": [
+        1720,
+        80
+      ]
+    }
+  },
+  {
+    "type": "createFxTextLayer",
+    "compositionId": "main",
+    "layerId": 201,
+    "name": "Caption: the system creates its own",
+    "insertIndex": 0,
+    "activeRange": {
+      "start": 1800,
+      "duration": 1360
+    },
+    "transform": {
+      "position": [
+        100,
+        978
+      ],
+      "anchorPoint": [
+        0,
+        0
+      ],
+      "scale": [
+        100,
+        100
+      ],
+      "rotation": 0,
+      "opacity": 100
+    },
+    "sourceText": {
+      "text": "the system creates its own",
+      "fontFamily": "Lato",
+      "fontStyle": "Regular",
+      "fontSize": 46,
+      "fillColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "justification": "center",
+      "boxText": true,
+      "boxPosition": [
+        0,
+        0
+      ],
+      "boxSize": [
+        1720,
+        80
+      ]
+    }
+  },
+  {
+    "type": "createFxTextLayer",
+    "compositionId": "main",
+    "layerId": 202,
+    "name": "Caption: reverse-engineering document.",
+    "insertIndex": 0,
+    "activeRange": {
+      "start": 3160,
+      "duration": 1840
+    },
+    "transform": {
+      "position": [
+        100,
+        978
+      ],
+      "anchorPoint": [
+        0,
+        0
+      ],
+      "scale": [
+        100,
+        100
+      ],
+      "rotation": 0,
+      "opacity": 100
+    },
+    "sourceText": {
+      "text": "reverse-engineering document.",
+      "fontFamily": "Lato",
+      "fontStyle": "Regular",
+      "fontSize": 46,
+      "fillColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "justification": "center",
+      "boxText": true,
+      "boxPosition": [
+        0,
+        0
+      ],
+      "boxSize": [
+        1720,
+        80
+      ]
+    }
+  },
+  {
+    "type": "createFxTextLayer",
+    "compositionId": "main",
+    "layerId": 203,
+    "name": "Caption: This records how the video was made,",
+    "insertIndex": 0,
+    "activeRange": {
+      "start": 5000,
+      "duration": 2870
+    },
+    "transform": {
+      "position": [
+        100,
+        978
+      ],
+      "anchorPoint": [
+        0,
+        0
+      ],
+      "scale": [
+        100,
+        100
+      ],
+      "rotation": 0,
+      "opacity": 100
+    },
+    "sourceText": {
+      "text": "This records how the video was made,",
+      "fontFamily": "Lato",
+      "fontStyle": "Regular",
+      "fontSize": 46,
+      "fillColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "justification": "center",
+      "boxText": true,
+      "boxPosition": [
+        0,
+        0
+      ],
+      "boxSize": [
+        1720,
+        80
+      ]
+    }
+  },
+  {
+    "type": "createFxTextLayer",
+    "compositionId": "main",
+    "layerId": 204,
+    "name": "Caption: including the prompts, structure,",
+    "insertIndex": 0,
+    "activeRange": {
+      "start": 7870,
+      "duration": 2310
+    },
+    "transform": {
+      "position": [
+        100,
+        978
+      ],
+      "anchorPoint": [
+        0,
+        0
+      ],
+      "scale": [
+        100,
+        100
+      ],
+      "rotation": 0,
+      "opacity": 100
+    },
+    "sourceText": {
+      "text": "including the prompts, structure,",
+      "fontFamily": "Lato",
+      "fontStyle": "Regular",
+      "fontSize": 46,
+      "fillColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "justification": "center",
+      "boxText": true,
+      "boxPosition": [
+        0,
+        0
+      ],
+      "boxSize": [
+        1720,
+        80
+      ]
+    }
+  },
+  {
+    "type": "createFxTextLayer",
+    "compositionId": "main",
+    "layerId": 205,
+    "name": "Caption: methods used, revisions,",
+    "insertIndex": 0,
+    "activeRange": {
+      "start": 10180,
+      "duration": 1660
+    },
+    "transform": {
+      "position": [
+        100,
+        978
+      ],
+      "anchorPoint": [
+        0,
+        0
+      ],
+      "scale": [
+        100,
+        100
+      ],
+      "rotation": 0,
+      "opacity": 100
+    },
+    "sourceText": {
+      "text": "methods used, revisions,",
+      "fontFamily": "Lato",
+      "fontStyle": "Regular",
+      "fontSize": 46,
+      "fillColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "justification": "center",
+      "boxText": true,
+      "boxPosition": [
+        0,
+        0
+      ],
+      "boxSize": [
+        1720,
+        80
+      ]
+    }
+  },
+  {
+    "type": "createFxTextLayer",
+    "compositionId": "main",
+    "layerId": 206,
+    "name": "Caption: and key learnings.",
+    "insertIndex": 0,
+    "activeRange": {
+      "start": 11840,
+      "duration": 1360
+    },
+    "transform": {
+      "position": [
+        100,
+        978
+      ],
+      "anchorPoint": [
+        0,
+        0
+      ],
+      "scale": [
+        100,
+        100
+      ],
+      "rotation": 0,
+      "opacity": 100
+    },
+    "sourceText": {
+      "text": "and key learnings.",
+      "fontFamily": "Lato",
+      "fontStyle": "Regular",
+      "fontSize": 46,
+      "fillColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "justification": "center",
+      "boxText": true,
+      "boxPosition": [
+        0,
+        0
+      ],
+      "boxSize": [
+        1720,
+        80
+      ]
+    }
+  },
+  {
+    "type": "createFxTextLayer",
+    "compositionId": "main",
+    "layerId": 207,
+    "name": "Caption: The workflow also checks that",
+    "insertIndex": 0,
+    "activeRange": {
+      "start": 13500,
+      "duration": 1600
+    },
+    "transform": {
+      "position": [
+        100,
+        978
+      ],
+      "anchorPoint": [
+        0,
+        0
+      ],
+      "scale": [
+        100,
+        100
+      ],
+      "rotation": 0,
+      "opacity": 100
+    },
+    "sourceText": {
+      "text": "The workflow also checks that",
+      "fontFamily": "Lato",
+      "fontStyle": "Regular",
+      "fontSize": 46,
+      "fillColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "justification": "center",
+      "boxText": true,
+      "boxPosition": [
+        0,
+        0
+      ],
+      "boxSize": [
+        1720,
+        80
+      ]
+    }
+  },
+  {
+    "type": "createFxTextLayer",
+    "compositionId": "main",
+    "layerId": 208,
+    "name": "Caption: this file exists",
+    "insertIndex": 0,
+    "activeRange": {
+      "start": 15100,
+      "duration": 1050
+    },
+    "transform": {
+      "position": [
+        100,
+        978
+      ],
+      "anchorPoint": [
+        0,
+        0
+      ],
+      "scale": [
+        100,
+        100
+      ],
+      "rotation": 0,
+      "opacity": 100
+    },
+    "sourceText": {
+      "text": "this file exists",
+      "fontFamily": "Lato",
+      "fontStyle": "Regular",
+      "fontSize": 46,
+      "fillColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "justification": "center",
+      "boxText": true,
+      "boxPosition": [
+        0,
+        0
+      ],
+      "boxSize": [
+        1720,
+        80
+      ]
+    }
+  },
+  {
+    "type": "createFxTextLayer",
+    "compositionId": "main",
+    "layerId": 209,
+    "name": "Caption: before the video can be",
+    "insertIndex": 0,
+    "activeRange": {
+      "start": 16150,
+      "duration": 1340
+    },
+    "transform": {
+      "position": [
+        100,
+        978
+      ],
+      "anchorPoint": [
+        0,
+        0
+      ],
+      "scale": [
+        100,
+        100
+      ],
+      "rotation": 0,
+      "opacity": 100
+    },
+    "sourceText": {
+      "text": "before the video can be",
+      "fontFamily": "Lato",
+      "fontStyle": "Regular",
+      "fontSize": 46,
+      "fillColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "justification": "center",
+      "boxText": true,
+      "boxPosition": [
+        0,
+        0
+      ],
+      "boxSize": [
+        1720,
+        80
+      ]
+    }
+  },
+  {
+    "type": "createFxTextLayer",
+    "compositionId": "main",
+    "layerId": 210,
+    "name": "Caption: marked complete.",
+    "insertIndex": 0,
+    "activeRange": {
+      "start": 17490,
+      "duration": 1710
+    },
+    "transform": {
+      "position": [
+        100,
+        978
+      ],
+      "anchorPoint": [
+        0,
+        0
+      ],
+      "scale": [
+        100,
+        100
+      ],
+      "rotation": 0,
+      "opacity": 100
+    },
+    "sourceText": {
+      "text": "marked complete.",
+      "fontFamily": "Lato",
+      "fontStyle": "Regular",
+      "fontSize": 46,
+      "fillColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "justification": "center",
+      "boxText": true,
+      "boxPosition": [
+        0,
+        0
+      ],
+      "boxSize": [
+        1720,
+        80
+      ]
+    }
+  },
+  {
+    "type": "setFxPropertyKeyframes",
+    "compositionId": "main",
+    "property": {
+      "layerId": 50,
+      "propertyType": "volume"
+    },
+    "keyframes": [
+      {
+        "id": "voice-0",
+        "layerTime": 0,
+        "value": {
+          "type": "float",
+          "value": 0
+        },
+        "easing": {
+          "type": "linear"
+        }
+      },
+      {
+        "id": "voice-60",
+        "layerTime": 60,
+        "value": {
+          "type": "float",
+          "value": 1.288249551693134
+        },
+        "easing": {
+          "type": "linear"
+        }
+      },
+      {
+        "id": "voice-19700",
+        "layerTime": 19700,
+        "value": {
+          "type": "float",
+          "value": 1.288249551693134
+        },
+        "easing": {
+          "type": "linear"
+        }
+      },
+      {
+        "id": "voice-19999",
+        "layerTime": 19999,
+        "value": {
+          "type": "float",
+          "value": 0
+        },
+        "easing": {
+          "type": "linear"
+        }
+      }
+    ]
+  },
+  {
+    "type": "setFxPropertyKeyframes",
+    "compositionId": "main",
+    "property": {
+      "layerId": 5,
+      "propertyType": "positionY"
+    },
+    "keyframes": [
+      {
+        "id": "learnings-pan-0",
+        "layerTime": 0,
+        "value": {
+          "type": "float",
+          "value": -305
+        },
+        "easing": {
+          "type": "cubicBezier",
+          "x1": 0.25,
+          "y1": 0.1,
+          "x2": 0.25,
+          "y2": 1
+        }
+      },
+      {
+        "id": "learnings-pan-450",
+        "layerTime": 450,
+        "value": {
+          "type": "float",
+          "value": -305
+        },
+        "easing": {
+          "type": "cubicBezier",
+          "x1": 0.25,
+          "y1": 0.1,
+          "x2": 0.25,
+          "y2": 1
+        }
+      },
+      {
+        "id": "learnings-pan-1100",
+        "layerTime": 1100,
+        "value": {
+          "type": "float",
+          "value": -990
+        },
+        "easing": {
+          "type": "cubicBezier",
+          "x1": 0.25,
+          "y1": 0.1,
+          "x2": 0.25,
+          "y2": 1
+        }
+      }
+    ]
+  }
+]

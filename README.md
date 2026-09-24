@@ -2,6 +2,13 @@
 
 Amarillo is a local-first system for turning reference video samples into reusable AI-video prompt patterns, testing those patterns across Fal-hosted models, and producing evidence-based model scoreboards.
 
+## Repository structure
+
+- **Repository root: the video-generation system (Amarillo).** `src/`, `scripts/`, `configs/`, `prompt_library/`, `catalog/`, `hyperframes/`, `videos/`, `docs/`, `analysis_notes/`, `review_notes/`, `assembled_outputs/`, and `tests/` are the core workflow and its production records. See [Main Folders](#main-folders) below.
+- **[`demo-videos/`](demo-videos/README.md): the Demo Videos workspace.** Self-contained Tesseract (by Mirage) editing workspace for the product demo videos: demo scripts, screen recordings, audio and AI voice, edited outputs, notes, and the Tesseract launcher and skills they use. It does not depend on, or change, the system at the root.
+
+## Workflow
+
 The near-term workflow is intentionally conservative:
 
 1. Put reference videos in `data/samples/`.
@@ -148,6 +155,7 @@ lip-sync or continuity dimensions remain untested. Earlier interview comparison:
 - `prompt_library/`: reusable prompt patterns derived from references.
 - `catalog/`: model catalog and model-selection evidence.
 - `docs/`: roadmap, methodology, and operating notes.
+- `demo-videos/`: the separate Demo Videos workspace (not part of the Amarillo pipeline).
 
 ## Latest session deliveries
 

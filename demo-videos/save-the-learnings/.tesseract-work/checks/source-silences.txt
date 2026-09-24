@@ -1,0 +1,37 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'save-the-learnings/Assets/Save-the-Learnings.m4a':
+  Metadata:
+    major_brand     : M4A 
+    minor_version   : 0
+    compatible_brands: M4A isom
+    creation_time   : 2026-09-23T14:06:29.000000Z
+  Duration: 00:00:23.25, start: 0.000000, bitrate: 82 kb/s
+  Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 80 kb/s (default)
+    Metadata:
+      creation_time   : 2026-09-23T14:06:29.000000Z
+      handler_name    : AAC audio
+Stream mapping:
+  Stream #0:0 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : M4A 
+    minor_version   : 0
+    compatible_brands: M4A isom
+    encoder         : Lavf63.1.101
+  Stream #0:0(und): Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s (default)
+    Metadata:
+      encoder         : Lavc63.1.101 pcm_s16le
+      creation_time   : 2026-09-23T14:06:29.000000Z
+      handler_name    : AAC audio
+[Parsed_silencedetect_0 @ 0x7dac4c9c0] silence_start: 0
+[Parsed_silencedetect_0 @ 0x7dac4c9c0] silence_end: 2.283417 | silence_duration: 2.283417
+[Parsed_silencedetect_0 @ 0x7dac4c9c0] silence_start: 6.716958
+[Parsed_silencedetect_0 @ 0x7dac4c9c0] silence_end: 7.272812 | silence_duration: 0.555854
+[Parsed_silencedetect_0 @ 0x7dac4c9c0] silence_start: 11.994854
+[Parsed_silencedetect_0 @ 0x7dac4c9c0] silence_end: 12.421271 | silence_duration: 0.426417
+[Parsed_silencedetect_0 @ 0x7dac4c9c0] silence_start: 14.976271
+[Parsed_silencedetect_0 @ 0x7dac4c9c0] silence_end: 15.571 | silence_duration: 0.594729
+[Parsed_silencedetect_0 @ 0x7dac4c9c0] silence_start: 20.659667
+[Parsed_silencedetect_0 @ 0x7dac4c9c0] silence_end: 23.253333 | silence_duration: 2.593667
+[out#0/null @ 0x7dac4c180] video:0KiB audio:4360KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:23.25 bitrate=N/A speed=2.35e+03x elapsed=0:00:00.00    

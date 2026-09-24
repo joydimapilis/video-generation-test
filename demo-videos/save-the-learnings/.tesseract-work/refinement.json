@@ -1,0 +1,57 @@
+[
+  {
+    "type": "setFxPropertyKeyframes",
+    "compositionId": "main",
+    "property": {
+      "layerId": 5,
+      "propertyType": "positionY"
+    },
+    "keyframes": [
+      {
+        "id": "learnings-pan-0",
+        "layerTime": 0,
+        "value": {
+          "type": "float",
+          "value": -305
+        },
+        "easing": {
+          "type": "cubicBezier",
+          "x1": 0.25,
+          "y1": 0.1,
+          "x2": 0.25,
+          "y2": 1
+        }
+      },
+      {
+        "id": "learnings-pan-450",
+        "layerTime": 450,
+        "value": {
+          "type": "float",
+          "value": -305
+        },
+        "easing": {
+          "type": "cubicBezier",
+          "x1": 0.25,
+          "y1": 0.1,
+          "x2": 0.25,
+          "y2": 1
+        }
+      },
+      {
+        "id": "learnings-pan-1100",
+        "layerTime": 1100,
+        "value": {
+          "type": "float",
+          "value": -990
+        },
+        "easing": {
+          "type": "cubicBezier",
+          "x1": 0.25,
+          "y1": 0.1,
+          "x2": 0.25,
+          "y2": 1
+        }
+      }
+    ]
+  }
+]

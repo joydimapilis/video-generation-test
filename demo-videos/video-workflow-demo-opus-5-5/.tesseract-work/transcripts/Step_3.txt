@@ -1,0 +1,4 @@
+The first thing the system does is look at this existing video library.
+This library gives the system examples of different video styles, pacing, transitions
+and storytelling.
+It uses those references as inspiration to plan a new video rather than copying one directly.

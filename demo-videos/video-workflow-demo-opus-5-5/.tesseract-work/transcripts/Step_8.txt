@@ -1,0 +1,3 @@
+The next phase I'm working on is human-realism, the next phase I'm working on is making people
+look and move more naturally, especially their hands, eye movement, and longer scenes.
+I'm keeping that research separate for now while I continue testing and improving it.

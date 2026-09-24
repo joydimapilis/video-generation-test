@@ -1,0 +1,22 @@
+{
+  "Save-the-Learnings.mp4": {
+    "bytes": 9673515,
+    "sha256": "384b45d227c43a7f4267da8b5bdaab752b5ef528e75c89cfee0b9bda91e7adc9"
+  },
+  "Save-the-Learnings.tsrct": {
+    "bytes": 38112922,
+    "sha256": "8d6ce6e4b025efac0f5fed8c49eb38f5cec137b063d522634a93154620afa808"
+  },
+  "Assets/Screen-Recording.mov": {
+    "bytes": 33047100,
+    "sha256": "018b26c8885e832cd9f768fbea6a8833d7e43c63966c540fd080c2e314c1b6aa"
+  },
+  "Assets/Save-the-Learnings.m4a": {
+    "bytes": 240361,
+    "sha256": "e9ce99a061e72bb64e9e32850ff1d3c19225c00852b0ea99c70358703a01b3a2"
+  },
+  "Captions.srt": {
+    "bytes": 650,
+    "sha256": "c0f8d30c4823124d6b40745e5125625af5b9ff3e3c95ffdd870dccec16f0628c"
+  }
+}

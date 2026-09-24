@@ -1,0 +1,4 @@
+The process starts with a simple request.
+Instead of giving conductor a long prompt every time, I move the recurring instructions
+into the workflow.
+Now I can give it a short request and the system handles the rest of the process.

@@ -1,0 +1,57 @@
+[
+  [
+    230,
+    1800,
+    "For every finished video,"
+  ],
+  [
+    1800,
+    3160,
+    "the system creates its own"
+  ],
+  [
+    3160,
+    5000,
+    "reverse-engineering document."
+  ],
+  [
+    5000,
+    7870,
+    "This records how the video was made,"
+  ],
+  [
+    7870,
+    10180,
+    "including the prompts, structure,"
+  ],
+  [
+    10180,
+    11840,
+    "methods used, revisions,"
+  ],
+  [
+    11840,
+    13200,
+    "and key learnings."
+  ],
+  [
+    13500,
+    15100,
+    "The workflow also checks that"
+  ],
+  [
+    15100,
+    16150,
+    "this file exists"
+  ],
+  [
+    16150,
+    17490,
+    "before the video can be"
+  ],
+  [
+    17490,
+    19200,
+    "marked complete."
+  ]
+]
